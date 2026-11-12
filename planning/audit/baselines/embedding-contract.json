@@ -1,0 +1,126 @@
+{
+  "runtime": "3.13.7",
+  "dependencies": {
+    "fastapi": "0.117.1",
+    "uvicorn": "0.37.0",
+    "sentence-transformers": "5.1.1",
+    "torch": "2.9.1",
+    "transformers": "4.57.1",
+    "youtube-transcript-api": "1.2.3",
+    "PyPDF2": "3.0.1",
+    "requests": "2.32.5"
+  },
+  "health": {
+    "status": "ok",
+    "model": "C:\\Users\\ADIMN\\.cache\\huggingface\\hub\\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\\snapshots\\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+    "device": "cpu",
+    "device_requested": "auto",
+    "requires_token": false
+  },
+  "dimension": 384,
+  "norm": 0.9999999405752437,
+  "identicalTextSimilarity": 0.9999998811504909,
+  "batchType": "dict",
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "status",
+        "model",
+        "device",
+        "device_requested",
+        "requires_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/single/text/embedding",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "embedding"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/segments/embedding",
+      "status": 500,
+      "expected": 200,
+      "keys": [
+        "nonJsonResponse"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/embedding/compare",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "similarity",
+        "queryEmbedding",
+        "patternEmbedding"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/youtube/segments/embedding",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "count",
+        "embeddings"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/youtube/segments/similarity",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "sentence_count",
+        "query_results"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/single/text/embedding",
+      "status": 422,
+      "expected": 422,
+      "keys": [
+        "detail"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/embedding/compare",
+      "status": 422,
+      "expected": 422,
+      "keys": [
+        "detail"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/pdf/page/embedding",
+      "status": 400,
+      "expected": 400,
+      "keys": [
+        "detail"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/pdf/page/embedding",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "embeddings",
+        "pageCount"
+      ]
+    }
+  ],
+  "note": "Real cached CPU model; actual loopback Uvicorn HTTP server and startup. No mocked embeddings or provider success. YouTube network transcript retrieval not exercised. Text PDF and blank PDF exercise positive and negative extraction paths."
+}

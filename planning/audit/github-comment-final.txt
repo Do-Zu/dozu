@@ -1,0 +1,31 @@
+<!-- dozu-baseline-audit:2026-11-09 -->
+Completed the baseline audit in `D:\product\dozu`; all five audit acceptance criteria have evidence. This completes audit work only. Application source is unchanged; desktop implementation and runtime parity remain unverified.
+
+Local review entrypoints:
+- `planning/audit/README.md` — provenance, baseline commands/results, limitations and acceptance evidence.
+- `planning/audit/feature-parity.md` / `.json` — all 84 pages with workflows, role intent/gate evidence, source, local implications, uncertainties and follow-up issues.
+- `planning/audit/ui-ledger.md` / `ui-workflows.json` — 20 layouts, 584 non-entry TSX (including 164 shared components), 132 hook/provider/context source files, 550 navigation/config sites and interaction/import references.
+- `planning/audit/backend-endpoints.md` / `.json` — 330 unique mounted `/api` methods/paths, middleware order and handlers; `/health` is separate. Four unmounted declarations in classFeed.routes.ts are explained.
+- `planning/audit/database.md`, `configuration.md`, `systems.md`, `findings.md` and companion JSON — 72 tables/27 enums, migrations, config/secrets, files/jobs/cache/realtime, integrations, packaging and safe import strategy.
+- `planning/audit/verification.json` — PASS for audit coverage, unchanged source hashes/trees and 3,240 document references; **not** application test/desktop parity PASS.
+
+Source provenance (all three tracked trees clean before/after):
+- [UI 5e1ceb2](https://github.com/perinst/dozu-ui-service/commit/5e1ceb263a29e2fde2359c36f43d0118a8d622f0)
+- [API 173f3f1](https://github.com/perinst/dozu-api-service/commit/173f3f1cbcc81b89ad3eea81723698f7bb7eb876)
+- [Embedding 188d0d2](https://github.com/perinst/dozu-embedding-service/commit/188d0d229a38ee51f48f1e5d5f06cf69f16870c6)
+
+Independent credential-free baselines used disposable source copies, existing locked dependencies and no live application DB/Redis/provider credentials:
+- API typecheck **PASS**.
+- Website lint **FAIL** (1,548 Error/3,683 Warning diagnostics); website build **FAIL** at YoutubePlayerAdapter.ts:20 (Promise<number> returned as number).
+- API lint **FAIL** (100 errors/143 warnings). Full Jest aborts on eager Redis initialization. Per-suite runs: 3 pass/4 fail; 36 tests pass, 29 fail, 4 skip, two empty suites.
+- Empty offline embedding cache startup **FAIL**. Genuine cached CPU model over actual loopback HTTP produces normalized 384-dimensional vectors; 9 expected contract outcomes pass and `/segments/embedding` returns **500** because a list conflicts with response_model Dict. PDF positive/negative paths and supplied YouTube segments were tested; internet transcript/provider transactions were not.
+
+Critical handoff:
+1. All 20 local SQL migrations/journal/snapshots are **ignored and absent from Git**, despite a clean tree. #5/#29/#40 must establish reviewed migration/pgvector/seed history.
+2. #4 must prove **Gotenberg/LibreOffice, Puppeteer/browser resources, whisper.cpp/tiny model/FFmpeg** as well as Next/Express/Postgres/FastAPI; the simplified runtime list was incomplete.
+3. Missing merchant/mail config and eager workers affect startup; #40 needs lazy optional integrations and automatic local bootstrap. SSE/socket ownership and loopback/Origin controls need #19/#37.
+4. UI/embedding have no tracked licenses; API LICENSE/package metadata conflict. Tracked dotenv paths and history require sanitized import/redistribution review; no credential contents were inspected or exposed.
+5. Google native OAuth, SMTP return links, payment merchant/reconciliation, Tactiq credentials, dynamic LLM providers, R2/Cloudinary storage replacement and remote classroom reachability have secure options and explicit unverified limits in systems.md. #41 payment ownership and #43 topology remain unresolved; no simulated integration success or required central Dozu service was introduced.
+
+Evidence manifest: `planning/audit/evidence-manifest.json`, 41 local evidence files, SHA-256 `e4ce7961cc42e2038b2fa2e077b4d5d52dd00d8768786ef38ae3344a2107a6ba`. Documents are local planning artifacts, not claimed as pushed repository files. No implementation issue is closed by this audit.
+

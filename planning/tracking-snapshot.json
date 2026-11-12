@@ -1,0 +1,902 @@
+{
+  "capturedAtUtc": "2026-11-12T15:11:09.304657+00:00",
+  "repository": "Do-Zu/dozu",
+  "doingUrl": "https://github.com/Do-Zu/dozu/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22status%3Ain-progress%22",
+  "readyUrl": "https://github.com/Do-Zu/dozu/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22status%3Aready%22",
+  "blockedUrl": "https://github.com/Do-Zu/dozu/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22status%3Ablocked%22",
+  "waitingUrl": "https://github.com/Do-Zu/dozu/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22status%3Awaiting%22",
+  "inReviewUrl": "https://github.com/Do-Zu/dozu/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22status%3Ain-review%22",
+  "completedTaskCount": 3,
+  "totalTaskCount": 40,
+  "issues": [
+    {
+      "id": "ROADMAP",
+      "number": 1,
+      "url": "https://github.com/Do-Zu/dozu/issues/1",
+      "title": "[Ticket] Deliver self-contained local-first desktop and monorepo",
+      "type": "ticket",
+      "status": "in-progress",
+      "priority": "P0",
+      "complexity": "XL",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [
+        "perinst"
+      ],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "DECISION-SCOPE",
+      "number": 2,
+      "url": "https://github.com/Do-Zu/dozu/issues/2",
+      "title": "[Ticket] Record local-first requirements and full feature-preservation matrix",
+      "type": "ticket",
+      "status": "done",
+      "priority": "P0",
+      "complexity": "M",
+      "state": "closed",
+      "stateReason": "completed",
+      "assignees": [
+        "perinst"
+      ],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "BASELINE",
+      "number": 3,
+      "url": "https://github.com/Do-Zu/dozu/issues/3",
+      "title": "[Task] Audit complete UI/backend and local-first integration baselines",
+      "type": "task",
+      "status": "done",
+      "priority": "P0",
+      "complexity": "L",
+      "state": "closed",
+      "stateReason": "completed",
+      "assignees": [
+        "perinst"
+      ],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "DECISION-STACK",
+      "number": 4,
+      "url": "https://github.com/Do-Zu/dozu/issues/4",
+      "title": "[Ticket] Prove Electron can package the complete local Next.js and service stack",
+      "type": "ticket",
+      "status": "closed",
+      "priority": "P0",
+      "complexity": "XL",
+      "state": "closed",
+      "stateReason": "completed",
+      "assignees": [],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "IMPORT",
+      "number": 5,
+      "url": "https://github.com/Do-Zu/dozu/issues/5",
+      "title": "[Task] Import current frontend/backend/embedding sources with provenance",
+      "type": "task",
+      "status": "done",
+      "priority": "P0",
+      "complexity": "M",
+      "state": "closed",
+      "stateReason": "completed",
+      "assignees": [],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "WORKSPACE",
+      "number": 6,
+      "url": "https://github.com/Do-Zu/dozu/issues/6",
+      "title": "[Task] Establish reproducible monorepo workspaces and build graph",
+      "type": "task",
+      "status": "done",
+      "priority": "P0",
+      "complexity": "M",
+      "state": "closed",
+      "stateReason": "completed",
+      "assignees": [],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "TOOLCHAINS",
+      "number": 7,
+      "url": "https://github.com/Do-Zu/dozu/issues/7",
+      "title": "[Task] Pin portable toolchains and runtime-compatible builds",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "M",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "PYTHON",
+      "number": 8,
+      "url": "https://github.com/Do-Zu/dozu/issues/8",
+      "title": "[Task] Bundle local text-embedding runtime for PDF and YouTube references",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/38",
+        "https://github.com/Do-Zu/dozu/issues/34"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "DEV-INFRA",
+      "number": 9,
+      "url": "https://github.com/Do-Zu/dozu/issues/9",
+      "title": "[Task] Provide local-stack development and packaging diagnostics",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P2",
+      "complexity": "M",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/7",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/8"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "CI-DEPLOY",
+      "number": 10,
+      "url": "https://github.com/Do-Zu/dozu/issues/10",
+      "title": "[Task] Build local desktop artifacts while retaining website CI/deployment",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/7",
+        "https://github.com/Do-Zu/dozu/issues/8",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "API-CLIENT",
+      "number": 11,
+      "url": "https://github.com/Do-Zu/dozu/issues/11",
+      "title": "[Task] Route every frontend transport to the runtime-discovered local API",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "PLATFORM",
+      "number": 12,
+      "url": "https://github.com/Do-Zu/dozu/issues/12",
+      "title": "[Task] Add narrow desktop host adapters around the retained Next.js UI",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/34"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "UI-I18N",
+      "number": 13,
+      "url": "https://github.com/Do-Zu/dozu/issues/13",
+      "title": "[Task] Preserve the full Next.js UI, navigation, themes and en/vi assets",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/32"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "AUTH",
+      "number": 14,
+      "url": "https://github.com/Do-Zu/dozu/issues/14",
+      "title": "[Task] Preserve local accounts and adapt genuine Google OAuth for desktop",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/12",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/27"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "DESKTOP-SHELL",
+      "number": 15,
+      "url": "https://github.com/Do-Zu/dozu/issues/15",
+      "title": "[Task] Integrate Electron with the complete managed local application",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/12",
+        "https://github.com/Do-Zu/dozu/issues/28"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "FEATURE-SLICE",
+      "number": 16,
+      "url": "https://github.com/Do-Zu/dozu/issues/16",
+      "title": "[Task] Prove an end-to-end local study workflow without reducing release scope",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "M",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/15",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/18"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "MVP-FEATURES",
+      "number": 17,
+      "url": "https://github.com/Do-Zu/dozu/issues/17",
+      "title": "[Task] Preserve every existing page, role and feature in the local desktop",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "XL",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/41",
+        "https://github.com/Do-Zu/dozu/issues/42",
+        "https://github.com/Do-Zu/dozu/issues/43",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "FILES",
+      "number": 18,
+      "url": "https://github.com/Do-Zu/dozu/issues/18",
+      "title": "[Task] Replace required cloud storage with local files and localhost URLs",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/34"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "REALTIME",
+      "number": 19,
+      "url": "https://github.com/Do-Zu/dozu/issues/19",
+      "title": "[Task] Preserve local realtime and streaming with network failure recovery",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/30"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "NOTIFICATIONS",
+      "number": 20,
+      "url": "https://github.com/Do-Zu/dozu/issues/20",
+      "title": "[Task] Preserve schedules and native notifications from local state",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P2",
+      "complexity": "M",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/15",
+        "https://github.com/Do-Zu/dozu/issues/30"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "MEDIA",
+      "number": 21,
+      "url": "https://github.com/Do-Zu/dozu/issues/21",
+      "title": "[Task] Preserve PDF/editor/media and real YouTube/URL integrations locally",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/27"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "QA",
+      "number": 22,
+      "url": "https://github.com/Do-Zu/dozu/issues/22",
+      "title": "[Task] Verify complete local-first desktop parity across all supported OSes",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "XL",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/39",
+        "https://github.com/Do-Zu/dozu/issues/37"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "PACKAGING",
+      "number": 23,
+      "url": "https://github.com/Do-Zu/dozu/issues/23",
+      "title": "[Task] Build self-contained installers with all required local services",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "XL",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/15",
+        "https://github.com/Do-Zu/dozu/issues/7",
+        "https://github.com/Do-Zu/dozu/issues/38",
+        "https://github.com/Do-Zu/dozu/issues/33"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "SIGNING",
+      "number": 24,
+      "url": "https://github.com/Do-Zu/dozu/issues/24",
+      "title": "[Task] Sign local-first desktop releases and notarize macOS artifacts",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/23"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "UPDATES",
+      "number": 25,
+      "url": "https://github.com/Do-Zu/dozu/issues/25",
+      "title": "[Task] Upgrade the bundled local stack with data-safe migrations",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/23",
+        "https://github.com/Do-Zu/dozu/issues/24",
+        "https://github.com/Do-Zu/dozu/issues/35"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "BETA",
+      "number": 26,
+      "url": "https://github.com/Do-Zu/dozu/issues/26",
+      "title": "[Task] Validate local-first beta, distribution and data-lifecycle support",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/22",
+        "https://github.com/Do-Zu/dozu/issues/24",
+        "https://github.com/Do-Zu/dozu/issues/25",
+        "https://github.com/Do-Zu/dozu/issues/10",
+        "https://github.com/Do-Zu/dozu/issues/36"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "INTEGRATIONS",
+      "number": 27,
+      "url": "https://github.com/Do-Zu/dozu/issues/27",
+      "title": "[Ticket] Resolve desktop integration callbacks, secrets and shared-state limits",
+      "type": "ticket",
+      "status": "ready",
+      "priority": "P0",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "SUPERVISOR",
+      "number": 28,
+      "url": "https://github.com/Do-Zu/dozu/issues/28",
+      "title": "[Task] Supervise local backend, database and embedding process lifecycle",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/8",
+        "https://github.com/Do-Zu/dozu/issues/12"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "LOCAL-DB",
+      "number": 29,
+      "url": "https://github.com/Do-Zu/dozu/issues/29",
+      "title": "[Task] Bundle and initialize per-user PostgreSQL (pgvector deferred)",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/38"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "LOCAL-QUEUE",
+      "number": 30,
+      "url": "https://github.com/Do-Zu/dozu/issues/30",
+      "title": "[Task] Replace desktop Redis/BullMQ consumers with durable local adapters",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "XL",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/29"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "PROVIDER-SECRETS",
+      "number": 31,
+      "url": "https://github.com/Do-Zu/dozu/issues/31",
+      "title": "[Task] Store user-scoped provider credentials securely on the device",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/27"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "LOCAL-ASSETS",
+      "number": 32,
+      "url": "https://github.com/Do-Zu/dozu/issues/32",
+      "title": "[Task] Bundle frontend assets and required local processing resources",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "M",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "FIRST-BOOT",
+      "number": 33,
+      "url": "https://github.com/Do-Zu/dozu/issues/33",
+      "title": "[Task] Validate automatic first-run setup on clean user machines",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/15",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/8",
+        "https://github.com/Do-Zu/dozu/issues/32"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "DATA-PATHS",
+      "number": 34,
+      "url": "https://github.com/Do-Zu/dozu/issues/34",
+      "title": "[Task] Define app-owned local data paths and ownership manifest",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "M",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [],
+      "blockReason": ""
+    },
+    {
+      "id": "BACKUP",
+      "number": 35,
+      "url": "https://github.com/Do-Zu/dozu/issues/35",
+      "title": "[Task] Back up and restore local database, files and application settings",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/31"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "UNINSTALL",
+      "number": 36,
+      "url": "https://github.com/Do-Zu/dozu/issues/36",
+      "title": "[Task] Offer keep-data or permanent app-data deletion on every OS",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/23",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/31"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "NETWORK-GATE",
+      "number": 37,
+      "url": "https://github.com/Do-Zu/dozu/issues/37",
+      "title": "[Task] Verify local data authority and deliberate third-party network use",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/44",
+        "https://github.com/Do-Zu/dozu/issues/41",
+        "https://github.com/Do-Zu/dozu/issues/42",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "SUPPLY-CHAIN",
+      "number": 38,
+      "url": "https://github.com/Do-Zu/dozu/issues/38",
+      "title": "[Task] Assemble verified per-platform runtimes, binaries and licenses",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/7"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "LOCAL-WEB",
+      "number": 39,
+      "url": "https://github.com/Do-Zu/dozu/issues/39",
+      "title": "[Task] Serve browser and Electron interfaces through the same localhost stack",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "M",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/15",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/11"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "LOCAL-BOOTSTRAP",
+      "number": 40,
+      "url": "https://github.com/Do-Zu/dozu/issues/40",
+      "title": "[Task] Add a local backend profile with automatic seeds and lazy integrations",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "PAYMENTS",
+      "number": 41,
+      "url": "https://github.com/Do-Zu/dozu/issues/41",
+      "title": "[Task] Preserve real payments with secure desktop reconciliation",
+      "type": "task",
+      "status": "blocked",
+      "priority": "P1",
+      "complexity": "XL",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ],
+      "blockReason": "User explicitly deferred/skipped payment execution during the local migration on 2026-11-10. Keep payments blocked under #41 until the user explicitly reopens the feature and chooses merchant ownership/provider flow; no live charges or simulated success. Existing payment/history/admin page inventory is retained."
+    },
+    {
+      "id": "EMAIL",
+      "number": 42,
+      "url": "https://github.com/Do-Zu/dozu/issues/42",
+      "title": "[Task] Preserve genuine email delivery and desktop return-link flows",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/30"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "CLASSROOM",
+      "number": 43,
+      "url": "https://github.com/Do-Zu/dozu/issues/43",
+      "title": "[Task] Preserve classroom workflows with an explicit reachable-host design",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "XL",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/30"
+      ],
+      "blockReason": ""
+    },
+    {
+      "id": "AI-PROVIDERS",
+      "number": 44,
+      "url": "https://github.com/Do-Zu/dozu/issues/44",
+      "title": "[Task] Preserve external AI integrations from the local backend",
+      "type": "task",
+      "status": "waiting",
+      "priority": "P1",
+      "complexity": "L",
+      "state": "open",
+      "stateReason": null,
+      "assignees": [],
+      "waitingOn": [
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/8"
+      ],
+      "blockReason": ""
+    }
+  ],
+  "statusCounts": [
+    {
+      "status": "blocked",
+      "count": 1
+    },
+    {
+      "status": "closed",
+      "count": 1
+    },
+    {
+      "status": "done",
+      "count": 4
+    },
+    {
+      "status": "in-progress",
+      "count": 1
+    },
+    {
+      "status": "ready",
+      "count": 1
+    },
+    {
+      "status": "waiting",
+      "count": 36
+    }
+  ],
+  "scopedProofRefresh": {
+    "utc": "2026-11-10T14:45:03.012875+00:00",
+    "issues": [
+      4,
+      45,
+      46,
+      47
+    ],
+    "baseSnapshotUnchanged": "Original 44-item roadmap timestamp/counts remain; unrelated issues not refreshed. Three native proof subissues below are additional. No assignee inferred per user instruction."
+  },
+  "proofSubissues": [
+    {
+      "platform": "windows",
+      "number": 45,
+      "url": "https://github.com/Do-Zu/dozu/issues/45",
+      "itemId": "PVTI_lADODsVOHc4Bq0rozhHhnlA",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "assignees": [],
+      "parent": 4,
+      "waitingOnExperiments": "P1–P5, not parent closure"
+    },
+    {
+      "platform": "macos",
+      "number": 46,
+      "url": "https://github.com/Do-Zu/dozu/issues/46",
+      "itemId": "PVTI_lADODsVOHc4Bq0rozhHhn74",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "assignees": [],
+      "parent": 4,
+      "waitingOnExperiments": "P1–P5, not parent closure"
+    },
+    {
+      "platform": "linux",
+      "number": 47,
+      "url": "https://github.com/Do-Zu/dozu/issues/47",
+      "itemId": "PVTI_lADODsVOHc4Bq0rozhHhoSM",
+      "status": "waiting",
+      "priority": "P0",
+      "complexity": "L",
+      "assignees": [],
+      "parent": 4,
+      "waitingOnExperiments": "P1–P5, not parent closure"
+    }
+  ],
+  "scopeAmendment": "v1-scope-2026-11-11.md (titles/scope only; unrelated live tracking not refreshed)",
+  "trackingWarnings": [
+    {
+      "number": 4,
+      "message": "Live state reason is completed but status label is closed; preserved external values. No runtime acceptance is inferred."
+    }
+  ]
+}

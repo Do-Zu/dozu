@@ -1,0 +1,12 @@
+{
+  "name": "package-links-fixed",
+  "command": [
+    "pnpm",
+    "package"
+  ],
+  "exitCode": 0,
+  "seconds": 100.828,
+  "capturedAtUtc": "2026-11-12T15:00:19.681198+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "package-links-fixed.log"
+}

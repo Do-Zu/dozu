@@ -1,0 +1,34 @@
+ WARN  using --force I sure hope you know what you are doing
+Scope: all 3 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1979
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1979, reused 1849, downloaded 0, added 10
+Progress: resolved 1979, reused 1849, downloaded 0, added 108
+Progress: resolved 1979, reused 1849, downloaded 0, added 333
+Progress: resolved 1979, reused 1849, downloaded 0, added 367
+Progress: resolved 1979, reused 1849, downloaded 0, added 448
+Progress: resolved 1979, reused 1849, downloaded 0, added 527
+Progress: resolved 1979, reused 1849, downloaded 0, added 607
+Progress: resolved 1979, reused 1849, downloaded 0, added 620
+Progress: resolved 1979, reused 1849, downloaded 0, added 751
+Progress: resolved 1979, reused 1849, downloaded 0, added 893
+Progress: resolved 1979, reused 1849, downloaded 0, added 1004
+Progress: resolved 1979, reused 1849, downloaded 0, added 1087
+Progress: resolved 1979, reused 1849, downloaded 0, added 1225
+Progress: resolved 1979, reused 1849, downloaded 0, added 1317
+Progress: resolved 1979, reused 1849, downloaded 0, added 1399
+Progress: resolved 1979, reused 1849, downloaded 0, added 1483
+Progress: resolved 1979, reused 1849, downloaded 0, added 1571
+Progress: resolved 1979, reused 1849, downloaded 0, added 1583
+Progress: resolved 1979, reused 1849, downloaded 0, added 1584
+Progress: resolved 1979, reused 1849, downloaded 0, added 1650
+Progress: resolved 1979, reused 1849, downloaded 0, added 1744
+Progress: resolved 1979, reused 1849, downloaded 0, added 1770
+Progress: resolved 1979, reused 1849, downloaded 0, added 1817
+Progress: resolved 1979, reused 1849, downloaded 0, added 1855
+Progress: resolved 1979, reused 1849, downloaded 0, added 1856
+Progress: resolved 1979, reused 1849, downloaded 0, added 1858, done
+
+Done in 28.1s using pnpm v10.28.2

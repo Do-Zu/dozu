@@ -1,0 +1,244 @@
+{
+  "sourceHistoryUnchanged": true,
+  "originalTrackedTreesClean": true,
+  "secretScanScope": "All imported HEAD bytes, known provider/private-key/JWT/credential-URL patterns; no historical blobs or dotenv read. Heuristics are not a complete secret guarantee.",
+  "allImportedKnownPatternFindings": [],
+  "additionalQuotedAssignmentReview": [
+    "apps/web/src/utils/constants/routes.ts"
+  ],
+  "repositories": [
+    {
+      "source": "dozu-ui-service",
+      "target": "apps/web",
+      "trackedFiles": 1228,
+      "importedFiles": 1226,
+      "excludedFiles": 2,
+      "completePathCoverage": true,
+      "pageCount": 84,
+      "layoutCount": 20,
+      "exactByteParityExceptSanitation": true,
+      "sourceModesPreservedInManifest": true,
+      "executablePaths": [
+        ".husky/pre-commit"
+      ],
+      "guidancePaths": [
+        ".claude/skills/agent-browser/SKILL.md",
+        ".github/skills/implement-workflow/SKILL.md",
+        ".claude/skills/react-best-practices/rules/bundle-barrel-imports.md",
+        ".claude/skills/react-best-practices/rules/js-batch-dom-css.md",
+        ".claude/skills/react-best-practices/rules/rendering-activity.md",
+        ".claude/skills/react-best-practices/rules/js-length-check-first.md",
+        ".claude/skills/react-best-practices/rules/js-combine-iterations.md",
+        ".github/workflows/dozu-pipeline-release.yml",
+        ".claude/skills/start-project/SKILL.md",
+        ".claude/skills/react-best-practices/rules/server-parallel-fetching.md",
+        ".claude/skills/react-best-practices/rules/rerender-lazy-state-init.md",
+        ".claude/skills/react-best-practices/rules/rendering-animate-svg-wrapper.md",
+        ".claude/skills/react-best-practices/rules/rerender-transitions.md",
+        ".claude/skills/react-best-practices/rules/advanced-event-handler-refs.md",
+        ".claude/skills/react-best-practices/rules/rerender-dependencies.md",
+        ".claude/skills/react-best-practices/rules/rendering-svg-precision.md",
+        ".claude/skills/react-best-practices/rules/js-cache-property-access.md",
+        ".github/copilot-instructions.md",
+        ".github/ISSUE_TEMPLATE/bug.yml",
+        ".claude/skills/react-best-practices/rules/rerender-memo.md",
+        ".claude/skills/react-best-practices/rules/async-defer-await.md",
+        ".claude/skills/e2e-testing/SKILL.md",
+        ".claude/skills/react-best-practices/rules/rendering-hoist-jsx.md",
+        ".claude/skills/react-best-practices/rules/async-api-routes.md",
+        ".claude/skills/react-best-practices/rules/rendering-conditional-render.md",
+        ".claude/skills/react-best-practices/rules/rerender-derived-state.md",
+        ".github/workflows/dozu-pipeline-staging.yml",
+        ".github/workflows/sonarqube.yml",
+        ".claude/skills/react-best-practices/AGENTS.md",
+        ".claude/skills/react-best-practices/rules/js-set-map-lookups.md",
+        ".claude/skills/react-best-practices/rules/js-index-maps.md",
+        ".claude/skills/react-best-practices/rules/bundle-conditional.md",
+        ".claude/skills/react-best-practices/rules/async-parallel.md",
+        ".claude/skills/react-best-practices/rules/bundle-defer-third-party.md",
+        ".claude/skills/react-best-practices/rules/bundle-dynamic-imports.md",
+        ".claude/skills/react-best-practices/rules/js-tosorted-immutable.md",
+        ".claude/skills/react-best-practices/rules/advanced-use-latest.md",
+        ".claude/skills/react-best-practices/rules/rendering-hydration-no-flicker.md",
+        ".claude/skills/react-best-practices/rules/js-hoist-regexp.md",
+        ".claude/skills/react-best-practices/rules/server-after-nonblocking.md",
+        ".claude/skills/react-best-practices/rules/js-min-max-loop.md",
+        ".claude/skills/react-best-practices/rules/rerender-functional-setstate.md",
+        ".claude/skills/react-best-practices/rules/server-cache-react.md",
+        ".github/workflows/eslint.yml",
+        ".claude/skills/react-best-practices/rules/js-cache-storage.md",
+        ".claude/skills/react-best-practices/rules/client-swr-dedup.md",
+        ".claude/skills/react-best-practices/rules/server-cache-lru.md",
+        ".claude/skills/react-best-practices/rules/bundle-preload.md",
+        ".claude/skills/react-best-practices/rules/js-early-exit.md",
+        ".claude/skills/react-best-practices/rules/rendering-content-visibility.md",
+        ".claude/skills/react-best-practices/rules/server-serialization.md",
+        ".claude/skills/react-best-practices/rules/async-suspense-boundaries.md",
+        ".claude/skills/react-best-practices/rules/client-passive-event-listeners.md",
+        ".claude/skills/react-best-practices/rules/js-cache-function-results.md",
+        ".claude/skills/react-best-practices/rules/async-dependencies.md",
+        ".claude/skills/web-interface-guidelines/SKILL.md",
+        ".claude/skills/react-best-practices/rules/client-event-listeners.md",
+        ".github/workflows/dozu-pipeline.yml",
+        ".claude/skills/react-best-practices/SKILL.md",
+        "AGENTS.md",
+        ".claude/skills/react-best-practices/rules/client-localstorage-schema.md",
+        ".claude/skills/react-best-practices/rules/rerender-defer-reads.md"
+      ],
+      "sanitationPaths": [
+        "src/app/[locale]/auth/testBackEnd/page.tsx"
+      ]
+    },
+    {
+      "source": "dozu-api-service",
+      "target": "apps/api",
+      "trackedFiles": 640,
+      "importedFiles": 637,
+      "excludedFiles": 3,
+      "completePathCoverage": true,
+      "pageCount": 0,
+      "layoutCount": 0,
+      "exactByteParityExceptSanitation": true,
+      "sourceModesPreservedInManifest": true,
+      "executablePaths": [],
+      "guidancePaths": [
+        ".github/workflows/aws.docker-pull-source.yml",
+        ".github/skills/implement-workflow/SKILL.md",
+        ".github/skills/implement-guideline/SKILL.md",
+        ".github/workflows/aws.pipeline.yml",
+        ".github/workflows/sonarcloud.yml",
+        ".github/ISSUE_TEMPLATE/bug.yml",
+        ".github/workflows/vietnix.dockerhub.pipeline.yml",
+        ".github/workflows/eslint.yml",
+        ".github/workflows/selector.pipeline.yml",
+        ".github/workflows/vercel.pipeline.yml",
+        ".github/workflows/aws.docker-hub.pipeline.yml",
+        "AGENTS.md"
+      ],
+      "sanitationPaths": [
+        "containers/database/postgres/README.md"
+      ]
+    },
+    {
+      "source": "dozu-embedding-service",
+      "target": "services/embedding",
+      "trackedFiles": 36,
+      "importedFiles": 36,
+      "excludedFiles": 0,
+      "completePathCoverage": true,
+      "pageCount": 0,
+      "layoutCount": 0,
+      "exactByteParityExceptSanitation": true,
+      "sourceModesPreservedInManifest": true,
+      "executablePaths": [],
+      "guidancePaths": [
+        ".github/workflows/vietnix-dockerhub.pipeline.yml"
+      ],
+      "sanitationPaths": []
+    }
+  ],
+  "legacyMigrations": [
+    {
+      "source": "dozu-api-service/drizzle/0000_ambiguous_white_tiger.sql",
+      "archive": "planning/source-import/legacy-migrations/0000_ambiguous_white_tiger.sql",
+      "sha256": "cb4a2767f39c247f1aae9cee74ebbc84a4c662b9491f14014c4e34519a902efb"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0001_orange_joshua_kane.sql",
+      "archive": "planning/source-import/legacy-migrations/0001_orange_joshua_kane.sql",
+      "sha256": "33a69a9487343c7a5462d2c2ad78573eeab61e959bbbf95606c4313999abf4b0"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0002_feature_usage_period_unique.sql",
+      "archive": "planning/source-import/legacy-migrations/0002_feature_usage_period_unique.sql",
+      "sha256": "636e7d858e99733ce417729e2b513a2ae87d952b9a0393d6cf567a7969d32293"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0002_tiresome_rockslide.sql",
+      "archive": "planning/source-import/legacy-migrations/0002_tiresome_rockslide.sql",
+      "sha256": "022994a1a69d7bcb6fe72a85ad1da577c2d802285c9c1005ceffe9c9b90183a5"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0003_wealthy_hellcat.sql",
+      "archive": "planning/source-import/legacy-migrations/0003_wealthy_hellcat.sql",
+      "sha256": "0262ed06c8621f4c0401c39e6bd2486e788f6f3c20f8ec14eb255e4a6e7a7062"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0004_clean_human_fly.sql",
+      "archive": "planning/source-import/legacy-migrations/0004_clean_human_fly.sql",
+      "sha256": "85691b918f5981c742f473761a1ad6dc01b2bca0e24df8189081fc85da2b5863"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0005_acoustic_the_phantom.sql",
+      "archive": "planning/source-import/legacy-migrations/0005_acoustic_the_phantom.sql",
+      "sha256": "074d6c238cb16ac4a5ebc1b686833255fe9ef054ce55951494e5881b6a460f71"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0007_superb_quasimodo.sql",
+      "archive": "planning/source-import/legacy-migrations/0007_superb_quasimodo.sql",
+      "sha256": "37fad5193e4113d7fe310af855b0feeed55c83850868dddfdd89aa379ecc12be"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0008_remarkable_invaders.sql",
+      "archive": "planning/source-import/legacy-migrations/0008_remarkable_invaders.sql",
+      "sha256": "dbf4af083da155adc486451ea0bf9ad973c734dddaed43b3523fda08a1ec13a0"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0009_pale_changeling.sql",
+      "archive": "planning/source-import/legacy-migrations/0009_pale_changeling.sql",
+      "sha256": "22083ee0d3147735870383a66659851af4d00b6971f94a38ab1b59199ba0fb59"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0010_sudden_lady_mastermind.sql",
+      "archive": "planning/source-import/legacy-migrations/0010_sudden_lady_mastermind.sql",
+      "sha256": "111e7d3d02046dfe9f78887931df9f14fcfa13c9d2191298c4463a7d5227f44f"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0011_amused_betty_brant.sql",
+      "archive": "planning/source-import/legacy-migrations/0011_amused_betty_brant.sql",
+      "sha256": "123c6bd007ddb520cd74f2ccdb7350e4a13abe1185687016700971cdf437dd8f"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0012_rainy_slayback.sql",
+      "archive": "planning/source-import/legacy-migrations/0012_rainy_slayback.sql",
+      "sha256": "212cc5c8ac54be48ef23ce3b689c0d9642e3856c5792aa05dd2d4dfafaac99eb"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0013_numerous_big_bertha.sql",
+      "archive": "planning/source-import/legacy-migrations/0013_numerous_big_bertha.sql",
+      "sha256": "c991b11e96543e4f89dbf7e4b32190cc267a9f4dbb98350fa3e2e003a7722162"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0014_warm_lord_tyger.sql",
+      "archive": "planning/source-import/legacy-migrations/0014_warm_lord_tyger.sql",
+      "sha256": "3a6d49ed8fa57a0c01fddbd65fdfa4e41cdace6eb3b16190f3822b964cd739c1"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0015_acoustic_hellcat.sql",
+      "archive": "planning/source-import/legacy-migrations/0015_acoustic_hellcat.sql",
+      "sha256": "7073a679bb404eae642920b7873295f5ebd179083210db0c24d4131d629e905b"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0016_flaky_mandarin.sql",
+      "archive": "planning/source-import/legacy-migrations/0016_flaky_mandarin.sql",
+      "sha256": "19f107b9d40d2d6b32391d13355b23e9d7852672e813a193d5683b63100e5e61"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0017_glossy_roland_deschain.sql",
+      "archive": "planning/source-import/legacy-migrations/0017_glossy_roland_deschain.sql",
+      "sha256": "1ebfc3e42a1909c5446110487d772d3ba2f809afef1bd47146dc8001188f748d"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0018_unknown_mongu.sql",
+      "archive": "planning/source-import/legacy-migrations/0018_unknown_mongu.sql",
+      "sha256": "9554c3d4b3d877af48da965e97f484e0ddd7c3129e7766e657cef4874dac86e4"
+    },
+    {
+      "source": "dozu-api-service/drizzle/0019_sparkling_lethal_legion.sql",
+      "archive": "planning/source-import/legacy-migrations/0019_sparkling_lethal_legion.sql",
+      "sha256": "3d710a0fb261555740acaaa6b20bca5a9c1726a4a241f104b98257a866ea4ceb"
+    }
+  ],
+  "legacyMigrationsActive": false,
+  "publicRedistributionCleared": false
+}

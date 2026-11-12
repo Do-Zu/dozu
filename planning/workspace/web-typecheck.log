@@ -1,0 +1,23 @@
+
+> dozu-ui-service@0.1.0 typecheck D:\product\dozu\apps\web
+> tsc --noEmit
+
+src/app/[locale]/admin/features/components/CreateFeatureDialog.tsx(170,51): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/llm-api-keys/components/CreateEditLlmApiKeyDialog.tsx(332,47): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/llm-models/components/CreateEditLlmModelDialog.tsx(300,51): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/llm-models/components/CreateEditLlmModelDialog.tsx(311,51): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/llm-providers/components/CreateEditLlmProviderDialog.tsx(209,51): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/llm-providers/components/CreateEditLlmProviderDialog.tsx(220,51): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/plans/[planId]/features/components/AssignFeatureDialog.tsx(134,51): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/plans/[planId]/features/components/AssignFeatureDialog.tsx(159,55): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/plans/[planId]/features/components/AssignFeatureDialog.tsx(192,51): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/admin/plans/components/CreatePlanDialog.tsx(172,47): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/games/brain-chase/components/Setting.tsx(226,31): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/app/[locale]/topics/[topicId]/(topic)/components/material/media/video/VideoPlayer.tsx(14,8): error TS2307: Cannot find module 'media-chrome/react' or its corresponding type declarations.
+src/app/[locale]/topics/[topicId]/(topic)/components/note/ParagraphWithReference.ts(1,27): error TS2307: Cannot find module '@tiptap/extension-paragraph' or its corresponding type declarations.
+src/app/[locale]/topics/[topicId]/(topic)/media/core/youtube/YoutubePlayerAdapter.ts(20,9): error TS2322: Type 'Promise<number>' is not assignable to type 'number'.
+src/components/feynman/FeynmanEditor.tsx(36,35): error TS2307: Cannot find module '@tiptap/core' or its corresponding type declarations.
+src/components/ui/switch.tsx(4,35): error TS2307: Cannot find module '@radix-ui/react-switch' or its corresponding type declarations.
+D:\product\dozu\apps\web:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  dozu-ui-service@0.1.0 typecheck: `tsc --noEmit`
+Exit status 2

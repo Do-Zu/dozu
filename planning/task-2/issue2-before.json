@@ -1,0 +1,45 @@
+{
+  "url": "https://github.com/Do-Zu/dozu/issues/2",
+  "title": "[Ticket] Record local-first requirements and full feature-preservation matrix",
+  "issue_number": 2,
+  "body": "<!-- dozu-tracking:start -->\n## Work tracking\nUse the live **status:**, **priority:** and **complexity:** labels above; **Assignees** identifies the owner. These labels are separate from the task/ticket type.\n\n**Planning complexity:** M - Requirements and a complete role/route matrix; bounded documentation with product decisions.\nComplexity is a provisional scope/uncertainty estimate, not a delivery-time commitment. XL work must be split into executable subtasks before starting.\n**Planning priority:** P0 - Architecture/foundation work that unblocks the implementation path.\n<!-- dozu-tracking:end -->\n\n## Outcome\nRecord the now-fixed local-first architecture, full UI scope and supported platform matrix. Internet-enabled integrations remain in scope; do not reopen online-first versus offline-only as the architecture choice.\n\n## Acceptance criteria\n- [ ] Record local frontend/backend/database/files, optional internet APIs, no required central application server/cloud DB/sync and self-contained install as mandatory.\n- [ ] Build a per-route/role/locale/feature matrix from all 84 current page entrypoints, 20 layouts, 164 shared TSX components and route-scoped code; update counts if sources change.\n- [ ] Include all admin, teacher/student, payment/history, auth, generation, media, games, study, schedule/settings and navigation flows; no silent omissions.\n- [ ] Agree OS minimum versions, CPU architectures, Linux distro baseline, installer types and resource budgets.\n- [ ] Record public callback/shared-secret/classroom topology decisions under INTEGRATIONS; preserve actual external functionality wherever feasible.\n\n## Architecture constraints\nThe complete existing Next.js UI and Express backend run locally with a local database/files. Desktop and local browser use the same localhost backend. Real third-party integrations may use the internet; preserve them wherever feasible. No central Dozu backend, cloud database, synchronization, shared publisher secrets in installers, or simulated replacements. All pages/features remain in release scope.\n\n<!-- dozu-roadmap:DECISION-SCOPE -->\n\nPhase: 0 Requirements | Priority: P0\n\nParent roadmap: https://github.com/Do-Zu/dozu/issues/1\n\n## Dependencies\nNone; this work can start independently.\n",
+  "state": "open",
+  "user": {
+    "login": "perinst",
+    "name": "perinst",
+    "email": null,
+    "avatar_url": "https://avatars.githubusercontent.com/u/193695143?v=4",
+    "id": 193695143
+  },
+  "assignees": null,
+  "labels": [
+    {
+      "name": "ticket",
+      "color": "5319E7",
+      "description": "Delivery tracker or architecture/product decision"
+    },
+    {
+      "name": "status:ready",
+      "color": "0E8A16",
+      "description": "Prerequisites complete; available to start"
+    },
+    {
+      "name": "priority:P0",
+      "color": "B60205",
+      "description": "Highest current priority: architecture and foundation unblockers"
+    },
+    {
+      "name": "complexity:M",
+      "color": "0075CA",
+      "description": "Moderate scope, several modules or bounded validation"
+    }
+  ],
+  "milestone": null,
+  "state_reason": null,
+  "comments": 1,
+  "created_at": "2026-11-09T10:20:16Z",
+  "updated_at": "2026-11-09T13:12:37Z",
+  "closed_at": null,
+  "display_url": "https://github.com/Do-Zu/dozu/issues/2",
+  "display_title": "[Ticket] Record local-first requirements and full feature-preservation matrix"
+}

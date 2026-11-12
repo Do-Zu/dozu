@@ -1,0 +1,25 @@
+{
+  "utc": "2026-11-10T14:26:48.3447562Z",
+  "postgresOnPath": false,
+  "migrationState": "20 ignored local SQL migrations inventoried in audit; no cluster/migrations/seeds/vector writes executed by this proof.",
+  "requests": [
+    {
+      "url": "https://get.enterprisedb.com/postgresql/postgresql-17.11-3-windows-x64-binaries.zip",
+      "error": "Response status code does not indicate success: 403 (Forbidden).",
+      "httpStatus": 403
+    },
+    {
+      "url": "https://sbp.enterprisedb.com/getfile.jsp?fileid=1260491",
+      "error": "Response status code does not indicate success: 403 (Forbidden).",
+      "httpStatus": 403
+    }
+  ],
+  "references": [
+    "https://www.postgresql.org/download/windows/",
+    "https://www.enterprisedb.com/download-postgresql-binaries",
+    "https://github.com/pgvector/pgvector#installation"
+  ],
+  "result": "Native PostgreSQL/pgvector execution not performed: no existing portable binary; official EDB archive requests denied. C++ build tools are available for a later pinned pgvector build after obtaining a verified PostgreSQL distribution.",
+  "cppBuildTools": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community",
+  "standardPostgresDirectory": false
+}

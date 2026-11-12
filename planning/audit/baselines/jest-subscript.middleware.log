@@ -1,0 +1,618 @@
+2026-11-09 18:23:39:2339 [33mwarn[39m: [33mEnvironment file .env.development not found, using default values[39m
+2026-11-09 18:23:39:2339 [33mwarn[39m: [33mMissing required environment variables: PORT, HOST[39m
+2026-11-09 18:23:39:2339 [33mwarn[39m: [33mALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.[39m
+2026-11-09 18:23:40:2340 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+FAIL src/middleware/subscription/__test__/subscript.middleware.test.ts (9.135 s)
+  SubscriptionMiddleware
+    handleSubscription
+      Time validation
+        × should throw Forbidden when client time is too far from server time (27 ms)
+        × should not throw when client and server time difference is within allowed boundary (1 ms)
+      Feature validation
+        × should throw BadRequest when featureId is missing (2 ms)
+      User plan validation
+        × should throw NotFoundError when user plan is not found (1 ms)
+        × should throw NotFoundError when plan is empty (1 ms)
+        × should throw NotFoundError when subscription is empty (1 ms)
+      Subscription expiration handling
+        × should downgrade plan when non-free plan is expired
+        × should renew subscription when free plan is expired (1 ms)
+        × should throw InternalServerError when renewal fails (1 ms)
+        × should handle subscription with EXPIRED status
+      Feature limit check
+        × should call next() when boolean feature is enabled (1 ms)
+        × should throw PaymentRequire when boolean feature is disabled (1 ms)
+        × should call next() when usage feature is within limit
+        × should throw PaymentRequire when usage feature exceeds limit (5 ms)
+        × should throw InternalServerError when usage feature has no numeric value (2 ms)
+        × should throw InternalServerError when usage feature has zero or negative limit (2 ms)
+        × should throw InternalServerError when usage feature has negative limit (2 ms)
+        × should return !isEnabled for unknown feature types (2 ms)
+        × should call next() for unknown feature types when isEnabled is true
+      Different intervals for usage features
+        × should handle daily interval correctly (1 ms)
+        × should handle weekly interval correctly
+        × should handle monthly interval correctly
+        × should handle yearly interval correctly
+    handleDowngradePlan
+      × should throw InternalServerError when downgrade fails (1 ms)
+    Edge cases
+      × should handle request with boundary time difference (exactly 60 seconds)
+      √ should handle request with time difference just over boundary (61 seconds) (1 ms)
+      × should handle feature with decimal numeric value
+      × should handle quota feature type like boolean
+      × should handle text feature type like boolean
+
+  ● SubscriptionMiddleware › handleSubscription › Time validation › should throw Forbidden when client time is too far from server time
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected substring: "client time is too far from server time"
+    Received message:   "Client time is too far from server time. Please check your device clock."
+
+        [0m [90m 33 |[39m
+         [90m 34 |[39m         [36mif[39m ([36mthis[39m[33m.[39misTimeDifferenceExceeded(timeDifference)) {
+        [31m[1m>[22m[39m[90m 35 |[39m             [36mthrow[39m [36mnew[39m [33mForbidden[39m([33mERROR_MESSAGES[39m[33m.[39m[33mCLIENT_TIME_MISMATCH[39m)[33m;[39m
+         [90m    |[39m                   [31m[1m^[22m[39m
+         [90m 36 |[39m         }
+         [90m 37 |[39m     }
+         [90m 38 |[39m[0m
+
+      at TimeValidator.validateClientServerTime (src/middleware/subscription/validators/time.validator.ts:35:19)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:30:23)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:148:44)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:149:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Time validation › should not throw when client and server time difference is within allowed boundary
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:176:17)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature validation › should throw BadRequest when featureId is missing
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: BadRequest
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:186:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:188:27)
+
+  ● SubscriptionMiddleware › handleSubscription › User plan validation › should throw NotFoundError when user plan is not found
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: NotFoundError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:201:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:203:27)
+
+  ● SubscriptionMiddleware › handleSubscription › User plan validation › should throw NotFoundError when plan is empty
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: NotFoundError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:217:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:219:27)
+
+  ● SubscriptionMiddleware › handleSubscription › User plan validation › should throw NotFoundError when subscription is empty
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: NotFoundError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:229:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:231:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Subscription expiration handling › should downgrade plan when non-free plan is expired
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:271:17)
+
+  ● SubscriptionMiddleware › handleSubscription › Subscription expiration handling › should renew subscription when free plan is expired
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:307:17)
+
+  ● SubscriptionMiddleware › handleSubscription › Subscription expiration handling › should throw InternalServerError when renewal fails
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: InternalServerError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:333:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:335:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Subscription expiration handling › should handle subscription with EXPIRED status
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:373:17)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should call next() when boolean feature is enabled
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:399:17)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should throw PaymentRequire when boolean feature is disabled
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: PaymentRequire
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:410:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:412:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should call next() when usage feature is within limit
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:428:17)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should throw PaymentRequire when usage feature exceeds limit
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: PaymentRequire
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:457:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:459:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should throw InternalServerError when usage feature has no numeric value
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: InternalServerError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:474:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:476:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should throw InternalServerError when usage feature has zero or negative limit
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: InternalServerError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:491:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:493:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should throw InternalServerError when usage feature has negative limit
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: InternalServerError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:508:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:510:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should return !isEnabled for unknown feature types
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: PaymentRequire
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:519:17)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:521:27)
+
+  ● SubscriptionMiddleware › handleSubscription › Feature limit check › should call next() for unknown feature types when isEnabled is true
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:530:17)
+
+  ● SubscriptionMiddleware › handleSubscription › Different intervals for usage features › should handle daily interval correctly
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at src/middleware/subscription/__test__/subscript.middleware.test.ts:562:17
+
+  ● SubscriptionMiddleware › handleSubscription › Different intervals for usage features › should handle weekly interval correctly
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at src/middleware/subscription/__test__/subscript.middleware.test.ts:562:17
+
+  ● SubscriptionMiddleware › handleSubscription › Different intervals for usage features › should handle monthly interval correctly
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at src/middleware/subscription/__test__/subscript.middleware.test.ts:562:17
+
+  ● SubscriptionMiddleware › handleSubscription › Different intervals for usage features › should handle yearly interval correctly
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at src/middleware/subscription/__test__/subscript.middleware.test.ts:562:17
+
+  ● SubscriptionMiddleware › handleDowngradePlan › should throw InternalServerError when downgrade fails
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected constructor: InternalServerError
+    Received constructor: TypeError
+
+    Received message: "(0 , common_1.isEmpty) is not a function"
+
+        [0m [90m 54 |[39m [90m     */[39m
+         [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+        [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+         [90m    |[39m                    [31m[1m^[22m[39m
+         [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+         [90m 58 |[39m         }
+         [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:594:13)
+      at Object.toThrow (../../../../dozu-api-service/node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:596:23)
+
+  ● SubscriptionMiddleware › Edge cases › should handle request with boundary time difference (exactly 60 seconds)
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:634:13)
+
+  ● SubscriptionMiddleware › Edge cases › should handle feature with decimal numeric value
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:678:13)
+
+  ● SubscriptionMiddleware › Edge cases › should handle quota feature type like boolean
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:704:13)
+
+  ● SubscriptionMiddleware › Edge cases › should handle text feature type like boolean
+
+    TypeError: (0 , common_1.isEmpty) is not a function
+
+    [0m [90m 54 |[39m [90m     */[39m
+     [90m 55 |[39m     [36mprivate[39m validatePlanExists(plan[33m:[39m unknown[33m,[39m subscription[33m:[39m unknown)[33m:[39m [36mvoid[39m {
+    [31m[1m>[22m[39m[90m 56 |[39m         [36mif[39m (isEmpty(plan) [33m||[39m isEmpty(subscription)) {
+     [90m    |[39m                    [31m[1m^[22m[39m
+     [90m 57 |[39m             [36mthrow[39m [36mnew[39m [33mNotFoundError[39m([33mERROR_MESSAGES[39m[33m.[39m[33mUSER_PLAN_NOT_FOUND[39m)[33m;[39m
+     [90m 58 |[39m         }
+     [90m 59 |[39m     }[0m
+
+      at SubscriptionValidator.validatePlanExists (src/middleware/subscription/validators/subscription.validator.ts:56:20)
+      at SubscriptionValidator.getValidatedUserPlan (src/middleware/subscription/validators/subscription.validator.ts:29:14)
+      at SubscriptionMiddleware.handleSubscription (src/middleware/subscription/subscript.middleware.ts:33:40)
+      at Object.<anonymous> (src/middleware/subscription/__test__/subscript.middleware.test.ts:726:13)
+
+Test Suites: 1 failed, 1 total
+Tests:       28 failed, 1 passed, 29 total
+Snapshots:   0 total
+Time:        9.398 s
+Ran all test suites within paths "D:\product\dozu\planning\audit\.runs\dozu-api-service\src\middleware\subscription\__test__\subscript.middleware.test.ts".
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

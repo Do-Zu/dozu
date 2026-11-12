@@ -1,0 +1,91 @@
+[
+  {
+    "check": "ui-lint",
+    "command": [
+      "C:\\nvm4w\\nodejs\\node.EXE",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-ui-service\\node_modules\\next\\dist\\bin\\next",
+      "lint"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-ui-service",
+    "exitCode": 1,
+    "seconds": 116.97,
+    "log": "baselines/ui-lint.log"
+  },
+  {
+    "check": "ui-build",
+    "command": [
+      "C:\\nvm4w\\nodejs\\node.EXE",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-ui-service\\node_modules\\next\\dist\\bin\\next",
+      "build"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-ui-service",
+    "exitCode": 1,
+    "seconds": 180.47,
+    "log": "baselines/ui-build.log"
+  },
+  {
+    "check": "embedding-startup",
+    "command": [
+      "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Scripts\\python.exe",
+      "-c",
+      "from src.app.main import app; from src.app.core.model_manager import model_manager; model_manager.load_model(); print(model_manager.get_health_info())"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-embedding-service",
+    "exitCode": 1,
+    "seconds": 39.27,
+    "log": "baselines/embedding-startup.log"
+  },
+  {
+    "check": "api-typecheck",
+    "command": [
+      "C:\\nvm4w\\nodejs\\node.EXE",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 0,
+    "seconds": 14.91,
+    "log": "baselines/api-typecheck.log"
+  },
+  {
+    "check": "api-lint",
+    "command": [
+      "C:\\nvm4w\\nodejs\\node.EXE",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\eslint\\bin\\eslint.js",
+      "."
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 1,
+    "seconds": 10.34,
+    "log": "baselines/api-lint.log"
+  },
+  {
+    "check": "api-jest",
+    "command": [
+      "C:\\nvm4w\\nodejs\\node.EXE",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 1,
+    "seconds": 35.47,
+    "log": "baselines/api-jest.log"
+  },
+  {
+    "check": "embedding-contract",
+    "command": [
+      "D:/product/dozu/dozu-embedding-service/.venv/Scripts/python.exe",
+      "D:/product/dozu/planning/audit/embedding-contract.py"
+    ],
+    "cwd": "planning/audit/.runs/dozu-embedding-service",
+    "exitCode": 1,
+    "seconds": 7.69,
+    "log": "baselines/embedding-contract.log",
+    "profile": "HF offline; local cached snapshot 86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d; OMP/MKL threads=2; actual loopback HTTP; only observed contract mismatch is batch response HTTP500"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "repo": "dozu-ui-service",
+    "origin": "https://github.com/perinst/dozu-ui-service.git",
+    "commit": "5e1ceb263a29e2fde2359c36f43d0118a8d622f0",
+    "branch": "feature/markable-content",
+    "dirty": "",
+    "trackedFiles": 1228,
+    "ignoredAuditPaths": [],
+    "trackedEnvPaths": [
+      ".env.local"
+    ],
+    "licensePaths": []
+  },
+  {
+    "repo": "dozu-api-service",
+    "origin": "https://github.com/perinst/dozu-api-service.git",
+    "commit": "173f3f1cbcc81b89ad3eea81723698f7bb7eb876",
+    "branch": "feature/markable-content",
+    "dirty": "",
+    "trackedFiles": 640,
+    "ignoredAuditPaths": [
+      "drizzle/0000_ambiguous_white_tiger.sql",
+      "drizzle/0001_orange_joshua_kane.sql",
+      "drizzle/0002_feature_usage_period_unique.sql",
+      "drizzle/0002_tiresome_rockslide.sql",
+      "drizzle/0003_wealthy_hellcat.sql",
+      "drizzle/0004_clean_human_fly.sql",
+      "drizzle/0005_acoustic_the_phantom.sql",
+      "drizzle/0007_superb_quasimodo.sql",
+      "drizzle/0008_remarkable_invaders.sql",
+      "drizzle/0009_pale_changeling.sql",
+      "drizzle/0010_sudden_lady_mastermind.sql",
+      "drizzle/0011_amused_betty_brant.sql",
+      "drizzle/0012_rainy_slayback.sql",
+      "drizzle/0013_numerous_big_bertha.sql",
+      "drizzle/0014_warm_lord_tyger.sql",
+      "drizzle/0015_acoustic_hellcat.sql",
+      "drizzle/0016_flaky_mandarin.sql",
+      "drizzle/0017_glossy_roland_deschain.sql",
+      "drizzle/0018_unknown_mongu.sql",
+      "drizzle/0019_sparkling_lethal_legion.sql",
+      "drizzle/meta/0001_snapshot.json",
+      "drizzle/meta/0002_snapshot.json",
+      "drizzle/meta/0003_snapshot.json",
+      "drizzle/meta/0004_snapshot.json",
+      "drizzle/meta/0005_snapshot.json",
+      "drizzle/meta/0007_snapshot.json",
+      "drizzle/meta/0008_snapshot.json",
+      "drizzle/meta/0009_snapshot.json",
+      "drizzle/meta/0010_snapshot.json",
+      "drizzle/meta/0011_snapshot.json",
+      "drizzle/meta/0012_snapshot.json",
+      "drizzle/meta/0013_snapshot.json",
+      "drizzle/meta/0014_snapshot.json",
+      "drizzle/meta/0015_snapshot.json",
+      "drizzle/meta/0016_snapshot.json",
+      "drizzle/meta/0017_snapshot.json",
+      "drizzle/meta/0018_snapshot.json",
+      "drizzle/meta/0019_snapshot.json",
+      "drizzle/meta/_journal.json"
+    ],
+    "trackedEnvPaths": [
+      ".env.local",
+      ".env.production"
+    ],
+    "licensePaths": [
+      "LICENSE"
+    ]
+  },
+  {
+    "repo": "dozu-embedding-service",
+    "origin": "https://github.com/perinst/dozu-embedding-service.git",
+    "commit": "188d0d229a38ee51f48f1e5d5f06cf69f16870c6",
+    "branch": "migrate/structure",
+    "dirty": "",
+    "trackedFiles": 36,
+    "ignoredAuditPaths": [],
+    "trackedEnvPaths": [],
+    "licensePaths": []
+  }
+]

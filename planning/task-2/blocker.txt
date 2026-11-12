@@ -1,0 +1,1 @@
+User decisions are required for minimum OS/CPU/Linux support, installer formats and resource budgets, plus merchant ownership (#41) and classroom topology (#43) recorded under #27. No agreement has been supplied. Requirements and the source-backed feature matrix are complete; runtime parity is unverified.

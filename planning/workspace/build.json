@@ -1,0 +1,12 @@
+{
+  "name": "build",
+  "command": [
+    "pnpm",
+    "build"
+  ],
+  "exitCode": 1,
+  "seconds": 32.032,
+  "capturedAtUtc": "2026-11-12T14:52:01.774377+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "build.log"
+}

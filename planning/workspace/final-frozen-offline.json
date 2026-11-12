@@ -1,0 +1,16 @@
+{
+  "name": "final-frozen-offline",
+  "command": [
+    "pnpm",
+    "install",
+    "--frozen-lockfile",
+    "--ignore-scripts",
+    "--offline",
+    "--reporter=append-only"
+  ],
+  "exitCode": 0,
+  "seconds": 1.781,
+  "capturedAtUtc": "2026-11-12T15:06:27.319310+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "final-frozen-offline.log"
+}

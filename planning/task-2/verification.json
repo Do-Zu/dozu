@@ -1,0 +1,16 @@
+{
+  "requirements.md": 8,
+  "feature-preservation.md": 90,
+  "platform-support.md": 0,
+  "integration-decisions.md": 1,
+  "issue2": {
+    "characters": 31867,
+    "checkedCriteria": 3
+  },
+  "issue27": {
+    "characters": 4626,
+    "checkedCriteria": 0
+  },
+  "auditEvidenceUnchanged": 41,
+  "status": "PASS"
+}

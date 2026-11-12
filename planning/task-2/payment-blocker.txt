@@ -1,0 +1,1 @@
+User explicitly deferred/skipped payment execution during the local migration on 2026-11-10. Keep payments blocked under #41 until the user explicitly reopens the feature and chooses merchant ownership/provider flow; no live charges or simulated success. Existing payment/history/admin page inventory is retained.

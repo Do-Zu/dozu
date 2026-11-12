@@ -1,0 +1,74 @@
+{"kind":"runtime","pid":26776,"versions":{"node":"24.22.2","acorn":"8.18.0","ada":"4.0.0","amaro":"1.1.11","ares":"1.34.9","brotli":"1.2.0","cldr":"48.0","icu":"78.2","llhttp":"9.4.3","merve":"1.2.2","modules":"150","napi":"10","nbytes":"0.1.4","ncrypto":"0.0.1","nghttp2":"1.70.0","nghttp3":"","ngtcp2":"","openssl":"0.0.0","simdjson":"4.6.11","simdutf":"7.7.0","sqlite":"3.53.4","tz":"2026e","undici":"7.30.1","unicode":"17.0","uv":"1.52.1","uvwasi":"0.0.23","v8":"15.6.75.27-electron.0","zlib":"1.3.2.1-motley","zstd":"1.6.0","electron":"45.2.3","chrome":"156.0.8078.80"},"argv":["D:\\product\\dozu\\planning\\architecture-proof\\.downloads\\electron\\electron.exe","D:\\product\\dozu\\planning\\architecture-proof\\utility-entry.cjs","D:\\product\\dozu\\planning\\architecture-proof\\.runs\\dozu-ui-service\\.next\\standalone\\server.js"]}
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:43000
+  - Network:      http://[::1]:43000
+
+ ✓ Starting...
+ ✓ Ready in 1022ms
+Error loading daily activities: ReferenceError: localStorage is not defined
+    at s.loadDailyActivities (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\8066.js:1:13442)
+    at new s (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\8066.js:1:11089)
+    at 59613 (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\8066.js:1:15052)
+    at t (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\webpack-runtime.js:1:128)
+    at 20886 (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\8066.js:1:452)
+    at t (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\webpack-runtime.js:1:128)
+    at 75251 (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\6464.js:1:24794)
+    at t (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\webpack-runtime.js:1:128)
+    at 56561 (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\6561.js:6:2174)
+    at t (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\webpack-runtime.js:1:128)
+ReferenceError: location is not defined
+    at D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\8985.js:1:498459
+    at D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\8985.js:1:500262
+    at t.startTransition (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109047)
+    at Object.push (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\chunks\8985.js:1:500250)
+    at D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\.next\server\app\[locale]\topics\[topicId]\(topic)\page.js:1:4474
+    at nj (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    ... collapsed 3 duplicate lines matching above lines ...
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nO (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46707)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47433)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:59103)
+    ... collapsed 10 duplicate lines matching above 5 lines 2 times...
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nO (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46707)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47433)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:59103)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61547)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+    at nM (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61157)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nB (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67539)
+    at nD (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66681)
+    at nL (D:\product\dozu\planning\architecture-proof\.runs\dozu-ui-service\.next\standalone\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64854)
+renderer: {"level":"warning","message":"Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security\n  Policy set or a policy with \"unsafe-eval\" enabled. This exposes users of\n  this app to unnecessary security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged."}
+ ⨯ Error: 'sharp' is required to be installed in standalone mode for the image optimization to function correctly. Read more at: https://nextjs.org/docs/messages/sharp-missing-in-production

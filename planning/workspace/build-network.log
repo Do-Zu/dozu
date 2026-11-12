@@ -1,0 +1,169 @@
+
+> dozu@0.0.0 build D:\product\dozu
+> turbo run build
+
+• Packages in scope: api-services, dozu-ui-service
+• Running build in 2 packages
+• Remote caching disabled
+dozu-ui-service:build: cache miss, executing 3602fbc0830b2bd9
+api-services:build: cache hit, replaying logs 083f24c4f8a1b05f
+api-services:build: 
+api-services:build: > api-services@0.0.1 prebuild D:\product\dozu\apps\api
+api-services:build: > npm run clean
+api-services:build: 
+api-services:build: 
+api-services:build: > api-services@0.0.1 clean
+api-services:build: > rimraf dist
+api-services:build: 
+api-services:build: 
+api-services:build: > api-services@0.0.1 build D:\product\dozu\apps\api
+api-services:build: > cross-env NODE_ENV=production tsc
+api-services:build: 
+dozu-ui-service:build: 
+dozu-ui-service:build: > dozu-ui-service@0.1.0 build D:\product\dozu\apps\web
+dozu-ui-service:build: > next build
+dozu-ui-service:build: 
+dozu-ui-service:build:   ▲ Next.js 14.2.35
+dozu-ui-service:build:   - Experiments (use with caution):
+dozu-ui-service:build:     · outputFileTracingRoot
+dozu-ui-service:build: 
+dozu-ui-service:build:    Creating an optimized production build ...
+dozu-ui-service:build: Browserslist: caniuse-lite is outdated. Please run:
+dozu-ui-service:build:   npx update-browserslist-db@latest
+dozu-ui-service:build:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+dozu-ui-service:build: <w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|D:\product\dozu\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!D:\product\dozu\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!D:\product\dozu\apps\web\src\app\[locale]\topics\[topicId]\(topic)\components\note\style.css': No serializer registered for Warning
+dozu-ui-service:build: <w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> Array { 1 items } -> webpack/lib/ModuleWarning -> Warning
+dozu-ui-service:build:  ⚠ Compiled with warnings
+dozu-ui-service:build: 
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/components/note/style.css.webpack[javascript/auto]!=!../../node_modules/.pnpm/next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!../../node_modules/.pnpm/next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/[locale]/topics/[topicId]/(topic)/components/note/style.css
+dozu-ui-service:build: Warning
+dozu-ui-service:build: 
+dozu-ui-service:build: (47:5) Nested CSS was detected, but CSS nesting has not been configured correctly.
+dozu-ui-service:build: Please enable a CSS nesting plugin *before* Tailwind in your configuration.
+dozu-ui-service:build: See how here: https://tailwindcss.com/docs/using-with-preprocessors#nesting
+dozu-ui-service:build: 
+dozu-ui-service:build: Import trace for requested module:
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/components/note/style.css.webpack[javascript/auto]!=!../../node_modules/.pnpm/next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!../../node_modules/.pnpm/next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/[locale]/topics/[topicId]/(topic)/components/note/style.css
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/components/note/style.css
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/components/note/RichTextEditor.tsx
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/components/tabs/NoteTab.tsx
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/layout/config.layout.tsx
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/utils/topicWorkspace.utils.ts
+dozu-ui-service:build: ./src/app/[locale]/topics/[topicId]/(topic)/components/workspace/TopicWorkspace.tsx
+dozu-ui-service:build: ./src/app/[locale]/class-based/[id]/topics/[topicId]/page.tsx
+dozu-ui-service:build: 
+dozu-ui-service:build:  ✓ Compiled successfully
+dozu-ui-service:build:    Skipping linting
+dozu-ui-service:build:    Checking validity of types ...
+dozu-ui-service:build:    Collecting page data ...
+dozu-ui-service:build:    Generating static pages (0/4) ...
+dozu-ui-service:build:    Generating static pages (1/4) 
+dozu-ui-service:build:    Generating static pages (2/4) 
+dozu-ui-service:build:    Generating static pages (3/4) 
+dozu-ui-service:build:  ✓ Generating static pages (4/4)
+dozu-ui-service:build:    Finalizing page optimization ...
+dozu-ui-service:build:    Collecting build traces ...
+dozu-ui-service:build: 
+dozu-ui-service:build: Route (app)                                                                            Size     First Load JS
+dozu-ui-service:build: ┌ ○ /_not-found                                                                        159 B          89.2 kB
+dozu-ui-service:build: ├ ƒ /[locale]                                                                          4.49 kB         170 kB
+dozu-ui-service:build: ├ ƒ /[locale]/about                                                                    958 B           104 kB
+dozu-ui-service:build: ├ ƒ /[locale]/activities/join/[activityId]                                             8.18 kB         143 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin                                                                    5.73 kB         210 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/features                                                           6.82 kB         213 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/feedback                                                           6.63 kB         198 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/llm-api-key-models                                                 3.25 kB         213 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/llm-api-keys                                                       5.33 kB         215 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/llm-models                                                         6.16 kB         216 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/llm-providers                                                      5.8 kB          216 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/payments                                                           3.54 kB         188 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/plans                                                              7.03 kB         222 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/plans/[planId]/features                                            7.38 kB         222 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/revenue                                                            14.3 kB         198 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/stats                                                              3.84 kB         222 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/subscriptions                                                      7.2 kB          154 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/subscriptions/list                                                 2.46 kB         196 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/teacher-requests                                                   7.04 kB         156 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/teacher-requests/pending                                           8.81 kB         188 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/users                                                              3.03 kB         210 kB
+dozu-ui-service:build: ├ ƒ /[locale]/admin/users/[id]/oauth                                                   2.98 kB         153 kB
+dozu-ui-service:build: ├ ƒ /[locale]/auth/changePassword                                                      6.83 kB         172 kB
+dozu-ui-service:build: ├ ƒ /[locale]/auth/changePasswordEmailSent                                             1.59 kB         113 kB
+dozu-ui-service:build: ├ ƒ /[locale]/auth/forgotPassword                                                      4.7 kB          169 kB
+dozu-ui-service:build: ├ ƒ /[locale]/auth/login                                                               1.81 kB         170 kB
+dozu-ui-service:build: ├ ƒ /[locale]/auth/register                                                            2.3 kB          185 kB
+dozu-ui-service:build: ├ ƒ /[locale]/auth/testBackEnd                                                         530 B           128 kB
+dozu-ui-service:build: ├ ƒ /[locale]/auth/verifyEmail                                                         4.83 kB         171 kB
+dozu-ui-service:build: ├ ƒ /[locale]/blogs                                                                    159 B          89.2 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based                                                              2.48 kB         214 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]                                                         16.4 kB         283 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]/assignments/[assignmentId]/details                      7.9 kB          247 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]/class-quiz/[classQuizId]/history                        6.57 kB         141 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]/class-quiz/[classQuizId]/start                          6.15 kB         171 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]/class-quiz/[classQuizId]/submit                         6.09 kB         141 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]/learning-material/[learningMaterialId]/details          5.82 kB         238 kB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]/mindmap/[topicId]                                       1.47 kB        1.07 MB
+dozu-ui-service:build: ├ ƒ /[locale]/class-based/[id]/topics/[topicId]                                        577 B          1.55 MB
+dozu-ui-service:build: ├ ƒ /[locale]/feynman/[topicId]                                                        24.4 kB         358 kB
+dozu-ui-service:build: ├ ƒ /[locale]/games/brain-chase                                                        10.2 kB         210 kB
+dozu-ui-service:build: ├ ƒ /[locale]/games/memory-match                                                       11.6 kB         212 kB
+dozu-ui-service:build: ├ ƒ /[locale]/generate                                                                 2.82 kB         134 kB
+dozu-ui-service:build: ├ ƒ /[locale]/home                                                                     63.9 kB         353 kB
+dozu-ui-service:build: ├ ƒ /[locale]/mindmap/[topicId]                                                        14.2 kB        1.08 MB
+dozu-ui-service:build: ├ ƒ /[locale]/mindmap/add-flashcard                                                    7.73 kB         142 kB
+dozu-ui-service:build: ├ ƒ /[locale]/mindmap/nodes/[id]                                                       450 B          89.5 kB
+dozu-ui-service:build: ├ ƒ /[locale]/mindmap/nodes/[id]/flashcard                                             1.01 kB         129 kB
+dozu-ui-service:build: ├ ƒ /[locale]/mindmap/view/[topicId]                                                   3.05 kB        1.07 MB
+dozu-ui-service:build: ├ ƒ /[locale]/onboarding                                                               9.55 kB         207 kB
+dozu-ui-service:build: ├ ƒ /[locale]/payment                                                                  20.2 kB         216 kB
+dozu-ui-service:build: ├ ƒ /[locale]/profile                                                                  217 B           233 kB
+dozu-ui-service:build: ├ ƒ /[locale]/progress                                                                 10.8 kB         262 kB
+dozu-ui-service:build: ├ ƒ /[locale]/question/edit/[topicId]                                                  6.17 kB         452 kB
+dozu-ui-service:build: ├ ƒ /[locale]/quiz/[topicId]/doing                                                     7.23 kB         170 kB
+dozu-ui-service:build: ├ ƒ /[locale]/quiz/[topicId]/history                                                   8.13 kB         155 kB
+dozu-ui-service:build: ├ ƒ /[locale]/quiz/[topicId]/history/[quizResultId]                                    6.12 kB         153 kB
+dozu-ui-service:build: ├ ƒ /[locale]/quiz/[topicId]/result/[quizResultId]                                     5.82 kB         153 kB
+dozu-ui-service:build: ├ ƒ /[locale]/quiz/local                                                               4.65 kB         143 kB
+dozu-ui-service:build: ├ ƒ /[locale]/request-teacher                                                          8.09 kB         157 kB
+dozu-ui-service:build: ├ ƒ /[locale]/request-teacher/reapply                                                  3.9 kB          139 kB
+dozu-ui-service:build: ├ ƒ /[locale]/schedule                                                                 5.45 kB         229 kB
+dozu-ui-service:build: ├ ƒ /[locale]/setting/profile                                                          462 B           233 kB
+dozu-ui-service:build: ├ ƒ /[locale]/setting/schedule-setup                                                   13.8 kB         213 kB
+dozu-ui-service:build: ├ ƒ /[locale]/stats                                                                    4.99 kB         105 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]                                                 11.9 kB         297 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/activities/[activityId]                         155 kB          325 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/assignments                                     2.01 kB         246 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/assignments/[assignmentId]/details              9.58 kB         262 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/assignments/[assignmentId]/edit                 2.25 kB         246 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/class-quiz                                      7.83 kB         201 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/class-quiz/[classQuizId]/edit                   11.1 kB         163 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/generate                                        2.99 kB         134 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/learning-material                               4.82 kB         234 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]          5.59 kB         169 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/details  2.65 kB         246 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/edit     5.56 kB         235 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/mindmap/[topicId]                               9.31 kB        1.07 MB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/students                                        28.6 kB         236 kB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/class-based/[id]/topics/[topicId]                                576 B          1.55 MB
+dozu-ui-service:build: ├ ƒ /[locale]/teacher/home                                                             4 kB            218 kB
+dozu-ui-service:build: ├ ƒ /[locale]/tests/class/comment                                                      159 B          89.2 kB
+dozu-ui-service:build: ├ ƒ /[locale]/topics/[topicId]                                                         1.89 kB        1.55 MB
+dozu-ui-service:build: ├ ƒ /[locale]/topics/[topicId]/settings/anki                                           11 kB           225 kB
+dozu-ui-service:build: ├ ƒ /[locale]/welcome                                                                  77.5 kB         271 kB
+dozu-ui-service:build: └ ○ /icon.png                                                                          0 B                0 B
+dozu-ui-service:build: + First Load JS shared by all                                                          89 kB
+dozu-ui-service:build:   ├ chunks/6146-566efd35ba3a5b6c.js                                                    31.9 kB
+dozu-ui-service:build:   ├ chunks/cc587024-6e23a1c9d09be22b.js                                                53.6 kB
+dozu-ui-service:build:   └ other shared chunks (total)                                                        3.46 kB
+dozu-ui-service:build: 
+dozu-ui-service:build: 
+dozu-ui-service:build: ƒ Middleware                                                                           37.5 kB
+dozu-ui-service:build: 
+dozu-ui-service:build: ○  (Static)   prerendered as static content
+dozu-ui-service:build: ƒ  (Dynamic)  server-rendered on demand
+dozu-ui-service:build: 
+
+ Tasks:    2 successful, 2 total
+Cached:    1 cached, 2 total
+  Time:    1m24.488s 
+

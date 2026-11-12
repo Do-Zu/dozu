@@ -1,0 +1,14 @@
+{
+  "reviewedOn": "2026-11-12",
+  "scope": "Pinned HEAD snapshot; no historical blobs, dotenv or root credential contents read",
+  "changes": [
+    {"path": "apps/web/src/app/[locale]/auth/testBackEnd/page.tsx", "finding": "jwt-literal", "resolution": "Removed embedded token/session overwrite; retained page/profile handler uses existing request wrapper and legitimate current session"},
+    {"path": "apps/api/containers/database/postgres/README.md", "finding": "credential-url", "resolution": "Replaced documented development password and credential URL with untracked local configuration reference; runtime unchanged"}
+  ],
+  "additionalHeuristicReview": [
+    {"path": "apps/web/src/utils/constants/routes.ts", "classification": "false-positive", "reason": "PROFILE_PASSWORD is a route constant pointing to the profile/password page, not credential material"}
+  ],
+  "remainingKnownPatternFindings": [],
+  "historySecretAuditCompleted": false,
+  "publicRedistributionCleared": false
+}

@@ -1,0 +1,24 @@
+PASS src/services/uploads/files/__test__/upload.file.R2.service.test.ts (20.025 s)
+  UploadFileService
+    processSingleFile
+      √ should process a single file successfully (3 ms)
+    generatePresignedUrlWithR2Cloudflare
+      √ should generate a presigned URL successfully (1 ms)
+      √ should throw BadRequest if fileName is missing (13 ms)
+      √ should throw BadRequest if fileSize exceeds limit
+      √ should throw BadRequest if contentType is not allowed (1 ms)
+    getFileFromR2Cloudflare
+      √ should retrieve file content successfully (1 ms)
+      √ should throw InternalServerError if Body is empty (1 ms)
+    generateDownloadPresignedUrl
+      √ should generate download URL successfully
+    completeSingleFileUpload
+      √ should complete file upload and insert into DB (1 ms)
+      √ should throw DatabaseError on failure
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        20.275 s
+Ran all test suites within paths "D:\product\dozu\planning\audit\.runs\dozu-api-service\src\services\uploads\files\__test__\upload.file.R2.service.test.ts".
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

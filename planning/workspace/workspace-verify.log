@@ -1,0 +1,28 @@
+
+> dozu@0.0.0 verify:workspace D:\product\dozu
+> node tooling/verify-workspace.cjs
+
+{
+  "verified": true,
+  "workspacePackages": [
+    "apps/web",
+    "apps/api"
+  ],
+  "reactVersion": "18.3.1",
+  "sameReactInstanceFor": [
+    "react-dom",
+    "next",
+    "@tiptap/react",
+    "@react-pdf/renderer",
+    "react-pdf"
+  ],
+  "resolutions": {
+    "react-dom": "node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+    "next": "node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+    "@tiptap/react": "node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+    "@react-pdf/renderer": "node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+    "react-pdf": "node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"
+  },
+  "nextTracingRoot": "D:\\product\\dozu",
+  "pythonPipelineIndependent": true
+}

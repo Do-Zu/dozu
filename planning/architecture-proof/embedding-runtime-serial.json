@@ -1,0 +1,813 @@
+{
+  "pid": 27236,
+  "utc": "2026-11-10T14:35:53.608385+00:00",
+  "versions": {
+    "torch": "2.9.1",
+    "transformers": "4.57.1",
+    "sentence-transformers": "5.1.1",
+    "fastapi": "0.117.1",
+    "uvicorn": "0.37.0"
+  },
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "baseExecutable": "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "modelRevision": "86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+  "cache": "explicit existing model snapshot; HF_HOME fresh; offline env flags; no downloads; OS file cache not evicted",
+  "threadLimits": 2,
+  "backendReadySeconds": 6.332,
+  "health": {
+    "status": "ok",
+    "model": "C:\\Users\\ADIMN\\.cache\\huggingface\\hub\\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\\snapshots\\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+    "device": "cpu",
+    "device_requested": "auto",
+    "requires_token": false
+  },
+  "readyMemory": {
+    "workingSetBytes": 672161792,
+    "peakWorkingSetBytes": 728576000,
+    "privateBytes": 1207693312
+  },
+  "checks": [
+    {
+      "path": "/single/text/embedding",
+      "status": 200,
+      "seconds": 0.0422,
+      "memory": {
+        "workingSetBytes": 761765888,
+        "peakWorkingSetBytes": 761765888,
+        "privateBytes": 1209040896
+      },
+      "dimension": 384,
+      "finite": true,
+      "norm": 0.9999999763651837
+    },
+    {
+      "path": "/segments/embedding",
+      "status": 500,
+      "seconds": 0.0155,
+      "memory": {
+        "workingSetBytes": 762232832,
+        "peakWorkingSetBytes": 762232832,
+        "privateBytes": 1209139200
+      }
+    },
+    {
+      "path": "/embedding/compare",
+      "status": 200,
+      "seconds": 0.0391,
+      "memory": {
+        "workingSetBytes": 762408960,
+        "peakWorkingSetBytes": 762408960,
+        "privateBytes": 1209597952
+      },
+      "similarity": 0.9999999278515812
+    }
+  ],
+  "idleMemoryAfterRequests": {
+    "workingSetBytes": 762408960,
+    "peakWorkingSetBytes": 762408960,
+    "privateBytes": 1209597952
+  },
+  "nativeLoadedModulePaths": [
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\VCRUNTIME140.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\python313.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\VERSION.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\python3.DLL",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_ctypes.pyd",
+    "C:\\WINDOWS\\System32\\ole32.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libffi-8.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\System32\\OLEAUT32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_bz2.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_lzma.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_socket.pyd",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\select.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_hashlib.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libcrypto-3.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_ssl.pyd",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libssl-3.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_asyncio.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_overlapped.pyd",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_queue.pyd",
+    "C:\\WINDOWS\\System32\\shell32.DLL",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_wmi.pyd",
+    "C:\\WINDOWS\\SYSTEM32\\PROPSYS.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\VCRUNTIME140_1.dll",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_multiprocessing.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\websockets\\speedups.cp313-win_amd64.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_uuid.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp313-win_amd64.pyd",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_decimal.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_zoneinfo.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\charset_normalizer\\md.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\charset_normalizer\\md__mypyc.cp313-win_amd64.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\unicodedata.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\yaml\\_yaml.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\regex\\_regex.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\_core\\_multiarray_umath.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy.libs\\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-860d95b1c38e637ce4509f5fa24fbf2a.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp313-win_amd64.pyd",
+    "C:\\WINDOWS\\SYSTEM32\\msvcp140.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\clbcatq.dll",
+    "C:\\WINDOWS\\SYSTEM32\\amsi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\profapi.dll",
+    "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MpOav.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\c10.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+    "C:\\WINDOWS\\System32\\WINTRUST.dll",
+    "C:\\WINDOWS\\System32\\imagehlp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\MSASN1.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\shm.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\torch.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\torch_global_deps.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\torch_python.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\uv.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\_C.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\safetensors\\_safetensors_rust.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\markupsafe\\_speedups.cp313-win_amd64.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\pyexpat.pyd",
+    "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_elementtree.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\PIL\\_imaging.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\tokenizers\\tokenizers.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\__check_build\\_check_build.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\.libs\\msvcp140.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\_lib\\_ccallback_c.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\fft\\_pocketfft_umath.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\_bounded_integers.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\bit_generator.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\_common.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\_generator.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\_pcg64.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\_mt19937.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\_philox.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\_sfc64.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\numpy\\random\\mtrand.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\_sparsetools.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\_csparsetools.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\_cyutility.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\_ufuncs.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-48c358d105077551cc9cc3ba79387ed5.dll",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\_ufuncs_cxx.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\_ellip_harm_2.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\_special_ufuncs.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\_gufuncs.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\_specfun.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\_comb.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_fblas.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_flapack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_cythonized_array_utils.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\cython_lapack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_solve_toeplitz.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_decomp_lu_cython.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_matfuncs_schur_sqrtm.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_matfuncs_expm.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_linalg_pythran.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_decomp_update.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\cython_blas.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\linalg\\_dsolve\\_superlu.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\linalg\\_eigen\\arpack\\_arpack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\linalg\\_propack\\_spropack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\linalg\\_propack\\_dpropack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\linalg\\_propack\\_cpropack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\linalg\\_propack\\_zpropack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\_ckdtree.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\_qhull.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\_lib\\messagestream.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\_voronoi.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\_hausdorff.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\_distance_pybind.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\_distance_wrap.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\transform\\_rigid_transform.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\spatial\\transform\\_rotation.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_group_columns.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_trlib\\_trlib.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_lbfgsb.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_moduleTNC.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_slsqplib.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_minpack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_lsq\\givens_elimination.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_zeros.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_highspy\\_core.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_highspy\\_highs_options.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\linalg\\_decomp_interpolative.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\_lib\\_uarray\\_uarray.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\fft\\_pocketfft\\pypocketfft.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_bglu_dense.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_lsap.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_pava_pybind.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\optimize\\_direct.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\integrate\\_odepack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\integrate\\_quadpack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\integrate\\_vode.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\integrate\\_dop.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\integrate\\_lsoda.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\interpolate\\_fitpack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\interpolate\\_dfitpack.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\interpolate\\_dierckx.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\interpolate\\_ppoly.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\interpolate\\_interpnd.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\interpolate\\_rbfinterp_pythran.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\interpolate\\_rgi_cython.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_stats.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\special\\cython_special.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_biasedurn.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_stats_pythran.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_levy_stable\\levyst.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_ansari_swilk_statistics.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\csgraph\\_shortest_path.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\csgraph\\_tools.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\csgraph\\_traversal.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\csgraph\\_min_spanning_tree.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\csgraph\\_flow.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\csgraph\\_matching.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\sparse\\csgraph\\_reordering.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_sobol.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_qmc_cy.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_rcont\\rcont.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\stats\\_qmvnt_cy.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\ndimage\\_nd_image.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\ndimage\\_rank_filter_1d.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\scipy\\ndimage\\_ni_label.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\_isfinite.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\_cyutility.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\sparsefuncs_fast.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\murmurhash.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\_openmp_helpers.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_expected_mutual_info_fast.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_csr_polynomial_expansion.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_target_encoder_fast.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_base.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\_cython_blas.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\_heap.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\_sorting.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\utils\\_vector_sentinel.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors_classmode.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_fast.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\srsly\\ujson\\ujson.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\srsly\\msgpack\\_epoch.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\srsly\\msgpack\\_packer.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\srsly\\msgpack\\_unpacker.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\thinc\\backends\\numpy_ops.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\thinc\\backends\\cblas.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\blis\\cy.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\cymem\\cymem.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\preshed\\maps.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\thinc\\backends\\linalg.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\blis\\py.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\murmurhash\\mrmr.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\thinc\\layers\\premap_ids.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\thinc\\layers\\sparselinear.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\symbols.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\preshed\\bloom.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\strings.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\attrs.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\vocab.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\morphology.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\parts_of_speech.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\lexeme.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\tokens\\doc.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\tokens\\span.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\tokens\\token.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\tokens\\morphanalysis.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\tokens\\span_group.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\tokens\\_retokenize.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\vectors.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\training\\align.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\training\\alignment_array.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\training\\example.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\_parser_internals\\nonproj.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\training\\gold_io.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\tokenizer.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\matcher\\dependencymatcher.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\matcher\\matcher.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\matcher\\levenshtein.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\matcher\\phrasematcher.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\pipe.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\dep_parser.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\transition_parser.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\trainable_pipe.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\_parser_internals\\stateclass.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\_parser_internals\\transition_system.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\kb\\candidate.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\kb\\kb.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\kb\\kb_in_memory.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\ml\\parser_model.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\_parser_internals\\_beam_utils.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\thinc\\extra\\search.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\_parser_internals\\arc_eager.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\_edit_tree_internals\\edit_trees.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\morphologizer.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\tagger.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\ner.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\_parser_internals\\ner.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\sentencizer.cp313-win_amd64.pyd",
+    "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\spacy\\pipeline\\senter.cp313-win_amd64.pyd"
+  ],
+  "torchCpuDll": {
+    "path": "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+    "bytes": 262656512
+  },
+  "workerExitCodeAfterTermination": 1,
+  "memorySamples": [
+    {
+      "seconds": 0.117,
+      "workingSetBytes": 24436736,
+      "peakWorkingSetBytes": 24436736,
+      "privateBytes": 15810560
+    },
+    {
+      "seconds": 0.218,
+      "workingSetBytes": 33693696,
+      "peakWorkingSetBytes": 33693696,
+      "privateBytes": 23924736
+    },
+    {
+      "seconds": 0.33,
+      "workingSetBytes": 41029632,
+      "peakWorkingSetBytes": 41029632,
+      "privateBytes": 29732864
+    },
+    {
+      "seconds": 0.435,
+      "workingSetBytes": 47017984,
+      "peakWorkingSetBytes": 47017984,
+      "privateBytes": 34988032
+    },
+    {
+      "seconds": 0.55,
+      "workingSetBytes": 52977664,
+      "peakWorkingSetBytes": 52981760,
+      "privateBytes": 40841216
+    },
+    {
+      "seconds": 0.655,
+      "workingSetBytes": 57978880,
+      "peakWorkingSetBytes": 57978880,
+      "privateBytes": 46129152
+    },
+    {
+      "seconds": 0.77,
+      "workingSetBytes": 69533696,
+      "peakWorkingSetBytes": 69537792,
+      "privateBytes": 89628672
+    },
+    {
+      "seconds": 0.875,
+      "workingSetBytes": 117198848,
+      "peakWorkingSetBytes": 117198848,
+      "privateBytes": 136450048
+    },
+    {
+      "seconds": 0.985,
+      "workingSetBytes": 155316224,
+      "peakWorkingSetBytes": 155316224,
+      "privateBytes": 165826560
+    },
+    {
+      "seconds": 1.097,
+      "workingSetBytes": 175972352,
+      "peakWorkingSetBytes": 175972352,
+      "privateBytes": 189239296
+    },
+    {
+      "seconds": 1.205,
+      "workingSetBytes": 181784576,
+      "peakWorkingSetBytes": 181784576,
+      "privateBytes": 194674688
+    },
+    {
+      "seconds": 1.318,
+      "workingSetBytes": 187367424,
+      "peakWorkingSetBytes": 187371520,
+      "privateBytes": 200650752
+    },
+    {
+      "seconds": 1.435,
+      "workingSetBytes": 195158016,
+      "peakWorkingSetBytes": 195158016,
+      "privateBytes": 208457728
+    },
+    {
+      "seconds": 1.535,
+      "workingSetBytes": 200364032,
+      "peakWorkingSetBytes": 200364032,
+      "privateBytes": 213274624
+    },
+    {
+      "seconds": 1.642,
+      "workingSetBytes": 205275136,
+      "peakWorkingSetBytes": 205275136,
+      "privateBytes": 217800704
+    },
+    {
+      "seconds": 1.755,
+      "workingSetBytes": 208830464,
+      "peakWorkingSetBytes": 208830464,
+      "privateBytes": 222117888
+    },
+    {
+      "seconds": 1.87,
+      "workingSetBytes": 213639168,
+      "peakWorkingSetBytes": 213639168,
+      "privateBytes": 226623488
+    },
+    {
+      "seconds": 1.971,
+      "workingSetBytes": 218980352,
+      "peakWorkingSetBytes": 218980352,
+      "privateBytes": 232103936
+    },
+    {
+      "seconds": 2.086,
+      "workingSetBytes": 227246080,
+      "peakWorkingSetBytes": 227246080,
+      "privateBytes": 239751168
+    },
+    {
+      "seconds": 2.201,
+      "workingSetBytes": 233406464,
+      "peakWorkingSetBytes": 233406464,
+      "privateBytes": 246009856
+    },
+    {
+      "seconds": 2.313,
+      "workingSetBytes": 235048960,
+      "peakWorkingSetBytes": 235048960,
+      "privateBytes": 247209984
+    },
+    {
+      "seconds": 2.428,
+      "workingSetBytes": 237228032,
+      "peakWorkingSetBytes": 237228032,
+      "privateBytes": 249565184
+    },
+    {
+      "seconds": 2.535,
+      "workingSetBytes": 241545216,
+      "peakWorkingSetBytes": 242876416,
+      "privateBytes": 252686336
+    },
+    {
+      "seconds": 2.635,
+      "workingSetBytes": 249380864,
+      "peakWorkingSetBytes": 249380864,
+      "privateBytes": 258969600
+    },
+    {
+      "seconds": 2.745,
+      "workingSetBytes": 259624960,
+      "peakWorkingSetBytes": 259624960,
+      "privateBytes": 300744704
+    },
+    {
+      "seconds": 2.865,
+      "workingSetBytes": 269373440,
+      "peakWorkingSetBytes": 269373440,
+      "privateBytes": 309702656
+    },
+    {
+      "seconds": 2.98,
+      "workingSetBytes": 283103232,
+      "peakWorkingSetBytes": 283103232,
+      "privateBytes": 320077824
+    },
+    {
+      "seconds": 3.085,
+      "workingSetBytes": 290496512,
+      "peakWorkingSetBytes": 290496512,
+      "privateBytes": 325861376
+    },
+    {
+      "seconds": 3.2,
+      "workingSetBytes": 300281856,
+      "peakWorkingSetBytes": 300281856,
+      "privateBytes": 334036992
+    },
+    {
+      "seconds": 3.313,
+      "workingSetBytes": 301957120,
+      "peakWorkingSetBytes": 301957120,
+      "privateBytes": 335282176
+    },
+    {
+      "seconds": 3.417,
+      "workingSetBytes": 302706688,
+      "peakWorkingSetBytes": 302706688,
+      "privateBytes": 335994880
+    },
+    {
+      "seconds": 3.535,
+      "workingSetBytes": 305815552,
+      "peakWorkingSetBytes": 305815552,
+      "privateBytes": 339169280
+    },
+    {
+      "seconds": 3.65,
+      "workingSetBytes": 316555264,
+      "peakWorkingSetBytes": 316555264,
+      "privateBytes": 349450240
+    },
+    {
+      "seconds": 3.751,
+      "workingSetBytes": 326250496,
+      "peakWorkingSetBytes": 326250496,
+      "privateBytes": 359440384
+    },
+    {
+      "seconds": 3.866,
+      "workingSetBytes": 334622720,
+      "peakWorkingSetBytes": 334622720,
+      "privateBytes": 367804416
+    },
+    {
+      "seconds": 3.97,
+      "workingSetBytes": 342220800,
+      "peakWorkingSetBytes": 342220800,
+      "privateBytes": 376045568
+    },
+    {
+      "seconds": 4.075,
+      "workingSetBytes": 345677824,
+      "peakWorkingSetBytes": 345677824,
+      "privateBytes": 378826752
+    },
+    {
+      "seconds": 4.186,
+      "workingSetBytes": 349319168,
+      "peakWorkingSetBytes": 349319168,
+      "privateBytes": 382799872
+    },
+    {
+      "seconds": 4.301,
+      "workingSetBytes": 350330880,
+      "peakWorkingSetBytes": 350330880,
+      "privateBytes": 383225856
+    },
+    {
+      "seconds": 4.415,
+      "workingSetBytes": 357711872,
+      "peakWorkingSetBytes": 357711872,
+      "privateBytes": 391098368
+    },
+    {
+      "seconds": 4.515,
+      "workingSetBytes": 364322816,
+      "peakWorkingSetBytes": 364322816,
+      "privateBytes": 397156352
+    },
+    {
+      "seconds": 4.616,
+      "workingSetBytes": 371871744,
+      "peakWorkingSetBytes": 373870592,
+      "privateBytes": 405458944
+    },
+    {
+      "seconds": 4.735,
+      "workingSetBytes": 375812096,
+      "peakWorkingSetBytes": 375820288,
+      "privateBytes": 409260032
+    },
+    {
+      "seconds": 4.846,
+      "workingSetBytes": 381165568,
+      "peakWorkingSetBytes": 381165568,
+      "privateBytes": 412319744
+    },
+    {
+      "seconds": 4.965,
+      "workingSetBytes": 390119424,
+      "peakWorkingSetBytes": 390119424,
+      "privateBytes": 418611200
+    },
+    {
+      "seconds": 5.075,
+      "workingSetBytes": 394153984,
+      "peakWorkingSetBytes": 394153984,
+      "privateBytes": 421933056
+    },
+    {
+      "seconds": 5.181,
+      "workingSetBytes": 399798272,
+      "peakWorkingSetBytes": 399798272,
+      "privateBytes": 426536960
+    },
+    {
+      "seconds": 5.285,
+      "workingSetBytes": 445038592,
+      "peakWorkingSetBytes": 476430336,
+      "privateBytes": 974557184
+    },
+    {
+      "seconds": 5.386,
+      "workingSetBytes": 489746432,
+      "peakWorkingSetBytes": 489746432,
+      "privateBytes": 1019052032
+    },
+    {
+      "seconds": 5.497,
+      "workingSetBytes": 563212288,
+      "peakWorkingSetBytes": 590675968,
+      "privateBytes": 1094144000
+    },
+    {
+      "seconds": 5.602,
+      "workingSetBytes": 561577984,
+      "peakWorkingSetBytes": 590675968,
+      "privateBytes": 1096716288
+    },
+    {
+      "seconds": 5.716,
+      "workingSetBytes": 648294400,
+      "peakWorkingSetBytes": 648294400,
+      "privateBytes": 1183547392
+    },
+    {
+      "seconds": 5.817,
+      "workingSetBytes": 717557760,
+      "peakWorkingSetBytes": 728576000,
+      "privateBytes": 1253842944
+    },
+    {
+      "seconds": 5.926,
+      "workingSetBytes": 671526912,
+      "peakWorkingSetBytes": 728576000,
+      "privateBytes": 1207644160
+    },
+    {
+      "seconds": 6.041,
+      "workingSetBytes": 671526912,
+      "peakWorkingSetBytes": 728576000,
+      "privateBytes": 1207644160
+    },
+    {
+      "seconds": 6.141,
+      "workingSetBytes": 671526912,
+      "peakWorkingSetBytes": 728576000,
+      "privateBytes": 1207644160
+    },
+    {
+      "seconds": 6.251,
+      "workingSetBytes": 671526912,
+      "peakWorkingSetBytes": 728576000,
+      "privateBytes": 1207644160
+    },
+    {
+      "seconds": 6.355,
+      "workingSetBytes": 672284672,
+      "peakWorkingSetBytes": 728576000,
+      "privateBytes": 1207734272
+    },
+    {
+      "seconds": 6.456,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 6.57,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 6.671,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 6.787,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 6.896,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.003,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.103,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.205,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.305,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.405,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.515,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.623,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.733,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.835,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 7.95,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 8.065,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 8.171,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 8.285,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    {
+      "seconds": 8.387,
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    }
+  ],
+  "sampledPeakWorkingSetBytes": 762408960,
+  "method": "GetProcessMemoryInfo worker PID every 100ms, plus snapshots. Only embedding worker; excludes orchestrator and all not-yet-running Electron/Next/API/DB/converter processes. Windows shared pages can affect summation; private bytes also recorded. No clean-machine or cold-cache/normal full-app claim. Forced worker termination is not graceful supervisor proof."
+}

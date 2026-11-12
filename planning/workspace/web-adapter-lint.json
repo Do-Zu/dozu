@@ -1,0 +1,16 @@
+{
+  "name": "web-adapter-lint",
+  "command": [
+    "pnpm",
+    "--filter",
+    "dozu-ui-service",
+    "exec",
+    "eslint",
+    "src/app/[locale]/topics/[topicId]/(topic)/media/core/youtube/YoutubePlayerAdapter.ts"
+  ],
+  "exitCode": 0,
+  "seconds": 4.14,
+  "capturedAtUtc": "2026-11-12T14:52:12.424937+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "web-adapter-lint.log"
+}

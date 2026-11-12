@@ -1,0 +1,482 @@
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Handle, Node, NodeToolbar, Position, useEdges, useInternalNode, useReactFlow } from '@xyflow/react';
+import { useState, useRef, useEffect } from 'react';
+import { CustomNodeData } from '../../../../types/mindmap/mindmap.type';
+import { useDispatch } from 'react-redux';
+import {
+    addHiddenNodes,
+    openSheet,
+    removeHiddenNodes,
+    setSelectedNodeData,
+    toggleNodeSelection,
+} from '@/stores/features/mindmap/selectedNodeSlice';
+import { getRouter } from '@/utils/routerService';
+import CommentThread from '../../class-based/components/comment/CommentThread';
+import { motion, AnimatePresence } from 'framer-motion';
+import { BookOpenIcon, Target, CheckCircle, MoreHorizontal, Plus, Minus } from 'lucide-react';
+import { toast } from '@/hooks/use-toast';
+import { Progress } from '@/components/ui/progress';
+import { useTranslations } from 'next-intl';
+import { useAppSelector } from '@/stores/hooks';
+import AddChildNodeButton from './buttons/AddChildNodeButton';
+import DeleteNodeButton from './buttons/DeleteNodeButton';
+import PaletteButton from './buttons/PaletteButton';
+import { readableColor } from 'polished';
+import { useTopicWorkspace } from '../../topics/[topicId]/(topic)/context/TopicWorkspaceContext';
+import { getAllChildNodeAndSelfIds } from '@/utils/mindmap/mindmapUtils';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+
+const CustomReactFlowNode = ({ data }: { data: CustomNodeData }) => {
+    // stats;
+    const tCommon = useTranslations('common.messages');
+    const total = data.statistics?.total || 0;
+    const mature = data.statistics?.mature || 0;
+    const progress = total > 0 ? (mature / total) * 100 : 0;
+
+    // Check completion status
+    const isComplete = data.isComplete;
+
+    const dispatch = useDispatch();
+    // const router = getRouter();
+
+    const [editing, setEditing] = useState(false);
+    const [label, setLabel] = useState(data.label);
+    const [isHovered, setIsHovered] = useState(false);
+    const [isClickedOn, setIsClickedOn] = useState(false);
+    const isInMultiSelect = useAppSelector(
+        (state) => state.selectedNodeSlice.selectedNodeIds.find((id) => id === data.nodeId) !== undefined,
+    );
+    const isActive = isClickedOn || isHovered || isInMultiSelect;
+    const [isExpanded, setIsExpanded] = useState(false);
+    const { screenToFlowPosition, fitView, getNodes, setNodes, setEdges, setViewport } = useReactFlow();
+    const edges = useEdges();
+    const internalNode = useInternalNode(data.nodeId);
+
+    const isEditingMindmap = useAppSelector((state) => state.isEditingMindmapSlice.isEditingMindmap);
+    const isMultiSelectMode = useAppSelector((state) => state.selectedNodeSlice.isMultiSelectMode);
+    const { nodes: appNodes, edges: appEdges } = useTopicWorkspace();
+
+    const wrapperRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (
+                wrapperRef.current &&
+                event.target instanceof HTMLElement &&
+                !wrapperRef.current.contains(event.target)
+            ) {
+                setIsClickedOn(false);
+            }
+        }
+
+        document.addEventListener('pointerdown', handleClickOutside);
+        return () => {
+            document.removeEventListener('pointerdown', handleClickOutside);
+        };
+    }, []);
+
+    const deleteNode = (id: string) => {
+        edges.forEach((edge) => {
+            if (edge.source === id) {
+                deleteNode(edge.target);
+            }
+        });
+        setNodes((nds) => nds.filter((node) => node.id !== id));
+        setEdges((eds) => eds.filter((edge) => edge.source !== id && edge.target !== id));
+    };
+
+    const onChangeLabel = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setLabel(e.target.value);
+        handleSave(e.target.value);
+    };
+
+    const handleSave = (inputLabel: string) => {
+        setNodes((nds) =>
+            nds.map((node) =>
+                node.id === data.nodeId ? { ...node, data: { ...node.data, label: inputLabel } } : node,
+            ),
+        );
+        setEditing(false);
+    };
+
+    const handleCancel = () => {
+        setLabel(data.label);
+        setEditing(false);
+    };
+
+    const handleClickNode = (e: React.MouseEvent<HTMLDivElement>) => {
+        e.preventDefault();
+        dispatch(setSelectedNodeData(data));
+        if (isMultiSelectMode) {
+            dispatch(toggleNodeSelection(data.nodeId));
+        } else {
+            setIsClickedOn(true);
+        }
+    };
+
+    const handleRightClickNode = (e: React.MouseEvent<HTMLDivElement>) => {
+        e.preventDefault();
+        if (internalNode) {
+            requestAnimationFrame(() => {
+                fitView({ nodes: [internalNode], duration: 800, padding: 1 });
+            });
+        }
+        setIsClickedOn(true);
+
+        dispatch(setSelectedNodeData(data));
+        dispatch(openSheet());
+    };
+
+    const handleDoubleClickNode = (e: React.MouseEvent<HTMLDivElement>) => {
+        e.preventDefault();
+        if (internalNode) {
+            requestAnimationFrame(() => {
+                fitView({ nodes: [internalNode], duration: 800, padding: 1 });
+            });
+        }
+        setIsClickedOn(true);
+    };
+
+    const handleGhostIconClick = (e: React.MouseEvent) => {
+        e.stopPropagation(); // Prevent triggering handleClickNode
+        handleRightClickNode(e as any);
+    };
+
+    const handleKeyPress = (e: React.KeyboardEvent) => {
+        if (e.key === 'Enter') {
+            handleSave(label);
+        } else if (e.key === 'Escape') {
+            handleCancel();
+        }
+    };
+
+    function handleExpandClick() {
+        const tmp = getAllChildNodeAndSelfIds({ nodes: appNodes, edges: appEdges, nodeId: data.nodeId });
+        const childNodeIds = tmp.filter((item) => item !== data.nodeId);
+        dispatch(removeHiddenNodes(childNodeIds));
+    }
+
+    function handleCollapseClick() {
+        const tmp = getAllChildNodeAndSelfIds({ nodes: appNodes, edges: appEdges, nodeId: data.nodeId });
+        const childNodeIds = tmp.filter((item) => item !== data.nodeId);
+        dispatch(addHiddenNodes(childNodeIds));
+    }
+
+    // Animation variants
+    const nodeVariants = {
+        initial: { scale: 0.95, opacity: 0.8 },
+        animate: {
+            scale: 1,
+            // If complete, fade to 70%. Otherwise, fully opaque.
+            opacity: isComplete ? 0.7 : 1,
+        },
+        hover: { scale: 1.02, y: -2 },
+        tap: { scale: 0.98 },
+    };
+
+    const contentVariants = {
+        collapsed: { height: 'auto' },
+        expanded: { height: 'auto' },
+    };
+
+    const iconVariants = {
+        hidden: { opacity: 0, scale: 0.8, x: -10 },
+        visible: { opacity: 1, scale: 1, x: 0 },
+    };
+
+    // --- Dynamic Styles Logic ---
+
+    // Helper to determine if we are overriding the ring color
+    // We override if the node is active, complete, and has a specific color assigned.
+    const shouldUseCustomRingColor = isActive && isComplete && data.color;
+
+    const getBorderClass = () => {
+        if (isActive) return isComplete ? 'border-green-500' : 'border-primary/40';
+        if (isComplete) return 'border-green-500/40';
+        return 'border-border/10 hover:border-border';
+    };
+
+    const getRingClass = () => {
+        if (isActive) {
+            // If we are using a custom ring color via style prop, just set the width/shadow
+            if (shouldUseCustomRingColor) return 'shadow-2xl ring-2';
+            // Otherwise use default Tailwind classes
+            return `shadow-2xl ring-2 ${isComplete ? 'ring-green-500/60' : 'ring-primary/60'}`;
+        }
+        if (data.isRoot) return 'ring-2 ring-primary/20';
+        return '';
+    };
+
+    const getBackgroundClass = () => {
+        // Keep the green tint for completion to distinguish it from regular nodes
+        if (isComplete) return 'bg-green-50/10 dark:bg-green-900/10';
+        if (data.isRoot) return 'bg-primary/5';
+        return '';
+    };
+
+    return (
+        <motion.div
+            variants={nodeVariants}
+            initial="initial"
+            animate="animate"
+            whileHover="hover"
+            whileTap="tap"
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+            onMouseEnter={() => {
+                if (!isMultiSelectMode) {
+                    setIsHovered(true);
+                }
+            }}
+            onMouseLeave={() => setIsHovered(false)}
+            ref={wrapperRef}
+            onClick={handleClickNode}
+            onContextMenu={handleRightClickNode}
+            onDoubleClick={handleDoubleClickNode}
+            className={`
+                group relative min-w-[180px] max-w-[280px]
+                rounded-xl border
+                bg-card/95 shadow-sm backdrop-blur-sm
+                transition-all duration-200 ease-out
+                hover:shadow-md
+                ${getBorderClass()}
+                ${getRingClass()}
+                ${getBackgroundClass()}
+            `}
+            style={
+                {
+                    // Border color fallback for inactive, incomplete, colored nodes
+
+                    borderColor: !isActive && !isComplete && data.color ? data.color : undefined,
+
+                    // If active, complete, and colored: override the CSS variable for ring color
+                    // We append '99' to the hex to create a ~60% opacity effect (Hex 8-digit notation)
+                    '--tw-ring-color': shouldUseCustomRingColor ? `${data.color}99` : undefined,
+                    backgroundColor: data.color,
+                } as React.CSSProperties
+            }
+        >
+            {/* GHOST ICON: Only visible on hover, triggers the "Right Click" menu */}
+            {!isEditingMindmap && !isMultiSelectMode && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: isHovered ? 1 : 0 }}
+                    className="absolute right-2 top-2 z-30"
+                >
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        className="size-6 rounded-md border bg-card/50 shadow-sm backdrop-blur-sm hover:bg-muted"
+                        onClick={handleGhostIconClick}
+                    >
+                        <MoreHorizontal className="size-4 text-muted-foreground" />
+                    </Button>
+                </motion.div>
+            )}
+            {/* Completed Indicator Tick */}
+            {isComplete && (
+                <motion.div
+                    initial={{ scale: 0, rotate: -45 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    className="absolute -right-2 -top-2 z-20 rounded-full bg-card shadow-sm ring-1 ring-green-100 dark:ring-green-900"
+                >
+                    <CheckCircle className="size-5 fill-green-100 text-green-500 dark:fill-green-900/30" />
+                </motion.div>
+            )}
+
+            {/* Connection Handles */}
+            <Handle
+                className="size-3 border-2 border-background bg-primary/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                position={Position.Right}
+                type="source"
+                style={{ right: -6 }}
+            />
+            <Handle
+                className="size-3 border-2 border-background bg-primary/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                position={Position.Left}
+                type="target"
+                style={{ left: -6 }}
+                isConnectableStart={false}
+            />
+            <Handle
+                className="size-3 border-2 border-background bg-primary/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                position={Position.Bottom}
+                type="target"
+                style={{ bottom: -6 }}
+                isConnectableStart={false}
+            />
+
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-1 z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <Tooltip>
+                    <TooltipTrigger asChild>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="h-8 w-8 rounded-full bg-background shadow-md border-primary/20 hover:bg-primary hover:text-primary-foreground"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                handleExpandClick();
+                            }}
+                        >
+                            <Plus className="h-3 w-3" />
+                        </Button>
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom">Expand</TooltipContent>
+                </Tooltip>
+
+                <Tooltip>
+                    <TooltipTrigger asChild>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="h-8 w-8 rounded-full bg-background shadow-md border-primary/20 hover:bg-primary hover:text-primary-foreground"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                handleCollapseClick();
+                            }}
+                        >
+                            <Minus className="h-3 w-3" />
+                        </Button>
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom">Collapse</TooltipContent>
+                </Tooltip>
+            </div>
+
+            <Handle
+                className="size-3 border-2 border-background bg-primary/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                position={Position.Top}
+                type="target"
+                style={{ top: -6 }}
+                isConnectableStart={false}
+            />
+
+            {/* Node Header */}
+            <div className="p-4">
+                {/* Root indicator */}
+                {data.isRoot && (
+                    <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="mb-2 flex items-center justify-center"
+                    >
+                        <Badge variant="secondary" className="bg-primary/10 text-xs font-medium text-primary">
+                            <Target className="mr-1 size-3" />
+                            Root Topic
+                        </Badge>
+                    </motion.div>
+                )}
+
+                {/* Main Content */}
+                <motion.div
+                    variants={contentVariants}
+                    animate={isExpanded ? 'expanded' : 'collapsed'}
+                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    className="space-y-3"
+                >
+                    {/* Title Section */}
+                    <div className="space-y-2">
+                        <div className="group/title cursor-pointer">
+                            <motion.h3
+                                className={`line-height-[1.5] text-sm font-medium leading-relaxed text-foreground transition-colors duration-200 group-hover/title:text-primary ${isComplete ? 'text-muted-foreground' : ''}`}
+                                style={{
+                                    fontSize: '14px',
+                                    lineHeight: '1.5',
+                                    letterSpacing: '0.01em',
+                                    textDecoration: isComplete ? 'line-through' : 'none',
+                                    textDecorationColor: 'hsl(var(--muted-foreground))',
+                                }}
+                            >
+                                {isEditingMindmap ? (
+                                    <Input
+                                        className="h-7 border border-neutral-300 px-2 py-1 text-sm dark:border-neutral-600"
+                                        value={label}
+                                        onChange={onChangeLabel}
+                                    />
+                                ) : (
+                                    <span
+                                        className="text-xl"
+                                        style={{
+                                            color: data.color ? readableColor(data.color, 'white', 'black', true) : '',
+                                        }}
+                                    >
+                                        {data.label || 'Untitled Node'}
+                                    </span>
+                                )}
+                            </motion.h3>
+
+                            {/* Description if available */}
+                            {data.description && (
+                                <motion.p
+                                    initial={{ opacity: 0, height: 0 }}
+                                    animate={{ opacity: 1, height: 'auto' }}
+                                    className={`mt-1 text-xs leading-relaxed text-muted-foreground ${isActive ? '' : 'hidden'}`}
+                                    style={{ lineHeight: '1.4' }}
+                                >
+                                    <span style={{ color: data.color ? readableColor(data.color) : '' }}>
+                                        {data.description}
+                                    </span>
+                                </motion.p>
+                            )}
+                        </div>
+                    </div>
+                </motion.div>
+
+                {/* Action Buttons */}
+                <AnimatePresence>
+                    {isActive && (
+                        <motion.div
+                            variants={iconVariants}
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            transition={{ duration: 0.2, delay: 0.1 }}
+                            className="mt-3 space-y-3 border-t border-border/40 pt-3"
+                        >
+                            <div className="flex items-center justify-between">
+                                <Button
+                                    size="sm"
+                                    variant="ghost"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        toast({
+                                            description: tCommon('featureInComing'),
+                                        });
+                                    }}
+                                    className="h-7 px-2 text-xs text-muted-foreground hover:text-foreground"
+                                >
+                                    <BookOpenIcon className="mr-1 size-3" />
+                                    Learn
+                                </Button>
+
+                                <div className="flex items-center gap-2">
+                                    <span className="text-sm text-muted-foreground">Progress</span>
+                                    <span className="text-sm font-medium">
+                                        {mature} / {total}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <Progress
+                                value={progress}
+                                className={`h-2 ${isComplete ? 'bg-green-100 [&>div]:bg-green-500' : ''}`}
+                            />
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
+
+            <div
+                className="pointer-events-none absolute inset-0 rounded-xl ring-2 ring-primary/0 transition-all duration-200 group-focus-within:ring-primary/40"
+                aria-hidden="true"
+            />
+            <NodeToolbar isVisible={isEditingMindmap} position={Position.Top}>
+                <AddChildNodeButton nodeId={data.nodeId} />
+                <DeleteNodeButton nodeId={data.nodeId} />
+                <PaletteButton nodeId={data.nodeId} />
+            </NodeToolbar>
+        </motion.div>
+    );
+};
+
+export default CustomReactFlowNode;

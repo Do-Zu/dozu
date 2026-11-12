@@ -1,0 +1,120 @@
+Scope: all 3 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1857
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1857, reused 0, downloaded 9, added 8
+Progress: resolved 1857, reused 0, downloaded 50, added 34
+ WARN  Tarball download average speed 30 KiB/s (size 32 KiB) is below 50 KiB/s: https://registry.npmjs.org/@aws-sdk/client-sso/-/client-sso-3.787.0.tgz (GET)
+Progress: resolved 1857, reused 0, downloaded 88, added 40
+Progress: resolved 1857, reused 0, downloaded 133, added 45
+Progress: resolved 1857, reused 0, downloaded 204, added 58
+ WARN  Tarball download average speed 27 KiB/s (size 28 KiB) is below 50 KiB/s: https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-11.0.1.tgz (GET)
+Progress: resolved 1857, reused 0, downloaded 259, added 70
+Progress: resolved 1857, reused 0, downloaded 317, added 80
+Progress: resolved 1857, reused 0, downloaded 364, added 85
+Progress: resolved 1857, reused 0, downloaded 394, added 90
+Progress: resolved 1857, reused 0, downloaded 426, added 95
+Progress: resolved 1857, reused 0, downloaded 465, added 99
+Progress: resolved 1857, reused 0, downloaded 491, added 104
+Progress: resolved 1857, reused 0, downloaded 512, added 106
+Progress: resolved 1857, reused 0, downloaded 526, added 109
+Progress: resolved 1857, reused 0, downloaded 562, added 114
+Progress: resolved 1857, reused 0, downloaded 583, added 118
+Progress: resolved 1857, reused 0, downloaded 595, added 119
+Progress: resolved 1857, reused 0, downloaded 616, added 122
+Progress: resolved 1857, reused 0, downloaded 652, added 127
+Progress: resolved 1857, reused 0, downloaded 672, added 130
+Progress: resolved 1857, reused 0, downloaded 696, added 133
+Progress: resolved 1857, reused 0, downloaded 736, added 139
+Progress: resolved 1857, reused 0, downloaded 805, added 149
+Progress: resolved 1857, reused 0, downloaded 849, added 156
+Progress: resolved 1857, reused 0, downloaded 875, added 160
+Progress: resolved 1857, reused 0, downloaded 881, added 162
+Progress: resolved 1857, reused 0, downloaded 906, added 164
+Progress: resolved 1857, reused 0, downloaded 923, added 168
+Progress: resolved 1857, reused 0, downloaded 955, added 173
+Progress: resolved 1857, reused 0, downloaded 985, added 177
+Progress: resolved 1857, reused 0, downloaded 1047, added 188
+Progress: resolved 1857, reused 0, downloaded 1081, added 194
+Progress: resolved 1857, reused 0, downloaded 1115, added 198
+Progress: resolved 1857, reused 0, downloaded 1150, added 204
+Progress: resolved 1857, reused 0, downloaded 1184, added 209
+Progress: resolved 1857, reused 0, downloaded 1220, added 215
+Progress: resolved 1857, reused 0, downloaded 1244, added 220
+Progress: resolved 1857, reused 0, downloaded 1262, added 223
+Progress: resolved 1857, reused 0, downloaded 1275, added 225
+Progress: resolved 1857, reused 0, downloaded 1294, added 229
+Progress: resolved 1857, reused 0, downloaded 1323, added 234
+ WARN  Tarball download average speed 5 KiB/s (size 5 KiB) is below 50 KiB/s: https://registry.npmjs.org/cliui/-/cliui-6.0.0.tgz (GET)
+Progress: resolved 1857, reused 0, downloaded 1345, added 238
+Progress: resolved 1857, reused 0, downloaded 1401, added 249
+Progress: resolved 1857, reused 0, downloaded 1416, added 253
+Progress: resolved 1857, reused 0, downloaded 1424, added 254
+Progress: resolved 1857, reused 0, downloaded 1436, added 256
+ WARN  Tarball download average speed 48 KiB/s (size 197 KiB) is below 50 KiB/s: https://registry.npmjs.org/react-day-picker/-/react-day-picker-8.10.1.tgz (GET)
+Progress: resolved 1857, reused 0, downloaded 1447, added 258
+Progress: resolved 1857, reused 0, downloaded 1458, added 260
+Progress: resolved 1857, reused 0, downloaded 1468, added 262
+ WARN  Tarball download average speed 43 KiB/s (size 93 KiB) is below 50 KiB/s: https://registry.npmjs.org/@antfu/ni/-/ni-23.3.1.tgz (GET)
+Progress: resolved 1857, reused 0, downloaded 1487, added 264
+Progress: resolved 1857, reused 0, downloaded 1510, added 268
+Progress: resolved 1857, reused 0, downloaded 1524, added 271
+Progress: resolved 1857, reused 0, downloaded 1536, added 272
+Progress: resolved 1857, reused 0, downloaded 1558, added 276
+Progress: resolved 1857, reused 0, downloaded 1575, added 279
+Progress: resolved 1857, reused 0, downloaded 1597, added 282
+Progress: resolved 1857, reused 0, downloaded 1619, added 284
+Progress: resolved 1857, reused 0, downloaded 1627, added 287
+Progress: resolved 1857, reused 0, downloaded 1639, added 288
+Progress: resolved 1857, reused 0, downloaded 1647, added 288
+Progress: resolved 1857, reused 0, downloaded 1658, added 290
+Progress: resolved 1857, reused 0, downloaded 1666, added 291
+Progress: resolved 1857, reused 0, downloaded 1690, added 294
+Progress: resolved 1857, reused 0, downloaded 1723, added 298
+Progress: resolved 1857, reused 0, downloaded 1738, added 302
+Progress: resolved 1857, reused 0, downloaded 1749, added 302
+Progress: resolved 1857, reused 0, downloaded 1763, added 304
+Progress: resolved 1857, reused 0, downloaded 1780, added 306
+Progress: resolved 1857, reused 0, downloaded 1816, added 312
+Progress: resolved 1857, reused 0, downloaded 1836, added 340
+Progress: resolved 1857, reused 0, downloaded 1838, added 384
+Progress: resolved 1857, reused 0, downloaded 1840, added 411
+Progress: resolved 1857, reused 0, downloaded 1842, added 446
+Progress: resolved 1857, reused 0, downloaded 1842, added 525
+Progress: resolved 1857, reused 0, downloaded 1842, added 593
+Progress: resolved 1857, reused 0, downloaded 1842, added 608
+Progress: resolved 1857, reused 0, downloaded 1842, added 609
+Progress: resolved 1857, reused 0, downloaded 1842, added 614
+Progress: resolved 1857, reused 0, downloaded 1842, added 619
+Progress: resolved 1857, reused 0, downloaded 1842, added 624
+Progress: resolved 1857, reused 0, downloaded 1842, added 643
+Progress: resolved 1857, reused 0, downloaded 1842, added 653
+Progress: resolved 1857, reused 0, downloaded 1842, added 655
+Progress: resolved 1857, reused 0, downloaded 1842, added 656
+Progress: resolved 1857, reused 0, downloaded 1842, added 687
+Progress: resolved 1857, reused 0, downloaded 1843, added 737
+Progress: resolved 1857, reused 0, downloaded 1843, added 825
+Progress: resolved 1857, reused 0, downloaded 1843, added 865
+Progress: resolved 1857, reused 0, downloaded 1843, added 884
+Progress: resolved 1857, reused 0, downloaded 1843, added 925
+Progress: resolved 1857, reused 0, downloaded 1844, added 968
+Progress: resolved 1857, reused 0, downloaded 1845, added 1025
+Progress: resolved 1857, reused 0, downloaded 1847, added 1125
+Progress: resolved 1857, reused 0, downloaded 1847, added 1221
+Progress: resolved 1857, reused 0, downloaded 1847, added 1295
+Progress: resolved 1857, reused 0, downloaded 1848, added 1442
+Progress: resolved 1857, reused 0, downloaded 1848, added 1540
+Progress: resolved 1857, reused 0, downloaded 1848, added 1653
+Progress: resolved 1857, reused 0, downloaded 1848, added 1811
+Progress: resolved 1857, reused 0, downloaded 1848, added 1849
+Progress: resolved 1857, reused 0, downloaded 1848, added 1850
+Progress: resolved 1857, reused 0, downloaded 1848, added 1853
+Progress: resolved 1857, reused 0, downloaded 1848, added 1854
+Progress: resolved 1857, reused 0, downloaded 1848, added 1855
+Progress: resolved 1857, reused 0, downloaded 1848, added 1857, done
+
+devDependencies:
++ turbo 2.5.8
+
+Done in 1m 57s using pnpm v10.28.2

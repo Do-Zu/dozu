@@ -1,0 +1,12 @@
+{
+  "name": "final-graph",
+  "command": [
+    "pnpm",
+    "graph"
+  ],
+  "exitCode": 0,
+  "seconds": 1.25,
+  "capturedAtUtc": "2026-11-12T15:08:37.840967+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "final-graph.log"
+}

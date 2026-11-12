@@ -1,0 +1,1 @@
+ALTER TABLE "plans" ADD COLUMN "tier" integer DEFAULT 0 NOT NULL;

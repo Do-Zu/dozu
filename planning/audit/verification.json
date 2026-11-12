@@ -1,0 +1,53 @@
+{
+  "auditDate": "2026-11-09",
+  "result": "PASS",
+  "sourceCommitsAndTreesUnchanged": true,
+  "sourceFilesHashed": 1796,
+  "pageRows": 84,
+  "layouts": 20,
+  "nonEntryTsx": 584,
+  "hookProviderContextFiles": 132,
+  "navigationSites": 550,
+  "mountedApiContracts": 330,
+  "unmountedDeclarationsExplained": [
+    {
+      "source": "dozu-api-service/src/routes/class-based-learning/classFeed.routes.ts",
+      "line": 14,
+      "method": "router.get",
+      "path": "/teacher/:classId"
+    },
+    {
+      "source": "dozu-api-service/src/routes/class-based-learning/classFeed.routes.ts",
+      "line": 20,
+      "method": "router.post",
+      "path": "/teacher/:classId"
+    },
+    {
+      "source": "dozu-api-service/src/routes/class-based-learning/classFeed.routes.ts",
+      "line": 21,
+      "method": "router.put",
+      "path": "/teacher/:feedId"
+    },
+    {
+      "source": "dozu-api-service/src/routes/class-based-learning/classFeed.routes.ts",
+      "line": 24,
+      "method": "router.get",
+      "path": "/student/:classId"
+    }
+  ],
+  "localMigrationArtifacts": 20,
+  "documentLinksChecked": 3240,
+  "embeddingObservedFailures": [
+    {
+      "method": "POST",
+      "path": "/segments/embedding",
+      "status": 500,
+      "expected": 200,
+      "keys": [
+        "nonJsonResponse"
+      ]
+    }
+  ],
+  "errors": [],
+  "note": "PASS validates audit coverage/references and expected recorded baselines. It does not mean application tests or desktop parity pass."
+}

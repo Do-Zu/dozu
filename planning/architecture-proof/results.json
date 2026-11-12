@@ -1,0 +1,330 @@
+{
+  "threeFileInstalledBound": {
+    "method": "Exactly the unquantized model weight, actually loaded torch_cpu.dll, and executed Electron executable from this Windows candidate. Does not include model tokenizer, Python, other DLLs, Next/API, PostgreSQL, files/jobs or any processing assets. Pruning other files cannot make these three files fit; changing model/runtime is a different candidate to validate. Logical bytes, not compressed filesystem bytes.",
+    "files": [
+      {
+        "path": "C:\\Users\\ADIMN\\.cache\\huggingface\\hub\\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\\snapshots\\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d\\model.safetensors",
+        "bytes": 470641600,
+        "sha256": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b"
+      },
+      {
+        "path": "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+        "bytes": 262656512,
+        "sha256": "8b95ea5c16f259d8b1eb363ae352741ab6d082cb32301b4f95355821b5ef4973"
+      },
+      {
+        "path": "D:\\product\\dozu\\planning\\architecture-proof\\.downloads\\electron\\electron.exe",
+        "bytes": 249831936,
+        "sha256": "15e815a2d04aed1a01787354b93cd2cab425f339b3beaef4f9e4193647f5399b"
+      }
+    ],
+    "bytes": 983130048,
+    "MB": 983.130048,
+    "MiB": 937.5858764648438,
+    "approvedInstalledMB": 750,
+    "passes": false
+  },
+  "modelCompression": {
+    "method": "Concatenate model snapshot files in lexical relative-path order into one XZ/LZMA2 preset-6 stream; output counted/hashed and discarded. No archive filename metadata; not an NSIS installer and not a mathematical lower bound for all compressors.",
+    "modelRevision": "86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+    "files": [
+      "1_Pooling/config.json",
+      "config.json",
+      "config_sentence_transformers.json",
+      "model.safetensors",
+      "modules.json",
+      "README.md",
+      "sentence_bert_config.json",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ],
+    "rawBytes": 479728964,
+    "compressedBytes": 410574192,
+    "compressedMB": 410.574,
+    "compressedMiB": 391.554,
+    "seconds": 205.407,
+    "compressedSha256": "51622b538a6d4af782618952471ede5310c4a40afc6abbed3077dcf6635ded61"
+  },
+  "electronArchive": {
+    "assets": [
+      {
+        "browser_download_url": "https://github.com/electron/electron/releases/download/v45.2.3/electron-v45.2.3-win32-x64.zip",
+        "digest": "sha256:489cd061908e697394b004298bf5ffd345c935d10e8ca197ba819f019ab2dec0",
+        "name": "electron-v45.2.3-win32-x64.zip",
+        "size": 158182975
+      },
+      {
+        "browser_download_url": "https://github.com/electron/electron/releases/download/v45.2.3/SHASUMS256.txt",
+        "digest": "sha256:2bf3a1ae7bcbd65d5c24b1dbc7626ceb098a8c61f21c89c8046512c9e3925a53",
+        "name": "SHASUMS256.txt",
+        "size": 6740
+      }
+    ],
+    "html_url": "https://github.com/electron/electron/releases/tag/v45.2.3",
+    "published_at": "2026-11-04T21:21:59Z",
+    "tag_name": "v45.2.3"
+  },
+  "containedNext": {
+    "packages": 20,
+    "standaloneBytes": 128202924,
+    "routes": [
+      {
+        "url": "http://localhost:43000/en/welcome",
+        "status": 200,
+        "bytes": 97400,
+        "hasNextScripts": true
+      },
+      {
+        "url": "http://localhost:43000/vi/welcome",
+        "status": 200,
+        "bytes": 108283,
+        "hasNextScripts": true
+      },
+      {
+        "url": "http://localhost:43000/en/topics/proof-topic",
+        "status": 200,
+        "bytes": 89541,
+        "hasNextScripts": true
+      },
+      {
+        "url": "http://localhost:43000/vi/auth/login",
+        "status": 200,
+        "bytes": 78443,
+        "hasNextScripts": true
+      },
+      {
+        "kind": "static-script",
+        "status": 200,
+        "bytes": 172837,
+        "url": "http://localhost:43000/_next/static/chunks/93086348-112156c392cc0414.js"
+      }
+    ],
+    "externalModuleResolutionBlocked": true,
+    "httpReadySeconds": 4.8386455999999995,
+    "hiddenRendererLoadSeconds": 10.248304000000001,
+    "processes": [
+      {
+        "cpu": {
+          "cumulativeCPUUsage": 0.453278,
+          "percentCPUUsage": 4.067927652130451,
+          "idleWakeupsPerSecond": 0
+        },
+        "pid": 26532,
+        "type": "Browser",
+        "creationTime": 1794321289159.141,
+        "memory": {
+          "workingSetSize": 108876,
+          "peakWorkingSetSize": 108876,
+          "privateBytes": 78264
+        },
+        "integrityLevel": "medium",
+        "sandboxed": false
+      },
+      {
+        "cpu": {
+          "cumulativeCPUUsage": 0.578037,
+          "percentCPUUsage": 3.9878317200670317,
+          "idleWakeupsPerSecond": 0
+        },
+        "pid": 25216,
+        "type": "GPU",
+        "creationTime": 1794321290007.124,
+        "serviceName": "GPU",
+        "memory": {
+          "workingSetSize": 105432,
+          "peakWorkingSetSize": 112808,
+          "privateBytes": 233716
+        },
+        "integrityLevel": "low",
+        "sandboxed": true
+      },
+      {
+        "cpu": {
+          "cumulativeCPUUsage": 0.134853,
+          "percentCPUUsage": 0,
+          "idleWakeupsPerSecond": 0
+        },
+        "pid": 9724,
+        "type": "Utility",
+        "creationTime": 1794321290010.688,
+        "serviceName": "network.mojom.NetworkService",
+        "name": "Network Service",
+        "memory": {
+          "workingSetSize": 51908,
+          "peakWorkingSetSize": 52756,
+          "privateBytes": 14604
+        },
+        "integrityLevel": "medium",
+        "sandboxed": false
+      },
+      {
+        "cpu": {
+          "cumulativeCPUUsage": 0.433958,
+          "percentCPUUsage": 0.8087277124133869,
+          "idleWakeupsPerSecond": 0
+        },
+        "pid": 24776,
+        "type": "Tab",
+        "creationTime": 1794321290021.305,
+        "memory": {
+          "workingSetSize": 113612,
+          "peakWorkingSetSize": 117828,
+          "privateBytes": 53272
+        },
+        "integrityLevel": "untrusted",
+        "sandboxed": true
+      },
+      {
+        "cpu": {
+          "cumulativeCPUUsage": 1.196528,
+          "percentCPUUsage": 0,
+          "idleWakeupsPerSecond": 0
+        },
+        "pid": 26776,
+        "type": "Utility",
+        "creationTime": 1794321290021.007,
+        "serviceName": "node.mojom.NodeService",
+        "name": "Dozu proof web-contained",
+        "memory": {
+          "workingSetSize": 158132,
+          "peakWorkingSetSize": 163660,
+          "privateBytes": 149104
+        },
+        "integrityLevel": "medium",
+        "sandboxed": false
+      }
+    ],
+    "workingSetBytesAtSnapshot": 550871040,
+    "measurementStart": "Inside Electron main script, after Electron executable startup began; not OS launch-to-interactive timing.",
+    "knownGaps": [
+      "sharp missing; image optimization unpassed",
+      "dynamic topic route logs location is not defined despite HTTP 200",
+      "CSP warning observed",
+      "no API/DB/model in this process group; no full normal-workload measurement"
+    ]
+  },
+  "embedding": {
+    "pid": 27236,
+    "utc": "2026-11-10T14:35:53.608385+00:00",
+    "versions": {
+      "torch": "2.9.1",
+      "transformers": "4.57.1",
+      "sentence-transformers": "5.1.1",
+      "fastapi": "0.117.1",
+      "uvicorn": "0.37.0"
+    },
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "baseExecutable": "C:\\Users\\ADIMN\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "modelRevision": "86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+    "cache": "explicit existing model snapshot; HF_HOME fresh; offline env flags; no downloads; OS file cache not evicted",
+    "threadLimits": 2,
+    "backendReadySeconds": 6.332,
+    "health": {
+      "status": "ok",
+      "model": "C:\\Users\\ADIMN\\.cache\\huggingface\\hub\\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\\snapshots\\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+      "device": "cpu",
+      "device_requested": "auto",
+      "requires_token": false
+    },
+    "readyMemory": {
+      "workingSetBytes": 672161792,
+      "peakWorkingSetBytes": 728576000,
+      "privateBytes": 1207693312
+    },
+    "checks": [
+      {
+        "path": "/single/text/embedding",
+        "status": 200,
+        "seconds": 0.0422,
+        "memory": {
+          "workingSetBytes": 761765888,
+          "peakWorkingSetBytes": 761765888,
+          "privateBytes": 1209040896
+        },
+        "dimension": 384,
+        "finite": true,
+        "norm": 0.9999999763651837
+      },
+      {
+        "path": "/segments/embedding",
+        "status": 500,
+        "seconds": 0.0155,
+        "memory": {
+          "workingSetBytes": 762232832,
+          "peakWorkingSetBytes": 762232832,
+          "privateBytes": 1209139200
+        }
+      },
+      {
+        "path": "/embedding/compare",
+        "status": 200,
+        "seconds": 0.0391,
+        "memory": {
+          "workingSetBytes": 762408960,
+          "peakWorkingSetBytes": 762408960,
+          "privateBytes": 1209597952
+        },
+        "similarity": 0.9999999278515812
+      }
+    ],
+    "idleMemoryAfterRequests": {
+      "workingSetBytes": 762408960,
+      "peakWorkingSetBytes": 762408960,
+      "privateBytes": 1209597952
+    },
+    "torchCpuDll": {
+      "path": "D:\\product\\dozu\\dozu-embedding-service\\.venv\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+      "bytes": 262656512
+    },
+    "workerExitCodeAfterTermination": 1,
+    "sampledPeakWorkingSetBytes": 762408960,
+    "method": "GetProcessMemoryInfo worker PID every 100ms, plus snapshots. Only embedding worker; excludes orchestrator and all not-yet-running Electron/Next/API/DB/converter processes. Windows shared pages can affect summation; private bytes also recorded. No clean-machine or cold-cache/normal full-app claim. Forced worker termination is not graceful supervisor proof."
+  },
+  "loadedNativeModules": {
+    "count": 270,
+    "torchCpuObserved": true,
+    "optionalSpacyObserved": true,
+    "caveat": "Existing venv includes spaCy/thinc; YouTube module eagerly imports optional spaCy. en_core_web_sm not present; refinement falls back. Current memory is not a minimal clean requirements closure; no optional capability silently removed."
+  },
+  "database": {
+    "utc": "2026-11-10T14:26:48.3447562Z",
+    "postgresOnPath": false,
+    "migrationState": "20 ignored local SQL migrations inventoried in audit; no cluster/migrations/seeds/vector writes executed by this proof.",
+    "requests": [
+      {
+        "url": "https://get.enterprisedb.com/postgresql/postgresql-17.11-3-windows-x64-binaries.zip",
+        "error": "Response status code does not indicate success: 403 (Forbidden).",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://sbp.enterprisedb.com/getfile.jsp?fileid=1260491",
+        "error": "Response status code does not indicate success: 403 (Forbidden).",
+        "httpStatus": 403
+      }
+    ],
+    "references": [
+      "https://www.postgresql.org/download/windows/",
+      "https://www.enterprisedb.com/download-postgresql-binaries",
+      "https://github.com/pgvector/pgvector#installation"
+    ],
+    "result": "Native PostgreSQL/pgvector execution not performed: no existing portable binary; official EDB archive requests denied. C++ build tools are available for a later pinned pgvector build after obtaining a verified PostgreSQL distribution.",
+    "cppBuildTools": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community",
+    "standardPostgresDirectory": false
+  },
+  "sourceStatus": {
+    "dozu-ui-service": {
+      "trackedOrUntrackedChanges": "",
+      "commit": "5e1ceb263a29e2fde2359c36f43d0118a8d622f0"
+    },
+    "dozu-api-service": {
+      "trackedOrUntrackedChanges": "",
+      "commit": "173f3f1cbcc81b89ad3eea81723698f7bb7eb876"
+    },
+    "dozu-embedding-service": {
+      "trackedOrUntrackedChanges": "",
+      "commit": "188d0d229a38ee51f48f1e5d5f06cf69f16870c6"
+    }
+  },
+  "acceptance": "All parent #4 criteria and P1\u2013P7 completion gates remain unpassed; native macOS/Linux and supported Windows baselines/installer/minimum hardware have not been executed."
+}

@@ -1,0 +1,1294 @@
+{
+  "sourceCommit": "5e1ceb263a29e2fde2359c36f43d0118a8d622f0",
+  "pageCount": 84,
+  "layoutCount": 20,
+  "sharedComponentTsxCount": 164,
+  "pages": [
+    {
+      "source": "dozu-ui-service/src/app/[locale]/about/page.tsx",
+      "rolesAndWorkflows": "public/redirect/developer surface; no universal auth asserted; Read team/profile content.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/about",
+      "auditEvidence": "audit/feature-parity.json#UI-001",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/32"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/activities/join/[activityId]/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Join quiz activity, show availability/status and start navigation.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/activities/join/[activityId]",
+      "auditEvidence": "audit/feature-parity.json#UI-002",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/features/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; List/create/update/delete subscription features and limits.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/features",
+      "auditEvidence": "audit/feature-parity.json#UI-003",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/feedback/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Filter/list feedback and update moderation/status/auto-ignore operations.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/feedback",
+      "auditEvidence": "audit/feature-parity.json#UI-004",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/llm-api-key-models/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Create/edit/delete key-model associations, priorities and quotas.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/llm-api-key-models",
+      "auditEvidence": "audit/feature-parity.json#UI-005",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/llm-api-keys/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Create/edit/delete/filter provider keys and key status; sensitive DB-backed key handling.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/llm-api-keys",
+      "auditEvidence": "audit/feature-parity.json#UI-006",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/llm-models/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Create/edit/delete/filter provider models and availability.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/llm-models",
+      "auditEvidence": "audit/feature-parity.json#UI-007",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/llm-providers/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Create/edit/delete/filter providers, URLs and availability.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/llm-providers",
+      "auditEvidence": "audit/feature-parity.json#UI-008",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Account/role/activity dashboard cards and signup chart.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin",
+      "auditEvidence": "audit/feature-parity.json#UI-009",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/payments/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Filter/page payment ledger and export CSV.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/payments",
+      "auditEvidence": "audit/feature-parity.json#UI-010",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/plans/[planId]/features/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Assign/edit/remove plan feature access and limits.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/plans/[planId]/features",
+      "auditEvidence": "audit/feature-parity.json#UI-011",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/plans/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; List/create/edit/delete plans and navigate feature assignment.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/plans",
+      "auditEvidence": "audit/feature-parity.json#UI-012",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/revenue/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Filter revenue and gateway/plan/trend analytics.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/revenue",
+      "auditEvidence": "audit/feature-parity.json#UI-013",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/stats/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Fetch user statistics and render charts/loading state.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/stats",
+      "auditEvidence": "audit/feature-parity.json#UI-014",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/subscriptions/list/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Filter/page subscription records and administer their states.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/subscriptions/list",
+      "auditEvidence": "audit/feature-parity.json#UI-015",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/subscriptions/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Subscription KPI/status/monthly charts with links to lists/plans/features.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/subscriptions",
+      "auditEvidence": "audit/feature-parity.json#UI-016",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/teacher-requests/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; List teacher applications/statuses.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/teacher-requests",
+      "auditEvidence": "audit/feature-parity.json#UI-017",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/teacher-requests/pending/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Review pending applications and approve/reject.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/teacher-requests/pending",
+      "auditEvidence": "audit/feature-parity.json#UI-018",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/users/[id]/oauth/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Read user linked authentication accounts and provider metadata.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/users/[id]/oauth",
+      "auditEvidence": "audit/feature-parity.json#UI-019",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/admin/users/page.tsx",
+      "rolesAndWorkflows": "admin intent; inspect explicit gate evidence; Filter/page users; activate/deactivate, edit role and inspect OAuth associations.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/admin/users",
+      "auditEvidence": "audit/feature-parity.json#UI-020",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/auth/changePassword/page.tsx",
+      "rolesAndWorkflows": "guest/account/link callback; see gates; Validate email/code query and submit new password.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/auth/changePassword",
+      "auditEvidence": "audit/feature-parity.json#UI-021",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/42"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/auth/changePasswordEmailSent/page.tsx",
+      "rolesAndWorkflows": "guest/account/link callback; see gates; Show delivery guidance and return navigation; not proof of email delivery.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/auth/changePasswordEmailSent",
+      "auditEvidence": "audit/feature-parity.json#UI-022",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/42"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/auth/forgotPassword/page.tsx",
+      "rolesAndWorkflows": "guest/account/link callback; see gates; Request password-change email and show sent/error state.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/auth/forgotPassword",
+      "auditEvidence": "audit/feature-parity.json#UI-023",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/42"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/auth/login/page.tsx",
+      "rolesAndWorkflows": "guest/account/link callback; see gates; Password sign-in; real Google code redirect; preserve redirect destination and error/loading states.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/auth/login",
+      "auditEvidence": "audit/feature-parity.json#UI-024",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/42"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/auth/register/page.tsx",
+      "rolesAndWorkflows": "guest/account/link callback; see gates; Create account, verification mail, Google sign-in, validation and login link.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/auth/register",
+      "auditEvidence": "audit/feature-parity.json#UI-025",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/42"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/auth/testBackEnd/page.tsx",
+      "rolesAndWorkflows": "guest/account/link callback; see gates; Developer authentication/Redux test surface; preserve source, classify for release.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/auth/testBackEnd",
+      "auditEvidence": "audit/feature-parity.json#UI-026",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/42"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/auth/verifyEmail/page.tsx",
+      "rolesAndWorkflows": "guest/account/link callback; see gates; Read email/code query, verify with backend, update session and navigate.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/auth/verifyEmail",
+      "auditEvidence": "audit/feature-parity.json#UI-027",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/42"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/blogs/page.tsx",
+      "rolesAndWorkflows": "public/redirect/developer surface; no universal auth asserted; Render Blog Page heading; placeholder, no blog CRUD.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/blogs",
+      "auditEvidence": "audit/feature-parity.json#UI-028",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/32"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/assignments/[assignmentId]/details/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Read assignment/attachments/comments; student uploads/replaces/submits work and reads private feedback.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]/assignments/[assignmentId]/details",
+      "auditEvidence": "audit/feature-parity.json#UI-029",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/history/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; List/review student attempt history with answers and timing.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]/class-quiz/[classQuizId]/history",
+      "auditEvidence": "audit/feature-parity.json#UI-030",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/start/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Student start timed attempt, autosave answers, receive quiz activity and confirm submit.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]/class-quiz/[classQuizId]/start",
+      "auditEvidence": "audit/feature-parity.json#UI-031",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/submit/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Submit/review attempt and show result; preserve deadline/retry semantics.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]/class-quiz/[classQuizId]/submit",
+      "auditEvidence": "audit/feature-parity.json#UI-032",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/learning-material/[learningMaterialId]/details/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Read material content/attachments/comments; student read/comment actions.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]/learning-material/[learningMaterialId]/details",
+      "auditEvidence": "audit/feature-parity.json#UI-033",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/mindmap/[topicId]/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Class topic ReactFlow mindmap, source and flashcard sheets, export; student read-only access.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]/mindmap/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-034",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Student dashboard tabs: topics, feed, classwork/materials, assignments and quizzes.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]",
+      "auditEvidence": "audit/feature-parity.json#UI-035",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/[id]/topics/[topicId]/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Class context wraps shared topic workspace and mindmap provider; preserve teacher/student permissions across tabs.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based/[id]/topics/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-036",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/class-based/page.tsx",
+      "rolesAndWorkflows": "student/participant intent; Student class library, invitation/join and class navigation.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/class-based",
+      "auditEvidence": "audit/feature-parity.json#UI-037",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/feynman/[topicId]/page.tsx",
+      "rolesAndWorkflows": "authenticated; subscription/usage gating; Read mission/source, write explanation, request genuine AI questions/review, view history and save learning progress.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/feynman/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-038",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/8",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/32",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/games/brain-chase/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Flashcard-based game, pause/restart/settings and result/progress integration.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/games/brain-chase",
+      "auditEvidence": "audit/feature-parity.json#UI-039",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/games/memory-match/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Match flashcard pairs, timer/game state and completion behavior.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/games/memory-match",
+      "auditEvidence": "audit/feature-parity.json#UI-040",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/generate/page.tsx",
+      "rolesAndWorkflows": "authenticated; subscription/usage gating; Choose text/file/URL/YouTube/media input, convert/transcribe, select model/content/difficulty, stream generation, preview/save study content.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/generate",
+      "auditEvidence": "audit/feature-parity.json#UI-041",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/8",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/32",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/home/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; Guest preview or account library; packages/tree/topics CRUD, current learning, generate actions, learning-mode/admin redirects.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/home",
+      "auditEvidence": "audit/feature-parity.json#UI-042",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/mindmap/[topicId]/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Edit ReactFlow nodes/edges, flashcards/source sheet, generation, roadmap and export/import/save actions.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/mindmap/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-043",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/mindmap/add-flashcard/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Select flashcards in table and attach to nodes; verify IDs/save integration.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/mindmap/add-flashcard",
+      "auditEvidence": "audit/feature-parity.json#UI-044",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/mindmap/nodes/[id]/flashcard/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Temporary node flashcard list fetched through raw Axios; loading/empty/error states.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/mindmap/nodes/[id]/flashcard",
+      "auditEvidence": "audit/feature-parity.json#UI-045",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/mindmap/nodes/[id]/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Mostly empty node page with parameter check; ReactFlow body commented out.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/mindmap/nodes/[id]",
+      "auditEvidence": "audit/feature-parity.json#UI-046",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/mindmap/view/[topicId]/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; View-only ReactFlow source/node sheets and export/download.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/mindmap/view/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-047",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/onboarding/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; Step through topic tags, duration and learning-method preferences; persist completion.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/onboarding",
+      "auditEvidence": "audit/feature-parity.json#UI-048",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/page.tsx",
+      "rolesAndWorkflows": "public/redirect/developer surface; no universal auth asserted; Choose redirect by account/onboarding state; show auth loading.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]",
+      "auditEvidence": "audit/feature-parity.json#UI-049",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/32"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/payment/page.tsx",
+      "rolesAndWorkflows": "authenticated; provider callback; Select plan/payment method, genuine checkout/QR, cancel/return, realtime result and transaction status/history.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/payment",
+      "auditEvidence": "audit/feature-parity.json#UI-050",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/31",
+        "https://github.com/Do-Zu/dozu/issues/41"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/profile/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; Load/update personal information, avatar and notification/settings tabs.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/profile",
+      "auditEvidence": "audit/feature-parity.json#UI-051",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/progress/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; Progress dashboard with study totals and topic/method progress.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/progress",
+      "auditEvidence": "audit/feature-parity.json#UI-052",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/question/edit/[topicId]/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Question editor: change questions/answers/options and persist topic quiz bank.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/question/edit/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-053",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/quiz/[topicId]/doing/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Answer quiz, navigate questions, confirm submission and persist results.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/quiz/[topicId]/doing",
+      "auditEvidence": "audit/feature-parity.json#UI-054",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/quiz/[topicId]/history/[quizResultId]/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Read historical attempt questions/answers and scoring details.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/quiz/[topicId]/history/[quizResultId]",
+      "auditEvidence": "audit/feature-parity.json#UI-055",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/quiz/[topicId]/history/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; List attempts and open result/history details.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/quiz/[topicId]/history",
+      "auditEvidence": "audit/feature-parity.json#UI-056",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/quiz/[topicId]/result/[quizResultId]/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Display saved result and review answers.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/quiz/[topicId]/result/[quizResultId]",
+      "auditEvidence": "audit/feature-parity.json#UI-057",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/quiz/local/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Browser-storage quiz draft/answers plus streak update; shared DB authority requires explicit transfer contract.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/quiz/local",
+      "auditEvidence": "audit/feature-parity.json#UI-058",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/request-teacher/page.tsx",
+      "rolesAndWorkflows": "authenticated account intent; Read request status or submit teacher application.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/request-teacher",
+      "auditEvidence": "audit/feature-parity.json#UI-059",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/request-teacher/reapply/page.tsx",
+      "rolesAndWorkflows": "authenticated account intent; Edit/resubmit teacher application after rejection.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/request-teacher/reapply",
+      "auditEvidence": "audit/feature-parity.json#UI-060",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/40",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/schedule/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; Calendar/list views, recommended slots and learning progress interactions.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/schedule",
+      "auditEvidence": "audit/feature-parity.json#UI-061",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/setting/profile/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; Authenticated wrapper reusing profile page.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/setting/profile",
+      "auditEvidence": "audit/feature-parity.json#UI-062",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/setting/schedule-setup/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; Configure study availability, frequency, methods and schedule preferences.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/setting/schedule-setup",
+      "auditEvidence": "audit/feature-parity.json#UI-063",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/stats/page.tsx",
+      "rolesAndWorkflows": "guest preview or authenticated personal data; see gates; LearningProgress component; verify supplied data and API use before claiming analytics.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/stats",
+      "auditEvidence": "audit/feature-parity.json#UI-064",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/14",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/20",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/34",
+        "https://github.com/Do-Zu/dozu/issues/40"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/activities/[activityId]/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Teacher live quiz monitoring tabs, participation/answer events, refresh and XLSX results export.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/activities/[activityId]",
+      "auditEvidence": "audit/feature-parity.json#UI-065",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/details/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Read assignment/attachments/comments; teacher reviews/grades submissions and edits/deletes assignment.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/details",
+      "auditEvidence": "audit/feature-parity.json#UI-066",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/edit/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Load/edit assignment, topics, rich text, attachments and scheduling.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/edit",
+      "auditEvidence": "audit/feature-parity.json#UI-067",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/assignments/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Create assignment, choose class/topics, rich text, attachments and scheduling; persist and return to class.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/assignments",
+      "auditEvidence": "audit/feature-parity.json#UI-068",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/class-quiz/[classQuizId]/edit/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Edit quiz draft/questions/settings and publish/schedule/close lifecycle.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/class-quiz/[classQuizId]/edit",
+      "auditEvidence": "audit/feature-parity.json#UI-069",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/class-quiz/page.tsx",
+      "rolesAndWorkflows": "teacher intent; List teacher quiz drafts/publications and navigate editing.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/class-quiz",
+      "auditEvidence": "audit/feature-parity.json#UI-070",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/generate/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Teacher generation reuses full GeneratePage for class/topic content.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/generate",
+      "auditEvidence": "audit/feature-parity.json#UI-071",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/details/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Read material content/attachments/comments; teacher edit/delete actions.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/details",
+      "auditEvidence": "audit/feature-parity.json#UI-072",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/edit/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Load/edit teaching material, content, attachments and associated topics.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/edit",
+      "auditEvidence": "audit/feature-parity.json#UI-073",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Read/download learning-material attachment from backend.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]",
+      "auditEvidence": "audit/feature-parity.json#UI-074",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/learning-material/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Create teaching material with topic/content/attachment selection.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/learning-material",
+      "auditEvidence": "audit/feature-parity.json#UI-075",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/mindmap/[topicId]/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Class topic ReactFlow mindmap, source and flashcard sheets, export; teacher edit/save/generate actions.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/mindmap/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-076",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Teacher class dashboard, topics/feed/classwork tabs, create/edit/archive and access management.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]",
+      "auditEvidence": "audit/feature-parity.json#UI-077",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/students/page.tsx",
+      "rolesAndWorkflows": "teacher intent; List/search student enrollment, profile modal and enrollment management.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/students",
+      "auditEvidence": "audit/feature-parity.json#UI-078",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/topics/[topicId]/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Class context wraps shared topic workspace and mindmap provider; preserve teacher/student permissions across tabs.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/class-based/[id]/topics/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-079",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/teacher/home/page.tsx",
+      "rolesAndWorkflows": "teacher intent; Teacher class library and class management/navigation.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/teacher/home",
+      "auditEvidence": "audit/feature-parity.json#UI-080",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/19",
+        "https://github.com/Do-Zu/dozu/issues/27",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/43"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/tests/class/comment/page.tsx",
+      "rolesAndWorkflows": "public/redirect/developer surface; no universal auth asserted; Empty developer route; not implemented comment UI.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/tests/class/comment",
+      "auditEvidence": "audit/feature-parity.json#UI-081",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/32"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/topics/[topicId]/(topic)/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Topic workspace tabs for flashcards, quiz, mindmap, notes and media; generation/edit/learning and source-linked context.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/topics/[topicId]",
+      "auditEvidence": "audit/feature-parity.json#UI-082",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/topics/[topicId]/settings/anki/page.tsx",
+      "rolesAndWorkflows": "account/topic ownership intent; local-quiz also browser state; Select/create/update/delete Anki preset, edit parameters, assign to topic and reset defaults.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/topics/[topicId]/settings/anki",
+      "auditEvidence": "audit/feature-parity.json#UI-083",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/11",
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/16",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/18",
+        "https://github.com/Do-Zu/dozu/issues/21",
+        "https://github.com/Do-Zu/dozu/issues/29",
+        "https://github.com/Do-Zu/dozu/issues/30",
+        "https://github.com/Do-Zu/dozu/issues/44"
+      ]
+    },
+    {
+      "source": "dozu-ui-service/src/app/[locale]/welcome/page.tsx",
+      "rolesAndWorkflows": "public/redirect/developer surface; no universal auth asserted; Browse landing/FAQ, change language/theme and enter sign-in/onboarding.",
+      "localRuntimeStatus": "Not implemented or verified; source audit complete",
+      "route": "/[locale]/welcome",
+      "auditEvidence": "audit/feature-parity.json#UI-084",
+      "followUpIssues": [
+        "https://github.com/Do-Zu/dozu/issues/13",
+        "https://github.com/Do-Zu/dozu/issues/17",
+        "https://github.com/Do-Zu/dozu/issues/32"
+      ]
+    }
+  ],
+  "layouts": [
+    "dozu-ui-service/src/app/[locale]/admin/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/class-based/[id]/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/class-based/[id]/mindmap/[topicId]/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/feynman/[topicId]/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/games/brain-chase/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/games/memory-match/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/generate/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/home/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/mindmap/[topicId]/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/mindmap/view/[topicId]/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/progress/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/quiz/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/setting/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/generate/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/mindmap/[topicId]/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/teacher/class-based/[id]/students/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/teacher/home/layout.tsx",
+    "dozu-ui-service/src/app/[locale]/welcome/layout.tsx",
+    "dozu-ui-service/src/app/layout.tsx"
+  ],
+  "discoveredRouteHandlers": [],
+  "auditDate": "2026-11-09",
+  "auditStatus": "Source/workflow inventory audited; runtime desktop parity unverified"
+}

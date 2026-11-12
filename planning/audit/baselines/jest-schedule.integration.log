@@ -1,0 +1,17 @@
+FAIL src/services/schedule/__tests__/schedule.integration.test.ts
+  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (../../../../dozu-api-service/node_modules/@jest/core/build/index.js:1056:18)
+      at ../../../../dozu-api-service/node_modules/@jest/core/build/index.js:1126:165
+      at ../../../../dozu-api-service/node_modules/emittery/index.js:363:13
+          at Array.map (<anonymous>)
+      at Emittery.emit (../../../../dozu-api-service/node_modules/emittery/index.js:361:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        13.015 s
+Ran all test suites within paths "D:\product\dozu\planning\audit\.runs\dozu-api-service\src\services\schedule\__tests__\schedule.integration.test.ts".
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

@@ -1,0 +1,8 @@
+
+> api-services@0.0.1 typecheck D:\product\dozu\apps\api
+> tsc --noEmit
+
+src/middleware/handler/handler.v3.ts(2,26): error TS2307: Cannot find module 'qs' or its corresponding type declarations.
+D:\product\dozu\apps\api:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  api-services@0.0.1 typecheck: `tsc --noEmit`
+Exit status 2

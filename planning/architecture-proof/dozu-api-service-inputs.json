@@ -1,0 +1,2553 @@
+{
+  "commit": "173f3f1cbcc81b89ad3eea81723698f7bb7eb876",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "bd129bb52792fa1c6f4fa946fe828611ad9309fd4064f8c37d81989e61ff01b2"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "sha256": "f34e5d7a82934522479284c08cefa5dd33b094946971a3a040347e454ca741a4"
+    },
+    {
+      "path": ".github/skills/implement-guideline/SKILL.md",
+      "sha256": "fc32e2a4197f5e378af8074f413cccbe3e1bc23acd3a7be1ede55fcaaa3b4814"
+    },
+    {
+      "path": ".github/skills/implement-workflow/SKILL.md",
+      "sha256": "4ceb9b5f0fd7a6bcd4d32fbd6bb8fcb1ee51bf2bed616042d23df168f6caaf72"
+    },
+    {
+      "path": ".github/workflows/aws.docker-hub.pipeline.yml",
+      "sha256": "f78e07326c0ce46a1fbec91653d414000d70548dea9331ad3e29cd27f3da2453"
+    },
+    {
+      "path": ".github/workflows/aws.docker-pull-source.yml",
+      "sha256": "38fb6d7b1e6ce331e08d5f76925b1bc5eabdeb16082ef1b384ad70fee09742b1"
+    },
+    {
+      "path": ".github/workflows/aws.pipeline.yml",
+      "sha256": "bba736413dcf44ca1fe79a52ea429bc48702d19c893cb0bea72dbb6d5a8d89ea"
+    },
+    {
+      "path": ".github/workflows/eslint.yml",
+      "sha256": "4c55eebd3ed81a672b0acc2c8ab89944f988ad9cd1425ae60a30cc8b5e4289d5"
+    },
+    {
+      "path": ".github/workflows/selector.pipeline.yml",
+      "sha256": "ecf4757e0ae29490243f6251bdda3044d3bdd4dfc7b45ab2700fa65fd8119f6f"
+    },
+    {
+      "path": ".github/workflows/sonarcloud.yml",
+      "sha256": "adbf4b781aaa41446ee72f78889cd711387653804d251e66ee242c122dae0b3c"
+    },
+    {
+      "path": ".github/workflows/vercel.pipeline.yml",
+      "sha256": "23e7244d15d69eccacf360425109c79b591352a958a1980c4a1a0809521815b8"
+    },
+    {
+      "path": ".github/workflows/vietnix.dockerhub.pipeline.yml",
+      "sha256": "65f6569bc35f41a73269c29f777ab4cdd1d423a4bdeefb988006860a9bea7072"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "09deac289550c83a5aff9dc802ecc0c4ce5749ffd2ea0bbe4c80073514cedae6"
+    },
+    {
+      "path": ".nvmrc",
+      "sha256": "4d7c8ddc3ffe0bbd0e27404cfcf6acf93dca4d090d05e41990ffd635f2dc8937"
+    },
+    {
+      "path": ".prettierignore",
+      "sha256": "afb7bb898080a7455631129eb31899bf5e01b21ec121f9b3dd6131e663eb7804"
+    },
+    {
+      "path": ".prettierrc",
+      "sha256": "8624704faa6a4f3ac6d97b07d3a9a02028e061e2fe8cf2787df6ece4ad7cf698"
+    },
+    {
+      "path": ".vercelignore",
+      "sha256": "5241a3a8f7c7f22f38ff026127c690e821e56fa91bb44db9978593e54ddeb7f8"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "sha256": "c6941df1caf77bc9108d850b323073fd04f289e795b0e36948c2a581c75fd013"
+    },
+    {
+      "path": ".vscode/mcp.json",
+      "sha256": "ca3c0a909f05a1409666ddd68aa971750e3970d84ab508e2dda4a1d2541f521f"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "sha256": "83123277b6fc597fbcbb9d13e068eee18fc20998e6986b8fd153507b28eb5294"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "bc18516200cc4c592f6f10323047baa99f62ba435afd16a2cdf49d1e52bb1135"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "d93b522add535f665fdfd4991f5d94c6575fbfe83ba7eb39196ac23d823e6f1e"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "f1eeb89d80a2b39428616c848cfac99edb15d77b59dcc11d0c9dede412a22754"
+    },
+    {
+      "path": "containers/database/postgres/Dockerfile",
+      "sha256": "76e713439a170eadcbd0ace3a744d66f29af71bc082de5a265a5e62fec5747fb"
+    },
+    {
+      "path": "containers/database/postgres/README.md",
+      "sha256": "1414f2be3a7eb06e29a4f683bed3ce957add9a391eee35edd4b8c09eb7cb2c9d"
+    },
+    {
+      "path": "containers/database/postgres/docker-compose.yml",
+      "sha256": "807cbd0cb158c837f89eec4bc235b3a2445d77968568c2d829c0fbe3b0705909"
+    },
+    {
+      "path": "containers/whisper/Dockerfile",
+      "sha256": "dda28b3d4fdbea3236c2fdfb68955bbd578af1f7c84e965be0b001f47464cc04"
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "7f49b206cc9ec1e159068ab9e2f43ec9427016acdae88bff1a4da47a2d7f67db"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "sha256": "a2a0dfe355a844ca5b96978e0ccd2084f6ca5d6bddf8e8bbd58ac441c7afd3d1"
+    },
+    {
+      "path": "eslint.config.js",
+      "sha256": "358a51cceb0fc489e56eff92247d7e770a43eb86f68ff24f7a05325324fe95ed"
+    },
+    {
+      "path": "jest.config.ts",
+      "sha256": "3eea6e240ffe2b9bdca983db38aba44bee0688f001b22f7035d6b9d4f59c7391"
+    },
+    {
+      "path": "nodemon.json",
+      "sha256": "bde7b4451678e937bb066fad954a23abd3faa7b25145a925490ef50f5c73bc9c"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "786c3a1d2615131e075e031251f65fde97c566bc6a171351f0617ce88501ecc1"
+    },
+    {
+      "path": "package.json",
+      "sha256": "fdda987b9ae56ba4eb99f38188f3837357c54dd1c60e9ccd8f4ffa2ced0d382f"
+    },
+    {
+      "path": "scripts/build-lambda.js",
+      "sha256": "44f7136224deafdee0a7b23fa543f9908cfd5bb6bf1da69d2e1fe630061efa7e"
+    },
+    {
+      "path": "scripts/generate/generate-api.js",
+      "sha256": "3548aad4beac99bf2c2c620d01740a845c5ea0f9457db5015373cb74794ed2a3"
+    },
+    {
+      "path": "scripts/generate/utils/helper.js",
+      "sha256": "53cbe462977074da27374eae2beb9919fa393ac95b658dc7ae182ab4d75400c9"
+    },
+    {
+      "path": "scripts/package-lambda.js",
+      "sha256": "9b1e06c8527ac44eb98c3d660fb5e0fb8f0a90c81381760cd4e7a6815e335cc2"
+    },
+    {
+      "path": "scripts/populate-test-data.ts",
+      "sha256": "dfab20856a206e6aa32ab9424c94abfa2d0d7e1791c5135f3615e5f1d1cfc544"
+    },
+    {
+      "path": "src/config/db.config.ts",
+      "sha256": "32e5a519a9dc85d5362a32be666d99d28e22aacd87ca1bfc13ab90ac9328aff3"
+    },
+    {
+      "path": "src/config/env.config.ts",
+      "sha256": "48a0c4a8c7e2ddb2adbe6b9415955109d9c7eb1fab608db2d1a524ec598bfb28"
+    },
+    {
+      "path": "src/config/generate.config.ts",
+      "sha256": "469e49ac5178cc65ed22e12c376a665a9fb6a2cc9d99efdd2636ea6a1c3f3b56"
+    },
+    {
+      "path": "src/config/middlewares/cors.config.ts",
+      "sha256": "757cd862802dc05b0d93661757237f557345fb60aa4ac4235beef4b7e9c41d87"
+    },
+    {
+      "path": "src/config/middlewares/helmet.config.ts",
+      "sha256": "448ef5068d9f4325e506b63fed8347bb49f063c1deac508efa56bdccfbb1ebcd"
+    },
+    {
+      "path": "src/config/middlewares/morgan.config.ts",
+      "sha256": "a8cffa1bc09982f72886d913cd6ff19d56c6d81e2401166cdfa10756fecf6fdf"
+    },
+    {
+      "path": "src/config/middlewares/parse.config.ts",
+      "sha256": "1bf000122e05e503cd46e111ed9ca1289826e72098579fc598facba84f9ab752"
+    },
+    {
+      "path": "src/config/middlewares/rate-limit.config.ts",
+      "sha256": "c75a2c83ddad5bf4d9e15807a35ea9a89a16c174eab0840d844a97069a72faee"
+    },
+    {
+      "path": "src/config/readme.md",
+      "sha256": "8dd5c4fb786f9a639f8a7a0bcfbe6b8f66b8eadc0f1743d619c5ae5ad0e28850"
+    },
+    {
+      "path": "src/constants/auth.constant.ts",
+      "sha256": "67601170f4242e7d0fe24b414126f287c6d64364a55c8aa18595639f15c84ce4"
+    },
+    {
+      "path": "src/constants/index.constant.ts",
+      "sha256": "f3d077b125e54dc5c749350391af455bebb176a10da88d23eaeed52016a7b3b8"
+    },
+    {
+      "path": "src/constants/message.ts",
+      "sha256": "2f1ae35685acb7b5c91e36a7ce9e7afb75c9867c8e42e5181dc8aa5729d47b54"
+    },
+    {
+      "path": "src/constants/openapi.ts",
+      "sha256": "e0d70d1e5c89f04ced234608f0d35a5063bcfaf46677488a993a5b91e2f28f35"
+    },
+    {
+      "path": "src/constants/readme.md",
+      "sha256": "20b760cd1498772b8f2fd3ec40bc2e0c804df8ed2cc3025cd33709945a48fa9f"
+    },
+    {
+      "path": "src/controllers/admin/auth.controller.ts",
+      "sha256": "cfe141529c3080d44cae30ef4c732323345ee12963baa9936956729a6a4755ee"
+    },
+    {
+      "path": "src/controllers/admin/feedback.controller.ts",
+      "sha256": "f437c7ff81c69991a6e653b279312abe8003273251cb3abc09df9183b5606a5e"
+    },
+    {
+      "path": "src/controllers/admin/llmApiKey.controller.ts",
+      "sha256": "206cf79d72e7f6bcc54d26fbecdb1ec04f044d40c75b33ef29f8a378e88e57f8"
+    },
+    {
+      "path": "src/controllers/admin/llmApiKeyModel.controller.ts",
+      "sha256": "718def612c96ec237bd00e2d115214fd4c15fd8e92576fc60718cf6169b5554e"
+    },
+    {
+      "path": "src/controllers/admin/llmModel.controller.ts",
+      "sha256": "be0763dbfa20ea6ba6c80cf2b711beb22b7b223aa40fadc306b7b4bffddff6c4"
+    },
+    {
+      "path": "src/controllers/admin/llmProvider.controller.ts",
+      "sha256": "196af469dc2d14d4ce92deb98e004d4b2ec0df1ece17bc8738da0a345c5e0c12"
+    },
+    {
+      "path": "src/controllers/admin/payment.controller.ts",
+      "sha256": "56280580f5a917e74ddae794cf01936dae42279773917413e447bc9f7658adaa"
+    },
+    {
+      "path": "src/controllers/admin/revenue.controller.ts",
+      "sha256": "7fa0803dcd04f0543857d98b7fb4de87b2d59b49df378823b091e3af56db4035"
+    },
+    {
+      "path": "src/controllers/admin/subscription.controller.ts",
+      "sha256": "e3445582c6f30fc094738def1f550e15a16c3deb80190ec6c7a220ac08a100b9"
+    },
+    {
+      "path": "src/controllers/admin/user.controller.ts",
+      "sha256": "c36347adf465103911929f4cc85d7eee4be2a7f952f9fc930bcc443bedfae431"
+    },
+    {
+      "path": "src/controllers/anki-setting/ankiSetting.controller.ts",
+      "sha256": "a375381451a750da17ac0ccaa987940cb5f16d32edce85e504687126e5e71f35"
+    },
+    {
+      "path": "src/controllers/auth.controller.ts",
+      "sha256": "d06b547caa863409d4b9c740897aac84c0d87f0b32be2f3cb5215cbef63c7b57"
+    },
+    {
+      "path": "src/controllers/backlog/backlog.controller.ts",
+      "sha256": "fbcb666fb389676a14a2656ac8e0c0ffe938e6d133e8f2c94a54c19cd99dfcd7"
+    },
+    {
+      "path": "src/controllers/class-based-learning/class-quiz/classQuizStudent.controller.ts",
+      "sha256": "b4aa4f1808fbd2ac10299e8b2b7b440aa3aac99dcf696c5b60f046f3421da4db"
+    },
+    {
+      "path": "src/controllers/class-based-learning/class-quiz/classQuizTeacher.controller.ts",
+      "sha256": "f6aad8d46cfc09a171a338886347d2d1bbafea8f3b067ff7419c425082f7a7c1"
+    },
+    {
+      "path": "src/controllers/class-based-learning/class.controller.ts",
+      "sha256": "b854009ddb250b4689024c4fd6df42af99ad1c205722329a3882afd3242ea64a"
+    },
+    {
+      "path": "src/controllers/class-based-learning/classEnrollment.controller.ts",
+      "sha256": "c4cbe60c112ce3ad8976dfa34225f73f9a07ead2a01e0fad5a7e27d0a2faae5d"
+    },
+    {
+      "path": "src/controllers/class-based-learning/classFeed.controller.ts",
+      "sha256": "990ead14a8f6b44d9a67c734cb4b824be2954d78463f722d84bdab9985fa77cb"
+    },
+    {
+      "path": "src/controllers/class-based-learning/classInvite.controller.ts",
+      "sha256": "d967c34fd667a1390269d452eb81580363f52c08eef23a8733fc14ebba317678"
+    },
+    {
+      "path": "src/controllers/class-based-learning/classTopic.controller.ts",
+      "sha256": "c5436eff9c523b3cd533cf1314b18a9f0be4d57f92233f65bbf5937909ec72ff"
+    },
+    {
+      "path": "src/controllers/class-based-learning/classTopicComment.controller.ts",
+      "sha256": "df2d7628a9a26f4df2543afaddd6e940fe10451750f5ec307d979adacb8a5980"
+    },
+    {
+      "path": "src/controllers/class-based-learning/classwork.controller.ts",
+      "sha256": "997c1dcdeb478996951a228e7ee2b9cce188d99cb636cdc4dc1fa93cc73de6bd"
+    },
+    {
+      "path": "src/controllers/class-based-learning/learning-material/learningMaterial.controller.ts",
+      "sha256": "b31bc31535d35aa363c8507e4ae7f964f84775857e2367f73a77158e4f681b13"
+    },
+    {
+      "path": "src/controllers/class-based-learning/quizClass.controller.ts",
+      "sha256": "189d4b13a1ea909188862da320343a820fab8eb653f6a27a640bd4170c5d385c"
+    },
+    {
+      "path": "src/controllers/comment/comment.controller.ts",
+      "sha256": "356e094435d4c2da514b40e0f75cca3e1b38a4eaa854d223fd2052edb5383cfe"
+    },
+    {
+      "path": "src/controllers/content/content.controller.ts",
+      "sha256": "a4b8a61f20a6cd5f0232d9b4797834f98a981a0e033a677c350232a786c21f42"
+    },
+    {
+      "path": "src/controllers/content/youtube/youtube.controller.ts",
+      "sha256": "5a1da0008f7cae3980080d5d91402388089ee877f1a478be5e52ad6bb3fce619"
+    },
+    {
+      "path": "src/controllers/convert/convert.controller.ts",
+      "sha256": "727c02894b792c32db41a4d0d3bbf410d6dab2d0321e42b0b74366bf4ca9af63"
+    },
+    {
+      "path": "src/controllers/demo.controller.ts",
+      "sha256": "004371e8bcbfdb3321eb1b4763bd28b3006184b301799a6c212144eb15b89294"
+    },
+    {
+      "path": "src/controllers/embedding/embedding.controller.ts",
+      "sha256": "e5f9c4cfaacf0f2674aa9f207f4129f5fb44826ad16a05f42d70bada8896d59d"
+    },
+    {
+      "path": "src/controllers/feedback/feedback.controller.ts",
+      "sha256": "b056ccb319c6b5f2c9c56148e25c883e229b8464862b6d990737cea2b8d98988"
+    },
+    {
+      "path": "src/controllers/feynman/feynman.controller.ts",
+      "sha256": "15b6f949f605b2599c6b7a362b5db6346dbaa8638aa8d4b5f0db2237b875da78"
+    },
+    {
+      "path": "src/controllers/flashcard/flashcard.controller.ts",
+      "sha256": "4db55ae1e3600d8ef18e1e911031987efeaf86156e9d401f95c594c58a7f0a7b"
+    },
+    {
+      "path": "src/controllers/flashcard/v2/flashcard.controller.ts",
+      "sha256": "8485364727d3445e6dffcfb338524b0da8ff84b5fd2a78d27b9652c74bfe8278"
+    },
+    {
+      "path": "src/controllers/gamification/points.controller.ts",
+      "sha256": "3aa4db6d67f20f86a9a76e378f6d6593827b3aa8ef1ce5f5602e0de5171e0cbb"
+    },
+    {
+      "path": "src/controllers/gamification/streak.controller.ts",
+      "sha256": "47f4ee370369c3263c93708e96dcfbc57bc1e978df2a13cc492ff68d7dd9addb"
+    },
+    {
+      "path": "src/controllers/generate/v1/generate.controller.ts",
+      "sha256": "7c39bfadc383ffe64a7a91348ef27a802ad678ef43a9fb04e4e28466d03a8fd2"
+    },
+    {
+      "path": "src/controllers/generate/v3/generate.controller.ts",
+      "sha256": "a7fec8296d23a53b59e53c113e96169518838e63baf3f942de1bc18fa1587a10"
+    },
+    {
+      "path": "src/controllers/image/image.controller.ts",
+      "sha256": "e9cba9f1e7f45553702fb8bf1b3815c7a5d94054129b24552c902e3201404d7a"
+    },
+    {
+      "path": "src/controllers/inputSet/inputSet.controller.ts",
+      "sha256": "c230570ddf0a09258e25af3150b288cf8f51860b3b016177c69adcb87f955147"
+    },
+    {
+      "path": "src/controllers/mindmap/mindmap.controller.ts",
+      "sha256": "feaf8f00619a002f7d6df03f333df94739027967f67c801d2f8504408fd9e46a"
+    },
+    {
+      "path": "src/controllers/notification/notification.controller.ts",
+      "sha256": "a9d92b36ccdb1035acb1f110b878680bf8f571c58715f185f299e4e367b3c728"
+    },
+    {
+      "path": "src/controllers/onboarding/onboarding.controller.ts",
+      "sha256": "de2265abd5651c28dc36a21aded6c5a5fe7bcb33c141832c1e975ffc57841861"
+    },
+    {
+      "path": "src/controllers/package/package.controller.ts",
+      "sha256": "c17322cbe36e46829b745328d5269eb581ed404b9ed705ae460ee00acb324240"
+    },
+    {
+      "path": "src/controllers/payment/payment.controller.ts",
+      "sha256": "479d41097d2cfc73652330877108dd03fa30811455651cca38e028e13f8a3708"
+    },
+    {
+      "path": "src/controllers/profile/profile.controller.ts",
+      "sha256": "539a499bbbef1011f3d0a98e5661a1f1a54588628f14580bfc5fe831cf98d18b"
+    },
+    {
+      "path": "src/controllers/progress/progress.controller.ts",
+      "sha256": "5e554b2fdc09fa18de54b347ea45c4274ff8654b8abad651a84e1df6f828ba85"
+    },
+    {
+      "path": "src/controllers/question/question.controller.ts",
+      "sha256": "39a8f63a1c8c759ef75a946fbada0c4c1cc580cb07df996f43e08914f68366e2"
+    },
+    {
+      "path": "src/controllers/quiz/quiz.controller.ts",
+      "sha256": "83c45bc5d523ceea28dc896deb3fca0892859e95dce85088ce9611191d95f7dc"
+    },
+    {
+      "path": "src/controllers/readme.md",
+      "sha256": "557c1fb4d3bee730109d4c4f91485bf4235cb265275d628815d95567bc364fd9"
+    },
+    {
+      "path": "src/controllers/recommendation/recommendation.controller.ts",
+      "sha256": "ff85dc51001d4f12817fda13b5c10af83c922a0f507ffb87942bc31861c4cf9b"
+    },
+    {
+      "path": "src/controllers/schedule/schedule.controller.ts",
+      "sha256": "ee28df939ab2c9ff00d384984e9fed8603d7bcbd1454c660a572c330ba2cf111"
+    },
+    {
+      "path": "src/controllers/sse/sse.controller.ts",
+      "sha256": "632385f54e33f785d6487b480bed787f647b885b10844f09ff7683b638b1ac30"
+    },
+    {
+      "path": "src/controllers/subscription/subscription.controller.ts",
+      "sha256": "2a2bafe8cedb1c00881fde45a0986121da4903d5e2f9aa5e6b2ac09cb8382c9b"
+    },
+    {
+      "path": "src/controllers/teacher-request/teacherRequest.controller.ts",
+      "sha256": "27addbafc8f5584c1b96b26085061ef06320a75ffcf35dec4172060fe5d503aa"
+    },
+    {
+      "path": "src/controllers/topic/topic.controller.ts",
+      "sha256": "3413ab57ff2ef1ba7d1926c35c70f68ebc36fea61ce8134e34a6e033959a4c7c"
+    },
+    {
+      "path": "src/controllers/tracking/tracking.controller.ts",
+      "sha256": "8a23ca7b09cf9fe2948af8d153da43299615c9588fdf0a313af691d3363828bc"
+    },
+    {
+      "path": "src/controllers/uploads/upload.file.controller.ts",
+      "sha256": "01545f33a154888bfb54d4411f9b87bb3f188a1727581ede8cf1fd4456e87b3b"
+    },
+    {
+      "path": "src/core/error.ts",
+      "sha256": "9fc6766129f985dd83dfd5fc87196372c5eb95a7a3de6a0450593134420224ac"
+    },
+    {
+      "path": "src/core/request/request.helper.ts",
+      "sha256": "0df3403ddb240a8bc0d0727a9f4a33bd7c68220317a3ce92a33f0bda987c9fb9"
+    },
+    {
+      "path": "src/core/success.ts",
+      "sha256": "7af3d64000c2423067fbc31ae62dac324b83672c26d5541bf7f2d1f1bb31dce4"
+    },
+    {
+      "path": "src/core/validations/params.validator.ts",
+      "sha256": "b3125e971c22e67891b9130e0a1cb5b2f0590af07da421e3b475de002ff83a44"
+    },
+    {
+      "path": "src/core/validations/validator.ts",
+      "sha256": "6c0e4fcdabacfee03209484d687f816c632d823a737475c647d889dee4a35df1"
+    },
+    {
+      "path": "src/docs/convert/convert-file.md",
+      "sha256": "6820668fdd282c345c8b2b3405fe84d46b889c9a5344d3aa93f7702d827ac36d"
+    },
+    {
+      "path": "src/dtos/admin/feedback.dto.ts",
+      "sha256": "2f69b1490bc85b840dfd2fce667ed88e8e96638692820c24d88e94a712d972e1"
+    },
+    {
+      "path": "src/dtos/admin/getUsers.dto.ts",
+      "sha256": "37abd89396298a42097eb7967d4113a8a3345ff62cf4f5d384b72a091a5c5e61"
+    },
+    {
+      "path": "src/dtos/admin/llmApiKey.dto.ts",
+      "sha256": "e98ec7d0948aee300b1670da5dceec20eeaefc57976e34c7878d8d96cb856dfd"
+    },
+    {
+      "path": "src/dtos/admin/llmApiKeyModel.dto.ts",
+      "sha256": "23b80000034906d0b5c927c4c8336b4d7a40ec7cd2a31d15fa0617ca8116ab3b"
+    },
+    {
+      "path": "src/dtos/admin/llmModel.dto.ts",
+      "sha256": "eadcec3ff1be9bb82363826c088080c917a938fc41bfeb7c734f12de7bd6d90e"
+    },
+    {
+      "path": "src/dtos/admin/llmProvider.dto.ts",
+      "sha256": "99d2a8539505b998209366402043c3a24bd78e01ae89276290fbafd150828323"
+    },
+    {
+      "path": "src/dtos/admin/payment.dto.ts",
+      "sha256": "fa1c7097c1b9d7c98dbb66c3d3ea18586a42c0281f8db1728c0a2858450b0f95"
+    },
+    {
+      "path": "src/dtos/admin/revenue.dto.ts",
+      "sha256": "d4414448f155070cb3dfd676431b70fcec35bf8482c7edc666b0c5ab653f2388"
+    },
+    {
+      "path": "src/dtos/admin/subscription.dto.ts",
+      "sha256": "6b0641e4f8dc35a39df922c8ef576807d630f7cfc4f247e3435c400aa56e83c0"
+    },
+    {
+      "path": "src/dtos/admin/subscriptionStats.dto.ts",
+      "sha256": "3d8d5f7c633f5b2cf367413bc426e228b3d8b36684e73bfbc30282cb87f93a5e"
+    },
+    {
+      "path": "src/dtos/admin/updateUserRole.dto.ts",
+      "sha256": "57bc75671985aff397d207ad991aaadf91e914132f577e5f3ea96bed7838d2fb"
+    },
+    {
+      "path": "src/dtos/backlog/backlog.dto.ts",
+      "sha256": "eff3d43b11da14ab86b372ccb5787e83e993a6ee31802c8c7db6f4371a90694a"
+    },
+    {
+      "path": "src/dtos/class-quiz/classQuiz.dto.ts",
+      "sha256": "e52a88fdf2e49eb11addcabdbc3e3d63fce8f2f203a32b8a430e0f3075fe988f"
+    },
+    {
+      "path": "src/dtos/generate/index.ts",
+      "sha256": "316d63c2cfe840921701018bd73f027a99ac6162d974b7212fb0bbd1e4b4b89a"
+    },
+    {
+      "path": "src/dtos/generate/models/FileUploadRequestInterface.ts",
+      "sha256": "b27941f782d9d2ab846dede7a73ce7364dc109c29a146d0573507897f6016042"
+    },
+    {
+      "path": "src/dtos/generate/models/FlashcardItemInterface.ts",
+      "sha256": "283a44c5d0a36b5a3e7542b6efeb43aaea19d37f5794672d13148c88f37cf364"
+    },
+    {
+      "path": "src/dtos/generate/models/GenerateContentRequestInterface.ts",
+      "sha256": "c94a97241ba83566a25af08a75d76da9e7a781f2b8b99ab1de5b228a6ba94431"
+    },
+    {
+      "path": "src/dtos/generate/models/GenerateContentResponseInterface.ts",
+      "sha256": "5f1ba11391d5484cf58669bedac0a252849d8b4b1fd4ea3d202abc3b351ee75b"
+    },
+    {
+      "path": "src/dtos/generate/models/JobStatusResponseInterface.ts",
+      "sha256": "857bde80fc01b1f74fe66a972d2771cd5fdda21c53366ffb3adcc5fbe816f67d"
+    },
+    {
+      "path": "src/dtos/generate/models/MindmapGenerationResponseInterface.ts",
+      "sha256": "751026c42118daf1b150335cdfb31621641362205bc291a1cd20707d79ccc9bd"
+    },
+    {
+      "path": "src/dtos/generate/models/QuizItemInterface.ts",
+      "sha256": "2e1bb2e381f41d3fd7abae653eecf216609fbe4ca2c0bc01ecd3feb8070a304a"
+    },
+    {
+      "path": "src/dtos/onboarding/onboarding.dto.ts",
+      "sha256": "17e55ee075e0a4ebc23c35e44b75c6732132d6332d1594d6b1a97dc0037662f0"
+    },
+    {
+      "path": "src/dtos/package/package.dto.ts",
+      "sha256": "85028fb1989a8a9bc2732ff8a632a698e0297be6b7b33a65a7755781aeaf5234"
+    },
+    {
+      "path": "src/dtos/question/ question.dto.ts",
+      "sha256": "db169e55791b9b5079d109706a26ef3502a39f72b1eeab31aa79c6c3c8c2d314"
+    },
+    {
+      "path": "src/dtos/question/questionHealth.dto.ts",
+      "sha256": "1ae7690322b8fa2d8dbd131c381441d76721d18df125889462c99a49e334ee30"
+    },
+    {
+      "path": "src/dtos/quiz/quiz.dto.ts",
+      "sha256": "e1d01071aa16ac004e96616c88cf6d4c6a3a607d106f92f53a25a9fa84cbfbe8"
+    },
+    {
+      "path": "src/dtos/subscription/subscription.dto.ts",
+      "sha256": "9f6d01d09cb76b522606da00f944dc1d717842302df684eb853d9bcdeef3f5a6"
+    },
+    {
+      "path": "src/features/assignment-submission/assignmentSubmission.controller.ts",
+      "sha256": "94caa1273258f8d0587c59550cab9abff2e76a1242c18c5bdccd7f49d714be85"
+    },
+    {
+      "path": "src/features/assignment-submission/assignmentSubmission.schema.ts",
+      "sha256": "07ec79b556169073a9ddbd009e608efdaa53e9f6bd9b99098fdab6e4fadf8d3c"
+    },
+    {
+      "path": "src/features/assignment-submission/assignmentSubmission.service.ts",
+      "sha256": "bd3da9927bcf8a7f156ff6913bdd50b720bde0e8f341dc71caa60ad58bc9321d"
+    },
+    {
+      "path": "src/features/assignment-submission/assignmentSubmission.type.ts",
+      "sha256": "3730aae665ca8d9a2e238f63d61557803f03ad7b18c170738742fba2b3b9a5fb"
+    },
+    {
+      "path": "src/features/assignment-submission/assignmentSubmissionAttachment.service.ts",
+      "sha256": "96f5eb32944261bcb6934c3baabe0068747028494b271909d627d389fbd799f4"
+    },
+    {
+      "path": "src/features/assignment/assignment.controller.ts",
+      "sha256": "64023f2ada0e5c395632964cdf88edd9d8bbf003a3be15d376b59904ce1f8c3e"
+    },
+    {
+      "path": "src/features/assignment/assignment.middleware.ts",
+      "sha256": "a3a5206e13ced56de15b240cc6761e7110544ca624e53abc96bb0aa98dec3070"
+    },
+    {
+      "path": "src/features/assignment/assignment.repo.ts",
+      "sha256": "d537613d52ffe3c9df60a64f772774b7d8bf0a0fc75505e68a192955d556c424"
+    },
+    {
+      "path": "src/features/assignment/assignment.schema.ts",
+      "sha256": "c0f53c110bdc4ad56b0cc04aa10ec60ff9da04274ea0ed57045a5f8fd3926fc6"
+    },
+    {
+      "path": "src/features/assignment/assignment.service.ts",
+      "sha256": "38f9552abf5b538cc95bbe37e77a0f2b9d2525a24158afb1b5d1bee4302f351f"
+    },
+    {
+      "path": "src/features/assignment/assignment.type.ts",
+      "sha256": "e31db8f05955c5a7ce5d7b5747396938d69baf9eb847863d7a2c825db7ae2704"
+    },
+    {
+      "path": "src/features/assignment/assignmentAttachment.service.ts",
+      "sha256": "31a57bbb6d5f8c2909e988b5dec25ec66c1a3e96a4eea696288dcef443be5f73"
+    },
+    {
+      "path": "src/features/media-transcription/media.middleware.ts",
+      "sha256": "f36c2e7a5530df6e2ba62c9127048a7b048a08cd9fa82655593d03172736a6b0"
+    },
+    {
+      "path": "src/features/media-transcription/mediaTranscription.controller.ts",
+      "sha256": "927df35326791b3f3f834d039b3ae25fb6ca48d277dddb2d7d2d458f394496c5"
+    },
+    {
+      "path": "src/features/media-transcription/mediaTranscription.service.ts",
+      "sha256": "5d6f27ff3730d1135b57a1d09a8b0f4fa3b5ea724c939370322459c0da37cca0"
+    },
+    {
+      "path": "src/features/note/note.controller.ts",
+      "sha256": "a97e0c5b5f21f6834c75a004b66fb26025bb11d0708e84eac060b34bcde207b8"
+    },
+    {
+      "path": "src/features/note/note.type.ts",
+      "sha256": "ac5e9ae5e8f18a78729d3b0248127244ffdbf9dc590632f7bc850a36bbad831a"
+    },
+    {
+      "path": "src/features/whisper/api/whisper.service.ts",
+      "sha256": "7345e6023b8080ccc08fc9bdf134e66b0b9c371b0d2561f914139310d3cf7f1e"
+    },
+    {
+      "path": "src/features/whisper/local/whisper.constant.ts",
+      "sha256": "beb541d71909d31ff5fa6c19734c206035dc3bd0b4e422b647ff97bc050d496e"
+    },
+    {
+      "path": "src/features/whisper/local/whisper.service.ts",
+      "sha256": "4bb1d8d1bad535abc4321d01af12ba62c411671dde53105d75b602db8ce69899"
+    },
+    {
+      "path": "src/global/types/express/index.d.ts",
+      "sha256": "f86b7fde031c7516d2cd837b4d111820fb5a24817b7e792a9c1a8d5d55c7bfe6"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "5a7129f40dfef64f4ac001b3135f736d87d7221bd9a4dcda780bc023ecf740ed"
+    },
+    {
+      "path": "src/libs/aws/lambda/generate/handler.ts",
+      "sha256": "cf04477c4f498284cac9f05d688be37f35e94284d538fdab2c46c90213200421"
+    },
+    {
+      "path": "src/libs/aws/lambda/generate/index.ts",
+      "sha256": "15338357c7d690d0fd3c6af5d014e63af1a63ff9ec58aeedaf986bc4f95498f2"
+    },
+    {
+      "path": "src/libs/bullmq/bullmq.ts",
+      "sha256": "e11e917f264a7d3b4933e74b7af503199d8e6446aaef431d462a5f9f99bfd131"
+    },
+    {
+      "path": "src/libs/cloudinary.lib.ts",
+      "sha256": "4caa18202f9422e689d4d409d7be534696b70245806a6769f135a94c2ccdadfb"
+    },
+    {
+      "path": "src/libs/drizzleClient.lib.ts",
+      "sha256": "62a963b87286163f6094a37c6933e0ba4f177897c920052b72af2346ebaa177b"
+    },
+    {
+      "path": "src/libs/googleOAuth2Client.ts",
+      "sha256": "069da46a4588de0e19354083bd03aba8aaddd3ceb44081f83c8c4fbe79b34bb3"
+    },
+    {
+      "path": "src/libs/multer.lib.ts",
+      "sha256": "df8daff9aeb3a76ea841b9e2cec478290473275cef9b42a756abdaa46c2188da"
+    },
+    {
+      "path": "src/libs/nodeMailerTransporter.lib.ts",
+      "sha256": "ff6037918370bf417409e3723545ba463c899c828dfe1d008b6c8f5d9b986410"
+    },
+    {
+      "path": "src/libs/readme.md",
+      "sha256": "5a7dba3282c354bf273d5c20972e422c2d06874d2cb1a153fb037be105bd4660"
+    },
+    {
+      "path": "src/libs/redis/base/redis.abstract.ts",
+      "sha256": "dd119a6528917bede8af137c8b1c58bcc24e941244d666b566f875ec45e5a927"
+    },
+    {
+      "path": "src/libs/redis/base/redis.interface.ts",
+      "sha256": "58096e8727a115da372481885443c70a5b387a76a10afaf334c7f6f474981665"
+    },
+    {
+      "path": "src/libs/redis/default/redisDefault.ts",
+      "sha256": "5bf300199f16a50fb3e464c8f7ecf023a3415cc060a6600223ea2364f4c71540"
+    },
+    {
+      "path": "src/libs/redis/pub-sub/redisPubsub.connect.ts",
+      "sha256": "d425c1c87f874d1c40aba27f6c82cb0241286beb4f2dcb82147e51895ce1f3b6"
+    },
+    {
+      "path": "src/libs/redis/recommendation/redisRecommendation.ts",
+      "sha256": "fd5f5ba0b3f3a28125d67c743b8bcafb41a93e8a6795aa1cdaef4b401c7427ec"
+    },
+    {
+      "path": "src/libs/redis/redis.config.ts",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/libs/redis/redis.connect.ts",
+      "sha256": "71b29f10a0e67c6c822f56ae4282931941ba643b35bf632ea5d2c2c6a2a39bb5"
+    },
+    {
+      "path": "src/libs/redis/redis.instances.ts",
+      "sha256": "7ed72a595c126b18902c40b83ec5c85340e800d3c1f1132f95b1c9a827496167"
+    },
+    {
+      "path": "src/libs/redis/wordFrequency/redisWordFrequency.ts",
+      "sha256": "3bcbaf46527d49d819231213a44216f41d50445b5d68bed7e960109ca9a31b4e"
+    },
+    {
+      "path": "src/libs/unsplash.lib.ts",
+      "sha256": "3b5503ba3614b1ebbe0a0a6670b89d3117160430a0ff932100523924133fbe22"
+    },
+    {
+      "path": "src/libs/websocket/notification.websocket.ts",
+      "sha256": "378899520245ae294c766241fbceecbd83dd97d9f340d3822a98e486d82e4d30"
+    },
+    {
+      "path": "src/libs/websocket/quizActivity.websocket.ts",
+      "sha256": "6109d2d11e672f1793b8e9105c8b178cbf6a2f21a36d3d19a968e47c05c3d43b"
+    },
+    {
+      "path": "src/libs/websocket/socket.io.ts",
+      "sha256": "ccefb82534da6bf2c15b01ef3f486205278567456c7308a58792f30474d25837"
+    },
+    {
+      "path": "src/middleware/auth.middleware.ts",
+      "sha256": "8c778815dd59528cbe95835acc6d137dca246fa6cee8a08be1b4d055b382a9e4"
+    },
+    {
+      "path": "src/middleware/class-based-learning/class.middleware.ts",
+      "sha256": "1ef544a5a4ce688f2de27e112f20483ab198a34dc419c993061bc8a2229ef0f6"
+    },
+    {
+      "path": "src/middleware/class-based-learning/classInvite.middleware.ts",
+      "sha256": "87c0ec4b132096e61f758eef6f01c3f85685bf35a1deb879e613b1abf1aea4fb"
+    },
+    {
+      "path": "src/middleware/class-based-learning/classTopic.middleware.ts",
+      "sha256": "f439e11840cb5585decf9bf39fc9169549af8d2326376de8394f2a1bbf3fb80f"
+    },
+    {
+      "path": "src/middleware/class-based-learning/quizClass.middleware.ts",
+      "sha256": "b1cbb4fad53d489b4dd89cd9ad3baae3d89973f9ad0b90c7866d93899cd629c2"
+    },
+    {
+      "path": "src/middleware/flashcard/flashcard.middleware.ts",
+      "sha256": "2223fbb4259f3aec9e1b8d596df7bf3eeaf86c049debfdc503e37fdcb76214a6"
+    },
+    {
+      "path": "src/middleware/handler/handler.ts",
+      "sha256": "5d61af1ddc0ee95cf2d6f92f8694f97f356c5675d197429d23f026bf374fa2c3"
+    },
+    {
+      "path": "src/middleware/handler/handler.v2.ts",
+      "sha256": "cb6257c17592777d966ea52215b20f9f68a2c1d561060af8dde4207db7f1f905"
+    },
+    {
+      "path": "src/middleware/handler/handler.v3.ts",
+      "sha256": "5ce7bbf87434d81b9df1ea2ffb7eccf32921517bbee88750a8b59099af577587"
+    },
+    {
+      "path": "src/middleware/image/image.validation.ts",
+      "sha256": "65384c8141fd7174ba55e6f095263916307e1ade2a320f387443154d00990bbf"
+    },
+    {
+      "path": "src/middleware/mindmap/mindmap.middleware.ts",
+      "sha256": "64d8076f261131a2ca2cc3492d1aae0952b10d106dcb746803687979442f4db3"
+    },
+    {
+      "path": "src/middleware/readme.md",
+      "sha256": "e04bbbac49db04fb2d911dd9c45cae40dfaefaf1fd59f8fe08f412a822f24f4a"
+    },
+    {
+      "path": "src/middleware/storage/convert-upload.middleware.ts",
+      "sha256": "e451fd78e8ef20a95e67cc8ad15fd8666fe8fbfbd9a97c1c68d25c5af0f9b014"
+    },
+    {
+      "path": "src/middleware/subscription/__test__/subscript.middleware.test.ts",
+      "sha256": "048077ec192d4da1b64fe72ac6ee2341049de3a3be1e501075a346b5d95730bc"
+    },
+    {
+      "path": "src/middleware/subscription/constants/subscription.constants.ts",
+      "sha256": "ad44e8a8121ee0151a4dec7224be14911a12fbb128241229003b6d89c8169588"
+    },
+    {
+      "path": "src/middleware/subscription/docs/subscription.middleware.docs.md",
+      "sha256": "2625f0a9bf2a0131275b425db4da747adcf7fbc3a79813fecbf25abedd75b8cb"
+    },
+    {
+      "path": "src/middleware/subscription/subscript.middleware.ts",
+      "sha256": "a392ef668d343265ad7d9ad0c27b39a54d44344f31e3dd569342a1573d3a1084"
+    },
+    {
+      "path": "src/middleware/subscription/types/subscription.types.ts",
+      "sha256": "11af6c5b755d692a14b80fe6f0cf052207d4221eb82099302977dc4aa407a1ff"
+    },
+    {
+      "path": "src/middleware/subscription/validators/feature.validator.ts",
+      "sha256": "24c73eaec8e7ac589cb030591b7130a0de6bafd31d9b03c8624defaa5d9367a9"
+    },
+    {
+      "path": "src/middleware/subscription/validators/featureLimit.validator.ts",
+      "sha256": "e44e1e38c8e565f4b58cf9a8c724ef47e5ac7f74bcc57011a6f5eeb41ae6fd88"
+    },
+    {
+      "path": "src/middleware/subscription/validators/index.ts",
+      "sha256": "cbba870aee117b8dc61e8b33886e5075ba7c23479c0a71a1c37050542d675018"
+    },
+    {
+      "path": "src/middleware/subscription/validators/subscription.validator.ts",
+      "sha256": "bcffaab76a9074fdbf150d00f0c4e65d7132a0c43c37cb264363a2f054e8879e"
+    },
+    {
+      "path": "src/middleware/subscription/validators/time.validator.ts",
+      "sha256": "f5435c012c4e23dd4c46a802cc6928f0f32d565896d5fffa99473bb8303153c1"
+    },
+    {
+      "path": "src/middleware/topic/topic.middleware.ts",
+      "sha256": "4baff255b556216a409408cde0237f250d8ccb09b59b9a38b025e70f9a39a655"
+    },
+    {
+      "path": "src/middleware/upload.middleware.ts",
+      "sha256": "df3a44787738f4a36b6cec6120a14b7b7e903c812d1fce1de6a880f849c56d9a"
+    },
+    {
+      "path": "src/middleware/validations/admin/llmApiKey.validation.ts",
+      "sha256": "2dbfa487ddb5826b3e8f231a12a50addfbfdf7263af5969680d0f4dac6f27d36"
+    },
+    {
+      "path": "src/middleware/validations/admin/llmApiKeyModel.validation.ts",
+      "sha256": "31f8fd256d84baabe61379c03cad804b3d5f355a0a31d8471426daf1823bc9c4"
+    },
+    {
+      "path": "src/middleware/validations/admin/llmModel.validation.ts",
+      "sha256": "b5ead844eea32cf0877862eb8ab04584ec36b123e92fa98f6ba6e77badba940b"
+    },
+    {
+      "path": "src/middleware/validations/admin/llmProvider.validation.ts",
+      "sha256": "4d697409f2f1d92401687ee849363694589268a9f9c7b3ec429e9d719f6acc5d"
+    },
+    {
+      "path": "src/middleware/validations/admin/user.validation.ts",
+      "sha256": "7ba280f131c5cfc72b272344ad2ad0df932017b4294933baccfd2e30b3b5642f"
+    },
+    {
+      "path": "src/middleware/validations/backlog.validation.ts",
+      "sha256": "eeaee368bfdf12fe817e364236c0c8ddc4b9bb2f5b520c4a431de74e3d5e1793"
+    },
+    {
+      "path": "src/middleware/validations/class-quiz/classQuiz.validation.ts",
+      "sha256": "a0c992df349a8d0f21eb885b1830117685df1978b61904fe97de80405ea13468"
+    },
+    {
+      "path": "src/middleware/validations/class/comment/classTopicComment.validator.ts",
+      "sha256": "503481df5beed588978438b9e0b2b668a84b5892773bd86b2292cc302c9eefa0"
+    },
+    {
+      "path": "src/middleware/validations/feynman/feynman.validation.ts",
+      "sha256": "3da066dc27d3b84f1c92985cc61f3b4881bb769113a53d9cb528afa054df97e1"
+    },
+    {
+      "path": "src/middleware/validations/flashcard.validation.ts",
+      "sha256": "03aba25227d159f29047e881505abfeae3be221f2741eb246dbc3510679dcbda"
+    },
+    {
+      "path": "src/middleware/validations/package/package.validation.ts",
+      "sha256": "d396211aec4eb9823637edd06418e0ceb9246f27f540a4e4156ae3dc8f4891d8"
+    },
+    {
+      "path": "src/middleware/validations/progress.validation.ts",
+      "sha256": "a01fc121e55b3292a6272ef95c0618095ef77b2251a40ca166d2d29bf1ecf217"
+    },
+    {
+      "path": "src/middleware/validations/question.validation.ts",
+      "sha256": "b4fe91c3b4b00c878635706792df8b163bb80599a08880083926ca4de82dbed7"
+    },
+    {
+      "path": "src/middleware/validations/quiz.validation.ts",
+      "sha256": "dddfb9de6a5703566c08c1954148347f516423a7a3a354450940dbed78ff811e"
+    },
+    {
+      "path": "src/middleware/validations/upload.validation.ts",
+      "sha256": "f0f848a1d98d10831d4ae662a2e39c95d5403b2ac2d843a836870fcb5d25dab8"
+    },
+    {
+      "path": "src/models/anki-setting/ankiSetting.model.ts",
+      "sha256": "ca3775fba71b8e6b80afe69ae2c48d68bfc2614983fa2f7e17ed1f9a6dc3b247"
+    },
+    {
+      "path": "src/models/attachment.model.ts",
+      "sha256": "440af5c2b0fa2b562252ff5360d1195a94386101f31e9676f90dcc6d9d47dedf"
+    },
+    {
+      "path": "src/models/auth/authAccount.model.ts",
+      "sha256": "bb772cf2a4b14684282af3e985b81150527b1fd3a50716bd2eeb977e41b7abad"
+    },
+    {
+      "path": "src/models/auth/changePasswordRequest.model.ts",
+      "sha256": "19ffbf11efdb18a4ed10d162d8bbc2fc012a9b9704569f952878b884a4eee35c"
+    },
+    {
+      "path": "src/models/auth/emailVerificationCode.model.ts",
+      "sha256": "0a5a9f66bc04ff562c66e4f060529090dfe4001700d5222d9de1a63e899128f3"
+    },
+    {
+      "path": "src/models/auth/permission.model.ts",
+      "sha256": "7def4800050d57bfafd4e5f41516c223b443f8d84561da9508382736d0a227cb"
+    },
+    {
+      "path": "src/models/auth/role.model.ts",
+      "sha256": "4bd436277ecec3629cd54638588a79e1301e23e25e78ae293823a687d0f17232"
+    },
+    {
+      "path": "src/models/auth/rolePermission.model.ts",
+      "sha256": "e9fa251a12bfbeea45294327191c8b8ccbbfe3e49f8f004e73a61caa6d9fb7b0"
+    },
+    {
+      "path": "src/models/auth/userRole.model.ts",
+      "sha256": "548bf2f8c23b5f65a1a3e22302362dd1d3fad1ebb3421567c6ccf26cd682a662"
+    },
+    {
+      "path": "src/models/class-based-learning/assignment/assignment.model.ts",
+      "sha256": "db1757c27aa1d4d4f1af3172a3ca2b011bca87c2dcf0785397ebbeae7271e71c"
+    },
+    {
+      "path": "src/models/class-based-learning/assignment/assignmentAttachments.model.ts",
+      "sha256": "2d54e866df03c1b1e8edcb24b50a4b694b3fcf52000ae42bb6eeb6095ef43c2a"
+    },
+    {
+      "path": "src/models/class-based-learning/assignment/assignmentComment.model.ts",
+      "sha256": "1ff93d79dff017fa9fe3228fcfee65439e4af9504b1ed02c230ffee704472ec3"
+    },
+    {
+      "path": "src/models/class-based-learning/assignment/assignmentSubmission.model.ts",
+      "sha256": "04bc8e828ee4c52defec0cab68bc58366c946a81aa3b5272aea9d392b88f1584"
+    },
+    {
+      "path": "src/models/class-based-learning/assignment/assignmentSubmissionAttachments.model.ts",
+      "sha256": "8d21d46e5c984cea091fb6d3542bd64429db4fabf085666913a9a6c19b871919"
+    },
+    {
+      "path": "src/models/class-based-learning/assignment/index.ts",
+      "sha256": "4fa756971106df77e4ad906930dee2c5ace5d9822d393220d32dc4c3428435c5"
+    },
+    {
+      "path": "src/models/class-based-learning/class.model.ts",
+      "sha256": "c0e9c7291e9e16f77f53fcde2f11af01a14869fefd862d3c73f7764168be370b"
+    },
+    {
+      "path": "src/models/class-based-learning/classEnrollment.model.ts",
+      "sha256": "2de26ac28c435712ef27c6669e3b8ed70762588083677e137b855dcee1c13c6f"
+    },
+    {
+      "path": "src/models/class-based-learning/classFeed.model.ts",
+      "sha256": "2fef6a4a7d4be2b282ba3c28d34ebfd2503bbbc0a966ec79b539a4ca88c675cd"
+    },
+    {
+      "path": "src/models/class-based-learning/classInvite.model.ts",
+      "sha256": "e4f0c0454694c6a88d8cc71fdad439bbd443f1c1cf2334922c361a5aa9d1d65f"
+    },
+    {
+      "path": "src/models/class-based-learning/classTopicComment.model.ts",
+      "sha256": "73ca3402e93a55418e76f749192cda77db0e03de336ebe2525767e4106c42452"
+    },
+    {
+      "path": "src/models/class-based-learning/quiz-class/classQuizAttemptAnswers.model.ts",
+      "sha256": "5ea3714c889e2d0086d2f1414f02c57b6d9a0bcf5cf5430294907a84190371af"
+    },
+    {
+      "path": "src/models/class-based-learning/quiz-class/classQuizAttempts.model.ts",
+      "sha256": "1ecbf8c38df4e893b1d0d72c6aea8164d8a9dfa04ebbe6c343da4e73aaa1fef6"
+    },
+    {
+      "path": "src/models/class-based-learning/quiz-class/classQuizDraft.model.ts",
+      "sha256": "1fdf704b074232c16bfc964a15750adc0a9814718716a83d2553b77d04f3e60f"
+    },
+    {
+      "path": "src/models/class-based-learning/quiz-class/classQuizVersions.model.ts",
+      "sha256": "a8bcb7f9bd06d5d02c97dbc84d7eec1090c968ac7b83ee26ba132e0464aaf26e"
+    },
+    {
+      "path": "src/models/class-based-learning/quiz-class/classQuizzes.model.ts",
+      "sha256": "e3c85d022d80a807d8f8767108827116b3ce9dc1a14c66290d097723ab833ccd"
+    },
+    {
+      "path": "src/models/comment/comment.model.ts",
+      "sha256": "c74aa1bd59db7757e8970ab1fcccdd6aa814d110ea1269f6ebb1355585c18e03"
+    },
+    {
+      "path": "src/models/demo.model.ts",
+      "sha256": "c8e0afd9bd4af869b15e2379873eaa0468f39b374e339dda0a5156189d6e4089"
+    },
+    {
+      "path": "src/models/embedding/embedding.model.ts",
+      "sha256": "b606acca3fc8b828da785b0ac43a4c67ab93ca92dd059224c615ee9ac6877e42"
+    },
+    {
+      "path": "src/models/embedding/index.ts",
+      "sha256": "74a776986562efa634332075a7193b96e7dce3f0336e92bb47934070d28a9a99"
+    },
+    {
+      "path": "src/models/feedback/feedback.model.ts",
+      "sha256": "97590dd558feea29ee64b2b3171302f35ffc9ee654bb11a34061da5e1e648f9d"
+    },
+    {
+      "path": "src/models/feynman/feynman.model.ts",
+      "sha256": "a83336d60e94de0cc9d11f1dbff6462b43c771e2cd8a60955ed90ef42cb5d1db"
+    },
+    {
+      "path": "src/models/feynman/index.ts",
+      "sha256": "6a5462e22c61669941916ecb1826745f3e027c57ff74e34d6b9ba104d74976af"
+    },
+    {
+      "path": "src/models/flashcard.model.ts",
+      "sha256": "56bda10e31a9436fd9553065978de9d10a2b17b29559236743a18b90be5aa8b0"
+    },
+    {
+      "path": "src/models/flashcardBacklog.model.ts",
+      "sha256": "0f11c7394490488da8b326cdfeb8eef833b70b88a3d7a349d6bda390af77b07d"
+    },
+    {
+      "path": "src/models/gamification/achievement.model.ts",
+      "sha256": "37a6e132f6969dedeb1a7e95896298bbc2b79479f187eb16009287129259ea1a"
+    },
+    {
+      "path": "src/models/gamification/class-streaks.model.ts",
+      "sha256": "dbdd951ca8c3623435adbe4448d0dfca930cb161db0f8f0357d527363b52dc3e"
+    },
+    {
+      "path": "src/models/gamification/points.model.ts",
+      "sha256": "af822a8251acdf8a28b262d9937c3df9d273afa710f08b13c1a3deb0e6b79404"
+    },
+    {
+      "path": "src/models/gamification/streak-events.model.ts",
+      "sha256": "259ecdf22b1f9ba95b60970dd2f4412e09a810fd1318cd6aca57da5f5d360b91"
+    },
+    {
+      "path": "src/models/index.ts",
+      "sha256": "db23fe8922421f2354eaeabcdfd0cb745cde741791f803c2a693368fabae05d6"
+    },
+    {
+      "path": "src/models/inputSet.model.ts",
+      "sha256": "57f792968012501de920665dea3e3bb061030e067d87ef1c9254d89499cfd9d1"
+    },
+    {
+      "path": "src/models/learning-material/attachmentInLearningMaterial.model.ts",
+      "sha256": "b72bba3127edf57617daae3b7f85626e6cf2eb4d944f6a68ff9e5999b94595a3"
+    },
+    {
+      "path": "src/models/learning-material/learningMaterial.model.ts",
+      "sha256": "b50d58ca0abc4a690782b8c18f9676f7a8f431917c86228691aa621aaa25df2a"
+    },
+    {
+      "path": "src/models/learning-material/learningMaterialComment.model.ts",
+      "sha256": "52a3ad50eb2cbdf1654d8abfa4655b935bc860842bcddd3882367c62f1215300"
+    },
+    {
+      "path": "src/models/learningMethod.model.ts",
+      "sha256": "79e9fa1d4c4d1083d725681f5633162032e2eda5f6a98dc974a1b9bf293b866c"
+    },
+    {
+      "path": "src/models/llmIntegrate.model.ts",
+      "sha256": "036eff8ab307e964c140bdc3213416dffe68d0a9eca3d1800e0793b6868b89ea"
+    },
+    {
+      "path": "src/models/mindmap/mindmap.model.ts",
+      "sha256": "2641b863fe590c75aca4550af89b1a1a2ddde72c2bc00206f1ab1b1b87052bcd"
+    },
+    {
+      "path": "src/models/note/note.model.ts",
+      "sha256": "4dfed9516149747811d31eea508036311eb0419118c88a517a8e897c6a1acddf"
+    },
+    {
+      "path": "src/models/package/index.ts",
+      "sha256": "bcb92c1cc619d85c2c9a05add8ae7a49332f21d8e5d05aceea0c5bdad8578ab0"
+    },
+    {
+      "path": "src/models/package/package.model.ts",
+      "sha256": "c7da48919585478a1a0e03d787a4d887b91623b43d974d2911ba9f98e959f6e6"
+    },
+    {
+      "path": "src/models/payment/index.ts",
+      "sha256": "cc9b13f4b39c595a12fe957d72acde3d218f9735b0a69f4fdd1a17d8bbfacdc4"
+    },
+    {
+      "path": "src/models/payment/transaction.model.ts",
+      "sha256": "55825a532f6ef6fb2702b3afd4290b20fdec866aa1bbcbb1df1a9b28e7c9e1f4"
+    },
+    {
+      "path": "src/models/progress/dailyStudy.model.ts",
+      "sha256": "cc9cc32f9cea8676424141e56d6b12b41ebf19dcf3f9bef76b9403cdf5e09c7f"
+    },
+    {
+      "path": "src/models/progress/progress.model.ts",
+      "sha256": "8d2762d904f9594947eca7add3f3cb09e22133991a08b604f67f9a801adb4090"
+    },
+    {
+      "path": "src/models/quiz/question.model.ts",
+      "sha256": "c8f04b26484aedacdea46f6c53ae2e1a4267d5fe95590c2da20b2158e1ff0674"
+    },
+    {
+      "path": "src/models/quiz/questionInQuiz.model.ts",
+      "sha256": "ac61940297591d08d7d46481fc86361bd53e5c739b6dcbcc5db18764f2c1d92d"
+    },
+    {
+      "path": "src/models/quiz/questionResult.model.ts",
+      "sha256": "7e29eaa2a26bc647a5aee9ef75299f672b14977744d91e5c239884b18f3a3725"
+    },
+    {
+      "path": "src/models/quiz/quiz.model.ts",
+      "sha256": "2ec85bccab6143079295b056ba8b16cb914efbf99b39df0add7f143e18197c9a"
+    },
+    {
+      "path": "src/models/quiz/quizResult.model.ts",
+      "sha256": "2a6b457f85bb56a6548984a5dd63684fc12e3119eaf20e8789acbd591c263f89"
+    },
+    {
+      "path": "src/models/schedule/reminder.model.ts",
+      "sha256": "8ac422b3087de186f10b1c2ae7d7e3457cf9d46b9739eb9ed6cb3a8c2b63503a"
+    },
+    {
+      "path": "src/models/schedule/schedule.model.ts",
+      "sha256": "441378e441408109e069f56c057b30d29cea7d8df8ba95c2794745eaf686f063"
+    },
+    {
+      "path": "src/models/schedule/studySlot.model.ts",
+      "sha256": "39c7b123f29c4ba5a77923260cceaad577d4de0d7013d76a6d3e630dafe5064a"
+    },
+    {
+      "path": "src/models/studySlotLearningMethod.model.ts",
+      "sha256": "91d26b6edec01df70c89acb40cc4894710660490530f81ed0e045388e5aca950"
+    },
+    {
+      "path": "src/models/subscription/feature.model.ts",
+      "sha256": "f85cf733667afe5dd980a22c7166331e625ed8cce59f589c3429473e6b98ec56"
+    },
+    {
+      "path": "src/models/subscription/index.ts",
+      "sha256": "f19b7437d8ac80a640e44acddfe17bfc11b030e1e0150398f64717bbf097ec3b"
+    },
+    {
+      "path": "src/models/subscription/plan.model.ts",
+      "sha256": "fa4d617358f3bd43bfa6175ce9bd5d33f47962f9dc07806ee0d1c7200e18b40b"
+    },
+    {
+      "path": "src/models/subscription/planFeature.model.ts",
+      "sha256": "f73463faa230e9f123f9287321f36c1a160828b66fdbe8e431dc07cb7f00239b"
+    },
+    {
+      "path": "src/models/subscription/userFeatureUsage.model.ts",
+      "sha256": "51bb5b29016924a3bd1daa57d849c37cbef8e5c9499b536696dac6af8406afe8"
+    },
+    {
+      "path": "src/models/subscription/userSubscription.model.ts",
+      "sha256": "1b199eff649837ba323d660010991194e7a93a806ce63dd2702c6b97243de030"
+    },
+    {
+      "path": "src/models/teacher-request/teacherRequest.model.ts",
+      "sha256": "e57302424d3d0ce310a5eee96ab47f5e65af97a57a682fba7b4fa49ed0f88a8a"
+    },
+    {
+      "path": "src/models/topic/topic.model.ts",
+      "sha256": "17a54e10fa22e9cd321e631542679403c58fc2e5c404134b1ec528f62d6127a3"
+    },
+    {
+      "path": "src/models/topic/userTopicSetting.model.ts",
+      "sha256": "db0031f800a64d4135a2a63b1cb97c8ba18de3923459729a4ba8493d7930a26e"
+    },
+    {
+      "path": "src/models/tracking/itemSpacedRepetitionTracking.model.ts",
+      "sha256": "f44ed39c6118897900e707d00c9a8767ce1969cf971f13397ecada7eb26f77b3"
+    },
+    {
+      "path": "src/models/tracking/taskProgress.model.ts",
+      "sha256": "5893feb1104accc0fdb12f03423188b70887387635879057f6fc993727471fda"
+    },
+    {
+      "path": "src/models/user.model.ts",
+      "sha256": "b90690f2ac735103d4b2d83d42e763d0f74963e7c9e82f0611a3534954bda951"
+    },
+    {
+      "path": "src/openapi/generate.openapi.json",
+      "sha256": "24e42927db8fa0cef46af6c861dcb3f930cd380fe565d4383acf982773987a90"
+    },
+    {
+      "path": "src/register.ts",
+      "sha256": "7792f0016a29447ca370839358401f53760f087be16197a7898c71b1f31b5f59"
+    },
+    {
+      "path": "src/repositories/admin/auth.repo.ts",
+      "sha256": "6d679f3af6b4f1eac12b515c320bbaeff29004f68a7502391d192314c1501809"
+    },
+    {
+      "path": "src/repositories/admin/user.repo.ts",
+      "sha256": "7a5c5a7d3d53e90234bb3033467706634c86035103a3e3bbd407cc338c6403d5"
+    },
+    {
+      "path": "src/repositories/auth.repo.ts",
+      "sha256": "47f91128a769e7ca56ecbdbf56fedc500c282c98bfc582c9157e9e6352eb006f"
+    },
+    {
+      "path": "src/repositories/auth/changePasswordRequest.repo.ts",
+      "sha256": "1792a1df46c27a85d54f2b1b35f132a92876df8a7c69f7acc1960bead1f3b18e"
+    },
+    {
+      "path": "src/repositories/backlog/backlog.repo.ts",
+      "sha256": "335c1c321301c4ce0f2ae65577f7ed043cebc9b32a73381b12c7e32fc3170618"
+    },
+    {
+      "path": "src/repositories/class-based-learning/attachment/attachment.repo.ts",
+      "sha256": "22bcb800563c422bef23b93b6d1458ddb9fa00c0b40aea1a2dfd6a16945a36f1"
+    },
+    {
+      "path": "src/repositories/class-based-learning/class-quiz/classQuiz.shared.repo.ts",
+      "sha256": "8c7f4a795c4f790cc08917a2154707f6f1312a8c8581aee32b1d1c4a47e51799"
+    },
+    {
+      "path": "src/repositories/class-based-learning/class-quiz/classQuizStudent.repo.ts",
+      "sha256": "226fdf760c67e298ab776b5ae16fba2055551ac78094a2becedba9803f81b3d1"
+    },
+    {
+      "path": "src/repositories/class-based-learning/class-quiz/classQuizTeacher.repo.ts",
+      "sha256": "ac42cff4a7dbf211d87587726f708ec9c877a63abc48e715b964a4937eb92418"
+    },
+    {
+      "path": "src/repositories/class-based-learning/class.repo.ts",
+      "sha256": "6aab300d1c1b033add5fe12088c4e46479eb0ad07b3c29b43dc5ca0a9be93808"
+    },
+    {
+      "path": "src/repositories/class-based-learning/classEnrollment.repo.ts",
+      "sha256": "56b81f32f137322d501465b21feee5e6a18fda594bce3716e26c0db3f3fd98c2"
+    },
+    {
+      "path": "src/repositories/class-based-learning/classInvite.repo.ts",
+      "sha256": "f412d65e5e5c73243d98114b1425120fce9611475a54825893dbf3e731618556"
+    },
+    {
+      "path": "src/repositories/class-based-learning/classTopicComment.repo.ts",
+      "sha256": "e832292ae17d99a0d69da79c31c017064acac600b29128a1a8d4e0aa5d63d8c9"
+    },
+    {
+      "path": "src/repositories/class-based-learning/learning-material/learningMaterial.repo.ts",
+      "sha256": "791b6c660f8d021849699b1ec2c75f0b904a9bf2217faefcb6ab922a92612a28"
+    },
+    {
+      "path": "src/repositories/class-based-learning/quizClass.repo.ts",
+      "sha256": "0e1e1a13f8bfd91967136304ed5edb34a26d3e82b27718416a43bd2aa56f5234"
+    },
+    {
+      "path": "src/repositories/comment/comment.repo.ts",
+      "sha256": "d9e746b02bb433b9f11d1ab6fccc3fdde0de62eed81b83d38f6160bb1e39cb2e"
+    },
+    {
+      "path": "src/repositories/content/content.repo.ts",
+      "sha256": "c3cab0246c8aeaa5e4eb8c25a4cd6e41503cf37e7eb2e9c28205232b35bcab71"
+    },
+    {
+      "path": "src/repositories/convert/convert.repo.ts",
+      "sha256": "e1a9031625c9b39ae2d68dbef855e3e5f87a21e23a7e54ba07bdec7b73763576"
+    },
+    {
+      "path": "src/repositories/demo.repo.ts",
+      "sha256": "704641900d4b7e8b9c15a8b4903fd6a3b407eb1ba912dd6226c7464ba1633c84"
+    },
+    {
+      "path": "src/repositories/embedding/embedding.repo.ts",
+      "sha256": "a48d52903d61475b519f378243971895a4644ab986135f49519978cdd54cb354"
+    },
+    {
+      "path": "src/repositories/feedback/feedback.repo.ts",
+      "sha256": "2c6c770126014da385616555364a06926485657a4ec1125407ee33c9c6672a93"
+    },
+    {
+      "path": "src/repositories/feynman/feynman.repo.ts",
+      "sha256": "fddb2f8e99f168b965ed5ad7aa19a49c7ea84f853dd11f0fd592aa214fc33309"
+    },
+    {
+      "path": "src/repositories/flashcard.repo.ts",
+      "sha256": "0bcf19e12fad3d02ea21e0c4ef827dfd474ff91101930f010ba483f5932ea517"
+    },
+    {
+      "path": "src/repositories/flashcard/v2/flashcard.repo.ts",
+      "sha256": "e4526a28eaf0dab623773c719cf1a5d92e7c0e969b8f3ba849bc72f418eb5225"
+    },
+    {
+      "path": "src/repositories/gamification/points.repo.ts",
+      "sha256": "289a635cef38f820c7382669624f3dcd21913e9bed263a1c763edd00248ccd12"
+    },
+    {
+      "path": "src/repositories/gamification/streak.repo.ts",
+      "sha256": "8dcb915b5da8a7c71a918b7999d1696931756f5ecf0dff00f21aa7d093018471"
+    },
+    {
+      "path": "src/repositories/generate/llm/llm.repo.ts",
+      "sha256": "ce912410f19c7b07dc411234ff223f7963db455823efcc0ffc1f9200c32b29ee"
+    },
+    {
+      "path": "src/repositories/inputSet.repo.ts",
+      "sha256": "8ad1f76d19cf787e631ccabbba5ab550e2422848eb233be033374a62e7b2b797"
+    },
+    {
+      "path": "src/repositories/mindmap/mindmap.repo.ts",
+      "sha256": "71550a00f9bf73cf25e611bdcf457d94cac18441d5ee2013af28faec2996b95f"
+    },
+    {
+      "path": "src/repositories/onboarding/onboarding.repo.ts",
+      "sha256": "8b0c6e6237e1e8c7b184a6912a0b9ded022641b6ee4785dae74400c76687548c"
+    },
+    {
+      "path": "src/repositories/package/package.repo.ts",
+      "sha256": "9edfb628592f367d1cc2cc6440120defc874130ae841bd1e6e8b64941b33ea94"
+    },
+    {
+      "path": "src/repositories/payment/payment.repo.ts",
+      "sha256": "742805d89299e39140c66f84890ea927da69c38e865b8babff383449a6011e60"
+    },
+    {
+      "path": "src/repositories/profile/profile.repo.ts",
+      "sha256": "4fc64bab1ea15952c32362b61439617b738eb0c746196f1f10736bc101f45b95"
+    },
+    {
+      "path": "src/repositories/progress/progress.repo.ts",
+      "sha256": "175e2dd06c46771c61f4b9a43f82ece736ccaa4c5c63c7832fc57c2980e1dd85"
+    },
+    {
+      "path": "src/repositories/question/question.repo.ts",
+      "sha256": "b5f190f136b7aafb063f09bdffbb70ddb502449135f4eef31e63cb17ed007dfe"
+    },
+    {
+      "path": "src/repositories/question/questionHealth.repo.ts",
+      "sha256": "ff53a2695172f5a359d5313059aef748df08a98ba6ad47906078ed2ca6478838"
+    },
+    {
+      "path": "src/repositories/quiz/quiz.repo.ts",
+      "sha256": "03f052f46570f2640d8703a7cbe4f414f20ed5b20df5ccecd2098e0e432c15ae"
+    },
+    {
+      "path": "src/repositories/readme.md",
+      "sha256": "547a244825a29a45395d57e613f21abcecb4ea99129f97be6bbb06286a418b7c"
+    },
+    {
+      "path": "src/repositories/recommendation/recommendation.repo.ts",
+      "sha256": "30bb943eea42e2dcee3e61949e27825ce4ea0789251c8f14cd7986050f5707f2"
+    },
+    {
+      "path": "src/repositories/schedule/schedule.repo.ts",
+      "sha256": "3013f4f9feb3fb771af1537105f1f06f0060b35a28155c1eec63af21ba2b6375"
+    },
+    {
+      "path": "src/repositories/subscription/subscription.repo.ts",
+      "sha256": "db396eaa1c18793b02ca9a235ff5e85133910a22d5dfd286ef14ba35406f9db5"
+    },
+    {
+      "path": "src/repositories/topic.repo.ts",
+      "sha256": "3bc0d1d761f8009856ad060402c65d345aa9d282caf37c1cd04cd5a8d9a89d2f"
+    },
+    {
+      "path": "src/repositories/tracking/itemSpacedRepetitionTracking.repo.ts",
+      "sha256": "e789023137a3fdcdaef5d80ea0eff416fd268da70d4b753027cc0ea028f7567c"
+    },
+    {
+      "path": "src/repositories/tracking/tracking.repo.ts",
+      "sha256": "0ddc7206706a6280fad537d72c286810309f7adf2b0ce1ee3498e4fa1138cca3"
+    },
+    {
+      "path": "src/repositories/uploads/uploads.repo.ts",
+      "sha256": "8259d55d24bbf4e77d5f30d8250b7ee5f9850074a1c974160278f609d5c23eab"
+    },
+    {
+      "path": "src/repositories/user/type.ts",
+      "sha256": "e421a3abb14dba62c5e9c762411f3700a0c7a63b45ae87564f047ae65e4e87e9"
+    },
+    {
+      "path": "src/repositories/user/user.repo.ts",
+      "sha256": "07af06e84d501050850b0ae6d837506b0d14e893476f0a367485d0e41f51b315"
+    },
+    {
+      "path": "src/routes/admin/admin.routes.ts",
+      "sha256": "d20689709a17a07284fc95659a2b22248b6963e1fc950e0700c4d525ff9210c4"
+    },
+    {
+      "path": "src/routes/admin/feedback.routes.ts",
+      "sha256": "a208fb63af1f47b9111c1700fe5b79bea9eb02c772c274bd9468d4a5d81991ae"
+    },
+    {
+      "path": "src/routes/admin/llmApiKey.routes.ts",
+      "sha256": "3f2addecb47fb6df1b7ad1945a6de352937f110c56b5dada26a7ef41659f0c8a"
+    },
+    {
+      "path": "src/routes/admin/llmApiKeyModel.routes.ts",
+      "sha256": "aa662f259bf2925013ec7b212b83c1b5a17ab64daa9deef80de6effb8605b8a7"
+    },
+    {
+      "path": "src/routes/admin/llmModel.routes.ts",
+      "sha256": "1f954b33c380c378e9dd019187f3356e3c41f23754633bc012aff3f6c288a9e4"
+    },
+    {
+      "path": "src/routes/admin/llmProvider.routes.ts",
+      "sha256": "f4c20766577fa1a6f9c278e845a23854b5ce0eecbd458c63546ff35d6581a2c2"
+    },
+    {
+      "path": "src/routes/admin/payment.route.ts",
+      "sha256": "83331f854c5b15e930e47bd06efc7164eccc027701511eede32a08b3cf0fd108"
+    },
+    {
+      "path": "src/routes/admin/revenue.route.ts",
+      "sha256": "f5eb6e8940b12e345d03e5c8b24888a04529cc55bc57a0e9b971ce6511368f67"
+    },
+    {
+      "path": "src/routes/admin/subscription.route.ts",
+      "sha256": "f5ca71981a656c6ff9f17b62ec56637d5f2fd29e8c50868d176354c3f408ee10"
+    },
+    {
+      "path": "src/routes/anki-setting/ankiSetting.routes.ts",
+      "sha256": "9393794c1329eab578465269ef07148f78e158e2efbf819102490109d20cbc88"
+    },
+    {
+      "path": "src/routes/api.routes.ts",
+      "sha256": "f7483eb811ff75f3570ef1c3e460cdb68f3a9a19720f88e22f7b80d41fcf8ce4"
+    },
+    {
+      "path": "src/routes/auth/auth.routes.ts",
+      "sha256": "67e34f0a49ec98ceebf9299c570c807f88bce1b9f4a1f2e9d779af0d77d566b6"
+    },
+    {
+      "path": "src/routes/backlog/backlog.routes.ts",
+      "sha256": "6855732a447bf21329badc4edfdcf3f807d0f0e5a57f87c8eace56c5120ad4d7"
+    },
+    {
+      "path": "src/routes/class-based-learning/assignment/assignment.routes.ts",
+      "sha256": "4c0422f411d14c9edf712e4f77843668674e4224df3a49beed39821a6fc35819"
+    },
+    {
+      "path": "src/routes/class-based-learning/assignment/assignmentComment.routes.ts",
+      "sha256": "130429bdbcdb2c59c537c6695bf4eda8902ab37b2c27ccb000918a279093fc5e"
+    },
+    {
+      "path": "src/routes/class-based-learning/assignment/assignmentSubmission.routes.ts",
+      "sha256": "b259617e9917ab50958c31e23f8e50fabb545b3449f8311e231ecde2b22d6163"
+    },
+    {
+      "path": "src/routes/class-based-learning/class-quiz/studentClassQuiz.routes.ts",
+      "sha256": "16fc3b1b3ab247c6156b7f41d8f4263207788bae020d871a305e85f3ef24f929"
+    },
+    {
+      "path": "src/routes/class-based-learning/class-quiz/teacherClassQuiz.routes.ts",
+      "sha256": "391be99372ffbb0186c8ec8741baeea9e2b66284508e9e736fa2b686ac32c933"
+    },
+    {
+      "path": "src/routes/class-based-learning/class.routes.ts",
+      "sha256": "d76ffbbfcfbe94e5156d80f5d3bf56cf53ebda5610ed4cfcc380447526c00ed8"
+    },
+    {
+      "path": "src/routes/class-based-learning/classEnrollment.routes.ts",
+      "sha256": "a9ee9fd7b91166b803044eb6fa0ba77fb6bd40657bd98f3e8566d12917a58c35"
+    },
+    {
+      "path": "src/routes/class-based-learning/classFeed.routes.ts",
+      "sha256": "eca4dcdd729ed56772bdc80d9984b5962ea97e9b08ecda3b430b933fd1c5ecd9"
+    },
+    {
+      "path": "src/routes/class-based-learning/classTopicComment.routes.ts",
+      "sha256": "a3d7d801cae90340315d371cb8cf24e011a087f11997dd1a1c7353dd703dd4a3"
+    },
+    {
+      "path": "src/routes/class-based-learning/classwork.routes.ts",
+      "sha256": "4d7720664336bf855908b6079965e6ed406ae2639530ea63e4018b85385d5b76"
+    },
+    {
+      "path": "src/routes/class-based-learning/learning-material/learningMaterial.routes.ts",
+      "sha256": "923c1da72e5125dce35092120915f134c9bdf8674b54b8c0ca5c5a14d3b0a3f6"
+    },
+    {
+      "path": "src/routes/class-based-learning/learning-material/learningMaterialComment.routes.ts",
+      "sha256": "912930c08e3fe2671d0b388932ce60090f42af22a992c401412a5db359857745"
+    },
+    {
+      "path": "src/routes/class-based-learning/quizClass.routes.ts",
+      "sha256": "0004acca0826cdf1f5fc78e35ed79a2783f394766fbb7c7508aa997f9049dae2"
+    },
+    {
+      "path": "src/routes/class-based-learning/student/studentClass.routes.ts",
+      "sha256": "81ad04df34cd97915577bd47abdc19d085f46226ceac7a78d31c6a814aad0a92"
+    },
+    {
+      "path": "src/routes/class-based-learning/student/studentClassFeed.routes.ts",
+      "sha256": "bfc91d7e0b153777c1e7dc62d537e432b39c74c79550c3467ad81612870486b4"
+    },
+    {
+      "path": "src/routes/class-based-learning/student/studentClassInvite.routes.ts",
+      "sha256": "29149e73ffbc6350c8c73060f095f288fb58931058fc76674aa3a6ae94c9d0e6"
+    },
+    {
+      "path": "src/routes/class-based-learning/teacher/teacherClass.routes.ts",
+      "sha256": "05d251522993a423c2ddb75bab625e13dcbb72edfb8e04362981c62038237a24"
+    },
+    {
+      "path": "src/routes/class-based-learning/teacher/teacherClassFeed.routes.ts",
+      "sha256": "0dd9ebe74a36e6bfd420c4170d1cfdbe6ee6a2af61f22043840ce5e9fc223097"
+    },
+    {
+      "path": "src/routes/class-based-learning/teacher/teacherClassInvite.routes.ts",
+      "sha256": "bd561e65797bcec67e380deff7b94c20cce886e05e205f2cb8fef64cd5988684"
+    },
+    {
+      "path": "src/routes/class-based-learning/teacher/teacherClassTopic.routes.ts",
+      "sha256": "1f1b02316be3b3cd05e9254c16728b0e120d7dc4b3813f7ba75f9c9d81468573"
+    },
+    {
+      "path": "src/routes/comment/comment.routes.ts",
+      "sha256": "ff02a3a624fc9a7e888c0246d4a2c8c12f10cf4735dc82fa0fb907573f401a69"
+    },
+    {
+      "path": "src/routes/content/content.routes.ts",
+      "sha256": "3cff0768ce99bcd9993005e906baadc6473148454a71fc02ab0298d70af1b09b"
+    },
+    {
+      "path": "src/routes/convert/convert.routes.ts",
+      "sha256": "b076affc3a5923eda4d9cd0f5f4dc97355873b7b2ab10b6dc06963ac206d5fa2"
+    },
+    {
+      "path": "src/routes/demo/demo.routes.ts",
+      "sha256": "ca59f418adf81a5c666c28a1f0498daa726ba4ae4468e37900a190a96c059933"
+    },
+    {
+      "path": "src/routes/embedding/embedding.route.ts",
+      "sha256": "c4792eb17f4331724f4ead70b15a873f8b10005e60e8085c2c24efd9993a550f"
+    },
+    {
+      "path": "src/routes/feedback/feedback.routes.ts",
+      "sha256": "a462b65c33bdde96151cafe784138c622e1679c9d021c49629475a8e5483d6a5"
+    },
+    {
+      "path": "src/routes/feynman/feynman.routes.ts",
+      "sha256": "61ff526bff55881812623a5dc621ddc0202bedc58e3b1dc2119056a20ecd2e38"
+    },
+    {
+      "path": "src/routes/flashcard/flashcard.routes.ts",
+      "sha256": "f262801dd6ab5b14cf522cf728a64dc7a63c160eaaa1ed81c6635cd89ec5e713"
+    },
+    {
+      "path": "src/routes/flashcard/v2/flashcard.routes.ts",
+      "sha256": "5b041f77650228f0f5d31db9ac88e6f0f2b0924cc46fefe4c3e44dee530ec18e"
+    },
+    {
+      "path": "src/routes/gamification/points.routes.ts",
+      "sha256": "f72b5b430408259924b294119e6833a7dd0e22801c048e3f6c6f01012bb8b525"
+    },
+    {
+      "path": "src/routes/gamification/streak.routes.ts",
+      "sha256": "edf19f17067dc34ebcfb58af4a762b70a5605ee22409cb553c384bffb59dd6fe"
+    },
+    {
+      "path": "src/routes/generate/v1/generate.routes.ts",
+      "sha256": "5aa713c8349b2bfd45513f39a343885070d5fc6894dcd209280e5ddf22c0d7e8"
+    },
+    {
+      "path": "src/routes/generate/v3/generate.routes.ts",
+      "sha256": "034e2a9af3604b8798f113dda4ec82246a297b48326ab546d6349667640a4016"
+    },
+    {
+      "path": "src/routes/image/image.routes.ts",
+      "sha256": "4fb9fe280df9b96eafe024bf4fceb01c5c943b7ddafba719df3d7f53adc74689"
+    },
+    {
+      "path": "src/routes/inputSet/inputSet.routes.ts",
+      "sha256": "a827eed18cc1534af80a02ede62416b520bfcdc9cea4e63113768c2e685f4ca2"
+    },
+    {
+      "path": "src/routes/mediaTranscription/mediaTranscription.routes.ts",
+      "sha256": "2589d596b9cacc98ba14ae917f394fa274a06356bf69de8a27264a71f7bae5e1"
+    },
+    {
+      "path": "src/routes/mindmap/mindmap.routes.ts",
+      "sha256": "f079415e1efe5eef7b15d51aa42f8834d637b1380c2cf77bd8e427a0481edc91"
+    },
+    {
+      "path": "src/routes/note/note.routes.ts",
+      "sha256": "986b5753cf14ce3829a6cff7c7960763b6d31900b55622162ab2b68179e38741"
+    },
+    {
+      "path": "src/routes/notification/notification.route.ts",
+      "sha256": "23fe5cb226ba0aa62665dedad7cd8eba4b425339990b81097a9c3d54d5f64dda"
+    },
+    {
+      "path": "src/routes/onboarding/onboarding.routes.ts",
+      "sha256": "7ac1c88dc583ce0c17de11ab80165cc15b1821cb39acd44178a69833457c7dc7"
+    },
+    {
+      "path": "src/routes/package/package.routes.ts",
+      "sha256": "bf199584b61d444838eb6522181ff3b1f51c7402b78a3d6d68bfbc23c2f795a1"
+    },
+    {
+      "path": "src/routes/payment/payment.routes.ts",
+      "sha256": "c38adca50b2d6f7c9b15a50b2181c03ca309a9ad6f73e91ea9820a6b279ffc2b"
+    },
+    {
+      "path": "src/routes/profile/profile.routes.ts",
+      "sha256": "2739c5f2acc2968f23abb56a7964b8ee13bb54bf264c545f616b20371ab42304"
+    },
+    {
+      "path": "src/routes/progress/progress.routes.ts",
+      "sha256": "540fb4e46bf2754834663c28920c04749e2d5512267de79fc366a65e62d0d652"
+    },
+    {
+      "path": "src/routes/question/question.routes.ts",
+      "sha256": "5d641c142bfeb9ce81b81634a98473037d7495816e0f9eedd828abb8e9d39921"
+    },
+    {
+      "path": "src/routes/quiz/quiz.routes.ts",
+      "sha256": "f3230594547b94a8e7f5e7663b0cf46d5eb288ae6bb6620031563124394122c0"
+    },
+    {
+      "path": "src/routes/readme.md",
+      "sha256": "7297d654859b366e1b19b3b70a98aaa815bfde5f62fa03294cdf57d6673b7c53"
+    },
+    {
+      "path": "src/routes/recommendation/recommendation.routes.ts",
+      "sha256": "a907b8a6db74ab269247161a9c6642f7f4c6b2b682dfb903c56087fd065cd19a"
+    },
+    {
+      "path": "src/routes/register.routes.ts",
+      "sha256": "32e53808c88eea2edd3053636a1ff22071ae1b1de9c057634b65fe87a4d8166e"
+    },
+    {
+      "path": "src/routes/schedule/schedule.routes.ts",
+      "sha256": "2d5fe558364faf9a7f226e7456412eb013b102c13c1c5ef875ef26ba7affe098"
+    },
+    {
+      "path": "src/routes/sse/sse.routes.ts",
+      "sha256": "ed0e0273893ab4fbeafa57ecc82222bfe1ea4126668a99a217de53e23b465d60"
+    },
+    {
+      "path": "src/routes/subscription/subscription.routes.ts",
+      "sha256": "e1d9d3cde7b3e010b201f549ff1cebd8880e1a82f55cbf608d9ca5caa3a743bd"
+    },
+    {
+      "path": "src/routes/teacher-request/teacherRequest.routes.ts",
+      "sha256": "1d709145c59939d2119a06ad3cd9631e10058bbcbd641fb85c6ec58ffae948b0"
+    },
+    {
+      "path": "src/routes/topic/topic.routes.ts",
+      "sha256": "89d3ff500f6f2f0eb71d582b31a1a4919c330f2e94db8a64165c1580585af92a"
+    },
+    {
+      "path": "src/routes/tracking/tracking.routes.ts",
+      "sha256": "27802e20f9ec5547b0e1f7b5c6473ab0275874e2b7fbff6386513bcbd2e3d79a"
+    },
+    {
+      "path": "src/routes/uploads/upload.routes.ts",
+      "sha256": "6e3050b764ee4f6c899f05ee3e6a39f5b67889e155d985c80fe43fbc43caaedc"
+    },
+    {
+      "path": "src/routes/youtube/youtube.routes.ts",
+      "sha256": "22dd8f54651ef06a6adf83de1eab6cf1ca0ac05c44988a0eef9512fe9507cd94"
+    },
+    {
+      "path": "src/services/admin/auth.service.ts",
+      "sha256": "c5f13311795ebcbbd70b807beef065a6ff736a1c4e4908db6a91b5afbe58bde7"
+    },
+    {
+      "path": "src/services/admin/feedback.service.ts",
+      "sha256": "3434050ae0904cce878a3127f75056bac005a0f70eefec894296d7fb1322b848"
+    },
+    {
+      "path": "src/services/admin/llmApiKey.service.ts",
+      "sha256": "d49b208243fea40d77c195364b871f5c9a8e7cca3a19654614f790ef7b4276c9"
+    },
+    {
+      "path": "src/services/admin/llmApiKeyModel.service.ts",
+      "sha256": "cbcec69da68b4bd3decf06c6c2274ddedf537726bd168123a15b6a351bb6495c"
+    },
+    {
+      "path": "src/services/admin/llmModel.service.ts",
+      "sha256": "fad95521e1b4b83b3c2e098730f42b46265e81c5aac759f81c640710a222a72b"
+    },
+    {
+      "path": "src/services/admin/llmProvider.service.ts",
+      "sha256": "c81157743a54fed4c5eb6241779896422bf24b051837b6c1355100ed3aadef41"
+    },
+    {
+      "path": "src/services/admin/payment.service.ts",
+      "sha256": "db6d2116d742525457774a12fd4cdb5046ea00bd65bbe19b16e2bbd3cfa817b1"
+    },
+    {
+      "path": "src/services/admin/revenue.service.ts",
+      "sha256": "57e5b2d8be8a732b9b43d53e083c3716a5cdc49fb963c7386c58cb5da6bebf5b"
+    },
+    {
+      "path": "src/services/admin/subscription.service.ts",
+      "sha256": "a1d66614aeaefa7f6df6e0e8b094626c4d0a6b318172003ec620a4ba0a17f3a5"
+    },
+    {
+      "path": "src/services/admin/subscriptionStats.service.ts",
+      "sha256": "cec3cf1e988f2d0e3d416c6f21800b3738abd2a2004b27328822afb08f20e342"
+    },
+    {
+      "path": "src/services/admin/user.service.ts",
+      "sha256": "9f681928eb57e4be4cf7d62037fdf8e8d1d4a686208f6a7be1b0e2e3d81ffabc"
+    },
+    {
+      "path": "src/services/anki-setting/ankiSetting.service.ts",
+      "sha256": "a2214e4b83e30f8e1a9f750813c391ceb7d35bc9333e2ed055e1efc435474e35"
+    },
+    {
+      "path": "src/services/anki-setting/constant.ts",
+      "sha256": "d509c9947883547eccb880d4126da43ec494f63fddbfa3afe8c39074cc2eb8b7"
+    },
+    {
+      "path": "src/services/auth.service.ts",
+      "sha256": "cee6518bd2547cb6ed1a238b90ece706e97f62c6a4b97e22cbea89b06b5dd06c"
+    },
+    {
+      "path": "src/services/backlog/backlog.service.ts",
+      "sha256": "98447b5c48d170b21da40e43f8da3f20aebb31e94d766bc90365afec17c110af"
+    },
+    {
+      "path": "src/services/class-based-learning/__test__/classTopicComment.service.test.ts",
+      "sha256": "522b1c7eb3d8e1caa5d78a8412d72ee7d370e7fd8b22ed376457a0660151343c"
+    },
+    {
+      "path": "src/services/class-based-learning/__test__/class_topic_comment_service_docs.md",
+      "sha256": "ec828ef1d666a9528b81890d6af89e1cbddc67fbe99cc42c9ca636f071c717bc"
+    },
+    {
+      "path": "src/services/class-based-learning/attachment/attachment.service.ts",
+      "sha256": "34ddca582fd53a8ef0e2379c37726f6f0fb7acd1d183295cd84507265a699492"
+    },
+    {
+      "path": "src/services/class-based-learning/attachment/attachmentInLearningMaterial.service.ts",
+      "sha256": "b395a8fb2610a9060f7374e771e56bbdc5ab7e882e49a6152dd3e27a4d69fb2a"
+    },
+    {
+      "path": "src/services/class-based-learning/class-quiz/classQuizStudent.service.ts",
+      "sha256": "8154f4b84231e58c4478ba5a09dd1bbbeb95030a71c26478dfd073420368974d"
+    },
+    {
+      "path": "src/services/class-based-learning/class-quiz/classQuizTeacher.service.ts",
+      "sha256": "8eedf8b993aee7aa682cbeb43ddc971e8f1f9b074948c97da862f85b9b27d9a8"
+    },
+    {
+      "path": "src/services/class-based-learning/class.service.ts",
+      "sha256": "f74f273f2414200f857ffbb44b107f5592c3948ca56340e461866978954a741d"
+    },
+    {
+      "path": "src/services/class-based-learning/classEnrollment.service.ts",
+      "sha256": "e6d6cce1e2ae5ed3e1d60281beeada640b1d9eba160dc7789df5ca0a4e488e1c"
+    },
+    {
+      "path": "src/services/class-based-learning/classInvite.service.ts",
+      "sha256": "add2ee5852fdbec6d63fb38431386b8b45b357963833693a191867c25f5cedf3"
+    },
+    {
+      "path": "src/services/class-based-learning/classTopic.service.ts",
+      "sha256": "894ceb7fafb7574252bfca7dcb22441b6cc66cd15b7e329c7648475f1b97993c"
+    },
+    {
+      "path": "src/services/class-based-learning/classTopicComment.service.ts",
+      "sha256": "00380b844cd9b2e84b2ecaa35321df414b5838e09380d5a52a80f7a3bce01a4a"
+    },
+    {
+      "path": "src/services/class-based-learning/classwork.service.ts",
+      "sha256": "5e7c75b89a346447a36d5dcabc0427dc010ea74c94bb1b44de5981424536c0d5"
+    },
+    {
+      "path": "src/services/class-based-learning/learning-material/learningMaterial.service.ts",
+      "sha256": "f0892688c1e800e09492d34041ec429634889f8aa4f2df96ea414acb1452dd36"
+    },
+    {
+      "path": "src/services/class-based-learning/quizClass.service.ts",
+      "sha256": "2bfc71d789cf87b209530e8ac35ece11ba7f3ef6ed29c50b875e6586abd8b7b3"
+    },
+    {
+      "path": "src/services/comment/comment.service.ts",
+      "sha256": "fed4443088928a016715b7f229876259ba33da7e47c3ea36a8345adee6cedd56"
+    },
+    {
+      "path": "src/services/content/content.service.ts",
+      "sha256": "7098870e57dbfe2bf9996b5f396173aa1e27338bde70e4b38184214f9b490ff0"
+    },
+    {
+      "path": "src/services/convert/config/convert.config.ts",
+      "sha256": "350a717f859fc0f1c1a12643e531beaa87c578e444240f9af31391e0525de1d5"
+    },
+    {
+      "path": "src/services/convert/convert.service.ts",
+      "sha256": "47c4eac76a773e382db442c6ae4b792cd20f4af28201fc8c0e06a9c542ec9114"
+    },
+    {
+      "path": "src/services/convert/file.service.ts",
+      "sha256": "029435847e983c8feb675fb003f5029ca851de730221e5fd1dd43804d0d6c45f"
+    },
+    {
+      "path": "src/services/convert/strategies/base-converter.strategy.ts",
+      "sha256": "22ba95069c236bea6cdc9d133a15fa67fba8f68aa0edc0f9164ca77dd0352102"
+    },
+    {
+      "path": "src/services/convert/strategies/converter-factory.strategy.ts",
+      "sha256": "bd99f6af0e08382bddd9374ec82396a43dc8dafce472d2fc982ffa946b884f9c"
+    },
+    {
+      "path": "src/services/convert/strategies/libreoffice-converter.strategy.ts",
+      "sha256": "0d3bd23e965e5a0ab6f14f1f4212410446b51afe6de104a2f1c63d652481706f"
+    },
+    {
+      "path": "src/services/convert/strategies/url-converter.strategy.ts",
+      "sha256": "65c806f4036b37e0c4baff41dd094bafe6ef1f39e4a18bb1813bfa3baaf94207"
+    },
+    {
+      "path": "src/services/demo/demo.service.ts",
+      "sha256": "d30d9139f5bfecc942225687bc3be9c4579aa385d5db56bf12fc368aed607dc6"
+    },
+    {
+      "path": "src/services/embedding/v1/BaseEmbeddingStrategy.ts",
+      "sha256": "bc9566811e77fa449cf4f1e65232e3834dc346b3f55e9f1f537e504b6254f2f2"
+    },
+    {
+      "path": "src/services/embedding/v1/api/api.ts",
+      "sha256": "17a928f561d120006a2ab2ae21070ac48a863feeac697c149c3c0d7d458c7088"
+    },
+    {
+      "path": "src/services/embedding/v1/base.ts",
+      "sha256": "bba18515fed2164b8384f3ad3811eed138dd03a56e79731d077bbf525a8ecd1a"
+    },
+    {
+      "path": "src/services/embedding/v1/embedding.service.ts",
+      "sha256": "0eeb5aaae16b27f89987f428286430378904070bd8aad98d01ee0f9287194d98"
+    },
+    {
+      "path": "src/services/embedding/v1/embedding.type.ts",
+      "sha256": "013d50d02f5a11bd2fc5dba8cb16df8463706a6f2015019f8db3e8894c2cca44"
+    },
+    {
+      "path": "src/services/embedding/v1/strategies/PdfFileEmbeddingStrategy.ts",
+      "sha256": "02cd6ff724a5b45e0e90c5226b63d068bc3f9e9d76f5ae205f58fa87038ae42d"
+    },
+    {
+      "path": "src/services/embedding/v1/strategies/YoutubeEmbeddingStrategy.ts",
+      "sha256": "a8a445db478b9ac89bf4a3dfee29beca013e3e1df114289dc2d8368b04f7d4fc"
+    },
+    {
+      "path": "src/services/embedding/v1/strategies/index.ts",
+      "sha256": "ecf9552f9c98d4df2ad4007bddc25ee3b13a507ff47bfe9e985c490e99f91a13"
+    },
+    {
+      "path": "src/services/embedding/v1/types/embedding.type.ts",
+      "sha256": "68f058efef77779e857699198db1ab42211beeedacf5398994a6b5f92dad458a"
+    },
+    {
+      "path": "src/services/feedback/feedback.email.template.ts",
+      "sha256": "3bf8c0bb1768eac07ed386d391d1d4aca3cf89d26db509367505bdf6086762da"
+    },
+    {
+      "path": "src/services/feedback/feedback.evaluator.ts",
+      "sha256": "d5bd66cc60e522cc40d3c1dd54509e5f0a5a58c475aeca3d785fd2c4820d244c"
+    },
+    {
+      "path": "src/services/feedback/feedback.service.ts",
+      "sha256": "4f7eab42f4c51a49e2c3eacd0e62d5f88b9b56166654d5de69a0515c46bc4c75"
+    },
+    {
+      "path": "src/services/feynman/feynman.service.ts",
+      "sha256": "28db501d80968b04080207fb9276bd829f55b22aaf3670e7d572f9ac17a4ce80"
+    },
+    {
+      "path": "src/services/flashcard/flashcard.service.ts",
+      "sha256": "3947779be915effc092ec84d21d6f84d208a2a3a393a03a96ac6d49e97170da6"
+    },
+    {
+      "path": "src/services/flashcard/v2/flashcard.service.ts",
+      "sha256": "67ae92046d8bfcd608e2b695ee040fcf81a53f22703d4ad276d2a433f8906ae7"
+    },
+    {
+      "path": "src/services/gamification/points.service.ts",
+      "sha256": "397e460599f130a041d54f9c0d5c842f9c8788b8d621f7a14805eeeecd069113"
+    },
+    {
+      "path": "src/services/gamification/streak.service.ts",
+      "sha256": "7ec63a81a8400eb4c90cca7466d65e356bf87b843dd03c98a6c923a614a12f5a"
+    },
+    {
+      "path": "src/services/generative/base/base.abstract.ts",
+      "sha256": "0df6cd76e186b8916a6090acd4c16642aa0b1ae060b75f23e903c0f2c2a56340"
+    },
+    {
+      "path": "src/services/generative/constants/constant.ts",
+      "sha256": "0c827531b87ff769979df1485d51afe4072fbec435fcc6805f17d42c3e26b52d"
+    },
+    {
+      "path": "src/services/generative/docs/LARGE_FILE_PROCESSING_README.md",
+      "sha256": "f9add8100dba1956fab063eed19cfd15da3da9a3fedb1dfc4af2d209c00f99c0"
+    },
+    {
+      "path": "src/services/generative/docs/MINDMAP_SERVICE_README.md",
+      "sha256": "aa8981315702072ea1c773d2ee31ce7c53469868306e0ff0a3189ea152bda3cd"
+    },
+    {
+      "path": "src/services/generative/lambda/lambda.service.ts",
+      "sha256": "e61c92efe5c62e16c63a8149bb994639896140b706331a3d9dac073ae42ca3a1"
+    },
+    {
+      "path": "src/services/generative/llm/core/baseLLM.abstract.ts",
+      "sha256": "2048050973fa21e5f88ee7f9893be74da03f64bd3d26f05aa298b1b0c35a2b37"
+    },
+    {
+      "path": "src/services/generative/llm/core/llm.service.ts",
+      "sha256": "2f28d08227d52fef587ca6050954c2700cc4997b009335d45a6718eaac2109d7"
+    },
+    {
+      "path": "src/services/generative/llm/core/llmConfiguration.ts",
+      "sha256": "8e9c942a711ae3a9d1c66e14da90cf9f85c6bc17e212b833242b24c9215957b2"
+    },
+    {
+      "path": "src/services/generative/llm/core/rateLimitManager.ts",
+      "sha256": "3e4b230ac1cb116ded70ca62de523310318910aefbd58db517e30f44a9e27571"
+    },
+    {
+      "path": "src/services/generative/llm/factory/llmStrategy.factory.ts",
+      "sha256": "5ab6c442f098e5d50676e4358210690adafbecf4a384b9372f57475f0bd26eb3"
+    },
+    {
+      "path": "src/services/generative/llm/strategies/providers/google/gooogle-studio.service.ts",
+      "sha256": "aa217fbc8b343b1241cdf0e08f03c4a25d43de5883ca0a32c74413a1b247680c"
+    },
+    {
+      "path": "src/services/generative/llm/strategies/providers/openai/openai.service.ts",
+      "sha256": "33702c518568830882c23b90a6a45d5b365c12bf61833427125972e584ce1893"
+    },
+    {
+      "path": "src/services/generative/pub-sub/pubSub.generate.ts",
+      "sha256": "455fd88a1ad0d5786e6f931abe68023f77ef1064a0d26436090d9ec40271030e"
+    },
+    {
+      "path": "src/services/generative/utils/constant.ts",
+      "sha256": "490bc4470131801207e3f340131c9ac202291701ef52b7d8c3908268c6c6101f"
+    },
+    {
+      "path": "src/services/generative/utils/validate.ts",
+      "sha256": "a05ae4029e9d12bfe31b01467b46eda8456219a7c74c74c3cacb277275bf30af"
+    },
+    {
+      "path": "src/services/generative/v1/generate.service.ts",
+      "sha256": "51158b723dc74400cc1aa047ced7a8ac7e06eb95e50e733dbd7e3ed28877d8de"
+    },
+    {
+      "path": "src/services/generative/v3/generative.service.ts",
+      "sha256": "feeed3d707e857f5d233b2b59e972d5f81d1e0b19d4ce1d8c7ec303927ddc87b"
+    },
+    {
+      "path": "src/services/generative/v3/mindmap.generate.service.ts",
+      "sha256": "377bde35bb05b6cdbbdda68be5a50063cd75cade7841de27fa980c1f2ce3122f"
+    },
+    {
+      "path": "src/services/generative/v3/types/index.ts",
+      "sha256": "5cd883d96a4517a47eb512e860cb477598d25e10c9b70c52de7aaeae3e786589"
+    },
+    {
+      "path": "src/services/inputSet/inputSet.service.ts",
+      "sha256": "fc8b67e88b6c9f9f2eb0cd121dc17b254f65047cecf3dd7bdc53c21588d33d11"
+    },
+    {
+      "path": "src/services/inputSet/types/inputSet.type.ts",
+      "sha256": "2c6c6ae885c22a6a0d962bc71fbf0d776ad2b9abefac85713e1c2c956aa01627"
+    },
+    {
+      "path": "src/services/mindmap/mindmap.service.ts",
+      "sha256": "b9bd32451ec0de9e5c9e5f84c1337d51caaa833d91f800a49c384a6a21934a51"
+    },
+    {
+      "path": "src/services/notification/notification.email.templates.ts",
+      "sha256": "d7acbc74592fead474e737338283fbc07f710f64e8aaa1a798e06276dc8e5222"
+    },
+    {
+      "path": "src/services/notification/notification.scheduler.ts",
+      "sha256": "3943f09ab56fe13da0179dc9340ffaee55a14fd8e1dc6860216f1756c6af5e72"
+    },
+    {
+      "path": "src/services/notification/notification.service.ts",
+      "sha256": "6fa6038d03cab04dff37c8e161107807b68d459ebb358f3eb712f190ec752495"
+    },
+    {
+      "path": "src/services/onboarding/onboarding.service.ts",
+      "sha256": "60e7f770ef7c73675f2d04e4888282d8458400bf0e478515b035529d3d3d404f"
+    },
+    {
+      "path": "src/services/package/__test__/package/package.controller.test.ts",
+      "sha256": "75ca066d8bb7d443d0c071e62555447248ca72cbbfe1a2be58c47b2ff713e39f"
+    },
+    {
+      "path": "src/services/package/__test__/package/package_api_test_docs.md",
+      "sha256": "5f564dbe4d69b811ce21cae78cebff3454570ca923d8953827b84ec42b512995"
+    },
+    {
+      "path": "src/services/package/package.service.ts",
+      "sha256": "57adb61052c19810c1e5b151e3afd59478c92de187846a0eb36fdf8e2d5de103"
+    },
+    {
+      "path": "src/services/payment/base/payment.base.ts",
+      "sha256": "e6c2f31437f801db013ca09badd9f804694dd8a016576800755da7a17af2f49b"
+    },
+    {
+      "path": "src/services/payment/constants.ts",
+      "sha256": "f437bf39453cbc0dab183d301998a70c991bd1a29b6b45bc359611960fd4eb9e"
+    },
+    {
+      "path": "src/services/payment/gateway/payos.ts",
+      "sha256": "bd98e456811375e63aa3b79847becbbf4216d0bc9091f94e97957c7da09b73ee"
+    },
+    {
+      "path": "src/services/payment/gateway/sepay.ts",
+      "sha256": "966eda173d1e76124af16626a54826e94de38a3db64cc15cfe76080945e39d00"
+    },
+    {
+      "path": "src/services/payment/payment.interface.ts",
+      "sha256": "7b8a959d4164842ec5d7d858072ab8a630687e1730640719779478f0b6134bfe"
+    },
+    {
+      "path": "src/services/payment/payment.service.ts",
+      "sha256": "840e757066f721ad031af8eda724e93c46d480301501687e5ce60a5ca88e622d"
+    },
+    {
+      "path": "src/services/payment/sepay-webhook.service.ts",
+      "sha256": "6c93446df2d51cb92634cd23c8f00b3327b87c4327672582b19721066f92cae5"
+    },
+    {
+      "path": "src/services/payment/type.ts",
+      "sha256": "ee0cfbc2d98176a4ee776e6e02a613fda63832bb057c527f02f3fbc064184e6e"
+    },
+    {
+      "path": "src/services/payment/type/payos.type.ts",
+      "sha256": "4841850ebb7fc417877631dce9ccf66b36b2fe15c536faed441faa7ebbf174d5"
+    },
+    {
+      "path": "src/services/payment/type/sepay.type.ts",
+      "sha256": "e8c08b31f45b41556900c844b7dea8b116b5f22d1c94654b9e54a6660adb1a66"
+    },
+    {
+      "path": "src/services/payment/utils/utils.ts",
+      "sha256": "bfafdd6e5223a60dd4e853735dd9f7edc08ce22f693b8c7cd95b0e655abda674"
+    },
+    {
+      "path": "src/services/profile/profile.service.ts",
+      "sha256": "c87b30e2c32a8b65cc78399b59395afa1c91fba38a2604e7b8fc2ae4d37567f8"
+    },
+    {
+      "path": "src/services/progress/progress.service.ts",
+      "sha256": "6dc22138c361d5be50dfde0be578de130f4db2880e5fb910fe8b553ba8eb879e"
+    },
+    {
+      "path": "src/services/question/question.service.ts",
+      "sha256": "d8a2a9a429fe48e393508d3b52aaa17059beefed9857df278e7dd9b8be41c3b8"
+    },
+    {
+      "path": "src/services/question/questionHealth.service.ts",
+      "sha256": "f08cbb863db41aa6f7cae501a061ecce3ad0b0c7d2d2703e458d737eacd6070f"
+    },
+    {
+      "path": "src/services/quiz/quiz.service.ts",
+      "sha256": "791f4bb00c67103a1c4b9137e86ef33a3f8a0e656b3b27c4fe2e5d5215925a6e"
+    },
+    {
+      "path": "src/services/readme.md",
+      "sha256": "f21281104d3d7410085587e72b6095ca25613589f2fed5059106ab91b4207056"
+    },
+    {
+      "path": "src/services/recommendation/algorithms/contentBasedFiltering.algorithm.ts",
+      "sha256": "78ee4aa46d5cdbdcbda853be2d3fcc84bef83ef1124d1598e20467b312b1081e"
+    },
+    {
+      "path": "src/services/recommendation/algorithms/hybrid.algorithm.ts",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/services/recommendation/base/recommendation.abstract.ts",
+      "sha256": "90d7f28765fb464650718b0780d95d504f5b9eff4d2d7394de9fc2b8fa55f70c"
+    },
+    {
+      "path": "src/services/recommendation/recommendation.service.ts",
+      "sha256": "aedd32c1dc3719395a4d1ec179703f8edcb4d94543f3a09dcf25010fcc8a8724"
+    },
+    {
+      "path": "src/services/recommendation/utils/TF-IDF.ts",
+      "sha256": "a94176516f40570d465e04840747df62a82ca882338bbcd3cfc8893b101a2522"
+    },
+    {
+      "path": "src/services/schedule/__tests__/README.md",
+      "sha256": "c032a3f579e4231f939c5b72fce1778e3c30c8bae13c47fa4c6c53b9e993a4b0"
+    },
+    {
+      "path": "src/services/schedule/__tests__/fixtures/itemTracking.fixture.ts",
+      "sha256": "1d7a23b0583e0ff383ca00203774e84035c61ff741522e0c7fc527987757e160"
+    },
+    {
+      "path": "src/services/schedule/__tests__/schedule.integration.test.ts",
+      "sha256": "69541f8b87e3492c33d21ab85d090507e003b64156a7a680850d4bce64aa8d9e"
+    },
+    {
+      "path": "src/services/schedule/__tests__/schedule.service.test.ts",
+      "sha256": "7f5c63c1beafe2d9aa1f2ff11d847ca029ffc882dcde927d2c5a5259b2c921cd"
+    },
+    {
+      "path": "src/services/schedule/schedule.service.ts",
+      "sha256": "95d58d5069aa75d64113e257782ecc7e261a91f3f1d4f321573aa1d110009f49"
+    },
+    {
+      "path": "src/services/schedule/types/schedule.index.ts",
+      "sha256": "3404918deb2c7841e6893007f63c735da2cc7417e047d3888cbd3c95009e7a79"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki.service.ts",
+      "sha256": "0f89330a6fdc34d2a57829c9b162f7c38df25bc596fa2fe0c210d374a7334505"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki.test.ts",
+      "sha256": "5eb23c011c0319b2de429d04f3403d23dfd08c29f53251fc6908499d9b0e8865"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/application/anki.service.ts",
+      "sha256": "b2c931149f72baeda4f3f8a6c8855e560f297d93abad0123511976bff0c0e70f"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/constants/anki.constant.ts",
+      "sha256": "51c66078ecf38cd5cfa16c3fbded59c7719965be62a98b360965180c532fee59"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/domain/anki-scheduler.ts",
+      "sha256": "d89a909a99599851e2e92dd2fa592af9004c540fe8a355e0cc8ec4c177fc9e73"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/implementation/anki-scheduler.ts",
+      "sha256": "f4296c3b73a8321af7e15b710142a69642b3e5846d31f2ca295e6c0b5c24a258"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/implementation/fuzz.ts",
+      "sha256": "8ed47b454d9b61768087ea1c858425743c2e2e3c5aa07a87647a4db267b02500"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/implementation/learning.handler.ts",
+      "sha256": "6e3ae9d6785bc891ea5e140a928eb4342233ceda3d940c4141351fd9345f229a"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/implementation/relearning.handler.ts",
+      "sha256": "f153c15860ccd72a49998823e9e2cf3a05ffd448a11c9a4365eec508813b3fc8"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/anki/implementation/review.handler.ts",
+      "sha256": "5ebd4d07262d87151d83751ec232fc0ba913773de4fbd794b40dbacfdf007c3c"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/super-memo-2/superMemo2.service.ts",
+      "sha256": "28a10ac8362c984aa5087abc159aef6b6f62fe6ec127bafe3a6bef491f217661"
+    },
+    {
+      "path": "src/services/spaced-repetition-system/superMemo.service.ts",
+      "sha256": "d881c4ae955b2eb24af3b41e69f4a8619c08e211c2c5ea5d3fca8f361aad7cd5"
+    },
+    {
+      "path": "src/services/sse/sse.service.ts",
+      "sha256": "d5916a550bd670d1b69a520f820745bda8f057b09e382d7ce1b10985d55f1e50"
+    },
+    {
+      "path": "src/services/subscription/plan.service.ts",
+      "sha256": "f17c966e79d2cd92c50d18170860fdcabc7d58a9d5abed6a7f9e45348314f430"
+    },
+    {
+      "path": "src/services/subscription/subscription.service.ts",
+      "sha256": "bb74beffa716ac2d1a8896db42ddc1713603ba92e0c65a0307602b5b68ede57f"
+    },
+    {
+      "path": "src/services/subscription/usage/featureRecovery.service.ts",
+      "sha256": "4a507624cd89afbe9e508669c28a32e70a56915885e981de576192f447c73dce"
+    },
+    {
+      "path": "src/services/subscription/usage/featureUsage.job.ts",
+      "sha256": "7783ba56c8980404e36cae589a862386f4dcfaa0e7223b91d897e81cfcdf5060"
+    },
+    {
+      "path": "src/services/subscription/usage/featureUsage.service.ts",
+      "sha256": "337015379fa4d9cb71919650100743f96006e53dcca1875f9a37c2fda48e4a11"
+    },
+    {
+      "path": "src/services/topic/topic.service.ts",
+      "sha256": "63e7655b7078c0e9490ab80f5aa694ffb33f60fb78a907cdf769a7940209b49e"
+    },
+    {
+      "path": "src/services/topic/userTopicSetting.service.ts",
+      "sha256": "d2ce8e58361015e65fa305cd3e601c5a60742bce229034e9b7a44b8d3e87540b"
+    },
+    {
+      "path": "src/services/tracking/itemSpacedRepetitionTracking.service.ts",
+      "sha256": "8502c5e4e27cdf3fe67cd86cc5c657838bc95a21a86f1fc0563ebce18e66c125"
+    },
+    {
+      "path": "src/services/tracking/tracking.service.ts",
+      "sha256": "0df21fcc2e58642730581289abcaeaab719e17ed190d2c4a0c90318b3baa3279"
+    },
+    {
+      "path": "src/services/transcript/transcript.service.ts",
+      "sha256": "25560fabd8b1dd86da4c682d8100054f9c732c006c9209d6cbab4769dd082f29"
+    },
+    {
+      "path": "src/services/uploads/README.md",
+      "sha256": "8bb4d2731cc70ec569d66c2a2ca9e39e75a3aa12123af35a3abe5c6a313b86b2"
+    },
+    {
+      "path": "src/services/uploads/files/__test__/upload.file.R2.service.test.ts",
+      "sha256": "fe11e08369aadf57e39b5a74b0718332632ea7658c0a0395107cccc5ff9720a2"
+    },
+    {
+      "path": "src/services/uploads/files/__test__/upload_file_r2_service_test_docs.md",
+      "sha256": "a25e4ee341a786842b36e3cbb453220f6ca1ff29a9a84684b3ed4ef2cc246a5b"
+    },
+    {
+      "path": "src/services/uploads/files/upload.file.R2.service.ts",
+      "sha256": "be09d1eb3b11b4f5829549dc7c4fc14f2eb4542234b45155f3d47a7f318d8b60"
+    },
+    {
+      "path": "src/services/uploads/files/upload.file.service.ts",
+      "sha256": "c1bcefc927dc621af98b999501952f9720f84715e9a60fb751f10f83e68ed94c"
+    },
+    {
+      "path": "src/services/user/userSearch.service.ts",
+      "sha256": "8ec961fd01a003c03ce553491e8a2907f76d7940bf0e556434e8c002f5ee332e"
+    },
+    {
+      "path": "src/services/youtube/youtube.service.ts",
+      "sha256": "0746fcd5e16b07c1cc561e1d0c38c40cd64ed32359b19939e1c2b829ea113123"
+    },
+    {
+      "path": "src/services/youtube/youtube.taciq.service.ts",
+      "sha256": "5d497dd2e7e2cd43de6dbf3046af8221f55b4dc348f7c2419a4f84a01e242648"
+    },
+    {
+      "path": "src/templates/emails/classInvitation.template.ts",
+      "sha256": "9c26db812ea915f116675699785942eeca080e38a9df3fa6baf237860c009852"
+    },
+    {
+      "path": "src/types/anki-setting/ankiSetting.type.ts",
+      "sha256": "6831ed9be64c89f3081d563eade8f129605df60b233974323d83bb7d74824c9b"
+    },
+    {
+      "path": "src/types/auth/jwtPayload.type.ts",
+      "sha256": "0ebfa19a6d2547de92523e562c1999ab51c98376e5343d242ad53d8d3e14329c"
+    },
+    {
+      "path": "src/types/auth/sanitizedUser.type.ts",
+      "sha256": "1353706b3ca63445a4541e4d56c76b8be2dff5214756f338029826d83ce5a054"
+    },
+    {
+      "path": "src/types/class-based-learning/attachment/attachment.type.ts",
+      "sha256": "97406b9eea2d0f3d7432506bf2b7f64f28908ba0fb0cd04f62604e3a9754f49a"
+    },
+    {
+      "path": "src/types/class-based-learning/class.type.ts",
+      "sha256": "8e5ddee19430ba4453552136585176bab922902d5a790b1c50d88afcb3794921"
+    },
+    {
+      "path": "src/types/class-based-learning/classEnrollment.type.ts",
+      "sha256": "bf80778d0fd28b55697943e2ab6bb282c8a7d04ed7a0201d76c0e5928327abfc"
+    },
+    {
+      "path": "src/types/class-based-learning/classFeed.type.ts",
+      "sha256": "8bf5d3fa68d0bc7b90d1c98eef24daf5a9bad5b1216e5b3412e64d3c5b61ab8a"
+    },
+    {
+      "path": "src/types/class-based-learning/classInvite.type.ts",
+      "sha256": "31dc7d69d7c42945778234dac336cb9dcff2acaf3a8ad8ed8729c0220628f094"
+    },
+    {
+      "path": "src/types/class-based-learning/classTopicComment.type.ts",
+      "sha256": "8a3df5c7f37e21a114fdf6d9e48dd6c465e910ecd700a63ead9faaf4c8ee204a"
+    },
+    {
+      "path": "src/types/class-based-learning/classwork/attachment.type.ts",
+      "sha256": "3a625184027811ef9c02abd06d28bcc67ecad4d4b85491f3aa146f4a18b6c468"
+    },
+    {
+      "path": "src/types/class-based-learning/learning-material/learningMaterial.type.ts",
+      "sha256": "ae8249933bdb082c050424163edc558c82f88ad22bf9b07741fce2b89dc2a92c"
+    },
+    {
+      "path": "src/types/class-based-learning/quizClass.type.ts",
+      "sha256": "199736cc3115d87ff2406d2e35b61b02c3f4922e313c4ce740810953740f7529"
+    },
+    {
+      "path": "src/types/comment/comment.type.ts",
+      "sha256": "f3b97cbe9b1ae8f88fad2d48be50befd3f11b62b42105a9d4f940a3287849926"
+    },
+    {
+      "path": "src/types/convert.types.ts",
+      "sha256": "527bd0b3aa95f40a7b067a1a30d604a38bdb9027fa543f73dfc1e0013a5e00e5"
+    },
+    {
+      "path": "src/types/feynman/feynman.type.ts",
+      "sha256": "1d97b204facb00dbdfda1460630422798e1d755517a4d8a5b7b8f5b310e33a82"
+    },
+    {
+      "path": "src/types/flashcard/flashcard.type.ts",
+      "sha256": "6cc7adfa51aa6a4849b675a4d6c3f7f2d5cd18f6dfffd7960d95d4033904759c"
+    },
+    {
+      "path": "src/types/generate/generate.type.ts",
+      "sha256": "5e039684d6195cc613d49467570ca260b949f036bb8789ddbc388b9ba939b140"
+    },
+    {
+      "path": "src/types/generate/large-file.type.ts",
+      "sha256": "4493b3d3dc76a3b7f49b580f6fabffbc795f53ca3194faf7ff36b4ba85b08bee"
+    },
+    {
+      "path": "src/types/inputSet/inputSet.type.ts",
+      "sha256": "83b88ea43151c3064381b4830b85a5981eb27e3fe514ff316878b6094c682fba"
+    },
+    {
+      "path": "src/types/mindmap/mindmap.type.ts",
+      "sha256": "194d64f4da3f75489920983950371763493579b33f9791919f554e05db09e813"
+    },
+    {
+      "path": "src/types/mindmap/nodeStat.type.ts",
+      "sha256": "40d619e93fbe2a4f41c09d39e79f59902ae3313a1ae8b1eb0e1f00f8548e118e"
+    },
+    {
+      "path": "src/types/package/package.type.ts",
+      "sha256": "59e623d281e093e1b8a1012b42161287d0703320b597ace7bbd9d73665223c99"
+    },
+    {
+      "path": "src/types/profile/profile.types.ts",
+      "sha256": "32446f2b8f48568ee17988951e2f3e02a4fde758a89717d71867c094a16343e3"
+    },
+    {
+      "path": "src/types/progress/progress.type.ts",
+      "sha256": "aa1a5d5de74e1a2e3dc129d43f85ad8b43921ba4dbb36c62c961dfab6b9a1293"
+    },
+    {
+      "path": "src/types/quiz/quiz.type.ts",
+      "sha256": "06735154393d8454e983e11c8516814022c576a0fccd55cea9d4a43209413625"
+    },
+    {
+      "path": "src/types/teacher-request/teacherRequest.type.ts",
+      "sha256": "1155264d40a06b79000ac8337ba2c2e4e6b482d3e7b022215285ca272eef3af5"
+    },
+    {
+      "path": "src/types/topic/topic.type.ts",
+      "sha256": "66dde988c32498a4b0ed44c5b956c35547e7b345bab2ca082dddf95a8c206cf3"
+    },
+    {
+      "path": "src/types/topic/userTopicSetting.type.ts",
+      "sha256": "d1786aba89a87f6eb8809e62a7a2ed553694f1ae7dc7b7a10059f480e0dd0974"
+    },
+    {
+      "path": "src/types/tracking/itemSpacedRepetitionTracking.type.ts",
+      "sha256": "3853096d7aca3cb3f01f774d8559fdd250f78ffd270ce794d9b4d6b9937ecbd0"
+    },
+    {
+      "path": "src/types/uploads/upload.types.ts",
+      "sha256": "b733a415170a2d4178458b74e29b371f0543ba0a80ff92fd6cb012cde1a6cb73"
+    },
+    {
+      "path": "src/types/youtube/youtube.type.ts",
+      "sha256": "1ff7e931edafc5929ef6c9cde8ff8a9d45db9973ccc53d5e1dd59b44477dd0f4"
+    },
+    {
+      "path": "src/utils/anki/anki.utils.ts",
+      "sha256": "be746c444620f728b26ed2c147fa696eb953e8d6a9fc53dcb7361a171c8d1b60"
+    },
+    {
+      "path": "src/utils/auth/authHelpers.utils.ts",
+      "sha256": "c9c0fd7db5e22fa7a1ee96678d67640fed660da0dfc8562fecc65b6c78f6b6ca"
+    },
+    {
+      "path": "src/utils/auth/crypto.utils.ts",
+      "sha256": "5e6a7d908c705e662954e2452d68faeb40b11a971f64d04c13008a1113c689bd"
+    },
+    {
+      "path": "src/utils/auth/hash.utils.ts",
+      "sha256": "ecfa2b473b9e93a948e220e5495d7946a629406feaf1096148cda84f520fe266"
+    },
+    {
+      "path": "src/utils/auth/jwt.utils.ts",
+      "sha256": "08ff4a41346a18c7e5e8fce2bbd64cbdad96b6ab885ce95d7d7b23c725effdfc"
+    },
+    {
+      "path": "src/utils/common.ts",
+      "sha256": "bb5e77d987e1685741c5a998eb53267fac6b40de241860b3b2540ef2f5dda250"
+    },
+    {
+      "path": "src/utils/compress.ts",
+      "sha256": "fddf760d975242574dfe757b57e722e037f07dbc867ac258754dc881509380e6"
+    },
+    {
+      "path": "src/utils/conversion/conversion.ts",
+      "sha256": "c5f29e1e5c80d2b17e1dce569ba441012ad1d8276855b3aefd758be03cf5fb6a"
+    },
+    {
+      "path": "src/utils/date/date.ts",
+      "sha256": "5589fd23b97c6c1ae4485703f709bd4f68b2a7d309a4a14172a7fb326a66aa5c"
+    },
+    {
+      "path": "src/utils/date/index.ts",
+      "sha256": "b4078d0233204b0e95297840f3071a480dc74bd4a58e00fa5aca0a8d42e29e59"
+    },
+    {
+      "path": "src/utils/date/timezone.ts",
+      "sha256": "8f8c8ba7ee254f24892226902b2fa30d694aaac6305baac5b0467f2629aec4d4"
+    },
+    {
+      "path": "src/utils/date/validate.ts",
+      "sha256": "62e7dff8d9596d7505022cfd3192d823945c3f58e24dfc294ea031660e8ccbe5"
+    },
+    {
+      "path": "src/utils/embedding/embeddingGenerator.ts",
+      "sha256": "5e583f760da2dfa1939db7d63e699e5b49df4b07990d9c536e3991a136247e26"
+    },
+    {
+      "path": "src/utils/embedding/textProcessing.ts",
+      "sha256": "1daa111ee2ce165d29a6b88b368891ecd0e1eba1a138b7a99d3adcffce83c802"
+    },
+    {
+      "path": "src/utils/file/file.constant.ts",
+      "sha256": "e70bc6ccfee5b986d45d685ec3dbcf227fd4f4b1eea8d2306a66d30ffe9c54fd"
+    },
+    {
+      "path": "src/utils/file/file.util.ts",
+      "sha256": "72cd9177867518f8174a822f2139d0e9c23d957bc7f7a7eb60c63fa4c0858574"
+    },
+    {
+      "path": "src/utils/gamification/streak-timezone.ts",
+      "sha256": "955a61e65a9fd72c385e5d93c7a5bef7f0568df811f896c556f0a0eb4732dee7"
+    },
+    {
+      "path": "src/utils/logger.ts",
+      "sha256": "5f1385909159747b18f4f4e48f46fbd60f4265cd149313039d27ed81676c4b74"
+    },
+    {
+      "path": "src/utils/pgvector.ts",
+      "sha256": "cb4da4e9de29c9d7364d077087bc61d7aecd019f7e1d32770d6e22cba1f30a9f"
+    },
+    {
+      "path": "src/utils/progress/progressHelpers.ts",
+      "sha256": "51a601682b064db6cf24d95d88728844b6acada949890c7f3fe5f9e2f0ea2af0"
+    },
+    {
+      "path": "src/utils/prompt.ts",
+      "sha256": "a9991e7b41ed9ea550c9738889f18956d511df27faf60a1e297a88ee8f661565"
+    },
+    {
+      "path": "src/utils/prompt/constant/prompt.constant.ts",
+      "sha256": "47e370f02c12b485b68d44efd32113122155c87c4b59a3d3be831129ecc05098"
+    },
+    {
+      "path": "src/utils/prompt/feynman.prompt.ts",
+      "sha256": "d065588f55392d4824833208647667f92e0705f363f5fffd146d8d1be1812988"
+    },
+    {
+      "path": "src/utils/prompt/flashcard.prompt.ts",
+      "sha256": "cbb13931ac9aefcc7a35820b50e078f88e7d1eafb4c24708897515c56101cc73"
+    },
+    {
+      "path": "src/utils/prompt/mindmap.prompt.ts",
+      "sha256": "acfcf8c0e50a94886027889a79c60ca4915676ca570b1fe2167bbe3c09d73a59"
+    },
+    {
+      "path": "src/utils/prompt/quiz.prompt.ts",
+      "sha256": "5b1dc4b95556ff28080ee3a4e3dce5505797c254c5a49dbef64d5db000a7c392"
+    },
+    {
+      "path": "src/utils/prompt/summary.prompt.ts",
+      "sha256": "55df5c3be78e248f24a00b9119eed435e809a553591b6663cada269f2e9b8c9c"
+    },
+    {
+      "path": "src/utils/queue/schedule.queue.ts",
+      "sha256": "527a596075e94d86ba032b7814dfc1da29f578ee82508008f3f44b3055aef7e5"
+    },
+    {
+      "path": "src/utils/quiz/classQuizScheduler.job.ts",
+      "sha256": "4d8669cae46131ac02a558d5369689f128779ca4f2701bc33cd647c71578c643"
+    },
+    {
+      "path": "src/utils/quiz/quizSm2Helper.ts",
+      "sha256": "0fcde5d552219a2e1f939ef248e25b8c9961366d4c87833c7187a159dfe81ed0"
+    },
+    {
+      "path": "src/utils/quiz/shuffle.ts",
+      "sha256": "cd63cbd2ad878367e3b75f81caa2eaf4e8802a21f7ac3ccbdcc4f872a5f767d1"
+    },
+    {
+      "path": "src/utils/readme.md",
+      "sha256": "5f21da7ac05dd8a239d0514c81b0351769758f83caeb93ad5de0b91811255c68"
+    },
+    {
+      "path": "src/utils/validate.ts",
+      "sha256": "ef0485145756c8c1ec3afba4e1dc80cb51b61d213564de7a4be4c48305ed29a3"
+    },
+    {
+      "path": "src/utils/youtube/youtube.util.ts",
+      "sha256": "e751d7b84fedcf2ca95c6fd409c8b493b5580061055e221968f6ef6337ca7b80"
+    },
+    {
+      "path": "src/validations/classInvite.validation.ts",
+      "sha256": "6d5032470f9b0aa05907b10fceb316e2f6a4bdbb8bc735effcc9b4b8a3364b33"
+    },
+    {
+      "path": "tsconfig.esbuild.json",
+      "sha256": "4436225561a61152a4b59366e7092ab62487499718eca14cebbafb6f96c2cd5c"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "7ea55252c790ca728f6d9515b246eda03aa0ce85c1b0140ef0afc6c7a7c6592c"
+    },
+    {
+      "path": "tsconfig.lambda.json",
+      "sha256": "18ca879f5dac928aa3e912b282adffe114840f60fa9fa9c2aa2e94c76e87d1dc"
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "aa7830f7270213a89d294ab361c9e07d1459eb70d109a86f09a5b31515cc2c1f"
+    }
+  ]
+}

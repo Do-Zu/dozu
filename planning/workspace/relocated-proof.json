@@ -1,0 +1,56 @@
+{
+  "copiedArtifact": "planning\\workspace\\.runs\\relocated-web-1794495937839342800",
+  "relativeContainedLinks": 22,
+  "originalWorkspaceReadDenied": true,
+  "nodePermissionsRestrictedToCopy": true,
+  "readySecondsDeveloperHost": 2.375,
+  "checks": [
+    {
+      "path": "/en/welcome",
+      "status": 200,
+      "localeTitlePresent": true
+    },
+    {
+      "path": "/vi/welcome",
+      "status": 200,
+      "localeTitlePresent": true
+    },
+    {
+      "path": "/en/auth/login",
+      "status": 200,
+      "bytes": 68743
+    },
+    {
+      "path": "/vi/auth/login",
+      "status": 200,
+      "bytes": 78517
+    },
+    {
+      "path": "/en/payment",
+      "status": 200,
+      "bytes": 85388
+    },
+    {
+      "path": "/icon.png",
+      "status": 200,
+      "bytes": 971626
+    },
+    {
+      "assetType": ".js",
+      "status": 200,
+      "bytes": 6945
+    },
+    {
+      "assetType": ".css",
+      "status": 200,
+      "bytes": 1340
+    },
+    {
+      "assetType": "bundled-font",
+      "status": 200,
+      "bytes": 25844
+    }
+  ],
+  "ownedProcessStopped": true,
+  "limitations": "Website server/assets only; no API/database/embedding/provider or complete feature parity acceptance."
+}

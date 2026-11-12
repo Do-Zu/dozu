@@ -1,0 +1,22 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Only explicit workspace: imports may introduce internal dependencies.
+linkWorkspacePackages: false
+sharedWorkspaceLockfile: true
+autoInstallPeers: true
+strictPeerDependencies: true
+# Runtime/browser assets require their independent reviewed delivery pipelines.
+onlyBuiltDependencies:
+  - esbuild
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - aws-sdk
+  - canvas
+  - core-js
+  - fsevents
+  - msgpackr-extract
+  - msw
+  - puppeteer
+  - unrs-resolver

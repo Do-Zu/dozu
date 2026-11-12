@@ -1,0 +1,88 @@
+import express, { Router } from 'express';
+import { globalAsyncHandler } from '@/middleware/handler/handler.v2';
+import { getRoutes } from './register.routes';
+import logger from '@/utils/logger';
+
+const router: Router = express.Router();
+
+//import routers here
+import './demo/demo.routes';
+import './generate/v1/generate.routes';
+import './generate/v3/generate.routes';
+import './sse/sse.routes';
+import './flashcard/flashcard.routes';
+import './topic/topic.routes';
+import './auth/auth.routes';
+import './mindmap/mindmap.routes';
+import './recommendation/recommendation.routes';
+import './schedule/schedule.routes';
+import './uploads/upload.routes';
+import './admin/admin.routes';
+import './admin/subscription.route';
+import './admin/revenue.route';
+import './admin/payment.route';
+import './admin/llmModel.routes';
+import './admin/llmProvider.routes';
+import './admin/llmApiKey.routes';
+import './admin/llmApiKeyModel.routes';
+import './admin/feedback.routes';
+import './progress/progress.routes';
+import './class-based-learning/class.routes';
+import './tracking/tracking.routes';
+import './subscription/subscription.routes';
+import './payment/payment.routes';
+import './question/question.routes';
+import './quiz/quiz.routes';
+import './inputSet/inputSet.routes';
+import './profile/profile.routes';
+import './notification/notification.route';
+import './onboarding/onboarding.routes';
+import './teacher-request/teacherRequest.routes';
+import './class-based-learning/classEnrollment.routes';
+import './gamification/streak.routes';
+import './gamification/points.routes';
+import './feynman/feynman.routes';
+import './backlog/backlog.routes';
+import './anki-setting/ankiSetting.routes';
+import './class-based-learning/learning-material/learningMaterial.routes';
+import './class-based-learning/quizClass.routes';
+import './package/package.routes';
+import './class-based-learning/assignment/assignmentSubmission.routes';
+import './class-based-learning/class-quiz/studentClassQuiz.routes';
+import './class-based-learning/class-quiz/teacherClassQuiz.routes';
+import './comment/comment.routes';
+import './content/content.routes';
+import './embedding/embedding.route';
+import './image/image.routes';
+import './mediaTranscription/mediaTranscription.routes';
+import './convert/convert.routes';
+import './feedback/feedback.routes';
+import './youtube/youtube.routes';
+
+// Apply global async handler to router
+globalAsyncHandler(router);
+
+try {
+    const registeredRoutes = getRoutes();
+
+    if (registeredRoutes.length === 0) {
+        logger.warn('No routes registered with the API router');
+    }
+
+    registeredRoutes.forEach(({ path, router: moduleRouter }) => {
+        try {
+            router.use(path, moduleRouter);
+            logger.debug(`Mounted route: ${path}`);
+        } catch (error) {
+            logger.error(`Failed to mount route ${path}`, {
+                error: error instanceof Error ? error.message : 'Unknown error',
+            });
+        }
+    });
+} catch (error) {
+    logger.error('Error mounting API routes', {
+        error: error instanceof Error ? error.message : 'Unknown error',
+    });
+}
+
+export default router;

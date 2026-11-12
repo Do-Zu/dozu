@@ -1,0 +1,61 @@
+{
+  "utc": "2026-11-10T14:45:03.012875+00:00",
+  "issue4OpenInProgress": true,
+  "project4InProgress": true,
+  "originalAcceptanceUnchangedAndUnchecked": true,
+  "issue4AssigneesUnchangedEmpty": true,
+  "nativeSubissues": [
+    {
+      "platform": "windows",
+      "number": 45,
+      "url": "https://github.com/Do-Zu/dozu/issues/45",
+      "itemId": "PVTI_lADODsVOHc4Bq0rozhHhnlA"
+    },
+    {
+      "platform": "macos",
+      "number": 46,
+      "url": "https://github.com/Do-Zu/dozu/issues/46",
+      "itemId": "PVTI_lADODsVOHc4Bq0rozhHhn74"
+    },
+    {
+      "platform": "linux",
+      "number": 47,
+      "url": "https://github.com/Do-Zu/dozu/issues/47",
+      "itemId": "PVTI_lADODsVOHc4Bq0rozhHhoSM"
+    }
+  ],
+  "newItems": 3,
+  "concurrentUnrelatedChangesObservedAndPreserved": [
+    {
+      "number": 2,
+      "fields": {
+        "assignees": {
+          "before": null,
+          "after": [
+            "perinst"
+          ]
+        }
+      }
+    },
+    {
+      "number": 3,
+      "fields": {
+        "assignees": {
+          "before": null,
+          "after": [
+            "perinst"
+          ]
+        }
+      }
+    }
+  ],
+  "unrelatedExistingCustomFieldsChanged": [],
+  "originalProjectFieldsUnchanged": true,
+  "progressCommentUrl": "https://github.com/Do-Zu/dozu/issues/4#issuecomment-6770301111",
+  "localSnapshotRefreshScope": [
+    4,
+    45,
+    46,
+    47
+  ]
+}

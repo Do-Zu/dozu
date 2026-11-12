@@ -1,0 +1,86 @@
+{
+    "classBased": {
+        "comment": {
+            "title": "Comments",
+            "subtitle": "Share your thoughts about {title}",
+            "open": "Open comments",
+            "close": "Close",
+            "startDiscussion": "Start the Discussion",
+            "noCommentsTitle": "No comments yet",
+            "noCommentsBody": "Be the first to share your thoughts!",
+            "loadMoreNone": "No more comments",
+            "toast": {
+                "sent": "Sent",
+                "failedCreate": "Failed to add your comment!",
+                "missingParams": "Missing required parameters for creating comment",
+                "mustLogin": "You must be logged in to post a comment.",
+                "failedLoadComments": "Failed to load comments.",
+                "failedLoadReplies": "Failed to load replies",
+                "comingSoon": "Coming Soon!",
+                "createSuccess": "Comment added successfully",
+                "createError": "Failed to add comment. Please try again.",
+                "replySuccess": "Reply added successfully",
+                "replyError": "Failed to add reply. Please try again.",
+                "updateSuccess": "Comment updated successfully",
+                "updateError": "Failed to update comment. Please try again.",
+                "deleteSuccess": "Comment deleted successfully",
+                "deleteError": "Failed to delete comment. Please try again.",
+                "deleteTitle": "Delete comment?",
+                "deleteConfirm": "Are you sure you want to delete this comment?"
+            },
+            "actions": {
+                "comment": "Comment",
+                "reply": "Reply",
+                "cancel": "Cancel",
+                "edit": "Edit",
+                "delete": "Delete",
+                "save": "Save"
+            },
+            "placeholders": {
+                "root": "Share your thoughts...",
+                "reply": "Write a thoughtful reply...",
+                "writeReply": "Write a reply..."
+            },
+            "replyingTo": {
+                "label": "Replying to:",
+                "quoteSuffix": "..."
+            },
+            "shortcutsHint": "Press Cmd+Enter to send • Click to expand",
+            "card": {
+                "readMore": "Read more",
+                "showLess": "Show less",
+                "replyingTo": "Replying to:",
+                "tooltips": {
+                    "like": "Like this comment",
+                    "reply": "Reply to this comment",
+                    "viewReplies": "View replies",
+                    "moreOptions": "More options"
+                },
+                "timeAgo": "ago",
+                "edited": "(Edited)"
+            },
+            "labels": {
+                "you": "You",
+                "user": "User"
+            },
+            "input": {
+                "replyingToLabel": "💬 Replying to:",
+                "toolbar": {
+                    "bold": "Bold text",
+                    "italic": "Italic text",
+                    "list": "Add list",
+                    "link": "Add link"
+                },
+                "hint": "💡 Press Cmd+Enter to send • Click to expand",
+                "buttons": {
+                    "cancel": "Cancel",
+                    "reply": "Reply",
+                    "comment": "Comment"
+                }
+            },
+            "section": {
+                "title": "Public Comments"
+            }
+        }
+    }
+}

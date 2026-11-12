@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-10",
+  "authority": "User reply in Task #2 session",
+  "platformSupport": "Agreed v1 support contract; platform-support.md",
+  "payments": {
+    "decision": "Defer and block payment execution during local migration",
+    "trackingIssue": 41,
+    "merchantOwnership": "Deferred; not selected",
+    "deleteExistingPages": false,
+    "runtimeImplementation": "Not performed by requirements work"
+  },
+  "classroom": {
+    "decision": "Other devices on the same LAN",
+    "trackingIssue": 43,
+    "authority": "User-owned host with local backend/database",
+    "remoteInternetTunnel": "Not a v1 requirement",
+    "implementation": "Unverified"
+  },
+  "database": "SQLite may be evaluated with compatibility proof; no replacement selected",
+  "criteriaComplete": 5,
+  "releaseValidation": "Pending downstream evidence"
+}

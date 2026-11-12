@@ -1,0 +1,987 @@
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mEnvironment file .env.development not found, using default values[39m
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mMissing required environment variables: PORT, HOST[39m
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.[39m
+2026-11-09 18:24:00:240 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mEnvironment file .env.development not found, using default values[39m
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mMissing required environment variables: PORT, HOST[39m
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.[39m
+2026-11-09 18:24:00:240 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mEnvironment file .env.development not found, using default values[39m
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mMissing required environment variables: PORT, HOST[39m
+2026-11-09 18:24:00:240 [33mwarn[39m: [33mALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.[39m
+2026-11-09 18:24:00:240 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+  console.info
+    Connecting to Redis (attempt 1 of 3)...
+
+      at RedisManager.connect (src/libs/redis/base/redis.abstract.ts:47:21)
+
+  console.info
+    Connecting to Redis (attempt 2 of 3)...
+
+      at RedisManager.connect (src/libs/redis/base/redis.abstract.ts:47:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:00:240 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:00:240 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:00:240 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:00:240 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:00:240 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:00:240 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:01:241 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:01:241 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:01:241 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:01:241 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:02:242 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:02:242 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:02:242 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:02:242 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:03:243 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:03:243 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:04:244 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:04:244 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:05:245 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.error
+    Redis connection error: Error: connect EACCES 127.0.0.1:1
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 1
+    }
+
+    [0m [90m 87 |[39m         [36mif[39m ([33m![39m[36mthis[39m[33m.[39mredis) [36mreturn[39m[33m;[39m
+     [90m 88 |[39m         [36mthis[39m[33m.[39mredis[33m.[39mon([32m'error'[39m[33m,[39m error [33m=>[39m {
+    [31m[1m>[22m[39m[90m 89 |[39m             console[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 90 |[39m             logger[33m.[39merror([32m'Redis connection error:'[39m[33m,[39m error)[33m;[39m
+     [90m 91 |[39m             [36mthis[39m[33m.[39mevents[33m.[39memit([32m'error'[39m[33m,[39m error)[33m;[39m
+     [90m 92 |[39m         })[33m;[39m[0m
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:89:21)
+      at EventEmitter.silentEmit (../../../../dozu-api-service/node_modules/ioredis/built/Redis.js:482:30)
+      at Socket.<anonymous> (../../../../dozu-api-service/node_modules/ioredis/built/redis/event_handler.js:196:14)
+
+2026-11-09 18:24:05:245 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+  console.log
+    Redis connection closed
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:105:21)
+
+  console.log
+    Redis reconnecting...
+
+      at EventEmitter.<anonymous> (src/libs/redis/base/redis.abstract.ts:100:21)
+
+FAIL src/services/schedule/__tests__/schedule.service.test.ts (14.078 s)
+  ScheduleService - generateRecommendSchedule
+    Case 1: Empty Item List
+      ○ skipped should return empty schedule when no items are available
+    Case 2: Small Number of Items (10 items)
+      ○ skipped should schedule all items when sufficient time is available
+    Case 3: Mixing Number of Items and All date
+      ○ skipped should distribute items across multiple days
+    Case 4: Mixed Difficulty Levels
+      ○ skipped should prioritize harder items (lower easiness factor)
+    Case 5: Different Status Types (new, learning, review)
+      × should handle items with different status types (5002 ms)
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    connect EACCES 127.0.0.1:1
+
+
+  ● ScheduleService - generateRecommendSchedule › Case 5: Different Status Types (new, learning, review) › should handle items with different status types
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+    [0m [90m 419 |[39m         ][33m;[39m
+     [90m 420 |[39m
+    [31m[1m>[22m[39m[90m 421 |[39m         it([32m'should handle items with different status types'[39m[33m,[39m [36masync[39m () [33m=>[39m {
+     [90m     |[39m         [31m[1m^[22m[39m
+     [90m 422 |[39m             (scheduleRepo[33m.[39mgetListItemTrackingByUserIdInWeek [36mas[39m jest[33m.[39m[33mMock[39m)[33m.[39mmockResolvedValue(mockItems)[33m;[39m
+     [90m 423 |[39m
+     [90m 424 |[39m             [36mconst[39m result [33m=[39m [36mawait[39m scheduleService[33m.[39mgenerateRecommendSchedule({[0m
+
+      at src/services/schedule/__tests__/schedule.service.test.ts:421:9
+      at src/services/schedule/__tests__/schedule.service.test.ts:342:5
+      at Object.<anonymous> (src/services/schedule/__tests__/schedule.service.test.ts:19:1)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 skipped, 5 total
+Snapshots:   0 total
+Time:        14.321 s
+Ran all test suites within paths "D:\product\dozu\planning\audit\.runs\dozu-api-service\src\services\schedule\__tests__\schedule.service.test.ts".
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

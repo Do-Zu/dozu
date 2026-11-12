@@ -1,0 +1,60 @@
+
+> dozu@0.0.0 package D:\product\dozu
+> turbo run package
+
+• Packages in scope: api-services, dozu-ui-service
+• Running package in 2 packages
+• Remote caching disabled
+dozu-ui-service:build: cache miss, executing 7002fc95d816e846
+api-services:build: cache miss, executing a903e47e6b4328c6
+dozu-ui-service:build: 
+dozu-ui-service:build: > dozu-ui-service@0.1.0 build D:\product\dozu\apps\web
+dozu-ui-service:build: > next build
+dozu-ui-service:build: 
+api-services:build: 
+api-services:build: > api-services@0.0.1 prebuild D:\product\dozu\apps\api
+api-services:build: > npm run clean
+api-services:build: 
+api-services:build: 
+api-services:build: > api-services@0.0.1 clean
+api-services:build: > rimraf dist
+api-services:build: 
+api-services:build: 
+api-services:build: > api-services@0.0.1 build D:\product\dozu\apps\api
+api-services:build: > cross-env NODE_ENV=production tsc
+api-services:build: 
+dozu-ui-service:build:   ▲ Next.js 14.2.35
+dozu-ui-service:build:   - Experiments (use with caution):
+dozu-ui-service:build:     · outputFileTracingRoot
+dozu-ui-service:build: 
+dozu-ui-service:build:    Creating an optimized production build ...
+dozu-ui-service:build: node:internal/modules/cjs/loader:1386
+dozu-ui-service:build:   throw err;
+dozu-ui-service:build:   ^
+dozu-ui-service:build: 
+dozu-ui-service:build: Error: Cannot find module 'D:\product\dozu\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\jest-worker\processChild.js'
+dozu-ui-service:build:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+dozu-ui-service:build:     at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+dozu-ui-service:build:     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+dozu-ui-service:build:     at Function._load (node:internal/modules/cjs/loader:1192:37)
+dozu-ui-service:build:     at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+dozu-ui-service:build:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+dozu-ui-service:build:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+dozu-ui-service:build:     at node:internal/main/run_main_module:36:49 {
+dozu-ui-service:build:   code: 'MODULE_NOT_FOUND',
+dozu-ui-service:build:   requireStack: []
+dozu-ui-service:build: }
+dozu-ui-service:build: 
+dozu-ui-service:build: Node.js v22.22.0
+dozu-ui-service:build: Next.js build worker exited with code: 1 and signal: null
+dozu-ui-service:build:  ELIFECYCLE  Command failed with exit code 1.
+dozu-ui-service:build: ERROR: command finished with error: command (D:\product\dozu\apps\web) C:\nvm4w\nodejs\pnpm.cmd run build exited (1)
+dozu-ui-service#build: command (D:\product\dozu\apps\web) C:\nvm4w\nodejs\pnpm.cmd run build exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    1.813s 
+Failed:    dozu-ui-service#build
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.

@@ -1,0 +1,18 @@
+{
+  "name": "api-test",
+  "command": [
+    "pnpm",
+    "--filter",
+    "api-services",
+    "test",
+    "--runInBand",
+    "--forceExit",
+    "--cacheDirectory",
+    "../../planning/workspace/.runs/jest-cache"
+  ],
+  "exitCode": 1,
+  "seconds": 27.656,
+  "capturedAtUtc": "2026-11-12T14:54:05.244857+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "api-test.log"
+}

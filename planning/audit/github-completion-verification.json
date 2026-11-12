@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "issue": {
+    "acceptanceChecked": 5,
+    "assignees": [],
+    "closedAt": "2026-11-09T11:43:37Z",
+    "labels": [
+      "task",
+      "status:done",
+      "priority:P0",
+      "complexity:L"
+    ],
+    "number": 3,
+    "state": "CLOSED",
+    "stateReason": "COMPLETED",
+    "url": "https://github.com/Do-Zu/dozu/issues/3"
+  },
+  "project": {
+    "audit": {
+      "complexity": "L",
+      "id": "PVTI_lADODsVOHc4Bq0rozhHKctU",
+      "phase": "0 Requirements",
+      "priority": "P0",
+      "status": "Done"
+    },
+    "counts": [
+      {
+        "count": 2,
+        "status": "Block"
+      },
+      {
+        "count": 1,
+        "status": "Done"
+      },
+      {
+        "count": 41,
+        "status": "Todo"
+      }
+    ],
+    "totalCount": 44
+  },
+  "onlyCompletedIssue": 3,
+  "implementationIssuesCompleted": 0,
+  "payment41Unresolved": true,
+  "classroom43Unresolved": true,
+  "evidenceFiles": 41,
+  "evidenceManifestSha256": "e4ce7961cc42e2038b2fa2e077b4d5d52dd00d8768786ef38ae3344a2107a6ba",
+  "sourceUnchanged": true,
+  "completionComment": "https://github.com/Do-Zu/dozu/issues/3#issuecomment-6739215718",
+  "stackHandoff": "https://github.com/Do-Zu/dozu/issues/4#issuecomment-6739219125"
+}

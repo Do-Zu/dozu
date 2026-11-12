@@ -1,0 +1,71 @@
+{
+  "apps/web": [
+    {
+      "path": "node_modules/@parcel/watcher",
+      "version": "2.5.1",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/canvas",
+      "version": "3.1.2",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/core-js",
+      "version": "3.44.0",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/msw",
+      "version": "2.10.2",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/unrs-resolver",
+      "version": "1.9.2",
+      "hasInstallScript": true
+    }
+  ],
+  "apps/api": [
+    {
+      "path": "node_modules/@esbuild-kit/core-utils/node_modules/esbuild",
+      "version": "0.18.20",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/aws-sdk",
+      "version": "2.1692.0",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/drizzle-kit/node_modules/esbuild",
+      "version": "0.19.12",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/esbuild",
+      "version": "0.25.2",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/fsevents",
+      "version": "2.3.3",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/msgpackr-extract",
+      "version": "3.0.3",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/puppeteer",
+      "version": "24.32.0",
+      "hasInstallScript": true
+    },
+    {
+      "path": "node_modules/unrs-resolver",
+      "version": "1.11.1",
+      "hasInstallScript": true
+    }
+  ]
+}

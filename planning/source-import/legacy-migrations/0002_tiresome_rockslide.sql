@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "user_feature_usage_user_id_feature_id_reset_period_start_idx" ON "user_feature_usage" USING btree ("user_id","feature_id","reset_period_start");

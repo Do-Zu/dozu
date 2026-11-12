@@ -1,0 +1,1868 @@
+[
+  {
+    "repo": "dozu-ui-service",
+    "manifestLicense": null,
+    "lockSha256": "3e7bef22070dcd1d5214ce6ca14c4719492fbb7ceb5dd9eba2a86a49b90505d5",
+    "directDependencies": [
+      {
+        "package": "@aws-sdk/client-s3",
+        "group": "dependencies",
+        "declared": "3.787.0",
+        "locked": "3.787.0",
+        "installed": "3.787.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@aws-sdk/s3-request-presigner",
+        "group": "dependencies",
+        "declared": "3.787.0",
+        "locked": "3.787.0",
+        "installed": "3.787.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@dnd-kit/core",
+        "group": "dependencies",
+        "declared": "6.3.1",
+        "locked": "6.3.1",
+        "installed": "6.3.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@dnd-kit/sortable",
+        "group": "dependencies",
+        "declared": "10.0.0",
+        "locked": "10.0.0",
+        "installed": "10.0.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@dnd-kit/utilities",
+        "group": "dependencies",
+        "declared": "3.2.2",
+        "locked": "3.2.2",
+        "installed": "3.2.2",
+        "matchesLock": true
+      },
+      {
+        "package": "@floating-ui/dom",
+        "group": "dependencies",
+        "declared": "1.7.4",
+        "locked": "1.7.4",
+        "installed": "1.7.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@floating-ui/react",
+        "group": "dependencies",
+        "declared": "0.27.16",
+        "locked": "0.27.16",
+        "installed": "0.27.16",
+        "matchesLock": true
+      },
+      {
+        "package": "@fontsource/inter",
+        "group": "dependencies",
+        "declared": "5.2.5",
+        "locked": "5.2.5",
+        "installed": "5.2.5",
+        "matchesLock": true
+      },
+      {
+        "package": "@fullcalendar/common",
+        "group": "dependencies",
+        "declared": "5.11.5",
+        "locked": "5.11.5",
+        "installed": "5.11.5",
+        "matchesLock": true
+      },
+      {
+        "package": "@fullcalendar/core",
+        "group": "dependencies",
+        "declared": "6.1.17",
+        "locked": "6.1.17",
+        "installed": "6.1.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@fullcalendar/daygrid",
+        "group": "dependencies",
+        "declared": "6.1.17",
+        "locked": "6.1.17",
+        "installed": "6.1.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@fullcalendar/interaction",
+        "group": "dependencies",
+        "declared": "6.1.17",
+        "locked": "6.1.17",
+        "installed": "6.1.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@fullcalendar/list",
+        "group": "dependencies",
+        "declared": "6.1.17",
+        "locked": "6.1.17",
+        "installed": "6.1.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@fullcalendar/react",
+        "group": "dependencies",
+        "declared": "6.1.17",
+        "locked": "6.1.17",
+        "installed": "6.1.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@fullcalendar/timegrid",
+        "group": "dependencies",
+        "declared": "6.1.17",
+        "locked": "6.1.17",
+        "installed": "6.1.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@gsap/react",
+        "group": "dependencies",
+        "declared": "2.1.2",
+        "locked": "2.1.2",
+        "installed": "2.1.2",
+        "matchesLock": true
+      },
+      {
+        "package": "@microsoft/fetch-event-source",
+        "group": "dependencies",
+        "declared": "2.0.1",
+        "locked": "2.0.1",
+        "installed": "2.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-accordion",
+        "group": "dependencies",
+        "declared": "1.2.4",
+        "locked": "1.2.4",
+        "installed": "1.2.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-alert-dialog",
+        "group": "dependencies",
+        "declared": "1.1.4",
+        "locked": "1.1.4",
+        "installed": "1.1.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-aspect-ratio",
+        "group": "dependencies",
+        "declared": "1.1.1",
+        "locked": "1.1.1",
+        "installed": "1.1.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-avatar",
+        "group": "dependencies",
+        "declared": "1.1.2",
+        "locked": "1.1.2",
+        "installed": "1.1.2",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-checkbox",
+        "group": "dependencies",
+        "declared": "1.1.3",
+        "locked": "1.1.3",
+        "installed": "1.1.3",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-collapsible",
+        "group": "dependencies",
+        "declared": "1.1.12",
+        "locked": "1.1.12",
+        "installed": "1.1.12",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-dialog",
+        "group": "dependencies",
+        "declared": "1.1.14",
+        "locked": "1.1.14",
+        "installed": "1.1.14",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-dropdown-menu",
+        "group": "dependencies",
+        "declared": "2.1.15",
+        "locked": "2.1.15",
+        "installed": "2.1.15",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-hover-card",
+        "group": "dependencies",
+        "declared": "1.1.14",
+        "locked": "1.1.14",
+        "installed": "1.1.14",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-label",
+        "group": "dependencies",
+        "declared": "2.1.1",
+        "locked": "2.1.1",
+        "installed": "2.1.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-popover",
+        "group": "dependencies",
+        "declared": "1.1.15",
+        "locked": "1.1.15",
+        "installed": "1.1.15",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-progress",
+        "group": "dependencies",
+        "declared": "1.1.3",
+        "locked": "1.1.3",
+        "installed": "1.1.3",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-radio-group",
+        "group": "dependencies",
+        "declared": "1.3.6",
+        "locked": "1.3.6",
+        "installed": "1.3.6",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-scroll-area",
+        "group": "dependencies",
+        "declared": "1.2.9",
+        "locked": "1.2.9",
+        "installed": "1.2.9",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-select",
+        "group": "dependencies",
+        "declared": "2.1.4",
+        "locked": "2.1.4",
+        "installed": "2.1.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-separator",
+        "group": "dependencies",
+        "declared": "1.1.7",
+        "locked": "1.1.7",
+        "installed": "1.1.7",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-slider",
+        "group": "dependencies",
+        "declared": "1.3.4",
+        "locked": "1.3.4",
+        "installed": "1.3.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-slot",
+        "group": "dependencies",
+        "declared": "1.2.3",
+        "locked": "1.2.3",
+        "installed": "1.2.3",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-tabs",
+        "group": "dependencies",
+        "declared": "1.1.4",
+        "locked": "1.1.4",
+        "installed": "1.1.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-toast",
+        "group": "dependencies",
+        "declared": "1.2.7",
+        "locked": "1.2.7",
+        "installed": "1.2.7",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-toggle",
+        "group": "dependencies",
+        "declared": "1.1.10",
+        "locked": "1.1.10",
+        "installed": "1.1.10",
+        "matchesLock": true
+      },
+      {
+        "package": "@radix-ui/react-tooltip",
+        "group": "dependencies",
+        "declared": "1.2.7",
+        "locked": "1.2.7",
+        "installed": "1.2.7",
+        "matchesLock": true
+      },
+      {
+        "package": "@react-pdf/renderer",
+        "group": "dependencies",
+        "declared": "4.3.0",
+        "locked": "4.3.0",
+        "installed": "4.3.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@reduxjs/toolkit",
+        "group": "dependencies",
+        "declared": "2.5.0",
+        "locked": "2.5.0",
+        "installed": "2.5.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@shadcn/ui",
+        "group": "dependencies",
+        "declared": "0.0.4",
+        "locked": "0.0.4",
+        "installed": "0.0.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@tanstack/react-table",
+        "group": "dependencies",
+        "declared": "8.20.6",
+        "locked": "8.20.6",
+        "installed": "8.20.6",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-bubble-menu",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-code-block-lowlight",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-heading",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-highlight",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-image",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-list",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-placeholder",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-table",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-text-align",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extension-underline",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/extensions",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/pm",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/react",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/starter-kit",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@tiptap/suggestion",
+        "group": "dependencies",
+        "declared": "3.11.0",
+        "locked": "3.11.0",
+        "installed": "3.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@xyflow/react",
+        "group": "dependencies",
+        "declared": "12.6.4",
+        "locked": "12.6.4",
+        "installed": "12.6.4",
+        "matchesLock": true
+      },
+      {
+        "package": "axios",
+        "group": "dependencies",
+        "declared": "1.10.0",
+        "locked": "1.10.0",
+        "installed": "1.10.0",
+        "matchesLock": true
+      },
+      {
+        "package": "chart.js",
+        "group": "dependencies",
+        "declared": "4.4.9",
+        "locked": "4.4.9",
+        "installed": "4.4.9",
+        "matchesLock": true
+      },
+      {
+        "package": "class-variance-authority",
+        "group": "dependencies",
+        "declared": "0.7.1",
+        "locked": "0.7.1",
+        "installed": "0.7.1",
+        "matchesLock": true
+      },
+      {
+        "package": "clsx",
+        "group": "dependencies",
+        "declared": "2.1.1",
+        "locked": "2.1.1",
+        "installed": "2.1.1",
+        "matchesLock": true
+      },
+      {
+        "package": "cmdk",
+        "group": "dependencies",
+        "declared": "1.1.1",
+        "locked": "1.1.1",
+        "installed": "1.1.1",
+        "matchesLock": true
+      },
+      {
+        "package": "date-fns",
+        "group": "dependencies",
+        "declared": "3.6.0",
+        "locked": "3.6.0",
+        "installed": "3.6.0",
+        "matchesLock": true
+      },
+      {
+        "package": "dotenv",
+        "group": "dependencies",
+        "declared": "16.5.0",
+        "locked": "16.5.0",
+        "installed": "16.5.0",
+        "matchesLock": true
+      },
+      {
+        "package": "elkjs",
+        "group": "dependencies",
+        "declared": "0.11.0",
+        "locked": "0.11.0",
+        "installed": "0.11.0",
+        "matchesLock": true
+      },
+      {
+        "package": "embla-carousel-autoplay",
+        "group": "dependencies",
+        "declared": "8.6.0",
+        "locked": "8.6.0",
+        "installed": "8.6.0",
+        "matchesLock": true
+      },
+      {
+        "package": "embla-carousel-react",
+        "group": "dependencies",
+        "declared": "8.6.0",
+        "locked": "8.6.0",
+        "installed": "8.6.0",
+        "matchesLock": true
+      },
+      {
+        "package": "file-saver",
+        "group": "dependencies",
+        "declared": "2.0.5",
+        "locked": "2.0.5",
+        "installed": "2.0.5",
+        "matchesLock": true
+      },
+      {
+        "package": "framer-motion",
+        "group": "dependencies",
+        "declared": "12.16.0",
+        "locked": "12.16.0",
+        "installed": "12.16.0",
+        "matchesLock": true
+      },
+      {
+        "package": "gsap",
+        "group": "dependencies",
+        "declared": "3.14.2",
+        "locked": "3.14.2",
+        "installed": "3.14.2",
+        "matchesLock": true
+      },
+      {
+        "package": "html-to-image",
+        "group": "dependencies",
+        "declared": "1.11.11",
+        "locked": "1.11.11",
+        "installed": "1.11.11",
+        "matchesLock": true
+      },
+      {
+        "package": "html2canvas",
+        "group": "dependencies",
+        "declared": "1.4.1",
+        "locked": "1.4.1",
+        "installed": "1.4.1",
+        "matchesLock": true
+      },
+      {
+        "package": "i",
+        "group": "dependencies",
+        "declared": "0.3.7",
+        "locked": "0.3.7",
+        "installed": "0.3.7",
+        "matchesLock": true
+      },
+      {
+        "package": "jspdf",
+        "group": "dependencies",
+        "declared": "3.0.1",
+        "locked": "3.0.1",
+        "installed": "3.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "jwt-decode",
+        "group": "dependencies",
+        "declared": "4.0.0",
+        "locked": "4.0.0",
+        "installed": "4.0.0",
+        "matchesLock": true
+      },
+      {
+        "package": "lottie-react",
+        "group": "dependencies",
+        "declared": "2.4.1",
+        "locked": "2.4.1",
+        "installed": "2.4.1",
+        "matchesLock": true
+      },
+      {
+        "package": "lowlight",
+        "group": "dependencies",
+        "declared": "3.3.0",
+        "locked": "3.3.0",
+        "installed": "3.3.0",
+        "matchesLock": true
+      },
+      {
+        "package": "lucide-react",
+        "group": "dependencies",
+        "declared": "0.469.0",
+        "locked": "0.469.0",
+        "installed": "0.469.0",
+        "matchesLock": true
+      },
+      {
+        "package": "lz-string",
+        "group": "dependencies",
+        "declared": "1.5.0",
+        "locked": "1.5.0",
+        "installed": "1.5.0",
+        "matchesLock": true
+      },
+      {
+        "package": "mammoth",
+        "group": "dependencies",
+        "declared": "1.9.0",
+        "locked": "1.9.0",
+        "installed": "1.9.0",
+        "matchesLock": true
+      },
+      {
+        "package": "nanoid",
+        "group": "dependencies",
+        "declared": "5.1.5",
+        "locked": "5.1.5",
+        "installed": "5.1.5",
+        "matchesLock": true
+      },
+      {
+        "package": "next",
+        "group": "dependencies",
+        "declared": "14.2.35",
+        "locked": "14.2.35",
+        "installed": "14.2.35",
+        "matchesLock": true
+      },
+      {
+        "package": "next-intl",
+        "group": "dependencies",
+        "declared": "4.0.2",
+        "locked": "4.0.2",
+        "installed": "4.0.2",
+        "matchesLock": true
+      },
+      {
+        "package": "next-themes",
+        "group": "dependencies",
+        "declared": "0.4.6",
+        "locked": "0.4.6",
+        "installed": "0.4.6",
+        "matchesLock": true
+      },
+      {
+        "package": "ogl",
+        "group": "dependencies",
+        "declared": "1.0.11",
+        "locked": "1.0.11",
+        "installed": "1.0.11",
+        "matchesLock": true
+      },
+      {
+        "package": "pako",
+        "group": "dependencies",
+        "declared": "2.1.0",
+        "locked": "2.1.0",
+        "installed": "2.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "papaparse",
+        "group": "dependencies",
+        "declared": "5.5.3",
+        "locked": "5.5.3",
+        "installed": "5.5.3",
+        "matchesLock": true
+      },
+      {
+        "package": "pdfjs-dist",
+        "group": "dependencies",
+        "declared": "4.8.69",
+        "locked": "4.8.69",
+        "installed": "4.8.69",
+        "matchesLock": true
+      },
+      {
+        "package": "polished",
+        "group": "dependencies",
+        "declared": "4.3.1",
+        "locked": "4.3.1",
+        "installed": "4.3.1",
+        "matchesLock": true
+      },
+      {
+        "package": "qrcode",
+        "group": "dependencies",
+        "declared": "1.5.4",
+        "locked": "1.5.4",
+        "installed": "1.5.4",
+        "matchesLock": true
+      },
+      {
+        "package": "qs",
+        "group": "dependencies",
+        "declared": "6.14.0",
+        "locked": "6.14.0",
+        "installed": "6.14.0",
+        "matchesLock": true
+      },
+      {
+        "package": "radix-ui",
+        "group": "dependencies",
+        "declared": "1.0.1",
+        "locked": "1.0.1",
+        "installed": "1.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "react",
+        "group": "dependencies",
+        "declared": "18.3.1",
+        "locked": "18.3.1",
+        "installed": "18.3.1",
+        "matchesLock": true
+      },
+      {
+        "package": "react-chartjs-2",
+        "group": "dependencies",
+        "declared": "5.3.0",
+        "locked": "5.3.0",
+        "installed": "5.3.0",
+        "matchesLock": true
+      },
+      {
+        "package": "react-day-picker",
+        "group": "dependencies",
+        "declared": "8.10.1",
+        "locked": "8.10.1",
+        "installed": "8.10.1",
+        "matchesLock": true
+      },
+      {
+        "package": "react-dom",
+        "group": "dependencies",
+        "declared": "18.3.1",
+        "locked": "18.3.1",
+        "installed": "18.3.1",
+        "matchesLock": true
+      },
+      {
+        "package": "react-h5-audio-player",
+        "group": "dependencies",
+        "declared": "3.10.1",
+        "locked": "3.10.1",
+        "installed": "3.10.1",
+        "matchesLock": true
+      },
+      {
+        "package": "react-hotkeys-hook",
+        "group": "dependencies",
+        "declared": "5.1.0",
+        "locked": "5.1.0",
+        "installed": "5.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "react-media-recorder",
+        "group": "dependencies",
+        "declared": "1.7.2",
+        "locked": "1.7.2",
+        "installed": "1.7.2",
+        "matchesLock": true
+      },
+      {
+        "package": "react-pdf",
+        "group": "dependencies",
+        "declared": "9.2.1",
+        "locked": "9.2.1",
+        "installed": "9.2.1",
+        "matchesLock": true
+      },
+      {
+        "package": "react-player",
+        "group": "dependencies",
+        "declared": "3.4.0",
+        "locked": "3.4.0",
+        "installed": "3.4.0",
+        "matchesLock": true
+      },
+      {
+        "package": "react-qr-code",
+        "group": "dependencies",
+        "declared": "2.0.18",
+        "locked": "2.0.18",
+        "installed": "2.0.18",
+        "matchesLock": true
+      },
+      {
+        "package": "react-redux",
+        "group": "dependencies",
+        "declared": "9.2.0",
+        "locked": "9.2.0",
+        "installed": "9.2.0",
+        "matchesLock": true
+      },
+      {
+        "package": "react-resizable-panels",
+        "group": "dependencies",
+        "declared": "3.0.6",
+        "locked": "3.0.6",
+        "installed": "3.0.6",
+        "matchesLock": true
+      },
+      {
+        "package": "react-youtube",
+        "group": "dependencies",
+        "declared": "10.1.0",
+        "locked": "10.1.0",
+        "installed": "10.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "shadcn",
+        "group": "dependencies",
+        "declared": "2.7.0",
+        "locked": "2.7.0",
+        "installed": "2.7.0",
+        "matchesLock": true
+      },
+      {
+        "package": "socket.io-client",
+        "group": "dependencies",
+        "declared": "4.8.1",
+        "locked": "4.8.1",
+        "installed": "4.8.1",
+        "matchesLock": true
+      },
+      {
+        "package": "sonner",
+        "group": "dependencies",
+        "declared": "2.0.7",
+        "locked": "2.0.7",
+        "installed": "2.0.7",
+        "matchesLock": true
+      },
+      {
+        "package": "stopword",
+        "group": "dependencies",
+        "declared": "3.1.4",
+        "locked": "3.1.4",
+        "installed": "3.1.4",
+        "matchesLock": true
+      },
+      {
+        "package": "survey-core",
+        "group": "dependencies",
+        "declared": "1.12.39",
+        "locked": "1.12.39",
+        "installed": "1.12.39",
+        "matchesLock": true
+      },
+      {
+        "package": "survey-react-ui",
+        "group": "dependencies",
+        "declared": "1.12.39",
+        "locked": "1.12.39",
+        "installed": "1.12.39",
+        "matchesLock": true
+      },
+      {
+        "package": "tailwind-merge",
+        "group": "dependencies",
+        "declared": "2.6.0",
+        "locked": "2.6.0",
+        "installed": "2.6.0",
+        "matchesLock": true
+      },
+      {
+        "package": "tailwind-variants",
+        "group": "dependencies",
+        "declared": "0.3.0",
+        "locked": "0.3.0",
+        "installed": "0.3.0",
+        "matchesLock": true
+      },
+      {
+        "package": "uuid",
+        "group": "dependencies",
+        "declared": "11.1.0",
+        "locked": "11.1.0",
+        "installed": "11.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "xlsx",
+        "group": "dependencies",
+        "declared": "0.18.5",
+        "locked": "0.18.5",
+        "installed": "0.18.5",
+        "matchesLock": true
+      },
+      {
+        "package": "youtubei.js",
+        "group": "dependencies",
+        "declared": "16.0.1",
+        "locked": "16.0.1",
+        "installed": "16.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "zod",
+        "group": "dependencies",
+        "declared": "3.24.2",
+        "locked": "3.24.2",
+        "installed": "3.24.2",
+        "matchesLock": true
+      },
+      {
+        "package": "zustand",
+        "group": "dependencies",
+        "declared": "5.0.9",
+        "locked": "5.0.9",
+        "installed": "5.0.9",
+        "matchesLock": true
+      },
+      {
+        "package": "@tailwindcss/typography",
+        "group": "devDependencies",
+        "declared": "0.5.16",
+        "locked": "0.5.16",
+        "installed": "0.5.16",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/chart.js",
+        "group": "devDependencies",
+        "declared": "4.0.1",
+        "locked": "4.0.1",
+        "installed": "4.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/node",
+        "group": "devDependencies",
+        "declared": "20.19.1",
+        "locked": "20.19.1",
+        "installed": "20.19.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/pako",
+        "group": "devDependencies",
+        "declared": "2.0.3",
+        "locked": "2.0.3",
+        "installed": "2.0.3",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/papaparse",
+        "group": "devDependencies",
+        "declared": "5.3.16",
+        "locked": "5.3.16",
+        "installed": "5.3.16",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/qrcode",
+        "group": "devDependencies",
+        "declared": "1.5.5",
+        "locked": "1.5.5",
+        "installed": "1.5.5",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/qs",
+        "group": "devDependencies",
+        "declared": "6.14.0",
+        "locked": "6.14.0",
+        "installed": "6.14.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/react",
+        "group": "devDependencies",
+        "declared": "18.3.1",
+        "locked": "18.3.1",
+        "installed": "18.3.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/react-chartjs-2",
+        "group": "devDependencies",
+        "declared": "2.5.7",
+        "locked": "2.5.7",
+        "installed": "2.5.7",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/react-dom",
+        "group": "devDependencies",
+        "declared": "18.3.7",
+        "locked": "18.3.7",
+        "installed": "18.3.7",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/react-redux",
+        "group": "devDependencies",
+        "declared": "7.1.34",
+        "locked": "7.1.34",
+        "installed": "7.1.34",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/youtube-player",
+        "group": "devDependencies",
+        "declared": "5.5.11",
+        "locked": "5.5.11",
+        "installed": "5.5.11",
+        "matchesLock": true
+      },
+      {
+        "package": "@typescript-eslint/eslint-plugin",
+        "group": "devDependencies",
+        "declared": "7.2.0",
+        "locked": "7.2.0",
+        "installed": "7.2.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@typescript-eslint/parser",
+        "group": "devDependencies",
+        "declared": "7.2.0",
+        "locked": "7.2.0",
+        "installed": "7.2.0",
+        "matchesLock": true
+      },
+      {
+        "package": "autoprefixer",
+        "group": "devDependencies",
+        "declared": "10.4.21",
+        "locked": "10.4.21",
+        "installed": "10.4.21",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint",
+        "group": "devDependencies",
+        "declared": "8.57.1",
+        "locked": "8.57.1",
+        "installed": "8.57.1",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-config-next",
+        "group": "devDependencies",
+        "declared": "14.2.33",
+        "locked": "14.2.33",
+        "installed": "14.2.33",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-config-prettier",
+        "group": "devDependencies",
+        "declared": "9.0.0",
+        "locked": "9.0.0",
+        "installed": "9.0.0",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-check-file",
+        "group": "devDependencies",
+        "declared": "1.3.1",
+        "locked": "1.3.1",
+        "installed": "1.3.1",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-import",
+        "group": "devDependencies",
+        "declared": "2.31.0",
+        "locked": "2.31.0",
+        "installed": "2.31.0",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-jsx-a11y",
+        "group": "devDependencies",
+        "declared": "6.10.2",
+        "locked": "6.10.2",
+        "installed": "6.10.2",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-prettier",
+        "group": "devDependencies",
+        "declared": "5.0.1",
+        "locked": "5.0.1",
+        "installed": "5.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-react",
+        "group": "devDependencies",
+        "declared": "7.37.5",
+        "locked": "7.37.5",
+        "installed": "7.37.5",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-tailwindcss",
+        "group": "devDependencies",
+        "declared": "3.18.0",
+        "locked": "3.18.0",
+        "installed": "3.18.0",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-testing-library",
+        "group": "devDependencies",
+        "declared": "7.1.1",
+        "locked": "7.1.1",
+        "installed": "7.1.1",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-plugin-vitest",
+        "group": "devDependencies",
+        "declared": "0.5.4",
+        "locked": "0.5.4",
+        "installed": "0.5.4",
+        "matchesLock": true
+      },
+      {
+        "package": "husky",
+        "group": "devDependencies",
+        "declared": "9.1.7",
+        "locked": "9.1.7",
+        "installed": "9.1.7",
+        "matchesLock": true
+      },
+      {
+        "package": "lint-staged",
+        "group": "devDependencies",
+        "declared": "15.5.0",
+        "locked": "15.5.0",
+        "installed": "15.5.0",
+        "matchesLock": true
+      },
+      {
+        "package": "openapi-typescript-codegen",
+        "group": "devDependencies",
+        "declared": "0.29.0",
+        "locked": "0.29.0",
+        "installed": "0.29.0",
+        "matchesLock": true
+      },
+      {
+        "package": "postcss",
+        "group": "devDependencies",
+        "declared": "8.4.31",
+        "locked": "8.4.31",
+        "installed": "8.4.31",
+        "matchesLock": true
+      },
+      {
+        "package": "prettier",
+        "group": "devDependencies",
+        "declared": "3.4.2",
+        "locked": "3.4.2",
+        "installed": "3.4.2",
+        "matchesLock": true
+      },
+      {
+        "package": "sass",
+        "group": "devDependencies",
+        "declared": "1.94.2",
+        "locked": "1.94.2",
+        "installed": "1.94.2",
+        "matchesLock": true
+      },
+      {
+        "package": "tailwindcss",
+        "group": "devDependencies",
+        "declared": "3.4.1",
+        "locked": "3.4.1",
+        "installed": "3.4.1",
+        "matchesLock": true
+      },
+      {
+        "package": "tailwindcss-animate",
+        "group": "devDependencies",
+        "declared": "1.0.7",
+        "locked": "1.0.7",
+        "installed": "1.0.7",
+        "matchesLock": true
+      },
+      {
+        "package": "typescript",
+        "group": "devDependencies",
+        "declared": "5.8.3",
+        "locked": "5.8.3",
+        "installed": "5.8.3",
+        "matchesLock": true
+      }
+    ],
+    "commitsTouchingEnvPaths": 13,
+    "note": "History metadata only; credential content/diffs not opened. Direct dependency agreement is not complete transitive or clean-install reproducibility proof."
+  },
+  {
+    "repo": "dozu-api-service",
+    "manifestLicense": "ISC",
+    "lockSha256": "786c3a1d2615131e075e031251f65fde97c566bc6a171351f0617ce88501ecc1",
+    "directDependencies": [
+      {
+        "package": "@aws-sdk/client-lambda",
+        "group": "dependencies",
+        "declared": "3.787.0",
+        "locked": "3.787.0",
+        "installed": "3.787.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@aws-sdk/client-s3",
+        "group": "dependencies",
+        "declared": "3.864.0",
+        "locked": "3.864.0",
+        "installed": "3.864.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@aws-sdk/s3-request-presigner",
+        "group": "dependencies",
+        "declared": "3.864.0",
+        "locked": "3.864.0",
+        "installed": "3.864.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@payos/node",
+        "group": "dependencies",
+        "declared": "1.0.10",
+        "locked": "1.0.10",
+        "installed": "1.0.10",
+        "matchesLock": true
+      },
+      {
+        "package": "aws-lambda",
+        "group": "dependencies",
+        "declared": "1.0.7",
+        "locked": "1.0.7",
+        "installed": "1.0.7",
+        "matchesLock": true
+      },
+      {
+        "package": "axios",
+        "group": "dependencies",
+        "declared": "1.13.2",
+        "locked": "1.13.2",
+        "installed": "1.13.2",
+        "matchesLock": true
+      },
+      {
+        "package": "bullmq",
+        "group": "dependencies",
+        "declared": "5.49.1",
+        "locked": "5.49.1",
+        "installed": "5.49.1",
+        "matchesLock": true
+      },
+      {
+        "package": "cloudinary",
+        "group": "dependencies",
+        "declared": "2.7.0",
+        "locked": "2.7.0",
+        "installed": "2.7.0",
+        "matchesLock": true
+      },
+      {
+        "package": "cloudinary-build-url",
+        "group": "dependencies",
+        "declared": "0.2.4",
+        "locked": "0.2.4",
+        "installed": "0.2.4",
+        "matchesLock": true
+      },
+      {
+        "package": "cookie-parser",
+        "group": "dependencies",
+        "declared": "1.4.7",
+        "locked": "1.4.7",
+        "installed": "1.4.7",
+        "matchesLock": true
+      },
+      {
+        "package": "cors",
+        "group": "dependencies",
+        "declared": "2.8.5",
+        "locked": "2.8.5",
+        "installed": "2.8.5",
+        "matchesLock": true
+      },
+      {
+        "package": "date-fns",
+        "group": "dependencies",
+        "declared": "4.1.0",
+        "locked": "4.1.0",
+        "installed": "4.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "date-fns-tz",
+        "group": "dependencies",
+        "declared": "3.2.0",
+        "locked": "3.2.0",
+        "installed": "3.2.0",
+        "matchesLock": true
+      },
+      {
+        "package": "dotenv",
+        "group": "dependencies",
+        "declared": "16.4.7",
+        "locked": "16.4.7",
+        "installed": "16.4.7",
+        "matchesLock": true
+      },
+      {
+        "package": "drizzle-orm",
+        "group": "dependencies",
+        "declared": "0.41.0",
+        "locked": "0.41.0",
+        "installed": "0.41.0",
+        "matchesLock": true
+      },
+      {
+        "package": "express",
+        "group": "dependencies",
+        "declared": "^4.21.2",
+        "locked": "4.21.2",
+        "installed": "4.21.2",
+        "matchesLock": true
+      },
+      {
+        "package": "express-rate-limit",
+        "group": "dependencies",
+        "declared": "7.5.0",
+        "locked": "7.5.0",
+        "installed": "7.5.0",
+        "matchesLock": true
+      },
+      {
+        "package": "express-validator",
+        "group": "dependencies",
+        "declared": "7.2.1",
+        "locked": "7.2.1",
+        "installed": "7.2.1",
+        "matchesLock": true
+      },
+      {
+        "package": "form-data",
+        "group": "dependencies",
+        "declared": "4.0.5",
+        "locked": "4.0.5",
+        "installed": "4.0.5",
+        "matchesLock": true
+      },
+      {
+        "package": "google-auth-library",
+        "group": "dependencies",
+        "declared": "9.15.1",
+        "locked": "9.15.1",
+        "installed": "9.15.1",
+        "matchesLock": true
+      },
+      {
+        "package": "helmet",
+        "group": "dependencies",
+        "declared": "8.1.0",
+        "locked": "8.1.0",
+        "installed": "8.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "ioredis",
+        "group": "dependencies",
+        "declared": "5.6.1",
+        "locked": "5.6.1",
+        "installed": "5.6.1",
+        "matchesLock": true
+      },
+      {
+        "package": "jsonwebtoken",
+        "group": "dependencies",
+        "declared": "9.0.2",
+        "locked": "9.0.2",
+        "installed": "9.0.2",
+        "matchesLock": true
+      },
+      {
+        "package": "module-alias",
+        "group": "dependencies",
+        "declared": "2.2.3",
+        "locked": "2.2.3",
+        "installed": "2.2.3",
+        "matchesLock": true
+      },
+      {
+        "package": "morgan",
+        "group": "dependencies",
+        "declared": "1.10.0",
+        "locked": "1.10.0",
+        "installed": "1.10.0",
+        "matchesLock": true
+      },
+      {
+        "package": "multer",
+        "group": "dependencies",
+        "declared": "2.0.1",
+        "locked": "2.0.1",
+        "installed": "2.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "nanoid",
+        "group": "dependencies",
+        "declared": "5.1.5",
+        "locked": "5.1.5",
+        "installed": "5.1.5",
+        "matchesLock": true
+      },
+      {
+        "package": "node-cron",
+        "group": "dependencies",
+        "declared": "4.2.1",
+        "locked": "4.2.1",
+        "installed": "4.2.1",
+        "matchesLock": true
+      },
+      {
+        "package": "nodemailer",
+        "group": "dependencies",
+        "declared": "6.10.1",
+        "locked": "6.10.1",
+        "installed": "6.10.1",
+        "matchesLock": true
+      },
+      {
+        "package": "openai",
+        "group": "dependencies",
+        "declared": "4.104.0",
+        "locked": "4.104.0",
+        "installed": "4.104.0",
+        "matchesLock": true
+      },
+      {
+        "package": "opossum",
+        "group": "dependencies",
+        "declared": "8.4.0",
+        "locked": "8.4.0",
+        "installed": "8.4.0",
+        "matchesLock": true
+      },
+      {
+        "package": "pako",
+        "group": "dependencies",
+        "declared": "2.1.0",
+        "locked": "2.1.0",
+        "installed": "2.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "pdf-lib",
+        "group": "dependencies",
+        "declared": "1.17.1",
+        "locked": "1.17.1",
+        "installed": "1.17.1",
+        "matchesLock": true
+      },
+      {
+        "package": "pdf-parse",
+        "group": "dependencies",
+        "declared": "1.1.1",
+        "locked": "1.1.1",
+        "installed": "1.1.1",
+        "matchesLock": true
+      },
+      {
+        "package": "pg",
+        "group": "dependencies",
+        "declared": "8.14.1",
+        "locked": "8.14.1",
+        "installed": "8.14.1",
+        "matchesLock": true
+      },
+      {
+        "package": "puppeteer",
+        "group": "dependencies",
+        "declared": "24.32.0",
+        "locked": "24.32.0",
+        "installed": "24.32.0",
+        "matchesLock": true
+      },
+      {
+        "package": "sanitize-filename",
+        "group": "dependencies",
+        "declared": "1.6.3",
+        "locked": "1.6.3",
+        "installed": "1.6.3",
+        "matchesLock": true
+      },
+      {
+        "package": "socket.io",
+        "group": "dependencies",
+        "declared": "4.8.1",
+        "locked": "4.8.1",
+        "installed": "4.8.1",
+        "matchesLock": true
+      },
+      {
+        "package": "unsplash-js",
+        "group": "dependencies",
+        "declared": "7.0.19",
+        "locked": "7.0.19",
+        "installed": "7.0.19",
+        "matchesLock": true
+      },
+      {
+        "package": "uuid",
+        "group": "dependencies",
+        "declared": "11.1.0",
+        "locked": "11.1.0",
+        "installed": "11.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "winston",
+        "group": "dependencies",
+        "declared": "3.17.0",
+        "locked": "3.17.0",
+        "installed": "3.17.0",
+        "matchesLock": true
+      },
+      {
+        "package": "youtubei.js",
+        "group": "dependencies",
+        "declared": "16.0.1",
+        "locked": "16.0.1",
+        "installed": "16.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "zod",
+        "group": "dependencies",
+        "declared": "3.24.3",
+        "locked": "3.24.3",
+        "installed": "3.24.3",
+        "matchesLock": true
+      },
+      {
+        "package": "@eslint/js",
+        "group": "devDependencies",
+        "declared": "9.17.0",
+        "locked": "9.17.0",
+        "installed": "9.17.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/aws-lambda",
+        "group": "devDependencies",
+        "declared": "8.10.149",
+        "locked": "8.10.149",
+        "installed": "8.10.149",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/cookie-parser",
+        "group": "devDependencies",
+        "declared": "1.4.8",
+        "locked": "1.4.8",
+        "installed": "1.4.8",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/cors",
+        "group": "devDependencies",
+        "declared": "2.8.17",
+        "locked": "2.8.17",
+        "installed": "2.8.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/express",
+        "group": "devDependencies",
+        "declared": "5.0.1",
+        "locked": "5.0.1",
+        "installed": "5.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/jest",
+        "group": "devDependencies",
+        "declared": "30.0.0",
+        "locked": "30.0.0",
+        "installed": "30.0.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/jsonwebtoken",
+        "group": "devDependencies",
+        "declared": "9.0.9",
+        "locked": "9.0.9",
+        "installed": "9.0.9",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/module-alias",
+        "group": "devDependencies",
+        "declared": "2.0.4",
+        "locked": "2.0.4",
+        "installed": "2.0.4",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/morgan",
+        "group": "devDependencies",
+        "declared": "1.9.9",
+        "locked": "1.9.9",
+        "installed": "1.9.9",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/multer",
+        "group": "devDependencies",
+        "declared": "1.4.12",
+        "locked": "1.4.12",
+        "installed": "1.4.12",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/murmurhash3js",
+        "group": "devDependencies",
+        "declared": "3.0.7",
+        "locked": "3.0.7",
+        "installed": "3.0.7",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/node",
+        "group": "devDependencies",
+        "declared": "22.14.0",
+        "locked": "22.14.0",
+        "installed": "22.14.0",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/nodemailer",
+        "group": "devDependencies",
+        "declared": "6.4.17",
+        "locked": "6.4.17",
+        "installed": "6.4.17",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/opossum",
+        "group": "devDependencies",
+        "declared": "8.1.8",
+        "locked": "8.1.8",
+        "installed": "8.1.8",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/pako",
+        "group": "devDependencies",
+        "declared": "2.0.3",
+        "locked": "2.0.3",
+        "installed": "2.0.3",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/pdf-parse",
+        "group": "devDependencies",
+        "declared": "1.1.5",
+        "locked": "1.1.5",
+        "installed": "1.1.5",
+        "matchesLock": true
+      },
+      {
+        "package": "@types/pg",
+        "group": "devDependencies",
+        "declared": "8.11.11",
+        "locked": "8.11.11",
+        "installed": "8.11.11",
+        "matchesLock": true
+      },
+      {
+        "package": "drizzle-kit",
+        "group": "devDependencies",
+        "declared": "0.30.6",
+        "locked": "0.30.6",
+        "installed": "0.30.6",
+        "matchesLock": true
+      },
+      {
+        "package": "esbuild",
+        "group": "devDependencies",
+        "declared": "0.25.2",
+        "locked": "0.25.2",
+        "installed": "0.25.2",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint",
+        "group": "devDependencies",
+        "declared": "9.17.0",
+        "locked": "9.17.0",
+        "installed": "9.17.0",
+        "matchesLock": true
+      },
+      {
+        "package": "eslint-config-prettier",
+        "group": "devDependencies",
+        "declared": "9.1.0",
+        "locked": "9.1.0",
+        "installed": "9.1.0",
+        "matchesLock": true
+      },
+      {
+        "package": "globals",
+        "group": "devDependencies",
+        "declared": "15.14.0",
+        "locked": "15.14.0",
+        "installed": "15.14.0",
+        "matchesLock": true
+      },
+      {
+        "package": "jest",
+        "group": "devDependencies",
+        "declared": "30.1.3",
+        "locked": "30.1.3",
+        "installed": "30.1.3",
+        "matchesLock": true
+      },
+      {
+        "package": "nodemon",
+        "group": "devDependencies",
+        "declared": "3.1.7",
+        "locked": "3.1.7",
+        "installed": "3.1.7",
+        "matchesLock": true
+      },
+      {
+        "package": "openapi-typescript-codegen",
+        "group": "devDependencies",
+        "declared": "0.29.0",
+        "locked": "0.29.0",
+        "installed": "0.29.0",
+        "matchesLock": true
+      },
+      {
+        "package": "prettier",
+        "group": "devDependencies",
+        "declared": "3.4.2",
+        "locked": "3.4.2",
+        "installed": "3.4.2",
+        "matchesLock": true
+      },
+      {
+        "package": "rimraf",
+        "group": "devDependencies",
+        "declared": "6.0.1",
+        "locked": "6.0.1",
+        "installed": "6.0.1",
+        "matchesLock": true
+      },
+      {
+        "package": "ts-jest",
+        "group": "devDependencies",
+        "declared": "29.4.3",
+        "locked": "29.4.3",
+        "installed": "29.4.3",
+        "matchesLock": true
+      },
+      {
+        "package": "ts-node",
+        "group": "devDependencies",
+        "declared": "10.9.1",
+        "locked": "10.9.1",
+        "installed": "10.9.1",
+        "matchesLock": true
+      },
+      {
+        "package": "tsconfig-paths",
+        "group": "devDependencies",
+        "declared": "4.2.0",
+        "locked": "4.2.0",
+        "installed": "4.2.0",
+        "matchesLock": true
+      },
+      {
+        "package": "tsx",
+        "group": "devDependencies",
+        "declared": "^4.19.3",
+        "locked": "4.19.3",
+        "installed": "4.19.3",
+        "matchesLock": true
+      },
+      {
+        "package": "typescript",
+        "group": "devDependencies",
+        "declared": "5.8.3",
+        "locked": "5.8.3",
+        "installed": "5.8.3",
+        "matchesLock": true
+      },
+      {
+        "package": "typescript-eslint",
+        "group": "devDependencies",
+        "declared": "8.35.0",
+        "locked": "8.35.0",
+        "installed": "8.35.0",
+        "matchesLock": true
+      }
+    ],
+    "commitsTouchingEnvPaths": 15,
+    "note": "History metadata only; credential content/diffs not opened. Direct dependency agreement is not complete transitive or clean-install reproducibility proof."
+  }
+]

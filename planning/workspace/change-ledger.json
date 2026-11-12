@@ -1,0 +1,1799 @@
+{
+  "changedImportedPaths": [
+    {
+      "path": "apps/web/.gitignore",
+      "operation": "modified",
+      "importedSha256": "b68f4956bc96efd8d977aa31b976bbcec9a4b9c749fb9c0a5cc004f14f94880e",
+      "currentSha256": "f426757b23d645b4f0abefd30a4f9259e782ab67a96fb6d4c1b0e88fc3e4163b",
+      "reason": "Remove tracked-dotenv negation so root credential exclusions remain effective."
+    },
+    {
+      "path": "apps/web/Dockerfile",
+      "operation": "modified",
+      "importedSha256": "80821ab654c649d34dbb9e67e903b9460cbce820ccac8baed3c0bf2f548cce16",
+      "currentSha256": "9c315063f0b1c149f0a14379f5f1641cd861aa10599b540efe08bc856db8b899",
+      "reason": "Executable root-context pnpm/standalone website image recipe; original checkout retained for rollback."
+    },
+    {
+      "path": "apps/web/next.config.js",
+      "operation": "modified",
+      "importedSha256": "59fbd1f25b2458f8a154177f63b588e5a8cab619d67a2c00ef920fed6d89cb71",
+      "currentSha256": "3be544f6ae0325722227d66b2b0a0f4e8510ea91ef7c382d3c9251e5b27cdc1b",
+      "reason": "Next14 experimental tracing root set to workspace root; standalone/UI behavior retained."
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "operation": "removed",
+      "importedSha256": "0d0257f77aaf842a76de8a2d4e274a7bfefd95eea8c4d523aebc3130e5e7ec34",
+      "currentSha256": null,
+      "reason": "Archived byte-for-byte in planning/workspace/npm-locks; replaced active lock with root pnpm-lock.yaml."
+    },
+    {
+      "path": "apps/web/package.json",
+      "operation": "modified",
+      "importedSha256": "4c0aec83786dd05e2ebab125d36d37b6002a52de21bb6a988fe1b87136395072",
+      "currentSha256": "bb52a8bb311b453188810a02ee04138cf6613e9e10be4b72b7f041c5793ac91c",
+      "reason": "Private workspace, portable scripts, guarded repeat builds, typecheck/package scripts and exact missing direct import declarations."
+    },
+    {
+      "path": "apps/web/src/app/[locale]/topics/[topicId]/(topic)/media/core/youtube/YoutubePlayerAdapter.ts",
+      "operation": "modified",
+      "importedSha256": "eb21088c763e0fe151710a117dbde1f0063bb6348bf40e6a90f58a27ccd8a613",
+      "currentSha256": "d683466471a9578096190a8c5822ad403435a84e6fdc9306b41003fcb29f1a2b",
+      "reason": "Measured existing TS2322 blocker: validate raw ready-event synchronous number instead of typed Promise facade; independent source/type/runtime review and targeted lint passed."
+    },
+    {
+      "path": "apps/api/.gitignore",
+      "operation": "modified",
+      "importedSha256": "6a46f60c05afce21cea141801027e5e729935e1f126ff82f47d23bd349a36d58",
+      "currentSha256": "728193f0792fc040c52123f283d7d1988b2216323c0f5c2f295bf202e4043341",
+      "reason": "Remove tracked-dotenv negation so root credential exclusions remain effective."
+    },
+    {
+      "path": "apps/api/Dockerfile",
+      "operation": "modified",
+      "importedSha256": "ac213e180cd658bdf1c2dd5d6e0aceab8e7fad1833b9dbcf690abad6aa1db519",
+      "currentSha256": "e5ab3916ce99a17dff4ba7e0908cbf55beb57c12ca2ae399dc3a725d5e7f2801",
+      "reason": "Root-context frozen pnpm website API recipe; remove build-time dotenv copy, supply runtime environment."
+    },
+    {
+      "path": "apps/api/package-lock.json",
+      "operation": "removed",
+      "importedSha256": "6f406e71d55e55402d3a4e3e7d6ab1b0a0868b99bc2c7c85ae31e4ffeaf83b25",
+      "currentSha256": null,
+      "reason": "Archived byte-for-byte in planning/workspace/npm-locks; replaced active lock with root pnpm-lock.yaml."
+    },
+    {
+      "path": "apps/api/package.json",
+      "operation": "modified",
+      "importedSha256": "344163a32ca0ff6e401a164eb4a027cffa7e77b8c5b87e4ed74235eb83960a6c",
+      "currentSha256": "d2f6e05495db7f8d3a6d98c3ba76741b54e2c583513cd2007aecade1cc85f6af",
+      "reason": "Private workspace, portable NODE_ENV scripts, cross-env runtime dependency and consumed @types/qs dev dependency."
+    }
+  ],
+  "newRootAndToolingFiles": [
+    {
+      "path": ".dockerignore",
+      "sha256": "5e40eeb2f9983b20f99a7bc55860ad42762a02845e7bb866a95205de1821f9aa"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6d516f67eddba4f4c1033e61e836b7b6731062fd6bea874e7007ca9416238638"
+    },
+    {
+      "path": "package.json",
+      "sha256": "f7bfff12af48c3456a87356dfb93d9bd24dca26cce641bab1b48ee1c6749987e"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "ec63e07b689b19e97bfcdb41f5ddbc05703714fa0e07e292cacb3e6c8cef03ab"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "91f3dc0c8e9d1644bd7de4664f81d7ab913bf91c47ed162aaa1a27079139eed7"
+    },
+    {
+      "path": "tooling/clean-next-standalone.cjs",
+      "sha256": "c3cd335e2b906926f0c1c6bb3baf65bfa0952e61d32bd3bd869995341fda5dee"
+    },
+    {
+      "path": "tooling/normalize-standalone-links.cjs",
+      "sha256": "2d24bffc3207ba9f0b9539098eaa7fe6b7b5ca3fccf798736a3fcbbcf34279ed"
+    },
+    {
+      "path": "tooling/package-web.cjs",
+      "sha256": "0a86cdb77a7597acc14a2365c5b49a9749c26f7592583aef9906841bd470925f"
+    },
+    {
+      "path": "tooling/standalone-paths.cjs",
+      "sha256": "c09a7a4de2b2886ef8764135c0af5d403b4542928c719e3294f6f5bf088aceb2"
+    },
+    {
+      "path": "tooling/verify-workspace.cjs",
+      "sha256": "4dcfabd1769a4d4795b72f5c9abacec82f320072c4f9263f2e9d012926e6e190"
+    },
+    {
+      "path": "turbo.json",
+      "sha256": "81c7c3ad1c3392293c02049efa48204a00b678b3a58eb0fa9082599dccb8773c"
+    }
+  ],
+  "directDependencies": [
+    {
+      "app": "web",
+      "name": "@aws-sdk/client-s3",
+      "declared": "3.787.0",
+      "originalLockedVersion": "3.787.0",
+      "installedVersion": "3.787.0"
+    },
+    {
+      "app": "web",
+      "name": "@aws-sdk/s3-request-presigner",
+      "declared": "3.787.0",
+      "originalLockedVersion": "3.787.0",
+      "installedVersion": "3.787.0"
+    },
+    {
+      "app": "web",
+      "name": "@dnd-kit/core",
+      "declared": "6.3.1",
+      "originalLockedVersion": "6.3.1",
+      "installedVersion": "6.3.1"
+    },
+    {
+      "app": "web",
+      "name": "@dnd-kit/sortable",
+      "declared": "10.0.0",
+      "originalLockedVersion": "10.0.0",
+      "installedVersion": "10.0.0"
+    },
+    {
+      "app": "web",
+      "name": "@dnd-kit/utilities",
+      "declared": "3.2.2",
+      "originalLockedVersion": "3.2.2",
+      "installedVersion": "3.2.2"
+    },
+    {
+      "app": "web",
+      "name": "@floating-ui/dom",
+      "declared": "1.7.4",
+      "originalLockedVersion": "1.7.4",
+      "installedVersion": "1.7.4"
+    },
+    {
+      "app": "web",
+      "name": "@floating-ui/react",
+      "declared": "0.27.16",
+      "originalLockedVersion": "0.27.16",
+      "installedVersion": "0.27.16"
+    },
+    {
+      "app": "web",
+      "name": "@fontsource/inter",
+      "declared": "5.2.5",
+      "originalLockedVersion": "5.2.5",
+      "installedVersion": "5.2.5"
+    },
+    {
+      "app": "web",
+      "name": "@fullcalendar/common",
+      "declared": "5.11.5",
+      "originalLockedVersion": "5.11.5",
+      "installedVersion": "5.11.5"
+    },
+    {
+      "app": "web",
+      "name": "@fullcalendar/core",
+      "declared": "6.1.17",
+      "originalLockedVersion": "6.1.17",
+      "installedVersion": "6.1.17"
+    },
+    {
+      "app": "web",
+      "name": "@fullcalendar/daygrid",
+      "declared": "6.1.17",
+      "originalLockedVersion": "6.1.17",
+      "installedVersion": "6.1.17"
+    },
+    {
+      "app": "web",
+      "name": "@fullcalendar/interaction",
+      "declared": "6.1.17",
+      "originalLockedVersion": "6.1.17",
+      "installedVersion": "6.1.17"
+    },
+    {
+      "app": "web",
+      "name": "@fullcalendar/list",
+      "declared": "6.1.17",
+      "originalLockedVersion": "6.1.17",
+      "installedVersion": "6.1.17"
+    },
+    {
+      "app": "web",
+      "name": "@fullcalendar/react",
+      "declared": "6.1.17",
+      "originalLockedVersion": "6.1.17",
+      "installedVersion": "6.1.17"
+    },
+    {
+      "app": "web",
+      "name": "@fullcalendar/timegrid",
+      "declared": "6.1.17",
+      "originalLockedVersion": "6.1.17",
+      "installedVersion": "6.1.17"
+    },
+    {
+      "app": "web",
+      "name": "@gsap/react",
+      "declared": "2.1.2",
+      "originalLockedVersion": "2.1.2",
+      "installedVersion": "2.1.2"
+    },
+    {
+      "app": "web",
+      "name": "@microsoft/fetch-event-source",
+      "declared": "2.0.1",
+      "originalLockedVersion": "2.0.1",
+      "installedVersion": "2.0.1"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-accordion",
+      "declared": "1.2.4",
+      "originalLockedVersion": "1.2.4",
+      "installedVersion": "1.2.4"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-alert-dialog",
+      "declared": "1.1.4",
+      "originalLockedVersion": "1.1.4",
+      "installedVersion": "1.1.4"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-aspect-ratio",
+      "declared": "1.1.1",
+      "originalLockedVersion": "1.1.1",
+      "installedVersion": "1.1.1"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-avatar",
+      "declared": "1.1.2",
+      "originalLockedVersion": "1.1.2",
+      "installedVersion": "1.1.2"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-checkbox",
+      "declared": "1.1.3",
+      "originalLockedVersion": "1.1.3",
+      "installedVersion": "1.1.3"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-collapsible",
+      "declared": "1.1.12",
+      "originalLockedVersion": "1.1.12",
+      "installedVersion": "1.1.12"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-dialog",
+      "declared": "1.1.14",
+      "originalLockedVersion": "1.1.14",
+      "installedVersion": "1.1.14"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-dropdown-menu",
+      "declared": "2.1.15",
+      "originalLockedVersion": "2.1.15",
+      "installedVersion": "2.1.15"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-hover-card",
+      "declared": "1.1.14",
+      "originalLockedVersion": "1.1.14",
+      "installedVersion": "1.1.14"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-label",
+      "declared": "2.1.1",
+      "originalLockedVersion": "2.1.1",
+      "installedVersion": "2.1.1"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-popover",
+      "declared": "1.1.15",
+      "originalLockedVersion": "1.1.15",
+      "installedVersion": "1.1.15"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-progress",
+      "declared": "1.1.3",
+      "originalLockedVersion": "1.1.3",
+      "installedVersion": "1.1.3"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-radio-group",
+      "declared": "1.3.6",
+      "originalLockedVersion": "1.3.6",
+      "installedVersion": "1.3.6"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-scroll-area",
+      "declared": "1.2.9",
+      "originalLockedVersion": "1.2.9",
+      "installedVersion": "1.2.9"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-select",
+      "declared": "2.1.4",
+      "originalLockedVersion": "2.1.4",
+      "installedVersion": "2.1.4"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-separator",
+      "declared": "1.1.7",
+      "originalLockedVersion": "1.1.7",
+      "installedVersion": "1.1.7"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-slider",
+      "declared": "1.3.4",
+      "originalLockedVersion": "1.3.4",
+      "installedVersion": "1.3.4"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-slot",
+      "declared": "1.2.3",
+      "originalLockedVersion": "1.2.3",
+      "installedVersion": "1.2.3"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-tabs",
+      "declared": "1.1.4",
+      "originalLockedVersion": "1.1.4",
+      "installedVersion": "1.1.4"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-toast",
+      "declared": "1.2.7",
+      "originalLockedVersion": "1.2.7",
+      "installedVersion": "1.2.7"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-toggle",
+      "declared": "1.1.10",
+      "originalLockedVersion": "1.1.10",
+      "installedVersion": "1.1.10"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-tooltip",
+      "declared": "1.2.7",
+      "originalLockedVersion": "1.2.7",
+      "installedVersion": "1.2.7"
+    },
+    {
+      "app": "web",
+      "name": "@react-pdf/renderer",
+      "declared": "4.3.0",
+      "originalLockedVersion": "4.3.0",
+      "installedVersion": "4.3.0"
+    },
+    {
+      "app": "web",
+      "name": "@reduxjs/toolkit",
+      "declared": "2.5.0",
+      "originalLockedVersion": "2.5.0",
+      "installedVersion": "2.5.0"
+    },
+    {
+      "app": "web",
+      "name": "@shadcn/ui",
+      "declared": "0.0.4",
+      "originalLockedVersion": "0.0.4",
+      "installedVersion": "0.0.4"
+    },
+    {
+      "app": "web",
+      "name": "@tanstack/react-table",
+      "declared": "8.20.6",
+      "originalLockedVersion": "8.20.6",
+      "installedVersion": "8.20.6"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-bubble-menu",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-code-block-lowlight",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-heading",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-highlight",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-image",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-list",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-placeholder",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-table",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-text-align",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-underline",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extensions",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/pm",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/react",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/starter-kit",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/suggestion",
+      "declared": "3.11.0",
+      "originalLockedVersion": "3.11.0",
+      "installedVersion": "3.11.0"
+    },
+    {
+      "app": "web",
+      "name": "@xyflow/react",
+      "declared": "12.6.4",
+      "originalLockedVersion": "12.6.4",
+      "installedVersion": "12.6.4"
+    },
+    {
+      "app": "web",
+      "name": "axios",
+      "declared": "1.10.0",
+      "originalLockedVersion": "1.10.0",
+      "installedVersion": "1.10.0"
+    },
+    {
+      "app": "web",
+      "name": "chart.js",
+      "declared": "4.4.9",
+      "originalLockedVersion": "4.4.9",
+      "installedVersion": "4.4.9"
+    },
+    {
+      "app": "web",
+      "name": "class-variance-authority",
+      "declared": "0.7.1",
+      "originalLockedVersion": "0.7.1",
+      "installedVersion": "0.7.1"
+    },
+    {
+      "app": "web",
+      "name": "clsx",
+      "declared": "2.1.1",
+      "originalLockedVersion": "2.1.1",
+      "installedVersion": "2.1.1"
+    },
+    {
+      "app": "web",
+      "name": "cmdk",
+      "declared": "1.1.1",
+      "originalLockedVersion": "1.1.1",
+      "installedVersion": "1.1.1"
+    },
+    {
+      "app": "web",
+      "name": "date-fns",
+      "declared": "3.6.0",
+      "originalLockedVersion": "3.6.0",
+      "installedVersion": "3.6.0"
+    },
+    {
+      "app": "web",
+      "name": "dotenv",
+      "declared": "16.5.0",
+      "originalLockedVersion": "16.5.0",
+      "installedVersion": "16.5.0"
+    },
+    {
+      "app": "web",
+      "name": "elkjs",
+      "declared": "0.11.0",
+      "originalLockedVersion": "0.11.0",
+      "installedVersion": "0.11.0"
+    },
+    {
+      "app": "web",
+      "name": "embla-carousel-autoplay",
+      "declared": "8.6.0",
+      "originalLockedVersion": "8.6.0",
+      "installedVersion": "8.6.0"
+    },
+    {
+      "app": "web",
+      "name": "embla-carousel-react",
+      "declared": "8.6.0",
+      "originalLockedVersion": "8.6.0",
+      "installedVersion": "8.6.0"
+    },
+    {
+      "app": "web",
+      "name": "file-saver",
+      "declared": "2.0.5",
+      "originalLockedVersion": "2.0.5",
+      "installedVersion": "2.0.5"
+    },
+    {
+      "app": "web",
+      "name": "framer-motion",
+      "declared": "12.16.0",
+      "originalLockedVersion": "12.16.0",
+      "installedVersion": "12.16.0"
+    },
+    {
+      "app": "web",
+      "name": "gsap",
+      "declared": "3.14.2",
+      "originalLockedVersion": "3.14.2",
+      "installedVersion": "3.14.2"
+    },
+    {
+      "app": "web",
+      "name": "html-to-image",
+      "declared": "1.11.11",
+      "originalLockedVersion": "1.11.11",
+      "installedVersion": "1.11.11"
+    },
+    {
+      "app": "web",
+      "name": "html2canvas",
+      "declared": "1.4.1",
+      "originalLockedVersion": "1.4.1",
+      "installedVersion": "1.4.1"
+    },
+    {
+      "app": "web",
+      "name": "i",
+      "declared": "0.3.7",
+      "originalLockedVersion": "0.3.7",
+      "installedVersion": "0.3.7"
+    },
+    {
+      "app": "web",
+      "name": "jspdf",
+      "declared": "3.0.1",
+      "originalLockedVersion": "3.0.1",
+      "installedVersion": "3.0.1"
+    },
+    {
+      "app": "web",
+      "name": "jwt-decode",
+      "declared": "4.0.0",
+      "originalLockedVersion": "4.0.0",
+      "installedVersion": "4.0.0"
+    },
+    {
+      "app": "web",
+      "name": "lottie-react",
+      "declared": "2.4.1",
+      "originalLockedVersion": "2.4.1",
+      "installedVersion": "2.4.1"
+    },
+    {
+      "app": "web",
+      "name": "lowlight",
+      "declared": "3.3.0",
+      "originalLockedVersion": "3.3.0",
+      "installedVersion": "3.3.0"
+    },
+    {
+      "app": "web",
+      "name": "lucide-react",
+      "declared": "0.469.0",
+      "originalLockedVersion": "0.469.0",
+      "installedVersion": "0.469.0"
+    },
+    {
+      "app": "web",
+      "name": "lz-string",
+      "declared": "1.5.0",
+      "originalLockedVersion": "1.5.0",
+      "installedVersion": "1.5.0"
+    },
+    {
+      "app": "web",
+      "name": "mammoth",
+      "declared": "1.9.0",
+      "originalLockedVersion": "1.9.0",
+      "installedVersion": "1.9.0"
+    },
+    {
+      "app": "web",
+      "name": "nanoid",
+      "declared": "5.1.5",
+      "originalLockedVersion": "5.1.5",
+      "installedVersion": "5.1.5"
+    },
+    {
+      "app": "web",
+      "name": "next",
+      "declared": "14.2.35",
+      "originalLockedVersion": "14.2.35",
+      "installedVersion": "14.2.35"
+    },
+    {
+      "app": "web",
+      "name": "next-intl",
+      "declared": "4.0.2",
+      "originalLockedVersion": "4.0.2",
+      "installedVersion": "4.0.2"
+    },
+    {
+      "app": "web",
+      "name": "next-themes",
+      "declared": "0.4.6",
+      "originalLockedVersion": "0.4.6",
+      "installedVersion": "0.4.6"
+    },
+    {
+      "app": "web",
+      "name": "ogl",
+      "declared": "1.0.11",
+      "originalLockedVersion": "1.0.11",
+      "installedVersion": "1.0.11"
+    },
+    {
+      "app": "web",
+      "name": "pako",
+      "declared": "2.1.0",
+      "originalLockedVersion": "2.1.0",
+      "installedVersion": "2.1.0"
+    },
+    {
+      "app": "web",
+      "name": "papaparse",
+      "declared": "5.5.3",
+      "originalLockedVersion": "5.5.3",
+      "installedVersion": "5.5.3"
+    },
+    {
+      "app": "web",
+      "name": "pdfjs-dist",
+      "declared": "4.8.69",
+      "originalLockedVersion": "4.8.69",
+      "installedVersion": "4.8.69"
+    },
+    {
+      "app": "web",
+      "name": "polished",
+      "declared": "4.3.1",
+      "originalLockedVersion": "4.3.1",
+      "installedVersion": "4.3.1"
+    },
+    {
+      "app": "web",
+      "name": "qrcode",
+      "declared": "1.5.4",
+      "originalLockedVersion": "1.5.4",
+      "installedVersion": "1.5.4"
+    },
+    {
+      "app": "web",
+      "name": "qs",
+      "declared": "6.14.0",
+      "originalLockedVersion": "6.14.0",
+      "installedVersion": "6.14.0"
+    },
+    {
+      "app": "web",
+      "name": "radix-ui",
+      "declared": "1.0.1",
+      "originalLockedVersion": "1.0.1",
+      "installedVersion": "1.0.1"
+    },
+    {
+      "app": "web",
+      "name": "react",
+      "declared": "18.3.1",
+      "originalLockedVersion": "18.3.1",
+      "installedVersion": "18.3.1"
+    },
+    {
+      "app": "web",
+      "name": "react-chartjs-2",
+      "declared": "5.3.0",
+      "originalLockedVersion": "5.3.0",
+      "installedVersion": "5.3.0"
+    },
+    {
+      "app": "web",
+      "name": "react-day-picker",
+      "declared": "8.10.1",
+      "originalLockedVersion": "8.10.1",
+      "installedVersion": "8.10.1"
+    },
+    {
+      "app": "web",
+      "name": "react-dom",
+      "declared": "18.3.1",
+      "originalLockedVersion": "18.3.1",
+      "installedVersion": "18.3.1"
+    },
+    {
+      "app": "web",
+      "name": "react-h5-audio-player",
+      "declared": "3.10.1",
+      "originalLockedVersion": "3.10.1",
+      "installedVersion": "3.10.1"
+    },
+    {
+      "app": "web",
+      "name": "react-hotkeys-hook",
+      "declared": "5.1.0",
+      "originalLockedVersion": "5.1.0",
+      "installedVersion": "5.1.0"
+    },
+    {
+      "app": "web",
+      "name": "react-media-recorder",
+      "declared": "1.7.2",
+      "originalLockedVersion": "1.7.2",
+      "installedVersion": "1.7.2"
+    },
+    {
+      "app": "web",
+      "name": "react-pdf",
+      "declared": "9.2.1",
+      "originalLockedVersion": "9.2.1",
+      "installedVersion": "9.2.1"
+    },
+    {
+      "app": "web",
+      "name": "react-player",
+      "declared": "3.4.0",
+      "originalLockedVersion": "3.4.0",
+      "installedVersion": "3.4.0"
+    },
+    {
+      "app": "web",
+      "name": "react-qr-code",
+      "declared": "2.0.18",
+      "originalLockedVersion": "2.0.18",
+      "installedVersion": "2.0.18"
+    },
+    {
+      "app": "web",
+      "name": "react-redux",
+      "declared": "9.2.0",
+      "originalLockedVersion": "9.2.0",
+      "installedVersion": "9.2.0"
+    },
+    {
+      "app": "web",
+      "name": "react-resizable-panels",
+      "declared": "3.0.6",
+      "originalLockedVersion": "3.0.6",
+      "installedVersion": "3.0.6"
+    },
+    {
+      "app": "web",
+      "name": "react-youtube",
+      "declared": "10.1.0",
+      "originalLockedVersion": "10.1.0",
+      "installedVersion": "10.1.0"
+    },
+    {
+      "app": "web",
+      "name": "shadcn",
+      "declared": "2.7.0",
+      "originalLockedVersion": "2.7.0",
+      "installedVersion": "2.7.0"
+    },
+    {
+      "app": "web",
+      "name": "socket.io-client",
+      "declared": "4.8.1",
+      "originalLockedVersion": "4.8.1",
+      "installedVersion": "4.8.1"
+    },
+    {
+      "app": "web",
+      "name": "sonner",
+      "declared": "2.0.7",
+      "originalLockedVersion": "2.0.7",
+      "installedVersion": "2.0.7"
+    },
+    {
+      "app": "web",
+      "name": "stopword",
+      "declared": "3.1.4",
+      "originalLockedVersion": "3.1.4",
+      "installedVersion": "3.1.4"
+    },
+    {
+      "app": "web",
+      "name": "survey-core",
+      "declared": "1.12.39",
+      "originalLockedVersion": "1.12.39",
+      "installedVersion": "1.12.39"
+    },
+    {
+      "app": "web",
+      "name": "survey-react-ui",
+      "declared": "1.12.39",
+      "originalLockedVersion": "1.12.39",
+      "installedVersion": "1.12.39"
+    },
+    {
+      "app": "web",
+      "name": "tailwind-merge",
+      "declared": "2.6.0",
+      "originalLockedVersion": "2.6.0",
+      "installedVersion": "2.6.0"
+    },
+    {
+      "app": "web",
+      "name": "tailwind-variants",
+      "declared": "0.3.0",
+      "originalLockedVersion": "0.3.0",
+      "installedVersion": "0.3.0"
+    },
+    {
+      "app": "web",
+      "name": "uuid",
+      "declared": "11.1.0",
+      "originalLockedVersion": "11.1.0",
+      "installedVersion": "11.1.0"
+    },
+    {
+      "app": "web",
+      "name": "xlsx",
+      "declared": "0.18.5",
+      "originalLockedVersion": "0.18.5",
+      "installedVersion": "0.18.5"
+    },
+    {
+      "app": "web",
+      "name": "youtubei.js",
+      "declared": "16.0.1",
+      "originalLockedVersion": "16.0.1",
+      "installedVersion": "16.0.1"
+    },
+    {
+      "app": "web",
+      "name": "zod",
+      "declared": "3.24.2",
+      "originalLockedVersion": "3.24.2",
+      "installedVersion": "3.24.2"
+    },
+    {
+      "app": "web",
+      "name": "zustand",
+      "declared": "5.0.9",
+      "originalLockedVersion": "5.0.9",
+      "installedVersion": "5.0.9"
+    },
+    {
+      "app": "web",
+      "name": "@tailwindcss/typography",
+      "declared": "0.5.16",
+      "originalLockedVersion": "0.5.16",
+      "installedVersion": "0.5.16"
+    },
+    {
+      "app": "web",
+      "name": "@types/chart.js",
+      "declared": "4.0.1",
+      "originalLockedVersion": "4.0.1",
+      "installedVersion": "4.0.1"
+    },
+    {
+      "app": "web",
+      "name": "@types/node",
+      "declared": "20.19.1",
+      "originalLockedVersion": "20.19.1",
+      "installedVersion": "20.19.1"
+    },
+    {
+      "app": "web",
+      "name": "@types/pako",
+      "declared": "2.0.3",
+      "originalLockedVersion": "2.0.3",
+      "installedVersion": "2.0.3"
+    },
+    {
+      "app": "web",
+      "name": "@types/papaparse",
+      "declared": "5.3.16",
+      "originalLockedVersion": "5.3.16",
+      "installedVersion": "5.3.16"
+    },
+    {
+      "app": "web",
+      "name": "@types/qrcode",
+      "declared": "1.5.5",
+      "originalLockedVersion": "1.5.5",
+      "installedVersion": "1.5.5"
+    },
+    {
+      "app": "web",
+      "name": "@types/qs",
+      "declared": "6.14.0",
+      "originalLockedVersion": "6.14.0",
+      "installedVersion": "6.14.0"
+    },
+    {
+      "app": "web",
+      "name": "@types/react",
+      "declared": "18.3.1",
+      "originalLockedVersion": "18.3.1",
+      "installedVersion": "18.3.1"
+    },
+    {
+      "app": "web",
+      "name": "@types/react-chartjs-2",
+      "declared": "2.5.7",
+      "originalLockedVersion": "2.5.7",
+      "installedVersion": "2.5.7"
+    },
+    {
+      "app": "web",
+      "name": "@types/react-dom",
+      "declared": "18.3.7",
+      "originalLockedVersion": "18.3.7",
+      "installedVersion": "18.3.7"
+    },
+    {
+      "app": "web",
+      "name": "@types/react-redux",
+      "declared": "7.1.34",
+      "originalLockedVersion": "7.1.34",
+      "installedVersion": "7.1.34"
+    },
+    {
+      "app": "web",
+      "name": "@types/youtube-player",
+      "declared": "5.5.11",
+      "originalLockedVersion": "5.5.11",
+      "installedVersion": "5.5.11"
+    },
+    {
+      "app": "web",
+      "name": "@typescript-eslint/eslint-plugin",
+      "declared": "7.2.0",
+      "originalLockedVersion": "7.2.0",
+      "installedVersion": "7.2.0"
+    },
+    {
+      "app": "web",
+      "name": "@typescript-eslint/parser",
+      "declared": "7.2.0",
+      "originalLockedVersion": "7.2.0",
+      "installedVersion": "7.2.0"
+    },
+    {
+      "app": "web",
+      "name": "autoprefixer",
+      "declared": "10.4.21",
+      "originalLockedVersion": "10.4.21",
+      "installedVersion": "10.4.21"
+    },
+    {
+      "app": "web",
+      "name": "eslint",
+      "declared": "8.57.1",
+      "originalLockedVersion": "8.57.1",
+      "installedVersion": "8.57.1"
+    },
+    {
+      "app": "web",
+      "name": "eslint-config-next",
+      "declared": "14.2.33",
+      "originalLockedVersion": "14.2.33",
+      "installedVersion": "14.2.33"
+    },
+    {
+      "app": "web",
+      "name": "eslint-config-prettier",
+      "declared": "9.0.0",
+      "originalLockedVersion": "9.0.0",
+      "installedVersion": "9.0.0"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-check-file",
+      "declared": "1.3.1",
+      "originalLockedVersion": "1.3.1",
+      "installedVersion": "1.3.1"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-import",
+      "declared": "2.31.0",
+      "originalLockedVersion": "2.31.0",
+      "installedVersion": "2.31.0"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-jsx-a11y",
+      "declared": "6.10.2",
+      "originalLockedVersion": "6.10.2",
+      "installedVersion": "6.10.2"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-prettier",
+      "declared": "5.0.1",
+      "originalLockedVersion": "5.0.1",
+      "installedVersion": "5.0.1"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-react",
+      "declared": "7.37.5",
+      "originalLockedVersion": "7.37.5",
+      "installedVersion": "7.37.5"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-tailwindcss",
+      "declared": "3.18.0",
+      "originalLockedVersion": "3.18.0",
+      "installedVersion": "3.18.0"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-testing-library",
+      "declared": "7.1.1",
+      "originalLockedVersion": "7.1.1",
+      "installedVersion": "7.1.1"
+    },
+    {
+      "app": "web",
+      "name": "eslint-plugin-vitest",
+      "declared": "0.5.4",
+      "originalLockedVersion": "0.5.4",
+      "installedVersion": "0.5.4"
+    },
+    {
+      "app": "web",
+      "name": "husky",
+      "declared": "9.1.7",
+      "originalLockedVersion": "9.1.7",
+      "installedVersion": "9.1.7"
+    },
+    {
+      "app": "web",
+      "name": "lint-staged",
+      "declared": "15.5.0",
+      "originalLockedVersion": "15.5.0",
+      "installedVersion": "15.5.0"
+    },
+    {
+      "app": "web",
+      "name": "openapi-typescript-codegen",
+      "declared": "0.29.0",
+      "originalLockedVersion": "0.29.0",
+      "installedVersion": "0.29.0"
+    },
+    {
+      "app": "web",
+      "name": "postcss",
+      "declared": "8.4.31",
+      "originalLockedVersion": "8.4.31",
+      "installedVersion": "8.4.31"
+    },
+    {
+      "app": "web",
+      "name": "prettier",
+      "declared": "3.4.2",
+      "originalLockedVersion": "3.4.2",
+      "installedVersion": "3.4.2"
+    },
+    {
+      "app": "web",
+      "name": "sass",
+      "declared": "1.94.2",
+      "originalLockedVersion": "1.94.2",
+      "installedVersion": "1.94.2"
+    },
+    {
+      "app": "web",
+      "name": "tailwindcss",
+      "declared": "3.4.1",
+      "originalLockedVersion": "3.4.1",
+      "installedVersion": "3.4.1"
+    },
+    {
+      "app": "web",
+      "name": "tailwindcss-animate",
+      "declared": "1.0.7",
+      "originalLockedVersion": "1.0.7",
+      "installedVersion": "1.0.7"
+    },
+    {
+      "app": "web",
+      "name": "typescript",
+      "declared": "5.8.3",
+      "originalLockedVersion": "5.8.3",
+      "installedVersion": "5.8.3"
+    },
+    {
+      "app": "web",
+      "name": "media-chrome",
+      "newDirectDeclaration": "4.16.1",
+      "kind": "dependencies",
+      "reason": "Existing direct source import, exact original transitive lock version"
+    },
+    {
+      "app": "web",
+      "name": "highlight.js",
+      "newDirectDeclaration": "11.11.1",
+      "kind": "dependencies",
+      "reason": "Existing direct source import, exact original transitive lock version"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/extension-paragraph",
+      "newDirectDeclaration": "3.11.0",
+      "kind": "dependencies",
+      "reason": "Existing direct source import, exact original transitive lock version"
+    },
+    {
+      "app": "web",
+      "name": "@tiptap/core",
+      "newDirectDeclaration": "3.11.0",
+      "kind": "dependencies",
+      "reason": "Existing direct source import, exact original transitive lock version"
+    },
+    {
+      "app": "web",
+      "name": "@radix-ui/react-switch",
+      "newDirectDeclaration": "1.2.5",
+      "kind": "dependencies",
+      "reason": "Existing direct source import, exact original transitive lock version"
+    },
+    {
+      "app": "web",
+      "name": "cross-env",
+      "newDirectDeclaration": "7.0.3",
+      "kind": "devDependencies",
+      "reason": "Portable NODE_ENV scripts"
+    },
+    {
+      "app": "api",
+      "name": "@aws-sdk/client-lambda",
+      "declared": "3.787.0",
+      "originalLockedVersion": "3.787.0",
+      "installedVersion": "3.787.0"
+    },
+    {
+      "app": "api",
+      "name": "@aws-sdk/client-s3",
+      "declared": "3.864.0",
+      "originalLockedVersion": "3.864.0",
+      "installedVersion": "3.864.0"
+    },
+    {
+      "app": "api",
+      "name": "@aws-sdk/s3-request-presigner",
+      "declared": "3.864.0",
+      "originalLockedVersion": "3.864.0",
+      "installedVersion": "3.864.0"
+    },
+    {
+      "app": "api",
+      "name": "@payos/node",
+      "declared": "1.0.10",
+      "originalLockedVersion": "1.0.10",
+      "installedVersion": "1.0.10"
+    },
+    {
+      "app": "api",
+      "name": "aws-lambda",
+      "declared": "1.0.7",
+      "originalLockedVersion": "1.0.7",
+      "installedVersion": "1.0.7"
+    },
+    {
+      "app": "api",
+      "name": "axios",
+      "declared": "1.13.2",
+      "originalLockedVersion": "1.13.2",
+      "installedVersion": "1.13.2"
+    },
+    {
+      "app": "api",
+      "name": "bullmq",
+      "declared": "5.49.1",
+      "originalLockedVersion": "5.49.1",
+      "installedVersion": "5.49.1"
+    },
+    {
+      "app": "api",
+      "name": "cloudinary",
+      "declared": "2.7.0",
+      "originalLockedVersion": "2.7.0",
+      "installedVersion": "2.7.0"
+    },
+    {
+      "app": "api",
+      "name": "cloudinary-build-url",
+      "declared": "0.2.4",
+      "originalLockedVersion": "0.2.4",
+      "installedVersion": "0.2.4"
+    },
+    {
+      "app": "api",
+      "name": "cookie-parser",
+      "declared": "1.4.7",
+      "originalLockedVersion": "1.4.7",
+      "installedVersion": "1.4.7"
+    },
+    {
+      "app": "api",
+      "name": "cors",
+      "declared": "2.8.5",
+      "originalLockedVersion": "2.8.5",
+      "installedVersion": "2.8.5"
+    },
+    {
+      "app": "api",
+      "name": "date-fns",
+      "declared": "4.1.0",
+      "originalLockedVersion": "4.1.0",
+      "installedVersion": "4.1.0"
+    },
+    {
+      "app": "api",
+      "name": "date-fns-tz",
+      "declared": "3.2.0",
+      "originalLockedVersion": "3.2.0",
+      "installedVersion": "3.2.0"
+    },
+    {
+      "app": "api",
+      "name": "dotenv",
+      "declared": "16.4.7",
+      "originalLockedVersion": "16.4.7",
+      "installedVersion": "16.4.7"
+    },
+    {
+      "app": "api",
+      "name": "drizzle-orm",
+      "declared": "0.41.0",
+      "originalLockedVersion": "0.41.0",
+      "installedVersion": "0.41.0"
+    },
+    {
+      "app": "api",
+      "name": "express",
+      "declared": "^4.21.2",
+      "originalLockedVersion": "4.21.2",
+      "installedVersion": "4.21.2"
+    },
+    {
+      "app": "api",
+      "name": "express-rate-limit",
+      "declared": "7.5.0",
+      "originalLockedVersion": "7.5.0",
+      "installedVersion": "7.5.0"
+    },
+    {
+      "app": "api",
+      "name": "express-validator",
+      "declared": "7.2.1",
+      "originalLockedVersion": "7.2.1",
+      "installedVersion": "7.2.1"
+    },
+    {
+      "app": "api",
+      "name": "form-data",
+      "declared": "4.0.5",
+      "originalLockedVersion": "4.0.5",
+      "installedVersion": "4.0.5"
+    },
+    {
+      "app": "api",
+      "name": "google-auth-library",
+      "declared": "9.15.1",
+      "originalLockedVersion": "9.15.1",
+      "installedVersion": "9.15.1"
+    },
+    {
+      "app": "api",
+      "name": "helmet",
+      "declared": "8.1.0",
+      "originalLockedVersion": "8.1.0",
+      "installedVersion": "8.1.0"
+    },
+    {
+      "app": "api",
+      "name": "ioredis",
+      "declared": "5.6.1",
+      "originalLockedVersion": "5.6.1",
+      "installedVersion": "5.6.1"
+    },
+    {
+      "app": "api",
+      "name": "jsonwebtoken",
+      "declared": "9.0.2",
+      "originalLockedVersion": "9.0.2",
+      "installedVersion": "9.0.2"
+    },
+    {
+      "app": "api",
+      "name": "module-alias",
+      "declared": "2.2.3",
+      "originalLockedVersion": "2.2.3",
+      "installedVersion": "2.2.3"
+    },
+    {
+      "app": "api",
+      "name": "morgan",
+      "declared": "1.10.0",
+      "originalLockedVersion": "1.10.0",
+      "installedVersion": "1.10.0"
+    },
+    {
+      "app": "api",
+      "name": "multer",
+      "declared": "2.0.1",
+      "originalLockedVersion": "2.0.1",
+      "installedVersion": "2.0.1"
+    },
+    {
+      "app": "api",
+      "name": "nanoid",
+      "declared": "5.1.5",
+      "originalLockedVersion": "5.1.5",
+      "installedVersion": "5.1.5"
+    },
+    {
+      "app": "api",
+      "name": "node-cron",
+      "declared": "4.2.1",
+      "originalLockedVersion": "4.2.1",
+      "installedVersion": "4.2.1"
+    },
+    {
+      "app": "api",
+      "name": "nodemailer",
+      "declared": "6.10.1",
+      "originalLockedVersion": "6.10.1",
+      "installedVersion": "6.10.1"
+    },
+    {
+      "app": "api",
+      "name": "openai",
+      "declared": "4.104.0",
+      "originalLockedVersion": "4.104.0",
+      "installedVersion": "4.104.0"
+    },
+    {
+      "app": "api",
+      "name": "opossum",
+      "declared": "8.4.0",
+      "originalLockedVersion": "8.4.0",
+      "installedVersion": "8.4.0"
+    },
+    {
+      "app": "api",
+      "name": "pako",
+      "declared": "2.1.0",
+      "originalLockedVersion": "2.1.0",
+      "installedVersion": "2.1.0"
+    },
+    {
+      "app": "api",
+      "name": "pdf-lib",
+      "declared": "1.17.1",
+      "originalLockedVersion": "1.17.1",
+      "installedVersion": "1.17.1"
+    },
+    {
+      "app": "api",
+      "name": "pdf-parse",
+      "declared": "1.1.1",
+      "originalLockedVersion": "1.1.1",
+      "installedVersion": "1.1.1"
+    },
+    {
+      "app": "api",
+      "name": "pg",
+      "declared": "8.14.1",
+      "originalLockedVersion": "8.14.1",
+      "installedVersion": "8.14.1"
+    },
+    {
+      "app": "api",
+      "name": "puppeteer",
+      "declared": "24.32.0",
+      "originalLockedVersion": "24.32.0",
+      "installedVersion": "24.32.0"
+    },
+    {
+      "app": "api",
+      "name": "sanitize-filename",
+      "declared": "1.6.3",
+      "originalLockedVersion": "1.6.3",
+      "installedVersion": "1.6.3"
+    },
+    {
+      "app": "api",
+      "name": "socket.io",
+      "declared": "4.8.1",
+      "originalLockedVersion": "4.8.1",
+      "installedVersion": "4.8.1"
+    },
+    {
+      "app": "api",
+      "name": "unsplash-js",
+      "declared": "7.0.19",
+      "originalLockedVersion": "7.0.19",
+      "installedVersion": "7.0.19"
+    },
+    {
+      "app": "api",
+      "name": "uuid",
+      "declared": "11.1.0",
+      "originalLockedVersion": "11.1.0",
+      "installedVersion": "11.1.0"
+    },
+    {
+      "app": "api",
+      "name": "winston",
+      "declared": "3.17.0",
+      "originalLockedVersion": "3.17.0",
+      "installedVersion": "3.17.0"
+    },
+    {
+      "app": "api",
+      "name": "youtubei.js",
+      "declared": "16.0.1",
+      "originalLockedVersion": "16.0.1",
+      "installedVersion": "16.0.1"
+    },
+    {
+      "app": "api",
+      "name": "zod",
+      "declared": "3.24.3",
+      "originalLockedVersion": "3.24.3",
+      "installedVersion": "3.24.3"
+    },
+    {
+      "app": "api",
+      "name": "@eslint/js",
+      "declared": "9.17.0",
+      "originalLockedVersion": "9.17.0",
+      "installedVersion": "9.17.0"
+    },
+    {
+      "app": "api",
+      "name": "@types/aws-lambda",
+      "declared": "8.10.149",
+      "originalLockedVersion": "8.10.149",
+      "installedVersion": "8.10.149"
+    },
+    {
+      "app": "api",
+      "name": "@types/cookie-parser",
+      "declared": "1.4.8",
+      "originalLockedVersion": "1.4.8",
+      "installedVersion": "1.4.8"
+    },
+    {
+      "app": "api",
+      "name": "@types/cors",
+      "declared": "2.8.17",
+      "originalLockedVersion": "2.8.17",
+      "installedVersion": "2.8.17"
+    },
+    {
+      "app": "api",
+      "name": "@types/express",
+      "declared": "5.0.1",
+      "originalLockedVersion": "5.0.1",
+      "installedVersion": "5.0.1"
+    },
+    {
+      "app": "api",
+      "name": "@types/jest",
+      "declared": "30.0.0",
+      "originalLockedVersion": "30.0.0",
+      "installedVersion": "30.0.0"
+    },
+    {
+      "app": "api",
+      "name": "@types/jsonwebtoken",
+      "declared": "9.0.9",
+      "originalLockedVersion": "9.0.9",
+      "installedVersion": "9.0.9"
+    },
+    {
+      "app": "api",
+      "name": "@types/module-alias",
+      "declared": "2.0.4",
+      "originalLockedVersion": "2.0.4",
+      "installedVersion": "2.0.4"
+    },
+    {
+      "app": "api",
+      "name": "@types/morgan",
+      "declared": "1.9.9",
+      "originalLockedVersion": "1.9.9",
+      "installedVersion": "1.9.9"
+    },
+    {
+      "app": "api",
+      "name": "@types/multer",
+      "declared": "1.4.12",
+      "originalLockedVersion": "1.4.12",
+      "installedVersion": "1.4.12"
+    },
+    {
+      "app": "api",
+      "name": "@types/murmurhash3js",
+      "declared": "3.0.7",
+      "originalLockedVersion": "3.0.7",
+      "installedVersion": "3.0.7"
+    },
+    {
+      "app": "api",
+      "name": "@types/node",
+      "declared": "22.14.0",
+      "originalLockedVersion": "22.14.0",
+      "installedVersion": "22.14.0"
+    },
+    {
+      "app": "api",
+      "name": "@types/nodemailer",
+      "declared": "6.4.17",
+      "originalLockedVersion": "6.4.17",
+      "installedVersion": "6.4.17"
+    },
+    {
+      "app": "api",
+      "name": "@types/opossum",
+      "declared": "8.1.8",
+      "originalLockedVersion": "8.1.8",
+      "installedVersion": "8.1.8"
+    },
+    {
+      "app": "api",
+      "name": "@types/pako",
+      "declared": "2.0.3",
+      "originalLockedVersion": "2.0.3",
+      "installedVersion": "2.0.3"
+    },
+    {
+      "app": "api",
+      "name": "@types/pdf-parse",
+      "declared": "1.1.5",
+      "originalLockedVersion": "1.1.5",
+      "installedVersion": "1.1.5"
+    },
+    {
+      "app": "api",
+      "name": "@types/pg",
+      "declared": "8.11.11",
+      "originalLockedVersion": "8.11.11",
+      "installedVersion": "8.11.11"
+    },
+    {
+      "app": "api",
+      "name": "drizzle-kit",
+      "declared": "0.30.6",
+      "originalLockedVersion": "0.30.6",
+      "installedVersion": "0.30.6"
+    },
+    {
+      "app": "api",
+      "name": "esbuild",
+      "declared": "0.25.2",
+      "originalLockedVersion": "0.25.2",
+      "installedVersion": "0.25.2"
+    },
+    {
+      "app": "api",
+      "name": "eslint",
+      "declared": "9.17.0",
+      "originalLockedVersion": "9.17.0",
+      "installedVersion": "9.17.0"
+    },
+    {
+      "app": "api",
+      "name": "eslint-config-prettier",
+      "declared": "9.1.0",
+      "originalLockedVersion": "9.1.0",
+      "installedVersion": "9.1.0"
+    },
+    {
+      "app": "api",
+      "name": "globals",
+      "declared": "15.14.0",
+      "originalLockedVersion": "15.14.0",
+      "installedVersion": "15.14.0"
+    },
+    {
+      "app": "api",
+      "name": "jest",
+      "declared": "30.1.3",
+      "originalLockedVersion": "30.1.3",
+      "installedVersion": "30.1.3"
+    },
+    {
+      "app": "api",
+      "name": "nodemon",
+      "declared": "3.1.7",
+      "originalLockedVersion": "3.1.7",
+      "installedVersion": "3.1.7"
+    },
+    {
+      "app": "api",
+      "name": "openapi-typescript-codegen",
+      "declared": "0.29.0",
+      "originalLockedVersion": "0.29.0",
+      "installedVersion": "0.29.0"
+    },
+    {
+      "app": "api",
+      "name": "prettier",
+      "declared": "3.4.2",
+      "originalLockedVersion": "3.4.2",
+      "installedVersion": "3.4.2"
+    },
+    {
+      "app": "api",
+      "name": "rimraf",
+      "declared": "6.0.1",
+      "originalLockedVersion": "6.0.1",
+      "installedVersion": "6.0.1"
+    },
+    {
+      "app": "api",
+      "name": "ts-jest",
+      "declared": "29.4.3",
+      "originalLockedVersion": "29.4.3",
+      "installedVersion": "29.4.3"
+    },
+    {
+      "app": "api",
+      "name": "ts-node",
+      "declared": "10.9.1",
+      "originalLockedVersion": "10.9.1",
+      "installedVersion": "10.9.1"
+    },
+    {
+      "app": "api",
+      "name": "tsconfig-paths",
+      "declared": "4.2.0",
+      "originalLockedVersion": "4.2.0",
+      "installedVersion": "4.2.0"
+    },
+    {
+      "app": "api",
+      "name": "tsx",
+      "declared": "^4.19.3",
+      "originalLockedVersion": "4.19.3",
+      "installedVersion": "4.19.3"
+    },
+    {
+      "app": "api",
+      "name": "typescript",
+      "declared": "5.8.3",
+      "originalLockedVersion": "5.8.3",
+      "installedVersion": "5.8.3"
+    },
+    {
+      "app": "api",
+      "name": "typescript-eslint",
+      "declared": "8.35.0",
+      "originalLockedVersion": "8.35.0",
+      "installedVersion": "8.35.0"
+    },
+    {
+      "app": "api",
+      "name": "@types/qs",
+      "newDirectDeclaration": "6.14.0",
+      "kind": "devDependencies",
+      "reason": "Existing direct source import, exact original transitive lock version"
+    },
+    {
+      "app": "api",
+      "name": "cross-env",
+      "newDirectDeclaration": "7.0.3",
+      "kind": "dependencies",
+      "reason": "Portable NODE_ENV scripts"
+    }
+  ],
+  "originalDeclaredVersionsUnchanged": true,
+  "originalNextDependencyFilesUnchangedAfterTwoGuardedBuilds": 6387,
+  "pythonRuntimeReproducibilityProven": false,
+  "pythonBoundary": "Original unpinned requirements/Docker inputs retained independently; #7/#8 own Python/toolchain/wheel/model pinning and portable runtime proof."
+}

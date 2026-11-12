@@ -1,0 +1,266 @@
+[
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/1",
+    "label": "ticket",
+    "id": "ROADMAP",
+    "number": 1
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/2",
+    "label": "ticket",
+    "id": "DECISION-SCOPE",
+    "number": 2
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/3",
+    "label": "task",
+    "id": "BASELINE",
+    "number": 3
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/4",
+    "label": "ticket",
+    "id": "DECISION-STACK",
+    "number": 4
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/5",
+    "label": "task",
+    "id": "IMPORT",
+    "number": 5
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/6",
+    "label": "task",
+    "id": "WORKSPACE",
+    "number": 6
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/7",
+    "label": "task",
+    "id": "TOOLCHAINS",
+    "number": 7
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/8",
+    "label": "task",
+    "id": "PYTHON",
+    "number": 8
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/9",
+    "label": "task",
+    "id": "DEV-INFRA",
+    "number": 9
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/10",
+    "label": "task",
+    "id": "CI-DEPLOY",
+    "number": 10
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/11",
+    "label": "task",
+    "id": "API-CLIENT",
+    "number": 11
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/12",
+    "label": "task",
+    "id": "PLATFORM",
+    "number": 12
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/13",
+    "label": "task",
+    "id": "UI-I18N",
+    "number": 13
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/14",
+    "label": "task",
+    "id": "AUTH",
+    "number": 14
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/15",
+    "label": "task",
+    "id": "DESKTOP-SHELL",
+    "number": 15
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/16",
+    "label": "task",
+    "id": "FEATURE-SLICE",
+    "number": 16
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/17",
+    "label": "task",
+    "id": "MVP-FEATURES",
+    "number": 17
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/18",
+    "label": "task",
+    "id": "FILES",
+    "number": 18
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/19",
+    "label": "task",
+    "id": "REALTIME",
+    "number": 19
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/20",
+    "label": "task",
+    "id": "NOTIFICATIONS",
+    "number": 20
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/21",
+    "label": "task",
+    "id": "MEDIA",
+    "number": 21
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/22",
+    "label": "task",
+    "id": "QA",
+    "number": 22
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/23",
+    "label": "task",
+    "id": "PACKAGING",
+    "number": 23
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/24",
+    "label": "task",
+    "id": "SIGNING",
+    "number": 24
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/25",
+    "label": "task",
+    "id": "UPDATES",
+    "number": 25
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/26",
+    "label": "task",
+    "id": "BETA",
+    "number": 26
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/27",
+    "label": "ticket",
+    "id": "INTEGRATIONS",
+    "number": 27
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/28",
+    "label": "task",
+    "id": "SUPERVISOR",
+    "number": 28
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/29",
+    "label": "task",
+    "id": "LOCAL-DB",
+    "number": 29
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/30",
+    "label": "task",
+    "id": "LOCAL-QUEUE",
+    "number": 30
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/31",
+    "label": "task",
+    "id": "PROVIDER-SECRETS",
+    "number": 31
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/32",
+    "label": "task",
+    "id": "LOCAL-ASSETS",
+    "number": 32
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/33",
+    "label": "task",
+    "id": "FIRST-BOOT",
+    "number": 33
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/34",
+    "label": "task",
+    "id": "DATA-PATHS",
+    "number": 34
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/35",
+    "label": "task",
+    "id": "BACKUP",
+    "number": 35
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/36",
+    "label": "task",
+    "id": "UNINSTALL",
+    "number": 36
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/37",
+    "label": "task",
+    "id": "NETWORK-GATE",
+    "number": 37
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/38",
+    "label": "task",
+    "id": "SUPPLY-CHAIN",
+    "number": 38
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/39",
+    "label": "task",
+    "id": "LOCAL-WEB",
+    "number": 39
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/40",
+    "label": "task",
+    "id": "LOCAL-BOOTSTRAP",
+    "number": 40
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/41",
+    "label": "task",
+    "id": "PAYMENTS",
+    "number": 41
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/42",
+    "label": "task",
+    "id": "EMAIL",
+    "number": 42
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/43",
+    "label": "task",
+    "id": "CLASSROOM",
+    "number": 43
+  },
+  {
+    "url": "https://github.com/Do-Zu/dozu/issues/44",
+    "label": "task",
+    "id": "AI-PROVIDERS",
+    "number": 44
+  }
+]

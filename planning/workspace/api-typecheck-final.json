@@ -1,0 +1,14 @@
+{
+  "name": "api-typecheck-final",
+  "command": [
+    "pnpm",
+    "--filter",
+    "api-services",
+    "typecheck"
+  ],
+  "exitCode": 0,
+  "seconds": 4.0,
+  "capturedAtUtc": "2026-11-12T14:50:46.876397+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "api-typecheck-final.log"
+}

@@ -1,0 +1,217 @@
+INFO:     127.0.0.1:52510 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52511 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52512 - "POST /single/text/embedding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52513 - "POST /segments/embedding HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:52514 - "POST /embedding/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52515 - "POST /youtube/segments/embedding HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "POST /youtube/segments/similarity HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52517 - "POST /single/text/embedding HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:52518 - "POST /embedding/compare HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:52520 - "POST /pdf/page/embedding HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52522 - "POST /pdf/page/embedding HTTP/1.1" 200 OK
+{
+  "runtime": "3.13.7",
+  "dependencies": {
+    "fastapi": "0.117.1",
+    "uvicorn": "0.37.0",
+    "sentence-transformers": "5.1.1",
+    "torch": "2.9.1",
+    "transformers": "4.57.1",
+    "youtube-transcript-api": "1.2.3",
+    "PyPDF2": "3.0.1",
+    "requests": "2.32.5"
+  },
+  "health": {
+    "status": "ok",
+    "model": "C:\\Users\\ADIMN\\.cache\\huggingface\\hub\\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\\snapshots\\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+    "device": "cpu",
+    "device_requested": "auto",
+    "requires_token": false
+  },
+  "dimension": 384,
+  "norm": 0.9999999405752437,
+  "identicalTextSimilarity": 0.9999998811504909,
+  "batchType": "dict",
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "status",
+        "model",
+        "device",
+        "device_requested",
+        "requires_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/single/text/embedding",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "embedding"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/segments/embedding",
+      "status": 500,
+      "expected": 200,
+      "keys": [
+        "nonJsonResponse"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/embedding/compare",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "similarity",
+        "queryEmbedding",
+        "patternEmbedding"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/youtube/segments/embedding",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "count",
+        "embeddings"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/youtube/segments/similarity",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "sentence_count",
+        "query_results"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/single/text/embedding",
+      "status": 422,
+      "expected": 422,
+      "keys": [
+        "detail"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/embedding/compare",
+      "status": 422,
+      "expected": 422,
+      "keys": [
+        "detail"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/pdf/page/embedding",
+      "status": 400,
+      "expected": 400,
+      "keys": [
+        "detail"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/pdf/page/embedding",
+      "status": 200,
+      "expected": 200,
+      "keys": [
+        "embeddings",
+        "pageCount"
+      ]
+    }
+  ],
+  "note": "Real cached CPU model; actual loopback Uvicorn HTTP server and startup. No mocked embeddings or provider success. YouTube network transcript retrieval not exercised. Text PDF and blank PDF exercise positive and negative extraction paths."
+}
+INFO:     Started server process [22520]
+INFO:     Waiting for application startup.
+INFO:root:Loading model: C:\Users\ADIMN\.cache\huggingface\hub\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\snapshots\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: C:\Users\ADIMN\.cache\huggingface\hub\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\snapshots\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d
+INFO:root:Loaded model: C:\Users\ADIMN\.cache\huggingface\hub\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\snapshots\86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:52500 (Press CTRL+C to quit)
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\fastapi\applications.py", line 1082, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\fastapi\routing.py", line 334, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "D:\product\dozu\dozu-embedding-service\.venv\Lib\site-packages\fastapi\routing.py", line 183, in serialize_response
+    raise ResponseValidationError(
+        errors=_normalize_errors(errors), body=response_content
+    )
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'dict_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary', 'input': [{'text': 'Learning with flashcards.', 'start': 0, 'embedding': [-0.012519645504653454, 0.011333571746945381, -0.028282739222049713, 0.03176432475447655, 0.0823565199971199, 0.026015501469373703, 0.0032347221858799458, 0.011220374144613743, -0.006534878630191088, -0.0210171677172184, -0.026359923183918, 0.01053408719599247, 0.026240386068820953, 0.03973323851823807, -0.03077615052461624, -0.043986231088638306, -0.010963165201246738, 0.03864796832203865, 0.022207068279385567, -0.04292825609445572, -0.05826897174119949, -0.07068011909723282, 0.03184773772954941, -0.00178723712451756, -0.00492365937680006, 0.07060329616069794, -0.030363665893673897, -0.04740188270807266, 0.03839931637048721, -0.10127762705087662, 0.11286325752735138, 0.022708725184202194, 0.06226867809891701, 0.04149867594242096, -0.043480079621076584, 0.01374836452305317, -0.03555876389145851, 0.05767188221216202, 0.0037853785324841738, -0.04909822344779968, 0.04374678060412407, -0.05905912071466446, 0.015917273238301277, 0.023225141689181328, 0.04743792116641998, -0.03559150546789169, 0.009895917028188705, 0.009811174124479294, -0.0007202287088148296, 0.030626580119132996, -0.06948530673980713, -0.08849717676639557, 0.018091324716806412, -0.027060728520154953, 0.006437165662646294, 0.0611075758934021, 0.010750031098723412, -0.0005876357317902148, -0.03737452253699303, 0.03347174823284149, -0.007301845587790012, -0.036236781626939774, -0.0719214528799057, 0.06792331486940384, -0.04066353663802147, 0.024068662896752357, -0.026453891769051552, 0.11965423077344894, 0.013922832906246185, 0.021380333229899406, -0.04324495047330856, 0.018926190212368965, -0.10072153806686401, 0.06508364528417587, 0.01971941627562046, 0.02182105742394924, -0.0834091454744339, 0.001629707869142294, -0.013403368182480335, 0.04415568336844444, -0.019827362149953842, -0.004926241002976894, -0.04779338091611862, 0.021037813276052475, -0.03468364104628563, 0.04487549513578415, 0.03688521683216095, -0.05342219024896622, -0.03606501594185829, -0.022032320499420166, 0.058313410729169846, -0.01279703713953495, 0.021048784255981445, -0.00110234331805259, -0.015169767662882805, -0.039387281984090805, -0.034567076712846756, -0.042654287070035934, 0.08245670050382614, 0.13744579255580902, -0.02696080505847931, 0.003499773098155856, 0.015289299190044403, -0.02510657161474228, 0.04450032114982605, -0.05157127603888512, -0.0101469736546278, -0.020970400422811508, -0.043802935630083084, 0.01805203966796398, 0.04881357029080391, -0.016452506184577942, -0.0549926795065403, 0.001249733380973339, 0.04436308518052101, 0.057258911430835724, -0.06746532768011093, 0.006963388063013554, 0.06300988048315048, 0.071755550801754, 0.014401254244148731, 0.03647715970873833, -0.015912430360913277, -0.04109257459640503, 0.021536938846111298, -0.10834880918264389, 0.0698712021112442, 0.060758545994758606, 0.02850247733294964, 0.02143326960504055, 0.026950795203447342, -0.03354784846305847, 0.02758358232676983, 0.06763016432523727, 0.08252806216478348, 0.030552849173545837, 0.033566612750291824, 0.004115504212677479, 0.0043432507663965225, 0.08333812654018402, -0.0448002927005291, 0.16762302815914154, -0.02658940851688385, 0.04728703945875168, -0.01193264126777649, 0.04144280403852463, 0.021901065483689308, -0.04032979905605316, 0.06857763975858688, 0.0012646676041185856, 0.014082498848438263, -0.0846489667892456, 0.03555447608232498, 0.04132165387272835, 0.01773320883512497, 0.01290384866297245, 0.17736445367336273, 0.03240600600838661, -0.06333867460489273, -0.03539525717496872, -0.02057834342122078, 0.023171275854110718, 0.030281098559498787, 0.024152100086212158, -0.01395374909043312, -0.07937537133693695, 0.05987460911273956, -0.02603890746831894, 0.017533261328935623, 0.027295386418700218, -0.03374149277806282, -0.01694328896701336, -0.019913503900170326, 0.08249050378799438, 0.10316423326730728, -0.00024284618848469108, -0.025899557396769524, 0.029728129506111145, -0.013900011777877808, -0.0596468523144722, -0.08246015012264252, 0.023190224543213844, 2.3350041374214925e-05, -0.03355991840362549, -0.04533469304442406, 0.017299804836511612, 0.02504749968647957, -0.07392843067646027, -0.032354895025491714, 0.06835103780031204, 0.025329940021038055, -0.03941803798079491, -0.021576207131147385, 0.007011215202510357, -0.02133675292134285, -0.04141850024461746, 0.03067491203546524, -0.046821229159832, -0.06645991653203964, 0.009829736314713955, -0.12095348536968231, -0.0908319428563118, -0.011857538484036922, -0.06264647841453552, 0.036823201924562454, 0.04748767614364624, 0.03566015884280205, 0.009107767604291439, 0.036119766533374786, 0.017738815397024155, -0.037808049470186234, 0.028325079008936882, -0.042227018624544144, 0.014345495961606503, -0.002582269487902522, -0.01555072795599699, -0.10738278925418854, -0.035227373242378235, 0.024780260398983955, 0.026587093248963356, -0.018102558329701424, -0.023062175139784813, 0.030504422262310982, -0.10562600940465927, -0.07730789482593536, -0.040717486292123795, -0.0032923752442002296, 0.009359094314277172, -0.00942981243133545, 0.035876836627721786, 0.012679959647357464, -0.0061782728880643845, 0.03738049045205116, -0.04722684249281883, -0.18092986941337585, 0.027651501819491386, -0.05807540938258171, 0.013085353188216686, -0.055231738835573196, -0.039318107068538666, 0.07257401198148727, 0.04496272653341293, -0.01791800931096077, -0.07396405935287476, -0.021333662793040276, 0.004758213181048632, -0.01217819657176733, 0.016478678211569786, 0.03799819201231003, 0.013856988400220871, 0.030039140954613686, -0.15639325976371765, -0.02558455988764763, 0.049037232995033264, 0.09639564901590347, -0.06800638139247894, -0.009983380325138569, -0.007667034398764372, -0.060468316078186035, -0.04272447153925896, 0.005596447736024857, -0.05330641567707062, 0.027562446892261505, 0.07373915612697601, 0.03182807192206383, -0.060734186321496964, -0.09201527386903763, -0.03503642976284027, -0.06645168364048004, -0.00886812899261713, -0.011763528920710087, -0.008145327679812908, 0.0663260966539383, 0.0685749277472496, -0.05754595994949341, -0.04135530814528465, 0.03545437753200531, -0.04997942969202995, -0.0777602419257164, 0.006140133365988731, 0.007761519867926836, -0.0023223008029162884, 0.02505074255168438, -0.010497244074940681, -0.09586828202009201, -0.06843973696231842, -0.020263176411390305, -0.06303267925977707, 0.05969534441828728, -0.003377242712303996, 0.006603050511330366, 0.008210323750972748, -0.07954765111207962, 0.011774075217545033, 0.030498258769512177, 0.02524149790406227, 0.05104773864150047, -0.041572701185941696, 0.010924408212304115, 0.08081702142953873, -0.052352678030729294, 0.02136852592229843, -0.09659873694181442, -0.0273312795907259, -0.04678049683570862, -0.013720808550715446, 0.09038636833429337, 0.045772261917591095, -0.01916690543293953, 0.04278283938765526, -0.01060493104159832, -0.07647290080785751, 0.04110726714134216, 0.037148963660001755, 0.022045953199267387, 0.032404690980911255, 0.043550822883844376, -0.029759226366877556, 0.005911916960030794, -0.07274016737937927, 0.01733856089413166, -0.04624265432357788, 0.030662115663290024, 0.017308449372649193, -0.05759749189019203, 0.06754858791828156, -0.08792246133089066, 0.08230718225240707, -0.02188919298350811, 0.003487910609692335, -0.06545057147741318, -0.03457559645175934, -0.05152939260005951, -0.08869297057390213, 0.08475566655397415, 0.025262992829084396, 0.08952498435974121, 0.009465030394494534, 0.02121797762811184, -0.01973268762230873, 0.04291858524084091, 0.06720657646656036, 0.008292022161185741, 0.05796530097723007, -0.05687001720070839, -0.05994313210248947, 0.1292075365781784, 0.09495295584201813, 0.07174655795097351, -0.009527415037155151, 0.04402383416891098, 0.050133027136325836, 0.10348844528198242, 0.009217962622642517, 0.13433082401752472, -0.005090993829071522, 0.02366795763373375, 0.009933843277394772, -0.011885812506079674, 0.02320128120481968, -0.051828861236572266, 0.012582292780280113, 0.030262470245361328, -0.0697251558303833, -0.10877705365419388, -0.0005315917078405619, -0.07823538035154343, -0.10155531764030457, -0.0022282982245087624, 0.04161078855395317, -0.03568940609693527, -0.06960085779428482, -0.03163465857505798, 0.004952059593051672, 0.07084853202104568, -0.003208781825378537, 0.025314856320619583, -0.05614154040813446, 0.10200423747301102, 0.05109691619873047, 0.008448761887848377, 0.021638842299580574, -0.04315253719687462, 0.08493698388338089]}]}
+
+INFO:root:Fetching PDF from URL: http://127.0.0.1:52519/blank.pdf
+127.0.0.1 - - [09/Nov/2026 18:27:19] "GET /blank.pdf HTTP/1.1" 200 -
+INFO:root:Successfully fetched PDF (428 bytes)
+INFO:root:Starting PDF text extraction
+WARNING:root:Page 1 has no extractable text
+INFO:root:Successfully extracted 0 pages from PDF
+INFO:root:Fetching PDF from URL: http://127.0.0.1:52519/text.pdf
+127.0.0.1 - - [09/Nov/2026 18:27:19] "GET /text.pdf HTTP/1.1" 200 -
+INFO:root:Successfully fetched PDF (641 bytes)
+INFO:root:Starting PDF text extraction
+INFO:root:Successfully extracted 1 pages from PDF
+INFO:root:Generating embeddings for 1 texts
+INFO:root:Successfully generated 1 embeddings
+INFO:root:PDF processing complete: 1 pages with embeddings
+Traceback (most recent call last):
+  File "D:\product\dozu\planning\audit\embedding-contract.py", line 102, in <module>
+    assert all(r['status'] == r['expected'] for r in rows), rows
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [{'method': 'GET', 'path': '/health', 'status': 200, 'expected': 200, 'keys': ['status', 'model', 'device', 'device_requested', 'requires_token']}, {'method': 'POST', 'path': '/single/text/embedding', 'status': 200, 'expected': 200, 'keys': ['embedding']}, {'method': 'POST', 'path': '/segments/embedding', 'status': 500, 'expected': 200, 'keys': ['nonJsonResponse']}, {'method': 'POST', 'path': '/embedding/compare', 'status': 200, 'expected': 200, 'keys': ['similarity', 'queryEmbedding', 'patternEmbedding']}, {'method': 'POST', 'path': '/youtube/segments/embedding', 'status': 200, 'expected': 200, 'keys': ['count', 'embeddings']}, {'method': 'POST', 'path': '/youtube/segments/similarity', 'status': 200, 'expected': 200, 'keys': ['sentence_count', 'query_results']}, {'method': 'POST', 'path': '/single/text/embedding', 'status': 422, 'expected': 422, 'keys': ['detail']}, {'method': 'POST', 'path': '/embedding/compare', 'status': 422, 'expected': 422, 'keys': ['detail']}, {'method': 'POST', 'path': '/pdf/page/embedding', 'status': 400, 'expected': 400, 'keys': ['detail']}, {'method': 'POST', 'path': '/pdf/page/embedding', 'status': 200, 'expected': 200, 'keys': ['embeddings', 'pageCount']}]

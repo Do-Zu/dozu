@@ -1,0 +1,45 @@
+{
+  "url": "https://github.com/Do-Zu/dozu/issues/41",
+  "title": "[Task] Preserve real payments with secure desktop reconciliation",
+  "issue_number": 41,
+  "body": "<!-- dozu-tracking:start -->\n## Work tracking\nUse the live **status:**, **priority:** and **complexity:** labels above; **Assignees** identifies the owner. These labels are separate from the task/ticket type.\n\n**Planning complexity:** XL - Merchant ownership and provider reconciliation/callback feasibility are unresolved; split after design validation.\nComplexity is a provisional scope/uncertainty estimate, not a delivery-time commitment. XL work must be split into executable subtasks before starting.\n**Planning priority:** P1 - Required product, integration or release work after its prerequisites.\n\n**Blocking decision/impediment:** Payment ownership is undecided: does each user supply their own merchant account, or are customers paying Dozu? The choice determines who can hold merchant secrets and how genuine payment/entitlement verification works. Resolve in #27 before implementation.\n<!-- dozu-tracking:end -->\n\n## Outcome\nAdapt PayOS/SePay checkout/status/history for the agreed merchant/customer ownership model without distributing Dozu merchant secrets.\n\n## Acceptance criteria\n- [ ] Record owner of merchant keys and transaction authority; choose user-owned merchant credentials or provider-managed checkout/entitlement flow as appropriate.\n- [ ] Keep real checkout in supported browser/provider flow; validate redirect binding, order/amount/currency/account and never trust success URL as payment proof.\n- [ ] Implement documented authenticated provider status reconciliation (current PayOS getPaymentStatus is unimplemented), durable local mappings and idempotent subscription updates.\n- [ ] When webhooks are mandatory, prove provider-supported scoped tunnel/public callback delivery/signature/replay behavior and host-offline recovery; no silent hosted Dozu relay.\n- [ ] Test failure/cancel/refund/restart/duplicate events and preserve payment/admin/history UI; explicitly report unresolved provider constraints.\n\n## Architecture constraints\nThe complete existing Next.js UI and Express backend run locally with a local database/files. Desktop and local browser use the same localhost backend. Real third-party integrations may use the internet; preserve them wherever feasible. No central Dozu backend, cloud database, synchronization, shared publisher secrets in installers, or simulated replacements. All pages/features remain in release scope.\n\n<!-- dozu-roadmap:PAYMENTS -->\n\nPhase: 2 Local services | Priority: P1\n\nParent roadmap: https://github.com/Do-Zu/dozu/issues/1\n\n## Dependencies\n- #27 - [Ticket] Resolve desktop integration callbacks, secrets and shared-state limits\n- #31 - [Task] Store user-scoped provider credentials securely on the device\n- #40 - [Task] Add a local backend profile with automatic seeds and lazy integrations\n",
+  "state": "open",
+  "user": {
+    "login": "perinst",
+    "name": "perinst",
+    "email": null,
+    "avatar_url": "https://avatars.githubusercontent.com/u/193695143?v=4",
+    "id": 193695143
+  },
+  "assignees": null,
+  "labels": [
+    {
+      "name": "task",
+      "color": "0E8A16",
+      "description": "Concrete implementation or verification work"
+    },
+    {
+      "name": "status:blocked",
+      "color": "D73A4A",
+      "description": "Specific unresolved impediment or decision; reason required"
+    },
+    {
+      "name": "priority:P1",
+      "color": "D93F0B",
+      "description": "Required feature, integration or release work after foundations"
+    },
+    {
+      "name": "complexity:XL",
+      "color": "D876E3",
+      "description": "Umbrella/high uncertainty; split into smaller executable tasks"
+    }
+  ],
+  "milestone": null,
+  "state_reason": null,
+  "comments": 0,
+  "created_at": "2026-11-09T10:35:33Z",
+  "updated_at": "2026-11-09T10:52:24Z",
+  "closed_at": null,
+  "display_url": "https://github.com/Do-Zu/dozu/issues/41",
+  "display_title": "[Task] Preserve real payments with secure desktop reconciliation"
+}

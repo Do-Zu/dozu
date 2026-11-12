@@ -1,0 +1,14 @@
+{
+  "name": "web-typecheck-final",
+  "command": [
+    "pnpm",
+    "--filter",
+    "dozu-ui-service",
+    "typecheck"
+  ],
+  "exitCode": 0,
+  "seconds": 6.781,
+  "capturedAtUtc": "2026-11-12T14:52:40.040492+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "web-typecheck-final.log"
+}

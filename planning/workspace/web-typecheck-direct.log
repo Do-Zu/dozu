@@ -1,0 +1,8 @@
+
+> dozu-ui-service@0.1.0 typecheck D:\product\dozu\apps\web
+> tsc --noEmit
+
+src/app/[locale]/topics/[topicId]/(topic)/media/core/youtube/YoutubePlayerAdapter.ts(20,9): error TS2322: Type 'Promise<number>' is not assignable to type 'number'.
+D:\product\dozu\apps\web:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  dozu-ui-service@0.1.0 typecheck: `tsc --noEmit`
+Exit status 2

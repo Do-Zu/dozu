@@ -1,0 +1,40 @@
+2026-11-09 18:23:50:2350 [33mwarn[39m: [33mEnvironment file .env.development not found, using default values[39m
+2026-11-09 18:23:50:2350 [33mwarn[39m: [33mMissing required environment variables: PORT, HOST[39m
+2026-11-09 18:23:50:2350 [33mwarn[39m: [33mALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.[39m
+2026-11-09 18:23:50:2350 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+2026-11-09 18:23:51:2351 [33mwarn[39m: [33mEnvironment file .env.development not found, using default values[39m
+2026-11-09 18:23:51:2351 [33mwarn[39m: [33mMissing required environment variables: PORT, HOST[39m
+2026-11-09 18:23:51:2351 [33mwarn[39m: [33mALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.[39m
+2026-11-09 18:23:51:2351 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+PASS src/services/package/__test__/package/package.controller.test.ts (19.507 s)
+  PackageController
+    createNewPackage
+      √ should create a new package successfully (5 ms)
+    getTopicBelongPackage
+      √ should get topics belonging to a package (1 ms)
+    getTopicUnAssignedTopic
+      √ should get unassigned topics (1 ms)
+    updatePackage
+      √ should update a package successfully (1 ms)
+    updateTopicInPackage
+      √ should update topic in package successfully (1 ms)
+    removeTopicInPackage
+      √ should remove topic from package successfully (1 ms)
+    getPackages
+      √ should get packages with default limit and offset (1 ms)
+      √ should get packages with provided limit and offset (1 ms)
+    deletePackage
+      √ should delete a package successfully (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        19.778 s
+Ran all test suites within paths "D:\product\dozu\planning\audit\.runs\dozu-api-service\src\services\package\__test__\package\package.controller.test.ts".
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

@@ -1,0 +1,14 @@
+{
+  "check": "ui-f01-adapter-contract",
+  "args": [
+    "C:\\nvm4w\\nodejs\\node.EXE",
+    "D:\\product\\dozu\\planning\\architecture-proof\\.runs\\dozu-ui-service\\proof-adapter-contract.cjs",
+    "D:\\product\\dozu\\planning\\architecture-proof\\.runs\\dozu-ui-service\\node_modules\\typescript",
+    "D:\\product\\dozu\\planning\\architecture-proof\\.runs\\dozu-ui-service\\src\\app\\[locale]\\topics\\[topicId]\\(topic)\\media\\core\\youtube\\YoutubePlayerAdapter.ts"
+  ],
+  "cwd": "planning\\architecture-proof\\.runs\\dozu-ui-service",
+  "seconds": 0.258,
+  "exitCode": 0,
+  "log": "ui-f01-adapter-contract.log",
+  "inputs": "sanitized tracked copies; existing node_modules junction; no npm install/real dotenv; development dependencies remain available for build only"
+}

@@ -1,0 +1,15 @@
+{
+  "check": "api-build-baseline",
+  "args": [
+    "C:\\nvm4w\\nodejs\\node.EXE",
+    "D:\\product\\dozu\\planning\\architecture-proof\\.runs\\dozu-api-service\\node_modules\\typescript\\bin\\tsc",
+    "--incremental",
+    "false",
+    "--noEmitOnError"
+  ],
+  "cwd": "planning\\architecture-proof\\.runs\\dozu-api-service",
+  "seconds": 38.226,
+  "exitCode": 0,
+  "log": "api-build-baseline.log",
+  "inputs": "sanitized tracked copies; existing node_modules junction; no npm install/real dotenv; development dependencies remain available for build only"
+}

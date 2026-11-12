@@ -1,0 +1,21 @@
+{
+  "os": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300",
+    "OSArchitecture": "64-bit",
+    "TotalVisibleMemorySize": 33337764,
+    "FreePhysicalMemory": 19298704
+  },
+  "cpu": {
+    "Name": "13th Gen Intel(R) Core(TM) i5-13400F",
+    "NumberOfCores": 10,
+    "NumberOfLogicalProcessors": 16,
+    "AddressWidth": 64
+  },
+  "disk": {
+    "DeviceID": "D:",
+    "Size": 107373129728,
+    "FreeSpace": 49279234048
+  }
+}

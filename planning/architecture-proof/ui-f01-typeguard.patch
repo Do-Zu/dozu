@@ -1,0 +1,16 @@
+--- a/src/app/[locale]/topics/[topicId]/(topic)/media/core/youtube/YoutubePlayerAdapter.ts
++++ b/src/app/[locale]/topics/[topicId]/(topic)/media/core/youtube/YoutubePlayerAdapter.ts
+@@ -17,6 +17,12 @@
+     }
+ 
+     getCurrentTime(): number {
+-        return this.player.getCurrentTime() || 0;
++        // react-youtube forwards the raw ready-event IFrame player, but its
++        // published target type describes the asynchronous youtube-player facade.
++        const currentTime: unknown = this.player.getCurrentTime();
++        if (typeof currentTime !== 'number') {
++            throw new TypeError('YoutubePlayerAdapter requires the ready IFrame player');
++        }
++        return currentTime || 0;
+     }
+ }

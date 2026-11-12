@@ -1,0 +1,4600 @@
+{
+  "method": "Next build uses a node_modules junction, whose .nft paths point outside tracing root. Explicitly copy all traced files from approved source dependency root to standalone/node_modules, preserving package-relative layout; copy proof-root traced files relative to proof UI. No unknown roots or env/auth config copied. Runtime guard then rejects module resolution outside standalone. This is proof harness packaging, not a source config change.",
+  "copiedFileCount": 263,
+  "excludedOutsideApprovedRoots": [],
+  "missingFiles": [],
+  "standalone": {
+    "root": "D:\\product\\dozu\\planning\\architecture-proof\\.runs\\dozu-ui-service\\.next\\standalone",
+    "available": true,
+    "bytes": 32745766,
+    "MB": 32.746,
+    "MiB": 31.229,
+    "fileCount": 764,
+    "files": [
+      {
+        "path": ".next/server/chunks/6774.js",
+        "bytes": 1529756,
+        "MB": 1.53,
+        "MiB": 1.459
+      },
+      {
+        "path": ".next/static/chunks/38f5548d-d1c913d99d891476.js",
+        "bytes": 1470326,
+        "MB": 1.47,
+        "MiB": 1.402
+      },
+      {
+        "path": "public/pdf.worker.min.mjs",
+        "bytes": 1369825,
+        "MB": 1.37,
+        "MiB": 1.306
+      },
+      {
+        "path": ".next/server/app/icon.png/route.js",
+        "bytes": 1341258,
+        "MB": 1.341,
+        "MiB": 1.279
+      },
+      {
+        "path": ".next/server/app/icon.png.body",
+        "bytes": 971626,
+        "MB": 0.972,
+        "MiB": 0.927
+      },
+      {
+        "path": ".next/server/chunks/8985.js",
+        "bytes": 970748,
+        "MB": 0.971,
+        "MiB": 0.926
+      },
+      {
+        "path": ".next/server/chunks/83.js",
+        "bytes": 955137,
+        "MB": 0.955,
+        "MiB": 0.911
+      },
+      {
+        "path": ".next/static/chunks/fabe8f6f.24b78cd93bd96126.js",
+        "bytes": 955126,
+        "MB": 0.955,
+        "MiB": 0.911
+      },
+      {
+        "path": ".next/server/chunks/7174.js",
+        "bytes": 523207,
+        "MB": 0.523,
+        "MiB": 0.499
+      },
+      {
+        "path": ".next/static/chunks/6792b5e8.aa14f38aec1d333d.js",
+        "bytes": 512306,
+        "MB": 0.512,
+        "MiB": 0.489
+      },
+      {
+        "path": ".next/server/chunks/4817.js",
+        "bytes": 512281,
+        "MB": 0.512,
+        "MiB": 0.489
+      },
+      {
+        "path": ".next/static/chunks/9450-c71ad16ae95ba13d.js",
+        "bytes": 509683,
+        "MB": 0.51,
+        "MiB": 0.486
+      },
+      {
+        "path": ".next/static/chunks/8633-47cd9a8b4debdddc.js",
+        "bytes": 494982,
+        "MB": 0.495,
+        "MiB": 0.472
+      },
+      {
+        "path": ".next/server/chunks/7984.js",
+        "bytes": 461825,
+        "MB": 0.462,
+        "MiB": 0.44
+      },
+      {
+        "path": ".next/server/chunks/3574.js",
+        "bytes": 454693,
+        "MB": 0.455,
+        "MiB": 0.434
+      },
+      {
+        "path": ".next/static/chunks/4558b3b2-1bdd911454450d97.js",
+        "bytes": 413751,
+        "MB": 0.414,
+        "MiB": 0.395
+      },
+      {
+        "path": ".next/server/chunks/9437.js",
+        "bytes": 413505,
+        "MB": 0.414,
+        "MiB": 0.394
+      },
+      {
+        "path": ".next/server/chunks/7406.js",
+        "bytes": 375603,
+        "MB": 0.376,
+        "MiB": 0.358
+      },
+      {
+        "path": ".next/server/chunks/94.js",
+        "bytes": 346047,
+        "MB": 0.346,
+        "MiB": 0.33
+      },
+      {
+        "path": ".next/static/chunks/602b1ad1.cfffb7f5bbd7946c.js",
+        "bytes": 335604,
+        "MB": 0.336,
+        "MiB": 0.32
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerMux.df7ead374a8ffd1a.js",
+        "bytes": 328727,
+        "MB": 0.329,
+        "MiB": 0.313
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerMux.js",
+        "bytes": 328318,
+        "MB": 0.328,
+        "MiB": 0.313
+      },
+      {
+        "path": ".next/static/chunks/9c114983-0d8c6f36614ab095.js",
+        "bytes": 317221,
+        "MB": 0.317,
+        "MiB": 0.303
+      },
+      {
+        "path": ".next/server/chunks/9166.js",
+        "bytes": 317102,
+        "MB": 0.317,
+        "MiB": 0.302
+      },
+      {
+        "path": ".next/static/chunks/7329-1b696e929c122f3d.js",
+        "bytes": 308492,
+        "MB": 0.308,
+        "MiB": 0.294
+      },
+      {
+        "path": ".next/static/chunks/6029fcd2-c11c34c11d6f3a7b.js",
+        "bytes": 305881,
+        "MB": 0.306,
+        "MiB": 0.292
+      },
+      {
+        "path": ".next/server/chunks/6561.js",
+        "bytes": 280079,
+        "MB": 0.28,
+        "MiB": 0.267
+      },
+      {
+        "path": ".next/cache/images/snxgTPMdL1Adh0LpggDa5Klql3a-KHmSwzsgzI7QZGw=/60.1794320920605.s6b5Gf2W2+9So8fxtA2eemdXBPn7BsNVZn3h8px8aJ0=.png",
+        "bytes": 259983,
+        "MB": 0.26,
+        "MiB": 0.248
+      },
+      {
+        "path": ".next/static/css/47ea90caa5f125fa.css",
+        "bytes": 213134,
+        "MB": 0.213,
+        "MiB": 0.203
+      },
+      {
+        "path": ".next/server/app/[locale]/welcome/page.js",
+        "bytes": 208470,
+        "MB": 0.208,
+        "MiB": 0.199
+      },
+      {
+        "path": ".next/server/chunks/340.js",
+        "bytes": 198588,
+        "MB": 0.199,
+        "MiB": 0.189
+      },
+      {
+        "path": ".next/static/chunks/002649bb.f7a4063feb757cc4.js",
+        "bytes": 198538,
+        "MB": 0.199,
+        "MiB": 0.189
+      },
+      {
+        "path": ".next/static/chunks/7777-af331cae4003adee.js",
+        "bytes": 198122,
+        "MB": 0.198,
+        "MiB": 0.189
+      },
+      {
+        "path": ".next/server/app/[locale]/home/page.js",
+        "bytes": 196434,
+        "MB": 0.196,
+        "MiB": 0.187
+      },
+      {
+        "path": ".next/server/chunks/9125.js",
+        "bytes": 190783,
+        "MB": 0.191,
+        "MiB": 0.182
+      },
+      {
+        "path": ".next/static/chunks/93086348-112156c392cc0414.js",
+        "bytes": 172837,
+        "MB": 0.173,
+        "MiB": 0.165
+      },
+      {
+        "path": "node_modules/next/dist/compiled/next-server/server.runtime.prod.js",
+        "bytes": 167412,
+        "MB": 0.167,
+        "MiB": 0.16
+      },
+      {
+        "path": ".next/server/chunks/5742.js",
+        "bytes": 156411,
+        "MB": 0.156,
+        "MiB": 0.149
+      },
+      {
+        "path": ".next/static/chunks/e4065bf0-9f63edcc12e7c85e.js",
+        "bytes": 153827,
+        "MB": 0.154,
+        "MiB": 0.147
+      },
+      {
+        "path": ".next/static/chunks/1884-51d88b93922cbf1b.js",
+        "bytes": 153097,
+        "MB": 0.153,
+        "MiB": 0.146
+      },
+      {
+        "path": ".next/static/chunks/framework-b244304f38029977.js",
+        "bytes": 139999,
+        "MB": 0.14,
+        "MiB": 0.134
+      },
+      {
+        "path": ".next/static/chunks/main-2ea751428165869e.js",
+        "bytes": 131527,
+        "MB": 0.132,
+        "MiB": 0.125
+      },
+      {
+        "path": ".next/static/chunks/6919-5ceadf19e9e92035.js",
+        "bytes": 129033,
+        "MB": 0.129,
+        "MiB": 0.123
+      },
+      {
+        "path": ".next/server/src/middleware.js",
+        "bytes": 125748,
+        "MB": 0.126,
+        "MiB": 0.12
+      },
+      {
+        "path": ".next/static/chunks/3663-a2c1a61059a255fb.js",
+        "bytes": 124737,
+        "MB": 0.125,
+        "MiB": 0.119
+      },
+      {
+        "path": ".next/server/chunks/2112.js",
+        "bytes": 116206,
+        "MB": 0.116,
+        "MiB": 0.111
+      },
+      {
+        "path": ".next/static/chunks/polyfills-42372ed130431b0a.js",
+        "bytes": 112594,
+        "MB": 0.113,
+        "MiB": 0.107
+      },
+      {
+        "path": ".next/server/chunks/9002.js",
+        "bytes": 110741,
+        "MB": 0.111,
+        "MiB": 0.106
+      },
+      {
+        "path": ".next/static/chunks/3415-d674d3c852a66225.js",
+        "bytes": 110653,
+        "MB": 0.111,
+        "MiB": 0.106
+      },
+      {
+        "path": ".next/static/chunks/3131-1929fdf697235bab.js",
+        "bytes": 106076,
+        "MB": 0.106,
+        "MiB": 0.101
+      },
+      {
+        "path": ".next/static/chunks/153f90f4-08d9b64ee9ced8b3.js",
+        "bytes": 94800,
+        "MB": 0.095,
+        "MiB": 0.09
+      },
+      {
+        "path": ".next/app-build-manifest.json",
+        "bytes": 91571,
+        "MB": 0.092,
+        "MiB": 0.087
+      },
+      {
+        "path": ".next/static/chunks/339-bcd0105251c95fa6.js",
+        "bytes": 90653,
+        "MB": 0.091,
+        "MiB": 0.086
+      },
+      {
+        "path": ".next/static/chunks/cfc63199-4bee5e942e27168e.js",
+        "bytes": 85610,
+        "MB": 0.086,
+        "MiB": 0.082
+      },
+      {
+        "path": ".next/static/media/8e9860b6e62d6359-s.woff2",
+        "bytes": 85272,
+        "MB": 0.085,
+        "MiB": 0.081
+      },
+      {
+        "path": ".next/static/chunks/46dfd384.351fd6e178d27d19.js",
+        "bytes": 82954,
+        "MB": 0.083,
+        "MiB": 0.079
+      },
+      {
+        "path": ".next/server/app/[locale]/payment/page.js",
+        "bytes": 80432,
+        "MB": 0.08,
+        "MiB": 0.077
+      },
+      {
+        "path": ".next/static/chunks/3321-f9799f6cdef79703.js",
+        "bytes": 79138,
+        "MB": 0.079,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/students/page.js",
+        "bytes": 78629,
+        "MB": 0.079,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/23dde65bd4001da2-s.p.ttf",
+        "bytes": 78364,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/b7846d6dbf6ace4d-s.p.ttf",
+        "bytes": 78352,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/e882c72c17c1d253-s.p.ttf",
+        "bytes": 78340,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/31dab054b907beb9-s.p.ttf",
+        "bytes": 78336,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/1bf269e8aecea04d-s.p.ttf",
+        "bytes": 78324,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/4801f7c2d5e57ef2-s.p.ttf",
+        "bytes": 78308,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/7dbd1574359e6c48-s.p.ttf",
+        "bytes": 78308,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/7469681470a91ffd-s.p.ttf",
+        "bytes": 78288,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/static/media/5174ac193f7ca45b-s.p.ttf",
+        "bytes": 78196,
+        "MB": 0.078,
+        "MiB": 0.075
+      },
+      {
+        "path": ".next/server/chunks/1241.js",
+        "bytes": 77343,
+        "MB": 0.077,
+        "MiB": 0.074
+      },
+      {
+        "path": ".next/static/chunks/d888faad-79b7a49859f894a0.js",
+        "bytes": 75792,
+        "MB": 0.076,
+        "MiB": 0.072
+      },
+      {
+        "path": ".next/static/chunks/4619.93992e5f71c2253b.js",
+        "bytes": 75679,
+        "MB": 0.076,
+        "MiB": 0.072
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/home/page-dd5e9ad6dbbeb771.js",
+        "bytes": 75308,
+        "MB": 0.075,
+        "MiB": 0.072
+      },
+      {
+        "path": "public/animation.json",
+        "bytes": 73496,
+        "MB": 0.073,
+        "MiB": 0.07
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/students/page-4c6d84980de99976.js",
+        "bytes": 67660,
+        "MB": 0.068,
+        "MiB": 0.065
+      },
+      {
+        "path": ".next/server/app/[locale]/feynman/[topicId]/page.js",
+        "bytes": 61669,
+        "MB": 0.062,
+        "MiB": 0.059
+      },
+      {
+        "path": ".next/static/chunks/6393-627786fc0c2c98c9.js",
+        "bytes": 60508,
+        "MB": 0.061,
+        "MiB": 0.058
+      },
+      {
+        "path": "node_modules/next/dist/server/next-server.js",
+        "bytes": 60012,
+        "MB": 0.06,
+        "MiB": 0.057
+      },
+      {
+        "path": ".next/server/chunks/8615.js",
+        "bytes": 57684,
+        "MB": 0.058,
+        "MiB": 0.055
+      },
+      {
+        "path": ".next/static/css/967ddca1198f1885.css",
+        "bytes": 56080,
+        "MB": 0.056,
+        "MiB": 0.053
+      },
+      {
+        "path": ".next/static/chunks/160-c968dc345ba8994a.js",
+        "bytes": 55689,
+        "MB": 0.056,
+        "MiB": 0.053
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/activities/[activityId]/page.js",
+        "bytes": 54758,
+        "MB": 0.055,
+        "MiB": 0.052
+      },
+      {
+        "path": ".next/static/chunks/481-cf05ac8f43d320ab.js",
+        "bytes": 54751,
+        "MB": 0.055,
+        "MiB": 0.052
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/layout-63ae819a0e920cc2.js",
+        "bytes": 54438,
+        "MB": 0.054,
+        "MiB": 0.052
+      },
+      {
+        "path": ".next/static/chunks/2603-6d6866387aa6016c.js",
+        "bytes": 53724,
+        "MB": 0.054,
+        "MiB": 0.051
+      },
+      {
+        "path": ".next/static/chunks/e9930cf5-47e4df634ad1b0f3.js",
+        "bytes": 51905,
+        "MB": 0.052,
+        "MiB": 0.05
+      },
+      {
+        "path": ".next/static/chunks/471-a9f1d5f034814e30.js",
+        "bytes": 51717,
+        "MB": 0.052,
+        "MiB": 0.049
+      },
+      {
+        "path": ".next/server/chunks/8121.js",
+        "bytes": 50609,
+        "MB": 0.051,
+        "MiB": 0.048
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/activities/[activityId]/page-96dbf52ff5acc1aa.js",
+        "bytes": 50460,
+        "MB": 0.05,
+        "MiB": 0.048
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerVimeo.a08ba1e19f09370c.js",
+        "bytes": 48933,
+        "MB": 0.049,
+        "MiB": 0.047
+      },
+      {
+        "path": ".next/static/media/e4af272ccee01ff0-s.p.woff2",
+        "bytes": 48432,
+        "MB": 0.048,
+        "MiB": 0.046
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerVimeo.js",
+        "bytes": 48174,
+        "MB": 0.048,
+        "MiB": 0.046
+      },
+      {
+        "path": ".next/static/chunks/3438-286ee58ee6ad95c8.js",
+        "bytes": 46906,
+        "MB": 0.047,
+        "MiB": 0.045
+      },
+      {
+        "path": ".next/static/chunks/8fc5db23-ed6c4594161dae47.js",
+        "bytes": 46119,
+        "MB": 0.046,
+        "MiB": 0.044
+      },
+      {
+        "path": ".next/server/chunks/9435.js",
+        "bytes": 46084,
+        "MB": 0.046,
+        "MiB": 0.044
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/topics/[topicId]/settings/anki/page-1fe47d3cc57d6d62.js",
+        "bytes": 45273,
+        "MB": 0.045,
+        "MiB": 0.043
+      },
+      {
+        "path": ".next/static/chunks/3458-8e36d2f1193772dd.js",
+        "bytes": 44467,
+        "MB": 0.044,
+        "MiB": 0.042
+      },
+      {
+        "path": ".next/static/chunks/3372-4924e24b929e8d38.js",
+        "bytes": 43022,
+        "MB": 0.043,
+        "MiB": 0.041
+      },
+      {
+        "path": "node_modules/next/dist/pages/_document.js",
+        "bytes": 43011,
+        "MB": 0.043,
+        "MiB": 0.041
+      },
+      {
+        "path": ".next/static/chunks/297-4555f14934c0e3e8.js",
+        "bytes": 42380,
+        "MB": 0.042,
+        "MiB": 0.04
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/topics/[topicId]/page_client-reference-manifest.js",
+        "bytes": 41993,
+        "MB": 0.042,
+        "MiB": 0.04
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/mindmap/[topicId]/page_client-reference-manifest.js",
+        "bytes": 41771,
+        "MB": 0.042,
+        "MiB": 0.04
+      },
+      {
+        "path": ".next/static/chunks/6476-22c55a1070d5a7cb.js",
+        "bytes": 41586,
+        "MB": 0.042,
+        "MiB": 0.04
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/details/page_client-reference-manifest.js",
+        "bytes": 41439,
+        "MB": 0.041,
+        "MiB": 0.04
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/edit/page_client-reference-manifest.js",
+        "bytes": 41284,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/chunks/6464.js",
+        "bytes": 41214,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/topics/[topicId]/page_client-reference-manifest.js",
+        "bytes": 41059,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/details/page_client-reference-manifest.js",
+        "bytes": 40990,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/revenue/page.js",
+        "bytes": 40967,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/edit/page_client-reference-manifest.js",
+        "bytes": 40835,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/mindmap/[topicId]/page_client-reference-manifest.js",
+        "bytes": 40803,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/assignments/[assignmentId]/details/page_client-reference-manifest.js",
+        "bytes": 40625,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/learning-material/[learningMaterialId]/details/page_client-reference-manifest.js",
+        "bytes": 40616,
+        "MB": 0.041,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/server/app/[locale]/topics/[topicId]/settings/anki/page_client-reference-manifest.js",
+        "bytes": 40401,
+        "MB": 0.04,
+        "MiB": 0.039
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/welcome/page-eeb890c736d4a07a.js",
+        "bytes": 40323,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/chunks/2014.js",
+        "bytes": 40223,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/page_client-reference-manifest.js",
+        "bytes": 40150,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/start/page_client-reference-manifest.js",
+        "bytes": 40041,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/plans/[planId]/features/page_client-reference-manifest.js",
+        "bytes": 39983,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/history/page_client-reference-manifest.js",
+        "bytes": 39903,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/submit/page_client-reference-manifest.js",
+        "bytes": 39900,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/class-quiz/[classQuizId]/edit/page_client-reference-manifest.js",
+        "bytes": 39876,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/students/page_client-reference-manifest.js",
+        "bytes": 39856,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/chunks/4462.js",
+        "bytes": 39686,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/page_client-reference-manifest.js",
+        "bytes": 39614,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/page_client-reference-manifest.js",
+        "bytes": 39536,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/topics/[topicId]/(topic)/page_client-reference-manifest.js",
+        "bytes": 39536,
+        "MB": 0.04,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/subscriptions/list/page_client-reference-manifest.js",
+        "bytes": 39410,
+        "MB": 0.039,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/page_client-reference-manifest.js",
+        "bytes": 39398,
+        "MB": 0.039,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/users/[id]/oauth/page_client-reference-manifest.js",
+        "bytes": 39393,
+        "MB": 0.039,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/teacher-requests/pending/page_client-reference-manifest.js",
+        "bytes": 39386,
+        "MB": 0.039,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/[topicId]/page_client-reference-manifest.js",
+        "bytes": 39343,
+        "MB": 0.039,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/static/chunks/4223-32c5f47d9bd078f2.js",
+        "bytes": 39338,
+        "MB": 0.039,
+        "MiB": 0.038
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/view/[topicId]/page_client-reference-manifest.js",
+        "bytes": 39276,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/generate/page_client-reference-manifest.js",
+        "bytes": 39234,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/activities/[activityId]/page_client-reference-manifest.js",
+        "bytes": 39185,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/class-quiz/page_client-reference-manifest.js",
+        "bytes": 39184,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-providers/page_client-reference-manifest.js",
+        "bytes": 39087,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-api-keys/page_client-reference-manifest.js",
+        "bytes": 39084,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-models/page_client-reference-manifest.js",
+        "bytes": 39077,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/plans/page_client-reference-manifest.js",
+        "bytes": 39060,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-api-key-models/page_client-reference-manifest.js",
+        "bytes": 39054,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/features/page_client-reference-manifest.js",
+        "bytes": 39022,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/feynman/[topicId]/page-aa13a4e357680072.js",
+        "bytes": 39022,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/feedback/page_client-reference-manifest.js",
+        "bytes": 38974,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/page-f6a8e8ff036b0219.js",
+        "bytes": 38947,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/users/page_client-reference-manifest.js",
+        "bytes": 38921,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/revenue/page_client-reference-manifest.js",
+        "bytes": 38877,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/payments/page_client-reference-manifest.js",
+        "bytes": 38834,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/stats/page_client-reference-manifest.js",
+        "bytes": 38733,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/subscriptions/page_client-reference-manifest.js",
+        "bytes": 38705,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/static/chunks/1247-33342310e1545365.js",
+        "bytes": 38702,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/teacher-requests/page_client-reference-manifest.js",
+        "bytes": 38666,
+        "MB": 0.039,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/home/page_client-reference-manifest.js",
+        "bytes": 38469,
+        "MB": 0.038,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/page_client-reference-manifest.js",
+        "bytes": 38447,
+        "MB": 0.038,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/setting/profile/page_client-reference-manifest.js",
+        "bytes": 38391,
+        "MB": 0.038,
+        "MiB": 0.037
+      },
+      {
+        "path": ".next/server/app/[locale]/setting/schedule-setup/page_client-reference-manifest.js",
+        "bytes": 38272,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/page_client-reference-manifest.js",
+        "bytes": 38194,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/feynman/[topicId]/page_client-reference-manifest.js",
+        "bytes": 38167,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/progress/page_client-reference-manifest.js",
+        "bytes": 38153,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/chunks/7474.js",
+        "bytes": 38144,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/question/edit/[topicId]/page_client-reference-manifest.js",
+        "bytes": 38112,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/history/[quizResultId]/page_client-reference-manifest.js",
+        "bytes": 38083,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/home/page_client-reference-manifest.js",
+        "bytes": 38033,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/games/memory-match/page_client-reference-manifest.js",
+        "bytes": 38015,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/games/brain-chase/page_client-reference-manifest.js",
+        "bytes": 37962,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/profile/page_client-reference-manifest.js",
+        "bytes": 37816,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/doing/page_client-reference-manifest.js",
+        "bytes": 37805,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/page_client-reference-manifest.js",
+        "bytes": 37782,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/request-teacher/reapply/page_client-reference-manifest.js",
+        "bytes": 37781,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/schedule/page_client-reference-manifest.js",
+        "bytes": 37773,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/welcome/page_client-reference-manifest.js",
+        "bytes": 37698,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/result/[quizResultId]/page_client-reference-manifest.js",
+        "bytes": 37668,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/generate/page_client-reference-manifest.js",
+        "bytes": 37628,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/payment/page_client-reference-manifest.js",
+        "bytes": 37628,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/history/page_client-reference-manifest.js",
+        "bytes": 37621,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/register/page_client-reference-manifest.js",
+        "bytes": 37599,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/nodes/[id]/flashcard/page_client-reference-manifest.js",
+        "bytes": 37592,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/local/page_client-reference-manifest.js",
+        "bytes": 37580,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/login/page_client-reference-manifest.js",
+        "bytes": 37542,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/onboarding/page_client-reference-manifest.js",
+        "bytes": 37541,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/verifyEmail/page_client-reference-manifest.js",
+        "bytes": 37512,
+        "MB": 0.038,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/changePassword/page_client-reference-manifest.js",
+        "bytes": 37473,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/forgotPassword/page_client-reference-manifest.js",
+        "bytes": 37473,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/request-teacher/page_client-reference-manifest.js",
+        "bytes": 37412,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/activities/join/[activityId]/page_client-reference-manifest.js",
+        "bytes": 37409,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/add-flashcard/page_client-reference-manifest.js",
+        "bytes": 37383,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/changePasswordEmailSent/page_client-reference-manifest.js",
+        "bytes": 37356,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/testBackEnd/page_client-reference-manifest.js",
+        "bytes": 37320,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/stats/page_client-reference-manifest.js",
+        "bytes": 37238,
+        "MB": 0.037,
+        "MiB": 0.036
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/nodes/[id]/page_client-reference-manifest.js",
+        "bytes": 37220,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/server/app/[locale]/about/page_client-reference-manifest.js",
+        "bytes": 37189,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/revenue/page-72130819c8a6c4ae.js",
+        "bytes": 37104,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/server/app/[locale]/tests/class/comment/page_client-reference-manifest.js",
+        "bytes": 37102,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/server/app/[locale]/blogs/page_client-reference-manifest.js",
+        "bytes": 37072,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/details/page.js",
+        "bytes": 36970,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/server/app/[locale]/page_client-reference-manifest.js",
+        "bytes": 36956,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/page-d97df88e21517664.js",
+        "bytes": 36839,
+        "MB": 0.037,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/static/chunks/4885-ce1065d3da978312.js",
+        "bytes": 36198,
+        "MB": 0.036,
+        "MiB": 0.035
+      },
+      {
+        "path": ".next/static/chunks/9184-f0fa4b9d6b022c0d.js",
+        "bytes": 35788,
+        "MB": 0.036,
+        "MiB": 0.034
+      },
+      {
+        "path": ".next/server/chunks/600.js",
+        "bytes": 35387,
+        "MB": 0.035,
+        "MiB": 0.034
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/games/brain-chase/page-520b622b1e1a53d9.js",
+        "bytes": 35082,
+        "MB": 0.035,
+        "MiB": 0.033
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/page.js",
+        "bytes": 34936,
+        "MB": 0.035,
+        "MiB": 0.033
+      },
+      {
+        "path": ".next/static/chunks/5171.d81175009ae60e24.js",
+        "bytes": 34774,
+        "MB": 0.035,
+        "MiB": 0.033
+      },
+      {
+        "path": ".next/static/chunks/4017-d0f8f6f5f193b93a.js",
+        "bytes": 34508,
+        "MB": 0.035,
+        "MiB": 0.033
+      },
+      {
+        "path": ".next/static/chunks/1841-50f0cfab37688eff.js",
+        "bytes": 34285,
+        "MB": 0.034,
+        "MiB": 0.033
+      },
+      {
+        "path": ".next/static/chunks/7337-53636d2e943553ea.js",
+        "bytes": 34175,
+        "MB": 0.034,
+        "MiB": 0.033
+      },
+      {
+        "path": ".next/server/app/[locale]/progress/page.js",
+        "bytes": 34093,
+        "MB": 0.034,
+        "MiB": 0.033
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/page.js",
+        "bytes": 33921,
+        "MB": 0.034,
+        "MiB": 0.032
+      },
+      {
+        "path": ".next/server/chunks/9415.js",
+        "bytes": 33701,
+        "MB": 0.034,
+        "MiB": 0.032
+      },
+      {
+        "path": ".next/static/chunks/3653-6920eb9223e951e1.js",
+        "bytes": 32994,
+        "MB": 0.033,
+        "MiB": 0.031
+      },
+      {
+        "path": ".next/static/chunks/9593-53d1c5e798f166ba.js",
+        "bytes": 32204,
+        "MB": 0.032,
+        "MiB": 0.031
+      },
+      {
+        "path": ".next/static/chunks/7579-90383ecf9d6da805.js",
+        "bytes": 32059,
+        "MB": 0.032,
+        "MiB": 0.031
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/details/page-a72e31a677b8e8dc.js",
+        "bytes": 31895,
+        "MB": 0.032,
+        "MiB": 0.03
+      },
+      {
+        "path": ".next/static/chunks/3373-ce7a76cf2583716f.js",
+        "bytes": 31286,
+        "MB": 0.031,
+        "MiB": 0.03
+      },
+      {
+        "path": ".next/static/chunks/7123-b47e11af8c42fe4b.js",
+        "bytes": 31238,
+        "MB": 0.031,
+        "MiB": 0.03
+      },
+      {
+        "path": ".next/static/chunks/4112-dbd68e873f8d2586.js",
+        "bytes": 30691,
+        "MB": 0.031,
+        "MiB": 0.029
+      },
+      {
+        "path": ".next/static/chunks/2222-91cebcb243027916.js",
+        "bytes": 30661,
+        "MB": 0.031,
+        "MiB": 0.029
+      },
+      {
+        "path": ".next/server/app/_not-found/page_client-reference-manifest.js",
+        "bytes": 30539,
+        "MB": 0.031,
+        "MiB": 0.029
+      },
+      {
+        "path": ".next/static/chunks/6571-9d9c71d06def81f1.js",
+        "bytes": 30501,
+        "MB": 0.031,
+        "MiB": 0.029
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/class-quiz/[classQuizId]/edit/page-78ef9f9301da6451.js",
+        "bytes": 29302,
+        "MB": 0.029,
+        "MiB": 0.028
+      },
+      {
+        "path": ".next/server/chunks/4795.js",
+        "bytes": 28843,
+        "MB": 0.029,
+        "MiB": 0.028
+      },
+      {
+        "path": ".next/server/chunks/613.js",
+        "bytes": 28771,
+        "MB": 0.029,
+        "MiB": 0.027
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/assignments/[assignmentId]/details/page-e93adc65a57cc3c1.js",
+        "bytes": 28751,
+        "MB": 0.029,
+        "MiB": 0.027
+      },
+      {
+        "path": ".next/server/app/[locale]/games/brain-chase/page.js",
+        "bytes": 28358,
+        "MB": 0.028,
+        "MiB": 0.027
+      },
+      {
+        "path": ".next/server/app/[locale]/setting/schedule-setup/page.js",
+        "bytes": 28174,
+        "MB": 0.028,
+        "MiB": 0.027
+      },
+      {
+        "path": ".next/static/chunks/8789-6f51d25cadbf93fb.js",
+        "bytes": 27792,
+        "MB": 0.028,
+        "MiB": 0.027
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/mindmap/[topicId]/page-62ee04c6d7764343.js",
+        "bytes": 27200,
+        "MB": 0.027,
+        "MiB": 0.026
+      },
+      {
+        "path": ".next/static/chunks/8826-bc98c6fc5f70d7d1.js",
+        "bytes": 27150,
+        "MB": 0.027,
+        "MiB": 0.026
+      },
+      {
+        "path": ".next/server/chunks/921.js",
+        "bytes": 27053,
+        "MB": 0.027,
+        "MiB": 0.026
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/quiz/[topicId]/history/page-1f64528c12e4eca6.js",
+        "bytes": 26463,
+        "MB": 0.026,
+        "MiB": 0.025
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/setting/schedule-setup/page-16103b2fd8f6d166.js",
+        "bytes": 26325,
+        "MB": 0.026,
+        "MiB": 0.025
+      },
+      {
+        "path": ".next/static/chunks/4345-beececc1ea83da14.js",
+        "bytes": 26209,
+        "MB": 0.026,
+        "MiB": 0.025
+      },
+      {
+        "path": ".next/server/app/[locale]/topics/[topicId]/settings/anki/page.js",
+        "bytes": 25946,
+        "MB": 0.026,
+        "MiB": 0.025
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/progress/page-35b35af9ea71370b.js",
+        "bytes": 25884,
+        "MB": 0.026,
+        "MiB": 0.025
+      },
+      {
+        "path": ".next/static/media/ba9851c3c22cd980-s.woff2",
+        "bytes": 25844,
+        "MB": 0.026,
+        "MiB": 0.025
+      },
+      {
+        "path": ".next/server/chunks/6245.js",
+        "bytes": 25496,
+        "MB": 0.025,
+        "MiB": 0.024
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/payment/page-73d501bb89493df8.js",
+        "bytes": 25309,
+        "MB": 0.025,
+        "MiB": 0.024
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/class-quiz/page-d491c710528850f2.js",
+        "bytes": 25185,
+        "MB": 0.025,
+        "MiB": 0.024
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/layout-072bd31b74687188.js",
+        "bytes": 24332,
+        "MB": 0.024,
+        "MiB": 0.023
+      },
+      {
+        "path": ".next/server/chunks/1055.js",
+        "bytes": 24280,
+        "MB": 0.024,
+        "MiB": 0.023
+      },
+      {
+        "path": ".next/static/chunks/7701-5c2cf421849e6c89.js",
+        "bytes": 24224,
+        "MB": 0.024,
+        "MiB": 0.023
+      },
+      {
+        "path": ".next/static/chunks/9118-a0a5e3fb621c769d.js",
+        "bytes": 23527,
+        "MB": 0.024,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/class-quiz/[classQuizId]/edit/page.js",
+        "bytes": 23268,
+        "MB": 0.023,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/subscriptions/page.js",
+        "bytes": 23019,
+        "MB": 0.023,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/static/chunks/6653-d3d636ff12208750.js",
+        "bytes": 22997,
+        "MB": 0.023,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/plans/[planId]/features/page.js",
+        "bytes": 22927,
+        "MB": 0.023,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/assignments/[assignmentId]/details/page.js",
+        "bytes": 22874,
+        "MB": 0.023,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/server/chunks/2580.js",
+        "bytes": 22788,
+        "MB": 0.023,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-models/page.js",
+        "bytes": 22674,
+        "MB": 0.023,
+        "MiB": 0.022
+      },
+      {
+        "path": ".next/static/chunks/4065-0a405708f1782220.js",
+        "bytes": 22323,
+        "MB": 0.022,
+        "MiB": 0.021
+      },
+      {
+        "path": ".next/static/chunks/8429-2da9cea9406570c9.js",
+        "bytes": 22242,
+        "MB": 0.022,
+        "MiB": 0.021
+      },
+      {
+        "path": ".next/static/chunks/4228-4ef20e81baccd690.js",
+        "bytes": 22020,
+        "MB": 0.022,
+        "MiB": 0.021
+      },
+      {
+        "path": ".next/static/chunks/6288-d273f61fb2c1d5c5.js",
+        "bytes": 21910,
+        "MB": 0.022,
+        "MiB": 0.021
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/quiz/[topicId]/doing/page-217d62d988a19040.js",
+        "bytes": 21760,
+        "MB": 0.022,
+        "MiB": 0.021
+      },
+      {
+        "path": ".next/static/chunks/9114.f788add995e78bba.js",
+        "bytes": 21533,
+        "MB": 0.022,
+        "MiB": 0.021
+      },
+      {
+        "path": ".next/server/chunks/9906.js",
+        "bytes": 21498,
+        "MB": 0.021,
+        "MiB": 0.021
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/feedback/page.js",
+        "bytes": 21246,
+        "MB": 0.021,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/onboarding/page-99a622b1b370e68b.js",
+        "bytes": 21119,
+        "MB": 0.021,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/static/chunks/6057-d97fd5db5909b59b.js",
+        "bytes": 21112,
+        "MB": 0.021,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/routes-manifest.json",
+        "bytes": 21035,
+        "MB": 0.021,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-providers/page.js",
+        "bytes": 20768,
+        "MB": 0.021,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/features/page.js",
+        "bytes": 20702,
+        "MB": 0.021,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/plans/page.js",
+        "bytes": 20623,
+        "MB": 0.021,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/quiz/[topicId]/history/[quizResultId]/page-024fcb1638d89313.js",
+        "bytes": 20490,
+        "MB": 0.02,
+        "MiB": 0.02
+      },
+      {
+        "path": ".next/static/chunks/9296-b26d18046e86bda6.js",
+        "bytes": 20188,
+        "MB": 0.02,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/server/chunks/8066.js",
+        "bytes": 19926,
+        "MB": 0.02,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-api-keys/page.js",
+        "bytes": 19878,
+        "MB": 0.02,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/plans/[planId]/features/page-6ca8357b228ee3c4.js",
+        "bytes": 19702,
+        "MB": 0.02,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/auth/changePassword/page-b2319847e2c674e8.js",
+        "bytes": 19701,
+        "MB": 0.02,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/static/chunks/6463-534a007fe2921a8e.js",
+        "bytes": 19549,
+        "MB": 0.02,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/start/page-d99b592498c89eff.js",
+        "bytes": 19505,
+        "MB": 0.02,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/quiz/[topicId]/result/[quizResultId]/page-0f72d7b7ceedfc7a.js",
+        "bytes": 19427,
+        "MB": 0.019,
+        "MiB": 0.019
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-api-key-models/page.js",
+        "bytes": 19379,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/mindmap/[topicId]/page.js",
+        "bytes": 19192,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/static/media/19cfc7226ec3afaa-s.woff2",
+        "bytes": 19044,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/llm-models/page-b62b95eb47043fc3.js",
+        "bytes": 19026,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/server/app/[locale]/activities/join/[activityId]/page.js",
+        "bytes": 18914,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/static/chunks/2362-919e963899fe47cb.js",
+        "bytes": 18912,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/static/media/21350d82a1f187e9-s.woff2",
+        "bytes": 18744,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/static/chunks/b67b1b8a-0e4be9b849fe6a77.js",
+        "bytes": 18712,
+        "MB": 0.019,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/teacher-requests/pending/page.js",
+        "bytes": 18374,
+        "MB": 0.018,
+        "MiB": 0.018
+      },
+      {
+        "path": ".next/static/chunks/4561-fe9891732f52c957.js",
+        "bytes": 18196,
+        "MB": 0.018,
+        "MiB": 0.017
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/page.js",
+        "bytes": 18147,
+        "MB": 0.018,
+        "MiB": 0.017
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/features/page-11a53f9d53722502.js",
+        "bytes": 17993,
+        "MB": 0.018,
+        "MiB": 0.017
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/plans/page-35de61f614567e47.js",
+        "bytes": 17967,
+        "MB": 0.018,
+        "MiB": 0.017
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/start/page.js",
+        "bytes": 17842,
+        "MB": 0.018,
+        "MiB": 0.017
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/doing/page.js",
+        "bytes": 17550,
+        "MB": 0.018,
+        "MiB": 0.017
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/stats/page.js",
+        "bytes": 17462,
+        "MB": 0.017,
+        "MiB": 0.017
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/teacher-requests/page.js",
+        "bytes": 17297,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/activities/join/[activityId]/page-a0e4c676b8bc1924.js",
+        "bytes": 17260,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/static/chunks/8926-d090791d56b83a8c.js",
+        "bytes": 17158,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/teacher-requests/pending/page-5be4ae27609d383a.js",
+        "bytes": 17158,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/server/app/[locale]/games/memory-match/page.js",
+        "bytes": 17050,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/static/chunks/1097-b375b599efde2329.js",
+        "bytes": 16782,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/server/chunks/8943.js",
+        "bytes": 16718,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/home/page.js",
+        "bytes": 16569,
+        "MB": 0.017,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/llm-providers/page-13fe259e790e3e3f.js",
+        "bytes": 16330,
+        "MB": 0.016,
+        "MiB": 0.016
+      },
+      {
+        "path": ".next/server/chunks/5933.js",
+        "bytes": 16213,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/stats/page-580ab13840be9988.js",
+        "bytes": 16139,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/7247-d01ef63ff57f57ca.js",
+        "bytes": 16040,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/8980-6d355f733032b313.js",
+        "bytes": 15930,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/83-deaea02b3edd3f08.js",
+        "bytes": 15925,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/mindmap/[topicId]/layout-c8757ea834b45ab8.js",
+        "bytes": 15636,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/mindmap/view/[topicId]/layout-154f0847ec4b426c.js",
+        "bytes": 15636,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/mindmap/[topicId]/layout-0ecc73c31c7a32ab.js",
+        "bytes": 15636,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/mindmap/[topicId]/layout-00bd8e7a878be81b.js",
+        "bytes": 15636,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/2409-22907e86124d9211.js",
+        "bytes": 15569,
+        "MB": 0.016,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/css/4ec42b956751d983.css",
+        "bytes": 15491,
+        "MB": 0.015,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/feedback/page-8f98c14a8d84ec40.js",
+        "bytes": 15478,
+        "MB": 0.015,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/169-349feee3939e15c1.js",
+        "bytes": 15417,
+        "MB": 0.015,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/server/chunks/4592.js",
+        "bytes": 15288,
+        "MB": 0.015,
+        "MiB": 0.015
+      },
+      {
+        "path": ".next/static/chunks/2833.f1c0cadd54eba5a9.js",
+        "bytes": 15100,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/server/chunks/2548.js",
+        "bytes": 15053,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/server/chunks/8780.js",
+        "bytes": 15042,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/schedule/page-b41214c5dd1511b2.js",
+        "bytes": 15040,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/server/chunks/8017.js",
+        "bytes": 14864,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/static/chunks/1486-c9ecd147b8833401.js",
+        "bytes": 14864,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/server/chunks/1176.js",
+        "bytes": 14672,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/server/app/[locale]/onboarding/page.js",
+        "bytes": 14624,
+        "MB": 0.015,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/add-flashcard/page.js",
+        "bytes": 14434,
+        "MB": 0.014,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/llm-api-key-models/page-978995e66f883987.js",
+        "bytes": 14409,
+        "MB": 0.014,
+        "MiB": 0.014
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/users/[id]/oauth/page.js",
+        "bytes": 14089,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/2913-d8848109d41f94a8.js",
+        "bytes": 14039,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/server/chunks/6742.js",
+        "bytes": 14027,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/llm-api-keys/page-a94ffd1fd2484e7a.js",
+        "bytes": 14027,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": "node_modules/next/dist/server/lib/start-server.js",
+        "bytes": 14009,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/server/app/[locale]/request-teacher/page.js",
+        "bytes": 14004,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/request-teacher/page-22eee1ee007f0402.js",
+        "bytes": 13901,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/2983-610e9c724da30bbf.js",
+        "bytes": 13778,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/3437-a0cbd72b35b9a2b6.js",
+        "bytes": 13741,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/class-quiz/page.js",
+        "bytes": 13715,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/server/chunks/1299.js",
+        "bytes": 13708,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/server/chunks/4443.js",
+        "bytes": 13657,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/761-a5c7ec272ce3713a.js",
+        "bytes": 13624,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/562-1b7cfdd7c0380153.js",
+        "bytes": 13604,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/setting/layout-1f8d0a6056768c4d.js",
+        "bytes": 13521,
+        "MB": 0.014,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/9965-9a0aecad3524ad06.js",
+        "bytes": 13455,
+        "MB": 0.013,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/server/app/[locale]/stats/page.js",
+        "bytes": 13305,
+        "MB": 0.013,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/subscriptions/page-70befffbf7c61014.js",
+        "bytes": 13222,
+        "MB": 0.013,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/server/chunks/9728.js",
+        "bytes": 13123,
+        "MB": 0.013,
+        "MiB": 0.013
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/quiz/local/page-d0211b7eaac409c7.js",
+        "bytes": 12961,
+        "MB": 0.013,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/page-0bfdaa19da9d6e80.js",
+        "bytes": 12885,
+        "MB": 0.013,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/static/chunks/8409-196b90e46bef3659.js",
+        "bytes": 12836,
+        "MB": 0.013,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/generate/page.js",
+        "bytes": 12751,
+        "MB": 0.013,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/auth/forgotPassword/page-696d002fdcf60ad4.js",
+        "bytes": 12689,
+        "MB": 0.013,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/history/page.js",
+        "bytes": 12678,
+        "MB": 0.013,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/games/memory-match/page-c4dfb70fa5ec15e7.js",
+        "bytes": 12539,
+        "MB": 0.013,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/static/chunks/app/layout-3cdf5388a52831d9.js",
+        "bytes": 12355,
+        "MB": 0.012,
+        "MiB": 0.012
+      },
+      {
+        "path": "node_modules/next/dist/server/next.js",
+        "bytes": 12259,
+        "MB": 0.012,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/server/app/[locale]/generate/page.js",
+        "bytes": 12227,
+        "MB": 0.012,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/history/page.js",
+        "bytes": 12146,
+        "MB": 0.012,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/request-teacher/reapply/page-76bad5af87166b87.js",
+        "bytes": 12121,
+        "MB": 0.012,
+        "MiB": 0.012
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/[topicId]/page.js",
+        "bytes": 12046,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/history/[quizResultId]/page.js",
+        "bytes": 11998,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/learning-material/[learningMaterialId]/details/page-0d2758c5d05c0e99.js",
+        "bytes": 11988,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/5258-14123e551f26f643.js",
+        "bytes": 11899,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerYouTube.aff8cabe9334c07b.js",
+        "bytes": 11878,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/login/page.js",
+        "bytes": 11792,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/4893-064e17b02a1c16b9.js",
+        "bytes": 11768,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/history/page-05c72e0496d3ef1d.js",
+        "bytes": 11745,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/home/page-0596b57fd868218e.js",
+        "bytes": 11708,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/payments/page.js",
+        "bytes": 11643,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/2146-5ea7e79c97b01b43.js",
+        "bytes": 11616,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/details/page.js",
+        "bytes": 11527,
+        "MB": 0.012,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/1754-d18123fe1f9437e9.js",
+        "bytes": 11353,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/2564-4a05748c9b1ece2d.js",
+        "bytes": 11347,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/325-a637cc3eed852835.js",
+        "bytes": 11314,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/media/c5fe6dc8356a8c31-s.woff2",
+        "bytes": 11272,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/7676-2c62decec1f4b299.js",
+        "bytes": 11249,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/mindmap/[topicId]/page-9b35442f54d02f18.js",
+        "bytes": 11155,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerYouTube.js",
+        "bytes": 11055,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/static/chunks/8589-fc3bf733be2a65d5.js",
+        "bytes": 11028,
+        "MB": 0.011,
+        "MiB": 0.011
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/register/page.js",
+        "bytes": 11006,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/result/[quizResultId]/page.js",
+        "bytes": 10920,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/592-628e02d6020374a8.js",
+        "bytes": 10778,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/6775-78442731872e9404.js",
+        "bytes": 10758,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/4389-f71a72d4b13820b2.js",
+        "bytes": 10736,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/server/chunks/9846.js",
+        "bytes": 10634,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/submit/page.js",
+        "bytes": 10612,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/4560-7270007fb2bb557f.js",
+        "bytes": 10578,
+        "MB": 0.011,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/2516-7e76f7821abe41e0.js",
+        "bytes": 10489,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/subscriptions/list/page.js",
+        "bytes": 10459,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/media/df0a9ae256c0569c-s.p.woff2",
+        "bytes": 10280,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/224-2c674735beb150b6.js",
+        "bytes": 10222,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/edit/page.js",
+        "bytes": 10219,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/submit/page-2e60ff9941d7717c.js",
+        "bytes": 10187,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/local/page.js",
+        "bytes": 10139,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/payments/page-9caaa3f55a91cffb.js",
+        "bytes": 10072,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/8088-be35c9232289b63b.js",
+        "bytes": 9999,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/stats/page-13413be712e796f4.js",
+        "bytes": 9999,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": "node_modules/next/package.json",
+        "bytes": 9992,
+        "MB": 0.01,
+        "MiB": 0.01
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/details/page-de25ef184cab593c.js",
+        "bytes": 9948,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/85-5b59f1a51a7f80f8.js",
+        "bytes": 9780,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/chunks/5154.js",
+        "bytes": 9770,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/teacher-requests/page-5e741eca7839c6e0.js",
+        "bytes": 9730,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/server-reference-manifest.js",
+        "bytes": 9693,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerWistia.b1db5717f1cc0977.js",
+        "bytes": 9634,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/5480-055a43c2319004a9.js",
+        "bytes": 9631,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/page.js",
+        "bytes": 9605,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/9472-d0fcc4d8c7bdb3d2.js",
+        "bytes": 9579,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/9656-ee643b2bf8550334.js",
+        "bytes": 9506,
+        "MB": 0.01,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/auth/verifyEmail/page-4d31791b9104a3fd.js",
+        "bytes": 9433,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/5420-0ff2da78e48ed96e.js",
+        "bytes": 9418,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/chunks/2475.js",
+        "bytes": 9411,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/8020.ab2bd643c22f32bc.js",
+        "bytes": 9363,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/edit/page.js",
+        "bytes": 9361,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/learning-material/[learningMaterialId]/details/page.js",
+        "bytes": 9268,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/5005-caae4c43746d79c7.js",
+        "bytes": 9204,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/1093-fc6aa925c6391662.js",
+        "bytes": 9155,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/5963-307dd437a60e690a.js",
+        "bytes": 9155,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/chunks/570.js",
+        "bytes": 9114,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/577-7644e1eb700f59c2.js",
+        "bytes": 9049,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/7046-7867376631d1da4c.js",
+        "bytes": 9049,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/9780-04a390af9f2b5537.js",
+        "bytes": 9043,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/quiz/layout-867ec48eaa4c805a.js",
+        "bytes": 9003,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/server-reference-manifest.json",
+        "bytes": 8976,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/users/page.js",
+        "bytes": 8976,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/chunks/4945-8a39fa70bf68ed40.js",
+        "bytes": 8976,
+        "MB": 0.009,
+        "MiB": 0.009
+      },
+      {
+        "path": ".next/static/css/1e6986ebae150f02.css",
+        "bytes": 8911,
+        "MB": 0.009,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerTwitch.1c95b5823d53b928.js",
+        "bytes": 8846,
+        "MB": 0.009,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/1162-06e275372f23ef16.js",
+        "bytes": 8812,
+        "MB": 0.009,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerWistia.js",
+        "bytes": 8810,
+        "MB": 0.009,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/pages/_error.js",
+        "bytes": 8667,
+        "MB": 0.009,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/5563-8ba78efcf49d2915.js",
+        "bytes": 8664,
+        "MB": 0.009,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/changePassword/page.js",
+        "bytes": 8540,
+        "MB": 0.009,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/1453-e6ab34b5c95bce7b.js",
+        "bytes": 8464,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/1781-d99d6c20faa6ee2e.js",
+        "bytes": 8390,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/[locale]/question/edit/[topicId]/page.js",
+        "bytes": 8330,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/mindmap/add-flashcard/page-19e46e3d71d44066.js",
+        "bytes": 8327,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/[locale]/schedule/page.js",
+        "bytes": 8292,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/page.js",
+        "bytes": 8266,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/users/page-10cd0724747c5665.js",
+        "bytes": 8255,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/chunks/7649.js",
+        "bytes": 8230,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/forgotPassword/page.js",
+        "bytes": 8158,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/chunks/7178.js",
+        "bytes": 8148,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/6490-b901e6d4a70d55f7.js",
+        "bytes": 8133,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerTwitch.js",
+        "bytes": 8111,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/page-a9645be6f846ac69.js",
+        "bytes": 8101,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app-paths-manifest.json",
+        "bytes": 8082,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/_not-found.html",
+        "bytes": 8006,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/pages/404.html",
+        "bytes": 8006,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/[locale]/request-teacher/reapply/page.js",
+        "bytes": 7894,
+        "MB": 0.008,
+        "MiB": 0.008
+      },
+      {
+        "path": ".next/server/app/[locale]/topics/[topicId]/(topic)/page.js",
+        "bytes": 7842,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerSpotify.2ae9cffbde6d18a7.js",
+        "bytes": 7842,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/5525-453315097d732b4e.js",
+        "bytes": 7822,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/6733-c1df780436c9c424.js",
+        "bytes": 7795,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/users/[id]/oauth/page-b3681f5fcc7f1935.js",
+        "bytes": 7775,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/8150-0be1d5bfeba412db.js",
+        "bytes": 7764,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/chunks/9300.js",
+        "bytes": 7653,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/2218-44a3a6afac2a93ef.js",
+        "bytes": 7560,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/7723-da411c40d749cdbe.js",
+        "bytes": 7551,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/page.js",
+        "bytes": 7533,
+        "MB": 0.008,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/404-35f3ebf1bfeb2c42.js",
+        "bytes": 7492,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/6371-3673769539ee5af6.js",
+        "bytes": 7464,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/generate/page-4ad3ed11df534d22.js",
+        "bytes": 7440,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/subscriptions/list/page-05b06a20329252b6.js",
+        "bytes": 7430,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/mindmap/[topicId]/page.js",
+        "bytes": 7429,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/admin/page-27b390dbeb43a60e.js",
+        "bytes": 7322,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerTiktok.2ec800404b9ccad6.js",
+        "bytes": 7316,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/9709-729dbcd62ff43e69.js",
+        "bytes": 7294,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/7485-ef59f15a8ef9608f.js",
+        "bytes": 7267,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/app/[locale]/setting/profile/page.js",
+        "bytes": 7174,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/3341-6028824dd9c848d5.js",
+        "bytes": 7123,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/react-loadable-manifest.json",
+        "bytes": 7109,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/generate/page-da3d0431a3721451.js",
+        "bytes": 7030,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerSpotify.js",
+        "bytes": 7019,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/app/[locale]/page.js",
+        "bytes": 7002,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/view/[topicId]/page.js",
+        "bytes": 6969,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/6253-f7fbb0e05470a658.js",
+        "bytes": 6932,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/webpack-52f849548374b15e.js",
+        "bytes": 6923,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerHls.316097f742a3ab6e.js",
+        "bytes": 6896,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/mindmap/view/[topicId]/page-49f3672905a486b6.js",
+        "bytes": 6869,
+        "MB": 0.007,
+        "MiB": 0.007
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/page.js",
+        "bytes": 6803,
+        "MB": 0.007,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/app-path-routes-manifest.json",
+        "bytes": 6782,
+        "MB": 0.007,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/438-9577cfbe4ded1f5b.js",
+        "bytes": 6756,
+        "MB": 0.007,
+        "MiB": 0.006
+      },
+      {
+        "path": "package.json",
+        "bytes": 6561,
+        "MB": 0.007,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/1430-816dbe7aef70cf0c.js",
+        "bytes": 6546,
+        "MB": 0.007,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerTiktok.js",
+        "bytes": 6493,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/middleware-react-loadable-manifest.js",
+        "bytes": 6357,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/7614.js",
+        "bytes": 6323,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/8839.js",
+        "bytes": 6203,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/2912.js",
+        "bytes": 6138,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/7274.js",
+        "bytes": 6084,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/2875-695e152b67457e05.js",
+        "bytes": 6079,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/164.js",
+        "bytes": 6077,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerHls.js",
+        "bytes": 6073,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/app/not-found-85b8fc2e546b2b73.js",
+        "bytes": 6063,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/4706.js",
+        "bytes": 6058,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/3340.352c136db24efc81.js",
+        "bytes": 5999,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/edit/page-15049bf46cc093d2.js",
+        "bytes": 5953,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/page-e73964a7165fce02.js",
+        "bytes": 5920,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/server/chunks/2993.js",
+        "bytes": 5894,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/610-6e612b5c632e5efa.js",
+        "bytes": 5891,
+        "MB": 0.006,
+        "MiB": 0.006
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerDash.b2b6f9fc29b893e6.js",
+        "bytes": 5641,
+        "MB": 0.006,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/topics/[topicId]/page.js",
+        "bytes": 5413,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/auth/register/page-2a4633bc5affa8fc.js",
+        "bytes": 5354,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/required-server-files.json",
+        "bytes": 5064,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": "server.js",
+        "bytes": 4985,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/edit/page-04aa663f2944465f.js",
+        "bytes": 4936,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/verifyEmail/page.js",
+        "bytes": 4833,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerDash.js",
+        "bytes": 4816,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/server/chunks/9256.js",
+        "bytes": 4812,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/nodes/[id]/flashcard/page.js",
+        "bytes": 4801,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/question/edit/[topicId]/page-64854ed17641f2c1.js",
+        "bytes": 4752,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/changePasswordEmailSent/page.js",
+        "bytes": 4744,
+        "MB": 0.005,
+        "MiB": 0.005
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/auth/changePasswordEmailSent/page-2c464bd46add9b59.js",
+        "bytes": 4684,
+        "MB": 0.005,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/topics/[topicId]/(topic)/page-b0bb0992204c3cc8.js",
+        "bytes": 4663,
+        "MB": 0.005,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/topics/[topicId]/page.js.nft.json",
+        "bytes": 4631,
+        "MB": 0.005,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/static/chunks/5230-9d041c351ebdde35.js",
+        "bytes": 4601,
+        "MB": 0.005,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/auth/login/page-5bd07e64fcc145b3.js",
+        "bytes": 4477,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/topics/[topicId]/page.js",
+        "bytes": 4442,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/chunks/2387.js",
+        "bytes": 4438,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/_not-found/page.js",
+        "bytes": 4363,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/entrypoints.js",
+        "bytes": 4344,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/entrypoints.js",
+        "bytes": 4344,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/topics/[topicId]/page.js.nft.json",
+        "bytes": 4280,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/assignments/page-168c68b82610e916.js",
+        "bytes": 4262,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/chunks/1851.js",
+        "bytes": 4221,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/chunks/1392.js",
+        "bytes": 4194,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/chunks/1456.js",
+        "bytes": 4167,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/chunks/1581.js",
+        "bytes": 4003,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/static/css/5732f053655388f9.css",
+        "bytes": 4002,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/topics/[topicId]/(topic)/page.js.nft.json",
+        "bytes": 3929,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/about/page.js",
+        "bytes": 3921,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/testBackEnd/page.js",
+        "bytes": 3865,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/nodes/[id]/page.js",
+        "bytes": 3858,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/chunks/9473.js",
+        "bytes": 3763,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/chunks/8643.js",
+        "bytes": 3678,
+        "MB": 0.004,
+        "MiB": 0.004
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/mindmap/[topicId]/page.js.nft.json",
+        "bytes": 3559,
+        "MB": 0.004,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/details/page.js.nft.json",
+        "bytes": 3465,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/[assignmentId]/edit/page.js.nft.json",
+        "bytes": 3465,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/details/page.js.nft.json",
+        "bytes": 3465,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/edit/page.js.nft.json",
+        "bytes": 3465,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/static/chunks/9332-04e3c3dad1087361.js",
+        "bytes": 3462,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/profile/page.js",
+        "bytes": 3451,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/tests/class/comment/page.js",
+        "bytes": 3428,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/learning-material/page-f3663b8841c6e69f.js",
+        "bytes": 3424,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/static/chunks/7516-ded6f4f6e31e1c5f.js",
+        "bytes": 3377,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/class-quiz/[classQuizId]/edit/page.js.nft.json",
+        "bytes": 3343,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/static/chunks/app/loading-7a3b9a58e7cd1253.js",
+        "bytes": 3338,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/blogs/page.js",
+        "bytes": 3331,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/chunks/4810.js",
+        "bytes": 3316,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/chunks/5410.js",
+        "bytes": 3315,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/pages/_app.js",
+        "bytes": 3307,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/mindmap/[topicId]/page.js.nft.json",
+        "bytes": 3248,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/assignments/[assignmentId]/details/page.js.nft.json",
+        "bytes": 3216,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/activities/[activityId]/page.js.nft.json",
+        "bytes": 3179,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/learning-material/[learningMaterialId]/details/page.js.nft.json",
+        "bytes": 3178,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": "node_modules/next/dist/compiled/jest-worker/threadChild.js",
+        "bytes": 3174,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": "node_modules/styled-jsx/package.json",
+        "bytes": 3142,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/start/page.js.nft.json",
+        "bytes": 3103,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/history/page.js.nft.json",
+        "bytes": 3065,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/class-quiz/[classQuizId]/submit/page.js.nft.json",
+        "bytes": 3065,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/[learningMaterialId]/page.js.nft.json",
+        "bytes": 3065,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/static/chunks/9846-2cbfd0bf69e0c290.js",
+        "bytes": 3065,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/chunks/7033.js",
+        "bytes": 3007,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/view/[topicId]/page.js.nft.json",
+        "bytes": 2975,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/assignments/page.js.nft.json",
+        "bytes": 2967,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/learning-material/page.js.nft.json",
+        "bytes": 2967,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": "public/llms.txt",
+        "bytes": 2900,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/plans/[planId]/features/page.js.nft.json",
+        "bytes": 2898,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/history/[quizResultId]/page.js.nft.json",
+        "bytes": 2898,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/result/[quizResultId]/page.js.nft.json",
+        "bytes": 2898,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/students/page.js.nft.json",
+        "bytes": 2898,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": "node_modules/next/dist/compiled/jest-worker/processChild.js",
+        "bytes": 2879,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/page.js.nft.json",
+        "bytes": 2876,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/users/[id]/oauth/page.js.nft.json",
+        "bytes": 2863,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/nodes/[id]/flashcard/page.js.nft.json",
+        "bytes": 2828,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/class-quiz/page.js.nft.json",
+        "bytes": 2828,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/class-based/[id]/generate/page.js.nft.json",
+        "bytes": 2828,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/topics/[topicId]/settings/anki/page.js.nft.json",
+        "bytes": 2828,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/mindmap/[topicId]/page-351de4e8fdb5733b.js",
+        "bytes": 2806,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/[topicId]/page.js.nft.json",
+        "bytes": 2789,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": "node_modules/next/dist/server/require-hook.js",
+        "bytes": 2787,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/chunks/6872.js",
+        "bytes": 2758,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/question/edit/[topicId]/page.js.nft.json",
+        "bytes": 2751,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/_not-found.rsc",
+        "bytes": 2691,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/subscriptions/list/page.js.nft.json",
+        "bytes": 2655,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/doing/page.js.nft.json",
+        "bytes": 2655,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/[topicId]/history/page.js.nft.json",
+        "bytes": 2655,
+        "MB": 0.003,
+        "MiB": 0.003
+      },
+      {
+        "path": ".next/server/chunks/7471.js",
+        "bytes": 2610,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/activities/join/[activityId]/page.js.nft.json",
+        "bytes": 2591,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/teacher-requests/pending/page.js.nft.json",
+        "bytes": 2591,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/nodes/[id]/page.js.nft.json",
+        "bytes": 2591,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/tests/class/comment/page.js.nft.json",
+        "bytes": 2591,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/auth/testBackEnd/page-a67c43b329285483.js",
+        "bytes": 2586,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/[id]/page.js.nft.json",
+        "bytes": 2555,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/5756.js",
+        "bytes": 2528,
+        "MB": 0.003,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-api-keys/page.js.nft.json",
+        "bytes": 2441,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-models/page.js.nft.json",
+        "bytes": 2441,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-providers/page.js.nft.json",
+        "bytes": 2441,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/feynman/[topicId]/page.js.nft.json",
+        "bytes": 2441,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/5211.js",
+        "bytes": 2419,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/features/page.js.nft.json",
+        "bytes": 2412,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/feedback/page.js.nft.json",
+        "bytes": 2412,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/llm-api-key-models/page.js.nft.json",
+        "bytes": 2412,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/payments/page.js.nft.json",
+        "bytes": 2412,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/plans/page.js.nft.json",
+        "bytes": 2412,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/users/page.js.nft.json",
+        "bytes": 2412,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/games/memory-match/page.js.nft.json",
+        "bytes": 2412,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/revenue/page.js.nft.json",
+        "bytes": 2411,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/stats/page.js.nft.json",
+        "bytes": 2383,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/login/page.js.nft.json",
+        "bytes": 2383,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/register/page.js.nft.json",
+        "bytes": 2383,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/verifyEmail/page.js.nft.json",
+        "bytes": 2383,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/games/brain-chase/page.js.nft.json",
+        "bytes": 2383,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/quiz/local/page.js.nft.json",
+        "bytes": 2383,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/setting/profile/page.js.nft.json",
+        "bytes": 2383,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/teacher/home/page.js.nft.json",
+        "bytes": 2382,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/subscriptions/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/teacher-requests/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/changePassword/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/changePasswordEmailSent/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/forgotPassword/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/auth/testBackEnd/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/mindmap/add-flashcard/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/request-teacher/reapply/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/setting/schedule-setup/page.js.nft.json",
+        "bytes": 2354,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/progress/page.js.nft.json",
+        "bytes": 2270,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/home/page.js.nft.json",
+        "bytes": 2195,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/schedule/page.js.nft.json",
+        "bytes": 2195,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/893.js",
+        "bytes": 2173,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/admin/page.js.nft.json",
+        "bytes": 2143,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/onboarding/page.js.nft.json",
+        "bytes": 2143,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/payment/page.js.nft.json",
+        "bytes": 2143,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/profile/page.js.nft.json",
+        "bytes": 2143,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/stats/page.js.nft.json",
+        "bytes": 2143,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/welcome/page.js.nft.json",
+        "bytes": 2143,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/class-based/page.js.nft.json",
+        "bytes": 2142,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/about/page.js.nft.json",
+        "bytes": 2117,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/blogs/page.js.nft.json",
+        "bytes": 2117,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/generate/page.js.nft.json",
+        "bytes": 2117,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/request-teacher/page.js.nft.json",
+        "bytes": 2117,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/about/page-c5aba71a737fa832.js",
+        "bytes": 2103,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/mindmap/nodes/[id]/flashcard/page-addba6d234aee94b.js",
+        "bytes": 2085,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/9060.js",
+        "bytes": 2034,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/5871.js",
+        "bytes": 1999,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/pages/500.html",
+        "bytes": 1995,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/4043.js",
+        "bytes": 1989,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/4334.js",
+        "bytes": 1982,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/3901.js",
+        "bytes": 1916,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/app/[locale]/page.js.nft.json",
+        "bytes": 1880,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/webpack-runtime.js",
+        "bytes": 1752,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/static/chunks/reactPlayerPreview.919bcc562123d414.js",
+        "bytes": 1599,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/3265.js",
+        "bytes": 1598,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/static/chunks/app/global-error-519f384d593dc0de.js",
+        "bytes": 1591,
+        "MB": 0.002,
+        "MiB": 0.002
+      },
+      {
+        "path": ".next/server/chunks/reactPlayerPreview.js",
+        "bytes": 1565,
+        "MB": 0.002,
+        "MiB": 0.001
+      },
+      {
+        "path": "node_modules/next/dist/pages/_app.js",
+        "bytes": 1554,
+        "MB": 0.002,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/1729.js",
+        "bytes": 1552,
+        "MB": 0.002,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/6327.js",
+        "bytes": 1500,
+        "MB": 0.002,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/edge-runtime-webpack.js",
+        "bytes": 1423,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/9893.js",
+        "bytes": 1388,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/css/406081a0175c0c53.css",
+        "bytes": 1340,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/css/dfd67d3590d17d26.css",
+        "bytes": 1324,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/layout-d5791dcecca73f5f.js",
+        "bytes": 1265,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/2339.js",
+        "bytes": 1260,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/7802.js",
+        "bytes": 1255,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/2102.js",
+        "bytes": 1189,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/3534.js",
+        "bytes": 1158,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/module.compiled.js",
+        "bytes": 1151,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/62.js",
+        "bytes": 1120,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/9656.js",
+        "bytes": 1085,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/7787.js",
+        "bytes": 1025,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/middleware-manifest.json",
+        "bytes": 1010,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/9057.js",
+        "bytes": 1010,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/8132.js",
+        "bytes": 977,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/build-manifest.json",
+        "bytes": 969,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/class-based/[id]/topics/[topicId]/page-beb10ec8974e94af.js",
+        "bytes": 923,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/topics/[topicId]/page-6018c7a2afcc1da0.js",
+        "bytes": 921,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/8576.js",
+        "bytes": 901,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/middleware-build-manifest.js",
+        "bytes": 889,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/mindmap/nodes/[id]/page-d6bbab7194eb84d5.js",
+        "bytes": 874,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/progress/layout-1b0eac162ceb24ad.js",
+        "bytes": 856,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/2111.js",
+        "bytes": 849,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/522.js",
+        "bytes": 838,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/1219.js",
+        "bytes": 808,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/setting/profile/page-8b4317c7b1fca371.js",
+        "bytes": 759,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/students/layout-eaa761e38131cbe7.js",
+        "bytes": 759,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/prerender-manifest.json",
+        "bytes": 741,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/1207.js",
+        "bytes": 719,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/69.js",
+        "bytes": 664,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/3220.js",
+        "bytes": 649,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/3202.js",
+        "bytes": 642,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/8663.js",
+        "bytes": 609,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/4336.js",
+        "bytes": 599,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/module.compiled.js",
+        "bytes": 583,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/7337.js",
+        "bytes": 580,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/server/chunks/9825.js",
+        "bytes": 579,
+        "MB": 0.001,
+        "MiB": 0.001
+      },
+      {
+        "path": ".next/static/chunks/main-app-c1f962eeac7804d6.js",
+        "bytes": 474,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/generate/layout-f638d57707b1904a.js",
+        "bytes": 448,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/class-based/[id]/generate/layout-618c8334939a4b6e.js",
+        "bytes": 448,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/2055.js",
+        "bytes": 445,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/home/layout-ba83f8fdf1a94d8b.js",
+        "bytes": 427,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/1274.js",
+        "bytes": 422,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/teacher/home/layout-ac4bddfe83db26b7.js",
+        "bytes": 418,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/3546.js",
+        "bytes": 416,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/7857.js",
+        "bytes": 416,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/9821.js",
+        "bytes": 415,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/games/brain-chase/layout-43b8f7ae4e4f50a8.js",
+        "bytes": 402,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/games/memory-match/layout-66d711be091ac2a3.js",
+        "bytes": 400,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/5680.js",
+        "bytes": 391,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/7387.js",
+        "bytes": 390,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/pages/_document.js",
+        "bytes": 385,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/6079.js",
+        "bytes": 361,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/9639.js",
+        "bytes": 359,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/5671.js",
+        "bytes": 335,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/7962.js",
+        "bytes": 321,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/3813.js",
+        "bytes": 319,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/447.js",
+        "bytes": 316,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/4662.js",
+        "bytes": 310,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/1016.js",
+        "bytes": 308,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/2031.js",
+        "bytes": 306,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/MUXfRkeX9Od8cS85GkX68/_buildManifest.js",
+        "bytes": 299,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/pages/_app-a0f247aad33b96fc.js",
+        "bytes": 286,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/846.js",
+        "bytes": 285,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/profile/page-d37fd24311e2d88e.js",
+        "bytes": 278,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/5170.js",
+        "bytes": 260,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/pages/_error-93196f33f3860251.js",
+        "bytes": 253,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/app/_not-found/page.js.nft.json",
+        "bytes": 233,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/2222.js",
+        "bytes": 222,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/app/icon.png.meta",
+        "bytes": 214,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/977.js",
+        "bytes": 211,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/4330.js",
+        "bytes": 203,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/pages/_document.js.nft.json",
+        "bytes": 193,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/chunks/9503.js",
+        "bytes": 191,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/blogs/page-fec53979016b9791.js",
+        "bytes": 186,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/feynman/[topicId]/layout-fd17d73530810249.js",
+        "bytes": 186,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/tests/class/comment/page-63d60ef8b422008a.js",
+        "bytes": 186,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/[locale]/welcome/layout-829bbf8d09347a18.js",
+        "bytes": 186,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/app/_not-found/page-9d50e12de9232b09.js",
+        "bytes": 186,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/pages/_app.js.nft.json",
+        "bytes": 168,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/head-manager-context.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/hooks-client-context.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/image-config-context.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/server-inserted-html.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/head-manager-context.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/hooks-client-context.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/image-config-context.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/server-inserted-html.js",
+        "bytes": 154,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/app/icon.png/route.js.nft.json",
+        "bytes": 151,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/app-router-context.js",
+        "bytes": 150,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/app-router-context.js",
+        "bytes": 150,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/loadable-context.js",
+        "bytes": 147,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/loadable-context.js",
+        "bytes": 147,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/router-context.js",
+        "bytes": 143,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/router-context.js",
+        "bytes": 143,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/app/_not-found.meta",
+        "bytes": 142,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/html-context.js",
+        "bytes": 139,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/html-context.js",
+        "bytes": 139,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/amp-context.js",
+        "bytes": 137,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/amp-context.js",
+        "bytes": 137,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/app-page/vendored/contexts/loadable.js",
+        "bytes": 132,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/loadable.js",
+        "bytes": 132,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/pages/_error.js.nft.json",
+        "bytes": 112,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/pages-manifest.json",
+        "bytes": 111,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/next-font-manifest.js",
+        "bytes": 106,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/chunks/1357.8de1d44db356d316.js",
+        "bytes": 105,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/static/MUXfRkeX9Od8cS85GkX68/_ssgManifest.js",
+        "bytes": 80,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/next-font-manifest.json",
+        "bytes": 77,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/styled-jsx/style.js",
+        "bytes": 47,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": "node_modules/styled-jsx/index.js",
+        "bytes": 41,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/BUILD_ID",
+        "bytes": 21,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/package.json",
+        "bytes": 20,
+        "MB": 0.0,
+        "MiB": 0.0
+      },
+      {
+        "path": ".next/server/font-manifest.json",
+        "bytes": 2,
+        "MB": 0.0,
+        "MiB": 0.0
+      }
+    ]
+  }
+}

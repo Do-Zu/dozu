@@ -1,0 +1,121 @@
+[
+  {
+    "check": "jest-subscript.middleware",
+    "command": [
+      "node",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--runTestsByPath",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\src\\middleware\\subscription\\__test__\\subscript.middleware.test.ts",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 1,
+    "seconds": 10.17,
+    "log": "baselines/jest-subscript.middleware.log"
+  },
+  {
+    "check": "jest-classTopicComment.service",
+    "command": [
+      "node",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--runTestsByPath",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\src\\services\\class-based-learning\\__test__\\classTopicComment.service.test.ts",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 0,
+    "seconds": 19.84,
+    "log": "baselines/jest-classTopicComment.service.log"
+  },
+  {
+    "check": "jest-package.controller",
+    "command": [
+      "node",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--runTestsByPath",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\src\\services\\package\\__test__\\package\\package.controller.test.ts",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 0,
+    "seconds": 20.55,
+    "log": "baselines/jest-package.controller.log"
+  },
+  {
+    "check": "jest-schedule.integration",
+    "command": [
+      "node",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--runTestsByPath",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\src\\services\\schedule\\__tests__\\schedule.integration.test.ts",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 1,
+    "seconds": 13.69,
+    "log": "baselines/jest-schedule.integration.log"
+  },
+  {
+    "check": "jest-schedule.service",
+    "command": [
+      "node",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--runTestsByPath",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\src\\services\\schedule\\__tests__\\schedule.service.test.ts",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 1,
+    "seconds": 14.98,
+    "log": "baselines/jest-schedule.service.log"
+  },
+  {
+    "check": "jest-anki",
+    "command": [
+      "node",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--runTestsByPath",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\src\\services\\spaced-repetition-system\\super-memo-2\\anki.test.ts",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 1,
+    "seconds": 12.86,
+    "log": "baselines/jest-anki.log"
+  },
+  {
+    "check": "jest-upload.file.R2.service",
+    "command": [
+      "node",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\node_modules\\jest\\bin\\jest.js",
+      "--runInBand",
+      "--forceExit",
+      "--runTestsByPath",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\dozu-api-service\\src\\services\\uploads\\files\\__test__\\upload.file.R2.service.test.ts",
+      "--cacheDirectory",
+      "D:\\product\\dozu\\planning\\audit\\.runs\\jest-cache"
+    ],
+    "cwd": "planning\\audit\\.runs\\dozu-api-service",
+    "exitCode": 0,
+    "seconds": 20.92,
+    "log": "baselines/jest-upload.file.R2.service.log"
+  }
+]

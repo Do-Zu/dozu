@@ -1,0 +1,6 @@
+{
+  "method": "Exact executable/worker-script match plus creation-date verification before stop; no unrelated process stopped. No application/data directories deleted.",
+  "utc": "2026-11-10T14:42:15.1512605Z",
+  "remainingOwnedProcessCount": 0,
+  "stopped": []
+}

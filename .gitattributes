@@ -1,0 +1,3 @@
+# Preserve exact imported source and evidence bytes across checkouts.
+# Provenance manifests record SHA256 values, including original line endings.
+* -text

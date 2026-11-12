@@ -1,0 +1,22 @@
+{
+  "method": "Concatenate model snapshot files in lexical relative-path order into one XZ/LZMA2 preset-6 stream; output counted/hashed and discarded. No archive filename metadata; not an NSIS installer and not a mathematical lower bound for all compressors.",
+  "modelRevision": "86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+  "files": [
+    "1_Pooling/config.json",
+    "config.json",
+    "config_sentence_transformers.json",
+    "model.safetensors",
+    "modules.json",
+    "README.md",
+    "sentence_bert_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "rawBytes": 479728964,
+  "compressedBytes": 410574192,
+  "compressedMB": 410.574,
+  "compressedMiB": 391.554,
+  "seconds": 205.407,
+  "compressedSha256": "51622b538a6d4af782618952471ede5310c4a40afc6abbed3077dcf6635ded61"
+}

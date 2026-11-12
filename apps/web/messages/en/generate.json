@@ -1,0 +1,146 @@
+{
+    "generate": {
+        "cardImport": {
+            "titles": {
+                "step1": "Import Learning Content",
+                "step2": "Suggested Learning Methods"
+            },
+            "buttons": {
+                "back": "Back",
+                "continue": "Continue",
+                "createContent": "Create Learning Content"
+            },
+            "toasts": {
+                "timeout": "The generation process timed out. Please try again with a smaller file.",
+                "error": "Server  Busy. Please try again.",
+                "success": "Your content has been successfully generated."
+            }
+        },
+        "fileTab": {
+            "ui": {
+                "dragDrop": {
+                    "title": "Drag & drop a file here",
+                    "subtitle": "or click to browse your files",
+                    "supported": "Supports PDF, Word, and text files"
+                }
+            },
+            "loading": {
+                "uploading": {
+                    "title": "Uploading your content...",
+                    "description": "Please wait while we upload the content"
+                },
+                "processing": {
+                    "title": "Processing your content...",
+                    "description": "Please wait while we extract the content"
+                },
+                "converting": {
+                    "title": "Converting",
+                    "description": "Please wait while we converting the format"
+                }
+            },
+            "toasts": {
+                "uploadFailed": "Failed to upload content. Please try again.",
+                "convertFailed": "Convert format failed"
+            },
+            "validations": {
+                "fileRejected": "File rejected. Only {types} files up to {size}MB are allowed."
+            }
+        },
+        "textUrlTab": {
+            "tabs": {
+                "url": "URL Content",
+                "text": "Text"
+            },
+            "input": {
+                "urlPlaceholder": "Enter YouTube URL or website URL (e.g., https://youtube.com/... or https://example.com)",
+                "textPlaceholder": "Paste or type your content here..."
+            },
+            "buttons": {
+                "extract": "Extract Content",
+                "extracting": "Extracting...",
+                "viewDetails": "View Full Details"
+            },
+            "messages": {
+                "tip": "Tip: You can paste text from any source, including websites, documents, or notes.",
+                "ytExtracted": "YouTube transcript extracted successfully"
+            },
+            "headings": {
+                "youtubeTranscript": "YouTube Transcript:",
+                "extractedContent": "Extracted Content:"
+            },
+            "toasts": {
+                "extractionError": "Extraction Error"
+            }
+        },
+        "selectMethod": {
+            "header": {
+                "title": "Content Analysis",
+                "description": "We've analyzed your content and identified the following learning methods that would work best:"
+            },
+            "methods": {
+                "flashcard": "Flashcard",
+                "quiz": "Quiz",
+                "mindmap": "Mind Map"
+            },
+            "descriptions": {
+                "flashcards": "Perfect for memorization and quick review",
+                "quiz": "Great for testing your knowledge",
+                "mindmap": "Visual organization to connect ideas and concepts",
+                "default": "Ideal for detailed study and reference"
+            }
+        },
+        "generatingSkeleton": {
+            "title": "Generating",
+            "subtitle": "Analyzing your content and creating a preview",
+            "file": {
+                "processing": "Processing content..."
+            },
+            "steps": {
+                "extracted": "Content extracted successfully",
+                "creatingVisual": "Creating visual"
+            },
+            "messages": {
+                "analyzing": "Analyzing your content...",
+                "processing": "Processing data...",
+                "building": "Building content...",
+                "reviewing": "Reviewing quality...",
+                "almost": "Almost done, please wait..."
+            },
+            "footer": {
+                "wait": "This may take a few moments"
+            }
+        },
+        "customize": {
+            "title": "Customize",
+            "types": {
+                "label": "Types",
+                "required": "*",
+                "multipleChoice": "Multiple Choice",
+                "freeResponse": "Free Response",
+                "trueOrFalse": "True or False",
+                "fillInTheBlank": "Fill in the blank"
+            },
+            "difficulty": {
+                "label": "Difficulty",
+                "required": "*",
+                "easy": "Easy",
+                "medium": "Medium",
+                "hard": "Hard"
+            },
+            "numberOfItem": {
+                "label": "Number of Item"
+            },
+            "focus": {
+                "label": "What do you want to focus on?",
+                "placeholder": "Focus on the parts that are about..."
+            },
+            "buttons": {
+                "cancel": "Cancel",
+                "generate": "Generate"
+            },
+            "toasts": {
+                "invalidAmount": "Invalid Amount"
+            }
+        }
+    }
+}

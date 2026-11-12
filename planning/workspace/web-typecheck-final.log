@@ -1,0 +1,4 @@
+
+> dozu-ui-service@0.1.0 typecheck D:\product\dozu\apps\web
+> tsc --noEmit
+

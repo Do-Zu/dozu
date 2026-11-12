@@ -1,0 +1,662 @@
+[
+  {
+    "id": "ROADMAP",
+    "number": 1,
+    "url": "https://github.com/Do-Zu/dozu/issues/1",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcrw",
+    "fields": {
+      "Phase": "All",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "XL",
+      "Depends on": "None",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "DECISION-SCOPE",
+    "number": 2,
+    "url": "https://github.com/Do-Zu/dozu/issues/2",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcsg",
+    "fields": {
+      "Phase": "0 Requirements",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "None",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "BASELINE",
+    "number": 3,
+    "url": "https://github.com/Do-Zu/dozu/issues/3",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKctU",
+    "fields": {
+      "Phase": "0 Requirements",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "None",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "DECISION-STACK",
+    "number": 4,
+    "url": "https://github.com/Do-Zu/dozu/issues/4",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcuE",
+    "fields": {
+      "Phase": "0 Requirements",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "XL",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/3\nhttps://github.com/Do-Zu/dozu/issues/2",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "IMPORT",
+    "number": 5,
+    "url": "https://github.com/Do-Zu/dozu/issues/5",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcvI",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/3",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "WORKSPACE",
+    "number": 6,
+    "url": "https://github.com/Do-Zu/dozu/issues/6",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcv8",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/5",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "TOOLCHAINS",
+    "number": 7,
+    "url": "https://github.com/Do-Zu/dozu/issues/7",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcw8",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/6\nhttps://github.com/Do-Zu/dozu/issues/4",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "PYTHON",
+    "number": 8,
+    "url": "https://github.com/Do-Zu/dozu/issues/8",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcx4",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/5\nhttps://github.com/Do-Zu/dozu/issues/38\nhttps://github.com/Do-Zu/dozu/issues/34",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "DEV-INFRA",
+    "number": 9,
+    "url": "https://github.com/Do-Zu/dozu/issues/9",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKcyg",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/7\nhttps://github.com/Do-Zu/dozu/issues/29\nhttps://github.com/Do-Zu/dozu/issues/40\nhttps://github.com/Do-Zu/dozu/issues/8",
+      "Priority": "P2"
+    },
+    "assignees": []
+  },
+  {
+    "id": "CI-DEPLOY",
+    "number": 10,
+    "url": "https://github.com/Do-Zu/dozu/issues/10",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKczI",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/7\nhttps://github.com/Do-Zu/dozu/issues/8\nhttps://github.com/Do-Zu/dozu/issues/40",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "API-CLIENT",
+    "number": 11,
+    "url": "https://github.com/Do-Zu/dozu/issues/11",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc1k",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/6\nhttps://github.com/Do-Zu/dozu/issues/40",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "PLATFORM",
+    "number": 12,
+    "url": "https://github.com/Do-Zu/dozu/issues/12",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc2Y",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/11\nhttps://github.com/Do-Zu/dozu/issues/4\nhttps://github.com/Do-Zu/dozu/issues/34",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "UI-I18N",
+    "number": 13,
+    "url": "https://github.com/Do-Zu/dozu/issues/13",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc3M",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/6\nhttps://github.com/Do-Zu/dozu/issues/32",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "AUTH",
+    "number": 14,
+    "url": "https://github.com/Do-Zu/dozu/issues/14",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc3o",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/40\nhttps://github.com/Do-Zu/dozu/issues/11\nhttps://github.com/Do-Zu/dozu/issues/12\nhttps://github.com/Do-Zu/dozu/issues/31\nhttps://github.com/Do-Zu/dozu/issues/27",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "DESKTOP-SHELL",
+    "number": 15,
+    "url": "https://github.com/Do-Zu/dozu/issues/15",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc4E",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/4\nhttps://github.com/Do-Zu/dozu/issues/13\nhttps://github.com/Do-Zu/dozu/issues/12\nhttps://github.com/Do-Zu/dozu/issues/28",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "FEATURE-SLICE",
+    "number": 16,
+    "url": "https://github.com/Do-Zu/dozu/issues/16",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc4Q",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/15\nhttps://github.com/Do-Zu/dozu/issues/14\nhttps://github.com/Do-Zu/dozu/issues/18",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "MVP-FEATURES",
+    "number": 17,
+    "url": "https://github.com/Do-Zu/dozu/issues/17",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc5M",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "XL",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/16\nhttps://github.com/Do-Zu/dozu/issues/27\nhttps://github.com/Do-Zu/dozu/issues/41\nhttps://github.com/Do-Zu/dozu/issues/42\nhttps://github.com/Do-Zu/dozu/issues/43\nhttps://github.com/Do-Zu/dozu/issues/44",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "FILES",
+    "number": 18,
+    "url": "https://github.com/Do-Zu/dozu/issues/18",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc6A",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/29\nhttps://github.com/Do-Zu/dozu/issues/40\nhttps://github.com/Do-Zu/dozu/issues/34",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "REALTIME",
+    "number": 19,
+    "url": "https://github.com/Do-Zu/dozu/issues/19",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc6g",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/14\nhttps://github.com/Do-Zu/dozu/issues/16\nhttps://github.com/Do-Zu/dozu/issues/30",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "NOTIFICATIONS",
+    "number": 20,
+    "url": "https://github.com/Do-Zu/dozu/issues/20",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc64",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/15\nhttps://github.com/Do-Zu/dozu/issues/30\nhttps://github.com/Do-Zu/dozu/issues/2",
+      "Priority": "P2"
+    },
+    "assignees": []
+  },
+  {
+    "id": "MEDIA",
+    "number": 21,
+    "url": "https://github.com/Do-Zu/dozu/issues/21",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc9E",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/16\nhttps://github.com/Do-Zu/dozu/issues/18\nhttps://github.com/Do-Zu/dozu/issues/27",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "QA",
+    "number": 22,
+    "url": "https://github.com/Do-Zu/dozu/issues/22",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc-E",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "XL",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/17\nhttps://github.com/Do-Zu/dozu/issues/18\nhttps://github.com/Do-Zu/dozu/issues/19\nhttps://github.com/Do-Zu/dozu/issues/21\nhttps://github.com/Do-Zu/dozu/issues/20\nhttps://github.com/Do-Zu/dozu/issues/39\nhttps://github.com/Do-Zu/dozu/issues/37",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "PACKAGING",
+    "number": 23,
+    "url": "https://github.com/Do-Zu/dozu/issues/23",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc_M",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "XL",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/15\nhttps://github.com/Do-Zu/dozu/issues/7\nhttps://github.com/Do-Zu/dozu/issues/38\nhttps://github.com/Do-Zu/dozu/issues/33",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "SIGNING",
+    "number": 24,
+    "url": "https://github.com/Do-Zu/dozu/issues/24",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKc_w",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/23",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "UPDATES",
+    "number": 25,
+    "url": "https://github.com/Do-Zu/dozu/issues/25",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdAk",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/23\nhttps://github.com/Do-Zu/dozu/issues/24\nhttps://github.com/Do-Zu/dozu/issues/35",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "BETA",
+    "number": 26,
+    "url": "https://github.com/Do-Zu/dozu/issues/26",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdBc",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/22\nhttps://github.com/Do-Zu/dozu/issues/24\nhttps://github.com/Do-Zu/dozu/issues/25\nhttps://github.com/Do-Zu/dozu/issues/10\nhttps://github.com/Do-Zu/dozu/issues/36",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "INTEGRATIONS",
+    "number": 27,
+    "url": "https://github.com/Do-Zu/dozu/issues/27",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdCI",
+    "fields": {
+      "Phase": "0 Requirements",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/3\nhttps://github.com/Do-Zu/dozu/issues/2",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "SUPERVISOR",
+    "number": 28,
+    "url": "https://github.com/Do-Zu/dozu/issues/28",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdC4",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/29\nhttps://github.com/Do-Zu/dozu/issues/40\nhttps://github.com/Do-Zu/dozu/issues/8\nhttps://github.com/Do-Zu/dozu/issues/12",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "LOCAL-DB",
+    "number": 29,
+    "url": "https://github.com/Do-Zu/dozu/issues/29",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdDw",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/5\nhttps://github.com/Do-Zu/dozu/issues/34\nhttps://github.com/Do-Zu/dozu/issues/38",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "LOCAL-QUEUE",
+    "number": 30,
+    "url": "https://github.com/Do-Zu/dozu/issues/30",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdEQ",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "XL",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/29\nhttps://github.com/Do-Zu/dozu/issues/3",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "PROVIDER-SECRETS",
+    "number": 31,
+    "url": "https://github.com/Do-Zu/dozu/issues/31",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdGE",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/34\nhttps://github.com/Do-Zu/dozu/issues/27",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "LOCAL-ASSETS",
+    "number": 32,
+    "url": "https://github.com/Do-Zu/dozu/issues/32",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdG0",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/5\nhttps://github.com/Do-Zu/dozu/issues/3",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "FIRST-BOOT",
+    "number": 33,
+    "url": "https://github.com/Do-Zu/dozu/issues/33",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdHc",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/15\nhttps://github.com/Do-Zu/dozu/issues/29\nhttps://github.com/Do-Zu/dozu/issues/40\nhttps://github.com/Do-Zu/dozu/issues/8\nhttps://github.com/Do-Zu/dozu/issues/32",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "DATA-PATHS",
+    "number": 34,
+    "url": "https://github.com/Do-Zu/dozu/issues/34",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdH8",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/4",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "BACKUP",
+    "number": 35,
+    "url": "https://github.com/Do-Zu/dozu/issues/35",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdIg",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/29\nhttps://github.com/Do-Zu/dozu/issues/18\nhttps://github.com/Do-Zu/dozu/issues/34\nhttps://github.com/Do-Zu/dozu/issues/31",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "UNINSTALL",
+    "number": 36,
+    "url": "https://github.com/Do-Zu/dozu/issues/36",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdJM",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/23\nhttps://github.com/Do-Zu/dozu/issues/34\nhttps://github.com/Do-Zu/dozu/issues/31",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "NETWORK-GATE",
+    "number": 37,
+    "url": "https://github.com/Do-Zu/dozu/issues/37",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdJ8",
+    "fields": {
+      "Phase": "4 Release",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/16\nhttps://github.com/Do-Zu/dozu/issues/18\nhttps://github.com/Do-Zu/dozu/issues/44\nhttps://github.com/Do-Zu/dozu/issues/41\nhttps://github.com/Do-Zu/dozu/issues/42\nhttps://github.com/Do-Zu/dozu/issues/43",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "SUPPLY-CHAIN",
+    "number": 38,
+    "url": "https://github.com/Do-Zu/dozu/issues/38",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdKw",
+    "fields": {
+      "Phase": "1 Foundation",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/7",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "LOCAL-WEB",
+    "number": 39,
+    "url": "https://github.com/Do-Zu/dozu/issues/39",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdLg",
+    "fields": {
+      "Phase": "3 Full application",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "M",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/15\nhttps://github.com/Do-Zu/dozu/issues/14\nhttps://github.com/Do-Zu/dozu/issues/11",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "LOCAL-BOOTSTRAP",
+    "number": 40,
+    "url": "https://github.com/Do-Zu/dozu/issues/40",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdMo",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/29\nhttps://github.com/Do-Zu/dozu/issues/30",
+      "Priority": "P0"
+    },
+    "assignees": []
+  },
+  {
+    "id": "PAYMENTS",
+    "number": 41,
+    "url": "https://github.com/Do-Zu/dozu/issues/41",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdOo",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "Payment ownership is undecided: does each user supply their own merchant account, or are customers paying Dozu? The choice determines who can hold merchant secrets and how genuine payment/entitlement verification works. Resolve in #27 before implementation.",
+      "Status": "Block",
+      "Complexity": "XL",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/27\nhttps://github.com/Do-Zu/dozu/issues/31\nhttps://github.com/Do-Zu/dozu/issues/40",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "EMAIL",
+    "number": 42,
+    "url": "https://github.com/Do-Zu/dozu/issues/42",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdO0",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/27\nhttps://github.com/Do-Zu/dozu/issues/31\nhttps://github.com/Do-Zu/dozu/issues/14\nhttps://github.com/Do-Zu/dozu/issues/30",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "CLASSROOM",
+    "number": 43,
+    "url": "https://github.com/Do-Zu/dozu/issues/43",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdPY",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "The participant topology is undecided: same-device browser sessions, LAN clients, or remote internet participants reaching a user-owned host/tunnel. Resolve host ownership, authentication/TLS and availability in #27 before implementation.",
+      "Status": "Block",
+      "Complexity": "XL",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/27\nhttps://github.com/Do-Zu/dozu/issues/14\nhttps://github.com/Do-Zu/dozu/issues/30",
+      "Priority": "P1"
+    },
+    "assignees": []
+  },
+  {
+    "id": "AI-PROVIDERS",
+    "number": 44,
+    "url": "https://github.com/Do-Zu/dozu/issues/44",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHKdPs",
+    "fields": {
+      "Phase": "2 Local services",
+      "Blocker": "None",
+      "Status": "Todo",
+      "Complexity": "L",
+      "Depends on": "https://github.com/Do-Zu/dozu/issues/27\nhttps://github.com/Do-Zu/dozu/issues/31\nhttps://github.com/Do-Zu/dozu/issues/40\nhttps://github.com/Do-Zu/dozu/issues/8",
+      "Priority": "P1"
+    },
+    "assignees": []
+  }
+]

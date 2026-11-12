@@ -1,0 +1,17 @@
+{
+  "name": "frozen-repair",
+  "command": [
+    "pnpm",
+    "install",
+    "--force",
+    "--frozen-lockfile",
+    "--ignore-scripts",
+    "--offline",
+    "--reporter=append-only"
+  ],
+  "exitCode": 0,
+  "seconds": 28.172,
+  "capturedAtUtc": "2026-11-12T14:56:46.051588+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "frozen-repair.log"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "lock-import-combined",
+  "command": [
+    "pnpm",
+    "import"
+  ],
+  "exitCode": 0,
+  "seconds": 10.735,
+  "capturedAtUtc": "2026-11-12T14:44:52.106321+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "lock-import-combined.log"
+}

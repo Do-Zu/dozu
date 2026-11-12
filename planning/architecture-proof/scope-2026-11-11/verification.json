@@ -1,0 +1,160 @@
+{
+  "utc": "2026-11-11T13:51:58.359570+00:00",
+  "affectedIssues": [
+    1,
+    2,
+    4,
+    8,
+    9,
+    18,
+    21,
+    23,
+    25,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33,
+    35,
+    38,
+    40,
+    45,
+    46,
+    47
+  ],
+  "issueStatesLabelsAssigneesPreserved": true,
+  "allProjectCustomFieldsAndDefinitionsPreserved": true,
+  "originalAuditIssue3Unchanged": true,
+  "noAcceptanceMarkedComplete": true,
+  "sourceTrees": [
+    {
+      "name": "dozu-ui-service",
+      "status": ""
+    },
+    {
+      "name": "dozu-api-service",
+      "status": ""
+    },
+    {
+      "name": "dozu-embedding-service",
+      "status": ""
+    }
+  ],
+  "pageInventory": 84,
+  "speechToText": "DEFERRED_V1",
+  "database": "POSTGRESQL_RETAINED",
+  "pgvector": "DEFERRED_V1",
+  "textEmbedding": "RETAINED_FOR_PDF_YOUTUBE_REFERENCES",
+  "implementationState": "Planning/acceptance scope updated; no runtime removal, schema migration or optimized model implemented",
+  "hashes": [
+    {
+      "path": "planning\\v1-scope-2026-11-11.md",
+      "sha256": "d6bc0edae0880bf2200fcb223179a3f3cc8800f1a68934daabd8b2998f0a6a06"
+    },
+    {
+      "path": "planning\\platform-support.md",
+      "sha256": "78bc6bbbe0d699e5a4e18e188237f6fc7e8e5fe66a8a9259ed953818a60ced7a"
+    },
+    {
+      "path": "planning\\requirements.md",
+      "sha256": "586f3057f1204fa934a3ce016c8bd807282ce5fc8c82f35f2aa3a14f9634009b"
+    },
+    {
+      "path": "planning\\feature-preservation.json",
+      "sha256": "972ddf4f6bed92076c453b2f2b3301e8ea779719427f77167fced0feaab6bd49"
+    },
+    {
+      "path": "planning\\issues.json",
+      "sha256": "300238fde9233ac43fc6e75cddaef6a685dc8ac7a39b06a8970b86d112a9f793"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\github-decision.md",
+      "sha256": "d9fd8fa7eaf56b736367d11a3dba66d23136e08f12500ea619fdf67b237363c5"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-1.md",
+      "sha256": "183171833bd23f3b5ebbc03e8d0c84f7fd68c9f57446555223bebe36600deb3b"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-18.md",
+      "sha256": "faf8342857dc048e3ae54d6df97c978e8d47981d2ed2b9c7fb49d172abe36841"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-2.md",
+      "sha256": "bc4cbb06c730c2b82492b2aee322d93fd7aecf2d5fc64fff23015f4a01d717ea"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-21.md",
+      "sha256": "7da52a7369e26eba2a24d8d000568a877f64d793799f50e1830af1f4b8482fc5"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-23.md",
+      "sha256": "91915f40b38b8c58589e5b3cd0faeae53f87c8ea508c7212829eda9793dfd873"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-25.md",
+      "sha256": "bb26b25e96699add763285560bf5e1f96483d73c6beca208405f209e4992fd57"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-27.md",
+      "sha256": "86124021d2551a7fb7b7937c8a70598bf3c7ca0a4aba08f58efdac5fcb1008e7"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-28.md",
+      "sha256": "1d00eac8a526b95835826484aaa75ded1b60b2579732a8d0d390c3fb5869c03c"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-29.md",
+      "sha256": "8908813bd49dc8c9fab65d3e8e85b7fae4936b9fc944a52e74250bdf37f41f07"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-30.md",
+      "sha256": "e05b48cab45e72ec71258a61e6afc7c30bdd0bdc94f6dc6d50295490fd7b9aeb"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-32.md",
+      "sha256": "3c517f8cfdb95396a58ef8b16070f40fca45e9912bb344f45e429c7ce564779a"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-33.md",
+      "sha256": "9a1c708dde3a081a0011d735563631ab2a57f79aab9a9e1926c4d7bf485a653d"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-35.md",
+      "sha256": "7a8280a5c77dd97d45eab4184802579e3326589d398629ba8d9ff56be84db4cb"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-38.md",
+      "sha256": "1d09f82754bacac056c893cad59bb8fbfa3cb5d9891145a327a80d6e071a50a4"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-4.md",
+      "sha256": "022614880574467abf489a8c74c59618a45b77534612955db367e4fbc07d9c49"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-40.md",
+      "sha256": "30e378c430c243dac7bc43cbefef809c12510b9608597f4869e51fd3c1372129"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-45.md",
+      "sha256": "3a979e8ff65558af2fe71a80bedc77561543f9912b8acecd4fb26b246e455962"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-46.md",
+      "sha256": "f46cf6c3cc0474600279d75b14fe9abac9b74b2d4f955b160cc33dc9ecf87e3b"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-47.md",
+      "sha256": "61e8e3cd149f3871d6651b4c28f90331c8a59aa027159bc204487cf087ac6314"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-8.md",
+      "sha256": "4d39b72c4abee855ed0a48eb2a79c4f6be8632ae4513d28da7d0a3d2d72b05e4"
+    },
+    {
+      "path": "planning\\architecture-proof\\scope-2026-11-11\\issue-9.md",
+      "sha256": "a9008909bb8f64a1cdd5a566d282093eaa034bc12149b2cb61e890ae7f1da3b6"
+    }
+  ]
+}

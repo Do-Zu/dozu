@@ -1,0 +1,210 @@
+{
+  "auditDate": "2026-11-09",
+  "files": [
+    {
+      "path": "backend-endpoints.json",
+      "sha256": "f95065fb6e28d7e86f1fb1d27060b1bfc737dc27cc0308782967cf0dd720a118",
+      "bytes": 3205477
+    },
+    {
+      "path": "backend-endpoints.md",
+      "sha256": "8dcc3c8b7e15bfc9c4248010a961586ef25eef96e89f073e86b0961cba19e02f",
+      "bytes": 95312
+    },
+    {
+      "path": "baselines/api-jest.log",
+      "sha256": "e95585e63b3f81c21f55b6908d5b4920b2c7ee70452a34ee82640590781b635b",
+      "bytes": 49943
+    },
+    {
+      "path": "baselines/api-lint.log",
+      "sha256": "f5246205a103908f67353ebaaf68c5c80558a83c6ef5e583d31988af5870e2e9",
+      "bytes": 29889
+    },
+    {
+      "path": "baselines/api-typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "baselines/embedding-contract.json",
+      "sha256": "bd7ca16ec560c23cf00c04b829d9703be17504e20f9e8b02e6e961f43c0782e3",
+      "bytes": 2932
+    },
+    {
+      "path": "baselines/embedding-contract.log",
+      "sha256": "70e1f4d0ed382dfad1be103d123640b73a5bf58e22d773201d680de6c46a8f1e",
+      "bytes": 18928
+    },
+    {
+      "path": "baselines/embedding-startup.log",
+      "sha256": "fc6cc3b0af4f32ce0cc6807a7a32994364a24e0bb500db7ddc826002f4f2ff01",
+      "bytes": 11185
+    },
+    {
+      "path": "baselines/jest-anki.log",
+      "sha256": "36564b7b75926d995bdebcd9125cd2eef0e7fdd362332c7c27c6bb106223d2df",
+      "bytes": 929
+    },
+    {
+      "path": "baselines/jest-classTopicComment.service.log",
+      "sha256": "4f708859efc263f3dacaf49c6c9ce26c420906bd4160f04d77934b0484a286b5",
+      "bytes": 1967
+    },
+    {
+      "path": "baselines/jest-package.controller.log",
+      "sha256": "742566dfa013890cd0f18f35af33d768c45b93fc0bb2d581210549921e0bb194",
+      "bytes": 2519
+    },
+    {
+      "path": "baselines/jest-schedule.integration.log",
+      "sha256": "d1dcf64325c0e06cbf419e3868638ff8e2066baa7aefc40deee1c249f297e76f",
+      "bytes": 924
+    },
+    {
+      "path": "baselines/jest-schedule.service.log",
+      "sha256": "bf0f2fa4dfdb91eedbfa0baf1482d80cd703af5e50d4a5f64e4d8258012e95b8",
+      "bytes": 46233
+    },
+    {
+      "path": "baselines/jest-subscript.middleware.log",
+      "sha256": "c52e23b9bb51064ba4c921ee6ddd392dc8d43b146429b68cd6516fd209105290",
+      "bytes": 43134
+    },
+    {
+      "path": "baselines/jest-suites.json",
+      "sha256": "d388b3b0427e188bb5a2b99e7a996606c988d82f549138757fc9525e8eba1555",
+      "bytes": 4548
+    },
+    {
+      "path": "baselines/jest-upload.file.R2.service.log",
+      "sha256": "aa07c8f068953608bb364e266eb46e391ea42c74ee8b73a24c3fb816557e7025",
+      "bytes": 1267
+    },
+    {
+      "path": "baselines/results.json",
+      "sha256": "83809368d9746cc4e10a18962abe6e259f2b854fccd58cba2347777656cfb24f",
+      "bytes": 2987
+    },
+    {
+      "path": "baselines/ui-build.log",
+      "sha256": "3a3c069f5965da1c3f04fa2c252903cb4741d13d413b5bdb369537455e2cd54e",
+      "bytes": 3503
+    },
+    {
+      "path": "baselines/ui-lint.log",
+      "sha256": "a82e245543a089014735e509867e5b69af1ebb1cca26f800e21d8452ddff6785",
+      "bytes": 574944
+    },
+    {
+      "path": "collect-dependencies.py",
+      "sha256": "d2e56f28d0a07bcb7ec651e23483dae028588c07b16c1deb681217218fa129c8",
+      "bytes": 1924
+    },
+    {
+      "path": "collect-inventory.cjs",
+      "sha256": "c276b818fd7f0cc5f1f987c540ad6ed8fbcd98927c84b7480e419362239c33ed",
+      "bytes": 14106
+    },
+    {
+      "path": "configuration-inventory.json",
+      "sha256": "070160f5be15336c01beb9c47d272999b547ed3332c8412d6a28760a0f216a5b",
+      "bytes": 466986
+    },
+    {
+      "path": "configuration.md",
+      "sha256": "8cfa13497afb8230db1b5e78d5a8ccdd4af08420976e17a0f86d5729d70b1494",
+      "bytes": 69006
+    },
+    {
+      "path": "database-inventory.json",
+      "sha256": "da4145e3e9bdf9eb6a141d4895b60cab11584f32871d1d94f53e592c12545c44",
+      "bytes": 199140
+    },
+    {
+      "path": "database.md",
+      "sha256": "5787742c2441062246a797d1d16139cb110c8f434a9e6cde5f29a4ae85832348",
+      "bytes": 19808
+    },
+    {
+      "path": "embedding-contract.py",
+      "sha256": "3132f73916928128b5aee5d6446ce6fe2b5e6d54863c35f88f933a552389ce90",
+      "bytes": 5509
+    },
+    {
+      "path": "feature-parity.json",
+      "sha256": "86ae726b761f771630c85b6cfa2864915d2f2c1c046bf4ec66a272b45e9d2686",
+      "bytes": 1559061
+    },
+    {
+      "path": "feature-parity.md",
+      "sha256": "894002a0da644b37b1377c9d1603a80c768a26c008154ae984267bacec306165",
+      "bytes": 29373
+    },
+    {
+      "path": "findings.md",
+      "sha256": "8e608731e6164df91c3828855eff5721d5b8e1768be1b60e03a89de8f81039ce",
+      "bytes": 9010
+    },
+    {
+      "path": "generate-reports.py",
+      "sha256": "2d197e91d03c5f693920ff4e415a346ca88c6addc65b2f2f111f0afa5918539c",
+      "bytes": 25258
+    },
+    {
+      "path": "README.md",
+      "sha256": "bd7ad1fd32baeefb1a1595a6300418a241fbbebcdf7905da59973c9e403b4f4a",
+      "bytes": 10806
+    },
+    {
+      "path": "run-baselines.py",
+      "sha256": "d3f90c3ee6d4f5987b64548304c9c4a6aef0d78b8cc781227c21a4d451b4568c",
+      "bytes": 4915
+    },
+    {
+      "path": "run-jest-suites.py",
+      "sha256": "e0c72975db99a97e1b4cba1551b164db5ab0c103eefce9b06093b8967a779ef4",
+      "bytes": 819
+    },
+    {
+      "path": "runtime-dependencies.json",
+      "sha256": "9538f3566fa02c243c90b336b1818c719ca09cb5434ee17fc799ee5e289ce0b4",
+      "bytes": 49790
+    },
+    {
+      "path": "source-inventory.json",
+      "sha256": "ea09a235d8aa41ffe4408d527441beba95534239aabb91130ae9b5506442806d",
+      "bytes": 6692520
+    },
+    {
+      "path": "source-provenance.json",
+      "sha256": "5aa780597f82aa3daafd18a65088d19561cde23874b14eaf3dfad58dc12c5445",
+      "bytes": 2759
+    },
+    {
+      "path": "systems.md",
+      "sha256": "c174a2fce55575ffa868e4b73f79f267467c585d0c37a376f455ee05c647b6d7",
+      "bytes": 30555
+    },
+    {
+      "path": "ui-ledger.md",
+      "sha256": "48d2c806b1c6412b8306fd6571fc5ce2b230aa5d211d07ecb6d3d17788e1eac5",
+      "bytes": 457663
+    },
+    {
+      "path": "ui-workflows.json",
+      "sha256": "7eaa1902bc6ed6b0b0792896cd78b6ba24f29c932f67f7aba5afac23d925114e",
+      "bytes": 9012514
+    },
+    {
+      "path": "verification.json",
+      "sha256": "231712f4535d414c6e3cc39b282cd8522c126cbab4cdf9bc8db44dc0aa00dea3",
+      "bytes": 1530
+    },
+    {
+      "path": "verify-audit.py",
+      "sha256": "d849b20fe96ce89bbdc16dca55f30308d0f90af24e02b69c223acaf360d0fdd2",
+      "bytes": 6086
+    }
+  ]
+}

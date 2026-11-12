@@ -1,0 +1,10 @@
+{
+  "EditLearningMaterial": {
+    "header": "Tài liệu học tập",
+    "submitButtonLabel": "Gửi",
+    "closeButtonAria": "Đóng",
+    "download": "Tải xuống",
+    "classComments": "Nhận xét của lớp học",
+    "addClassComment": "Thêm nhận xét trong lớp học..."
+  }
+}

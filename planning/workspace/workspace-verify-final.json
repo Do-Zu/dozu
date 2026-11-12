@@ -1,0 +1,12 @@
+{
+  "name": "workspace-verify-final",
+  "command": [
+    "pnpm",
+    "verify:workspace"
+  ],
+  "exitCode": 0,
+  "seconds": 0.469,
+  "capturedAtUtc": "2026-11-12T14:54:58.429695+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "workspace-verify-final.log"
+}

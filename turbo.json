@@ -1,0 +1,127 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "remoteCache": {
+    "enabled": false
+  },
+  "globalPassThroughEnv": [
+    "NPM_CONFIG_USERCONFIG",
+    "NPM_CONFIG_GLOBALCONFIG",
+    "NPM_CONFIG_REGISTRY",
+    "NPM_CONFIG_STORE_DIR",
+    "HUSKY"
+  ],
+  "globalDependencies": [
+    "pnpm-workspace.yaml",
+    "tooling/**"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*"
+      ],
+      "env": [
+        "NODE_ENV",
+        "NEXT_PUBLIC_*"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "!.next/cache/**",
+        "*.tsbuildinfo"
+      ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "typecheck": {
+      "outputs": [
+        "*.tsbuildinfo"
+      ]
+    },
+    "test": {
+      "cache": false,
+      "outputs": [],
+      "passThroughEnv": [
+        "NODE_ENV",
+        "DATABASE_URL",
+        "REDIS_HOST",
+        "REDIS_PORT",
+        "AWS_EC2_METADATA_DISABLED"
+      ]
+    },
+    "package": {
+      "dependsOn": [
+        "build"
+      ],
+      "outputs": [
+        ".package/**"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "passThroughEnv": [
+        "*"
+      ]
+    },
+    "start": {
+      "cache": false,
+      "persistent": true,
+      "passThroughEnv": [
+        "*"
+      ]
+    },
+    "build:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "db:generate:dev": {
+      "cache": false,
+      "passThroughEnv": [
+        "NODE_ENV",
+        "DATABASE_URL",
+        "DATABASE_URL_DRIZZLE_MIGRATE"
+      ]
+    },
+    "db:generate:prod": {
+      "cache": false,
+      "passThroughEnv": [
+        "NODE_ENV",
+        "DATABASE_URL",
+        "DATABASE_URL_DRIZZLE_MIGRATE"
+      ]
+    },
+    "db:migrate:dev": {
+      "cache": false,
+      "passThroughEnv": [
+        "NODE_ENV",
+        "DATABASE_URL",
+        "DATABASE_URL_DRIZZLE_MIGRATE"
+      ]
+    },
+    "db:migrate:prod": {
+      "cache": false,
+      "passThroughEnv": [
+        "NODE_ENV",
+        "DATABASE_URL",
+        "DATABASE_URL_DRIZZLE_MIGRATE"
+      ]
+    },
+    "db:migrate:docker": {
+      "cache": false,
+      "passThroughEnv": [
+        "NODE_ENV",
+        "DATABASE_URL",
+        "DATABASE_URL_DRIZZLE_MIGRATE"
+      ]
+    }
+  }
+}

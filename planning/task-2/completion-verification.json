@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-10",
+  "status": "PASS",
+  "issue2": "Closed as completed; status:done; Project Done; 5/5 criteria; 84 page rows; unassigned",
+  "issue27": "Ready; decisions recorded, provider/LAN proof pending",
+  "issue41": "Open / Block; payment execution explicitly deferred",
+  "issue43": "Open / waiting / Todo; LAN topology selected; proof unfinished",
+  "projectItems": 44,
+  "originalStatusOptionsPreserved": true,
+  "applicationCommits": {
+    "dozu-ui-service": "5e1ceb263a29e2fde2359c36f43d0118a8d622f0",
+    "dozu-api-service": "173f3f1cbcc81b89ad3eea81723698f7bb7eb876",
+    "dozu-embedding-service": "188d0d229a38ee51f48f1e5d5f06cf69f16870c6"
+  },
+  "applicationTrackedTreesUnchanged": true,
+  "auditEvidenceFilesUnchanged": 41,
+  "supportContractSha256": "b5a39bf9e8f90f28397e662074246b3d0e11b099963773f04ab1fb3f401346da",
+  "benchmarksAndInstallerCompliance": "UNVERIFIED; agreed targets only",
+  "scope": "Requirements completion; no payment code disabled, no implementation issues completed"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "package-final",
+  "command": [
+    "pnpm",
+    "package"
+  ],
+  "exitCode": 1,
+  "seconds": 4.062,
+  "capturedAtUtc": "2026-11-12T14:55:15.741584+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "package-final.log"
+}

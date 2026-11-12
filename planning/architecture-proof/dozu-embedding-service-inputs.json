@@ -1,0 +1,149 @@
+{
+  "commit": "188d0d229a38ee51f48f1e5d5f06cf69f16870c6",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "16a80746c4be069d376e616cb0a0245543c95a3689d5b8ef877682a4423651a5"
+    },
+    {
+      "path": ".github/workflows/vietnix-dockerhub.pipeline.yml",
+      "sha256": "14b9ad9cee07e5f64e4969dbc800da638dfa89700e6de0633e807bd91ca0c02e"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2700914a074d2d5c10ff36b1483817fd512e4fcf182995031b018ff95da327f8"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "sha256": "27f54024c5fd3e0e3bec341206e22d6d1acd6f4847a048d4eb457e174a075805"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "sha256": "bb02e801a361c8beb110e83856499106b976e8359ffdcb5d8af038a5de01388c"
+    },
+    {
+      "path": "Architecture.md",
+      "sha256": "feca291886fd1b105a5f850c4c133a492ece5bdb4a639ea46272bc385a805667"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "40ee68c3d658c4954d91beac7c042a9717a29d102dcd2291add8f088373331ab"
+    },
+    {
+      "path": "README.md",
+      "sha256": "fb24e7c1a80d6bf155bba93f9a188424fa272f07dae10d65fc482b890b4618f7"
+    },
+    {
+      "path": "docs/v1/RESTRUCTURE_GUIDE.md",
+      "sha256": "fea72b2ffeed46e7316165fde2f51538853faf8b6b72cc79b8e043c7c773b41f"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "e343eb6bfdcf285a43246dd2a1238c74d71678e68f3d93e64e20d83778e7c27a"
+    },
+    {
+      "path": "run.py",
+      "sha256": "d09d6444d6199a254c6605488d090b3ffdeb9fb97f4cbc13ece8424f784719e7"
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "45d95d407671ed6e16db229ffe33f95f1145b161b0a40776cfbdbbb2285b0e92"
+    },
+    {
+      "path": "src/app/__init__.py",
+      "sha256": "516b125f617f77c5618b8b24750f1bd199069e60ab5b23daa225ea26c81d9553"
+    },
+    {
+      "path": "src/app/api/__init__.py",
+      "sha256": "04e31bac0b5a0a10e6a8d19cd21e7cef90a76c0ac22c046287af2b5cb988a1d1"
+    },
+    {
+      "path": "src/app/api/api.py",
+      "sha256": "a7393e55ce0069f8535654c3e2d8b273e37d9bc4120120a0a97eeca02ebdfbea"
+    },
+    {
+      "path": "src/app/api/deps.py",
+      "sha256": "57543df9335062658d4a902b567ccadf3fd437ae5e734925805783073a47d0f6"
+    },
+    {
+      "path": "src/app/api/endpoints/__init__.py",
+      "sha256": "752b09f7af6b4cdf42a6c696cb7cd33fb8430b4229027340297807a12ae64ec8"
+    },
+    {
+      "path": "src/app/api/endpoints/embedding.py",
+      "sha256": "e50a0145ce97cca026a2a11c0dd89149f190e2660e934550f5e73df3538de620"
+    },
+    {
+      "path": "src/app/api/endpoints/health.py",
+      "sha256": "bb4527330e4151411d03d70d724525e2cd59234de8caa066279009f971ab6c02"
+    },
+    {
+      "path": "src/app/api/endpoints/pdf.py",
+      "sha256": "cfbc8f8895efa1f402f33cb4404111a195ff5e16378fb5ab33546f48be658c08"
+    },
+    {
+      "path": "src/app/api/endpoints/youtube.py",
+      "sha256": "6dc9e2f81b40af4e218d95ee8c059b7f086793057e7c55a784ff3ad9d786bc8e"
+    },
+    {
+      "path": "src/app/core/__init__.py",
+      "sha256": "a017947ab604edd8408da4d2b608fb691078625688c71a1db63e0a1c71f15a26"
+    },
+    {
+      "path": "src/app/core/config.py",
+      "sha256": "ffb9dd3e0a0e6e742f4ea72fe2cf2260b471c2da34d586c46a13b03e32d5671f"
+    },
+    {
+      "path": "src/app/core/model_manager.py",
+      "sha256": "5bd28a98f5712b5a2fe4b7766a8684545da6d67788c147cd57973de09d9c6756"
+    },
+    {
+      "path": "src/app/main.py",
+      "sha256": "e04d5425744ce32c66e1073b6847edb95fac9b1c0a79db6d40cde7fddec8ed03"
+    },
+    {
+      "path": "src/app/schemas/__init__.py",
+      "sha256": "4bc855639510a4acf11727e974b442e8ac08ae96aea10342344866104e6cfbc1"
+    },
+    {
+      "path": "src/app/schemas/common_schema.py",
+      "sha256": "00d32b4e7b9e8e8a5c8088f3e83088a60ba9c1c4688fdc2aeb929551c11427f8"
+    },
+    {
+      "path": "src/app/schemas/embedding_schema.py",
+      "sha256": "e2f0bb3a1f1ebbe7fd54588f5f37a74ffceb6ee5429634070f18a3579e007d62"
+    },
+    {
+      "path": "src/app/schemas/pdf_schema.py",
+      "sha256": "fcc98aa8889540125698244f5f82ef6d65308ba034d2d006281389d75e64cbf3"
+    },
+    {
+      "path": "src/app/schemas/youtube_schema.py",
+      "sha256": "fb7727b91c3ec16c9e84eb55c0ec353eafdeaca9142665b5d94dd53962b6cb11"
+    },
+    {
+      "path": "src/app/services/__init__.py",
+      "sha256": "735233d95e89226573558d37aa5e0122448dfe76cb9e9eef292dbc6c2bbef388"
+    },
+    {
+      "path": "src/app/services/embedding/embedding_service.py",
+      "sha256": "2df43f9fe8a44dcedf0b721c91b7f674130aec579c3170a650174f8bd44b0385"
+    },
+    {
+      "path": "src/app/services/pdf/file_pdf_pipeline.py",
+      "sha256": "4695e89374cb171bb183c8494981255a95d807869baf4dfb6948e93a33e0b810"
+    },
+    {
+      "path": "src/app/services/pdf/pdf_service.py",
+      "sha256": "218db7e033d5256815d21c4afcbe3004b10ebb1a346f55b56522fd6a8db148db"
+    },
+    {
+      "path": "src/app/services/youtube/youtube_pipeline.py",
+      "sha256": "64407c5f59d75514b51c1b38773f218374e4269704de313e5122df31974179b2"
+    },
+    {
+      "path": "src/app/services/youtube/youtube_service.py",
+      "sha256": "a40751b7f72d4e705a719df9be5d5407b88883dc72bfd39cbdca714f9371aab7"
+    }
+  ]
+}

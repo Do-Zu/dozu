@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-10",
+  "status": "PASS",
+  "issue2": {
+    "state": "OPEN",
+    "checkedCriteria": 3,
+    "remainingCriteria": 2,
+    "statusLabel": "status:blocked",
+    "projectStatus": "Block",
+    "assignees": [],
+    "pageRowsInIssue": 84
+  },
+  "issue27DecisionRecord": true,
+  "audit3ProjectStatus": "Done",
+  "payment41AndClassroom43": "Block / unresolved",
+  "projectItems": 44,
+  "statusOptions": [
+    "Todo",
+    "Need Clarify",
+    "In Progress",
+    "Done",
+    "Block"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "dozu",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.28.2",
+  "engines": { "node": ">=22.22.0 <23" },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "package": "turbo run package",
+    "graph": "turbo run build lint typecheck test package --dry=json",
+    "verify:workspace": "node tooling/verify-workspace.cjs"
+  },
+  "devDependencies": { "turbo": "2.5.8" }
+}

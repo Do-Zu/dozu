@@ -1,0 +1,55 @@
+{
+  "issuesVerified": 44,
+  "taskCount": 40,
+  "completedTasks": 0,
+  "assignedIssues": 0,
+  "statusCounts": [
+    {
+      "status": "backlog",
+      "count": 1
+    },
+    {
+      "status": "blocked",
+      "count": 2
+    },
+    {
+      "status": "ready",
+      "count": 2
+    },
+    {
+      "status": "waiting",
+      "count": 39
+    }
+  ],
+  "priorities": [
+    {
+      "Name": "P0",
+      "Count": 15
+    },
+    {
+      "Name": "P1",
+      "Count": 27
+    },
+    {
+      "Name": "P2",
+      "Count": 2
+    }
+  ],
+  "complexities": [
+    {
+      "Name": "L",
+      "Count": 26
+    },
+    {
+      "Name": "M",
+      "Count": 10
+    },
+    {
+      "Name": "XL",
+      "Count": 8
+    }
+  ],
+  "typeAndTrackingLabelsVerified": true,
+  "dependencyStatusesVerified": true,
+  "blockerContextsVerified": true
+}

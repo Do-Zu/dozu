@@ -1,0 +1,31 @@
+{
+  "capturedAtUtc": "2026-11-12T14:04:56.545891+00:00",
+  "issueChangesVerified": [
+    1,
+    4,
+    5
+  ],
+  "parentBodyVerified": true,
+  "allAssignmentsPreserved": true,
+  "allIssueStatesPreserved": true,
+  "unrelatedIssueLabelsPreserved": true,
+  "allBoardItemsAndFieldsPreserved": true,
+  "externalIssueBodyChanges": [
+    4
+  ],
+  "externalChangeNote": "During execution #4 acceptance and P1-P3 boxes were checked externally. This task only changed its status label. No completion evidence was supplied by that edit; state remains closed/not_planned and no requirement is counted complete.",
+  "boardStatusChangesOnly": [
+    1,
+    5
+  ],
+  "boardItemCount": 47,
+  "completedIssues": [
+    3,
+    2
+  ],
+  "missingLocalEvidence": [
+    "planning/architecture-proof/postgres-only/report.md",
+    "planning/architecture-proof/backend-local/report.md",
+    "planning/desktop-preview/README.md"
+  ]
+}

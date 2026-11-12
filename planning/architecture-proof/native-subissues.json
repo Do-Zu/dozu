@@ -1,0 +1,20 @@
+[
+  {
+    "platform": "windows",
+    "number": 45,
+    "url": "https://github.com/Do-Zu/dozu/issues/45",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHhnlA"
+  },
+  {
+    "platform": "macos",
+    "number": 46,
+    "url": "https://github.com/Do-Zu/dozu/issues/46",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHhn74"
+  },
+  {
+    "platform": "linux",
+    "number": 47,
+    "url": "https://github.com/Do-Zu/dozu/issues/47",
+    "itemId": "PVTI_lADODsVOHc4Bq0rozhHhoSM"
+  }
+]

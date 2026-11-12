@@ -1,0 +1,96 @@
+import { globalAsyncHandler } from '@/middleware/handler/handler.v2';
+import { Router } from 'express';
+import { registerRoute } from '../register.routes';
+import topicController from '@/controllers/topic/topic.controller';
+import { authMiddleware } from '@/middleware/auth.middleware';
+import subscriptionMiddleware from '@/middleware/subscription/subscript.middleware';
+import paramsValidator from '@/core/validations/params.validator';
+import { flashcardRoutes } from '../flashcard/flashcard.routes';
+import { flashcardRoutes as flashcardRoutesV2 } from '../flashcard/v2/flashcard.routes';
+import topicMiddleware from '@/middleware/topic/topic.middleware';
+import { fileUploadSingleMiddleware } from '@/libs/multer.lib';
+import { noteRoutes } from '@/routes/note/note.routes';
+import noteController from '@/features/note/note.controller';
+
+const router = Router();
+globalAsyncHandler(router);
+
+router.use(authMiddleware);
+
+router.get(
+    '/:topicId',
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicMiddleware.verifyUserCanAccessTopic,
+    topicController.getTopicById
+);
+
+router.get('/', topicController.getTopicsForUser);
+
+router.get(
+    '/:topicId/tracking/statistic',
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicMiddleware.verifyUserCanAccessTopic,
+    topicController.getTopicsForUser
+);
+
+router.post(
+    '/',
+    fileUploadSingleMiddleware,
+    subscriptionMiddleware.handleSubscription,
+    topicController.createTopicForUser
+);
+router.put(
+    '/:topicId',
+    fileUploadSingleMiddleware,
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicController.updateTopicById
+);
+router.delete(
+    '/:topicId',
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicController.deleteTopicById
+);
+
+router.use(
+    '/:topicId/flashcards',
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicMiddleware.verifyUserCanAccessTopic,
+    flashcardRoutes
+);
+
+router.use(
+    '/:topicId/flashcards/v2',
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicMiddleware.verifyUserCanAccessTopic,
+    flashcardRoutesV2
+);
+
+router.use(
+    '/:topicId/notes',
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicMiddleware.verifyUserCanAccessTopic,
+    noteRoutes
+);
+
+router.put(
+    '/:topicId/note',
+    paramsValidator.validateId('topicId'),
+    topicMiddleware.verifyTopicByIdInParam,
+    topicMiddleware.verifyUserCanAccessTopic,
+    noteController.updateNote
+);
+
+registerRoute('/topics', router, {
+    description: 'Topics API for CRUD topics',
+    version: 'v1',
+    isEnabled: true,
+});
+
+export default router;

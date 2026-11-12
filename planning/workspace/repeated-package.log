@@ -1,0 +1,5 @@
+
+> dozu-ui-service@0.1.0 package D:\product\dozu\apps\web
+> node ../../tooling/package-web.cjs
+
+Created apps/web/.package; launch with node apps/web/server.js from that directory.

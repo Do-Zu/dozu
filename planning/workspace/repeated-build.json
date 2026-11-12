@@ -1,0 +1,14 @@
+{
+  "name": "repeated-build",
+  "command": [
+    "pnpm",
+    "--filter",
+    "dozu-ui-service",
+    "build:prod"
+  ],
+  "exitCode": 0,
+  "seconds": 76.188,
+  "capturedAtUtc": "2026-11-12T15:01:56.031957+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "repeated-build.log"
+}

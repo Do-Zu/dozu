@@ -1,0 +1,13 @@
+{
+  "check": "ui-build-baseline",
+  "args": [
+    "C:\\nvm4w\\nodejs\\node.EXE",
+    "D:\\product\\dozu\\planning\\architecture-proof\\.runs\\dozu-ui-service\\node_modules\\next\\dist\\bin\\next",
+    "build"
+  ],
+  "cwd": "planning\\architecture-proof\\.runs\\dozu-ui-service",
+  "seconds": 144.193,
+  "exitCode": 1,
+  "log": "ui-build-baseline.log",
+  "inputs": "sanitized tracked copies; existing node_modules junction; no npm install/real dotenv; development dependencies remain available for build only"
+}

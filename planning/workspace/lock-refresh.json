@@ -1,0 +1,15 @@
+{
+  "name": "lock-refresh",
+  "command": [
+    "pnpm",
+    "install",
+    "--lockfile-only",
+    "--ignore-scripts",
+    "--reporter=append-only"
+  ],
+  "exitCode": 0,
+  "seconds": 7.094,
+  "capturedAtUtc": "2026-11-12T14:45:52.847768+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "lock-refresh.log"
+}

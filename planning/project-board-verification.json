@@ -1,0 +1,53 @@
+{
+  "project": "https://github.com/orgs/Do-Zu/projects/6",
+  "projectId": "PVT_kwDODsVOHc4Bq0ro",
+  "backlogItemsVerified": 44,
+  "totalProjectItems": 47,
+  "newItemsAdded": 0,
+  "fieldsVerified": [
+    "Status",
+    "Priority",
+    "Complexity",
+    "Phase",
+    "Depends on",
+    "Blocker"
+  ],
+  "boardStatuses": [
+    {
+      "status": "Block",
+      "count": 1
+    },
+    {
+      "status": "Done",
+      "count": 5
+    },
+    {
+      "status": "In Progress",
+      "count": 1
+    },
+    {
+      "status": "Todo",
+      "count": 40
+    }
+  ],
+  "assignedItems": 3,
+  "existingColumnsPreserved": true,
+  "ownersInvented": false,
+  "automaticTwoWaySyncConfigured": false,
+  "capturedAtUtc": "2026-11-12T15:11:09.304657+00:00",
+  "verificationScope": "Read-only live snapshot after delegated #5/#6 work; no unrelated board fields changed by refresh.",
+  "completedIssueNumbers": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "closedNotPlannedIssueNumbers": [],
+  "trackingWarnings": [
+    {
+      "number": 4,
+      "message": "Live state reason is completed but status label is closed; preserved external values. No runtime acceptance is inferred."
+    }
+  ]
+}

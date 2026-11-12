@@ -1,0 +1,14 @@
+{
+  "name": "repeated-package",
+  "command": [
+    "pnpm",
+    "--filter",
+    "dozu-ui-service",
+    "package"
+  ],
+  "exitCode": 0,
+  "seconds": 1.39,
+  "capturedAtUtc": "2026-11-12T15:04:15.167362+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "repeated-package.log"
+}

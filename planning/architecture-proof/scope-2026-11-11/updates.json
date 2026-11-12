@@ -1,0 +1,107 @@
+[
+  {
+    "number": 1,
+    "title": "[Ticket] Deliver self-contained local-first desktop and monorepo",
+    "bodyFile": "issue-1.md"
+  },
+  {
+    "number": 2,
+    "title": "[Ticket] Record local-first requirements and full feature-preservation matrix",
+    "bodyFile": "issue-2.md"
+  },
+  {
+    "number": 4,
+    "title": "[Ticket] Prove Electron can package the complete local Next.js and service stack",
+    "bodyFile": "issue-4.md"
+  },
+  {
+    "number": 8,
+    "title": "[Task] Bundle local text-embedding runtime for PDF and YouTube references",
+    "bodyFile": "issue-8.md"
+  },
+  {
+    "number": 9,
+    "title": "[Task] Provide local-stack development and packaging diagnostics",
+    "bodyFile": "issue-9.md"
+  },
+  {
+    "number": 18,
+    "title": "[Task] Replace required cloud storage with local files and localhost URLs",
+    "bodyFile": "issue-18.md"
+  },
+  {
+    "number": 21,
+    "title": "[Task] Preserve PDF/editor/media and real YouTube/URL integrations locally",
+    "bodyFile": "issue-21.md"
+  },
+  {
+    "number": 23,
+    "title": "[Task] Build self-contained installers with all required local services",
+    "bodyFile": "issue-23.md"
+  },
+  {
+    "number": 25,
+    "title": "[Task] Upgrade the bundled local stack with data-safe migrations",
+    "bodyFile": "issue-25.md"
+  },
+  {
+    "number": 27,
+    "title": "[Ticket] Resolve desktop integration callbacks, secrets and shared-state limits",
+    "bodyFile": "issue-27.md"
+  },
+  {
+    "number": 28,
+    "title": "[Task] Supervise local backend, database and embedding process lifecycle",
+    "bodyFile": "issue-28.md"
+  },
+  {
+    "number": 29,
+    "title": "[Task] Bundle and initialize per-user PostgreSQL (pgvector deferred)",
+    "bodyFile": "issue-29.md"
+  },
+  {
+    "number": 30,
+    "title": "[Task] Replace desktop Redis/BullMQ consumers with durable local adapters",
+    "bodyFile": "issue-30.md"
+  },
+  {
+    "number": 32,
+    "title": "[Task] Bundle frontend assets and required local processing resources",
+    "bodyFile": "issue-32.md"
+  },
+  {
+    "number": 33,
+    "title": "[Task] Validate automatic first-run setup on clean user machines",
+    "bodyFile": "issue-33.md"
+  },
+  {
+    "number": 35,
+    "title": "[Task] Back up and restore local database, files and application settings",
+    "bodyFile": "issue-35.md"
+  },
+  {
+    "number": 38,
+    "title": "[Task] Assemble verified per-platform runtimes, binaries and licenses",
+    "bodyFile": "issue-38.md"
+  },
+  {
+    "number": 40,
+    "title": "[Task] Add a local backend profile with automatic seeds and lazy integrations",
+    "bodyFile": "issue-40.md"
+  },
+  {
+    "number": 45,
+    "title": "[Proof] Validate native Windows 10/11 x64 NSIS local stack",
+    "bodyFile": "issue-45.md"
+  },
+  {
+    "number": 46,
+    "title": "[Proof] Validate native macOS 13+ Intel and Apple Silicon DMGs local stack",
+    "bodyFile": "issue-46.md"
+  },
+  {
+    "number": 47,
+    "title": "[Proof] Validate native Ubuntu 22.04 and Debian 12 x64 packages local stack",
+    "bodyFile": "issue-47.md"
+  }
+]

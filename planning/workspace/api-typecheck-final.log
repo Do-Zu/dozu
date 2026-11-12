@@ -1,0 +1,4 @@
+
+> api-services@0.0.1 typecheck D:\product\dozu\apps\api
+> tsc --noEmit
+

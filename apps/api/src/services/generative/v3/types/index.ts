@@ -1,0 +1,60 @@
+import { HttpStatusCode } from '@/constants/index.constant';
+import { IConfigParamLLM, IGenerateOptions } from '@/dtos/generate/models/GenerateContentRequestInterface';
+import { TYPE_PROMPT } from '@/utils/prompt';
+
+export interface IBodyRequestGenContent {
+    content: string;
+    type: string;
+    method: string;
+    options?: IGenerateOptions;
+}
+
+export interface ContentGenerationJobDataInterface {
+    /** Unique identifier for tracking the job */
+    jobId: string;
+
+    /** The content to be processed/transformed */
+    content: string;
+
+    /** Name of the worker queue that will process this job */
+    queue_name: string;
+
+    /** Name of the specific job type for processing logic selection */
+    job_name: string;
+
+    /** Type of prompt/generation to perform (e.g., 'FLASH_CARD', 'MULTIPLE_CHOICE') */
+    type: TYPE_PROMPT;
+
+    isRawText?: boolean;
+
+    /**
+     * Customize result of llm
+     */
+    options?: IGenerateOptions;
+
+    /**
+     * Customize result of llm
+     */
+    config: IConfigParamLLM;
+}
+export interface IJobPushQueue {
+    type: TYPE_PROMPT;
+    jobId: string;
+    data: unknown;
+    isError?: boolean;
+    statusCode: HttpStatusCode;
+}
+
+export interface IDataResponseGenContent {
+    jobId: string;
+    timestamp?: string;
+    data?: object[] | object;
+}
+
+export interface IStoreCache {
+    message: string;
+    errorType: string;
+    errorCode: number;
+    errorDetails: string;
+    status: string;
+}

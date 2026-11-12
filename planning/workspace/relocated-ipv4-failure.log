@@ -1,0 +1,120 @@
+  ▲ Next.js 14.2.35
+  - Local:        http://127.0.0.1:54554
+  - Network:      http://127.0.0.1:54554
+
+ ✓ Starting...
+ ✓ Ready in 451ms
+(node:4876) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node.EXE --trace-deprecation ...` to show where the warning was created)
+Failed to proxy http://localhost:54554/en/welcome AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 54554
+    },
+    Error: connect EADDRINUSE 127.0.0.1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4091,
+      code: 'EADDRINUSE',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 54554
+    }
+  ]
+}
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 54554
+    },
+    Error: connect EADDRINUSE 127.0.0.1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4091,
+      code: 'EADDRINUSE',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 54554
+    }
+  ]
+}
+Failed to proxy http://localhost:54554/en/welcome AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 54554
+    },
+    Error: connect EADDRINUSE 127.0.0.1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4091,
+      code: 'EADDRINUSE',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 54554
+    }
+  ]
+}
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 54554
+    },
+    Error: connect EADDRINUSE 127.0.0.1:54554
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16)
+        at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -4091,
+      code: 'EADDRINUSE',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 54554
+    }
+  ]
+}

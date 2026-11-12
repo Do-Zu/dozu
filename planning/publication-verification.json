@@ -1,0 +1,10 @@
+{
+  "architectureRevision": "local-first-optional-internet-v3",
+  "issueCount": 44,
+  "ticketCount": 4,
+  "taskCount": 40,
+  "roadmapChildren": 43,
+  "titlesBodiesLabelsAndDependenciesVerified": true,
+  "roadmap": "https://github.com/Do-Zu/dozu/issues/1",
+  "applicationImplementationVerified": false
+}

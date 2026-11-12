@@ -1,0 +1,35 @@
+2026-11-09 18:23:49:2349 [33mwarn[39m: [33mEnvironment file .env.development not found, using default values[39m
+2026-11-09 18:23:49:2349 [33mwarn[39m: [33mMissing required environment variables: PORT, HOST[39m
+2026-11-09 18:23:49:2349 [33mwarn[39m: [33mALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.[39m
+PASS src/services/class-based-learning/__test__/classTopicComment.service.test.ts (18.823 s)
+  ClassTopicCommentService
+    getCommentById
+      √ should return a comment when found (3 ms)
+      √ should return undefined when not found (1 ms)
+    getCommentsByFilters
+      √ should return filtered comments (1 ms)
+    getCommentsWithReplies
+      √ should return comments with their replies (1 ms)
+    createComment
+      √ should create a root comment successfully (1 ms)
+      √ should create a reply comment successfully (1 ms)
+      √ should throw NotFoundError if parent comment not found (12 ms)
+      √ should throw DatabaseError on repo failure (1 ms)
+    updateComment
+      √ should update comment successfully (1 ms)
+      √ should throw NotFoundError if comment does not exist (1 ms)
+      √ should throw BadRequest if user is not author (3 ms)
+    deleteComment
+      √ should delete root comment successfully
+      √ should delete reply comment and decrement parent count (1 ms)
+      √ should throw NotFoundError if comment does not exist
+      √ should throw BadRequest if user is not author (1 ms)
+    getCommentsByAuthor
+      √ should return comments by author
+
+Test Suites: 1 passed, 1 total
+Tests:       16 passed, 16 total
+Snapshots:   0 total
+Time:        19.07 s
+Ran all test suites within paths "D:\product\dozu\planning\audit\.runs\dozu-api-service\src\services\class-based-learning\__test__\classTopicComment.service.test.ts".
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

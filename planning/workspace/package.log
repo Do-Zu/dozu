@@ -1,0 +1,37 @@
+
+> dozu@0.0.0 package D:\product\dozu
+> turbo run package
+
+• Packages in scope: api-services, dozu-ui-service
+• Running package in 2 packages
+• Remote caching disabled
+dozu-ui-service:build: cache miss, executing 7002fc95d816e846
+api-services:build: cache miss, executing a903e47e6b4328c6
+dozu-ui-service:build: 
+dozu-ui-service:build: > dozu-ui-service@0.1.0 build D:\product\dozu\apps\web
+dozu-ui-service:build: > next build
+dozu-ui-service:build: 
+api-services:build: 
+api-services:build: > api-services@0.0.1 prebuild D:\product\dozu\apps\api
+api-services:build: > npm run clean
+api-services:build: 
+api-services:build: Error: double-loading config "D:\product\dozu\planning\workspace\.runs\empty.npmrc" as "global", previously loaded as "user"
+api-services:build:     at #loadObject (C:\Users\ADIMN\AppData\Local\nvm\v22.22.0\node_modules\npm\node_modules\@npmcli\config\lib\index.js:544:13)
+api-services:build:     at C:\Users\ADIMN\AppData\Local\nvm\v22.22.0\node_modules\npm\node_modules\@npmcli\config\lib\index.js:597:32
+api-services:build:     at async #loadFile (C:\Users\ADIMN\AppData\Local\nvm\v22.22.0\node_modules\npm\node_modules\@npmcli\config\lib\index.js:589:5)
+api-services:build:     at async Config.load (C:\Users\ADIMN\AppData\Local\nvm\v22.22.0\node_modules\npm\node_modules\@npmcli\config\lib\index.js:253:5)
+api-services:build:     at async main (C:\Users\ADIMN\AppData\Local\nvm\v22.22.0\node_modules\npm\bin\npm-prefix.js:21:5)
+api-services:build: Exit prior to config file resolving
+api-services:build: cause
+api-services:build: double-loading config "D:\product\dozu\planning\workspace\.runs\empty.npmrc" as "global", previously loaded as "user"
+api-services:build:  ELIFECYCLE  Command failed with exit code 1.
+api-services:build: ERROR: command finished with error: command (D:\product\dozu\apps\api) C:\nvm4w\nodejs\pnpm.cmd run build exited (1)
+api-services#build: command (D:\product\dozu\apps\api) C:\nvm4w\nodejs\pnpm.cmd run build exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    824ms 
+Failed:    api-services#build
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.

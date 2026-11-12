@@ -1,0 +1,110 @@
+{
+  "packages": [
+    "api-services",
+    "dozu-ui-service"
+  ],
+  "tasks": [
+    {
+      "taskId": "api-services#build",
+      "command": "cross-env NODE_ENV=production tsc",
+      "dependencies": [],
+      "env": [
+        "NEXT_PUBLIC_*",
+        "NODE_ENV"
+      ],
+      "passThroughEnv": null,
+      "cache": true
+    },
+    {
+      "taskId": "api-services#lint",
+      "command": "eslint .",
+      "dependencies": [],
+      "env": [],
+      "passThroughEnv": null,
+      "cache": true
+    },
+    {
+      "taskId": "api-services#package",
+      "command": "<NONEXISTENT>",
+      "dependencies": [
+        "api-services#build"
+      ],
+      "env": [],
+      "passThroughEnv": null,
+      "cache": true
+    },
+    {
+      "taskId": "api-services#test",
+      "command": "jest",
+      "dependencies": [],
+      "env": [],
+      "passThroughEnv": [
+        "AWS_EC2_METADATA_DISABLED",
+        "DATABASE_URL",
+        "NODE_ENV",
+        "REDIS_HOST",
+        "REDIS_PORT"
+      ],
+      "cache": false
+    },
+    {
+      "taskId": "api-services#typecheck",
+      "command": "tsc --noEmit",
+      "dependencies": [],
+      "env": [],
+      "passThroughEnv": null,
+      "cache": true
+    },
+    {
+      "taskId": "dozu-ui-service#build",
+      "command": "next build",
+      "dependencies": [],
+      "env": [
+        "NEXT_PUBLIC_*",
+        "NODE_ENV"
+      ],
+      "passThroughEnv": null,
+      "cache": true
+    },
+    {
+      "taskId": "dozu-ui-service#lint",
+      "command": "next lint",
+      "dependencies": [],
+      "env": [],
+      "passThroughEnv": null,
+      "cache": true
+    },
+    {
+      "taskId": "dozu-ui-service#package",
+      "command": "node ../../tooling/package-web.cjs",
+      "dependencies": [
+        "dozu-ui-service#build"
+      ],
+      "env": [],
+      "passThroughEnv": null,
+      "cache": true
+    },
+    {
+      "taskId": "dozu-ui-service#test",
+      "command": "<NONEXISTENT>",
+      "dependencies": [],
+      "env": [],
+      "passThroughEnv": [
+        "AWS_EC2_METADATA_DISABLED",
+        "DATABASE_URL",
+        "NODE_ENV",
+        "REDIS_HOST",
+        "REDIS_PORT"
+      ],
+      "cache": false
+    },
+    {
+      "taskId": "dozu-ui-service#typecheck",
+      "command": "tsc --noEmit",
+      "dependencies": [],
+      "env": [],
+      "passThroughEnv": null,
+      "cache": true
+    }
+  ]
+}

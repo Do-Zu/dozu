@@ -1,0 +1,29 @@
+{
+  "project": "https://github.com/orgs/Do-Zu/projects/6",
+  "projectId": "PVT_kwDODsVOHc4Bq0ro",
+  "backlogItemsVerified": 44,
+  "totalProjectItems": 44,
+  "newItemsAdded": 0,
+  "fieldsVerified": [
+    "Status",
+    "Priority",
+    "Complexity",
+    "Phase",
+    "Depends on",
+    "Blocker"
+  ],
+  "boardStatuses": [
+    {
+      "status": "Block",
+      "count": 2
+    },
+    {
+      "status": "Todo",
+      "count": 42
+    }
+  ],
+  "assignedItems": 0,
+  "existingColumnsPreserved": true,
+  "ownersInvented": false,
+  "automaticTwoWaySyncConfigured": false
+}

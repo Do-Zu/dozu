@@ -1,0 +1,10 @@
+
+> dozu-ui-service@0.1.0 lint D:\product\dozu\apps\web
+> next lint
+
+Cannot read properties of undefined (reading 'members')
+Occurred while linting D:\product\dozu\apps\web\src\app\[locale]\class-based\(assignment)\types\assignment.type.ts:3
+Rule: "@typescript-eslint/no-duplicate-enum-values"
+D:\product\dozu\apps\web:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  dozu-ui-service@0.1.0 lint: `next lint`
+Exit status 1

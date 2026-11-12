@@ -1,0 +1,36 @@
+# Original private checkouts remain intact outside the source snapshot.
+/dozu-ui-service/
+/dozu-api-service/
+/dozu-embedding-service/
+
+# Credentials and machine-local state. Never stage with git add -A.
+token-githubs.txt
+**/.env
+**/.env.*
+**/.npmrc
+**/.pypirc
+*.pem
+*.key
+*.p12
+*.pfx
+
+**/node_modules/
+**/.next/
+**/.turbo/
+**/dist/
+**/dist-lambda/
+**/.package/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/*.tsbuildinfo
+**/coverage/
+**/npm-debug.log
+**/pnpm-debug.log
+/artifacts/
+/apps/api/uploads/
+/apps/api/logs/
+/planning/**/.runs/
+/planning/**/.downloads/
+/planning/workspace/.pnpm-store/
