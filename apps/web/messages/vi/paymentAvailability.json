@@ -1,0 +1,8 @@
+{
+  "PaymentAvailability": {
+    "title": "Không hỗ trợ thanh toán",
+    "description": "Phiên bản máy tính này không xử lý thanh toán, tạo liên kết thanh toán, hoàn tiền hoặc kích hoạt gói trả phí qua liên kết xác nhận thanh toán.",
+    "history": "Lịch sử thanh toán và thông tin gói đăng ký hiện có vẫn được giữ nguyên.",
+    "home": "Về trang chủ"
+  }
+}

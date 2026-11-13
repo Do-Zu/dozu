@@ -1,0 +1,29 @@
+{
+  "added": [],
+  "removed": [
+    [
+      "D:/product/dozu/apps/api/src/services/admin/payment.service.ts",
+      "warning",
+      "Unexpected any. Specify a different type",
+      "@typescript-eslint/no-explicit-any"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/services/admin/payment.service.ts",
+      "warning",
+      "Unexpected any. Specify a different type",
+      "@typescript-eslint/no-explicit-any"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/services/payment/gateway/payos.ts",
+      "warning",
+      "Unexpected console statement",
+      "no-console"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/services/payment/gateway/payos.ts",
+      "warning",
+      "Unexpected any. Specify a different type",
+      "@typescript-eslint/no-explicit-any"
+    ]
+  ]
+}

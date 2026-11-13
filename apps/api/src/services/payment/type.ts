@@ -1,9 +1,9 @@
-import { CheckoutRequestType, CheckoutResponseDataType } from '@payos/node/lib/type';
 import { PaymentStatus } from './payment.interface';
 
-export interface PaymentDataType
-    extends Omit<CheckoutRequestType, 'returnUrl' | 'cancelUrl' | 'orderCode' | 'description'> {
+// Historical API DTOs are independent of a gateway SDK; execution is unavailable.
+export interface PaymentDataType {
     planId: number;
+    amount: number;
 }
 
 export interface PaymentData {
@@ -14,7 +14,19 @@ export interface ValidationData {
     [key: string]: any;
 }
 
-export interface PaymentLinkResponse extends CheckoutResponseDataType {
+export interface PaymentLinkResponse {
+    bin: string;
+    accountNumber: string;
+    accountName: string;
+    amount: number;
+    description: string;
+    orderCode: number;
+    currency: string;
+    paymentLinkId: string;
+    status: string;
+    expiredAt?: number;
+    checkoutUrl: string;
+    qrCode: string;
     baseUrlReturn: string;
     expireAt?: string;
     transactionId?: number;

@@ -1,5 +1,7 @@
 # Dozu local-first desktop planning
 
+**Payment scope — 2026-11-13:** [PayOS/payment execution excluded from desktop](v1-scope-2026-11-13-payments.md). The SDK/eager gateway blocker is removed; checkout is explicitly unavailable, historical reads/data are retained, and Redis remains. [Implementation evidence](payment-removal/README.md) does not establish full API/native readiness or complete #7/#41.
+
 **Completion review — 2026-11-13:** #7 remains In Progress with original acceptance unpassed. New [#48 framework/security upgrade](https://github.com/Do-Zu/dozu/issues/48) and [#49 native script validation](https://github.com/Do-Zu/dozu/issues/49) track missing work; every other gap maps to existing delivery issues. See the [completion ledger](toolchains/follow-ups/README.md). Creating follow-ups does not certify native runtimes/installers or complete #7.
 
 **Scope follow-up — 2026-11-13:** [Email delivery removed; Redis retained](v1-scope-2026-11-13-email.md). The user clarified that Redis removal is skipped; alternatives are suggestions only. [Implementation and checks](email-removal/README.md) record email-free account flows and local backend URL defaults. Older email-delivery requirements are superseded by this amendment.

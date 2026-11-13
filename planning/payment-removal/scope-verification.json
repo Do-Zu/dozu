@@ -1,0 +1,10 @@
+{
+  "onlyPayosAndUnusedCryptoRemovedFromPriorLock": true,
+  "noOtherDirectDependencyChanges": true,
+  "schemasRepositoriesMigrationHistoryRedisBullMQFreePlanAndSchedulerSourceUnchanged": true,
+  "noPayosSdkImportsInApiSource": true,
+  "translationKeysMatch": true,
+  "apiLintAddedDiagnostics": 0,
+  "apiLintRemovedDiagnostics": 4,
+  "noRealTransactionOrMigrationExecuted": true
+}

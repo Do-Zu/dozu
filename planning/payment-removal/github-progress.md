@@ -1,0 +1,11 @@
+## PayOS removal — user-directed desktop scope, 2026-11-13
+
+The user explicitly removed PayOS because this desktop version does not process payments. Local scope/evidence: `planning/v1-scope-2026-11-13-payments.md` and `planning/payment-removal/README.md`.
+
+- Removed the SDK, eager PaymentBase/PayOS initialization and unused SePay fallback processing. No provider substitution or merchant configuration.
+- Payment creation/callbacks/status confirmation/SSE, paid subscription creation/upgrade and admin refund/status mutation return 503 before DB/cache/provider access. Existing history/admin/revenue/export queries, schemas and stored transaction/subscription values remain; no paid entitlement is fabricated. Automatic free-plan initialization and ordinary usage accounting are unchanged.
+- The authenticated payment route now explains unavailability in en/vi, without checkout hooks, QR/provider links or PAID callback-query effects. Original source checkouts and other website/UI routes remain. No deployment occurred.
+- Frozen offline install, API/Next production builds, root package, compiled boundary tests and 13 real website HTTP/payload/asset checks pass. Boundary tests use explicit query/provider doubles; they are not real financial/DB/session/browser/native proof. API lint retains 92 errors/139 warnings with zero added diagnostics versus the prior checkpoint; the two changed UI files have zero current errors/warnings and zero added signatures.
+- The real bounded API entrypoint gets past the former PayOS/PaymentBase failure without merchant/SMTP credentials. It remains running until its ten-second limit amid deliberately unavailable DB/Redis initialization; full readiness remains unpassed. The probe used an isolated Puppeteer config to prevent host-config discovery, without supplying/downloading a browser.
+
+Redis is retained, email/STT stay excluded, PostgreSQL is retained and pgvector deferred, required PDF/YouTube text embeddings and LAN classrooms remain. #41 records the explicit payment exclusion with its old criteria still unpassed; #7 stays In Progress and #40/#28 retain full startup/readiness work. No existing issue/Project status or assignee is changed. Work remains local/uncommitted; no payment/refund/webhook/provider request, real DB migration, source push or deployment ran.

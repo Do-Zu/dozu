@@ -1,0 +1,128 @@
+{
+  "7": {
+    "assignees": [],
+    "body": "<!-- dozu-tracking:start -->\n## Work tracking\nUse the live **status:**, **priority:** and **complexity:** labels above; **Assignees** identifies the owner. These labels are separate from the task/ticket type.\n\n**Planning complexity:** M - Portable scripts and version/ABI compatibility across three build environments.\nComplexity is a provisional scope/uncertainty estimate, not a delivery-time commitment. XL work must be split into executable subtasks before starting.\n**Planning priority:** P0 - Architecture/foundation work that unblocks the implementation path.\n<!-- dozu-tracking:end -->\n\n## Outcome\nReplace Windows-only script assumptions and select supported toolchains compatible with the bundled Node/Electron/Python/native database stack.\n\n## Acceptance criteria\n- [ ] Make scripts/environment/path handling portable across all three OSes.\n- [ ] Pin build toolchain/runtime versions and verify Electron/native-module ABI or standalone Node compatibility.\n- [ ] Separate necessary framework/security upgrades from source movement with independent validation.\n- [ ] Validate API aliases, production startup, migration paths, installed-resource paths and read-only installation behavior.\n- [ ] Provide root development and packaging commands; end users require no developer tools.\n\n## Architecture constraints\nThe complete existing Next.js UI and Express backend run locally with a local database/files. Desktop and local browser use the same localhost backend. Real third-party integrations may use the internet; preserve them wherever feasible. No central Dozu backend, cloud database, synchronization, shared publisher secrets in installers, or simulated replacements. All pages/features remain in release scope.\n\n<!-- dozu-roadmap:TOOLCHAINS -->\n\nPhase: 1 Foundation | Priority: P0\n\nParent roadmap: https://github.com/Do-Zu/dozu/issues/1\n\n## Dependencies\n- #6 - [Task] Establish reproducible monorepo workspaces and build graph\n- #4 - [Ticket] Prove Electron can package the complete local Next.js and service stack\n\n<!-- dozu-toolchains-followup-ledger:start -->\n## Completion review and executable follow-ups \u2014 2026-11-13\n\nThe user requested a completion check and a separate issue for each unfinished task that can be resolved later. **The original acceptance criteria above are not yet passed; #7 remains open/In Progress.** Creating or linking follow-ups is not completion evidence, and the original criteria are not rewritten or checked merely to close this ticket.\n\nImplemented evidence is in the [tooling checkpoint](https://github.com/Do-Zu/dozu/issues/7#issuecomment-6845196827) and [email/URL follow-up](https://github.com/Do-Zu/dozu/issues/7#issuecomment-6845746927). Work remains local/uncommitted in the current checkout; a source-review/merge result is not claimed. API and Next builds, website packaging, compiled aliases, restricted component writes and eleven website HTTP checks pass. API lint retains 92 errors/143 warnings with zero added diagnostic signatures; changed UI files also have zero added signatures. These are partial results with stated boundaries.\n\n### Every remaining gap has an issue\n\n| Original #7 criterion / unfinished task | Executable owner issue(s) | Current evidence limit |\n| --- | --- | --- |\n| Native portability of development/build/package scripts, env handling and paths | **New #49** | Windows developer-host checks only; no complete approved native-host matrix |\n| Supported framework/security upgrade independently validated after source movement | **New #48** | Measured pins preserved; Next 14 baseline is not a security approval or completed upgrade |\n| Shipped Electron/standalone Node strategy, version/hash pins, complete native ABI/library closure | #38 | Host Node ABI 127/Node-API 10 and Windows SWC load only; not bundled Electron/native-stack acceptance |\n| Locked portable Python/native wheels/model/tokenizer and offline retained text-embedding contracts | #8, with resources in #32/#38 | Mutable image/unpinned Python inputs and unverified bundled assets remain |\n| API production startup/readiness without optional merchant/cloud keys | #40, supervised lifecycle #28 | Real scrubbed entrypoint now fails at eager PayOS/PaymentBase configuration; email/URL blocker is removed |\n| Real extension-free PostgreSQL migrations/bootstrap/seed/data preservation | #29 | Only config-path relocation checked; no migration was applied by #7 |\n| Installed-resource ownership, writable per-user roots and genuinely read-only installed stack | #34 and #15, assembled assets #32/#38 | Explicit DOZU_DATA_DIR/component writes and read-only website sampling only; no full OS ACL/packaged proof |\n| End users need no Node/Python/database/Redis/Docker/WSL/developer setup; full desktop package commands | #23, clean first boot #33 | Root commands currently build JavaScript and the standalone website, not a self-contained desktop installer |\n| Full native install/runtime/workflow/resource/lifecycle validation | #22 with #46/#47 and #23/#33 | All approved native target gates remain unpassed. #45 is closed with unchecked criteria, so its closed state is not Windows certification; #22 retains that gate |\n| Real local account/session/restart validation after explicit email removal | #14, exercised through #16/#22 | Compiled-module auth tests use repository/provider doubles; no real PostgreSQL/session/security certification |\n\nExisting issues are reused rather than duplicated. #48 and #49 are new children of #7, with written acceptance criteria and Project #6 items. They do not depend on #7 being closed: #48 can use completed #6, while #49's final run waits for #48's selected baseline and native hosts. Ownership/assignees are not invented.\n\nThe table is a responsibility map, not new reverse prerequisite edges. #1 already coordinates the dependency transition: in particular, #38 currently depends on #7's tooling foundation, so do not create a #7\u2192#38\u2192#7 completion cycle. A reviewed distinction between the delivered tooling milestone and downstream release proofs is required before administrative closure can be considered; no dependency field is silently rewritten here. #4's contradictory closed/completed/checked state versus NOT PLANNED closure remains historical and does not prove full support. #4/#45 are not reopened or closed by this update.\n\n### Current scope remains authoritative\nOutgoing email and local STT are excluded; PostgreSQL is retained and pgvector deferred; required PDF/YouTube text embeddings, all website/UI pages and LAN classrooms remain. Payment execution is deferred under #41. The user explicitly said **skip Redis removal**; #30's older replacement plan is not authorization to implement replacement during these follow-ups. Redis remains in the current runtime and must be accounted for in packaging. Its alternatives are proposals only.\n\nNo full #7 criterion, native target, full-stack startup or installer gate is marked complete by this issue split.\n<!-- dozu-toolchains-followup-ledger:end -->\n",
+    "labels": [
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5tC9w",
+        "name": "task",
+        "description": "Concrete implementation or verification work",
+        "color": "0E8A16"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-Cjg",
+        "name": "status:in-progress",
+        "description": "An owner has actively started the work",
+        "color": "1D76DB"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-FBw",
+        "name": "priority:P0",
+        "description": "Highest current priority: architecture and foundation unblockers",
+        "color": "B60205"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-IGA",
+        "name": "complexity:M",
+        "description": "Moderate scope, several modules or bounded validation",
+        "color": "0075CA"
+      }
+    ],
+    "number": 7,
+    "projectItems": [
+      {
+        "status": {
+          "optionId": "47fc9ee4",
+          "name": "In Progress"
+        },
+        "title": "dozu"
+      }
+    ],
+    "state": "OPEN",
+    "title": "[Task] Pin portable toolchains and runtime-compatible builds"
+  },
+  "40": {
+    "assignees": [],
+    "body": "<!-- dozu-tracking:start -->\n## Work tracking\nUse the live **status:**, **priority:** and **complexity:** labels above; **Assignees** identifies the owner. These labels are separate from the task/ticket type.\n\n**Planning complexity:** L - Profile-based service wiring, lazy providers, seeds and local execution of cloud job handlers.\nComplexity is a provisional scope/uncertainty estimate, not a delivery-time commitment. XL work must be split into executable subtasks before starting.\n**Planning priority:** P0 - Architecture/foundation work that unblocks the implementation path.\n<!-- dozu-tracking:end -->\n\n## Outcome\nReuse Express domain logic while initializing local services/configuration automatically and deferring optional external integrations until configured.\n\n## Acceptance criteria\n- [ ] Inject local DB/files/jobs/cache/secrets configuration; generate required per-installation auth/bootstrap values.\n- [ ] Remove eager remote-client/module-global initialization that crashes startup when SMTP/merchant/LLM/cloud keys are absent.\n- [ ] Execute existing Lambda job handlers locally while retaining deliberate third-party provider requests.\n- [ ] Seed required roles/permissions/plans/provider metadata idempotently with product-correct access semantics; do not fake paid entitlements.\n- [ ] Verify local profile startup with no external credentials, explicit loopback binding and clean shutdown/health.\n\n## Architecture constraints\nThe complete existing Next.js UI and Express backend run locally with a local database/files. Desktop and local browser use the same localhost backend. Real third-party integrations may use the internet; preserve them wherever feasible. No central Dozu backend, cloud database, synchronization, shared publisher secrets in installers, or simulated replacements. All existing pages remain in scope; explicit v1 capability deferrals in the 2026-11-11 amendment below apply.\n\n<!-- dozu-roadmap:LOCAL-BOOTSTRAP -->\n\nPhase: 2 Local services | Priority: P0\n\nParent roadmap: https://github.com/Do-Zu/dozu/issues/1\n\n## Dependencies\n- #29 - [Task] Bundle and initialize per-user PostgreSQL (pgvector deferred)\n- #30 - [Task] Replace desktop Redis/BullMQ consumers with durable local adapters\n\n<!-- dozu-v1-scope-2026-11-11:start -->\n## User-approved v1 scope amendment \u2014 2026-11-11\n\n- Remove local speech-to-text from this version: no whisper.cpp server, tiny speech model, speech startup/readiness gate or speech-only assets. Retain independent media playback and genuine existing YouTube transcript text retrieval. Preserve source/page inventory; no fake transcript or new cloud STT fallback.\n- Keep PostgreSQL; **defer pgvector**. A private relational cluster, reviewed migrations/seeds, persistence and data-safe upgrades remain required. Current vector(384), `<=>` and HNSW consumers need explicit reviewed adaptation; do not blindly run vector-dependent migrations, discard data or replace PostgreSQL.\n- The measured 479.729 MB MiniLM snapshot is a separate **text-embedding model**, used by retained PDF/YouTube reference search and ingestion. The user's condition for dropping its experiment is not met: keep smaller-runtime/quantization proof scoped to these consumers. No working smaller runtime or pgvector-free ranking implementation is claimed.\n- Ordinary PostgreSQL array/JSONB vector storage plus bounded application-side cosine ranking is an evaluation candidate only. Prove owner/topic filtering, 384-value shape, ranking/topK/ties, persistence/migration, quality and realistic scale/resource budgets before adopting it. Semantic reference retrieval has not been deferred by this decision.\n- Exclude FFmpeg only when its sole consumer is deferred speech-to-text; separately prove any retained non-STT need. Keep required document/URL/PDF/editor/media/font/browser resources. OS/CPU/installers, 250 MB installer/750 MB installed and memory/startup targets remain unchanged. Payments remain deferred under #41; classrooms remain LAN.\n\nSource trace: `PdfFileEmbeddingStrategy.ts`, `YoutubeEmbeddingStrategy.ts`, `BaseEmbeddingStrategy.queryTopSimilarity()`, `inputSet.service.ts`, UI topic `components/reference/Reference.tsx`, and separate `features/whisper/api/whisper.service.ts`. Full record: local `planning/v1-scope-2026-11-11.md`. Earlier audits/measurements are historical evidence. Planning updates are not implemented feature removal or passing acceptance.\n<!-- dozu-v1-scope-2026-11-11:end -->\n",
+    "labels": [
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5tC9w",
+        "name": "task",
+        "description": "Concrete implementation or verification work",
+        "color": "0E8A16"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-CDw",
+        "name": "status:waiting",
+        "description": "Waiting for normal planned prerequisite work",
+        "color": "FBCA04"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-FBw",
+        "name": "priority:P0",
+        "description": "Highest current priority: architecture and foundation unblockers",
+        "color": "B60205"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-Ivg",
+        "name": "complexity:L",
+        "description": "Cross-system, native, security-sensitive or broad validation",
+        "color": "5319E7"
+      }
+    ],
+    "number": 40,
+    "projectItems": [
+      {
+        "status": {
+          "optionId": "f75ad846",
+          "name": "Todo"
+        },
+        "title": "dozu"
+      }
+    ],
+    "state": "OPEN",
+    "title": "[Task] Add a local backend profile with automatic seeds and lazy integrations"
+  },
+  "41": {
+    "assignees": [],
+    "body": "<!-- dozu-tracking:start -->\r\n## Work tracking\r\nUse the live **status:**, **priority:** and **complexity:** labels above; **Assignees** identifies the owner. These labels are separate from the task/ticket type.\r\n\r\n**Planning complexity:** XL - Merchant ownership and provider reconciliation/callback feasibility are unresolved; split after design validation.\r\nComplexity is a provisional scope/uncertainty estimate, not a delivery-time commitment. XL work must be split into executable subtasks before starting.\r\n**Planning priority:** P1 - Required product, integration or release work after its prerequisites.\r\n\r\n**Blocking decision/impediment:** User explicitly deferred/skipped payment execution during the local migration on 2026-11-10. Keep payments blocked under #41 until the user explicitly reopens the feature and chooses merchant ownership/provider flow; no live charges or simulated success. Existing payment/history/admin page inventory is retained.\r\n<!-- dozu-tracking:end -->\r\n\r\n## Outcome\r\r\nAdapt PayOS/SePay checkout/status/history for the agreed merchant/customer ownership model without distributing Dozu merchant secrets.\r\r\n\r\r\n## Acceptance criteria\r\r\n- [ ] Record owner of merchant keys and transaction authority; choose user-owned merchant credentials or provider-managed checkout/entitlement flow as appropriate.\r\r\n- [ ] Keep real checkout in supported browser/provider flow; validate redirect binding, order/amount/currency/account and never trust success URL as payment proof.\r\r\n- [ ] Implement documented authenticated provider status reconciliation (current PayOS getPaymentStatus is unimplemented), durable local mappings and idempotent subscription updates.\r\r\n- [ ] When webhooks are mandatory, prove provider-supported scoped tunnel/public callback delivery/signature/replay behavior and host-offline recovery; no silent hosted Dozu relay.\r\r\n- [ ] Test failure/cancel/refund/restart/duplicate events and preserve payment/admin/history UI; explicitly report unresolved provider constraints.\r\r\n\r\r\n## Architecture constraints\r\r\nThe complete existing Next.js UI and Express backend run locally with a local database/files. Desktop and local browser use the same localhost backend. Real third-party integrations may use the internet; preserve them wherever feasible. No central Dozu backend, cloud database, synchronization, shared publisher secrets in installers, or simulated replacements. All pages/features remain in release scope.\r\r\n\r\r\n<!-- dozu-roadmap:PAYMENTS -->\r\r\n\r\r\nPhase: 2 Local services | Priority: P1\r\r\n\r\r\nParent roadmap: https://github.com/Do-Zu/dozu/issues/1\r\r\n\r\r\n## Dependencies\r\r\n- #27 - [Ticket] Resolve desktop integration callbacks, secrets and shared-state limits\r\r\n- #31 - [Task] Store user-scoped provider credentials securely on the device\r\r\n- #40 - [Task] Add a local backend profile with automatic seeds and lazy integrations\r\r\n\r\r\n## Explicit payment deferral \u2014 2026-11-10\r\r\n\r\r\nBlocked because: User explicitly deferred/skipped payment execution during the local migration on 2026-11-10. Keep payments blocked under #41 until the user explicitly reopens the feature and chooses merchant ownership/provider flow; no live charges or simulated success. Existing payment/history/admin page inventory is retained.\r\r\n\r\r\nThis user decision defers payment execution rather than authorizing page deletion. Future implementation must expose an honest blocked state and preserve local history/admin inventory. No payment functionality has been disabled in application code by this requirements task. Existing technical criteria are retained for an explicitly reopened payment feature, not a mandatory v1 payment release gate.\r\n\r\n<!-- dozu-v1-payments-excluded-2026-11-13:start -->\r\n## Explicit desktop scope: payments excluded \u2014 2026-11-13\r\n\r\nThe user directed removal of PayOS because the desktop does not process payments. This supersedes payment-execution implementation as a v1 shipping requirement; the original unchecked criteria above are historical/deferred and are not marked completed.\r\n\r\n- The current imported API no longer depends on @payos/node, initializes PaymentBase/PayOS, or silently falls back to SePay.\r\n- Payment creation, gateway callbacks, payment SSE, status confirmation, paid subscription creation/upgrade, and admin refund/status mutation are explicitly unavailable before mutable access. No merchant credentials or fabricated payment/entitlement were supplied.\r\n- Retain payment/admin/revenue/history pages, schemas, stored transaction/subscription data and read/export functions. No migration or historical data rewrite/deletion occurred. The authenticated checkout route now explains unavailability in en/vi and does not process PAID query parameters.\r\n- Automatic free-plan initialization, normal usage accounting, subscription reads/cancellation, retained Redis and other approved v1 scope remain unchanged. A new blanket entitlement/unlocking policy is not implied.\r\n- SDK removal, API/Next production builds, root website package and compiled boundary tests pass. Thirteen real website HTTP/payload/asset checks pass with writes denied. Unit tests use explicit query/provider doubles; real DB/financial/browser/native acceptance is not claimed.\r\n- The real scrubbed API entrypoint gets past PayOS and remains running until its bounded ten-second limit against deliberately unavailable DB/Redis. Full backend readiness remains unpassed under #40/#28.\r\n- Reintroducing payment execution requires an explicit product instruction and independent design/security/runtime validation. This update does not reopen payment execution or mark this issue's original criteria Done.\r\n\r\nLocal reviewable evidence: planning/v1-scope-2026-11-13-payments.md and planning/payment-removal/README.md, contract-check.json, root-package.json, website-proof.json and production-startup.json. Changes remain local/uncommitted; no provider transaction, database migration, source push or deployment ran. Existing issue status, assignees and Project fields are preserved.\r\n<!-- dozu-v1-payments-excluded-2026-11-13:end -->\r\n\r\n",
+    "labels": [
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5tC9w",
+        "name": "task",
+        "description": "Concrete implementation or verification work",
+        "color": "0E8A16"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-DUA",
+        "name": "status:blocked",
+        "description": "Specific unresolved impediment or decision; reason required",
+        "color": "D73A4A"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-Few",
+        "name": "priority:P1",
+        "description": "Required feature, integration or release work after foundations",
+        "color": "D93F0B"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-Jcg",
+        "name": "complexity:XL",
+        "description": "Umbrella/high uncertainty; split into smaller executable tasks",
+        "color": "D876E3"
+      }
+    ],
+    "number": 41,
+    "projectItems": [
+      {
+        "status": {
+          "optionId": "f865cf1f",
+          "name": "Block"
+        },
+        "title": "dozu"
+      }
+    ],
+    "state": "OPEN",
+    "title": "[Task] Preserve real payments with secure desktop reconciliation"
+  }
+}

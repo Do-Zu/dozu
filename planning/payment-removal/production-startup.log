@@ -1,0 +1,1383 @@
+2026-11-13 18:15:44:1544 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+Connecting to Redis (attempt 1 of 3)...
+Connecting to Redis (attempt 2 of 3)...
+Connecting to Redis (attempt 3 of 3)...
+Connecting to Redis (attempt 1 of 3)...
+2026-11-13 18:15:45:1545 [31merror[39m: [31mMissing EMBEDDING_API_URL environment variable[39m
+2026-11-13 18:15:45:1545 [31merror[39m: [31mMissing BASE_API_EMBEDDING_SERVICE[39m
+2026-11-13 18:15:45:1545 [31merror[39m: [31mMissing BASE_API_EMBEDDING_SERVICE[39m
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mFailed to initialize LLM service from database: Error: connect EACCES 127.0.0.1:1[39m
+2026-11-13 18:15:46:1546 [31merror[39m: [31mFailed to initialize OpenAI client: Failed to initialize LLM service from database[39m
+2026-11-13 18:15:46:1546 [31merror[39m: [31mFailed to initialize LLM service from database: Error: connect EACCES 127.0.0.1:1[39m
+2026-11-13 18:15:46:1546 [31merror[39m: [31mFailed to initialize OpenAI client: Failed to initialize LLM service from database[39m
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:46:1546 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:47:1547 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:48:1548 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:48:1548 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:49:1549 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:49:1549 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:50:1550 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:51:1551 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:51:1551 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+2026-11-13 18:15:53:1553 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mWorker error in queue WORKER_OPEN_API_INTEGRATE_GEN_CONTENT: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mWorker error: connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mRedis connection error: connect EACCES 127.0.0.1:1[39m
+{
+  "errno": -4092,
+  "code": "EACCES",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 1,
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+2026-11-13 18:15:53:1553 [31merror[39m: [31mUNCAUGHT EXCEPTION!  Shutting down... connect EACCES 127.0.0.1:1[39m
+{
+  "stack": "Error: connect EACCES 127.0.0.1:1\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)"
+}
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Redis connection closed
+Redis reconnecting...
+Error loading environment: Access to this API has been restricted. Use --allow-fs-read to manage permissions.
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+classQuizScheduler first run error Error: connect EACCES 127.0.0.1:1
+    at D:\product\dozu\node_modules\.pnpm\pg-pool@3.10.1_pg@8.14.1\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async D:\product\dozu\node_modules\.pnpm\drizzle-orm@0.41.0_@types+pg@8.11.11_gel@2.1.1_pg@8.14.1\node_modules\drizzle-orm\node-postgres\session.cjs:148:22
+    at async runOnce (D:\product\dozu\apps\api\dist\utils\quiz\classQuizScheduler.job.js:16:26) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}
+Redis connection error: Error: connect EACCES 127.0.0.1:1
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 1
+}

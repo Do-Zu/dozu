@@ -1,0 +1,12 @@
+{
+  "name": "root-package",
+  "command": [
+    "pnpm",
+    "package"
+  ],
+  "exitCode": 0,
+  "seconds": 88.172,
+  "capturedAtUtc": "2026-11-13T11:09:24.066859+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "root-package.log"
+}

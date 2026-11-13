@@ -1,0 +1,8 @@
+{
+  "exitCode": null,
+  "timedOut": true,
+  "emailStartupBlockerAbsent": true,
+  "payosStartupBlockerAbsent": true,
+  "backendReady": false,
+  "boundary": "Scrubbed real entrypoint; deliberately unavailable loopback DB/Redis; no SMTP/provider credentials or real dotenv reads; owned process bounded/stopped."
+}

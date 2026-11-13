@@ -1,0 +1,8 @@
+{
+  "PaymentAvailability": {
+    "title": "Payments are unavailable",
+    "description": "This desktop version does not process payments, create payment links, issue refunds or activate paid plans from payment callbacks.",
+    "history": "Existing payment history and subscription records are preserved.",
+    "home": "Back to home"
+  }
+}

@@ -1,0 +1,394 @@
+
+> api-services@0.0.1 lint D:\product\dozu\apps\api
+> eslint .
+
+
+D:\product\dozu\apps\api\src\controllers\admin\llmProvider.controller.ts
+  9:82  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\controllers\class-based-learning\class-quiz\classQuizTeacher.controller.ts
+   95:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  106:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\controllers\content\content.controller.ts
+  1:10  error  'Request' is defined but never used          @typescript-eslint/no-unused-vars
+  1:10  error  'Request' is defined but never used          no-unused-vars
+  1:19  error  'Response' is defined but never used         @typescript-eslint/no-unused-vars
+  1:19  error  'Response' is defined but never used         no-unused-vars
+  2:10  error  'contentService' is defined but never used   @typescript-eslint/no-unused-vars
+  2:10  error  'contentService' is defined but never used   no-unused-vars
+  3:10  error  'SuccessResponse' is defined but never used  @typescript-eslint/no-unused-vars
+  3:10  error  'SuccessResponse' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\controllers\flashcard\flashcard.controller.ts
+   17:10  error    'TimeUnit' is defined but never used         @typescript-eslint/no-unused-vars
+   17:10  error    'TimeUnit' is defined but never used         no-unused-vars
+   23:5   error    'learnAheadLimit' is defined but never used  @typescript-eslint/no-unused-vars
+   23:5   error    'learnAheadLimit' is defined but never used  no-unused-vars
+  172:13  warning  Unexpected console statement                 no-console
+
+D:\product\dozu\apps\api\src\controllers\gamification\points.controller.ts
+  80:11  warning  Unexpected console statement  no-console
+
+D:\product\dozu\apps\api\src\controllers\mindmap\mindmap.controller.ts
+  86:78  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  89:19  error    'childreNodeIds' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  89:19  error    'childreNodeIds' is assigned a value but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\controllers\uploads\upload.file.controller.ts
+  225:101  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\core\success.ts
+  4:28  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\core\validations\validator.ts
+  7:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  7:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\dtos\generate\index.ts
+  4:1  warning  Unused eslint-disable directive (no problems were reported)
+
+D:\product\dozu\apps\api\src\dtos\generate\models\FlashcardItemInterface.ts
+  4:1  warning  Unused eslint-disable directive (no problems were reported)
+
+D:\product\dozu\apps\api\src\dtos\generate\models\GenerateContentRequestInterface.ts
+  7:1  warning  Unused eslint-disable directive (no problems were reported)
+
+D:\product\dozu\apps\api\src\dtos\generate\models\GenerateContentResponseInterface.ts
+  4:1  warning  Unused eslint-disable directive (no problems were reported)
+
+D:\product\dozu\apps\api\src\dtos\generate\models\JobStatusResponseInterface.ts
+  4:1  warning  Unused eslint-disable directive (no problems were reported)
+
+D:\product\dozu\apps\api\src\dtos\generate\models\QuizItemInterface.ts
+  4:1  warning  Unused eslint-disable directive (no problems were reported)
+
+D:\product\dozu\apps\api\src\features\assignment\assignment.controller.ts
+  70:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\features\assignment\assignment.type.ts
+  1:10  error  'TypeSelectAttachment' is defined but never used  @typescript-eslint/no-unused-vars
+  1:10  error  'TypeSelectAttachment' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\global\types\express\index.d.ts
+  24:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:25  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\libs\aws\lambda\generate\handler.ts
+   44:9   warning  Unexpected console statement              no-console
+   58:13  warning  Unexpected console statement              no-console
+   62:13  warning  Unexpected console statement              no-console
+   74:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   76:9   warning  Unexpected console statement              no-console
+  101:9   warning  Unexpected console statement              no-console
+  105:9   warning  Unexpected console statement              no-console
+  144:13  warning  Unexpected console statement              no-console
+  149:17  warning  Unexpected console statement              no-console
+  164:9   warning  Unexpected console statement              no-console
+  205:17  warning  Unexpected console statement              no-console
+  210:13  warning  Unexpected console statement              no-console
+  218:17  warning  Unexpected console statement              no-console
+  238:5   warning  Unexpected console statement              no-console
+  247:9   warning  Unexpected console statement              no-console
+  252:9   warning  Unexpected console statement              no-console
+  266:9   warning  Unexpected console statement              no-console
+  281:9   warning  Unexpected console statement              no-console
+  286:13  warning  Unexpected console statement              no-console
+  299:13  warning  Unexpected console statement              no-console
+  307:13  warning  Unexpected console statement              no-console
+  318:9   warning  Unexpected console statement              no-console
+
+D:\product\dozu\apps\api\src\libs\googleOAuth2Client.ts
+  14:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  37:5   warning  Unexpected console statement              no-console
+
+D:\product\dozu\apps\api\src\libs\redis\base\redis.abstract.ts
+   47:13  warning  Unexpected console statement              no-console
+   79:17  warning  Unexpected console statement              no-console
+   89:13  warning  Unexpected console statement              no-console
+  100:13  warning  Unexpected console statement              no-console
+  105:13  warning  Unexpected console statement              no-console
+  200:17  warning  Unexpected console statement              no-console
+  205:17  warning  Unexpected console statement              no-console
+  211:17  warning  Unexpected console statement              no-console
+  217:17  warning  Unexpected console statement              no-console
+  223:17  warning  Unexpected console statement              no-console
+  229:17  warning  Unexpected console statement              no-console
+  234:17  warning  Unexpected console statement              no-console
+  239:17  warning  Unexpected console statement              no-console
+  244:17  warning  Unexpected console statement              no-console
+  253:55  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\libs\redis\default\redisDefault.ts
+  19:55  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\libs\redis\pub-sub\redisPubsub.connect.ts
+  23:53  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\libs\redis\recommendation\redisRecommendation.ts
+  19:53  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\libs\websocket\socket.io.ts
+  94:32  error  'socket' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  94:32  error  'socket' is defined but never used                                        no-unused-vars
+
+D:\product\dozu\apps\api\src\middleware\auth.middleware.ts
+  25:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\middleware\validations\feynman\feynman.validation.ts
+  16:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  16:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\middleware\validations\flashcard.validation.ts
+   6:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   6:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  14:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  14:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\repositories\auth.repo.ts
+  50:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  50:75  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\repositories\class-based-learning\class-quiz\classQuiz.shared.repo.ts
+   27:61  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  287:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  288:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  289:55  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  321:51  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\repositories\class-based-learning\classInvite.repo.ts
+  3:24  error  'IInviteResponse' is defined but never used  @typescript-eslint/no-unused-vars
+  3:24  error  'IInviteResponse' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\repositories\class-based-learning\quizClass.repo.ts
+  373:51  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  408:25  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  409:26  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  432:54  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\repositories\content\content.repo.ts
+  2:8  error  'db' is defined but never used  @typescript-eslint/no-unused-vars
+  2:8  error  'db' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\repositories\demo.repo.ts
+   4:44  error    'param' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+   4:44  error    'param' is defined but never used                                        no-unused-vars
+   4:51  warning  Unexpected any. Specify a different type                                 @typescript-eslint/no-explicit-any
+   9:3   warning  Unexpected console statement                                             no-console
+  14:47  warning  Unexpected any. Specify a different type                                 @typescript-eslint/no-explicit-any
+  15:3   warning  Unexpected console statement                                             no-console
+
+D:\product\dozu\apps\api\src\repositories\gamification\streak.repo.ts
+  174:9   warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  221:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\repositories\payment\payment.repo.ts
+  2:8  error  'db' is defined but never used  @typescript-eslint/no-unused-vars
+  2:8  error  'db' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\repositories\user\user.repo.ts
+   39:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   88:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  108:26  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\routes\class-based-learning\student\studentClassInvite.routes.ts
+  21:11  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  21:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  21:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:11  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  55:11  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  55:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  55:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\routes\mindmap\mindmap.routes.ts
+   6:5  error  'addFlashcardsToNodeController' is defined but never used  @typescript-eslint/no-unused-vars
+   6:5  error  'addFlashcardsToNodeController' is defined but never used  no-unused-vars
+  13:5  error  'getSingularNodeController' is defined but never used      @typescript-eslint/no-unused-vars
+  13:5  error  'getSingularNodeController' is defined but never used      no-unused-vars
+
+D:\product\dozu\apps\api\src\services\admin\llmApiKey.service.ts
+  2:19  error  'or' is defined but never used          @typescript-eslint/no-unused-vars
+  2:19  error  'or' is defined but never used          no-unused-vars
+  4:25  error  'BadRequest' is defined but never used  @typescript-eslint/no-unused-vars
+  4:25  error  'BadRequest' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\services\admin\llmModel.service.ts
+  2:42  error  'desc' is defined but never used  @typescript-eslint/no-unused-vars
+  2:42  error  'desc' is defined but never used  no-unused-vars
+  2:48  error  'sql' is defined but never used   @typescript-eslint/no-unused-vars
+  2:48  error  'sql' is defined but never used   no-unused-vars
+
+D:\product\dozu\apps\api\src\services\admin\payment.service.ts
+  3:51  error  'like' is defined but never used                    @typescript-eslint/no-unused-vars
+  3:51  error  'like' is defined but never used                    no-unused-vars
+  6:10  error  'userSubscriptionsTable' is defined but never used  @typescript-eslint/no-unused-vars
+  6:10  error  'userSubscriptionsTable' is defined but never used  no-unused-vars
+  6:34  error  'plansTable' is defined but never used              @typescript-eslint/no-unused-vars
+  6:34  error  'plansTable' is defined but never used              no-unused-vars
+
+D:\product\dozu\apps\api\src\services\admin\subscriptionStats.service.ts
+   2:24  error  'lte' is defined but never used                                              @typescript-eslint/no-unused-vars
+   2:24  error  'lte' is defined but never used                                              no-unused-vars
+  10:32  error  'startDate' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  10:32  error  'startDate' is defined but never used                                        no-unused-vars
+  10:50  error  'endDate' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+  10:50  error  'endDate' is defined but never used                                          no-unused-vars
+
+D:\product\dozu\apps\api\src\services\admin\user.service.ts
+  48:60  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\anki-setting\ankiSetting.service.ts
+  107:106  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\class-based-learning\__test__\classTopicComment.service.test.ts
+  6:10  error  'NodeType' is defined but never used  @typescript-eslint/no-unused-vars
+  6:10  error  'NodeType' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\services\class-based-learning\attachment\attachmentInLearningMaterial.service.ts
+    9:5   error    'insertAttachment' is defined but never used           @typescript-eslint/no-unused-vars
+    9:5   error    'insertAttachment' is defined but never used           no-unused-vars
+   10:5   error    'insertMultipleAttachments' is defined but never used  @typescript-eslint/no-unused-vars
+   10:5   error    'insertMultipleAttachments' is defined but never used  no-unused-vars
+   14:10  error    'checkAndConvertToString' is defined but never used    @typescript-eslint/no-unused-vars
+   14:10  error    'checkAndConvertToString' is defined but never used    no-unused-vars
+   24:11  error    'IInputResource' is defined but never used             @typescript-eslint/no-unused-vars
+   24:11  error    'IInputResource' is defined but never used             no-unused-vars
+  104:46  warning  Unexpected any. Specify a different type               @typescript-eslint/no-explicit-any
+  134:25  warning  Unexpected any. Specify a different type               @typescript-eslint/no-explicit-any
+  135:13  warning  Unexpected console statement                           no-console
+
+D:\product\dozu\apps\api\src\services\class-based-learning\class-quiz\classQuizTeacher.service.ts
+  8:73  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\class-based-learning\classInvite.service.ts
+  14:5  error  'IClassInviteWithDetails' is defined but never used  @typescript-eslint/no-unused-vars
+  14:5  error  'IClassInviteWithDetails' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\services\class-based-learning\learning-material\learningMaterial.service.ts
+   91:15  error    'result' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   91:15  error    'result' is assigned a value but never used  no-unused-vars
+  124:15  error    'result' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  124:15  error    'result' is assigned a value but never used  no-unused-vars
+  212:21  warning  Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  213:9   warning  Unexpected console statement                 no-console
+
+D:\product\dozu\apps\api\src\services\class-based-learning\quizClass.service.ts
+  186:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\content\content.service.ts
+  2:10  error  'contentRepo' is defined but never used  @typescript-eslint/no-unused-vars
+  2:10  error  'contentRepo' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\services\convert\strategies\converter-factory.strategy.ts
+  29:33  error  'converter' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  29:33  error  'converter' is defined but never used                                        no-unused-vars
+
+D:\product\dozu\apps\api\src\services\demo\demo.service.ts
+   1:37  error    'NotFoundError' is defined but never used  @typescript-eslint/no-unused-vars
+   1:37  error    'NotFoundError' is defined but never used  no-unused-vars
+   4:49  warning  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  89:48  warning  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  94:15  warning  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\embedding\v1\api\api.ts
+  2:10  error  'HTTP_STATUS' is defined but never used  @typescript-eslint/no-unused-vars
+  2:10  error  'HTTP_STATUS' is defined but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\services\embedding\v1\base.ts
+   5:64  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  12:80  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\embedding\v1\embedding.type.ts
+  44:83  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\gamification\points.service.ts
+  274:7  warning  Unexpected console statement  no-console
+
+D:\product\dozu\apps\api\src\services\gamification\streak.service.ts
+   40:68  warning  Unexpected any. Specify a different type                                  @typescript-eslint/no-explicit-any
+   44:11  error    'yesterday' is assigned a value but never used                            @typescript-eslint/no-unused-vars
+   44:11  error    'yesterday' is assigned a value but never used                            no-unused-vars
+  276:23  error    'userId' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  276:23  error    'userId' is defined but never used                                        no-unused-vars
+
+D:\product\dozu\apps\api\src\services\generative\lambda\lambda.service.ts
+   9:29  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  60:77  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\generative\llm\core\baseLLM.abstract.ts
+  29:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\generative\v1\generate.service.ts
+  87:69  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\mindmap\mindmap.service.ts
+  17:61  error  'nodeId' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  17:61  error  'nodeId' is defined but never used                                        no-unused-vars
+  18:11  error  'mindmap' is assigned a value but never used                              @typescript-eslint/no-unused-vars
+  18:11  error  'mindmap' is assigned a value but never used                              no-unused-vars
+
+D:\product\dozu\apps\api\src\services\payment\type.ts
+  14:20  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\profile\profile.service.ts
+  216:19  error  'topicId' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  216:19  error  'topicId' is assigned a value but never used          no-unused-vars
+  224:15  error  'completedTopics' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  224:15  error  'completedTopics' is assigned a value but never used  no-unused-vars
+
+D:\product\dozu\apps\api\src\services\progress\progress.service.ts
+  148:11  warning  Unexpected console statement  no-console
+  178:11  warning  Unexpected console statement  no-console
+
+D:\product\dozu\apps\api\src\services\quiz\quiz.service.ts
+  84:17  warning  Unexpected console statement  no-console
+  98:13  warning  Unexpected console statement  no-console
+
+D:\product\dozu\apps\api\src\services\spaced-repetition-system\superMemo.service.ts
+  25:26  error  'lastReviewed' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+  25:26  error  'lastReviewed' is defined but never used                                          no-unused-vars
+  25:55  error  'reviewInterval' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  25:55  error  'reviewInterval' is defined but never used                                        no-unused-vars
+
+D:\product\dozu\apps\api\src\services\subscription\usage\featureRecovery.service.ts
+  43:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\services\uploads\files\upload.file.service.ts
+  278:17  warning  Unexpected console statement  no-console
+
+D:\product\dozu\apps\api\src\types\profile\profile.types.ts
+    1:10  error    'Request' is defined but never used       @typescript-eslint/no-unused-vars
+    1:10  error    'Request' is defined but never used       no-unused-vars
+  113:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  114:22  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\utils\auth\jwt.utils.ts
+  50:18  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\utils\compress.ts
+  42:5  warning  Unexpected console statement  no-console
+
+D:\product\dozu\apps\api\src\utils\gamification\streak-timezone.ts
+  93:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\product\dozu\apps\api\src\utils\prompt.ts
+  56:50  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  67:9   warning  Unexpected console statement              no-console
+  76:13  warning  Unexpected console statement              no-console
+
+D:\product\dozu\apps\api\src\utils\quiz\classQuizScheduler.job.ts
+  36:17  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  63:7   warning  Unexpected console statement              no-console
+  70:28  warning  Unexpected console statement              no-console
+  74:30  warning  Unexpected console statement              no-console
+
+✖ 231 problems (92 errors, 139 warnings)
+  0 errors and 6 warnings potentially fixable with the `--fix` option.
+
+D:\product\dozu\apps\api:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  api-services@0.0.1 lint: `eslint .`
+Exit status 1

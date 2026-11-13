@@ -1,0 +1,15 @@
+{
+  "name": "frozen-install",
+  "command": [
+    "pnpm",
+    "install",
+    "--frozen-lockfile",
+    "--ignore-scripts",
+    "--offline"
+  ],
+  "exitCode": 0,
+  "seconds": 1.828,
+  "capturedAtUtc": "2026-11-13T11:05:23.167370+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "frozen-install.log"
+}

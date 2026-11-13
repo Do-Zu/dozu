@@ -1,9 +1,9 @@
+import { assertPaymentsAvailable } from '@/services/payment/paymentAvailability.service';
 import db from '@/libs/drizzleClient.lib';
 import { eq, and, gte, lte, sql, count, desc, or, like, ilike } from 'drizzle-orm';
 import { transactionsModel } from '@/models/payment/transaction.model';
 import { usersTable } from '@/models/user.model';
 import { userSubscriptionsTable, plansTable } from '@/models/subscription';
-import { NotFoundError, BadRequest } from '@/core/error';
 import { GetPaymentsQueryDto, RefundTransactionDto, UpdateTransactionStatusDto } from '@/dtos/admin/payment.dto';
 
 class AdminPaymentService {
@@ -103,74 +103,15 @@ class AdminPaymentService {
 
     // ============ UPDATE TRANSACTION STATUS ============
     
-    async updateTransactionStatus(transactionId: number, data: UpdateTransactionStatusDto) {
-        const transaction = await this.getPaymentById(transactionId);
-        if (!transaction) throw new NotFoundError('Transaction not found');
-
-        const result = await db
-            .update(transactionsModel)
-            .set({
-                status: data.status,
-                metadata: data.note 
-                    ? { ...transaction.metadata as any, adminNote: data.note }
-                    : transaction.metadata,
-                updatedAt: new Date(),
-            })
-            .where(eq(transactionsModel.transactionId, transactionId))
-            .returning();
-
-        return result[0];
+    async updateTransactionStatus(_transactionId: number, _data: UpdateTransactionStatusDto): Promise<never> {
+        void _transactionId;
+        void _data;
+        return assertPaymentsAvailable();
     }
 
-    // ============ REFUND TRANSACTION ============
-    
-    async refundTransaction(data: RefundTransactionDto) {
-        const transaction = await this.getPaymentById(data.transactionId);
-        if (!transaction) throw new NotFoundError('Transaction not found');
-
-        if (transaction.status !== 'success') {
-            throw new BadRequest('Can only refund successful transactions');
-        }
-
-        // Check if already refunded
-        const metadata = transaction.metadata as any;
-        if (metadata?.refunded) {
-            throw new BadRequest('Transaction already refunded');
-        }
-
-        const refundAmount = data.amount 
-            ? parseFloat(data.amount) 
-            : parseFloat(transaction.amount);
-
-        if (refundAmount > parseFloat(transaction.amount)) {
-            throw new BadRequest('Refund amount cannot exceed original amount');
-        }
-
-        const isPartialRefund = refundAmount < parseFloat(transaction.amount);
-
-        // Update transaction with refund info
-        const result = await db
-            .update(transactionsModel)
-            .set({
-                status: isPartialRefund ? 'success' : 'cancelled',
-                metadata: {
-                    ...metadata,
-                    refunded: true,
-                    refundAmount: refundAmount.toString(),
-                    refundReason: data.reason,
-                    refundedAt: new Date().toISOString(),
-                    isPartialRefund,
-                },
-                updatedAt: new Date(),
-            })
-            .where(eq(transactionsModel.transactionId, data.transactionId))
-            .returning();
-
-        return {
-            transaction: result[0],
-            refundAmount,
-            isPartialRefund,
-        };
+    async refundTransaction(_data: RefundTransactionDto): Promise<never> {
+        void _data;
+        return assertPaymentsAvailable();
     }
 
     // ============ GET PAYMENT STATISTICS ============

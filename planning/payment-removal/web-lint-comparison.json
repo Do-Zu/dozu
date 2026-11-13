@@ -1,0 +1,382 @@
+[
+  {
+    "file": "apps/web/src/app/[locale]/payment/page.tsx",
+    "errors": 0,
+    "warnings": 0,
+    "added": [],
+    "removed": [
+      {
+        "rule": "react-hooks/exhaustive-deps",
+        "severity": 1,
+        "message": "React Hook useEffect has a missing dependency: 'handlePaymentUpgradeSubscriptionSuccess'. Either include it or remove the dependency array."
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'via-background' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'via-background' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'via-background' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'to-background' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'to-background' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'to-background' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-72, w-72' could be replaced by the 'size-72' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-72, w-72' could be replaced by the 'size-72' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-20, w-20' could be replaced by the 'size-20' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-20, w-20' could be replaced by the 'size-20' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-10, w-10' could be replaced by the 'size-10' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-10, w-10' could be replaced by the 'size-10' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-10, w-10' could be replaced by the 'size-10' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'w-4, h-4' could be replaced by the 'size-4' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-4, w-4' could be replaced by the 'size-4' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-4, w-4' could be replaced by the 'size-4' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-4, w-4' could be replaced by the 'size-4' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-4, w-4' could be replaced by the 'size-4' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'from-background' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-80, w-80' could be replaced by the 'size-80' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'bg-primary/10' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-5, w-5' could be replaced by the 'size-5' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-primary' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-64, w-64' could be replaced by the 'size-64' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'border-muted-foreground/20' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'bg-muted/30' is not a Tailwind CSS class!"
+      }
+    ]
+  },
+  {
+    "file": "apps/web/src/i18n/messages.ts",
+    "errors": 0,
+    "warnings": 0,
+    "added": [],
+    "removed": []
+  }
+]

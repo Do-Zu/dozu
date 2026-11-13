@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "disabledControllerActions": [
+    "createLinkPaymentWithPayOS",
+    "handleWebhookPayOS",
+    "handleWebhookSepay",
+    "connectPaymentSSE",
+    "updateTransactionStatus"
+  ],
+  "disabledDirectServices": true,
+  "disabledPaidSubscriptionMutations": true,
+  "disabledAdminRefundAndStatusMutation": true,
+  "disabledActionsReadOrWriteCount": 0,
+  "historicalReadsPreserveGatewayStatusAndUserFilter": true,
+  "payosSdkDirectLinkAbsent": true,
+  "checkoutPageHasNoPaymentOrCallbackEffects": true,
+  "boundary": "Compiled services/controllers with explicit query/provider doubles; no actual DB, payment, refund, HTTP, signed JWT or browser interaction."
+}

@@ -1,0 +1,39 @@
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:64633
+  - Network:      http://[::1]:64633
+
+ ✓ Starting...
+ ✓ Ready in 82ms
+ReferenceError: location is not defined
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:498444
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:500247
+    at t.startTransition (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109047)
+    at Object.push (D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:500235)
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\app\[locale]\payment\page.js:1:4158
+    at nj (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nL (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+ReferenceError: location is not defined
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:498444
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:500247
+    at t.startTransition (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109047)
+    at Object.push (D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:500235)
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\app\[locale]\payment\page.js:1:4158
+    at nj (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nL (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)
+ReferenceError: location is not defined
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:498444
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:500247
+    at t.startTransition (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:109047)
+    at Object.push (D:\product\dozu\apps\web\.package\apps\web\.next\server\chunks\1132.js:1:500235)
+    at D:\product\dozu\apps\web\.package\apps\web\.next\server\app\[locale]\payment\page.js:1:4158
+    at nj (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:46252)
+    at nM (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47572)
+    at nL (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64547)
+    at nI (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47011)
+    at nM (D:\product\dozu\apps\web\.package\node_modules\.pnpm\next@14.2.35_@babel+core@7._19206c0d186031efd1630e9770552a74\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:47718)

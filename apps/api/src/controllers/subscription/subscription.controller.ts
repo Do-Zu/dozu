@@ -2,19 +2,16 @@ import { Request, Response } from 'express';
 import { BadRequest, InternalServerError, NotFoundError, PaymentRequire } from '@/core/error';
 import { SuccessResponse } from '@/core/success';
 
-import { paymentService } from '@/services/payment/payment.service';
+import { assertPaymentsAvailable } from '@/services/payment/paymentAvailability.service';
 import subscriptionService from '@/services/subscription/subscription.service';
 import { getCurrentDateInTimeZone, getTimezoneClient } from '@/utils/date';
 import {
     checkFeatureUsageSchema,
-    createSubscriptionSchema,
     recordFeatureUsageSchema,
     updateSubscriptionSchema,
-    upgradeSubscriptionSchema,
 } from '@/dtos/subscription/subscription.dto';
 import { getUserIdFromRequest } from '@/utils/auth/authHelpers.utils';
 import { toNumber } from '@/utils/common';
-import logger from '@/utils/logger';
 
 export class SubscriptionController {
     /**
@@ -69,59 +66,10 @@ export class SubscriptionController {
     /**
      * Create a new subscription
      */
-    public async createSubscription(req: Request, res: Response) {
-        const userId = req.currentUser?.userId;
-
-        const validatedData = createSubscriptionSchema.parse(req.body);
-
-        const planId = parseInt(validatedData.planId as string, 10);
-
-        const timeZone = getTimezoneClient(req);
-
-        // Check if user already has an active subscription
-        const existingSubscription = await subscriptionService.getUserActiveSubscription(userId);
-
-        if (existingSubscription) {
-            throw new BadRequest('User already has an active subscription');
-        }
-
-        // Get plan details to calculate price
-        const plans = await subscriptionService.getAvailablePlans();
-        const selectedPlan = plans.find(p => p?.planId === planId);
-
-        if (!selectedPlan) {
-            throw new NotFoundError('Plan not found');
-        }
-
-        let finalAmount = parseFloat(selectedPlan.price);
-        let discountAmount = 0;
-
-        const params = {
-            userId,
-            planId,
-            paymentData: {
-                amount: finalAmount,
-                currency: selectedPlan.currency,
-                externalSubscriptionId: validatedData?.externalSubscriptionId,
-                paymentMethod: validatedData?.paymentMethod,
-            },
-            interval: selectedPlan.billingInterval,
-            timeZone,
-        };
-
-        // Create subscription
-        const subscription = await subscriptionService.createSubscription(params);
-
-        SuccessResponse.created(
-            res,
-            {
-                subscription,
-                originalAmount: parseFloat(selectedPlan.price),
-                discountAmount,
-                finalAmount,
-            },
-            'Subscription created successfully'
-        );
+    public async createSubscription(_req: Request, _res: Response): Promise<never> {
+        void _req;
+        void _res;
+        return assertPaymentsAvailable();
     }
 
     /**
@@ -163,52 +111,10 @@ export class SubscriptionController {
      * Upgrade subscription to a new plan
      * This method allows users to upgrade their subscription plan.
      */
-    async upgradeSubscription(req: Request, res: Response) {
-        const userId = req.currentUser?.userId;
-
-        let validatedData;
-
-        try {
-            validatedData = upgradeSubscriptionSchema.parse(req.body);
-        } catch {
-            throw new BadRequest('Invalid request data');
-        }
-
-        const planId = toNumber(validatedData.planId);
-        const timeZone = getTimezoneClient(req);
-        const orderCode = toNumber(validatedData.orderCode);
-        const paymentId = validatedData.paymentId;
-
-        const paymentData = {
-            amount: validatedData.paymentData?.amount,
-            currency: validatedData.paymentData?.currency,
-            externalSubscriptionId: validatedData.paymentData?.externalSubscriptionId,
-        };
-
-        try {
-            await paymentService.updateTransactionStatus({
-                userId,
-                orderCode,
-                paymentId,
-                timezone: timeZone,
-            });
-        } catch (error) {
-            // Skip server error and must upgrade subscription
-            if (!(error instanceof InternalServerError)) {
-                logger.error(error);
-                // When transaction already not status pending -> transaction completed -> throw error for user
-                throw error;
-            }
-        }
-
-        const upgradeResult = await subscriptionService.changeSubscription({
-            userId,
-            newPlanId: planId,
-            timeZone,
-            paymentData,
-        });
-
-        SuccessResponse.ok(res, upgradeResult, 'Subscription upgraded successfully');
+    async upgradeSubscription(_req: Request, _res: Response): Promise<never> {
+        void _req;
+        void _res;
+        return assertPaymentsAvailable();
     }
 
     /**
@@ -244,7 +150,7 @@ export class SubscriptionController {
         );
 
         if (!canUse.canUse) {
-            throw new PaymentRequire('Feature usage limit exceeded. Please upgrade your plan.');
+            throw new PaymentRequire('Feature usage limit exceeded.');
         }
 
         const success = await subscriptionService.recordFeatureUsage(

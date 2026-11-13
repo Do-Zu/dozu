@@ -1,0 +1,79 @@
+{
+  "rootWrapper": "tooling/start-web.cjs",
+  "originalWorkspaceReadDenied": true,
+  "allFilesystemWritesDenied": true,
+  "defaultHost": "localhost",
+  "readySecondsDeveloperHost": 0.812,
+  "checks": [
+    {
+      "path": "/en/welcome",
+      "status": 200,
+      "localeTitlePresent": true
+    },
+    {
+      "path": "/vi/welcome",
+      "status": 200,
+      "localeTitlePresent": true
+    },
+    {
+      "path": "/en/auth/forgotPassword",
+      "status": 200,
+      "unavailableMessage": true,
+      "emailFormAbsent": true
+    },
+    {
+      "path": "/vi/auth/forgotPassword",
+      "status": 200,
+      "unavailableMessage": true,
+      "emailFormAbsent": true
+    },
+    {
+      "path": "/en/payment?status=PAID&planId=2&id=fixture&orderCode=123&code=00",
+      "status": 200,
+      "availabilityTextInTranslationPayload": true
+    },
+    {
+      "path": "/vi/payment?status=PAID&planId=2&id=fixture&orderCode=123&code=00",
+      "status": 200,
+      "availabilityTextInTranslationPayload": true
+    },
+    {
+      "path": "/en/auth/login",
+      "status": 200,
+      "bytes": 69456
+    },
+    {
+      "path": "/vi/auth/login",
+      "status": 200,
+      "bytes": 79392
+    },
+    {
+      "path": "/en/payment",
+      "status": 200,
+      "bytes": 85788
+    },
+    {
+      "path": "/icon.png",
+      "status": 200,
+      "bytes": 971626
+    },
+    {
+      "assetType": ".js",
+      "status": 200,
+      "bytes": 6995
+    },
+    {
+      "assetType": ".css",
+      "status": 200,
+      "bytes": 1340
+    },
+    {
+      "assetType": "bundled-font",
+      "status": 200,
+      "bytes": 25844
+    }
+  ],
+  "ownedProcessStopped": true,
+  "paymentPageCheck": "HTTP/translation payload only; authentication/browser interaction is not certified. Compiled/source boundary checks cover no callback effects.",
+  "limitations": "Sampled website server/assets only; no API/database/embedding/provider, OS ACL or full feature acceptance."
+}
