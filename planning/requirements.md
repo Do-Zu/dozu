@@ -2,6 +2,8 @@
 
 Recorded from the latest user clarification on 2026-11-09. This file supersedes earlier online-first and fully air-gapped assumptions.
 
+**2026-11-14 accepted resource amendment:** [Current hardware/resource contract](resource-contract-2026-11-14.md): minimum 8 GB RAM, 64-bit/four physical cores, SSD/10 GB free; recommended 16 GB, 6–8 cores, SSD/20 GB free. Initial-release installer ≤1.5 GB, installed app ≤3 GB, normal combined app RAM ≤2 GB and one-job peak ≤3 GB, cold UI ≤15 s and complete backend/model ready ≤30 s. Warm UI remains ≤5/3 s. Keep the pinned CPU model for initial integration; ONNX optimization can follow later. These supersede older numeric limits below and in historical notes, without passing runtime/native/lifecycle ACs. See [the acceptance review](resource-amendment-2026-11-14/acceptance-review.md).
+
 **2026-11-11 amendment:** [v1 scope decision](v1-scope-2026-11-11.md) removes local speech-to-text, retains PostgreSQL and defers pgvector. PDF/YouTube text-reference retrieval still consumes a separate embedding model, so its smaller-runtime experiment remains relevant. This explicit amendment supersedes earlier full-feature wording only for the specified deferrals; all pages/source inventory and other retained capabilities remain.
 
 1. Preserve the complete existing Next.js website UI: all pages, layouts, components, navigation, roles, translations and features.

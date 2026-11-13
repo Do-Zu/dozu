@@ -2,6 +2,8 @@
 
 FastAPI service for retained text/PDF/YouTube transcript reference workflows. Speech-to-text is excluded. The default remains the exact multilingual MiniLM baseline on CPU; the smaller ONNX backend is an explicit evaluation candidate, not a selected production replacement.
 
+The user accepted [larger initial desktop hardware/resource targets on 2026-11-14](../../planning/resource-contract-2026-11-14.md), keeping this baseline for initial integration and deferring optimization. Minimum validation is now 8 GB RAM/four physical cores/SSD, with 10 GB free before installation. Whole-app targets are installer ≤1.5 GB, installed ≤3 GB, normal/one-job peak RAM ≤2/3 GB, cold UI ≤15 s and full backend/model ready ≤30 s. Complete native packaging and actual minimum-device acceptance remain pending.
+
 ## Installed model contract
 
 - Model: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` at `86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d`.

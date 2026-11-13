@@ -52,6 +52,22 @@ $taskManifest = Get-Content -LiteralPath $ManifestPath -Raw -Encoding UTF8 | Con
 if ($taskManifest.repository -ne 'Do-Zu/dozu') {
     throw 'This publisher is scoped to Do-Zu/dozu.'
 }
+# Keep the accepted global resource contract current without rewriting historical
+# manifest bodies or replacing unrelated local manifest edits. Do not run a full
+# publication merely to amend resources: targeted live updates preserve live ACs.
+$taskResourceContract = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'resource-contract-2026-11-14.md') -Raw -Encoding UTF8
+if (-not $taskResourceContract.Contains('<!-- dozu-resource-contract-2026-11-14:start -->')) {
+    throw 'Missing accepted resource-contract revision.'
+}
+foreach ($taskResourceDraft in $taskManifest.issues) {
+    if (-not $taskResourceDraft.body.Contains('<!-- dozu-resource-contract-2026-11-14:start -->')) {
+        $taskResourceDraft.body = $taskResourceContract.Trim() + "`n`n" + $taskResourceDraft.body
+    }
+    if ($taskResourceDraft.id -eq 'PYTHON' -and -not $taskResourceDraft.body.Contains('<!-- dozu-embedding-component-ac-review-2026-11-14:start -->')) {
+        $taskComponentReview = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'resource-amendment-2026-11-14/issue-8-component-review.md') -Raw -Encoding UTF8
+        $taskResourceDraft.body += "`n`n" + $taskComponentReview.Trim()
+    }
+}
 $taskIssueById = @{}
 $taskKnownLabels = @($taskManifest.labels | ForEach-Object { $_.name })
 foreach ($taskDraft in $taskManifest.issues) {

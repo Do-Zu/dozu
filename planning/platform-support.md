@@ -1,8 +1,8 @@
 # Agreed v1 desktop support contract — Task #2
 
-Approved by the user on 2026-11-10. This is the initial v1 support contract and engineering target set, not evidence of compatibility or measured performance. If the selected framework or bundled backend cannot meet a target, provide benchmark evidence and an explicit recommendation before changing the agreement.
+Initially approved on 2026-11-10; **hardware and resource targets revised by explicit user acceptance on 2026-11-14**. The [accepted resource amendment](resource-contract-2026-11-14.md) supersedes the original tight budgets and permits completing initial desktop integration with the existing pinned CPU model before later optimization. These are agreed engineering targets, not evidence of supported hardware or measured full-stack compliance. Further changes require benchmark evidence and explicit agreement.
 
-Scope amended by the user on **2026-11-11**: [speech-to-text removed from v1; PostgreSQL retained; pgvector deferred](v1-scope-2026-11-11.md). Text embeddings for PDF/YouTube reference retrieval remain relevant and require a smaller-runtime proof. Existing OS/hardware/resource budgets are unchanged.
+The **2026-11-11** [scope amendment](v1-scope-2026-11-11.md) removes speech-to-text, retains PostgreSQL and defers pgvector. Text embeddings for PDF/YouTube reference retrieval remain required. The 2026-11-14 approval makes smaller-runtime optimization follow-up work rather than a prerequisite to completing the initial baseline-model integration. [Outgoing email is excluded; Redis stays](v1-scope-2026-11-13-email.md), and [payment execution is excluded](v1-scope-2026-11-13-payments.md). OS/architecture/distribution requirements below are unchanged.
 
 ## OS, architecture and distribution
 
@@ -18,28 +18,28 @@ Scope amended by the user on **2026-11-11**: [speech-to-text removed from v1; Po
 
 | Configuration | CPU | System RAM | Free disk | Display / storage |
 | --- | --- | --- | --- | --- |
-| Minimum | 64-bit dual-core | 4 GB | 2 GB for installation and initial data | 1366 × 768; integrated graphics; HDD-compatible, SSD preferred |
-| Recommended | 64-bit quad-core or better | 8 GB or more | 5 GB | 1920 × 1080; SSD |
-| High performance | 6–8+ cores | 16 GB or more | Dataset/workload-dependent; no additional number specified | NVMe SSD; larger datasets and concurrent background workloads |
+| Minimum | 64-bit, 4 physical cores | 8 GB | 10 GB free before installation | 1366 × 768; integrated graphics; SSD required |
+| Recommended | 6–8 cores | 16 GB | 20 GB free | 1920 × 1080; SSD |
 
-A dedicated GPU is not required for normal functionality. Provide a low-resource mode for 4 GB machines using efficient process management, lazy initialization, bounded caching and reduced background concurrency. Preserve functionality; do not achieve budgets by silently removing pages or required processing.
+A dedicated GPU is not required; retained embeddings run on CPU. The 8 GB/four-core minimum is an accepted validation target and is not yet a verified support claim. Use one active user and at most one ingestion/embedding job at a time for minimum-device acceptance, with bounded batches/caches and controlled background concurrency. Concurrent LAN hosts and large libraries require separate capacity measurements; their workflows remain in scope. The earlier 4 GB/HDD minimum and 4 GB low-resource acceptance target are superseded. Preserve functionality while optimizing later.
 
 ## Performance and disk targets
 
 | Production-build metric | Minimum-spec device | Recommended device |
 | --- | --- | --- |
-| Cold launch to interactive UI | ≤ 10 s | ≤ 5 s |
+| Cold launch to interactive UI | ≤ 15 s | ≤ 15 s |
 | Warm launch to interactive UI | ≤ 5 s | ≤ 3 s |
-| Local backend ready | ≤ 8 s | ≤ 4 s |
-| Normal application memory, including backend and database | ≤ 700 MB | ≤ 1 GB |
+| Complete local backend/model ready | ≤ 30 s | ≤ 30 s |
+| Normal combined application memory | ≤ 2 GB | ≤ 2 GB |
+| Combined peak during one ingestion/embedding job | ≤ 3 GB | ≤ 3 GB |
 
-Installer target: **≤ 250 MB**. Installed application target, including bundled backend: **≤ 750 MB**. Require **at least 2 GB free before installation**, covering installation and initial data. User-generated data and imported media may grow beyond the application footprint. Account for runtime/model/assets in the application footprint; do not hide them in a first-run download or call them user data to satisfy the budget.
+Installer download target: **≤ 1.5 GB**. Installed application target: **≤ 3 GB**, including all bundled frontend/backend/database/cache runtimes, model and processing resources, attribution and verification metadata. Require **at least 10 GB free before installation**; 20 GB is recommended. Imported documents/media, growing databases and user backups require additional storage. Account for every shipped runtime/model/asset; no first-run runtime/model download or relabeling installed resources as user data. Installer/upgrade/restore preflight must calculate actual staging/data needs; initial free-space allowances are not unlimited upgrade or backup guarantees. GB/MB values use decimal bytes in evidence comparisons.
 
-Use production builds and documented repeatable workloads on minimum supported configurations. Document OS/CPU/RAM/storage, dataset/media sizes, model revision, cache state, concurrency, network state and measurement method. Report all resident app-owned processes, including Electron, Next, API, database and any running embedding/converter/transcription processes. Keep interactive-UI and backend-ready timings separate; an interactive shell is not proof the database/model is ready. Measure background and processing peaks as well as the agreed normal workload. No numerical CPU cap, conversion/embedding peak-memory cap or peak upgrade-space budget was supplied; measure and report them rather than inventing an agreement.
+Use production builds and documented repeatable workloads on actual 8 GB/four-core SSD minimum configurations. Document OS/CPU/RAM/storage, dataset/media sizes, model revision, cache state, concurrency, network state and measurement method. Report all app-owned processes, including Electron, Next, Express, PostgreSQL, Redis and running embedding/conversion workers, with shared-memory accounting documented. Separate interactive-UI and complete backend/model readiness; an interactive shell is not proof the services/model are ready. Measure normal, background and one-job processing peaks against the 2 GB/3 GB combined targets. Warm-UI targets remain ≤5 s minimum/≤3 s recommended because the user did not revise them. No numerical CPU utilization cap or fixed peak upgrade-space budget was agreed; measure them and validate disk preflight.
 
 ## Local runtime and data lifecycle
 
-Backend and primary data storage run locally. Internet is permitted for genuine Google authentication, email, YouTube and other external services; classroom v1 is LAN, and payments are explicitly deferred/blocked under #41. No externally hosted application backend is required for core local functionality. Bundle/provision required dependencies through installation; no manual Node, Python, database, Docker, WSL or developer tooling. Retain the earlier self-contained baseline model/runtime requirement.
+Backend and primary data storage run locally. Internet is permitted for genuine Google authentication, YouTube and other retained external services; classroom v1 is LAN. Outgoing email, payment execution and speech-to-text remain excluded by the approved amendments. No externally hosted application backend is required for core local functionality. Bundle/provision required dependencies through installation; no manual Node, Python, database, Redis, Docker, WSL or developer tooling. Retain the self-contained pinned baseline model/runtime requirement.
 
 PostgreSQL is retained by the user's 2026-11-11 decision; **pgvector is deferred from v1**. #4/#29 must prove relational migrations, PostgreSQL-specific SQL/JSONB, seeds, repository contracts and persistence without requiring the extension. Existing vector-dependent schema/queries need a reviewed compatibility path for retained PDF/YouTube reference retrieval; ordinary PostgreSQL storage plus application-side ranking is an unproven candidate. Preserve migration/data history and a future extension path. No database replacement is authorized.
 
@@ -47,6 +47,6 @@ Upgrades preserve data. Uninstall retains the earlier explicit keep-data/delete-
 
 ## Evidence gates
 
-#4/#38 must prove each agreed native OS/CPU combination and resource budget; #21/#32 include resources required by retained media/conversion/text-embedding/font/browser workflows. Exclude deferred Whisper/speech-model/pgvector resources; FFmpeg requires a retained non-STT consumer. Electron + Next + Express + PostgreSQL + text-embedding/runtime and conversion resources have not yet been shown to fit these budgets. No target is relaxed based on that uncertainty.
+#38/#8/#23 and native #22/#46/#47 must prove the required native OS/CPU combinations and revised resource budgets. #4/#45's closed historical metadata is not passing release evidence. #21/#32 include retained media/conversion/text-embedding/font/browser resources; exclude STT/pgvector-only resources, and require a retained non-STT consumer for FFmpeg. Electron + Next + Express + PostgreSQL + Redis + embedding/model and processing resources have not yet been shown to meet the complete revised budgets. The explicit 2026-11-14 approval changes the requirements; it does not change old measured results or pass implementation ACs.
 
-#22/#23/#25/#33/#35/#36 validate clean installation, startup/readiness, memory/core functionality, dependency compatibility, low-resource mode, restart/recovery, upgrades/backup/restore and uninstall on the minimum configurations. Release compliance requires actual evidence. Signing/distribution remain #24/#26. A benchmark failure requires evidence and an explicit recommendation before changing this contract.
+#22/#23/#25/#28/#33/#35/#36 validate clean installation, startup/readiness, normal/peak memory and core functionality, dependency compatibility, bounded concurrency, restart/recovery, upgrades/backup/restore and uninstall on the revised minimum configurations. #34's final paths/ownership/read-only installation and #38's native dependency closure remain required. Signing/distribution remain #24/#26. Release compliance requires actual evidence; see the [AC review](resource-amendment-2026-11-14/acceptance-review.md).

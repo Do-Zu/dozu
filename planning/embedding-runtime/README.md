@@ -1,5 +1,7 @@
 # Issue #8 — offline CPU component evidence
 
+**Requirements update — 2026-11-14:** The user accepted the [larger initial-release resource contract](../resource-contract-2026-11-14.md): 8 GB/four-core SSD minimum, installer ≤1.5 GB/installed app ≤3 GB, normal/one-job peak app RAM ≤2/3 GB, cold UI ≤15 s/backend+model ready ≤30 s. Keep the existing pinned CPU baseline for initial integration and defer ONNX optimization. The old 750/250 MB rejection and unchanged-budget statements below describe the **2026-11-13 checkpoint**, not current release requirements. All measurements remain exact historical evidence. The baseline is no longer rejected on that old size target; complete native packaging, #34 paths, minimum-device/full-app measurements and lifecycle ACs are still open. [Current AC review](../resource-amendment-2026-11-14/acceptance-review.md).
+
 2026-11-13. **In Progress; no issue acceptance box or native release gate is marked complete.** This work was explicitly started independently of unfinished #38/#34. #5 is completed; #38 is Ready, not completed; #34 remains Waiting on the disputed #4 gate. Dependency links and the unassigned owner are preserved. The latest #4 closure comments do not establish complete native packaging. [Focused live tracking snapshot](tracking-snapshot.json).
 
 ## Delivered component work
