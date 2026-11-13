@@ -2,9 +2,7 @@ import { BadRequest, NotFoundError } from '@/core/error';
 import classInviteRepo from '@/repositories/class-based-learning/classInvite.repo';
 import userSearchService from '@/services/user/userSearch.service';
 import classEnrollmentService from '@/services/class-based-learning/classEnrollment.service';
-import classService from '@/services/class-based-learning/class.service';
-import { nodemailerTransporter } from '@/libs/nodeMailerTransporter.lib';
-import { classInvitationTemplate, classInvitationTextTemplate, ClassInvitationEmailData } from '@/templates/emails/classInvitation.template';
+import { assertEmailSendingAvailable } from '@/libs/email.lib';
 import { 
     IClassInvite, 
     IInviteByEmailBody, 
@@ -12,12 +10,10 @@ import {
     IJoinViaInviteBody,
     IInviteResponse,
     IInviteEmailBatchResponse,
-    IInviteEmailResponse,
     IUserSearchResult,
     IClassInviteWithDetails
 } from '@/types/class-based-learning/classInvite.type';
 import { customAlphabet } from 'nanoid';
-import logger from '@/utils/logger';
 
 class ClassInviteService {
     private readonly tokenAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -102,99 +98,14 @@ class ClassInviteService {
      * Invite users by email
      */
     public async inviteByEmail(
-        classId: number,
-        invitedBy: number,
-        data: IInviteByEmailBody
+        _classId: number,
+        _invitedBy: number,
+        _data: IInviteByEmailBody
     ): Promise<IInviteEmailBatchResponse> {
-        const { emails, expiresInDays = 7, useLimit } = data;
-        
-        if (emails.length === 0) {
-            throw new BadRequest('Email list cannot be empty');
-        }
-
-        if (emails.length > 50) {
-            throw new BadRequest('Cannot invite more than 50 users at once');
-        }
-
-        // Get class details for invitation code
-        const classDetails = await classService.getClassById(classId);
-        if (!classDetails) {
-            throw new NotFoundError('Class not found');
-        }
-
-        const results: IInviteEmailResponse[] = [];
-        let totalSent = 0;
-        let totalFailed = 0;
-
-        // Get existing users by email
-        const existingUsers = await userSearchService.getUsersByEmails(emails);
-        const existingUserEmails = new Set(existingUsers.map(user => user.email));
-        const existingUserIds = existingUsers.map(user => user.userId);
-
-        // Check which users are already in the class
-        const usersInClass = await userSearchService.checkUsersInClass(existingUserIds, classId);
-        const usersInClassSet = new Set(usersInClass);
-
-        const expiresAt = new Date();
-        expiresAt.setDate(expiresAt.getDate() + expiresInDays);
-
-        for (const email of emails) {
-            try {
-                // Check if user is already in class
-                const existingUser = existingUsers.find(user => user.email === email);
-                if (existingUser && usersInClassSet.has(existingUser.userId)) {
-                    results.push({
-                        success: false,
-                        email,
-                        message: 'User is already in this class',
-                    });
-                    totalFailed++;
-                    continue;
-                }
-
-                // Simply send email with join link - no pending invite needed!
-                const inviteLink = `${process.env.FRONTEND_BASE_URL}/en/class-based?code=${classDetails.invitationCode}`;
-                const emailSent = await this.sendClassInvitationEmail({
-                    to: email,
-                    className: classDetails.name,
-                    teacherName: 'Teacher', // Will be fetched from user service if needed
-                    inviteLink,
-                    studentName: existingUser?.fullName || email,
-                    expiresAt,
-                });
-
-                if (emailSent) {
-                    results.push({
-                        success: true,
-                        email,
-                        message: 'Invitation email sent successfully',
-                    });
-                    totalSent++;
-                } else {
-                    results.push({
-                        success: false,
-                        email,
-                        message: 'Failed to send email',
-                    });
-                    totalFailed++;
-                }
-
-            } catch (error) {
-                logger.error(`Error inviting user ${email}:`, error);
-                results.push({
-                    success: false,
-                    email,
-                    message: error instanceof Error ? error.message : 'Internal server error',
-                });
-                totalFailed++;
-            }
-        }
-
-        return {
-            totalSent,
-            totalFailed,
-            results,
-        };
+        void _classId;
+        void _invitedBy;
+        void _data;
+        return assertEmailSendingAvailable();
     }
 
     /**
@@ -319,45 +230,6 @@ class ClassInviteService {
         }
 
         return true;
-    }
-
-    /**
-     * Send class invitation email
-     */
-    private async sendClassInvitationEmail(data: {
-        to: string;
-        className: string;
-        teacherName: string;
-        inviteLink: string;
-        studentName?: string;
-        expiresAt: Date;
-    }): Promise<boolean> {
-        try {
-            const emailData: ClassInvitationEmailData = {
-                className: data.className,
-                teacherName: data.teacherName,
-                inviteLink: data.inviteLink,
-                studentName: data.studentName,
-                expiresAt: data.expiresAt,
-            };
-
-            const htmlContent = classInvitationTemplate(emailData);
-            const textContent = classInvitationTextTemplate(emailData);
-
-            const info = await nodemailerTransporter.sendMail({
-                from: `"Dozu Learning" <${process.env.MAIL_USERNAME}>`,
-                to: data.to,
-                subject: `🎓 Lời mời tham gia lớp học: ${data.className}`,
-                text: textContent,
-                html: htmlContent,
-            });
-
-            logger.info(`Class invitation email sent to ${data.to}:`, info.messageId);
-            return true;
-        } catch (error) {
-            logger.error(`Failed to send class invitation email to ${data.to}:`, error);
-            return false;
-        }
     }
 
     /**

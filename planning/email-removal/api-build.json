@@ -1,0 +1,14 @@
+{
+  "name": "api-build",
+  "command": [
+    "pnpm",
+    "--filter",
+    "api-services",
+    "build"
+  ],
+  "exitCode": 0,
+  "seconds": 12.031,
+  "capturedAtUtc": "2026-11-13T06:14:59.378027+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "api-build.log"
+}

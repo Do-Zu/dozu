@@ -82,7 +82,7 @@ export const registerUserController = async (req: Request, res: Response) => {
     // });
 
     SuccessResponse.created(res, {
-        message: 'Registration successful. Please check your email to verify your account.',
+        message: 'Registration successful. You can now sign in with your username and password.',
     });
 };
 

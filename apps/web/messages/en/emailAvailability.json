@@ -1,0 +1,8 @@
+{
+  "EmailAvailability": {
+    "unavailable": "Email sending is unavailable in this version.",
+    "recoveryUnavailable": "Password recovery by email is unavailable. If you are signed in, you can change your password in account settings.",
+    "inviteUnavailable": "Email invitations are unavailable. Share an invite link from the Invite Link tab instead.",
+    "login": "Back to login"
+  }
+}

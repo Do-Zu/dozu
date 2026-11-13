@@ -56,6 +56,7 @@ interface AppConfig {
     isProduction: boolean;
     isDevelopment: boolean;
     trustProxy: boolean | number;
+    backendBaseUrl: string;
 }
 
 const allowedOrigins =
@@ -77,6 +78,10 @@ export const config: AppConfig = {
         host: process.env.HOST || 'localhost',
     },
     allowedOrigins,
+    // LAN/deployed URLs must be supplied explicitly; wildcard bind hosts are not public URLs.
+    backendBaseUrl: (
+        getEnv('BACKEND_BASE_URL') || getEnv('BACK_END_URL') || `http://localhost:${getEnv('PORT') || '3333'}`
+    ).replace(/\/+$/, ''),
     // Trust proxy configuration for rate limiting and IP detection
     // Can be configured via TRUST_PROXY environment variable
     // Values: 'true', 'false', or a number (e.g., '1' to trust first proxy)

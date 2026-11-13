@@ -1,3 +1,4 @@
+import { config } from '@/config/env.config';
 // import { InternalServerError } from '@/core/error';
 import { TypeSelectAttachment } from '@/models';
 import {
@@ -19,16 +20,6 @@ type DeleteAttachmentResult =
           //add quiz and assignment here
       }
     | { success: false; reason: string };
-
-const getBackendBaseUrl = (): string => {
-    const backendBaseUrl = process.env.BACKEND_BASE_URL;
-
-    if (!backendBaseUrl) {
-        throw new Error('BACKEND_BASE_URL is missing');
-    }
-
-    return backendBaseUrl;
-};
 
 interface IInputResource {
     contentType: string;
@@ -103,7 +94,7 @@ class AttachmentInLMService {
     }): Promise<ReturnAttachment[]> => {
         const attachments = await getAttachmentsOfLearningMaterial({ learningMaterialId });
 
-        const backendBaseUrl = getBackendBaseUrl();
+        const backendBaseUrl = config.backendBaseUrl;
 
         const mapAttachment = (attachment: TypeSelectAttachment): ReturnAttachment => {
             let fileUrl: string | undefined = undefined;

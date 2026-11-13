@@ -1,0 +1,26 @@
+2026-11-13 13:13:30:1330 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+Connecting to Redis (attempt 1 of 3)...
+Connecting to Redis (attempt 2 of 3)...
+Connecting to Redis (attempt 3 of 3)...
+Connecting to Redis (attempt 1 of 3)...
+Error loading environment: Access to this API has been restricted. Use --allow-fs-read to manage permissions.
+D:\product\dozu\apps\api\dist\services\payment\base\payment.base.js:20
+            throw new Error('PaymentBase configuration is not set properly');
+            ^
+
+Error: PaymentBase configuration is not set properly
+    at PayOSManager.initializeBase (D:\product\dozu\apps\api\dist\services\payment\base\payment.base.js:20:19)
+    at new PaymentBase (D:\product\dozu\apps\api\dist\services\payment\base\payment.base.js:12:45)
+    at new PayOSManager (D:\product\dozu\apps\api\dist\services\payment\gateway\payos.js:26:9)
+    at Object.<anonymous> (D:\product\dozu\apps\api\dist\services\payment\gateway\payos.js:266:17)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+
+Node.js v22.22.0

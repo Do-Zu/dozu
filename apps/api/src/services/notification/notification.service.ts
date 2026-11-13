@@ -1,13 +1,8 @@
-import nodemailer from 'nodemailer';
 import { NotificationSettings } from '@/models/user.model';
 import ProfileRepository from '@/repositories/profile/profile.repo';
 import logger from '@/utils/logger';
 import { NotificationWebSocketService } from '@/libs/websocket/notification.websocket';
 import {
-  getDailyReminderTemplate,
-  getWeeklyReportTemplate,
-  getAchievementTemplate,
-  getReEngagementTemplate,
   getSystemAnnouncementTemplate,
 } from './notification.email.templates';
 
@@ -49,16 +44,6 @@ export interface NotificationContext {
  */
 export class NotificationService {
   private static profileRepo = new ProfileRepository();
-  private static emailTransporter = nodemailer.createTransport({
-    host: process.env.MAIL_HOST || 'smtp.gmail.com',
-    port: parseInt(process.env.MAIL_PORT || '587'),
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: process.env.MAIL_USERNAME,
-      pass: process.env.MAIL_APP_PASSWORD,
-    },
-  });
-
   // Store in-memory notifications (in production, use Redis or database)
   private static notifications: Map<number, RealtimeNotification[]> = new Map();
 
@@ -77,27 +62,10 @@ export class NotificationService {
   /**
    * Send email notification
    */
-  static async sendEmail(notification: EmailNotification): Promise<boolean> {
-    try {
-      if (!process.env.MAIL_USERNAME  || !process.env.MAIL_APP_PASSWORD) {
-        logger.warn('SMTP credentials not configured, skipping email notification');
-        return false;
-      }
-
-      const info = await this.emailTransporter.sendMail({
-        from: `"Dozu Learning" <${process.env.MAIL_USERNAME}>`,
-        to: notification.to,
-        subject: notification.subject,
-        text: notification.text,
-        html: notification.html,
-      });
-
-      logger.info('Email sent successfully:', info.messageId);
-      return true;
-    } catch (error) {
-      logger.error('Failed to send email:', error);
-      return false;
-    }
+  static async sendEmail(_notification: EmailNotification): Promise<boolean> {
+    void _notification;
+    // Keep callers' delivery result honest while preserving in-app notifications.
+    return false;
   }
 
   /**
@@ -247,26 +215,7 @@ export class NotificationService {
         return false;
       }
 
-      if (!process.env.FRONTEND_BASE_URL) {
-        logger.error('FRONTEND_BASE_URL environment variable is required');
-        return false;
-      }
 
-      const template = getDailyReminderTemplate({
-        fullName: context.fullName || context.username,
-        frontendUrl: process.env.FRONTEND_BASE_URL,
-      });
-
-      const emailNotification: EmailNotification = {
-        to: context.email,
-        subject: '🎯 Your Daily Learning Reminder - Dozu',
-        html: template.html,
-        text: template.text,
-      };
-
-      const emailSent = context.settings.emailNotifications 
-        ? await this.sendEmail(emailNotification)
-        : false;
 
       const pushSent = context.settings.pushNotifications
         ? await this.sendFCMNotification({
@@ -288,7 +237,7 @@ export class NotificationService {
         read: false
       });
 
-      return emailSent || pushSent || realtimeSent;
+      return pushSent || realtimeSent;
     } catch (error) {
       logger.error('Failed to send daily reminder:', error);
       return false;
@@ -310,30 +259,7 @@ export class NotificationService {
         return false;
       }
 
-      if (!process.env.FRONTEND_BASE_URL) {
-        logger.error('FRONTEND_BASE_URL environment variable is required');
-        return false;
-      }
 
-      const template = getWeeklyReportTemplate({
-        fullName: context.fullName || context.username,
-        studyHours: stats.studyHours,
-        topicsCompleted: stats.topicsCompleted,
-        achievementsEarned: stats.achievementsEarned,
-        streak: stats.streak,
-        frontendUrl: process.env.FRONTEND_BASE_URL,
-      });
-
-      const emailNotification: EmailNotification = {
-        to: context.email,
-        subject: '📊 Your Weekly Learning Report - Dozu',
-        html: template.html,
-        text: template.text,
-      };
-
-      const emailSent = context.settings.emailNotifications 
-        ? await this.sendEmail(emailNotification)
-        : false;
 
       // Send realtime notification too
       const realtimeSent = await this.sendRealtimeNotification({
@@ -346,7 +272,7 @@ export class NotificationService {
         read: false
       });
 
-      return emailSent || realtimeSent;
+      return realtimeSent;
     } catch (error) {
       logger.error('Failed to send weekly report:', error);
       return false;
@@ -367,29 +293,7 @@ export class NotificationService {
         return false;
       }
 
-      if (!process.env.FRONTEND_BASE_URL) {
-        logger.error('FRONTEND_BASE_URL environment variable is required');
-        return false;
-      }
 
-      const template = getAchievementTemplate({
-        fullName: context.fullName || context.username,
-        achievementTitle: achievement.title,
-        achievementDescription: achievement.description,
-        achievementIcon: achievement.icon,
-        frontendUrl: process.env.FRONTEND_BASE_URL,
-      });
-
-      const emailNotification: EmailNotification = {
-        to: context.email,
-        subject: `🏆 New Achievement Unlocked - ${achievement.title}`,
-        html: template.html,
-        text: template.text,
-      };
-
-      const emailSent = context.settings.emailNotifications 
-        ? await this.sendEmail(emailNotification)
-        : false;
 
       const pushSent = context.settings.pushNotifications
         ? await this.sendFCMNotification({
@@ -415,7 +319,7 @@ export class NotificationService {
         read: false
       });
 
-      return emailSent || pushSent || realtimeSent;
+      return pushSent || realtimeSent;
     } catch (error) {
       logger.error('Failed to send achievement notification:', error);
       return false;
@@ -528,24 +432,7 @@ export class NotificationService {
         return false;
       }
 
-      if (!process.env.FRONTEND_BASE_URL) {
-        logger.error('FRONTEND_BASE_URL environment variable is required');
-        return false;
-      }
 
-      const template = getReEngagementTemplate({
-        fullName: context.fullName || context.username,
-        frontendUrl: process.env.FRONTEND_BASE_URL,
-      });
-
-      const emailNotification: EmailNotification = {
-        to: context.email,
-        subject: `We miss you! 🎓 Come back to Dozu`,
-        html: template.html,
-        text: template.text,
-      };
-
-      const emailSent = await this.sendEmail(emailNotification);
 
       // Send realtime notification too
       const realtimeSent = await this.sendRealtimeNotification({
@@ -558,7 +445,7 @@ export class NotificationService {
         read: false
       });
 
-      return emailSent || realtimeSent;
+      return realtimeSent;
     } catch (error) {
       logger.error('Failed to send re-engagement notification:', error);
       return false;

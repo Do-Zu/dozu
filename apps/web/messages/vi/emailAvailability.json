@@ -1,0 +1,8 @@
+{
+  "EmailAvailability": {
+    "unavailable": "Phiên bản này không hỗ trợ gửi email.",
+    "recoveryUnavailable": "Không hỗ trợ khôi phục mật khẩu qua email. Nếu đang đăng nhập, bạn có thể đổi mật khẩu trong phần cài đặt tài khoản.",
+    "inviteUnavailable": "Không hỗ trợ gửi lời mời qua email. Hãy chia sẻ liên kết trong thẻ Liên kết mời.",
+    "login": "Quay lại đăng nhập"
+  }
+}

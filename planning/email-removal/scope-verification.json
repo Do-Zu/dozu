@@ -1,0 +1,11 @@
+{
+  "redisCodeAndDependencyDeclarationsUnchanged": true,
+  "dependencyDeclarationChangesOnlyNodemailerAndTypes": true,
+  "apiLintAddedDiagnostics": 0,
+  "apiLintRemovedDiagnostics": 8,
+  "apiLintErrors": 92,
+  "apiLintWarnings": 143,
+  "scopeAmendment": "planning/v1-scope-2026-11-13-email.md",
+  "emailTranslationsKeysMatch": true,
+  "allIssue7AcceptanceStillUnpassed": true
+}

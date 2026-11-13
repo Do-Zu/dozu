@@ -1,8 +1,8 @@
 import { DatabaseError, InternalServerError } from '@/core/error';
 import { getOAuthToken } from '@/libs/googleOAuth2Client';
-import { sendChangePasswordLinkEmail, sendVerificationLinkEmail } from '@/libs/nodeMailerTransporter.lib';
+import { assertEmailSendingAvailable } from '@/libs/email.lib';
 import { InsertAuthAccount } from '@/models';
-import { InsertChangePasswordRequest, SelectChangePasswordRequest } from '@/models/auth/changePasswordRequest.model';
+import { SelectChangePasswordRequest } from '@/models/auth/changePasswordRequest.model';
 import { InsertUser, SelectUser } from '@/models/user.model';
 import subscriptionService from './subscription/subscription.service';
 import ProfileRepository from '@/repositories/profile/profile.repo';
@@ -17,7 +17,6 @@ import {
     insertAuthAccountObject,
     insertUser,
     insertUserObject,
-    insertVerificationCode,
     queryVerificationCode,
     selectOneUserByEmail,
     selectOneUserByEmailOrUsername,
@@ -28,13 +27,11 @@ import {
 } from '@/repositories/auth.repo';
 import {
     deletePasswordRequestsByUserId,
-    insertChangePasswordRequest,
     selectOneChangePasswordRequestByEmail,
 } from '@/repositories/auth/changePasswordRequest.repo';
 import { DecodedTokenPayload } from '@/types/auth/jwtPayload.type';
 import { SanitizedUser } from '@/types/auth/sanitizedUser.type';
 import { sanitizeUserObject } from '@/utils/auth/authHelpers.utils';
-import { generateSecureCode } from '@/utils/auth/crypto.utils';
 import { hashPassword, verifyPassword } from '@/utils/auth/hash.utils';
 import { decodeJwtToken, signAccessJwtToken, signRefreshJwtToken } from '@/utils/auth/jwt.utils';
 import logger from '@/utils/logger';
@@ -78,8 +75,6 @@ export const loginService = async ({
     if (!userData.isActive) {
         //checks if user is banned
         return { success: false, reason: 'Account is inactive' };
-    } else if (!userData.isVerified) {
-        return { success: false, reason: 'Account is unverified' };
     } else if (isCorrectPassword) {
         const updatedUser = await getLoginData(userData.userId);
         const sanitizedUser = sanitizeUserObject(updatedUser);
@@ -178,10 +173,6 @@ export const registerUserService = async (payload: {
     if (isEmpty(newUserData)) {
         throw new DatabaseError('Register user fail!');
     }
-
-    const verificationCodeData = await insertVerificationCode(newUserData);
-
-    await sendVerificationLinkEmail(newUserData.email, verificationCodeData.verificationCode as string);
 
     await addRoleUserForAccount(newUserData.userId);
 
@@ -333,38 +324,11 @@ export const isUniqueUsernameService = async (username: string): Promise<boolean
     }
 };
 
-export const sendChangePasswordLinkService = async ({
-    email,
-}: {
+export const sendChangePasswordLinkService = async (_input: {
     email: string;
 }): Promise<StartChangePasswordResult> => {
-    const changePasswordRequestData = await selectOneChangePasswordRequestByEmail({ email });
-
-    if (changePasswordRequestData) {
-        await deletePasswordRequestsByUserId({ userId: changePasswordRequestData.userId });
-    }
-
-    const userData = await selectOneUserByEmail(email);
-    if (!userData) {
-        return { success: false, reason: 'User not found' };
-    }
-
-    const verificationCode = generateSecureCode();
-    const expirationDate = new Date(Date.now() + 24 * 60 * 60 * 1000); // 1 day later
-
-    const newChangePasswordRequest: InsertChangePasswordRequest = {
-        userId: userData.userId,
-        verificationCode: verificationCode,
-        expiration: expirationDate,
-    };
-    const newChangePasswordRequestData = await insertChangePasswordRequest({
-        insertChangePasswordRequestObject: newChangePasswordRequest,
-    });
-
-    //mail the link
-    await sendChangePasswordLinkEmail({ email: userData.email, verificationCode: verificationCode });
-
-    return { success: true, changePasswordRequest: newChangePasswordRequestData };
+    void _input; // Preserve the public call signature while rejecting email recovery.
+    return assertEmailSendingAvailable();
 };
 
 export const changePasswordService = async ({

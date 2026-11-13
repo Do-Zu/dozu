@@ -1,5 +1,7 @@
 # Dozu local-first desktop planning
 
+**Scope follow-up — 2026-11-13:** [Email delivery removed; Redis retained](v1-scope-2026-11-13-email.md). The user clarified that Redis removal is skipped; alternatives are suggestions only. [Implementation and checks](email-removal/README.md) record email-free account flows and local backend URL defaults. Older email-delivery requirements are superseded by this amendment.
+
 **Toolchain work — 2026-11-13:** #7 and its Project item are In Progress. [Portable-script implementation and evidence](toolchains/README.md) records the JavaScript build pins, API path/build fixes and explicit unpassed runtime/native gates. Live #4's closed/completed state and checked headline boxes conflict with its user-directed NOT PLANNED closure; this work preserves #4 and does not infer completed platform/resource/lifecycle acceptance from it.
 
 **Latest foundation result — 2026-11-12:** #5 source import and #6 JavaScript workspace/build graph are completed after review. Both child issues and Project Status are Done; #1 remains In Progress. Source import and workspace evidence do not establish full-stack/installer/platform acceptance. See [workspace evidence](workspace/README.md).

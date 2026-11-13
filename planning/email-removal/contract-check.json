@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "signup and password login without email proof; wrong-password/inactive rejection",
+    "email reset/invitation return 503 before repository reads or writes",
+    "email reports false; in-app reminder delivered without SMTP/frontend URL settings",
+    "feedback service persists the local record without claiming email notification",
+    "backend local default, custom port, alias, canonical precedence and trailing slash"
+  ],
+  "passed": true,
+  "boundary": "Compiled modules, explicit repository/provider doubles; real scrypt password hashing. No real database, mail, Redis, HTTP or JWT validation."
+}

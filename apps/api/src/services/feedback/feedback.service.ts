@@ -1,7 +1,4 @@
 import feedbackRepository from '@/repositories/feedback/feedback.repo';
-import NotificationService from '@/services/notification/notification.service';
-import logger from '@/utils/logger';
-import { getFeedbackEmailTemplate } from '@/services/feedback/feedback.email.template';
 import {
     evaluateFeedback,
     type FeedbackEvaluationResult,
@@ -31,7 +28,7 @@ class FeedbackService {
 
         const saved = await this.saveFeedback({ ...input, message }, evaluation);
 
-        const notified = await this.notifyIfNeeded({ ...input, message }, evaluation);
+        const notified = false; // Feedback is saved locally; email delivery is excluded.
 
         return {
             success: true,
@@ -58,67 +55,15 @@ class FeedbackService {
             status: 'new',
             category: undefined,
             score: evaluation.score,
-            shouldSendEmail: evaluation.shouldSendEmail ? 1 : 0,
+            shouldSendEmail: 0,
             reasons: JSON.stringify(evaluation.reasons),
         });
     }
 
-    private async notifyIfNeeded(input: FeedbackInput, evaluation: FeedbackEvaluationResult): Promise<boolean> {
-        if (!evaluation.shouldSendEmail) {
-            logger.info('Feedback saved but not notified (filtered)', {
-                score: evaluation.score,
-                reasons: evaluation.reasons,
-            });
-            return false;
-        }
-
-        return this.sendFeedbackMail(input);
-    }
-
-    /**
-     * Send feedback email to Dozu team
-     */
-    public async sendFeedbackMail(feedbackData: FeedbackInput): Promise<boolean> {
-        try {
-            const recipientEmail = process.env.MAIL_USERNAME || 'dozu.learning@gmail.com';
-
-            if (!feedbackData.message || !feedbackData.message.trim()) {
-                logger.warn('Feedback message is empty');
-                return false;
-            }
-
-            // Get user info if available
-            const userInfo = feedbackData.userName
-                ? `${feedbackData.userName}${feedbackData.userEmail ? ` (${feedbackData.userEmail})` : ''}`
-                : feedbackData.userEmail || 'Anonymous User';
-
-            // Create email template
-            const emailTemplate = getFeedbackEmailTemplate({
-                message: feedbackData.message,
-                userInfo,
-                userId: feedbackData.userId,
-                imageUrl: feedbackData.imageUrl,
-            });
-
-            // Send email using NotificationService
-            const emailSent = await NotificationService.sendEmail({
-                to: recipientEmail,
-                subject: `📝 Feedback từ người dùng - ${userInfo}`,
-                html: emailTemplate.html,
-                text: emailTemplate.text,
-            });
-
-            if (emailSent) {
-                logger.info(`Feedback email sent successfully from user: ${userInfo}`);
-                return true;
-            } else {
-                logger.error('Failed to send feedback email');
-                return false;
-            }
-        } catch (error) {
-            logger.error('Error sending feedback:', error);
-            return false;
-        }
+    /** Email delivery is excluded; do not claim a local feedback record was emailed. */
+    public async sendFeedbackMail(_feedbackData: FeedbackInput): Promise<boolean> {
+        void _feedbackData;
+        return false;
     }
 
     /**

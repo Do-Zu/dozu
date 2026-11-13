@@ -1,0 +1,81 @@
+[
+  {
+    "file": "apps/web/src/app/[locale]/auth/forgotPassword/page.tsx",
+    "errors": 0,
+    "warnings": 2,
+    "added": [],
+    "removed": [
+      {
+        "rule": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'apiResponse' is assigned a value but never used."
+      },
+      {
+        "rule": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'apiPostContentError' is assigned a value but never used."
+      },
+      {
+        "rule": "@typescript-eslint/no-explicit-any",
+        "severity": 2,
+        "message": "Unexpected any. Specify a different type."
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/classnames-order",
+        "severity": 1,
+        "message": "Invalid Tailwind CSS classnames order"
+      },
+      {
+        "rule": "tailwindcss/no-custom-classname",
+        "severity": 1,
+        "message": "Classname 'text-muted-foreground' is not a Tailwind CSS class!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-5, w-5' could be replaced by the 'size-5' shorthand!"
+      },
+      {
+        "rule": "tailwindcss/enforces-shorthand",
+        "severity": 1,
+        "message": "Classnames 'h-5, w-5' could be replaced by the 'size-5' shorthand!"
+      }
+    ]
+  },
+  {
+    "file": "apps/web/src/app/[locale]/profile/components/AccountSettings.tsx",
+    "errors": 0,
+    "warnings": 13,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "apps/web/src/components/class/InviteStudentsModal.tsx",
+    "errors": 19,
+    "warnings": 28,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "apps/web/src/i18n/messages.ts",
+    "errors": 0,
+    "warnings": 0,
+    "added": [],
+    "removed": []
+  }
+]

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Loader2, Bell } from 'lucide-react';
@@ -14,11 +15,12 @@ interface AccountSettingsProps {
 }
 
 const AccountSettings: React.FC<AccountSettingsProps> = ({ onSettingsChange }) => {
+    const emailAvailability = useTranslations('EmailAvailability');
     const [notifications, setNotifications] = useState<NotificationSettings>({
         dailyReminders: true,
         weeklyReports: true,
         achievementNotifications: false,
-        emailNotifications: true,
+        emailNotifications: false,
         pushNotifications: false,
     });
 
@@ -37,7 +39,7 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({ onSettingsChange }) =
             const profile = await ProfileService.getProfile();
 
             if (profile.notificationSettings) {
-                setNotifications(profile.notificationSettings);
+                setNotifications({ ...profile.notificationSettings, emailNotifications: false });
             }
         } catch (error) {
             toastHelper.showErrorMessage(error);
@@ -58,12 +60,12 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({ onSettingsChange }) =
             dailyReminders: enabled,
             weeklyReports: enabled,
             achievementNotifications: enabled,
-            emailNotifications: enabled,
+            emailNotifications: false,
             pushNotifications: enabled,
         });
     };
 
-    const allNotificationsEnabled = Object.values(notifications).every((v) => v);
+    const allNotificationsEnabled = Object.entries(notifications).every(([key, value]) => key === 'emailNotifications' || value);
 
     const handleSaveSettings = async () => {
         setSaveLoading(true);
@@ -85,7 +87,7 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({ onSettingsChange }) =
             dailyReminders: true,
             weeklyReports: true,
             achievementNotifications: false,
-            emailNotifications: true,
+            emailNotifications: false,
             pushNotifications: false,
         });
     };
@@ -178,10 +180,10 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({ onSettingsChange }) =
                                 <input
                                     type="checkbox"
                                     checked={notifications.emailNotifications}
-                                    onChange={(e) => handleNotificationChange('emailNotifications', e.target.checked)}
+                                    disabled
                                     className="rounded"
                                 />
-                                <span className="text-sm">Email notifications</span>
+                                <span className="text-sm">{emailAvailability('unavailable')}</span>
                             </label>
                         </div>
 

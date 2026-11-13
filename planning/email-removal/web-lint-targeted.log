@@ -1,0 +1,53 @@
+
+D:\product\dozu\apps\web\src\components\class\InviteStudentsModal.tsx
+    3:27  error    'useEffect' is defined but never used                               @typescript-eslint/no-unused-vars
+    3:38  error    'useCallback' is defined but never used                             @typescript-eslint/no-unused-vars
+   16:10  error    'Avatar' is defined but never used                                  @typescript-eslint/no-unused-vars
+   16:18  error    'AvatarFallback' is defined but never used                          @typescript-eslint/no-unused-vars
+   16:34  error    'AvatarImage' is defined but never used                             @typescript-eslint/no-unused-vars
+   17:10  error    'Checkbox' is defined but never used                                @typescript-eslint/no-unused-vars
+   22:3   error    'Copy' is defined but never used                                    @typescript-eslint/no-unused-vars
+   23:3   error    'Check' is defined but never used                                   @typescript-eslint/no-unused-vars
+   32:10  error    'PendingInvitesList' is defined but never used                      @typescript-eslint/no-unused-vars
+   49:3   error    'className' is assigned a value but never used                      @typescript-eslint/no-unused-vars
+   56:10  error    'copied' is assigned a value but never used                         @typescript-eslint/no-unused-vars
+   73:5   error    'pendingInvites' is assigned a value but never used                 @typescript-eslint/no-unused-vars
+   76:5   error    'generateInviteLink' is assigned a value but never used             @typescript-eslint/no-unused-vars
+   77:5   error    'regenerateInviteLink' is assigned a value but never used           @typescript-eslint/no-unused-vars
+   79:5   error    'cancelInvite' is assigned a value but never used                   @typescript-eslint/no-unused-vars
+   80:5   error    'resendInvite' is assigned a value but never used                   @typescript-eslint/no-unused-vars
+   81:5   error    'clearError' is assigned a value but never used                     @typescript-eslint/no-unused-vars
+  409:14  error    'error' is defined but never used                                   @typescript-eslint/no-unused-vars
+  418:9   error    'handleCopyLink' is assigned a value but never used                 @typescript-eslint/no-unused-vars
+  430:14  error    'error' is defined but never used                                   @typescript-eslint/no-unused-vars
+  443:9   error    'getInitials' is assigned a value but never used                    @typescript-eslint/no-unused-vars
+  454:22  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  457:20  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  457:20  warning  Classnames 'w-5, h-5' could be replaced by the 'size-5' shorthand!  tailwindcss/enforces-shorthand
+  465:21  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  465:21  warning  Classnames 'w-4, h-4' could be replaced by the 'size-4' shorthand!  tailwindcss/enforces-shorthand
+  469:21  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  469:21  warning  Classnames 'w-4, h-4' could be replaced by the 'size-4' shorthand!  tailwindcss/enforces-shorthand
+  475:37  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  490:24  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  492:31  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  492:31  warning  Classnames 'w-3, h-3' could be replaced by the 'size-3' shorthand!  tailwindcss/enforces-shorthand
+  510:24  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  531:39  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  531:39  warning  Classnames 'w-4, h-4' could be replaced by the 'size-4' shorthand!  tailwindcss/enforces-shorthand
+  536:37  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  536:37  warning  Classnames 'w-4, h-4' could be replaced by the 'size-4' shorthand!  tailwindcss/enforces-shorthand
+  551:22  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  560:26  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  565:29  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  565:29  warning  Classnames 'w-3, h-3' could be replaced by the 'size-3' shorthand!  tailwindcss/enforces-shorthand
+  579:25  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+  579:25  warning  Classnames 'w-4, h-4' could be replaced by the 'size-4' shorthand!  tailwindcss/enforces-shorthand
+  603:16  warning  Invalid Tailwind CSS classnames order                               tailwindcss/classnames-order
+
+✖ 44 problems (21 errors, 23 warnings)
+  0 errors and 23 warnings potentially fixable with the `--fix` option.
+
+undefined
+D:\product\dozu\apps\web:
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command "eslint" not found

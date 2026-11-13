@@ -1,0 +1,15 @@
+{
+  "name": "lock-prune",
+  "command": [
+    "pnpm",
+    "install",
+    "--lockfile-only",
+    "--offline",
+    "--ignore-scripts"
+  ],
+  "exitCode": 0,
+  "seconds": 5.625,
+  "capturedAtUtc": "2026-11-13T06:05:22.877121+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "lock-prune.log"
+}

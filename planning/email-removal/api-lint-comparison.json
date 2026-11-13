@@ -1,0 +1,55 @@
+{
+  "added": [],
+  "removed": [
+    [
+      "D:/product/dozu/apps/api/src/libs/nodeMailerTransporter.lib.ts",
+      "error",
+      "'host' is assigned a value but never used",
+      "@typescript-eslint/no-unused-vars"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/libs/nodeMailerTransporter.lib.ts",
+      "error",
+      "'host' is assigned a value but never used",
+      "no-unused-vars"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/libs/nodeMailerTransporter.lib.ts",
+      "error",
+      "'backendBaseUrl' is assigned a value but never used",
+      "@typescript-eslint/no-unused-vars"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/libs/nodeMailerTransporter.lib.ts",
+      "error",
+      "'backendBaseUrl' is assigned a value but never used",
+      "no-unused-vars"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/services/class-based-learning/classInvite.service.ts",
+      "error",
+      "'useLimit' is assigned a value but never used",
+      "@typescript-eslint/no-unused-vars"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/services/class-based-learning/classInvite.service.ts",
+      "error",
+      "'useLimit' is assigned a value but never used",
+      "no-unused-vars"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/services/class-based-learning/classInvite.service.ts",
+      "error",
+      "'existingUserEmails' is assigned a value but never used",
+      "@typescript-eslint/no-unused-vars"
+    ],
+    [
+      "D:/product/dozu/apps/api/src/services/class-based-learning/classInvite.service.ts",
+      "error",
+      "'existingUserEmails' is assigned a value but never used",
+      "no-unused-vars"
+    ]
+  ],
+  "currentErrors": 92,
+  "currentWarnings": 143
+}

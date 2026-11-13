@@ -2,6 +2,8 @@
 
 Local-first desktop delivery and the retained website share the imported applications in `apps/web`, `apps/api`, and `services/embedding`. Approved scope and platform requirements are in [planning](planning/README.md).
 
+Outgoing email is excluded from this version. Username/password signup/login remain; email recovery and invitations are unavailable, with manual classroom invite links retained. Redis remains required by the existing implementation. `BACKEND_BASE_URL` defaults to `http://localhost:3333` using the configured API port; `BACK_END_URL` is an accepted alias. See the [email/URL follow-up](planning/email-removal/README.md) for exact behavior and checks.
+
 Use **Node 22.22.0**, **pnpm 10.28.2** and the committed lockfile for the measured JavaScript baseline. These pins are reproducibility inputs; release security and native-runtime acceptance remain open.
 
 From the repository root, on Windows PowerShell, macOS or Linux:

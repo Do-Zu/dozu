@@ -67,6 +67,7 @@ export function InviteStudentsModal({
   
   const { toast } = useToast();
   const t = useTranslations('class.inviteStudents');
+  const emailAvailability = useTranslations('EmailAvailability');
   const {
     inviteLink,
     pendingInvites,
@@ -499,6 +500,7 @@ export function InviteStudentsModal({
 
           {/* Tab 2: Email Invitation */}
           <TabsContent value="email" className="space-y-4">
+            <p role="status">{emailAvailability('inviteUnavailable')}</p>
             <Card>
               <CardHeader>
                 <CardTitle>{t('sendEmailInvitations')}</CardTitle>
@@ -571,7 +573,7 @@ export function InviteStudentsModal({
 
                 <Button
                   onClick={handleSendEmails}
-                  disabled={emails.length === 0 || loading.sendEmails}
+                  disabled
                   className="w-full"
                 >
                   <Send className={`w-4 h-4 mr-2 ${loading.sendEmails ? 'animate-spin' : ''}`} />

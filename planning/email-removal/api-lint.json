@@ -1,0 +1,14 @@
+{
+  "name": "api-lint",
+  "command": [
+    "pnpm",
+    "--filter",
+    "api-services",
+    "lint"
+  ],
+  "exitCode": 1,
+  "seconds": 9.828,
+  "capturedAtUtc": "2026-11-13T06:15:07.384488+00:00",
+  "environment": "OS allowlist plus declared credential-free loopback build settings",
+  "log": "api-lint.log"
+}

@@ -1,0 +1,68 @@
+{
+  "rootWrapper": "tooling/start-web.cjs",
+  "originalWorkspaceReadDenied": true,
+  "allFilesystemWritesDenied": true,
+  "defaultHost": "localhost",
+  "readySecondsDeveloperHost": 0.828,
+  "checks": [
+    {
+      "path": "/en/welcome",
+      "status": 200,
+      "localeTitlePresent": true
+    },
+    {
+      "path": "/vi/welcome",
+      "status": 200,
+      "localeTitlePresent": true
+    },
+    {
+      "path": "/en/auth/forgotPassword",
+      "status": 200,
+      "unavailableMessage": true,
+      "emailFormAbsent": true
+    },
+    {
+      "path": "/vi/auth/forgotPassword",
+      "status": 200,
+      "unavailableMessage": true,
+      "emailFormAbsent": true
+    },
+    {
+      "path": "/en/auth/login",
+      "status": 200,
+      "bytes": 69119
+    },
+    {
+      "path": "/vi/auth/login",
+      "status": 200,
+      "bytes": 78967
+    },
+    {
+      "path": "/en/payment",
+      "status": 200,
+      "bytes": 85761
+    },
+    {
+      "path": "/icon.png",
+      "status": 200,
+      "bytes": 971626
+    },
+    {
+      "assetType": ".js",
+      "status": 200,
+      "bytes": 6945
+    },
+    {
+      "assetType": ".css",
+      "status": 200,
+      "bytes": 1340
+    },
+    {
+      "assetType": "bundled-font",
+      "status": 200,
+      "bytes": 25844
+    }
+  ],
+  "ownedProcessStopped": true,
+  "limitations": "Sampled website server/assets only; no API/database/embedding/provider, OS ACL or full feature acceptance."
+}
