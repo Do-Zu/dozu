@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-13",
+  "initialRootPackageAttempt": {
+    "command": "python planning/toolchains/run-check.py root-package package",
+    "exitCode": 1,
+    "failure": "EPERM creating apps/web/.next/server/app/[locale]/auth inside sandbox",
+    "retry": "Same credential-free runner outside sandbox; passed in root-package.json"
+  },
+  "initialWebsiteProbe": {
+    "failure": "WinError 10013 blocked localhost socket inside sandbox",
+    "cleanup": "Owned server terminated in finally block",
+    "retry": "Outside sandbox with identical Node read-only filesystem restrictions; passed in website-proof.json"
+  },
+  "platformAcceptance": "All required native installer/clean-machine/minimum-hardware OS targets remain unpassed"
+}

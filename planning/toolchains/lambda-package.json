@@ -1,0 +1,8 @@
+{
+  "platform": "nt",
+  "exitCode": 0,
+  "spacesAndShellMetacharacters": true,
+  "fixtureZipContentsVerified": true,
+  "deploymentExecuted": false,
+  "nativeMacOSLinux": "unpassed on this Windows host"
+}

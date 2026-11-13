@@ -1,0 +1,26 @@
+2026-11-13 12:39:36:3936 [31merror[39m: [31mFailed to initialize database connection[39m
+{
+  "error": "Converting circular structure to JSON\n    --> starting at object with constructor 'PgTable'\n    |     property 'userId' -> object with constructor 'PgSerial'\n    --- property 'table' closes the circle"
+}
+Connecting to Redis (attempt 1 of 3)...
+Connecting to Redis (attempt 2 of 3)...
+Connecting to Redis (attempt 3 of 3)...
+Connecting to Redis (attempt 1 of 3)...
+Error loading environment: Access to this API has been restricted. Use --allow-fs-read to manage permissions.
+D:\product\dozu\apps\api\dist\libs\nodeMailerTransporter.lib.js:30
+        throw new Error('BACKEND_BASE_URL is missing');
+        ^
+
+Error: BACKEND_BASE_URL is missing
+    at getBackendBaseUrl (D:\product\dozu\apps\api\dist\libs\nodeMailerTransporter.lib.js:30:15)
+    at Object.<anonymous> (D:\product\dozu\apps\api\dist\libs\nodeMailerTransporter.lib.js:34:24)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+
+Node.js v22.22.0

@@ -1,0 +1,5 @@
+{
+  "addedDiagnostics": [],
+  "removedDiagnostics": [],
+  "note": "Ignores diagnostic line shifts; full lint still fails with 100 errors/143 warnings"
+}

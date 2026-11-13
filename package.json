@@ -3,16 +3,25 @@
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@10.28.2",
-  "engines": { "node": ">=22.22.0 <23" },
+  "engines": { "node": "22.22.0" },
   "scripts": {
     "dev": "turbo run dev",
+    "predev": "node tooling/verify-toolchain.cjs",
+    "prebuild": "node tooling/verify-toolchain.cjs",
+    "prepackage": "node tooling/verify-toolchain.cjs",
+    "dev:web": "pnpm --filter dozu-ui-service dev",
+    "dev:api": "pnpm --filter api-services dev",
+    "start:web": "node tooling/start-web.cjs",
+    "start:api": "pnpm --filter api-services start",
+    "package:web": "turbo run package --filter=dozu-ui-service",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "package": "turbo run package",
     "graph": "turbo run build lint typecheck test package --dry=json",
-    "verify:workspace": "node tooling/verify-workspace.cjs"
+    "verify:workspace": "node tooling/verify-workspace.cjs",
+    "verify:toolchain": "node tooling/verify-toolchain.cjs"
   },
   "devDependencies": { "turbo": "2.5.8" }
 }

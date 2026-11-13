@@ -1,0 +1,236 @@
+{
+  "baseCommit": "571221810a3dc3eeb0f009a8da2d5bb33beb4c0e",
+  "issueStatus": "In Progress",
+  "projectStatus": "In Progress",
+  "fullAcceptanceBoxesUnchecked": 5,
+  "assignmentAndOtherProjectFieldsPreserved": true,
+  "dependencyLockUnchanged": true,
+  "originalDirectDependencyDeclarationsUnchanged": true,
+  "commentUrl": "https://github.com/Do-Zu/dozu/issues/7#issuecomment-6845196827",
+  "files": [
+    {
+      "path": ".node-version",
+      "sha256": "4137094e7792cb49fe1afddc3f87208f0ef4adfef7d3acd1def0198786d393c2"
+    },
+    {
+      "path": ".nvmrc",
+      "sha256": "4137094e7792cb49fe1afddc3f87208f0ef4adfef7d3acd1def0198786d393c2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6ccd8919945d8772ae845d69bc101a51f1e87a6b2c4f2520449ff9997d029bc8"
+    },
+    {
+      "path": "apps/api/.nvmrc",
+      "sha256": "4137094e7792cb49fe1afddc3f87208f0ef4adfef7d3acd1def0198786d393c2"
+    },
+    {
+      "path": "apps/api/drizzle.config.ts",
+      "sha256": "b3c806b17e1343eadbab452190fb7289ef0a04e24adb9f81d74b7ee6af81570b"
+    },
+    {
+      "path": "apps/api/eslint.config.js",
+      "sha256": "4eac75286e96f02b02ac7df78110bb8371acac29a1be58b115e80a4cf9d25b0a"
+    },
+    {
+      "path": "apps/api/package.json",
+      "sha256": "fecdfaf2b6aba273f74485db969c0a7eb8a633d52b0ff282e36bb579e9200b6b"
+    },
+    {
+      "path": "apps/api/scripts/package-lambda.js",
+      "sha256": "fb5d7e8323ab584e8466149211e9836e731ff4c8194acada66700f2b2f04f57f"
+    },
+    {
+      "path": "apps/api/src/config/env.config.ts",
+      "sha256": "873c06bb974a16d2ff5ea3e75bf2730c09c4cbe639f3fa1f2c717a07436e7e50"
+    },
+    {
+      "path": "apps/api/src/config/generate.config.ts",
+      "sha256": "24414533ba5171e5bf1136f9e59be2eef65cc39406a9c0bd8c944819d6ae3e1a"
+    },
+    {
+      "path": "apps/api/src/config/runtimePaths.config.ts",
+      "sha256": "f42feb6d0134aa4c9c855a2205a4747a621057119827c789d7fc4ef23ab333e9"
+    },
+    {
+      "path": "apps/api/src/controllers/generate/v1/generate.controller.ts",
+      "sha256": "7b06a1954eff6438b6813fa97c7a89417beeb10c98de4a8f1c5bd8538b0542c9"
+    },
+    {
+      "path": "apps/api/src/register.ts",
+      "sha256": "9c806b384623f47bc876ba910b719717b294074a5d805430758cb39170e167f8"
+    },
+    {
+      "path": "apps/api/src/services/convert/config/convert.config.ts",
+      "sha256": "6a1b6667bd62940d865277cd8e23c7f10ae3be68cc546c26170409f864d68aa6"
+    },
+    {
+      "path": "apps/api/src/services/profile/profile.service.ts",
+      "sha256": "718edc919d34b858e584a0997a0d9646243f8c7f5a3583401e0f9a9f5c19c572"
+    },
+    {
+      "path": "apps/api/src/utils/logger.ts",
+      "sha256": "e073aca92e8b6120eacfa35b78a4b1800725214e6cbc50e05bbe17b100a97ea6"
+    },
+    {
+      "path": "package.json",
+      "sha256": "406d5cd8a455adfaee5d99a3074273f293e077d3a80084fef5f5c5aa14eeab71"
+    },
+    {
+      "path": "planning/README.md",
+      "sha256": "55f13a78cf1d0758563629fdec12508be72272c10b4caa0d12b3b0aacc335d5e"
+    },
+    {
+      "path": "planning/toolchains/README.md",
+      "sha256": "4b073159815b3b25ee399be182e2dbc9c53acb0a618cd5d4fd34facd5532c796"
+    },
+    {
+      "path": "planning/toolchains/all-compiled-aliases.log",
+      "sha256": "e8861e58ad41f29cf708b9886d3872f1f695477b33347ea6cc59e7fcb7602492"
+    },
+    {
+      "path": "planning/toolchains/api-build.json",
+      "sha256": "003fd84ececb08542988032c2d5eed3b8d08d978801f34268997a8814d491e7e"
+    },
+    {
+      "path": "planning/toolchains/api-build.log",
+      "sha256": "837b7d3d10d30cf22a1e1c1d313b48a435b1d86a9162b4397f6ab347e12ffd23"
+    },
+    {
+      "path": "planning/toolchains/api-incremental-baseline.json",
+      "sha256": "a057d70a77f6b82d29e98f75104157c743a0c394deb9b3f24c870dfca77668b1"
+    },
+    {
+      "path": "planning/toolchains/api-incremental-baseline.log",
+      "sha256": "fc6e38bd274ebc33007f9f33bab6e5b4c3d1379578a60c9b441234ba9de303c0"
+    },
+    {
+      "path": "planning/toolchains/api-lint.json",
+      "sha256": "464e503f1b512cd37bc86d99c2dc5f9b9b700d61bf03ef75bf2a7ebd04ab4078"
+    },
+    {
+      "path": "planning/toolchains/api-lint.log",
+      "sha256": "3c29b55452616f42b898d2fd2996c002524603990a81fb858e3c5ff94b8232e3"
+    },
+    {
+      "path": "planning/toolchains/compiled-alias-and-writes.log",
+      "sha256": "af59626f1624070b3c6b8101a8ed477b4ef213e9669c9c5f819dea597009ea45"
+    },
+    {
+      "path": "planning/toolchains/frozen-offline.json",
+      "sha256": "9cf7a1e0103290d368ad4967e85774dd826fad5e31610bddbc1dbeff4833ea25"
+    },
+    {
+      "path": "planning/toolchains/frozen-offline.log",
+      "sha256": "5b407b3e612b2f1f3d59a2960a4d3b3fb5a5d6e1a4c868134cf136cf8fa9351f"
+    },
+    {
+      "path": "planning/toolchains/github-progress.md",
+      "sha256": "35c372825693e6736a67327145e751d4ca19be7232f875a33e861f2fbb13f343"
+    },
+    {
+      "path": "planning/toolchains/host-limitations.json",
+      "sha256": "2fac81fe666e0c94ba265410be76f246f469030a31c637195063716ad226c6f1"
+    },
+    {
+      "path": "planning/toolchains/inventory.json",
+      "sha256": "e53d2975db971e526093ce3674ac1b1e64e9412c329aa77fee3f4364f737920f"
+    },
+    {
+      "path": "planning/toolchains/inventory.py",
+      "sha256": "85bc5b7c4722ddb777d77dea4cf50db6c6da3582f6cfa35930dee25da3f3d01d"
+    },
+    {
+      "path": "planning/toolchains/issue-7-final.json",
+      "sha256": "64088d14d48811a736f1fed4d338a11512cfedf03305ed08ed7a97c5a8061e62"
+    },
+    {
+      "path": "planning/toolchains/lambda-package.json",
+      "sha256": "9e782586d776913bba5915c915883d00feceabe9f62aadf9cf72b17525d8365b"
+    },
+    {
+      "path": "planning/toolchains/lambda-package.log",
+      "sha256": "feb2697ee2ec2f6e722399b44ef7f4e07ffe298a6db8da48d0e6e914ae7e8647"
+    },
+    {
+      "path": "planning/toolchains/lint-comparison.json",
+      "sha256": "e398951f121be6a1ae746b527c212b0b0b21ea2f87d45085003214a13dd9b95e"
+    },
+    {
+      "path": "planning/toolchains/migration-config-paths.log",
+      "sha256": "cded5b5975aa7816e58cebbd194f059b6e4a82de6f88faf921ceb8fb20fad236"
+    },
+    {
+      "path": "planning/toolchains/path-overrides.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "planning/toolchains/probe-web.py",
+      "sha256": "8f5541fb161f4a0a21ff4d70d5194e5f019303eb328fea3492f0bc3878aa9b68"
+    },
+    {
+      "path": "planning/toolchains/production-startup.log",
+      "sha256": "7c2c4062cda311a1a354b4a142e307a004a42be635c68703476f7d41d1d4ca72"
+    },
+    {
+      "path": "planning/toolchains/project-item-final.json",
+      "sha256": "30fff09029cc218994e2ed63aa93ccc10670f69c4bfea00ba19068e087e4a742"
+    },
+    {
+      "path": "planning/toolchains/relative-data-root-rejected.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "planning/toolchains/root-package.json",
+      "sha256": "a8d1d061ce4ba940d704fed214fdbe4474d619b2859a08534f6bbf4682f0e56f"
+    },
+    {
+      "path": "planning/toolchains/root-package.log",
+      "sha256": "ee7c15a5ec70af50615800aa1fb5148e20714f4763394d361d423350cfd3acdd"
+    },
+    {
+      "path": "planning/toolchains/run-check.py",
+      "sha256": "d9b6826adc85f6d4ecb0b6b248fdcf72bb68b8a6efea3d150dc7c5499211d5c4"
+    },
+    {
+      "path": "planning/toolchains/runtime-checks.json",
+      "sha256": "0c8049369c5d57ce74a258d274ba8848b68969d6bfd932262a63ccb9ceaa6a60"
+    },
+    {
+      "path": "planning/toolchains/verify-lambda.py",
+      "sha256": "e715770b1f503dbb321ed1a38b65b62415e847cfb5eebab846fcd8ae1d3d0536"
+    },
+    {
+      "path": "planning/toolchains/verify-runtime.cjs",
+      "sha256": "2bc17bed0a3220857f3214143d3e44281906c19fd8a0b0695af6a307b0a155c2"
+    },
+    {
+      "path": "planning/toolchains/website-default-paths.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "planning/toolchains/website-proof.json",
+      "sha256": "099c285d682094409414b1e033222a33c4131a45f5e9fa6d078f8ad39d37ab13"
+    },
+    {
+      "path": "planning/toolchains/website-server.log",
+      "sha256": "b54675765a502364b2472e7b60415b5ceac16eb6122fa87746bd9185dc708b3e"
+    },
+    {
+      "path": "planning/workspace/README.md",
+      "sha256": "73795e7f00f337b328caba083e64e19e9a4d9c20f8c174a6621815959fc2bbe2"
+    },
+    {
+      "path": "tooling/start-web.cjs",
+      "sha256": "d0220957f684b875a0a02d8f9522bf0d72025e23c15ec015f22ced72d55a94de"
+    },
+    {
+      "path": "tooling/toolchain-policy.json",
+      "sha256": "2d71c9178fccc11318caacc9f88180ef2bc36fac8b724120d4451e12d70244e2"
+    },
+    {
+      "path": "tooling/verify-toolchain.cjs",
+      "sha256": "a3e7bb3449eeaad5a1bbfbab252ed6264c06e857cdd9dbe2bfdec53db3c49ca3"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+'use strict';
+const path = require('node:path');
+const fs = require('node:fs');
+const artifact = path.resolve(__dirname, '../apps/web/.package');
+const entry = path.join(artifact, 'apps/web/server.js');
+if (!fs.existsSync(entry)) throw new Error('Run pnpm package before starting the website artifact');
+process.env.HOSTNAME ||= 'localhost';
+process.env.NODE_ENV = 'production';
+process.chdir(artifact);
+require(entry);

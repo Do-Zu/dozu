@@ -1,5 +1,7 @@
+import { runtimePaths } from './runtimePaths.config';
+
 export const generateConfig = {
-  uploadDir: process.env.UPLOAD_DIR || 'uploads/',
+  uploadDir: runtimePaths.uploads,
   maxFileSize: parseInt(process.env.MAX_FILE_SIZE || '52428800'), // 50MB default
   allowedMimeTypes: [
     'application/pdf',

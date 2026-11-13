@@ -1,7 +1,6 @@
 import dotenv from 'dotenv';
 import path from 'node:path';
 import * as fs from 'fs';
-import logger from '../utils/logger';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 const environment = process.env.NODE_ENV || 'development';
@@ -21,12 +20,12 @@ try {
             throw result.error;
         }
 
-        logger.info(`Loaded environment from ${envFile}`);
+        process.stdout.write(`Loaded environment from ${envFile}\n`);
     } else {
-        logger.warn(`Environment file ${envFile} not found, using default values`);
+        process.stderr.write(`Environment file ${envFile} not found, using default values\n`);
     }
 } catch (error) {
-    logger.error(`Error loading environment: ${(error as Error).message}`);
+    process.stderr.write(`Error loading environment: ${(error as Error).message}\n`);
 }
 
 function getEnv(name: string): string | undefined {
@@ -42,7 +41,7 @@ const requiredEnvVars: string[] = ['PORT', 'HOST'];
 const missingEnvVars = requiredEnvVars.filter(name => !process.env[name]);
 
 if (missingEnvVars.length > 0) {
-    logger.warn(`Missing required environment variables: ${missingEnvVars.join(', ')}`);
+    process.stderr.write(`Missing required environment variables: ${missingEnvVars.join(', ')}\n`);
 }
 
 interface ServerConfig {
@@ -66,7 +65,7 @@ const allowedOrigins =
         .filter(Boolean) ?? [];
 
 if (allowedOrigins.length === 0) {
-    logger.warn('ALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.');
+    process.stderr.write('ALLOWED_ORIGINS is empty. CORS may block all cross-origin requests.\n');
 }
 
 export const config: AppConfig = {

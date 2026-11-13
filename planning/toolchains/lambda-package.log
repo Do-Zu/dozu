@@ -1,0 +1,12 @@
+Creating ZIP file...
+Lambda package created at D:\product\dozu\planning\toolchains\.runs\lambda [literal] $value ' spaces-p_ps4irn\dist-lambda\function.zip
+Join-Path : Cannot bind argument to parameter 'Path' because it is null.
+At 
+C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:117 
+char:44
++ ...      $DestinationPath = Join-Path -Path $destinationParentDir -ChildP ...
++                                             ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Join-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.JoinPathCom 
+   mand
+ 

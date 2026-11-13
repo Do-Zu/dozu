@@ -1,0 +1,11 @@
+{
+  "node": "22.22.0",
+  "pnpm": "10.28.2",
+  "turbo": "2.5.8",
+  "typescript": "5.8.3",
+  "role": "Measured JavaScript build baseline; not a security or installer certification",
+  "desktopElectron": null,
+  "bundledNode": null,
+  "pythonRuntime": null,
+  "postgresqlRuntime": null
+}

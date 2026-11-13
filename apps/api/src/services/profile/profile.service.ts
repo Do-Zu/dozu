@@ -7,6 +7,7 @@ import { ContentType } from '@/types/progress/progress.type';
 import path from 'path';
 import fs from 'fs/promises';
 import logger from '@/utils/logger';
+import { runtimePaths } from '@/config/runtimePaths.config';
 import { progressService } from '@/services/progress/progress.service';
 import { quizService } from '@/services/quiz/quiz.service';
 import classService from '@/services/class-based-learning/class.service';
@@ -136,7 +137,11 @@ class ProfileService {
     // Remove uploaded avatar file (if exists)
     if (user && user.avatarUrl && user.avatarUrl.startsWith('/uploads/')) {
       try {
-        const filePath = path.join(process.cwd(), user.avatarUrl);
+        const filePath = path.resolve(runtimePaths.uploads, user.avatarUrl.slice('/uploads/'.length));
+        const relativePath = path.relative(runtimePaths.uploads, filePath);
+        if (relativePath === '..' || relativePath.startsWith(`..${path.sep}`) || path.isAbsolute(relativePath)) {
+          throw new Error('Avatar path escapes upload directory');
+        }
         await fs.unlink(filePath);
       } catch (fileError) {
         logger.warn('Could not delete avatar file during account deletion:', fileError);

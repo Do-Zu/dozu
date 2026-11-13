@@ -1,5 +1,7 @@
 import { createLogger, format, transports } from 'winston';
 import { config } from '@/config/env.config';
+import path from 'node:path';
+import { runtimePaths } from '@/config/runtimePaths.config';
 
 //  log levels and colors
 const levels = {
@@ -47,12 +49,12 @@ const logTransports = [
     }),
 
     new transports.File({
-        filename: 'logs/error.log',
+        filename: path.join(runtimePaths.logs, 'error.log'),
         level: 'error',
     }),
 
     new transports.File({
-        filename: 'logs/all.log',
+        filename: path.join(runtimePaths.logs, 'all.log'),
         level: config?.isProduction ? 'error' : 'info', // Only log error in production, info+ in dev
     }),
 ];

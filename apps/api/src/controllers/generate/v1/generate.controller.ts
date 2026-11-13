@@ -5,9 +5,10 @@ import multer from 'multer';
 import path from 'node:path';
 import fs from 'fs';
 import { BadRequest } from '@/core/error';
+import { generateConfig } from '@/config/generate.config';
 
 // Configure multer for file uploads
-const uploadDir = path.join(process.cwd(), 'uploads');
+const uploadDir = generateConfig.uploadDir;
 if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir, { recursive: true });
 }

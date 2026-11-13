@@ -1,5 +1,7 @@
 # Workspace and build graph — issue #6
 
+Subsequent #7 changes are documented in [portable toolchains](../toolchains/README.md). The manifests/logs below remain the immutable #6 checkpoint; their source hashes are historical inputs, not assertions that later reviewed tooling changes leave every live file identical.
+
 Implemented and verified 2026-11-12 after #5's sanitized snapshot passed its prerequisite checks. This is JavaScript workspace/build evidence, not a complete desktop or full-stack release.
 
 ## Results

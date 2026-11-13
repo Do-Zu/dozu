@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 // Define paths
 const distDir = path.join(__dirname, '../dist-lambda');
@@ -18,13 +18,16 @@ if (fs.existsSync(finalZipPath)) {
   fs.unlinkSync(finalZipPath);
 }
 
-const zipCommand =
-  process.platform === 'win32'
-    ? `powershell Compress-Archive -Path "${distDir}\\*" -DestinationPath "${finalZipPath}" -Force`
-    : `cd "${distDir}" && zip -r function.zip .`;
-
 try {
-  execSync(zipCommand, { stdio: 'inherit' });
+  if (process.platform === 'win32') {
+    execFileSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command',
+      'Compress-Archive -LiteralPath (Get-ChildItem -LiteralPath $env:DOZU_LAMBDA_DIST).FullName -DestinationPath $env:DOZU_LAMBDA_ZIP -Force'],
+    { stdio: 'inherit', windowsHide: true, env: { ...process.env,
+      DOZU_LAMBDA_DIST: distDir, DOZU_LAMBDA_ZIP: finalZipPath } });
+  } else {
+    execFileSync('zip', ['-r', 'function.zip', '.', '-x', 'function.zip'],
+      { cwd: distDir, stdio: 'inherit' });
+  }
   console.log(`Lambda package created at ${finalZipPath}`);
 } catch (error) {
   console.error('Error creating ZIP file:', error);

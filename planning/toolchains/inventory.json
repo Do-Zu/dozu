@@ -1,0 +1,212 @@
+{
+  "scope": "Imported apps, services and tooling; tracked source files only",
+  "scripts": {
+    "package.json": {
+      "dev": "turbo run dev",
+      "predev": "node tooling/verify-toolchain.cjs",
+      "prebuild": "node tooling/verify-toolchain.cjs",
+      "prepackage": "node tooling/verify-toolchain.cjs",
+      "dev:web": "pnpm --filter dozu-ui-service dev",
+      "dev:api": "pnpm --filter api-services dev",
+      "start:web": "node tooling/start-web.cjs",
+      "start:api": "pnpm --filter api-services start",
+      "package:web": "turbo run package --filter=dozu-ui-service",
+      "build": "turbo run build",
+      "lint": "turbo run lint",
+      "typecheck": "turbo run typecheck",
+      "test": "turbo run test",
+      "package": "turbo run package",
+      "graph": "turbo run build lint typecheck test package --dry=json",
+      "verify:workspace": "node tooling/verify-workspace.cjs",
+      "verify:toolchain": "node tooling/verify-toolchain.cjs"
+    },
+    "apps/api/package.json": {
+      "dev": "cross-env NODE_ENV=development nodemon",
+      "start": "cross-env NODE_ENV=production node dist/index.js",
+      "build": "cross-env NODE_ENV=production tsc --incremental false",
+      "build:watch": "tsc --watch",
+      "vercel-build": "npm run build",
+      "format": "prettier --write \"src/**/*.ts\"",
+      "clean": "rimraf dist",
+      "prebuild": "npm run clean",
+      "typecheck": "tsc --noEmit",
+      "lint": "eslint .",
+      "lint:fix": "eslint . --fix",
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "test:coverage": "jest --coverage",
+      "generate:api": "node scripts/generate/generate-api.js",
+      "db:generate:dev": "cross-env NODE_ENV=development drizzle-kit generate --config=drizzle.config.ts",
+      "db:migrate:dev": "cross-env NODE_ENV=development drizzle-kit migrate --config=drizzle.config.ts",
+      "db:generate:prod": "cross-env NODE_ENV=production drizzle-kit generate --config=drizzle.config.ts",
+      "db:migrate:prod": "cross-env NODE_ENV=production drizzle-kit migrate --config=drizzle.config.ts",
+      "db:migrate:docker": "drizzle-kit push:pg --schema ./dist/db/schema.js --out-dir ./src/db/migrations",
+      "lambda:generate:clean": "rimraf dist-lambda",
+      "lambda:generate:build": "node scripts/build-lambda.js",
+      "lambda:generate:package": "node scripts/package-lambda.js",
+      "lambda:generate:deploy:prod": "aws lambda update-function-code --function-name handle-gen-content-api-integrate-product --zip-file fileb://dist-lambda/function.zip",
+      "lambda:generate:deploy:dev": "aws lambda update-function-code --function-name handle-gen-content-api-integrate-development --zip-file fileb://dist-lambda/function.zip",
+      "lambda:generate:update-config:prod": "aws lambda update-function-configuration --function-name handle-gen-content-api-integrate-product --handler index.handler --runtime nodejs20.x --timeout 300",
+      "lambda:generate:update-config:dev": "aws lambda update-function-configuration --function-name handle-gen-content-api-integrate-development --handler index.handler --runtime nodejs20.x --timeout 300",
+      "lambda:generate:all:prod": "npm run lambda:generate:clean && npm run lambda:generate:build && npm run lambda:generate:package && npm run lambda:generate:deploy:prod && npm run lambda:generate:update-config:prod",
+      "lambda:generate:all:dev": "npm run lambda:generate:clean && npm run lambda:generate:build && npm run lambda:generate:package && npm run lambda:generate:deploy:dev && npm run lambda:generate:update-config:dev",
+      "docker:up:db:postgres": "docker-compose -f containers/database/postgres/docker-compose.yml up -d",
+      "docker:down:db:postgres": "docker-compose -f containers/database/postgres/docker-compose.yml down",
+      "docker:build:db:postgres": "docker-compose -f containers/database/postgres/docker-compose.yml build",
+      "docker:logs:db:postgres": "docker-compose -f containers/database/postgres/docker-compose.yml logs -f postgres",
+      "docker:restart:db:postgres": "docker-compose -f containers/database/postgres/docker-compose.yml restart",
+      "docker:clean:db:postgres": "docker-compose -f containers/database/postgres/docker-compose.yml down -v --remove-orphans",
+      "docker:whisper:build": "docker build -f containers/whisper/Dockerfile -t whisper-service containers/whisper",
+      "docker:whisper:run": "docker run --rm -p 8624:8624 --name whisper-service whisper-service"
+    },
+    "apps/web/package.json": {
+      "dev": "next dev",
+      "dev:prod": "cross-env NODE_ENV=production next dev",
+      "build:prod": "pnpm run build",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "prepare": "husky install",
+      "typecheck": "tsc --noEmit",
+      "package": "node ../../tooling/package-web.cjs",
+      "prebuild": "node ../../tooling/clean-next-standalone.cjs",
+      "postbuild": "node ../../tooling/normalize-standalone-links.cjs"
+    }
+  },
+  "findings": [
+    {
+      "file": "apps/api/scripts/build-lambda.js",
+      "line": 12,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/scripts/generate/generate-api.js",
+      "line": 102,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/scripts/generate/generate-api.js",
+      "line": 140,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/scripts/package-lambda.js",
+      "line": 3,
+      "category": "shell-execution"
+    },
+    {
+      "file": "apps/api/scripts/package-lambda.js",
+      "line": 23,
+      "category": "shell-execution"
+    },
+    {
+      "file": "apps/api/scripts/package-lambda.js",
+      "line": 28,
+      "category": "shell-execution"
+    },
+    {
+      "file": "apps/api/src/controllers/generate/v1/generate.controller.ts",
+      "line": 13,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/features/whisper/local/whisper.constant.ts",
+      "line": 4,
+      "category": "cwd-dependent"
+    },
+    {
+      "file": "apps/api/src/features/whisper/local/whisper.constant.ts",
+      "line": 4,
+      "category": "linux-only-speech-executable"
+    },
+    {
+      "file": "apps/api/src/features/whisper/local/whisper.constant.ts",
+      "line": 5,
+      "category": "cwd-dependent"
+    },
+    {
+      "file": "apps/api/src/features/whisper/local/whisper.constant.ts",
+      "line": 6,
+      "category": "cwd-dependent"
+    },
+    {
+      "file": "apps/api/src/features/whisper/local/whisper.service.ts",
+      "line": 3,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/features/whisper/local/whisper.service.ts",
+      "line": 39,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/middleware/storage/convert-upload.middleware.ts",
+      "line": 12,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/middleware/upload.middleware.ts",
+      "line": 9,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/services/convert/file.service.ts",
+      "line": 9,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/services/convert/file.service.ts",
+      "line": 20,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/services/convert/file.service.ts",
+      "line": 69,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/services/convert/strategies/libreoffice-converter.strategy.ts",
+      "line": 9,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/services/convert/strategies/libreoffice-converter.strategy.ts",
+      "line": 45,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/api/src/services/uploads/files/upload.file.service.ts",
+      "line": 125,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "apps/web/fix-tailwind-class.js",
+      "line": 84,
+      "category": "mutable-file-operation"
+    },
+    {
+      "file": "services/embedding/src/app/core/model_manager.py",
+      "line": 32,
+      "category": "model-download-or-unpinned-revision"
+    },
+    {
+      "file": "services/embedding/src/app/core/model_manager.py",
+      "line": 40,
+      "category": "model-download-or-unpinned-revision"
+    },
+    {
+      "file": "tooling/verify-workspace.cjs",
+      "line": 16,
+      "category": "windows-env-assignment"
+    }
+  ],
+  "classification": {
+    "portable-build": "cross-env, rimraf, local pinned CLI executables, Node path joins",
+    "desktop-data": "DOZU_DATA_DIR absolute inherited setting; website cwd default retained",
+    "legacy-developer-only": "Lambda AWS CLI/Node20 deployment commands, Docker Compose and zip utilities are not desktop dependencies",
+    "legacy-invalid": "db:migrate:docker still uses obsolete push:pg with missing dist/db/schema.js; never used by root build/package",
+    "deferred-speech": "whisper CLI paths/scripts retained as source history; no v1 packaging/startup certification",
+    "unpassed": "Embedding Python image/requirements/model revision and resource cache remain unpinned; no immutable native runtime manifest exists"
+  },
+  "lockSha256": "ec63e07b689b19e97bfcdb41f5ddbc05703714fa0e07e292cacb3e6c8cef03ab"
+}

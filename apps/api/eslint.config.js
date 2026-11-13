@@ -5,6 +5,7 @@ const eslintConfigPrettier = require('eslint-config-prettier');
 
 /** @type {import('eslint').Linter.Config[]} */
 module.exports = [
+  { ignores: ['dist/**', 'dist-lambda/**', 'coverage/**', 'node_modules/**'] },
   {
     // Only include files in the src directory
     files: ['src/**/*.{js,mjs,cjs,ts}'],

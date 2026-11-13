@@ -1,0 +1,54 @@
+{
+  "node": "22.22.0",
+  "modules": "127",
+  "napi": "10",
+  "platform": "win32",
+  "arch": "x64",
+  "checks": [
+    {
+      "name": "all-compiled-aliases",
+      "passed": true
+    },
+    {
+      "name": "compiled-alias-and-writes",
+      "passed": true
+    },
+    {
+      "name": "relative-data-root-rejected",
+      "passed": true
+    },
+    {
+      "name": "path-overrides",
+      "passed": true
+    },
+    {
+      "name": "website-default-paths",
+      "passed": true
+    },
+    {
+      "name": "migration-config-paths",
+      "passed": true
+    }
+  ],
+  "productionStartup": {
+    "exitCode": 1,
+    "signal": null,
+    "passed": false,
+    "timedOut": false,
+    "note": "Real entrypoint under scrubbed environment; not backend-ready evidence"
+  },
+  "native": [
+    {
+      "package": "@next/swc-win32-x64-msvc",
+      "loaded": true,
+      "target": "x86_64-pc-windows-msvc",
+      "sha256": "2cdded4f290711fbd6911d880aa1a653519af42c6139b9ae07c4d408a42b9b1b"
+    },
+    {
+      "package": "canvas",
+      "loaded": false,
+      "code": "MODULE_NOT_FOUND",
+      "note": "Lifecycle suppressed; native/browser delivery remains unpassed"
+    }
+  ]
+}

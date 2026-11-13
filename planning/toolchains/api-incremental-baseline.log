@@ -1,0 +1,12 @@
+
+> api-services@0.0.1 prebuild D:\product\dozu\apps\api
+> npm run clean
+
+
+> api-services@0.0.1 clean
+> rimraf dist
+
+
+> api-services@0.0.1 build D:\product\dozu\apps\api
+> cross-env NODE_ENV=production tsc
+

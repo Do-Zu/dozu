@@ -1,5 +1,7 @@
 # Dozu local-first desktop planning
 
+**Toolchain work — 2026-11-13:** #7 and its Project item are In Progress. [Portable-script implementation and evidence](toolchains/README.md) records the JavaScript build pins, API path/build fixes and explicit unpassed runtime/native gates. Live #4's closed/completed state and checked headline boxes conflict with its user-directed NOT PLANNED closure; this work preserves #4 and does not infer completed platform/resource/lifecycle acceptance from it.
+
 **Latest foundation result — 2026-11-12:** #5 source import and #6 JavaScript workspace/build graph are completed after review. Both child issues and Project Status are Done; #1 remains In Progress. Source import and workspace evidence do not establish full-stack/installer/platform acceptance. See [workspace evidence](workspace/README.md).
 
 **Current tracker state — 2026-11-12:** #4 is closed **not planned**, with acceptance unpassed; descriptions of it as in progress below are historical. #1 coordinates the remaining proof through existing delivery children; #5 source-import review has started. See [delivery reconciliation](roadmap/README.md). The 2026-11-11 amendment supersedes older speech/pgvector wording.
