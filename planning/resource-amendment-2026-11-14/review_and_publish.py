@@ -36,6 +36,9 @@ def original_acs(body):
 
 
 def update_body(number, body):
+    # Older issue edits contain repeated CR characters. Normalize transport line
+    # endings before comparing sections; preserve all text, links and AC states.
+    body = re.sub(r"\r+\n", "\n", body).replace("\r", "\n")
     original_dependencies = dependency_sections(body)
     original_states = original_acs(body)
     # Remove only our idempotent block; preserve all other live content/history.
@@ -75,7 +78,7 @@ def main():
         number = issue["number"]
         live = gh("issue", "view", number, "--repo", "Do-Zu/dozu", "--json", ",".join(META + ["body"])) if args.publish else issue
         body = update_body(number, live["body"])
-        path = RUN / f"issue-{number}-body.md"; path.write_text(body, encoding="utf-8")
+        path = RUN / f"issue-{number}-body.md"; path.write_bytes(body.encode("utf-8"))
         assert update_body(number, body) == body, f"Amendment not idempotent on #{number}"
         if args.publish:
             if body != live["body"]:

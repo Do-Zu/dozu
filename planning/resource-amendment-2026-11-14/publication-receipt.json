@@ -1,0 +1,23 @@
+{
+  "projectItemsVerified": 49,
+  "originalReleaseCheckboxesPreserved": true,
+  "newVerifiedWindowsComponentChecks": 7,
+  "newRuntimeAcceptanceClaims": 0,
+  "sourceCommit": "4ffa65cbc52fa37910116a388e7f8076cc224f14",
+  "comments": [
+    {
+      "url": "https://github.com/Do-Zu/dozu/issues/1#issuecomment-6864037652",
+      "number": 1
+    },
+    {
+      "url": "https://github.com/Do-Zu/dozu/issues/2#issuecomment-6864038870",
+      "number": 2
+    },
+    {
+      "url": "https://github.com/Do-Zu/dozu/issues/8#issuecomment-6864039967",
+      "number": 8
+    }
+  ],
+  "issueBodiesUpdated": 24,
+  "observedAtUtc": "2026-11-13T20:27:38.0284487Z"
+}

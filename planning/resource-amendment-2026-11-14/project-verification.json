@@ -1,0 +1,60 @@
+{
+  "observedAtUtc": "2026-11-13T20:26:35.995901+00:00",
+  "projectId": "PVT_kwDODsVOHc4Bq0ro",
+  "totalItemsVerified": 49,
+  "onlyCustomFieldChange": "Issue #8 Blocker; body edits are separate approved issue updates",
+  "allOtherProjectFieldsPreserved": true,
+  "item8": {
+    "blocker": "Accepted 2026-11-14: baseline CPU model allowed; ONNX optimization deferred. Pending #34 owned paths/read-only install, #38 native runtime provisioning/clean targets, #18/#28 integration and actual complete 8 GB/four-core SSD tests against revised full-app budgets.",
+    "complexity": "L",
+    "content": {
+      "body": "<!-- dozu-tracking:start -->\n## Work tracking\nUse the live **status:**, **priority:** and **complexity:** labels above; **Assignees** identifies the owner. These labels are separate from the task/ticket type.\n\n**Planning complexity:** L - Python and native ML dependency/model packaging across operating systems.\nComplexity is a provisional scope/uncertainty estimate, not a delivery-time commitment. XL work must be split into executable subtasks before starting.\n**Planning priority:** P0 - Architecture/foundation work that unblocks the implementation path.\n<!-- dozu-tracking:end -->\n\n<!-- dozu-resource-contract-2026-11-14:start -->\n## Accepted desktop resource contract — 2026-11-14\n\nAuthority: the user explicitly accepted the proposed larger initial-release hardware/resource targets in the #8 chat. This supersedes earlier 4 GB/dual-core/HDD, 250 MB installer, 750 MB installed, 700 MB/1 GB normal-memory, cold UI 10/5 s and backend-ready 8/4 s requirements wherever they appear below or in historical scope notes. OS versions, CPU architecture matrix, installer formats, feature/data/security/lifecycle obligations and deferred capabilities are unchanged. Requirements approval is not benchmark or release acceptance.\n\n| Hardware | Minimum | Recommended |\n| --- | --- | --- |\n| CPU | 64-bit, 4 physical cores | 6–8 cores |\n| System RAM | 8 GB | 16 GB |\n| Storage | SSD; 10 GB free before installation | SSD; 20 GB free |\n| Graphics | Integrated graphics; CPU inference | Dedicated GPU optional |\n| Display | 1366 × 768 | 1920 × 1080 |\n\n| Initial-release whole-application target | Limit |\n| --- | --- |\n| Installer download | ≤ 1.5 GB |\n| Installed application, all bundled runtimes/model/resources included | ≤ 3 GB |\n| Normal combined app memory | ≤ 2 GB RAM |\n| Peak during one ingestion/embedding job | ≤ 3 GB RAM |\n| Interactive UI after cold launch | ≤ 15 s |\n| Complete local backend/model readiness | ≤ 30 s |\n\nMemory includes Electron, Next, Express, PostgreSQL, Redis and running embedding/conversion workers. The existing warm-UI targets were not changed: ≤5 s on minimum and ≤3 s on recommended hardware. Imported documents/media, growing databases and user backups require additional disk. Installation/update/restore preflight must calculate actual staging and data requirements rather than assuming the initial free-space allowance covers unlimited data.\n\nKeep the existing pinned multilingual CPU model for the initial integration path; smaller/quantized runtime optimization may follow later. ONNX is an evaluation candidate, not a release prerequisite or an approved model substitution. Preserve real semantic PDF/YouTube transcript references, the 384-dimensional API contract, English/Vietnamese behavior, local authority and genuine provider integrations. No STT, SMTP, payment execution or pgvector is restored by this amendment; Redis and PostgreSQL remain retained.\n\nMinimum-hardware acceptance uses one active user with one ingestion job at a time; concurrent LAN hosting and large-library capacity require separate measured tests. Validate the complete application on actual 8 GB/four-core SSD hardware and every required native OS/architecture before advertising support. Component proof, larger allowances and approval do not pass installer, full-stack memory/startup, native dependency, file-path/ownership or lifecycle ACs.\n\nCanonical requirements and evidence rules: [platform-support.md](https://github.com/Do-Zu/dozu/blob/dev/planning/platform-support.md). Prior measurements and closed issue histories remain historical evidence; no completed/cancelled issue is reopened or counted as release proof by this change.\n<!-- dozu-resource-contract-2026-11-14:end -->\n\n## Outcome\nPackage the current text-embedding service for PDF/YouTube reference retrieval as a managed local process with its full CPU-capable runtime/model resources.\n\n## Acceptance criteria\n- [ ] Lock complete Python dependencies and package native libraries per target OS/architecture; no user pip/Python setup.\n- [ ] Bundle pinned model/tokenizer/config resources and preserve the existing 384-dimensional vector contract.\n- [ ] Load baseline resources from verified local paths without Hub fallback downloads blocking local startup.\n- [ ] Verify text/PDF/existing-transcript-text contracts (speech-to-text is deferred) and CPU operation; optional acceleration must not require manual setup.\n- [ ] Expose loopback readiness/shutdown and route user files through authenticated local paths or URLs.\n\n## Architecture constraints\nThe complete existing Next.js UI and Express backend run locally with a local database/files. Desktop and local browser use the same localhost backend. Real third-party integrations may use the internet; preserve them wherever feasible. No central Dozu backend, cloud database, synchronization, shared publisher secrets in installers, or simulated replacements. All existing pages remain in scope; explicit v1 capability deferrals in the 2026-11-11 amendment below apply.\n\n<!-- dozu-roadmap:PYTHON -->\n\nPhase: 1 Foundation | Priority: P0\n\nParent roadmap: https://github.com/Do-Zu/dozu/issues/1\n\n## Dependencies\n- #5 - [Task] Import current frontend/backend/embedding sources with provenance\n- #38 - [Task] Assemble verified per-platform runtimes, binaries and licenses\n- #34 - [Task] Define app-owned local data paths and ownership manifest\n\n<!-- dozu-v1-scope-2026-11-11:start -->\n## User-approved v1 scope amendment — 2026-11-11\n\n- Remove local speech-to-text from this version: no whisper.cpp server, tiny speech model, speech startup/readiness gate or speech-only assets. Retain independent media playback and genuine existing YouTube transcript text retrieval. Preserve source/page inventory; no fake transcript or new cloud STT fallback.\n- Keep PostgreSQL; **defer pgvector**. A private relational cluster, reviewed migrations/seeds, persistence and data-safe upgrades remain required. Current vector(384), `<=>` and HNSW consumers need explicit reviewed adaptation; do not blindly run vector-dependent migrations, discard data or replace PostgreSQL.\n- The measured 479.729 MB MiniLM snapshot is a separate **text-embedding model**, used by retained PDF/YouTube reference search and ingestion. The user's condition for dropping its experiment is not met: keep smaller-runtime/quantization proof scoped to these consumers. No working smaller runtime or pgvector-free ranking implementation is claimed.\n- Ordinary PostgreSQL array/JSONB vector storage plus bounded application-side cosine ranking is an evaluation candidate only. Prove owner/topic filtering, 384-value shape, ranking/topK/ties, persistence/migration, quality and realistic scale/resource budgets before adopting it. Semantic reference retrieval has not been deferred by this decision.\n- Exclude FFmpeg only when its sole consumer is deferred speech-to-text; separately prove any retained non-STT need. Keep required document/URL/PDF/editor/media/font/browser resources. OS/CPU/installers, 250 MB installer/750 MB installed and memory/startup targets remain unchanged. Payments remain deferred under #41; classrooms remain LAN.\n\nSource trace: `PdfFileEmbeddingStrategy.ts`, `YoutubeEmbeddingStrategy.ts`, `BaseEmbeddingStrategy.queryTopSimilarity()`, `inputSet.service.ts`, UI topic `components/reference/Reference.tsx`, and separate `features/whisper/api/whisper.service.ts`. Full record: local `planning/v1-scope-2026-11-11.md`. Earlier audits/measurements are historical evidence. Planning updates are not implemented feature removal or passing acceptance.\n<!-- dozu-v1-scope-2026-11-11:end -->\n\n<!-- dozu-embedding-component-ac-review-2026-11-14:start -->\n## AC review after accepted resource revision — 2026-11-14\n\nThe original five release ACs above remain open. The resource amendment removes the old size-budget objection to the default pinned CPU baseline and defers ONNX optimization; it does not complete native packaging or final installation acceptance. The following **Windows developer-host component checks** are verified by [commit 66db470 and its evidence](https://github.com/Do-Zu/dozu/blob/66db470989b7f66280f3d1d4e4ba6ce82db834e0/planning/embedding-runtime/README.md), not full supported-platform release claims:\n\n- [x] Exact 45-package baseline and 37-package ONNX candidate Windows CPython 3.13 wheel/hash closures, official artifact provenance and license/native inventories recorded.\n- [x] Model/tokenizer/config files pinned to revision 86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d; baseline CPU vectors have 384 finite normalized values.\n- [x] Real packaged startup from local resources with fresh process caches and non-loopback process-level network denial; no Hub fallback or runtime/model download attempt observed.\n- [x] Actual text, mixed/empty batch, PDF page and supplied transcript-text/time-reference HTTP contracts exercised: 28 checks per package, including security failures.\n- [x] Missing token/model and corrupt resources exit nonzero; authenticated graceful shutdown exits 0: three failure cases per package.\n- [x] Authenticated loopback PDF URLs and canonical test-root boundaries exercised in Unicode/space paths; package integrity/file sets unchanged after tests.\n- [x] Baseline component measured at 1,249,334,226 installed bytes and 658,610,092 ZIP bytes, below the revised 3 GB/1.5 GB allowances **for the component alone**. This is not full-app installer/installed acceptance.\n- [ ] Complete native dependency closure and clean supported OS/CPU proof: host Microsoft C++ runtime DLLs remain observed; #38/#23.\n- [ ] Final owned user paths, permissions/read-only installation and actual API/supervisor integration: #34/#18/#28.\n- [ ] Whole-app 8 GB/four-core SSD acceptance, combined 2 GB normal/3 GB peak RAM, 15 s UI/30 s full readiness, genuine installer/installed footprint and retained full workflows: #22/#23/#21/#29 and native owners.\n\nNo original release AC, issue state/owner or dependency link is changed by this component checklist. ONNX optimization/representation equivalence is deferred, while required baseline semantic behavior and English/Vietnamese workflow evidence remain release obligations. [Current cross-issue AC review](https://github.com/Do-Zu/dozu/blob/dev/planning/resource-amendment-2026-11-14/acceptance-review.md).\n<!-- dozu-embedding-component-ac-review-2026-11-14:end -->\n",
+      "number": 8,
+      "repository": "Do-Zu/dozu",
+      "title": "[Task] Bundle local text-embedding runtime for PDF and YouTube references",
+      "type": "Issue",
+      "url": "https://github.com/Do-Zu/dozu/issues/8"
+    },
+    "depends on": "https://github.com/Do-Zu/dozu/issues/5\nhttps://github.com/Do-Zu/dozu/issues/38\nhttps://github.com/Do-Zu/dozu/issues/34",
+    "id": "PVTI_lADODsVOHc4Bq0rozhHKcx4",
+    "labels": [
+      "task",
+      "status:in-progress",
+      "priority:P0",
+      "complexity:L"
+    ],
+    "phase": "1 Foundation",
+    "priority": "P0",
+    "repository": "https://github.com/Do-Zu/dozu",
+    "status": "In Progress",
+    "title": "[Task] Bundle local text-embedding runtime for PDF and YouTube references"
+  },
+  "issueBodiesUpdated": [
+    1,
+    2,
+    8,
+    9,
+    18,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    38,
+    40,
+    46,
+    47,
+    49
+  ],
+  "requirements2StatePreserved": "CLOSED",
+  "issue8StatePreserved": "OPEN"
+}
