@@ -1,0 +1,72 @@
+{
+  "item": {
+    "blocker": "Final installation/path ownership awaits #34; native closure and clean-target proof await #38 (host VC++ DLLs observed). ONNX remains an evaluation candidate; full-app budgets and representative en/vi quality unpassed.",
+    "complexity": "L",
+    "content": {
+      "body": "<!-- dozu-tracking:start -->\n## Work tracking\nUse the live **status:**, **priority:** and **complexity:** labels above; **Assignees** identifies the owner. These labels are separate from the task/ticket type.\n\n**Planning complexity:** L - Python and native ML dependency/model packaging across operating systems.\nComplexity is a provisional scope/uncertainty estimate, not a delivery-time commitment. XL work must be split into executable subtasks before starting.\n**Planning priority:** P0 - Architecture/foundation work that unblocks the implementation path.\n<!-- dozu-tracking:end -->\n\n## Outcome\nPackage the current text-embedding service for PDF/YouTube reference retrieval as a managed local process with its full CPU-capable runtime/model resources.\n\n## Acceptance criteria\n- [ ] Lock complete Python dependencies and package native libraries per target OS/architecture; no user pip/Python setup.\n- [ ] Bundle pinned model/tokenizer/config resources and preserve the existing 384-dimensional vector contract.\n- [ ] Load baseline resources from verified local paths without Hub fallback downloads blocking local startup.\n- [ ] Verify text/PDF/existing-transcript-text contracts (speech-to-text is deferred) and CPU operation; optional acceleration must not require manual setup.\n- [ ] Expose loopback readiness/shutdown and route user files through authenticated local paths or URLs.\n\n## Architecture constraints\nThe complete existing Next.js UI and Express backend run locally with a local database/files. Desktop and local browser use the same localhost backend. Real third-party integrations may use the internet; preserve them wherever feasible. No central Dozu backend, cloud database, synchronization, shared publisher secrets in installers, or simulated replacements. All existing pages remain in scope; explicit v1 capability deferrals in the 2026-11-11 amendment below apply.\n\n<!-- dozu-roadmap:PYTHON -->\n\nPhase: 1 Foundation | Priority: P0\n\nParent roadmap: https://github.com/Do-Zu/dozu/issues/1\n\n## Dependencies\n- #5 - [Task] Import current frontend/backend/embedding sources with provenance\n- #38 - [Task] Assemble verified per-platform runtimes, binaries and licenses\n- #34 - [Task] Define app-owned local data paths and ownership manifest\n\n<!-- dozu-v1-scope-2026-11-11:start -->\n## User-approved v1 scope amendment — 2026-11-11\n\n- Remove local speech-to-text from this version: no whisper.cpp server, tiny speech model, speech startup/readiness gate or speech-only assets. Retain independent media playback and genuine existing YouTube transcript text retrieval. Preserve source/page inventory; no fake transcript or new cloud STT fallback.\n- Keep PostgreSQL; **defer pgvector**. A private relational cluster, reviewed migrations/seeds, persistence and data-safe upgrades remain required. Current vector(384), `<=>` and HNSW consumers need explicit reviewed adaptation; do not blindly run vector-dependent migrations, discard data or replace PostgreSQL.\n- The measured 479.729 MB MiniLM snapshot is a separate **text-embedding model**, used by retained PDF/YouTube reference search and ingestion. The user's condition for dropping its experiment is not met: keep smaller-runtime/quantization proof scoped to these consumers. No working smaller runtime or pgvector-free ranking implementation is claimed.\n- Ordinary PostgreSQL array/JSONB vector storage plus bounded application-side cosine ranking is an evaluation candidate only. Prove owner/topic filtering, 384-value shape, ranking/topK/ties, persistence/migration, quality and realistic scale/resource budgets before adopting it. Semantic reference retrieval has not been deferred by this decision.\n- Exclude FFmpeg only when its sole consumer is deferred speech-to-text; separately prove any retained non-STT need. Keep required document/URL/PDF/editor/media/font/browser resources. OS/CPU/installers, 250 MB installer/750 MB installed and memory/startup targets remain unchanged. Payments remain deferred under #41; classrooms remain LAN.\n\nSource trace: `PdfFileEmbeddingStrategy.ts`, `YoutubeEmbeddingStrategy.ts`, `BaseEmbeddingStrategy.queryTopSimilarity()`, `inputSet.service.ts`, UI topic `components/reference/Reference.tsx`, and separate `features/whisper/api/whisper.service.ts`. Full record: local `planning/v1-scope-2026-11-11.md`. Earlier audits/measurements are historical evidence. Planning updates are not implemented feature removal or passing acceptance.\n<!-- dozu-v1-scope-2026-11-11:end -->\n",
+      "number": 8,
+      "repository": "Do-Zu/dozu",
+      "title": "[Task] Bundle local text-embedding runtime for PDF and YouTube references",
+      "type": "Issue",
+      "url": "https://github.com/Do-Zu/dozu/issues/8"
+    },
+    "depends on": "https://github.com/Do-Zu/dozu/issues/5\nhttps://github.com/Do-Zu/dozu/issues/38\nhttps://github.com/Do-Zu/dozu/issues/34",
+    "id": "PVTI_lADODsVOHc4Bq0rozhHKcx4",
+    "labels": [
+      "task",
+      "status:in-progress",
+      "priority:P0",
+      "complexity:L"
+    ],
+    "phase": "1 Foundation",
+    "priority": "P0",
+    "repository": "https://github.com/Do-Zu/dozu",
+    "status": "In Progress",
+    "title": "[Task] Bundle local text-embedding runtime for PDF and YouTube references"
+  },
+  "projectId": "PVT_kwDODsVOHc4Bq0ro",
+  "scope": "Issue #8 only; unrelated fields/items preserved",
+  "observedAtUtc": "2026-11-13T13:51:56.5757865Z",
+  "issue": {
+    "assignees": [],
+    "labels": [
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5tC9w",
+        "name": "task",
+        "description": "Concrete implementation or verification work",
+        "color": "0E8A16"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-Cjg",
+        "name": "status:in-progress",
+        "description": "An owner has actively started the work",
+        "color": "1D76DB"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-FBw",
+        "name": "priority:P0",
+        "description": "Highest current priority: architecture and foundation unblockers",
+        "color": "B60205"
+      },
+      {
+        "id": "LA_kwDOVn-WS88AAAADB5-Ivg",
+        "name": "complexity:L",
+        "description": "Cross-system, native, security-sensitive or broad validation",
+        "color": "5319E7"
+      }
+    ],
+    "number": 8,
+    "projectItems": [
+      {
+        "status": {
+          "optionId": "47fc9ee4",
+          "name": "In Progress"
+        },
+        "title": "dozu"
+      }
+    ],
+    "state": "OPEN",
+    "title": "[Task] Bundle local text-embedding runtime for PDF and YouTube references",
+    "url": "https://github.com/Do-Zu/dozu/issues/8"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "description": "Hand-authored en/vi component smoke set. No comprehensive retrieval quality or product acceptance claim.",
+  "documents": [
+    {"topic": "plants", "text": "Photosynthesis lets plants use sunlight to turn carbon dioxide and water into sugar and oxygen."},
+    {"topic": "plants", "text": "Quang hợp giúp thực vật dùng ánh sáng mặt trời để chuyển nước và khí cacbonic thành đường và oxy."},
+    {"topic": "password", "text": "Protect your account with a long unique password and enable two-factor authentication."},
+    {"topic": "password", "text": "Bảo vệ tài khoản bằng mật khẩu dài, riêng biệt và bật xác thực hai yếu tố."},
+    {"topic": "study", "text": "Spaced repetition reviews flashcards at increasing intervals to improve long-term memory."},
+    {"topic": "study", "text": "Lặp lại ngắt quãng là ôn tập thẻ ghi nhớ theo khoảng cách tăng dần để nhớ lâu hơn."},
+    {"topic": "water", "text": "Evaporation changes liquid water into water vapor when molecules escape from the surface."},
+    {"topic": "water", "text": "Sự bay hơi chuyển nước lỏng thành hơi nước khi các phân tử thoát khỏi bề mặt."},
+    {"topic": "backup", "text": "Back up the PostgreSQL database before upgrading and test restoring the backup."},
+    {"topic": "backup", "text": "Sao lưu cơ sở dữ liệu PostgreSQL trước khi nâng cấp và kiểm tra việc khôi phục bản sao lưu."},
+    {"topic": "youtube", "text": "An existing YouTube transcript contains text segments and timestamps that link a reference to its video position."},
+    {"topic": "youtube", "text": "Bản phụ đề YouTube có sẵn chứa các đoạn văn bản và mốc thời gian để mở video tại vị trí tham chiếu."},
+    {"topic": "privacy", "text": "Local-first software stores the user's study notes and accounts on their own computer."},
+    {"topic": "privacy", "text": "Phần mềm ưu tiên cục bộ lưu ghi chú học tập và tài khoản trên máy tính của người dùng."},
+    {"topic": "force", "text": "Newton's second law states that force equals mass multiplied by acceleration."},
+    {"topic": "force", "text": "Định luật thứ hai của Newton cho biết lực bằng khối lượng nhân với gia tốc."}
+  ],
+  "queries": [
+    {"topic": "plants", "text": "How do plants make food using sunlight?"},
+    {"topic": "plants", "text": "Cây tạo ra thức ăn nhờ ánh sáng như thế nào?"},
+    {"topic": "password", "text": "How can I keep my login secure?"},
+    {"topic": "password", "text": "Làm thế nào để bảo vệ mật khẩu tài khoản?"},
+    {"topic": "study", "text": "How should I schedule flashcard reviews to remember longer?"},
+    {"topic": "study", "text": "Ôn tập thẻ ghi nhớ như thế nào để nhớ lâu?"},
+    {"topic": "water", "text": "Why does liquid water become vapor?"},
+    {"topic": "water", "text": "Tại sao nước lỏng chuyển thành hơi nước?"},
+    {"topic": "backup", "text": "How do I protect my database during an upgrade?"},
+    {"topic": "backup", "text": "Cần làm gì để bảo vệ cơ sở dữ liệu khi nâng cấp?"},
+    {"topic": "youtube", "text": "Where do video references get their text and timing?"},
+    {"topic": "youtube", "text": "Mốc thời gian trong phụ đề dùng để làm gì?"},
+    {"topic": "privacy", "text": "Where are my local study notes stored?"},
+    {"topic": "privacy", "text": "Ghi chú học tập được lưu trên máy tính của ai?"},
+    {"topic": "force", "text": "What is the relationship between force, mass and acceleration?"},
+    {"topic": "force", "text": "Lực liên quan thế nào đến khối lượng và gia tốc?"}
+  ]
+}

@@ -1,0 +1,1827 @@
+{
+  "scope": "Bundled native file hashes; loaded host VC++ gaps are separately listed in measurements.json",
+  "components": [
+    {
+      "backend": "onnx-int8",
+      "packageManifestSha256": "8b882e0f2656c1d4ddf90bab4976cfddfd5fdccae50fc212c7ad63c5d6b08174",
+      "files": [
+        {
+          "path": "python/_asyncio.pyd",
+          "bytes": 73048,
+          "sha256": "675587b1155c875ab27e24302d53f38e41febd3c080bc190c3e4ffbdb51fe76b"
+        },
+        {
+          "path": "python/_bz2.pyd",
+          "bytes": 86872,
+          "sha256": "b3dd7cea6d03342252834cebcc814af37d850b86d0627fa22b7f6990882f2f8b"
+        },
+        {
+          "path": "python/_ctypes.pyd",
+          "bytes": 133464,
+          "sha256": "dfa65498c77e71f038883337d2b5ffd92508489e79e6ee5e96ddec4ecf2a7fa1"
+        },
+        {
+          "path": "python/_decimal.pyd",
+          "bytes": 283480,
+          "sha256": "f55d81378a3261a7073fb71aee674152265b6f24ba6f375f9b939d5a117d8e6b"
+        },
+        {
+          "path": "python/_elementtree.pyd",
+          "bytes": 137048,
+          "sha256": "58339737dd818a6d0bac98403158677f2f7d54adc7c673b9a8a18c8b19ab11f6"
+        },
+        {
+          "path": "python/_hashlib.pyd",
+          "bytes": 69464,
+          "sha256": "1a3010b06c2fcd625dece3dd0883ca060e98b94adc062b06cb1a671cfc3b5caf"
+        },
+        {
+          "path": "python/_lzma.pyd",
+          "bytes": 159576,
+          "sha256": "f20be6a9fee8fb5d53170c4bc24a39b48d3c0ccbe8e2000e60ff7d65b77c6ea1"
+        },
+        {
+          "path": "python/_multiprocessing.pyd",
+          "bytes": 38232,
+          "sha256": "6c4ca996eafc99aeb246d25b5a9499d01488b643dcdabee6b48137f179b3deef"
+        },
+        {
+          "path": "python/_overlapped.pyd",
+          "bytes": 57688,
+          "sha256": "626675dc9fc5c74beb72cd278322a8313b68b22161e34473f8b951c238e72185"
+        },
+        {
+          "path": "python/_queue.pyd",
+          "bytes": 35160,
+          "sha256": "1e349a13913370369059a4ae5951157112b5eba53ed4389c18ffc5e00af1a037"
+        },
+        {
+          "path": "python/_socket.pyd",
+          "bytes": 86360,
+          "sha256": "127a39d2198f17dd9b573904fe7e4040c7c8718753e6c4edee2ff6c35f487fac"
+        },
+        {
+          "path": "python/_sqlite3.pyd",
+          "bytes": 129880,
+          "sha256": "1f79bc24e1736dcbe487e711ae04b19fbd19498818be46010d862912d83df1c2"
+        },
+        {
+          "path": "python/_ssl.pyd",
+          "bytes": 182104,
+          "sha256": "faf716d309349dbd54efd7fb402bd42ed21a537614ac0da89ed92ba307ecbf15"
+        },
+        {
+          "path": "python/_uuid.pyd",
+          "bytes": 27992,
+          "sha256": "6748c182df6181cff8691da72dbb81f4f7f446ac7482d5dfe671f2b5333aed5d"
+        },
+        {
+          "path": "python/_wmi.pyd",
+          "bytes": 39768,
+          "sha256": "3be5e14e9a9dc49f099209dee98b9cb5e31ade3b0deab52277026bb14df5bdb6"
+        },
+        {
+          "path": "python/_zoneinfo.pyd",
+          "bytes": 50512,
+          "sha256": "88f8ce841f21a2203fe7f66fdc95723321f21678916f8cd87f24be370d7e00b3"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/coloredlogs.exe",
+          "bytes": 108386,
+          "sha256": "89e87102a8630f1642528254b3aee43a6ab41d1e111fbc61fcc35b99bc0f006e"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/f2py.exe",
+          "bytes": 108388,
+          "sha256": "5df1e6ead2a8399f22217b41159f0d35cbff98993faf70a21bd68b9c44342ee1"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/fastapi.exe",
+          "bytes": 108382,
+          "sha256": "205b8efee236de952f3c9203922798e7abe74fd56e55e03720e123fbc0e388bb"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/hf.exe",
+          "bytes": 108393,
+          "sha256": "a68a321054b9158834e8df1cc4a3ae73b440ca077428f496f36a6db7d886fa62"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/huggingface-cli.exe",
+          "bytes": 108411,
+          "sha256": "f2759d180ce3f882adbf632187502048e26c691d9eeb93788fa74c7dccb2b782"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/humanfriendly.exe",
+          "bytes": 108388,
+          "sha256": "f20223f98e5144e2fb526cb5370d18694128239e3abe8f234f69ea2f2fcccb77"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/isympy.exe",
+          "bytes": 108377,
+          "sha256": "f0a1fc87d738ff43eee7d1398011769082d89b941921f809b95a084b9a04894d"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/normalizer.exe",
+          "bytes": 108405,
+          "sha256": "c5e93822cebd2604fb87bd38bd4072263db319bbb85d52073911993b317f9b1f"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/numpy-config.exe",
+          "bytes": 108388,
+          "sha256": "76c751ea99d9eb8340aab816236f16d69badee06a6ef653237b1085dd6071f95"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/onnxruntime_test.exe",
+          "bytes": 108405,
+          "sha256": "7257e2ae35169ac00e92368ed07c4293f1fa299b8f2288eba1a5d3272c7a950c"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/tiny-agents.exe",
+          "bytes": 108403,
+          "sha256": "ce21aa5aa5292dee8baa9047052bd09f0cc7bd12bef077924f0bb734d34f728e"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/tqdm.exe",
+          "bytes": 108379,
+          "sha256": "4d563d1bf8e922291b55fd79eb80fd19add8fbf5fd150dcce1305465e551abe4"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/uvicorn.exe",
+          "bytes": 108383,
+          "sha256": "4eb67e5205b9a411fa199c3238ce3728c54bb9b5fdaaf9195f2f447c7c0f59e6"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/youtube_transcript_api.exe",
+          "bytes": 108402,
+          "sha256": "18a025dac1d018e2fd21f80daf55209228ee3978e0064ac663796133b8be4238"
+        },
+        {
+          "path": "python/Lib/site-packages/charset_normalizer/md.cp313-win_amd64.pyd",
+          "bytes": 10752,
+          "sha256": "4e66da1baef3b663ab8f48feed4ed1d72e977b4209240595d2c440071bc632c8"
+        },
+        {
+          "path": "python/Lib/site-packages/charset_normalizer/md__mypyc.cp313-win_amd64.pyd",
+          "bytes": 128512,
+          "sha256": "a26b6459a25f1e9b600ac3df6b2c4f30d7f9d643292546b85ccb763d49fdea90"
+        },
+        {
+          "path": "python/Lib/site-packages/google/_upb/_message.pyd",
+          "bytes": 745134,
+          "sha256": "58a206771b73f129d45dd2cda625bd4f7d6347b5f2d6dd76b4dbf4d2c6e3ac59"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_multiarray_tests.cp313-win_amd64.pyd",
+          "bytes": 63488,
+          "sha256": "8c86129d57fb50204b20cca14c747f0b08432bec50202829d23bcd85563a4e77"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_multiarray_umath.cp313-win_amd64.pyd",
+          "bytes": 4529664,
+          "sha256": "3f8a35487c05180f4f6b6168165935c99fae6f14264a443fb665c5cb07fa2725"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_operand_flag_tests.cp313-win_amd64.pyd",
+          "bytes": 12288,
+          "sha256": "0ee705912923ca222a099e0a308d49c5175909e1b0ff59c7cd6657b6d53fc0f2"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_rational_tests.cp313-win_amd64.pyd",
+          "bytes": 39936,
+          "sha256": "e6943456c4eda626d0c3e6f76ef5a687e913eb1a447688d3584c1524ee376ba3"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_simd.cp313-win_amd64.pyd",
+          "bytes": 2410496,
+          "sha256": "9dcf9b5ce0e4e4e71a29bca87e86549f1681475bfd1a25ecf00070230fe9ed3e"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_struct_ufunc_tests.cp313-win_amd64.pyd",
+          "bytes": 14336,
+          "sha256": "133558d1b0a0411f65409c4748418f3d9fa2f07d61cd3a880548ec7400c56f10"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_umath_tests.cp313-win_amd64.pyd",
+          "bytes": 34304,
+          "sha256": "84c2fc7d86799eab8aef007725df36ccb3201e568ed268a4e75056c8298920e5"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/fft/_pocketfft_umath.cp313-win_amd64.pyd",
+          "bytes": 276480,
+          "sha256": "8ff8756dc8391bbc4d8aebcb71a8e622737cb1ff1a52085655022e90656c48c8"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/linalg/_umath_linalg.cp313-win_amd64.pyd",
+          "bytes": 111104,
+          "sha256": "5b7f5ecb0970ee956e36608d4f1ed405c0b688691e99c05f5f314c2f053dba10"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/linalg/lapack_lite.cp313-win_amd64.pyd",
+          "bytes": 18432,
+          "sha256": "52fd5d7fb455463349e3dcb99a723ae331256fcbe2197c8f0192090cbd576a2d"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_bounded_integers.cp313-win_amd64.pyd",
+          "bytes": 212480,
+          "sha256": "11c1ce782d627323187d9ce4dbbb62f3585b7849799a7bf4964e67c68292cede"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_common.cp313-win_amd64.pyd",
+          "bytes": 165888,
+          "sha256": "9d36e1570ae74ad6e7580a796a11c9c924ad2e2df8dd0bcc7d1ddf06cbb1cd4b"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_generator.cp313-win_amd64.pyd",
+          "bytes": 718848,
+          "sha256": "d8dfecb5235e41ff1a5eb9bb9299b47afe0e9e7192a7d1a042d9837143950193"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_mt19937.cp313-win_amd64.pyd",
+          "bytes": 84992,
+          "sha256": "ae4adf19aae01d2aae5502afe0062da588cfba7a4baa70adda69266753a1c85d"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_pcg64.cp313-win_amd64.pyd",
+          "bytes": 95232,
+          "sha256": "a3778388a053cb3934e1af40769ec0e572e4197c9753592839f8846b2ee26b6a"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_philox.cp313-win_amd64.pyd",
+          "bytes": 78848,
+          "sha256": "8434ea4302936ca7e77ca12b92d4a9251f9592d7cb32f8105651fce32a46bb40"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_sfc64.cp313-win_amd64.pyd",
+          "bytes": 59392,
+          "sha256": "2aa3dbe5ab7b7a1c7a91a2273320d0ca80ac9d080b2951412ba02f189cc70b44"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/bit_generator.cp313-win_amd64.pyd",
+          "bytes": 167424,
+          "sha256": "476e09c54c0d6dcfb83b08f33febf7ea0ecea87671338ef3c45a55df333af379"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/mtrand.cp313-win_amd64.pyd",
+          "bytes": 605696,
+          "sha256": "1d2f22c2ad6d2267d09f7cebf65147ad8ee45a2f1ea5f90a980336afb34d7a79"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy.libs/libscipy_openblas64_-860d95b1c38e637ce4509f5fa24fbf2a.dll",
+          "bytes": 20403712,
+          "sha256": "860d95b1c38e637ce4509f5fa24fbf2a98ba8696f9f3d28bf184bee74ad9a325"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+          "bytes": 575056,
+          "sha256": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde"
+        },
+        {
+          "path": "python/Lib/site-packages/onnxruntime/capi/onnxruntime.dll",
+          "bytes": 15709728,
+          "sha256": "c23ac24e40ef4f94201d2b9265482ec211a28dfbf2c480273de35db97a38adbb"
+        },
+        {
+          "path": "python/Lib/site-packages/onnxruntime/capi/onnxruntime_providers_shared.dll",
+          "bytes": 22048,
+          "sha256": "bc86bd4cb1bb500d0b081150aaba714d329378a4d02b0388bff112675dfb89bc"
+        },
+        {
+          "path": "python/Lib/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.pyd",
+          "bytes": 19322440,
+          "sha256": "cd8686b40292f95af9799fa6bd16ba3932fe7649ab3e6b8c16402e7790f8748d"
+        },
+        {
+          "path": "python/Lib/site-packages/pydantic_core/_pydantic_core.cp313-win_amd64.pyd",
+          "bytes": 5309440,
+          "sha256": "9d7e5073e51a4d88dbb8902b273b99edaf36a6dac2e32b53d93d30118df5a193"
+        },
+        {
+          "path": "python/Lib/site-packages/tokenizers/tokenizers.pyd",
+          "bytes": 7642112,
+          "sha256": "c177badc74d3dcbaf2d10f57b8f2f7e7e2ab8661bb1ea80666f170675664575c"
+        },
+        {
+          "path": "python/Lib/site-packages/yaml/_yaml.cp313-win_amd64.pyd",
+          "bytes": 263680,
+          "sha256": "fe21a55b82fb7b11d0c5f8c58bcb91675143d9cbcc2c6667501f7b6f7b0f9f68"
+        },
+        {
+          "path": "python/libcrypto-3.dll",
+          "bytes": 5231472,
+          "sha256": "ccfffddcd3defb8d899026298af9af43bc186130f8483d77e97c93233d5f27d7"
+        },
+        {
+          "path": "python/libffi-8.dll",
+          "bytes": 39696,
+          "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a"
+        },
+        {
+          "path": "python/libssl-3.dll",
+          "bytes": 794992,
+          "sha256": "007142039f04d04e0ed607bda53de095e5bc6a8a10d26ecedde94ea7d2d7eefe"
+        },
+        {
+          "path": "python/pyexpat.pyd",
+          "bytes": 206168,
+          "sha256": "719dc29fee125f0d5026319da9a3001c130c84419db7ef7c5473fb496d56cfc2"
+        },
+        {
+          "path": "python/python.exe",
+          "bytes": 105816,
+          "sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca"
+        },
+        {
+          "path": "python/python3.dll",
+          "bytes": 72536,
+          "sha256": "4ae581aa4e65fef9f92c84c428c990892da538b4d9289592df51fa31fd879770"
+        },
+        {
+          "path": "python/python313.dll",
+          "bytes": 6123864,
+          "sha256": "41ec4fc4e5bc8b207258590238f7f050b13fdfee84c4a7b1ecff6e945d031a10"
+        },
+        {
+          "path": "python/pythonw.exe",
+          "bytes": 104280,
+          "sha256": "49f305f2eebfb144f3a3d040f5e374ccb59c7f00c9ff8ffecfd41616e1e6bfa9"
+        },
+        {
+          "path": "python/select.pyd",
+          "bytes": 33112,
+          "sha256": "9cc1ef0264060099503592db57ee7d7c1f8d6bea689b2ed125919c7a30b7ab7f"
+        },
+        {
+          "path": "python/sqlite3.dll",
+          "bytes": 1584984,
+          "sha256": "6c47f687b210e26c4a743f8d36daf450175f31f96a17b20e31980b8602909728"
+        },
+        {
+          "path": "python/unicodedata.pyd",
+          "bytes": 712024,
+          "sha256": "1989628f16052f9123c5cf603e96490a75fde6228315457556f96a838bf9e904"
+        },
+        {
+          "path": "python/vcruntime140.dll",
+          "bytes": 120400,
+          "sha256": "052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4"
+        },
+        {
+          "path": "python/vcruntime140_1.dll",
+          "bytes": 49776,
+          "sha256": "6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8"
+        },
+        {
+          "path": "python/winsound.pyd",
+          "bytes": 32088,
+          "sha256": "399d8c1a6607a97394a2ed735dcf3b489cf81048e81afe29bce7e0f53fb252c2"
+        }
+      ]
+    },
+    {
+      "backend": "torch",
+      "packageManifestSha256": "81937eb92c5cb18275ebb225eb6b8042fe26862e3b4de2c543b28f8990d99959",
+      "files": [
+        {
+          "path": "python/_asyncio.pyd",
+          "bytes": 73048,
+          "sha256": "675587b1155c875ab27e24302d53f38e41febd3c080bc190c3e4ffbdb51fe76b"
+        },
+        {
+          "path": "python/_bz2.pyd",
+          "bytes": 86872,
+          "sha256": "b3dd7cea6d03342252834cebcc814af37d850b86d0627fa22b7f6990882f2f8b"
+        },
+        {
+          "path": "python/_ctypes.pyd",
+          "bytes": 133464,
+          "sha256": "dfa65498c77e71f038883337d2b5ffd92508489e79e6ee5e96ddec4ecf2a7fa1"
+        },
+        {
+          "path": "python/_decimal.pyd",
+          "bytes": 283480,
+          "sha256": "f55d81378a3261a7073fb71aee674152265b6f24ba6f375f9b939d5a117d8e6b"
+        },
+        {
+          "path": "python/_elementtree.pyd",
+          "bytes": 137048,
+          "sha256": "58339737dd818a6d0bac98403158677f2f7d54adc7c673b9a8a18c8b19ab11f6"
+        },
+        {
+          "path": "python/_hashlib.pyd",
+          "bytes": 69464,
+          "sha256": "1a3010b06c2fcd625dece3dd0883ca060e98b94adc062b06cb1a671cfc3b5caf"
+        },
+        {
+          "path": "python/_lzma.pyd",
+          "bytes": 159576,
+          "sha256": "f20be6a9fee8fb5d53170c4bc24a39b48d3c0ccbe8e2000e60ff7d65b77c6ea1"
+        },
+        {
+          "path": "python/_multiprocessing.pyd",
+          "bytes": 38232,
+          "sha256": "6c4ca996eafc99aeb246d25b5a9499d01488b643dcdabee6b48137f179b3deef"
+        },
+        {
+          "path": "python/_overlapped.pyd",
+          "bytes": 57688,
+          "sha256": "626675dc9fc5c74beb72cd278322a8313b68b22161e34473f8b951c238e72185"
+        },
+        {
+          "path": "python/_queue.pyd",
+          "bytes": 35160,
+          "sha256": "1e349a13913370369059a4ae5951157112b5eba53ed4389c18ffc5e00af1a037"
+        },
+        {
+          "path": "python/_socket.pyd",
+          "bytes": 86360,
+          "sha256": "127a39d2198f17dd9b573904fe7e4040c7c8718753e6c4edee2ff6c35f487fac"
+        },
+        {
+          "path": "python/_sqlite3.pyd",
+          "bytes": 129880,
+          "sha256": "1f79bc24e1736dcbe487e711ae04b19fbd19498818be46010d862912d83df1c2"
+        },
+        {
+          "path": "python/_ssl.pyd",
+          "bytes": 182104,
+          "sha256": "faf716d309349dbd54efd7fb402bd42ed21a537614ac0da89ed92ba307ecbf15"
+        },
+        {
+          "path": "python/_uuid.pyd",
+          "bytes": 27992,
+          "sha256": "6748c182df6181cff8691da72dbb81f4f7f446ac7482d5dfe671f2b5333aed5d"
+        },
+        {
+          "path": "python/_wmi.pyd",
+          "bytes": 39768,
+          "sha256": "3be5e14e9a9dc49f099209dee98b9cb5e31ade3b0deab52277026bb14df5bdb6"
+        },
+        {
+          "path": "python/_zoneinfo.pyd",
+          "bytes": 50512,
+          "sha256": "88f8ce841f21a2203fe7f66fdc95723321f21678916f8cd87f24be370d7e00b3"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/f2py.exe",
+          "bytes": 108388,
+          "sha256": "e9d4582e18c5f5146949064f4c38d580dc6a9909e1c6b21ca896681136ba9786"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/fastapi.exe",
+          "bytes": 108382,
+          "sha256": "96dae5c403f1ba9bac33b78b4bea33802c5eac05f8338a56160d738a2ee2a04b"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/hf.exe",
+          "bytes": 108393,
+          "sha256": "dc3f17dadd864dd7a4c658bf2757059ef94679ad0a882a25e648a3b80efc9f74"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/huggingface-cli.exe",
+          "bytes": 108411,
+          "sha256": "e62eab478e67297811741675f5cd820b0e8cdcc67e17861127ab01a3f6c4507c"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/isympy.exe",
+          "bytes": 108377,
+          "sha256": "f0a1fc87d738ff43eee7d1398011769082d89b941921f809b95a084b9a04894d"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/normalizer.exe",
+          "bytes": 108405,
+          "sha256": "62c97ded3fcebda41b7908e13b8ca80f52978614ee7a8196492d078d5d6d57cf"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/numpy-config.exe",
+          "bytes": 108388,
+          "sha256": "9195620c0df13302236a93b3cee529117140074f3a3843af64220eebeed5d470"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/tiny-agents.exe",
+          "bytes": 108403,
+          "sha256": "053011e3b56d3bafdb36a88bc98077abc32970d04e8a6dd0d1c88ea13a105682"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/torchfrtrace.exe",
+          "bytes": 108401,
+          "sha256": "5092b96abee2a15a1307475022865004186e0b939c1357d210195ab2f8ace0eb"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/torchrun.exe",
+          "bytes": 108392,
+          "sha256": "9ac4061cee65ec39ac4c37cf517c9f22f938cb09b607df0497960ee9be0c3bd5"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/tqdm.exe",
+          "bytes": 108379,
+          "sha256": "86531f2ea13d9a503bce6410b11c1cd03d76db1a25f9aa7cfa312a4870e70482"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/transformers-cli.exe",
+          "bytes": 108417,
+          "sha256": "cb8a4c7077f03597466e0c782a4fc3a8d5bf95c0365ced8314c30a7706a242aa"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/transformers.exe",
+          "bytes": 108409,
+          "sha256": "e1ff84dc172ab585cc55f8ed4fc4b689a1d563dd51f9c6bdf1d8542504fc22cd"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/uvicorn.exe",
+          "bytes": 108383,
+          "sha256": "1dbec73d9806e32360f23522535e41e62d0ba741dec71f2c0790fc791cdf676c"
+        },
+        {
+          "path": "python/Lib/site-packages/bin/youtube_transcript_api.exe",
+          "bytes": 108402,
+          "sha256": "33bee54c4c0f2861f2e5bfc3fb906e81a37b770dd71ee228797848651109a928"
+        },
+        {
+          "path": "python/Lib/site-packages/charset_normalizer/md.cp313-win_amd64.pyd",
+          "bytes": 10752,
+          "sha256": "4e66da1baef3b663ab8f48feed4ed1d72e977b4209240595d2c440071bc632c8"
+        },
+        {
+          "path": "python/Lib/site-packages/charset_normalizer/md__mypyc.cp313-win_amd64.pyd",
+          "bytes": 128512,
+          "sha256": "a26b6459a25f1e9b600ac3df6b2c4f30d7f9d643292546b85ccb763d49fdea90"
+        },
+        {
+          "path": "python/Lib/site-packages/functorch/_C.cp313-win_amd64.pyd",
+          "bytes": 216576,
+          "sha256": "da7bea2dce7181b7e92422c66b4f78b43b69333ee695da6ab9aa82252573ae30"
+        },
+        {
+          "path": "python/Lib/site-packages/markupsafe/_speedups.cp313-win_amd64.pyd",
+          "bytes": 13312,
+          "sha256": "ecc035da3d1a52249e369172fbdf21fe93d2aa00a92de45a720a7723e8f4d18a"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_multiarray_tests.cp313-win_amd64.pyd",
+          "bytes": 63488,
+          "sha256": "8c86129d57fb50204b20cca14c747f0b08432bec50202829d23bcd85563a4e77"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_multiarray_umath.cp313-win_amd64.pyd",
+          "bytes": 4529664,
+          "sha256": "3f8a35487c05180f4f6b6168165935c99fae6f14264a443fb665c5cb07fa2725"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_operand_flag_tests.cp313-win_amd64.pyd",
+          "bytes": 12288,
+          "sha256": "0ee705912923ca222a099e0a308d49c5175909e1b0ff59c7cd6657b6d53fc0f2"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_rational_tests.cp313-win_amd64.pyd",
+          "bytes": 39936,
+          "sha256": "e6943456c4eda626d0c3e6f76ef5a687e913eb1a447688d3584c1524ee376ba3"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_simd.cp313-win_amd64.pyd",
+          "bytes": 2410496,
+          "sha256": "9dcf9b5ce0e4e4e71a29bca87e86549f1681475bfd1a25ecf00070230fe9ed3e"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_struct_ufunc_tests.cp313-win_amd64.pyd",
+          "bytes": 14336,
+          "sha256": "133558d1b0a0411f65409c4748418f3d9fa2f07d61cd3a880548ec7400c56f10"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/_core/_umath_tests.cp313-win_amd64.pyd",
+          "bytes": 34304,
+          "sha256": "84c2fc7d86799eab8aef007725df36ccb3201e568ed268a4e75056c8298920e5"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/fft/_pocketfft_umath.cp313-win_amd64.pyd",
+          "bytes": 276480,
+          "sha256": "8ff8756dc8391bbc4d8aebcb71a8e622737cb1ff1a52085655022e90656c48c8"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/linalg/_umath_linalg.cp313-win_amd64.pyd",
+          "bytes": 111104,
+          "sha256": "5b7f5ecb0970ee956e36608d4f1ed405c0b688691e99c05f5f314c2f053dba10"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/linalg/lapack_lite.cp313-win_amd64.pyd",
+          "bytes": 18432,
+          "sha256": "52fd5d7fb455463349e3dcb99a723ae331256fcbe2197c8f0192090cbd576a2d"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_bounded_integers.cp313-win_amd64.pyd",
+          "bytes": 212480,
+          "sha256": "11c1ce782d627323187d9ce4dbbb62f3585b7849799a7bf4964e67c68292cede"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_common.cp313-win_amd64.pyd",
+          "bytes": 165888,
+          "sha256": "9d36e1570ae74ad6e7580a796a11c9c924ad2e2df8dd0bcc7d1ddf06cbb1cd4b"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_generator.cp313-win_amd64.pyd",
+          "bytes": 718848,
+          "sha256": "d8dfecb5235e41ff1a5eb9bb9299b47afe0e9e7192a7d1a042d9837143950193"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_mt19937.cp313-win_amd64.pyd",
+          "bytes": 84992,
+          "sha256": "ae4adf19aae01d2aae5502afe0062da588cfba7a4baa70adda69266753a1c85d"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_pcg64.cp313-win_amd64.pyd",
+          "bytes": 95232,
+          "sha256": "a3778388a053cb3934e1af40769ec0e572e4197c9753592839f8846b2ee26b6a"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_philox.cp313-win_amd64.pyd",
+          "bytes": 78848,
+          "sha256": "8434ea4302936ca7e77ca12b92d4a9251f9592d7cb32f8105651fce32a46bb40"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/_sfc64.cp313-win_amd64.pyd",
+          "bytes": 59392,
+          "sha256": "2aa3dbe5ab7b7a1c7a91a2273320d0ca80ac9d080b2951412ba02f189cc70b44"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/bit_generator.cp313-win_amd64.pyd",
+          "bytes": 167424,
+          "sha256": "476e09c54c0d6dcfb83b08f33febf7ea0ecea87671338ef3c45a55df333af379"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy/random/mtrand.cp313-win_amd64.pyd",
+          "bytes": 605696,
+          "sha256": "1d2f22c2ad6d2267d09f7cebf65147ad8ee45a2f1ea5f90a980336afb34d7a79"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy.libs/libscipy_openblas64_-860d95b1c38e637ce4509f5fa24fbf2a.dll",
+          "bytes": 20403712,
+          "sha256": "860d95b1c38e637ce4509f5fa24fbf2a98ba8696f9f3d28bf184bee74ad9a325"
+        },
+        {
+          "path": "python/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+          "bytes": 575056,
+          "sha256": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_avif.cp313-win_amd64.pyd",
+          "bytes": 7828480,
+          "sha256": "2c62dbbfce93329525050dc285ab364e41ae5ab326261157d412b59c3f219240"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_imaging.cp313-win_amd64.pyd",
+          "bytes": 2491392,
+          "sha256": "010808cd1eb564aeaee8ba65ab2e20ae07f9bd9cbab8dba1d88931bc6842de0f"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_imagingcms.cp313-win_amd64.pyd",
+          "bytes": 266240,
+          "sha256": "9d313ca0cb90ff5a05ce72703d890a8d705b41383ef1498d9237439799b96069"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_imagingft.cp313-win_amd64.pyd",
+          "bytes": 2011136,
+          "sha256": "c830239b96cc467ba4c8e3f398f96fa803c2566b7fa6c7155f19ff1c6fcd991d"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_imagingmath.cp313-win_amd64.pyd",
+          "bytes": 25088,
+          "sha256": "40316ab828ad316f653209d7ce3e0d97ebb036cbb39e57f613175be1e61dbd6b"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_imagingmorph.cp313-win_amd64.pyd",
+          "bytes": 13824,
+          "sha256": "a9a03f45fe820a7470a21fda14916662aa5afda852ba620fa40eebfac5b40f81"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_imagingtk.cp313-win_amd64.pyd",
+          "bytes": 14848,
+          "sha256": "9692ce9e060664728729c4932ea406701d8c736314a9f7c6a219bc77ba4db454"
+        },
+        {
+          "path": "python/Lib/site-packages/PIL/_webp.cp313-win_amd64.pyd",
+          "bytes": 409600,
+          "sha256": "dc5e8013d815c0a4346787cf40f5a7738231009bf80e86d955186caacf920bba"
+        },
+        {
+          "path": "python/Lib/site-packages/pydantic_core/_pydantic_core.cp313-win_amd64.pyd",
+          "bytes": 5309440,
+          "sha256": "9d7e5073e51a4d88dbb8902b273b99edaf36a6dac2e32b53d93d30118df5a193"
+        },
+        {
+          "path": "python/Lib/site-packages/regex/_regex.cp313-win_amd64.pyd",
+          "bytes": 722432,
+          "sha256": "a23ff90ffba54fb3d03977ccd33b6031aa21e4c7ac2c326845b9f159a6eca1e1"
+        },
+        {
+          "path": "python/Lib/site-packages/safetensors/_safetensors_rust.pyd",
+          "bytes": 704000,
+          "sha256": "d3996e3643927a18933515d7ae0e028c177ae3816f75eac6d17c3a4d924facc7"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_cyutility.cp313-win_amd64.pyd",
+          "bytes": 177152,
+          "sha256": "cba50cf5b710dd465afab29771668c054958a40faf6d08d2869c44daaa902d4f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_lib/_ccallback_c.cp313-win_amd64.pyd",
+          "bytes": 109056,
+          "sha256": "006d636b92d394a3bcce85df2408c08f5dd734db7ed242071ac8392d90df914d"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_lib/_fpumode.cp313-win_amd64.pyd",
+          "bytes": 15872,
+          "sha256": "b56703e3c2117b27f90b97a88d4f9daf6a8f57a23160ad73482572a3e6e9ecb7"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_lib/_test_ccallback.cp313-win_amd64.pyd",
+          "bytes": 52224,
+          "sha256": "e99afe9de1e0866b5c4b6ce1f4f3e79e6c05c85c2e27673d5e3eeecf4322f2f6"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_lib/_test_deprecation_call.cp313-win_amd64.pyd",
+          "bytes": 33792,
+          "sha256": "542e51ad3dc85c01f5fdf489ae8e4ce7a5ef3f7c3a130b9d44a49821ef45a8a7"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_lib/_test_deprecation_def.cp313-win_amd64.pyd",
+          "bytes": 24064,
+          "sha256": "471337f85ae8ec67f4b97eac6038d3372edb3cf0b649558289f3e9270004e58e"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_lib/_uarray/_uarray.cp313-win_amd64.pyd",
+          "bytes": 235008,
+          "sha256": "92c0ada687f0188d47765ace907ceb6171c91d1ab5cca3788481eb062d8bef3a"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/_lib/messagestream.cp313-win_amd64.pyd",
+          "bytes": 63488,
+          "sha256": "65aed75bb4e99feb931bffbac2fe68f5a34e7cfbd6342e0d6f08d13ad6ae53dd"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/cluster/_hierarchy.cp313-win_amd64.pyd",
+          "bytes": 274432,
+          "sha256": "1f92db25de9eaf6ec77043b223b01b5e40770d22278fff7efe1b0671d45f90ae"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/cluster/_optimal_leaf_ordering.cp313-win_amd64.pyd",
+          "bytes": 188928,
+          "sha256": "47fca7d703b9e6f843de6d76c3a591221c2f76f503b32a8febbb05714d855a77"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/cluster/_vq.cp313-win_amd64.pyd",
+          "bytes": 105472,
+          "sha256": "d9e557617c96a1d8efe3672a45da41162753ec66aa188e2ad68e7a26a34a2791"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/fft/_pocketfft/pypocketfft.cp313-win_amd64.pyd",
+          "bytes": 1104384,
+          "sha256": "1b1000facd5bde0f087372935ab3c2cf235f4e6fef07285cc15ecafd19677b5b"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/fftpack/convolve.cp313-win_amd64.pyd",
+          "bytes": 124416,
+          "sha256": "1c4c786f5e4244aa08c18bf7d93e1b01640dadfc7f41d66d93856dbeee0e8e14"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/integrate/_dop.cp313-win_amd64.pyd",
+          "bytes": 435200,
+          "sha256": "aca6b86fe17f2b7e73a4730d2d6ffebd2ebb0b288a5483444160a2ec00c94459"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/integrate/_lsoda.cp313-win_amd64.pyd",
+          "bytes": 556032,
+          "sha256": "ee0234af0e859edd1d357d0f3ad9ad64a6a0301681ab357bb81a286335dacd35"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/integrate/_odepack.cp313-win_amd64.pyd",
+          "bytes": 534528,
+          "sha256": "30e853d1aeda421f5c63a417511198dcf74f762d8f11b177d954eb8b791d160f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/integrate/_quadpack.cp313-win_amd64.pyd",
+          "bytes": 143360,
+          "sha256": "5d00c0ffb98b93d2f7f9ab743afa252addf59e0bdf991d66ef3d98c187453b33"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/integrate/_test_multivariate.cp313-win_amd64.pyd",
+          "bytes": 17920,
+          "sha256": "9180f1ac78ce73567466b397ebc83d64fe0f3b08726787a9f16bcb8b8d4a57ae"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/integrate/_test_odeint_banded.cp313-win_amd64.pyd",
+          "bytes": 557568,
+          "sha256": "9259e4e15cd5c542e59424cf01fa46655db395ce68c193eb1bf4e802c802873b"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/integrate/_vode.cp313-win_amd64.pyd",
+          "bytes": 617472,
+          "sha256": "6bd96ca2b0b41eb1d6f0e25a954f9f43b5bc31143e70f484f5f6d38d63ad9d9c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/interpolate/_dfitpack.cp313-win_amd64.pyd",
+          "bytes": 675328,
+          "sha256": "ab0bc8003216ccc09ece00c9ba6acfb4cb476e75e4f277795c831b70b09d50d7"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/interpolate/_dierckx.cp313-win_amd64.pyd",
+          "bytes": 985088,
+          "sha256": "e23df1d461d7345a834b105b9fbcd4732ebb21bbaab8a19e4c0663f426927d89"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/interpolate/_fitpack.cp313-win_amd64.pyd",
+          "bytes": 420864,
+          "sha256": "79939239bdd878a1df6a4b74382e2dcf4f3b132abcacde3f1f0e7e4a85ca05b4"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/interpolate/_interpnd.cp313-win_amd64.pyd",
+          "bytes": 277504,
+          "sha256": "4b36065c84ed3d3e99c26d9bb304ee5e461e9b236f8cad46ff0c192221325807"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/interpolate/_ppoly.cp313-win_amd64.pyd",
+          "bytes": 304640,
+          "sha256": "6fb4eb3095ce2f8eab62fa0d259779aab61870ce7be0779582e8c04763c7a2cb"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/interpolate/_rbfinterp_pythran.cp313-win_amd64.pyd",
+          "bytes": 1165312,
+          "sha256": "43b6cf7aa0231f355e5e1ea2cca063f9f542d0c89339ac4abd853b5ca466a9eb"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/interpolate/_rgi_cython.cp313-win_amd64.pyd",
+          "bytes": 150528,
+          "sha256": "eda7c567a3ffab1a3bb3cbdf264fbf25d90cbc5488c08fdbb6f145f24984f52a"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/io/_fast_matrix_market/_fmm_core.cp313-win_amd64.pyd",
+          "bytes": 2816512,
+          "sha256": "5dc4785f544a924ae29903abee4920b56ad0597ffba61c400d50dea7b061d4fb"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/io/_test_fortran.cp313-win_amd64.pyd",
+          "bytes": 382464,
+          "sha256": "dc04cef73b5d716ff1663655a76ac599c02b26ab3f0bb0ec35ef1e2e7c74ceab"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/io/matlab/_mio5_utils.cp313-win_amd64.pyd",
+          "bytes": 190464,
+          "sha256": "63d0378c7a47b3ee942a9e94a3d31b3faf10b18b4d2d604b2fc214ace23f17fe"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/io/matlab/_mio_utils.cp313-win_amd64.pyd",
+          "bytes": 53248,
+          "sha256": "ad5daf3cda6243da8c2492cebc78d76f7bfcaea1a7b8232c2bcbdf77bfd32a77"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/io/matlab/_streams.cp313-win_amd64.pyd",
+          "bytes": 111104,
+          "sha256": "9254d4191763fca5697adc67028a6544bf94b75c9b8e9574d256fdebf14af709"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_cythonized_array_utils.cp313-win_amd64.pyd",
+          "bytes": 419328,
+          "sha256": "11805cde5a6e1db066f5c50a2c34ee2f46ad769ede8629fa8442e879d1301c41"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_decomp_interpolative.cp313-win_amd64.pyd",
+          "bytes": 777216,
+          "sha256": "daa4b05b3310840e0476aa0f9786fb5703d44009dfe116390915293e7fcd919c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_decomp_lu_cython.cp313-win_amd64.pyd",
+          "bytes": 126976,
+          "sha256": "8311aa3ca1790bb21ec8654bfa01918947415af34c02d7ac3a7effac0ad2c27f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_decomp_update.cp313-win_amd64.pyd",
+          "bytes": 316928,
+          "sha256": "966dfbff054c52e9ac12aa4162d047a6cbb7a3502e84118dfd5f2d8d78bb1993"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_fblas.cp313-win_amd64.pyd",
+          "bytes": 737792,
+          "sha256": "0bb96de80e90c7ff48a70d2be6d93cafbd44da153d1ebcfde159e2424b5333f4"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_flapack.cp313-win_amd64.pyd",
+          "bytes": 2273280,
+          "sha256": "530da57575de06a859fcde3eb36ddd9324e77f03cb11872da2b25f04f1f5228e"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_linalg_pythran.cp313-win_amd64.pyd",
+          "bytes": 1061888,
+          "sha256": "2f1c3c56a071dbcac6cdc778591fac7213ae7f5028671be9300042e9b0ed8105"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_matfuncs_expm.cp313-win_amd64.pyd",
+          "bytes": 229376,
+          "sha256": "2d1cfa4cafd985a4bb31d3fec066676d3d85bae07037b0599360b9fb87c8c038"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_matfuncs_schur_sqrtm.cp313-win_amd64.pyd",
+          "bytes": 210944,
+          "sha256": "1f8a79107e7be6d1fa0bd7924883e9149e175c6f9158d60d2e84addc95d51844"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_matfuncs_sqrtm_triu.cp313-win_amd64.pyd",
+          "bytes": 133632,
+          "sha256": "81e9463fa105578698e6bff596c4badb6595ce8fefec9ae4cdbdff93bf5d3b8c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/_solve_toeplitz.cp313-win_amd64.pyd",
+          "bytes": 150016,
+          "sha256": "c5f8b83d6133689efdf4f3211e96ab2c6964c43666ee4e0435c75047bedbb0a1"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/cython_blas.cp313-win_amd64.pyd",
+          "bytes": 155136,
+          "sha256": "accde82e027a807a69ca1b26e789ba7b007bc625d8cc6119e5612dcc2a1aa525"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/linalg/cython_lapack.cp313-win_amd64.pyd",
+          "bytes": 522752,
+          "sha256": "2b9aa2c41df5d58eeafdfd7df74c7371c8ebb546d4f44c9cd4a81af172ed9be4"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/ndimage/_ctest.cp313-win_amd64.pyd",
+          "bytes": 16896,
+          "sha256": "ceec7e390b52146320ccb43f5d67babf537b33365bc7abb60740337664e5e206"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/ndimage/_cytest.cp313-win_amd64.pyd",
+          "bytes": 74240,
+          "sha256": "764ccb26a5f1c6cf115284a4d8861a6e5c55a6c1d9bc25e77a130ba74e2e595c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/ndimage/_nd_image.cp313-win_amd64.pyd",
+          "bytes": 177664,
+          "sha256": "9a864a9e628de066d2b2ab40cbaeec30a21ade625fbd1397d6fbbdfe57dc7d9d"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/ndimage/_ni_label.cp313-win_amd64.pyd",
+          "bytes": 275968,
+          "sha256": "e2ba7aba87ed60ede8a7a72d09dda64a1cd4faea8ae08587372714965faac99a"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/ndimage/_rank_filter_1d.cp313-win_amd64.pyd",
+          "bytes": 145408,
+          "sha256": "a4806393482d3c0be9461bd5a95950bbf3631c5b86b9f7c6d012ae6ea538c8f3"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/odr/__odrpack.cp313-win_amd64.pyd",
+          "bytes": 689152,
+          "sha256": "56fe2724d14d555d3dd6c4fc3ecbd0c65a47812ee2571590d48c48f04a679c86"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_bglu_dense.cp313-win_amd64.pyd",
+          "bytes": 197120,
+          "sha256": "cfb0ac7e90c5f1a3571045ee38b8ac5d79a1137ec09b0610f8d841bc44a477df"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_direct.cp313-win_amd64.pyd",
+          "bytes": 70144,
+          "sha256": "77d81952b19cb904b739702ce9b29172df623af617567240555e90d278f5fc49"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_group_columns.cp313-win_amd64.pyd",
+          "bytes": 1033216,
+          "sha256": "18defba9e2c952ac023f7ba40befee477afbc52eafd94c4d30ce6af5b28e55ed"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_highspy/_core.cp313-win_amd64.pyd",
+          "bytes": 5912576,
+          "sha256": "7f57becaee69db1b34ac312b675c46e66c9b1ad420e489caaf15402e560c47e2"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_highspy/_highs_options.cp313-win_amd64.pyd",
+          "bytes": 1241088,
+          "sha256": "e137814678f19db97295fee9ec1de4aa720224d413ac614725ca74fc51e43868"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_lbfgsb.cp313-win_amd64.pyd",
+          "bytes": 171520,
+          "sha256": "ad56c4f28700c5bc7ac6c4a7aa30c3717b3bd7b43bfb8386ec620f4419cbc425"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_lsap.cp313-win_amd64.pyd",
+          "bytes": 177664,
+          "sha256": "6d1c6516a8127c9f857858fd6145a86da6d20d8814792af5a67a0d4d59ca75cc"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_lsq/givens_elimination.cp313-win_amd64.pyd",
+          "bytes": 82944,
+          "sha256": "e484d801154ba3589b30e31a4c3854be19447507c2e3080e3173e29f8938fb68"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_minpack.cp313-win_amd64.pyd",
+          "bytes": 123904,
+          "sha256": "5badd42af58f7cba72a245b3bfe45d769ccf0c21ab522b1ff4420ba1f8289b51"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_moduleTNC.cp313-win_amd64.pyd",
+          "bytes": 145920,
+          "sha256": "45f86cfa148c6886de72a60a29a8aa6e1fe50478b244a4e63ad92505cec7079b"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_pava_pybind.cp313-win_amd64.pyd",
+          "bytes": 305152,
+          "sha256": "128c0264eff03489cfc67f22b7df4911558b28befa9dfbfd27a8e1c224501fa3"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_slsqplib.cp313-win_amd64.pyd",
+          "bytes": 172544,
+          "sha256": "890894f8b2925128da974be9818ca9707818dbe09c223f849eeefba2c76eca38"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_trlib/_trlib.cp313-win_amd64.pyd",
+          "bytes": 210432,
+          "sha256": "a5275823d0938df6b5f19f1e53d996948ab3ddaa15545cb02db30cdeee2bb258"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/_zeros.cp313-win_amd64.pyd",
+          "bytes": 23040,
+          "sha256": "2384042dff07e2166d0c34f4e284dae0c1fda78054d55b3d83d72af78dc63e5f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/optimize/cython_optimize/_zeros.cp313-win_amd64.pyd",
+          "bytes": 79360,
+          "sha256": "869d3a3b6f2bf43b352b3a3ecbb46319fbfb3e65eb99aaa1a27b1e549a4ac18f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/signal/_max_len_seq_inner.cp313-win_amd64.pyd",
+          "bytes": 1006592,
+          "sha256": "f9b2b0afb70fae1d5c9dd12b60a636c86f21b9e7c8af394c6fb0338cbca1b02c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/signal/_peak_finding_utils.cp313-win_amd64.pyd",
+          "bytes": 158208,
+          "sha256": "e2814ddb26c714630ab6d84ac3bb3bee8b934d41f46ce29e5930f1f3726f08c8"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/signal/_sigtools.cp313-win_amd64.pyd",
+          "bytes": 130560,
+          "sha256": "c479881bd1dfb56acee66f25c6132a3945c6b21b90aef6eded34aedd50bee766"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/signal/_sosfilt.cp313-win_amd64.pyd",
+          "bytes": 158720,
+          "sha256": "f433da7138d3ec3c1e69189a4fa0750f03d3c72105dbd5de741f9d609333820b"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/signal/_spline.cp313-win_amd64.pyd",
+          "bytes": 63488,
+          "sha256": "205a5e02552a3639398b4a883b8fc0517f5e94122e707744934a34550de6fea6"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/signal/_upfirdn_apply.cp313-win_amd64.pyd",
+          "bytes": 237056,
+          "sha256": "f2027ae88f1f8fecb654c9bd04bd49441c9e525fffb346fb79e17a89095bcd0f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/_csparsetools.cp313-win_amd64.pyd",
+          "bytes": 526848,
+          "sha256": "00a2a82c8faf8ff76a5ddb97bcc113f21e193b12a8c12012b39dfbee5ec36cce"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/_sparsetools.cp313-win_amd64.pyd",
+          "bytes": 4107776,
+          "sha256": "0f99ea63c54aca6599bb5f5b8bf3adf1be1dceae77ca45a90b6a214b309c1953"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/csgraph/_flow.cp313-win_amd64.pyd",
+          "bytes": 194048,
+          "sha256": "ca5578572f3e4744c8d7a69f0ee5495c81ed23bf64867612e7c502406f7ebaf7"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/csgraph/_matching.cp313-win_amd64.pyd",
+          "bytes": 201728,
+          "sha256": "5e308b29349d1722ac8bf3a868fa5405ae9dc15c32135b62009a9dde3d59e09c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cp313-win_amd64.pyd",
+          "bytes": 117760,
+          "sha256": "80ad4f457a99668e561a9f3970903ca0aef4743dff2071f03dd583d795ae5787"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/csgraph/_reordering.cp313-win_amd64.pyd",
+          "bytes": 176128,
+          "sha256": "63c6f82aa2dc51db57942ed746d6ffc5c9fee87ee0206c2a3959e06e778e459f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/csgraph/_shortest_path.cp313-win_amd64.pyd",
+          "bytes": 579072,
+          "sha256": "0b49c7edb06ea651e17e002ee9d9c6cc80c7470b7d7814391b38f1d170f8ee13"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/csgraph/_tools.cp313-win_amd64.pyd",
+          "bytes": 171008,
+          "sha256": "9c9fbcdd1c37b85e52d969ee9d19bd698af889ae36bdf675dcdc860392ef5789"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/csgraph/_traversal.cp313-win_amd64.pyd",
+          "bytes": 463360,
+          "sha256": "86635a8eb7813f6db72c63d8880f1aa04f219300509b1e444b99977e5eb66883"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/linalg/_dsolve/_superlu.cp313-win_amd64.pyd",
+          "bytes": 542208,
+          "sha256": "069f0868a5d3ceed9e48283d48503936b34000fe00c35e1d7fb6494c72a66b26"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/linalg/_eigen/arpack/_arpack.cp313-win_amd64.pyd",
+          "bytes": 926720,
+          "sha256": "f863c4cb48b7b0ba2a917d190b790c323b30d9452288956b3299a3ab68f735ea"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/linalg/_propack/_cpropack.cp313-win_amd64.pyd",
+          "bytes": 605184,
+          "sha256": "b574e64caa59ea8df40ccd24abad0e9c01dbcf8ea814a0c3d300d00cf6bf491b"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/linalg/_propack/_dpropack.cp313-win_amd64.pyd",
+          "bytes": 573952,
+          "sha256": "7bb45c931bd31773d8065022a64a033646f55e9c4cd1d6ee0a781b25ac48c45d"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/linalg/_propack/_spropack.cp313-win_amd64.pyd",
+          "bytes": 575488,
+          "sha256": "9a0e128640104e681ce992d7f2ffac5aaf313fa49ca9603e05a870ff5590d67e"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/sparse/linalg/_propack/_zpropack.cp313-win_amd64.pyd",
+          "bytes": 594944,
+          "sha256": "d369811458da7df45a7cc6a6d9bb74b8d82b87e7f243db6438e8698ca09ab607"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/_ckdtree.cp313-win_amd64.pyd",
+          "bytes": 1570816,
+          "sha256": "058ad3529bb81167deffe3723bc9cdba489a7c44fd9c2c68710bd3aa1001ccec"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/_distance_pybind.cp313-win_amd64.pyd",
+          "bytes": 1405952,
+          "sha256": "b2cc103cc6ca5ba1be40503534202a4937c9511949530f20035d8f45c8563126"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/_distance_wrap.cp313-win_amd64.pyd",
+          "bytes": 111104,
+          "sha256": "576de390986001c801af27794ddcfa03397d2692d6887ad94f31e25ddbe5ab7d"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/_hausdorff.cp313-win_amd64.pyd",
+          "bytes": 99840,
+          "sha256": "f05135fc0399923bc423824bee063e3365a745488b1f4af21fd099cf17077bf5"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/_qhull.cp313-win_amd64.pyd",
+          "bytes": 891392,
+          "sha256": "8f91486a9969bdb39736502c88b4388f6ef3ccfc0d1b0fcab4b67aa51f0ecdb5"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/_voronoi.cp313-win_amd64.pyd",
+          "bytes": 91136,
+          "sha256": "58129353a56fa39ee4ee99f9675c3a660898debc19b6d570a065a5ebc841208c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/transform/_rigid_transform.cp313-win_amd64.pyd",
+          "bytes": 364544,
+          "sha256": "178ed58644e4e0adac0498c82fa28151eec33d8952cb6fbf34b26243bea7f358"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/spatial/transform/_rotation.cp313-win_amd64.pyd",
+          "bytes": 771584,
+          "sha256": "20cb712cc0fd20f52fc723ee61ecbcb7b98108d60273bdf02a5b7575357b4d7c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_comb.cp313-win_amd64.pyd",
+          "bytes": 46080,
+          "sha256": "75021e8e6ce47e4885a32e6fbeda2520aa4e16c711710b291e05799bccbb7c3a"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_ellip_harm_2.cp313-win_amd64.pyd",
+          "bytes": 137728,
+          "sha256": "56e9c45f36f04ffe5d719b59aa343d026a5e755cb12a38f552f473a470cccc6f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_gufuncs.cp313-win_amd64.pyd",
+          "bytes": 1515520,
+          "sha256": "3f6bb0e5cfb595ab3f091eded73acb9bafac9c4460f8a5eab4a0236db2d3c8e5"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_specfun.cp313-win_amd64.pyd",
+          "bytes": 299520,
+          "sha256": "3813f9d67e0a51dba09d21fd557b514d8abfef59420002894ff99a2734d9205b"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_special_ufuncs.cp313-win_amd64.pyd",
+          "bytes": 2284032,
+          "sha256": "e299cb98a8040d5e8ad8d44aed183c5a6d3a4f9369ea2de15f1ef36d922c8f04"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_test_internal.cp313-win_amd64.pyd",
+          "bytes": 108032,
+          "sha256": "82c5fe499d5c71aa4137c4318e2021e7d9257a2b21097c11d5b96b9fd0ba6ce3"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_ufuncs.cp313-win_amd64.pyd",
+          "bytes": 1481216,
+          "sha256": "84c5b21688db3594765633b10a32dafafa852af04c7ef0f446f9768172580795"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/_ufuncs_cxx.cp313-win_amd64.pyd",
+          "bytes": 2330624,
+          "sha256": "e87f6517647926d9fb7ffb0305a50c11c6a4b0e24d47e8e687db7fbd755c6ded"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/special/cython_special.cp313-win_amd64.pyd",
+          "bytes": 2984448,
+          "sha256": "0dedea239c2f63f58cf08b6ccaf2bfbb20fde90965e125db8e0b4b82400ed29d"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_ansari_swilk_statistics.cp313-win_amd64.pyd",
+          "bytes": 123392,
+          "sha256": "3b36293660bd45f5f28205bd4b1dc4c1efbaa7ea59d6d30c29461c304976b5ec"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_biasedurn.cp313-win_amd64.pyd",
+          "bytes": 355840,
+          "sha256": "5e1d010fe9706d7ab369a990b5ddcf044654e3db86b7a28bc41a3eb7cbb60063"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_levy_stable/levyst.cp313-win_amd64.pyd",
+          "bytes": 53248,
+          "sha256": "2152ecfdc1dc0da53f6eac73b354bbb5ab4d9c9c9585f8eb0453941cb9672edc"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_qmc_cy.cp313-win_amd64.pyd",
+          "bytes": 295424,
+          "sha256": "efd9e6a0374b24d7c830fc86620cdc8ce68b22989d6d464befa013a6815a1063"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_qmvnt_cy.cp313-win_amd64.pyd",
+          "bytes": 137216,
+          "sha256": "e1fc1c8e525e9a74de8564852c2026107cf8f58a9dba5870d8b3395a5da90305"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_rcont/rcont.cp313-win_amd64.pyd",
+          "bytes": 114176,
+          "sha256": "e5ce7ffb489ac71646de035bf49509fa00c9a3ddea9e601eced225a029ba3c0a"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_sobol.cp313-win_amd64.pyd",
+          "bytes": 232960,
+          "sha256": "4a1614016a850158705feab028da51eb888e1f924bda360f43924144111f041f"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_stats.cp313-win_amd64.pyd",
+          "bytes": 541696,
+          "sha256": "96a1778ecb31183d06356d7c76a6e789840db1ddbfd1041014ebbc9fe467009b"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_stats_pythran.cp313-win_amd64.pyd",
+          "bytes": 1086464,
+          "sha256": "c651f1d7effcc6700440d8cdc173b117dde50d28d1022d11a64373bb6263e70c"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy/stats/_unuran/unuran_wrapper.cp313-win_amd64.pyd",
+          "bytes": 1291264,
+          "sha256": "677cfba38ccdf40f7644e0d60cbb2d7df456eb54272c556a840cb896e2de36d1"
+        },
+        {
+          "path": "python/Lib/site-packages/scipy.libs/libscipy_openblas-48c358d105077551cc9cc3ba79387ed5.dll",
+          "bytes": 20265472,
+          "sha256": "48c358d105077551cc9cc3ba79387ed54f5f57794d8382bffce42ff788135adc"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/cli-32.exe",
+          "bytes": 11776,
+          "sha256": "32acc1bc543116cbe2cff10cb867772df2f254ff2634c870aef0b46c4b696fdb"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/cli-64.exe",
+          "bytes": 14336,
+          "sha256": "bbb3de5707629e6a60a0c238cd477b28f07f0066982fda953fa6fcec39073a4a"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/cli-arm64.exe",
+          "bytes": 13824,
+          "sha256": "b9a7d08da880dfac8bcf548eba4b06fb59b6f09b17d33148a0f6618328926c61"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/cli.exe",
+          "bytes": 11776,
+          "sha256": "32acc1bc543116cbe2cff10cb867772df2f254ff2634c870aef0b46c4b696fdb"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/gui-32.exe",
+          "bytes": 11776,
+          "sha256": "85dae1e95d77845f2cb59bcac3d4afe74bbe4c91a9bcc5bf4a71cd43104dbe7c"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/gui-64.exe",
+          "bytes": 14336,
+          "sha256": "3471b6140eadc6412277dbbefe3fef8c345a0f1a59776086b80a3618c3a83e3b"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/gui-arm64.exe",
+          "bytes": 13824,
+          "sha256": "e694f4743405c8b5926ff457db6fe7f1a12dec7c16a9c3864784d3f4e07ae097"
+        },
+        {
+          "path": "python/Lib/site-packages/setuptools/gui.exe",
+          "bytes": 11776,
+          "sha256": "85dae1e95d77845f2cb59bcac3d4afe74bbe4c91a9bcc5bf4a71cd43104dbe7c"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/.libs/msvcp140.dll",
+          "bytes": 557728,
+          "sha256": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/.libs/vcomp140.dll",
+          "bytes": 193152,
+          "sha256": "55aba23cdcd6484fbb06f4155b8ca75adfce7a881f10afd0c49457165e677164"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/__check_build/_check_build.cp313-win_amd64.pyd",
+          "bytes": 28160,
+          "sha256": "1d99888b5cf48b31a9c0ee4021b0f113b0d992f0e23d117f6451c22388eb34e9"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/_cyutility.cp313-win_amd64.pyd",
+          "bytes": 120320,
+          "sha256": "bcde0b4fb61f8c44e829c6b2601a6040e0f42ece88ed92a10a1e7c9f4ba20e9d"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/_isotonic.cp313-win_amd64.pyd",
+          "bytes": 127488,
+          "sha256": "9f699dab332fd4865e8dddcf169127a2e5890e1f47e4cb83888b6e1652eb1195"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/_loss/_loss.cp313-win_amd64.pyd",
+          "bytes": 1881600,
+          "sha256": "13d68dd76cb174c6de245a66b56d8d5ab3c7d39781bc6e6ad403923f9ea12ea9"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_dbscan_inner.cp313-win_amd64.pyd",
+          "bytes": 62976,
+          "sha256": "ade3aa6428e29d59dd9a29d52ed2ada3acc3f807129c83c06b87c82e6120259d"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_hdbscan/_linkage.cp313-win_amd64.pyd",
+          "bytes": 102912,
+          "sha256": "413f3847abc170e2a8d224a1f9736343ae8bc21626e2c5c90dfa020cd4a1afe7"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_hdbscan/_reachability.cp313-win_amd64.pyd",
+          "bytes": 175616,
+          "sha256": "d7f74e7bf8b19f8e8a2bc0b3b9503233927567b502e07be8b6193ad62936ad76"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_hdbscan/_tree.cp313-win_amd64.pyd",
+          "bytes": 195072,
+          "sha256": "58e17352c2b5726132d30444942faaacec58ee88138bdf74d5fb15f834883e89"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_hierarchical_fast.cp313-win_amd64.pyd",
+          "bytes": 147968,
+          "sha256": "6bb6385a6b95ddcd1f945bdcd99b764e08ee618594c20a8e787241404eaa7641"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_k_means_common.cp313-win_amd64.pyd",
+          "bytes": 265216,
+          "sha256": "6111510e6e5583f1bb36faeadd99093b79cf5baea720182b0163bd81a13d72bc"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_k_means_elkan.cp313-win_amd64.pyd",
+          "bytes": 275456,
+          "sha256": "9bd50fae1e8384a8e5d2578869f4a8614670bae768e43a2decce581bc04d5aed"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_k_means_lloyd.cp313-win_amd64.pyd",
+          "bytes": 180224,
+          "sha256": "549048f7e32847ee05c9787689de974b420fe54d28d5e5fadefeb46f13b6ff22"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/cluster/_k_means_minibatch.cp313-win_amd64.pyd",
+          "bytes": 135168,
+          "sha256": "0b1162146ff1dc9028d9b0c94b3ecdc3432903a3a692e3d4e7a8dc57c6d67569"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/datasets/_svmlight_format_fast.cp313-win_amd64.pyd",
+          "bytes": 314880,
+          "sha256": "36c8890c1f7786b26d912769c90177390bda88f78b84596cc450b79cc41af1e9"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/decomposition/_cdnmf_fast.cp313-win_amd64.pyd",
+          "bytes": 93184,
+          "sha256": "acaf62214d865e9d5f8863650da492111525bde9acc71c13837cbce4672bef10"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/decomposition/_online_lda_fast.cp313-win_amd64.pyd",
+          "bytes": 124416,
+          "sha256": "96da81063797fa84715f9facd70079d2739248d9a1d7dbfc9062b51ce6f64669"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_gradient_boosting.cp313-win_amd64.pyd",
+          "bytes": 95744,
+          "sha256": "8c09306338764fcecfb2d918f9ddbb26028a02dd38606b57cc0825c0d8e3c872"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_binning.cp313-win_amd64.pyd",
+          "bytes": 62976,
+          "sha256": "1dc0b449747bd72e1877ed24225aa31c9b9089908217c2ff5dd4cd595ed54954"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_bitset.cp313-win_amd64.pyd",
+          "bytes": 64000,
+          "sha256": "25f06b8eebc89f31f4168b09abb9552895fcf577c618590ce13aa752e0c0c1b2"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_gradient_boosting.cp313-win_amd64.pyd",
+          "bytes": 67584,
+          "sha256": "6d0617cd277a80c7f0b6cc8b3c3c89f9ca7328ddb574a7c170902cea6a27b37b"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_predictor.cp313-win_amd64.pyd",
+          "bytes": 87040,
+          "sha256": "216dae57564fc570da8232c7e3f03b76f06d8e0fb5e9c92abc37112b000d1d17"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/common.cp313-win_amd64.pyd",
+          "bytes": 28672,
+          "sha256": "442711a827a97964ebea134ba6d723fd96c2fe44f9672928fff699849378150b"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/histogram.cp313-win_amd64.pyd",
+          "bytes": 156672,
+          "sha256": "f578dffb6fc7d141c9e7143f09dfa91703cf493e64e15e9e648a185ad17ec1a6"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/splitting.cp313-win_amd64.pyd",
+          "bytes": 165376,
+          "sha256": "01e4e745753fa373cd765f5e4a0f2fdfaa9f6c71af8b5a8b4c046ecff2ecd1a5"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/feature_extraction/_hashing_fast.cp313-win_amd64.pyd",
+          "bytes": 66048,
+          "sha256": "658d3a7f9e67cc07f4263bb92bf56a34137a1c362cc22e50973127b6eb18a792"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/linear_model/_cd_fast.cp313-win_amd64.pyd",
+          "bytes": 259072,
+          "sha256": "042b371618cfb888f01b15ba8e16f4c363bbfe8d9927f954bc42493652668a45"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/linear_model/_sag_fast.cp313-win_amd64.pyd",
+          "bytes": 122368,
+          "sha256": "672af6f0a3379c330971368f005625467c5a3d7da6f783393d886ee4e1ed5e62"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/linear_model/_sgd_fast.cp313-win_amd64.pyd",
+          "bytes": 164352,
+          "sha256": "ef8c907b218b1b13c4d8326a2b7583d67f41978eb41b1ef08bc7215f43916103"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/manifold/_barnes_hut_tsne.cp313-win_amd64.pyd",
+          "bytes": 88064,
+          "sha256": "ffc03c05c81bee18f8d09e78471270b3aed46cd64e9a8104e9288be6ae1b5da1"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/manifold/_utils.cp313-win_amd64.pyd",
+          "bytes": 68608,
+          "sha256": "78b853634d4f52d579972d6ba016e600d0f5623a45994ffe34614bc8dff19eea"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_dist_metrics.cp313-win_amd64.pyd",
+          "bytes": 434688,
+          "sha256": "c75b37e9d8530392de30211e12adfa5adc0c015d50fcba3969585c95c717ebec"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_distances_reduction/_argkmin.cp313-win_amd64.pyd",
+          "bytes": 155648,
+          "sha256": "b45ad74177d5217a97098eb87ee0ce3f41307905fd09544c4d7d4d5dedfe3e7c"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_distances_reduction/_argkmin_classmode.cp313-win_amd64.pyd",
+          "bytes": 109568,
+          "sha256": "f3e7461e6a9335af9abaac747cdf80ac100bb8089115428724861b393996d502"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_distances_reduction/_base.cp313-win_amd64.pyd",
+          "bytes": 135680,
+          "sha256": "7023b3bcf400c7a2740b4e5313c837c126db80cf850a04405e7acc3fa7bc9aa8"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_distances_reduction/_datasets_pair.cp313-win_amd64.pyd",
+          "bytes": 239616,
+          "sha256": "470c1a6fbba5a727b82d319235c7cd5d355ee43563c355c68c4cd91d2d5ffc1f"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_distances_reduction/_middle_term_computer.cp313-win_amd64.pyd",
+          "bytes": 245760,
+          "sha256": "a76096b67640bf2be5d5e84ff26b56ae0237922f1db2ac812ba7e09dd703caf0"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_distances_reduction/_radius_neighbors.cp313-win_amd64.pyd",
+          "bytes": 175616,
+          "sha256": "92d91b3c164bab4fbfdd0a4044f6b1adf28bc2b70d443d953a4f639f03fd13e8"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_distances_reduction/_radius_neighbors_classmode.cp313-win_amd64.pyd",
+          "bytes": 119296,
+          "sha256": "6dd0b2055abe8cead339c60f0f80a9261802e5d8ec3a1904e5e596ac61fd33d7"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/_pairwise_fast.cp313-win_amd64.pyd",
+          "bytes": 118784,
+          "sha256": "df1487008c016ede7601ad27f9eb49872890251259f8326b6594db181c9fecd5"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cp313-win_amd64.pyd",
+          "bytes": 77312,
+          "sha256": "deda64c6159a9ca1585222fef80c9a76ba2f7c72dea9a10345344d28ca86dc4b"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/neighbors/_ball_tree.cp313-win_amd64.pyd",
+          "bytes": 421376,
+          "sha256": "fe469e95048ed4b8842ef7bc22477e70c9d383c900f9d59ac9ee73e6b139e8fd"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/neighbors/_kd_tree.cp313-win_amd64.pyd",
+          "bytes": 420864,
+          "sha256": "5411a6a6821c4656a431f968ebb61ff03a2a04e548d0b8cdb8fbcda69fd816b3"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/neighbors/_partition_nodes.cp313-win_amd64.pyd",
+          "bytes": 24576,
+          "sha256": "104259f7130cbf2a988e0f9533bfa9f8b1985ea9c2cf99ee3390beb09d8e1b47"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/neighbors/_quad_tree.cp313-win_amd64.pyd",
+          "bytes": 139776,
+          "sha256": "8822403487444303268c979d11e234b83508c44e3af540758991f7b0cc040711"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cp313-win_amd64.pyd",
+          "bytes": 253440,
+          "sha256": "1817fb28643764e65f15cc809b6a88a27d8e1bfc28e810b82a0938fddfaa67c5"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/preprocessing/_target_encoder_fast.cp313-win_amd64.pyd",
+          "bytes": 299520,
+          "sha256": "0dec4136d99f4f09c0391f0f298432b0ae95895ece81b729f06502254006d8b4"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/svm/_liblinear.cp313-win_amd64.pyd",
+          "bytes": 136192,
+          "sha256": "c1edfe9d36b26ac9a4875b4fc89447bcb379e30d8e4118a9dd7fb2f8d8d8400f"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/svm/_libsvm.cp313-win_amd64.pyd",
+          "bytes": 272896,
+          "sha256": "878547aa793bf2ace7d4928e94c5868416a7b429369089ea7117df50b342c83d"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/svm/_libsvm_sparse.cp313-win_amd64.pyd",
+          "bytes": 224256,
+          "sha256": "b21faff09981d57541a4c14078e136b32aa98b093d0911d5240c299bdf64e696"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/svm/_newrand.cp313-win_amd64.pyd",
+          "bytes": 39424,
+          "sha256": "5c3da902bf2221e93cbae89087fd6b123e66a16ae449f0e80fd9f31c7ad86152"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/tree/_criterion.cp313-win_amd64.pyd",
+          "bytes": 159232,
+          "sha256": "83de37a2fdfbda03080c52137ebbb11f250992c45bcb4958ed63ad14a255abfd"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/tree/_partitioner.cp313-win_amd64.pyd",
+          "bytes": 135168,
+          "sha256": "6010ae2cddb1b4aa8973216300ab02cfef38152226790ad2a8d89f4f0f4cf309"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/tree/_splitter.cp313-win_amd64.pyd",
+          "bytes": 115712,
+          "sha256": "308bf9bdc046726086a68a1be0577b5ce53a7730c7aca4e702515e6ea812df28"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/tree/_tree.cp313-win_amd64.pyd",
+          "bytes": 330240,
+          "sha256": "74cb94cde562a9ec1f645725a9ebde36b1e0a51bf3c79f0b89c522cce11c8c64"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/tree/_utils.cp313-win_amd64.pyd",
+          "bytes": 101376,
+          "sha256": "9d9b53a93af15684d22fb6317bf0be02c30ea5f65419eb60135d724a81e6bb31"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_cython_blas.cp313-win_amd64.pyd",
+          "bytes": 243200,
+          "sha256": "27207f79c88393ed744fc0c79949940f298cbe4aeb0b01e70f261da6da10c518"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_fast_dict.cp313-win_amd64.pyd",
+          "bytes": 115712,
+          "sha256": "244841929068c04d0a3841ab7c7ae15678adafffb90f22c1cd36d365cf486696"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_heap.cp313-win_amd64.pyd",
+          "bytes": 16896,
+          "sha256": "d62b9df2fec846404b4b71b1acf33fc57cd031eddec4f91f2d8cabb872a6f33f"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_isfinite.cp313-win_amd64.pyd",
+          "bytes": 90624,
+          "sha256": "2c2c5876a703dee28c503624751dad68ff691b53a3020c9fc946ce573d83e7ee"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_openmp_helpers.cp313-win_amd64.pyd",
+          "bytes": 47104,
+          "sha256": "36b97f744cc4644985c26442c866f98a5fd5e2ac6d6d74019745b41b868d9f88"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_random.cp313-win_amd64.pyd",
+          "bytes": 162304,
+          "sha256": "35e6310cb388894abe7c3574b1699a7f2897ea7e83f17bca86450c838afb27c3"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_seq_dataset.cp313-win_amd64.pyd",
+          "bytes": 146944,
+          "sha256": "283c80d86ea0b8a5d64ba163376da9b134908b8225d9d3049bf7f206b7ae342e"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_sorting.cp313-win_amd64.pyd",
+          "bytes": 18944,
+          "sha256": "66c24b667849c5fe12d22576f7acf7d433bb04ba48bfefce38885242b1506476"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_typedefs.cp313-win_amd64.pyd",
+          "bytes": 107008,
+          "sha256": "f1afe19ae3506a4f40632ffb86f09a524a2cb82317304ea277df305436dc178e"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_vector_sentinel.cp313-win_amd64.pyd",
+          "bytes": 107008,
+          "sha256": "1be11bd524d0a4c39d8b90f59184c609838e63790736d610d17021e848515291"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/_weight_vector.cp313-win_amd64.pyd",
+          "bytes": 72192,
+          "sha256": "a4070f46a37d6669358c2500f2270b4fedeb47ae85f7d6467cd4b7ad14c4dbb5"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/arrayfuncs.cp313-win_amd64.pyd",
+          "bytes": 132608,
+          "sha256": "2e7f3ee663b4fd567effac505e956dc96c8b849fda6780d2806a0c0b1e33fda8"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/murmurhash.cp313-win_amd64.pyd",
+          "bytes": 85504,
+          "sha256": "597b29ed919cd7fe65f87665bf0cf4ead135530709669d9363b3ebaa1a7ee66a"
+        },
+        {
+          "path": "python/Lib/site-packages/sklearn/utils/sparsefuncs_fast.cp313-win_amd64.pyd",
+          "bytes": 516608,
+          "sha256": "b6eb412052f5fd6baa7f5dc5f135256c0de14779fc245e1a11ffa5a0ab2cb696"
+        },
+        {
+          "path": "python/Lib/site-packages/tokenizers/tokenizers.pyd",
+          "bytes": 7642112,
+          "sha256": "c177badc74d3dcbaf2d10f57b8f2f7e7e2ab8661bb1ea80666f170675664575c"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/_C.cp313-win_amd64.pyd",
+          "bytes": 10752,
+          "sha256": "eb7e64b86fe1662cb386e5b5cac4becb892543038ff45de5e2f8862065594ac5"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/bin/protoc.exe",
+          "bytes": 2800640,
+          "sha256": "fb188b0fb2955f072eee7c42ddcf8e10cf6f1868cff7dca18d7cc6c8fd6446a5"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/c10.dll",
+          "bytes": 1085952,
+          "sha256": "def94bbcfbd69b75063a124fb2ccacd7d9d16d2cd9dfe61194aae6585e00144c"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/libiomp5md.dll",
+          "bytes": 1614192,
+          "sha256": "d41a71c38f627a95748596820ab380135dcccc4ceecd6fe7d4e247d015bf55a4"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/libiompstubs5md.dll",
+          "bytes": 43888,
+          "sha256": "137dd44f652a926eb540861994c58ea24ebfbf6b45886ac964a68c5742549c47"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/shm.dll",
+          "bytes": 15360,
+          "sha256": "7f5cb86f7ff44e73cd41a59b42b5a5d1f93288a7c7a6e7500c25e7394c97e16b"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/torch.dll",
+          "bytes": 9728,
+          "sha256": "91deb637e139f8ee69887fdc40544c4c2295c48415a07e082d6ed60906c9bcd0"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/torch_cpu.dll",
+          "bytes": 262656512,
+          "sha256": "8b95ea5c16f259d8b1eb363ae352741ab6d082cb32301b4f95355821b5ef4973"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/torch_global_deps.dll",
+          "bytes": 9728,
+          "sha256": "7d4853b7c22fac89fb7c9212f2ccac6acfd66532e9d973aa806426209956810e"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/torch_python.dll",
+          "bytes": 18472960,
+          "sha256": "9b5d075bd0fe4ed02762e4731dba30d16b20fdaa8c37a59ed042e93f0b02502b"
+        },
+        {
+          "path": "python/Lib/site-packages/torch/lib/uv.dll",
+          "bytes": 195072,
+          "sha256": "fa569e682fc5fb7a8eb94c6829af9f30a569748dbbc6bce39735d48bc960bcf8"
+        },
+        {
+          "path": "python/Lib/site-packages/yaml/_yaml.cp313-win_amd64.pyd",
+          "bytes": 263680,
+          "sha256": "fe21a55b82fb7b11d0c5f8c58bcb91675143d9cbcc2c6667501f7b6f7b0f9f68"
+        },
+        {
+          "path": "python/libcrypto-3.dll",
+          "bytes": 5231472,
+          "sha256": "ccfffddcd3defb8d899026298af9af43bc186130f8483d77e97c93233d5f27d7"
+        },
+        {
+          "path": "python/libffi-8.dll",
+          "bytes": 39696,
+          "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a"
+        },
+        {
+          "path": "python/libssl-3.dll",
+          "bytes": 794992,
+          "sha256": "007142039f04d04e0ed607bda53de095e5bc6a8a10d26ecedde94ea7d2d7eefe"
+        },
+        {
+          "path": "python/pyexpat.pyd",
+          "bytes": 206168,
+          "sha256": "719dc29fee125f0d5026319da9a3001c130c84419db7ef7c5473fb496d56cfc2"
+        },
+        {
+          "path": "python/python.exe",
+          "bytes": 105816,
+          "sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca"
+        },
+        {
+          "path": "python/python3.dll",
+          "bytes": 72536,
+          "sha256": "4ae581aa4e65fef9f92c84c428c990892da538b4d9289592df51fa31fd879770"
+        },
+        {
+          "path": "python/python313.dll",
+          "bytes": 6123864,
+          "sha256": "41ec4fc4e5bc8b207258590238f7f050b13fdfee84c4a7b1ecff6e945d031a10"
+        },
+        {
+          "path": "python/pythonw.exe",
+          "bytes": 104280,
+          "sha256": "49f305f2eebfb144f3a3d040f5e374ccb59c7f00c9ff8ffecfd41616e1e6bfa9"
+        },
+        {
+          "path": "python/select.pyd",
+          "bytes": 33112,
+          "sha256": "9cc1ef0264060099503592db57ee7d7c1f8d6bea689b2ed125919c7a30b7ab7f"
+        },
+        {
+          "path": "python/sqlite3.dll",
+          "bytes": 1584984,
+          "sha256": "6c47f687b210e26c4a743f8d36daf450175f31f96a17b20e31980b8602909728"
+        },
+        {
+          "path": "python/unicodedata.pyd",
+          "bytes": 712024,
+          "sha256": "1989628f16052f9123c5cf603e96490a75fde6228315457556f96a838bf9e904"
+        },
+        {
+          "path": "python/vcruntime140.dll",
+          "bytes": 120400,
+          "sha256": "052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4"
+        },
+        {
+          "path": "python/vcruntime140_1.dll",
+          "bytes": 49776,
+          "sha256": "6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8"
+        },
+        {
+          "path": "python/winsound.pyd",
+          "bytes": 32088,
+          "sha256": "399d8c1a6607a97394a2ed735dcf3b489cf81048e81afe29bce7e0f53fb252c2"
+        }
+      ]
+    }
+  ]
+}

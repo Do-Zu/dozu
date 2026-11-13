@@ -1,7 +1,7 @@
 """Embedding endpoints."""
 
 import logging
-from typing import Dict
+from typing import Dict, List
 from fastapi import APIRouter, HTTPException, Depends
 
 from src.app.services.embedding.embedding_service import EmbeddingService
@@ -33,7 +33,7 @@ def embedding_single(
         raise HTTPException(status_code=400, detail=str(e))
 
 
-@router.post("/segments/embedding", response_model=Dict)
+@router.post("/segments/embedding", response_model=List[Dict])
 def embedding_segments(
     req: ListTextForEmbeddingRequest,
     embed_batch=Depends(get_embed_batch),

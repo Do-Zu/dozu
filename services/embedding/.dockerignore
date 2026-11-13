@@ -66,3 +66,7 @@ logs/
 Dockerfile
 .dockerignore
 docker-compose*.yml
+
+# Installed-resource verification metadata is required by the retained website image.
+!packaging/*.json
+!packaging/licenses/*.json

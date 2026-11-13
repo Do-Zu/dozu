@@ -1,8 +1,9 @@
-fastapi
-uvicorn
-sentence-transformers
-torch
-transformers
-youtube-transcript-api
-PyPDF2
-requests  
+# Baseline only. Complete Windows CPython 3.13 hash lock is in packaging/.
+fastapi==0.117.1
+uvicorn==0.37.0
+sentence-transformers==5.1.1
+torch==2.9.1
+transformers==4.57.1
+youtube-transcript-api==1.2.3
+PyPDF2==3.0.1
+requests==2.32.5

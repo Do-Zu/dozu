@@ -1,0 +1,427 @@
+{
+  "modelRevision": "86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+  "baseline": "torch-fp32",
+  "candidate": "upstream ONNX dynamic quint8 AVX2",
+  "fixture": "16 bilingual documents, 16 en/vi queries, 4 empty/Unicode/long inputs; hand-authored component smoke only",
+  "vectorCount": 36,
+  "dimension": 384,
+  "maximumAbsoluteDelta": 0.03104286454617977,
+  "meanVectorCosine": 0.9948606753525202,
+  "minimumVectorCosine": 0.9846488443652821,
+  "baselineTop1Relevant": 15,
+  "candidateTop1Relevant": 15,
+  "sameTop1Count": 16,
+  "queries": [
+    {
+      "query": "How do plants make food using sunlight?",
+      "expectedTopic": "plants",
+      "baselineTop3": [
+        1,
+        0,
+        7
+      ],
+      "candidateTop3": [
+        1,
+        0,
+        7
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Cây tạo ra thức ăn nhờ ánh sáng như thế nào?",
+      "expectedTopic": "plants",
+      "baselineTop3": [
+        1,
+        0,
+        7
+      ],
+      "candidateTop3": [
+        1,
+        0,
+        7
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "How can I keep my login secure?",
+      "expectedTopic": "password",
+      "baselineTop3": [
+        2,
+        3,
+        13
+      ],
+      "candidateTop3": [
+        2,
+        3,
+        13
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Làm thế nào để bảo vệ mật khẩu tài khoản?",
+      "expectedTopic": "password",
+      "baselineTop3": [
+        2,
+        3,
+        13
+      ],
+      "candidateTop3": [
+        2,
+        3,
+        13
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "How should I schedule flashcard reviews to remember longer?",
+      "expectedTopic": "study",
+      "baselineTop3": [
+        4,
+        5,
+        9
+      ],
+      "candidateTop3": [
+        4,
+        5,
+        9
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Ôn tập thẻ ghi nhớ như thế nào để nhớ lâu?",
+      "expectedTopic": "study",
+      "baselineTop3": [
+        5,
+        4,
+        3
+      ],
+      "candidateTop3": [
+        5,
+        4,
+        13
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 0.6666666666666666
+    },
+    {
+      "query": "Why does liquid water become vapor?",
+      "expectedTopic": "water",
+      "baselineTop3": [
+        6,
+        7,
+        1
+      ],
+      "candidateTop3": [
+        6,
+        7,
+        1
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Tại sao nước lỏng chuyển thành hơi nước?",
+      "expectedTopic": "water",
+      "baselineTop3": [
+        7,
+        6,
+        1
+      ],
+      "candidateTop3": [
+        7,
+        6,
+        1
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "How do I protect my database during an upgrade?",
+      "expectedTopic": "backup",
+      "baselineTop3": [
+        9,
+        8,
+        2
+      ],
+      "candidateTop3": [
+        9,
+        8,
+        2
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Cần làm gì để bảo vệ cơ sở dữ liệu khi nâng cấp?",
+      "expectedTopic": "backup",
+      "baselineTop3": [
+        9,
+        8,
+        13
+      ],
+      "candidateTop3": [
+        9,
+        8,
+        3
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 0.6666666666666666
+    },
+    {
+      "query": "Where do video references get their text and timing?",
+      "expectedTopic": "youtube",
+      "baselineTop3": [
+        10,
+        11,
+        4
+      ],
+      "candidateTop3": [
+        10,
+        11,
+        4
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Mốc thời gian trong phụ đề dùng để làm gì?",
+      "expectedTopic": "youtube",
+      "baselineTop3": [
+        5,
+        11,
+        4
+      ],
+      "candidateTop3": [
+        5,
+        4,
+        11
+      ],
+      "baselineTop1Relevant": false,
+      "candidateTop1Relevant": false,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Where are my local study notes stored?",
+      "expectedTopic": "privacy",
+      "baselineTop3": [
+        12,
+        13,
+        5
+      ],
+      "candidateTop3": [
+        12,
+        13,
+        9
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 0.6666666666666666
+    },
+    {
+      "query": "Ghi chú học tập được lưu trên máy tính của ai?",
+      "expectedTopic": "privacy",
+      "baselineTop3": [
+        13,
+        12,
+        5
+      ],
+      "candidateTop3": [
+        13,
+        12,
+        5
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "What is the relationship between force, mass and acceleration?",
+      "expectedTopic": "force",
+      "baselineTop3": [
+        14,
+        15,
+        7
+      ],
+      "candidateTop3": [
+        14,
+        15,
+        7
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    },
+    {
+      "query": "Lực liên quan thế nào đến khối lượng và gia tốc?",
+      "expectedTopic": "force",
+      "baselineTop3": [
+        15,
+        14,
+        7
+      ],
+      "candidateTop3": [
+        15,
+        14,
+        7
+      ],
+      "baselineTop1Relevant": true,
+      "candidateTop1Relevant": true,
+      "sameTop1": true,
+      "top3Overlap": 1.0
+    }
+  ],
+  "oppositeLanguageOnly": {
+    "baselineRelevant": 15,
+    "candidateRelevant": 15,
+    "queries": [
+      {
+        "queryIndex": 0,
+        "baselineTop1": 1,
+        "candidateTop1": 1,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 1,
+        "baselineTop1": 0,
+        "candidateTop1": 0,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 2,
+        "baselineTop1": 3,
+        "candidateTop1": 3,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 3,
+        "baselineTop1": 2,
+        "candidateTop1": 2,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 4,
+        "baselineTop1": 5,
+        "candidateTop1": 5,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 5,
+        "baselineTop1": 4,
+        "candidateTop1": 4,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 6,
+        "baselineTop1": 7,
+        "candidateTop1": 7,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 7,
+        "baselineTop1": 6,
+        "candidateTop1": 6,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 8,
+        "baselineTop1": 9,
+        "candidateTop1": 9,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 9,
+        "baselineTop1": 8,
+        "candidateTop1": 8,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 10,
+        "baselineTop1": 11,
+        "candidateTop1": 11,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 11,
+        "baselineTop1": 4,
+        "candidateTop1": 4,
+        "baselineRelevant": false,
+        "candidateRelevant": false
+      },
+      {
+        "queryIndex": 12,
+        "baselineTop1": 13,
+        "candidateTop1": 13,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 13,
+        "baselineTop1": 12,
+        "candidateTop1": 12,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 14,
+        "baselineTop1": 15,
+        "candidateTop1": 15,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      },
+      {
+        "queryIndex": 15,
+        "baselineTop1": 14,
+        "candidateTop1": 14,
+        "baselineRelevant": true,
+        "candidateRelevant": true
+      }
+    ]
+  },
+  "candidateSingleVersusMixedBatch": {
+    "maxAbsoluteDelta": 0.014837020542472601,
+    "cosine": 0.9964691942406054
+  },
+  "decision": "Evaluation only. No default model/backend change, no broad en/vi quality equivalence claim, no agreed budget relaxed. Requires representative user corpus/ranking/storage compatibility review under #8/#21/#29 before selection."
+}

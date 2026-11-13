@@ -30,7 +30,7 @@ class EmbeddingService:
     @staticmethod
     def embed_batch_texts(
         segments: List[Dict[str, Any]], embed_batch: Callable
-    ) -> Dict[str, Any]:
+    ) -> List[Dict[str, Any]]:
         """
         Embed a batch of text segments.
 
@@ -39,7 +39,7 @@ class EmbeddingService:
             embed_batch: Function to embed batch of texts
 
         Returns:
-            Dictionary with embeddings
+            List of original segments with embeddings
         """
         embeddings = embed_sentences(segments, embed_batch)
         return embeddings

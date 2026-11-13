@@ -1,0 +1,131 @@
+{
+  "modelId": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+  "license": "Apache-2.0",
+  "licenseEvidence": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/blob/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md",
+  "dimension": 384,
+  "maxSequenceLength": 128,
+  "normalized": true,
+  "verification": "SHA256 equals upstream LFS SHA256 or bytes equal upstream Git blob SHA1; regular copied files",
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 645,
+      "sha256": "6300193cb75e01cf80c96decef7187dfb33094d97cc1490b7ead6ff134476e4e",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config.json",
+      "upstreamGitBlob": "c06d5b49495f044e6380e68a60538be17a6bd5d1",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "config_sentence_transformers.json",
+      "bytes": 122,
+      "sha256": "b8c64b5cece00d8424b4896ea75b512b6008576088497609dfeb6bd63e6d36b8",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/config_sentence_transformers.json",
+      "upstreamGitBlob": "b974b349cb2d419ada11181750a733ff82f291ad",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 470641600,
+      "sha256": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/model.safetensors",
+      "upstreamGitBlob": "295bf8c5f879ae1c9b51986a824e4c0f70d9eb42",
+      "backends": [
+        "torch"
+      ]
+    },
+    {
+      "path": "modules.json",
+      "bytes": 229,
+      "sha256": "8f4b264b80206c830bebbdcae377e137925650a433b689343a63bdc9b3145460",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/modules.json",
+      "upstreamGitBlob": "f7640f94e81bb7f4f04daf1668850b38763a13d9",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "README.md",
+      "bytes": 3888,
+      "sha256": "1e98ea05b0de579fcaad3d625b62ea55647142ed674d5f5ebf1440e4bbbb6f23",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/README.md",
+      "upstreamGitBlob": "6bedb7f3622d56b7020f33ab93f6996d33242043",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "sentence_bert_config.json",
+      "bytes": 53,
+      "sha256": "70f4448f31320443fe3557cacea5abf2dcc4915dda8c80646bec9f3bb0aa5a1f",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/sentence_bert_config.json",
+      "upstreamGitBlob": "5fd10429389515d3e5cccdeda08cae5fea1ae82e",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "special_tokens_map.json",
+      "bytes": 239,
+      "sha256": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/special_tokens_map.json",
+      "upstreamGitBlob": "2ea7ad0e45a9d1d1591782ba7e29a703d0758831",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 9081518,
+      "sha256": "2c3387be76557bd40970cec13153b3bbf80407865484b209e655e5e4729076b8",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer.json",
+      "upstreamGitBlob": "c8feb62b21a4f391c3e71d1e37218c14f19e88d2",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 480,
+      "sha256": "cac868512d555e9ac37a33c28300d36931ae4b5ddff43f1ca9bdacfe6fcd9dc8",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/tokenizer_config.json",
+      "upstreamGitBlob": "0da3507018a1a1c625ff93179ff60bdb9202cc6c",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "1_Pooling/config.json",
+      "bytes": 190,
+      "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/1_Pooling/config.json",
+      "upstreamGitBlob": "d1514c3162bbe87b343f565fadc62e6c06f04f03",
+      "backends": [
+        "torch",
+        "onnx-int8"
+      ]
+    },
+    {
+      "path": "onnx/model_quint8_avx2.onnx",
+      "bytes": 118453870,
+      "sha256": "98a01d88b7de996cdea58c32ca71208c09968d143798814b2ea09d3439dc334f",
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/onnx/model_quint8_avx2.onnx",
+      "upstreamGitBlob": "a5751997e761075cd3445040d487f5ea2087f297",
+      "backends": [
+        "onnx-int8"
+      ]
+    }
+  ]
+}

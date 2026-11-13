@@ -1,0 +1,387 @@
+{
+  "backend": "onnx-int8",
+  "package": "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t",
+  "freshProfile": "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Ng\u01b0\u1eddi d\u00f9ng m\u1edbi 91668eba",
+  "installedBytes": 291441300,
+  "method": "Bundled Python -I -B, sanitized environment, no PATH Python/pip or developer packages; Python audit hook denies non-loopback connect/DNS/bind. Not an OS firewall or clean/minimum machine proof.",
+  "backendReadySeconds": 2.268,
+  "health": {
+    "status": "ok",
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d",
+    "device": "cpu",
+    "dimension": 384,
+    "normalized": true,
+    "backend": "onnx-int8"
+  },
+  "readyMemory": {
+    "workingSetBytes": 498085888,
+    "peakWorkingSetBytes": 582967296,
+    "privateBytes": 510529536,
+    "modules": [
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python.exe",
+      "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+      "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+      "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+      "C:\\WINDOWS\\System32\\ucrtbase.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\VCRUNTIME140.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python313.dll",
+      "C:\\WINDOWS\\System32\\WS2_32.dll",
+      "C:\\WINDOWS\\System32\\RPCRT4.dll",
+      "C:\\WINDOWS\\SYSTEM32\\VERSION.dll",
+      "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+      "C:\\WINDOWS\\System32\\msvcrt.dll",
+      "C:\\WINDOWS\\System32\\sechost.dll",
+      "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+      "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python3.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_socket.pyd",
+      "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\select.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_ssl.pyd",
+      "C:\\WINDOWS\\System32\\CRYPT32.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\libssl-3.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\libcrypto-3.dll",
+      "C:\\WINDOWS\\System32\\USER32.dll",
+      "C:\\WINDOWS\\System32\\win32u.dll",
+      "C:\\WINDOWS\\System32\\GDI32.dll",
+      "C:\\WINDOWS\\System32\\gdi32full.dll",
+      "C:\\WINDOWS\\System32\\msvcp_win.dll",
+      "C:\\WINDOWS\\System32\\IMM32.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_asyncio.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_overlapped.pyd",
+      "C:\\WINDOWS\\system32\\mswsock.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_bz2.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_lzma.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_queue.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_ctypes.pyd",
+      "C:\\WINDOWS\\System32\\ole32.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\libffi-8.dll",
+      "C:\\WINDOWS\\System32\\combase.dll",
+      "C:\\WINDOWS\\System32\\OLEAUT32.dll",
+      "C:\\WINDOWS\\System32\\shell32.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_wmi.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\VCRUNTIME140_1.dll",
+      "C:\\WINDOWS\\SYSTEM32\\PROPSYS.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_multiprocessing.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_hashlib.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp313-win_amd64.pyd",
+      "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_decimal.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_uuid.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_zoneinfo.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy\\_core\\_multiarray_umath.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy.libs\\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-860d95b1c38e637ce4509f5fa24fbf2a.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\charset_normalizer\\md.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\charset_normalizer\\md__mypyc.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\unicodedata.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\pyexpat.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_elementtree.pyd",
+      "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+      "C:\\WINDOWS\\system32\\uxtheme.dll",
+      "C:\\WINDOWS\\System32\\clbcatq.dll",
+      "C:\\WINDOWS\\SYSTEM32\\amsi.dll",
+      "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+      "C:\\WINDOWS\\SYSTEM32\\profapi.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_pybind11_state.pyd",
+      "C:\\WINDOWS\\System32\\SETUPAPI.dll",
+      "C:\\WINDOWS\\SYSTEM32\\MSVCP140.dll",
+      "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+      "C:\\WINDOWS\\SYSTEM32\\MSVCP140_1.dll",
+      "C:\\WINDOWS\\SYSTEM32\\dxgi.dll",
+      "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+      "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+      "C:\\WINDOWS\\SYSTEM32\\DEVOBJ.dll",
+      "C:\\WINDOWS\\SYSTEM32\\cfgmgr32.dll",
+      "C:\\WINDOWS\\System32\\WINTRUST.dll",
+      "C:\\WINDOWS\\SYSTEM32\\MSASN1.dll",
+      "C:\\WINDOWS\\SYSTEM32\\dxcore.dll",
+      "C:\\WINDOWS\\SYSTEM32\\directxdatabasehelper.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_providers_shared.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\tokenizers\\tokenizers.pyd"
+    ]
+  },
+  "singleVersusBatch": {
+    "maxAbsoluteDelta": 0.014837020542472601,
+    "cosine": 0.9964691942406054
+  },
+  "afterInferenceMemory": {
+    "workingSetBytes": 512356352,
+    "peakWorkingSetBytes": 582967296,
+    "privateBytes": 526163968,
+    "modules": [
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python.exe",
+      "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+      "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+      "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+      "C:\\WINDOWS\\System32\\ucrtbase.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\VCRUNTIME140.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python313.dll",
+      "C:\\WINDOWS\\System32\\WS2_32.dll",
+      "C:\\WINDOWS\\System32\\RPCRT4.dll",
+      "C:\\WINDOWS\\SYSTEM32\\VERSION.dll",
+      "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+      "C:\\WINDOWS\\System32\\msvcrt.dll",
+      "C:\\WINDOWS\\System32\\sechost.dll",
+      "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+      "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python3.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_socket.pyd",
+      "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\select.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_ssl.pyd",
+      "C:\\WINDOWS\\System32\\CRYPT32.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\libssl-3.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\libcrypto-3.dll",
+      "C:\\WINDOWS\\System32\\USER32.dll",
+      "C:\\WINDOWS\\System32\\win32u.dll",
+      "C:\\WINDOWS\\System32\\GDI32.dll",
+      "C:\\WINDOWS\\System32\\gdi32full.dll",
+      "C:\\WINDOWS\\System32\\msvcp_win.dll",
+      "C:\\WINDOWS\\System32\\IMM32.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_asyncio.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_overlapped.pyd",
+      "C:\\WINDOWS\\system32\\mswsock.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_bz2.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_lzma.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_queue.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_ctypes.pyd",
+      "C:\\WINDOWS\\System32\\ole32.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\libffi-8.dll",
+      "C:\\WINDOWS\\System32\\combase.dll",
+      "C:\\WINDOWS\\System32\\OLEAUT32.dll",
+      "C:\\WINDOWS\\System32\\shell32.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_wmi.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\VCRUNTIME140_1.dll",
+      "C:\\WINDOWS\\SYSTEM32\\PROPSYS.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_multiprocessing.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_hashlib.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp313-win_amd64.pyd",
+      "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_decimal.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_uuid.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_zoneinfo.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy\\_core\\_multiarray_umath.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy.libs\\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-860d95b1c38e637ce4509f5fa24fbf2a.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\charset_normalizer\\md.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\charset_normalizer\\md__mypyc.cp313-win_amd64.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\unicodedata.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\pyexpat.pyd",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\_elementtree.pyd",
+      "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+      "C:\\WINDOWS\\system32\\uxtheme.dll",
+      "C:\\WINDOWS\\System32\\clbcatq.dll",
+      "C:\\WINDOWS\\SYSTEM32\\amsi.dll",
+      "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+      "C:\\WINDOWS\\SYSTEM32\\profapi.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_pybind11_state.pyd",
+      "C:\\WINDOWS\\System32\\SETUPAPI.dll",
+      "C:\\WINDOWS\\SYSTEM32\\MSVCP140.dll",
+      "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+      "C:\\WINDOWS\\SYSTEM32\\MSVCP140_1.dll",
+      "C:\\WINDOWS\\SYSTEM32\\dxgi.dll",
+      "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+      "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+      "C:\\WINDOWS\\SYSTEM32\\DEVOBJ.dll",
+      "C:\\WINDOWS\\SYSTEM32\\cfgmgr32.dll",
+      "C:\\WINDOWS\\System32\\WINTRUST.dll",
+      "C:\\WINDOWS\\SYSTEM32\\MSASN1.dll",
+      "C:\\WINDOWS\\SYSTEM32\\dxcore.dll",
+      "C:\\WINDOWS\\SYSTEM32\\directxdatabasehelper.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\onnxruntime\\capi\\onnxruntime_providers_shared.dll",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages\\tokenizers\\tokenizers.pyd"
+    ]
+  },
+  "fileRequests": [
+    {
+      "path": "/text.pdf",
+      "authenticated": true
+    },
+    {
+      "path": "/redirect",
+      "authenticated": true
+    }
+  ],
+  "vectors": "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Ng\u01b0\u1eddi d\u00f9ng m\u1edbi 91668eba\\vectors.json",
+  "checks": [
+    {
+      "path": "/health",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/health",
+      "expected": 401,
+      "status": 401
+    },
+    {
+      "path": "/health",
+      "expected": 401,
+      "status": 401
+    },
+    {
+      "path": "/health",
+      "expected": 401,
+      "status": 401
+    },
+    {
+      "path": "/health",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/single/text/embedding",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/segments/embedding",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/segments/embedding",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/embedding/compare",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/single/text/embedding",
+      "expected": 422,
+      "status": 422
+    },
+    {
+      "path": "/segments/embedding",
+      "expected": 422,
+      "status": 422
+    },
+    {
+      "path": "/segments/embedding",
+      "expected": 422,
+      "status": 422
+    },
+    {
+      "path": "/segments/embedding",
+      "expected": 422,
+      "status": 422
+    },
+    {
+      "path": "/youtube/segments/embedding",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/youtube/segments/similarity",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/pdf/page/embedding",
+      "expected": 400,
+      "status": 400
+    },
+    {
+      "path": "/segments/embedding",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "/shutdown",
+      "expected": 401,
+      "status": 401
+    },
+    {
+      "path": "/shutdown",
+      "expected": 200,
+      "status": 200
+    }
+  ],
+  "gracefulExitCode": 0,
+  "runtime": {
+    "executable": "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python.exe",
+    "prefix": "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python",
+    "paths": [
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\python313.zip",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\python\\Lib\\site-packages",
+      "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Verified onnx-int8 ti\u1ebfng Vi\u1ec7t\\service"
+    ],
+    "isolated": 1
+  },
+  "offlineDeniedAttempts": 0,
+  "log": "D:\\product\\dozu\\planning\\embedding-runtime\\.runs\\Ng\u01b0\u1eddi d\u00f9ng m\u1edbi 91668eba\\service.log",
+  "negativeStartup": [
+    {
+      "case": "missing-token",
+      "exitCode": 1,
+      "networkAttempts": 0,
+      "expectedFailureObserved": true
+    },
+    {
+      "case": "missing-model",
+      "exitCode": 1,
+      "networkAttempts": 0,
+      "expectedFailureObserved": true
+    },
+    {
+      "case": "corrupt-model",
+      "exitCode": 1,
+      "networkAttempts": 0,
+      "expectedFailureObserved": true
+    }
+  ],
+  "pass": true
+}

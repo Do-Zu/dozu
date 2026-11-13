@@ -1,18 +1,21 @@
-"""
-Run script for the restructured application.
+"""Loopback launcher; supervisor supplies paths, port and per-launch token."""
+import os
 
-This script allows running the application from the root directory.
-"""
 
-import sys
-from pathlib import Path
+def main():
+    os.environ.setdefault("DOZU_EMBEDDING_PROFILE", "desktop")
+    from src.app.core.config import settings
+    settings.validate()
+    import uvicorn
+    from src.app.main import app
+    port = int(os.getenv("DOZU_EMBEDDING_PORT", "8686"))
+    server = uvicorn.Server(uvicorn.Config(app, host="127.0.0.1", port=port,
+        proxy_headers=False, access_log=False, timeout_graceful_shutdown=10))
+    app.state.shutdown_callback = lambda: setattr(server, "should_exit", True)
+    server.run()
+    if not server.started:
+        raise SystemExit(1)
 
-src_path = Path(__file__).parent / "src"
-sys.path.insert(0, str(src_path))
-
-from src.app.main import app
 
 if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    main()

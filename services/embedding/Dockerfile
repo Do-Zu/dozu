@@ -14,7 +14,7 @@ COPY requirements.txt .
 
 # Build wheels with pip cache
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip wheel --no-deps --wheel-dir=/wheels -r requirements.txt
+    pip wheel --wheel-dir=/wheels -r requirements.txt
 
 
 # -------------------
@@ -37,6 +37,7 @@ RUN pip install --no-cache-dir /wheels/* \
 # Copy application code
 COPY src/ ./src/
 COPY *.py ./
+COPY packaging/ ./packaging/
 
 
 RUN rm -rf /root/.cache/pip
@@ -46,8 +47,8 @@ RUN useradd -m -u 1000 appuser && \
 USER appuser
 
 
-ENV HF_HOME=/app/.cache/huggingface
-ENV TRANSFORMERS_CACHE=/app/.cache/huggingface
+ENV DOZU_EMBEDDING_PROFILE=website
+ENV DOZU_EMBEDDING_MODEL_PATH=/opt/dozu-model
 
 EXPOSE 8686
 

@@ -1,0 +1,21 @@
+{
+  "pythonSignature": {
+    "Status": 0,
+    "Signer": "CN=Python Software Foundation, O=Python Software Foundation, L=Beaverton, S=Oregon, C=US"
+  },
+  "cpu": {
+    "Name": "13th Gen Intel(R) Core(TM) i5-13400F",
+    "NumberOfCores": 10,
+    "NumberOfLogicalProcessors": 16
+  },
+  "os": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26300",
+    "OSArchitecture": "64-bit"
+  },
+  "memory": {
+    "TotalPhysicalMemory": 34137870336
+  },
+  "cache": "Fresh process user caches; OS file cache not evicted",
+  "scope": "Windows developer host only; no minimum-machine/clean-machine/macOS/Linux support claim"
+}

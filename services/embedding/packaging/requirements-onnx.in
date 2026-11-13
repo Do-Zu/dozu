@@ -1,0 +1,10 @@
+# Explicit evaluation candidate, not the selected production backend.
+fastapi==0.117.1
+uvicorn==0.37.0
+numpy==2.3.3
+onnxruntime==1.23.2
+tokenizers==0.22.1
+huggingface-hub==0.35.1
+youtube-transcript-api==1.2.3
+PyPDF2==3.0.1
+requests==2.32.5

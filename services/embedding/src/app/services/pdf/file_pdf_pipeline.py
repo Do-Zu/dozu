@@ -13,6 +13,8 @@ from typing import List, Dict, Any, Callable
 import io
 import requests
 from PyPDF2 import PdfReader
+from src.app.core.config import settings
+from src.app.core.local_files import read_pdf
 
 logging.basicConfig(level=logging.INFO)
 
@@ -101,6 +103,8 @@ class HTTPFileFetcher(IFileFetcher):
 
     def fetch(self, url: str) -> bytes:
         """Fetch file content from HTTP/HTTPS URL."""
+        if settings.PROFILE == "desktop":
+            return read_pdf(url, self.timeout)
         try:
             logging.info(f"Fetching PDF from URL: {url}")
             response = requests.get(url, timeout=self.timeout)

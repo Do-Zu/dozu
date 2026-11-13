@@ -1,8 +1,9 @@
 """Schemas for YouTube transcript processing endpoints."""
 
 from typing import List, Optional, Dict, Any
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 from .common_schema import ProxyConfig
+from .embedding_schema import validate_segments
 
 
 class YouTubePipelineRequest(BaseModel):
@@ -23,6 +24,7 @@ class YouTubeSegmentSentenceCalSimilarityRequest(BaseModel):
     """Request schema for YouTube segment sentence similarity calculation."""
 
     segments: List[Dict[str, Any]]
+    _validate_segments = field_validator("segments")(validate_segments)
     languages: Optional[List[str]] = None
     refine: bool = False
     max_gap: float = 1.5

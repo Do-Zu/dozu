@@ -1,246 +1,68 @@
-# Dozu Embedding Service
+# Dozu text-embedding service
 
-A high-performance FastAPI service for generating sentence embeddings using Sentence-Transformers. Provides text embedding, YouTube transcript processing, PDF document embedding, and semantic similarity search.
+FastAPI service for retained text/PDF/YouTube transcript reference workflows. Speech-to-text is excluded. The default remains the exact multilingual MiniLM baseline on CPU; the smaller ONNX backend is an explicit evaluation candidate, not a selected production replacement.
 
-## Features
+## Installed model contract
 
-- **Text Embedding**: Single text or batch embedding generation
-- **YouTube Transcript Processing**: Automatic transcript fetching, sentence segmentation, and embedding
-- **PDF Processing**: Extract and embed text from PDF documents by page
-- **Semantic Search**: Cosine similarity search across embedded content
-- **Multi-device Support**: Automatic detection of CUDA, Apple MPS, or CPU
-- **Docker Ready**: Optimized Docker image (~2-3GB) with security best practices
+- Model: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` at `86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d`.
+- 384 finite, unit-normalized floats; original 128-token truncation and mean pooling. No alternate model, GPU requirement, token, Hub fallback or startup download.
+- `packaging/model-manifest.json` pins every model/tokenizer/config/card file by SHA256. Startup checks the selected backend's resources before loading and performs real inference before readiness.
+- `requirements.txt` pins baseline direct dependencies. Complete **Windows x64 CPython 3.13 candidate** wheel/hash locks and native/license inventories are under `packaging/`. They are not Linux/macOS locks or a security-approved production version selection.
 
-## Quick Start
+## Build-host acquisition and offline assembly
 
-### Using Docker (Recommended)
+From the repository root, using a Windows x64 CPython 3.13 build interpreter with pip:
 
-```bash
-# Pull and run the latest image
-docker pull dozuu/dozu-embedding-service:latest
-
-docker run --name dozu-embedding-service \
-  -p 8686:8686 \
-  -e MODEL_NAME=paraphrase-multilingual-MiniLM-L12-v2 \
-  -e DEVICE=auto \
-  -d dozuu/dozu-embedding-service:latest
+```powershell
+python planning/embedding-runtime/acquire.py --model-source <existing-pinned-snapshot-directory>
+python planning/embedding-runtime/acquire_licenses.py
+python -m pip download --only-binary=:all: --require-hashes --dest planning/embedding-runtime/.downloads/wheels-torch -r services/embedding/packaging/requirements-torch-windows-x64.lock
+python -m pip download --only-binary=:all: --require-hashes --dest planning/embedding-runtime/.downloads/wheels-onnx-pinned -r services/embedding/packaging/requirements-onnx-windows-x64.lock
+python services/embedding/packaging/assemble_windows.py --backend torch --inputs planning/embedding-runtime/.downloads --destination <fresh-component-directory>
 ```
 
-Check health:
+`acquire.py` copies cached baseline resources as regular files, verifies them against the pinned upstream Git/LFS objects, and obtains the official Python embeddable ZIP. Downloads run only on the controlled build host. Review generated provenance changes. Assembly verifies inputs and installs the hash-locked dependency closure offline into the embedded interpreter's isolated search path. It includes license texts/notices. End users do not run pip or install Python. `--backend onnx-int8` explicitly assembles the experimental upstream quantized representation and its separate closure.
 
-```bash
-curl http://localhost:8686/health
-```
+**Native closure remains incomplete:** observed Microsoft C++ runtime DLLs load from this developer host. #38/#23 must pin/provision those redistributable prerequisites, review security/attribution and prove clean target machines. See [evidence and remaining gates](../../planning/embedding-runtime/README.md). These component directories are not self-contained release installers.
 
-### Build from Source
+## Managed desktop process
 
-```bash
-# Build the image
-docker build -t dozu-embedding-service .
+Run `<component>/python/python.exe -I -B <component>/service/run.py` from any working directory. The supervisor supplies:
 
-# Run the container
-docker run --rm -p 8686:8686 \
-  -e MODEL_NAME=paraphrase-multilingual-MiniLM-L12-v2 \
-  -e DEVICE=auto \
-  dozu-embedding-service
-```
+| Variable | Meaning |
+| --- | --- |
+| `DOZU_EMBEDDING_TOKEN` | Fresh per-launch bearer secret, at least 32 characters; never persist in release resources or log it |
+| `DOZU_EMBEDDING_PORT` | Discovered loopback port; default 8686 |
+| `DOZU_EMBEDDING_MODEL_PATH` | Absolute installed model directory; default is the component's `service/resources/model` |
+| `DOZU_EMBEDDING_BACKEND` | `torch` default; `onnx-int8` evaluation only |
+| `DOZU_EMBEDDING_THREADS` | 1–8; default 2; inference serialized in batches of at most 16 |
+| `DOZU_EMBEDDING_FILE_ROOT` | Explicit authorized absolute local PDF root; final ownership/path integration waits for #34/#18 |
+| `DOZU_EMBEDDING_FILE_ORIGIN` | Optional exact numeric HTTP loopback origin with port for a local authenticated file server |
+| `DOZU_EMBEDDING_FILE_TOKEN` | Separate file-server bearer secret of at least 32 characters; redirects and external origins rejected |
 
-### Local Development
+The launcher defaults to the `desktop` profile, binds only `127.0.0.1`, and disables proxy-header trust. All desktop endpoints require `Authorization: Bearer <per-launch-token>` from loopback, reject browser Origin headers, and validate Host. `/health` succeeds only after checksum verification and CPU inference. Authenticated `POST /shutdown` drains through Uvicorn and unloads the model; startup failure exits nonzero.
 
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+`fileUrl` accepts an absolute PDF path within the canonical configured root or a URL on the exact authenticated loopback origin. Relative/UNC paths, root escapes, redirects and external URLs are rejected in desktop mode. PDF input is capped at 32 MiB. This is a component boundary: user/account ownership, caller token forwarding, durable local file storage, path-race/permission guarantees and read-only installation acceptance remain with #18/#28/#34.
 
-# Install dependencies
-pip install -r requirements.txt
+## Retained website deployment
 
-# (Optional) Install spaCy model for sentence refinement
-python -m spacy download en_core_web_sm
+`DOZU_EMBEDDING_PROFILE=website` keeps the existing server-to-server website endpoint topology and signed remote PDF URLs. Deploy behind the existing website access controls. Supply the same verified local model directory; model startup never downloads in either profile. For developer execution, install the appropriate dependencies, then run `uvicorn src.app.main:app --host 127.0.0.1 --port 8686` from this directory with the website profile and model path configured. The legacy Docker recipe is website-only and unvalidated on Linux; mount verified model resources at `/opt/dozu-model` and set `DOZU_EMBEDDING_MODEL_PATH=/opt/dozu-model`. Native Linux dependency/image pinning remains pending, not covered by the Windows hash lock.
 
-# Run the service
-uvicorn app:app --host 0.0.0.0 --port 8686 --reload
-```
+## HTTP contracts
 
-## Configuration
+| Endpoint | Input / result |
+| --- | --- |
+| `GET /health` | Model ID/revision, CPU/backend, dimension and readiness |
+| `POST /single/text/embedding` | `{query: string}` → `{embedding: number[384]}` |
+| `POST /segments/embedding` | `{segments: [{text, ...metadata}]}` → list of original segments plus embeddings; fixes the previous response-model 500 |
+| `POST /embedding/compare` | `{query, pattern}` → similarity plus both vectors |
+| `POST /pdf/page/embedding` | `{fileUrl}` → `{pageCount, embeddings: [{pageNumber, charCount, embedding}]}` |
+| `POST /youtube/segments/embedding` | Supplied genuine transcript text/timestamps → `{count, embeddings}` |
+| `POST /youtube/segments/similarity` | Supplied transcript text and query → ranked time references |
+| `POST /youtube/segments` | Existing genuine provider transcript retrieval; requires internet, no speech recognition or synthetic transcript |
 
-### Environment Variables
+Text fields are bounded to 20,000 characters; supplied segment batches to 512. Empty text and empty batches retain valid behavior. Optional spaCy refinement is not included in either candidate closure; existing behavior without its optional model remains unchanged. No automatic spaCy download is performed.
 
-| Variable                | Default                                 | Description                                              |
-| ----------------------- | --------------------------------------- | -------------------------------------------------------- |
-| `MODEL_NAME`            | `paraphrase-multilingual-MiniLM-L12-v2` | SentenceTransformer model name                           |
-| `HUGGINGFACE_HUB_TOKEN` | -                                       | HuggingFace API token (required for gated models)        |
-| `DEVICE`                | `auto`                                  | Device selection: `auto`, `cpu`, `cuda`, `cuda:0`, `mps` |
-| `HF_HOME`               | `/app/.cache/huggingface`               | HuggingFace cache directory                              |
+## Verification
 
-### Recommended Models
-
-- `paraphrase-multilingual-MiniLM-L12-v2` - Multilingual, balanced performance (default)
-- `sentence-transformers/all-MiniLM-L6-v2` - Fast, English-only
-- `sentence-transformers/all-mpnet-base-v2` - High quality, English-only
-
-## API Endpoints
-
-### Health Check
-
-```bash
-GET /health
-```
-
-Returns service status, loaded model, and device information.
-
-### Single Text Embedding
-
-```bash
-POST /single/text/embedding
-Content-Type: application/json
-
-{
-  "query": "Your text here"
-}
-```
-
-### Batch Text Embedding
-
-```bash
-POST /segments/embedding
-Content-Type: application/json
-
-{
-  "segments": [
-    {"text": "First sentence"},
-    {"text": "Second sentence"}
-  ]
-}
-```
-
-### YouTube Transcript Processing
-
-```bash
-POST /youtube/segments
-Content-Type: application/json
-
-{
-  "video_id": "dQw4w9WgXcQ",
-  "languages": ["en"],
-  "refine": false,
-  "max_gap": 1.5,
-  "min_length": 5,
-  "query": "search query"
-}
-```
-
-### YouTube Segment Similarity
-
-```bash
-POST /youtube/segments/similarity
-Content-Type: application/json
-
-{
-  "segments": [...],
-  "query": "search query",
-  "top_k": 5
-}
-```
-
-### PDF Page Embedding
-
-```bash
-POST /pdf/page/embedding
-Content-Type: application/json
-
-{
-  "fileUrl": "https://example.com/document.pdf"
-}
-```
-
-## Architecture
-
-```
-dozu-embedding-service/
-├── app.py                    # FastAPI application and endpoints
-├── youtube_pipeline.py       # YouTube transcript processing pipeline
-├── file_pdf_pipeline.py      # PDF processing pipeline
-├── requirements.txt          # Python dependencies
-├── Dockerfile               # Optimized Docker build
-└── .dockerignore            # Docker build exclusions
-```
-
-### Key Components
-
-- **app.py**: Main FastAPI application with endpoint definitions and model management
-- **youtube_pipeline.py**: Transcript fetching, sentence segmentation, embedding, and search
-- **file_pdf_pipeline.py**: PDF text extraction and page-by-page embedding
-
-## Development
-
-### Running Tests
-
-```bash
-# Run specific test files (excluded from Docker build)
-python test_youtube_pipeline.py
-```
-
-### Generating Sample Data
-
-```bash
-python generate_sample_test.py
-```
-
-## Docker Optimization
-
-The Docker image is optimized for size and security:
-
-- **Multi-stage build**: Separates build dependencies from runtime
-- **Minimal base**: Uses `python:3.13-slim`
-- **Non-root user**: Runs as `appuser` (UID 1000)
-- **Cache optimization**: Proper `.dockerignore` prevents large files from being copied
-- **Layer caching**: Efficient layer ordering for faster rebuilds
-
-**Image size**: ~2-3GB (includes Python, dependencies, and runtime model cache)
-
-## Network Deployment
-
-### Docker Network Setup
-
-```bash
-# Create network
-docker network create dozu-app-network
-
-# Run with network
-docker run --name dozu-embedding-service \
-  --network dozu-app-network \
-  -p 8686:8686 \
-  -d dozuu/dozu-embedding-service:latest
-```
-
-### Update Deployment
-
-```bash
-docker pull dozuu/dozu-embedding-service:latest && \
-docker stop dozu-embedding-service && \
-docker rm dozu-embedding-service && \
-docker run --name dozu-embedding-service  --network dozu-app-network  -p 8686:8686 -d dozuu/dozu-embedding-service:latest
-```
-
-## Requirements
-
-- **Python**: 3.10+
-- **Memory**: 2GB minimum, 4GB+ recommended
-- **GPU**: Optional (CUDA-compatible for faster inference)
-
-### Python Dependencies
-
-- `fastapi` & `uvicorn` - Web framework
-- `sentence-transformers` - Embedding models
-- `transformers` & `torch` - Model backend
-- `youtube-transcript-api` - YouTube transcript fetching
-- `pypdf` - PDF text extraction
-
-## License
-
-[Your License Here]
-
-## Support
-
-For issues and questions, please open an issue on the repository.
+`planning/embedding-runtime/verify_package.py` exercises actual packaged CPU inference over HTTP with fresh Unicode/space user paths, no developer Python packages on the child search path and a process-level non-loopback network-denial guard. It covers text/batch/PDF/transcript text, security failures, missing/corrupt resources and graceful shutdown. `compare_quality.py` records limited en/vi numerical/retrieval smoke evidence. `summarize.py` verifies every package hash, detects runtime writes, inventories loaded native modules and measures complete component archives. Read the evidence limits before treating any result as release acceptance.
