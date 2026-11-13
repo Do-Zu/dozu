@@ -1,5 +1,7 @@
 # Active delivery reconciliation
 
+**#7 follow-ups — 2026-11-13:** The user's completion review leaves #7 open/In Progress. [The gap ledger](../toolchains/follow-ups/README.md) links every unpassed criterion to an existing delivery issue or new #48/#49, which are open #7 subissues on Project #6. No full runtime/platform acceptance is inferred, and existing dependency/ownership fields are preserved.
+
 **Latest foundation result — 2026-11-12:** #5 source import and #6 JavaScript workspace/build graph are completed after review. Both child issues and Project Status are Done; #1 remains In Progress. Source import and workspace evidence do not establish full-stack/installer/platform acceptance. See [workspace evidence](../workspace/README.md).
 
 Read-back note: during this session, #4's five acceptance boxes and P1-P3 boxes were checked by an external edit. This task did not change its body and preserved that edit. Its live state remains closed/not_planned; the edit supplied no new passing evidence, so the completion ledger still contains only #2 and #3. See `verification.json` and the before/after snapshots.

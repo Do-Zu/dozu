@@ -1,5 +1,7 @@
 # Dozu local-first desktop planning
 
+**Completion review — 2026-11-13:** #7 remains In Progress with original acceptance unpassed. New [#48 framework/security upgrade](https://github.com/Do-Zu/dozu/issues/48) and [#49 native script validation](https://github.com/Do-Zu/dozu/issues/49) track missing work; every other gap maps to existing delivery issues. See the [completion ledger](toolchains/follow-ups/README.md). Creating follow-ups does not certify native runtimes/installers or complete #7.
+
 **Scope follow-up — 2026-11-13:** [Email delivery removed; Redis retained](v1-scope-2026-11-13-email.md). The user clarified that Redis removal is skipped; alternatives are suggestions only. [Implementation and checks](email-removal/README.md) record email-free account flows and local backend URL defaults. Older email-delivery requirements are superseded by this amendment.
 
 **Toolchain work — 2026-11-13:** #7 and its Project item are In Progress. [Portable-script implementation and evidence](toolchains/README.md) records the JavaScript build pins, API path/build fixes and explicit unpassed runtime/native gates. Live #4's closed/completed state and checked headline boxes conflict with its user-directed NOT PLANNED closure; this work preserves #4 and does not infer completed platform/resource/lifecycle acceptance from it.
