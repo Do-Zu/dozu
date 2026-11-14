@@ -15,10 +15,14 @@ Only a Windows developer host has run the imported workspace commands. That host
 
 ## Dependencies and boundaries
 - Final validation depends on #48's selected security-reviewed baseline and #6's completed workspace baseline. Existing #7 measured-baseline runs may execute earlier but must be identified separately.
-- This issue is a child of #7 and must not wait for #7 closure. No dependency is inferred satisfied from #4/#45 being closed.
+- This is an independent roadmap #1 follow-up from completed foundation #7; it does not reopen that foundation scope. No dependency is inferred satisfied from #4/#45 being closed.
 - #38 owns shipped runtime/native ABI manifests; #8 owns Python/model packaging; #29 owns real migrations; #22/#23/#46/#47 own complete installer/runtime/workflow/platform acceptance. This issue does not duplicate or replace those broader gates.
 - #45 is currently closed while its acceptance list is unchecked; that is not Windows certification. #22 retains the full Windows release gate.
 
-Parent: #7. Roadmap: #1. Phase: 1 Foundation. Priority: P0. Complexity: M. Status: waiting for final upgraded baseline/native hosts. No owner is invented.
+Parent: #1. Follow-up from completed tooling foundation: #7. Phase: 1 Foundation. Priority: P0. Complexity: M. Status: waiting for final upgraded baseline/native hosts. No owner is invented.
 
 Approved scope is unchanged: retain website/UI/text embeddings, PostgreSQL retained/pgvector deferred, Redis retained, email/STT excluded, payments deferred, LAN classrooms. No developer tools may be required by end-user installers; these are developer build checks only.
+
+
+<!-- dozu-foundation-split-2026-11-13 -->
+The user explicitly authorized closing #7 for its delivered JavaScript tooling foundation and moving later desktop acceptance to independent issues. This issue stays open and is parented to roadmap #1. Its original acceptance boxes and metadata are preserved. This work remains a required desktop release gate; #7 closure is not evidence it passed. Redis remains retained, while outgoing email, local STT and payment execution are excluded by explicit user scope amendments.

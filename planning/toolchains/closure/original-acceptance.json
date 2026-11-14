@@ -1,0 +1,11 @@
+{
+  "issue": 7,
+  "title": "[Task] Pin portable toolchains and runtime-compatible builds",
+  "criteria": [
+    "- [ ] Make scripts/environment/path handling portable across all three OSes.",
+    "- [ ] Pin build toolchain/runtime versions and verify Electron/native-module ABI or standalone Node compatibility.",
+    "- [ ] Separate necessary framework/security upgrades from source movement with independent validation.",
+    "- [ ] Validate API aliases, production startup, migration paths, installed-resource paths and read-only installation behavior.",
+    "- [ ] Provide root development and packaging commands; end users require no developer tools."
+  ]
+}

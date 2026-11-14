@@ -1,0 +1,12 @@
+{
+  "onlyManifestEntriesChanged": [
+    "ROADMAP",
+    "TOOLCHAINS",
+    "SUPPLY-CHAIN"
+  ],
+  "foundationCriteriaCompleted": 5,
+  "originalCriteriaArchived": 5,
+  "otherIssueRecordsPreserved": true,
+  "acyclicGraphOfflineValidation": "passed",
+  "sourceApplicationChangesThisStep": false
+}

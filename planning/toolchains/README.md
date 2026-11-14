@@ -1,5 +1,7 @@
 # Portable toolchains — issue #7
 
+**Current disposition — 2026-11-13:** #7 is completed for the explicitly revised, committed JavaScript tooling foundation. The user authorized transferring later desktop acceptance to independent issues so migration can proceed. See [closure/read-back and next #38 step](closure/README.md). Original broad native/runtime/installer criteria remain unpassed under their listed owners; the open-status wording below records the historical implementation checkpoint and is superseded by that scope split.
+
 2026-11-13, Asia/Bangkok. Started from clean `dev` at `5712218`, after reading imported application guidance, #6 workspace evidence, scope/support contracts and architecture/roadmap handoffs. **#7 remains In Progress; none of its five full acceptance criteria is checked.** This implements the independently executable JavaScript portability portion. No framework upgrade, deployment, database migration or installer certification is claimed.
 
 ## Implemented behavior
