@@ -1,0 +1,4 @@
+{
+  "passed": 11,
+  "scope": "Offline inventory/trusted hash, corruption, extra/missing files, target/version, forbidden credential path, traversal and directory-set checks; no native/installer certification"
+}

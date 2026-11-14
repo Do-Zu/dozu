@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "target": "darwin-arm64",
+  "status": "candidate-incomplete",
+  "releaseEligible": false,
+  "requiredBaselines": [
+    "macOS 13+ Apple Silicon"
+  ],
+  "installerFormats": [
+    "signed notarized dmg"
+  ],
+  "cleanMachineResults": [],
+  "artifactRefs": {
+    "electron": "electron-darwin-arm64",
+    "node": "node-darwin-arm64",
+    "postgresqlSource": "postgresql-source",
+    "postgresqlShippingBinary": null,
+    "python": "python-source",
+    "pythonShippingBinary": null,
+    "redisSource": "redis-source",
+    "redisShippingBinary": null
+  },
+  "nodeStrategy": {
+    "mode": "standalone-node-children",
+    "nodeModulesABI": "127",
+    "nodeAPI": "10",
+    "electronNodeMustNotLoadAppNativeModules": true,
+    "productionNativeModulesVerified": false
+  },
+  "embedding": {
+    "backend": "torch-cpu",
+    "model": {
+      "path": "services/embedding/packaging/model-manifest.json",
+      "sha256": "aa8158c0d50d38e1309a4644319e8646f2ce4cb77695d1256254a9ad63ba7241"
+    },
+    "dimension": 384,
+    "normalized": true,
+    "maxTokens": 128,
+    "windowsHashLock": null,
+    "windowsWheelInventory": null,
+    "foreignAvailabilityOnly": {
+      "path": "resources/manifests/embedding-wheel-availability.json",
+      "sha256": "ff79d909df2c15c726706e96ae60b6a38672c87e6efad2b9389362d98603583c"
+    },
+    "onnxRequired": false
+  },
+  "installedResourceManifest": null,
+  "licenseClosureApproved": false,
+  "upgradeCompatibility": {
+    "resourceSchema": 1,
+    "postgresqlMajor": 17,
+    "appDataSchemaRange": null,
+    "redisPersistenceFormatVerified": false,
+    "embeddingSpace": "MiniLM-L12-v2@86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/384/mean128/unit/torch",
+    "crossBackendVectorReuseApproved": false
+  },
+  "gates": [
+    "SECURITY-48",
+    "POSTGRES-BINARY",
+    "CONVERSION-32",
+    "APPLICATION-PRODUCTION-CLOSURE",
+    "SIGNED-RESOURCE-ROOT",
+    "CLEAN-NATIVE-TARGET",
+    "PYTHON-NATIVE-BUILD",
+    "PYTHON-NATIVE-LOCK",
+    "REDIS-NATIVE-BUILD"
+  ],
+  "nativeReleaseOwner": "#46"
+}

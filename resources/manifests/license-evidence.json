@@ -1,0 +1,49 @@
+{
+  "status": "primary-texts-only-not-complete-license-closure",
+  "files": [
+    {
+      "artifactId": "electron-win32-x64",
+      "archiveMember": "LICENSE",
+      "path": "resources/manifests/licenses/electron-win32-x64.txt",
+      "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d",
+      "sourceArchiveSha256": "489cd061908e697394b004298bf5ffd345c935d10e8ca197ba819f019ab2dec0",
+      "allBundledDependencyLicensesReviewed": false
+    },
+    {
+      "artifactId": "node-win-x64",
+      "archiveMember": "node-v22.22.0-win-x64/LICENSE",
+      "path": "resources/manifests/licenses/node-win-x64.txt",
+      "sha256": "339c50294da6a84322dcbe7285b57b248123bd4d9e37a2f72d68d5abf2574783",
+      "sourceArchiveSha256": "c97fa376d2becdc8863fcd3ca2dd9a83a9f3468ee7ccf7a6d076ec66a645c77a",
+      "allBundledDependencyLicensesReviewed": false
+    },
+    {
+      "artifactId": "postgresql-source",
+      "archiveMember": "postgresql-17.12/COPYRIGHT",
+      "path": "resources/manifests/licenses/postgresql-source.txt",
+      "sha256": "3d6af92ff8a4c2cdf69afb1cf44edea727922f5cd0cf8b5f72b11cdecac8fdfd",
+      "sourceArchiveSha256": "9cf136a703d8ee2f83465c43be4e9e8e7930c82b0bfba13be7e2537be769ac55",
+      "allBundledDependencyLicensesReviewed": false
+    },
+    {
+      "artifactId": "redis-source",
+      "archiveMember": "redis-7.2.17/COPYING",
+      "path": "resources/manifests/licenses/redis-source.txt",
+      "sha256": "97f0a15b7bbae580d2609dad2e11f1956ae167be296ab60f4691ab9c30ee9828",
+      "sourceArchiveSha256": "07c679c013fd82513299733bddf91999bbbc830351ec9ea985a533b09a595d76",
+      "allBundledDependencyLicensesReviewed": false
+    },
+    {
+      "artifactId": "python-source",
+      "archiveMember": "Python-3.13.7/LICENSE",
+      "path": "resources/manifests/licenses/python-source.txt",
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+      "sourceArchiveSha256": "5462f9099dfd30e238def83c71d91897d8caa5ff6ebc7a50f14d4802cdaaa79a",
+      "allBundledDependencyLicensesReviewed": false
+    }
+  ],
+  "embeddingNotices": {
+    "path": "services/embedding/packaging/requirements-torch-windows-x64.json",
+    "sha256": "7cadb40cd94d100de0d91c5892fe55fae92ea9bb603c4fc20719905f16ba639b"
+  }
+}

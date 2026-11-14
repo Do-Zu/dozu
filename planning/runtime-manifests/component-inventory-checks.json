@@ -1,0 +1,45 @@
+{
+  "status": "candidate-components-only",
+  "inventories": [
+    {
+      "component": "node",
+      "manifest": {
+        "path": "resources/manifests/installed-candidates/node-win32-x64.json",
+        "sha256": "b4fe116eaa3961d834239e8567d8bb95149f16e353635483a9bc91d40af04c01"
+      },
+      "verification": {
+        "verified": true,
+        "target": "win32-x64",
+        "resourceSet": "inspection-only-2026-11-14",
+        "files": 2
+      },
+      "releasePayload": false,
+      "note": "Standalone node.exe + its full upstream LICENSE only; npm/corepack omitted"
+    },
+    {
+      "component": "electron",
+      "manifest": {
+        "path": "resources/manifests/installed-candidates/electron-win32-x64.json",
+        "sha256": "29698eb21677df860861d083b5f4ac1760243c550fa83fde3a21195ef1ea63a4"
+      },
+      "verification": {
+        "verified": true,
+        "target": "win32-x64",
+        "resourceSet": "inspection-only-2026-11-14",
+        "files": 73
+      },
+      "releasePayload": false,
+      "note": "Official Electron archive includes default demo app; replace it with Dozu during final assembly"
+    },
+    {
+      "component": "embedding-torch",
+      "existingInventory": {
+        "path": "planning/embedding-runtime/.runs/Verified torch ti\u1ebfng Vi\u1ec7t/package-manifest.json",
+        "sha256": "81937eb92c5cb18275ebb225eb6b8042fe26862e3b4de2c543b28f8990d99959"
+      },
+      "releasePayload": false,
+      "evidence": "planning/embedding-runtime/measurements.json",
+      "cleanMachineVerified": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "officialIndex": "https://www.enterprisedb.com/download-postgresql-binaries",
+  "version": "17.12",
+  "architecture": "Windows x86-64",
+  "source": "https://sbp.enterprisedb.com/getfile.jsp?fileid=1260667",
+  "shippingBinaryVerified": false,
+  "status": 200,
+  "finalUrl": "https://get.enterprisedb.com/postgresql/postgresql-17.12-1-windows-x64-binaries.zip",
+  "contentType": "application/zip"
+}

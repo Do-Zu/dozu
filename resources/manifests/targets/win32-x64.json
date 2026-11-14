@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "target": "win32-x64",
+  "status": "candidate-incomplete",
+  "releaseEligible": false,
+  "requiredBaselines": [
+    "Windows 10 22H2 x64 legacy",
+    "Windows 11 x64 primary"
+  ],
+  "installerFormats": [
+    "NSIS exe"
+  ],
+  "cleanMachineResults": [],
+  "artifactRefs": {
+    "electron": "electron-win32-x64",
+    "node": "node-win-x64",
+    "postgresqlSource": "postgresql-source",
+    "postgresqlShippingBinary": "postgresql-win32-x64",
+    "python": "python-win32-x64",
+    "pythonShippingBinary": "python-win32-x64",
+    "redisSource": "redis-source",
+    "redisShippingBinary": null
+  },
+  "nodeStrategy": {
+    "mode": "standalone-node-children",
+    "nodeModulesABI": "127",
+    "nodeAPI": "10",
+    "electronNodeMustNotLoadAppNativeModules": true,
+    "productionNativeModulesVerified": false
+  },
+  "embedding": {
+    "backend": "torch-cpu",
+    "model": {
+      "path": "services/embedding/packaging/model-manifest.json",
+      "sha256": "aa8158c0d50d38e1309a4644319e8646f2ce4cb77695d1256254a9ad63ba7241"
+    },
+    "dimension": 384,
+    "normalized": true,
+    "maxTokens": 128,
+    "windowsHashLock": {
+      "path": "services/embedding/packaging/requirements-torch-windows-x64.lock",
+      "sha256": "3433ac42d95c29361bd3b7fed57fea0bcd314c980ffdb9b9c8f4690bdde42c6e"
+    },
+    "windowsWheelInventory": {
+      "path": "services/embedding/packaging/requirements-torch-windows-x64.json",
+      "sha256": "7cadb40cd94d100de0d91c5892fe55fae92ea9bb603c4fc20719905f16ba639b"
+    },
+    "foreignAvailabilityOnly": null,
+    "onnxRequired": false
+  },
+  "installedResourceManifest": null,
+  "licenseClosureApproved": false,
+  "upgradeCompatibility": {
+    "resourceSchema": 1,
+    "postgresqlMajor": 17,
+    "appDataSchemaRange": null,
+    "redisPersistenceFormatVerified": false,
+    "embeddingSpace": "MiniLM-L12-v2@86741b4e3f5cb7765a600d3a3d55a0f6a6cb443d/384/mean128/unit/torch",
+    "crossBackendVectorReuseApproved": false
+  },
+  "gates": [
+    "SECURITY-48",
+    "POSTGRES-BINARY",
+    "CONVERSION-32",
+    "APPLICATION-PRODUCTION-CLOSURE",
+    "SIGNED-RESOURCE-ROOT",
+    "CLEAN-NATIVE-TARGET",
+    "WINDOWS-REDIS",
+    "WINDOWS-CRT-LOADER",
+    "FOREIGN-LAUNCHER-REVIEW"
+  ],
+  "nativeReleaseOwner": "#22"
+}

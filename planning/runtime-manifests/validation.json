@@ -1,0 +1,93 @@
+{
+  "candidateConsistencyPassed": true,
+  "releaseEligible": false,
+  "sourceBaseline": "65a4303f12fee7e40c8ca68e15ed064c5aafc302",
+  "verifiedArchives": 7,
+  "upstreamArtifactPins": 13,
+  "windowsWheelArchivesVerified": 45,
+  "baselineModelFilesVerified": 10,
+  "targetReferenceHashesVerified": 9,
+  "nativePEFilesInspected": 456,
+  "microsoftSignedCrtFilesInventoried": 10,
+  "cleanNativeTargetsPassed": 0,
+  "foreignArchitecturePayloadsRequiringReview": [
+    {
+      "component": "embedding-torch",
+      "path": "python/Lib/site-packages/setuptools/cli-32.exe",
+      "architecture": "x86"
+    },
+    {
+      "component": "embedding-torch",
+      "path": "python/Lib/site-packages/setuptools/cli-arm64.exe",
+      "architecture": "arm64"
+    },
+    {
+      "component": "embedding-torch",
+      "path": "python/Lib/site-packages/setuptools/cli.exe",
+      "architecture": "x86"
+    },
+    {
+      "component": "embedding-torch",
+      "path": "python/Lib/site-packages/setuptools/gui-32.exe",
+      "architecture": "x86"
+    },
+    {
+      "component": "embedding-torch",
+      "path": "python/Lib/site-packages/setuptools/gui-arm64.exe",
+      "architecture": "arm64"
+    },
+    {
+      "component": "embedding-torch",
+      "path": "python/Lib/site-packages/setuptools/gui.exe",
+      "architecture": "x86"
+    }
+  ],
+  "gates": {
+    "darwin-arm64": [
+      "SECURITY-48",
+      "POSTGRES-BINARY",
+      "CONVERSION-32",
+      "APPLICATION-PRODUCTION-CLOSURE",
+      "SIGNED-RESOURCE-ROOT",
+      "CLEAN-NATIVE-TARGET",
+      "PYTHON-NATIVE-BUILD",
+      "PYTHON-NATIVE-LOCK",
+      "REDIS-NATIVE-BUILD"
+    ],
+    "darwin-x64": [
+      "SECURITY-48",
+      "POSTGRES-BINARY",
+      "CONVERSION-32",
+      "APPLICATION-PRODUCTION-CLOSURE",
+      "SIGNED-RESOURCE-ROOT",
+      "CLEAN-NATIVE-TARGET",
+      "PYTHON-NATIVE-BUILD",
+      "PYTHON-NATIVE-LOCK",
+      "REDIS-NATIVE-BUILD",
+      "TORCH-MAC-INTEL"
+    ],
+    "linux-x64": [
+      "SECURITY-48",
+      "POSTGRES-BINARY",
+      "CONVERSION-32",
+      "APPLICATION-PRODUCTION-CLOSURE",
+      "SIGNED-RESOURCE-ROOT",
+      "CLEAN-NATIVE-TARGET",
+      "PYTHON-NATIVE-BUILD",
+      "PYTHON-NATIVE-LOCK",
+      "REDIS-NATIVE-BUILD"
+    ],
+    "win32-x64": [
+      "SECURITY-48",
+      "POSTGRES-BINARY",
+      "CONVERSION-32",
+      "APPLICATION-PRODUCTION-CLOSURE",
+      "SIGNED-RESOURCE-ROOT",
+      "CLEAN-NATIVE-TARGET",
+      "WINDOWS-REDIS",
+      "WINDOWS-CRT-LOADER",
+      "FOREIGN-LAUNCHER-REVIEW"
+    ]
+  },
+  "note": "Candidate consistency is not issue completion, native compatibility or security/redistribution approval"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "target": "win32-x64",
+  "resourceSet": "inspection-only-2026-11-14",
+  "builtOn": "win32",
+  "approvedRoots": [
+    "node.exe",
+    "LICENSE"
+  ],
+  "entries": [
+    {
+      "path": "LICENSE",
+      "type": "file",
+      "bytes": 145965,
+      "sha256": "339c50294da6a84322dcbe7285b57b248123bd4d9e37a2f72d68d5abf2574783"
+    },
+    {
+      "path": "node.exe",
+      "type": "file",
+      "bytes": 85804032,
+      "sha256": "bae898add4643fcf890a83ad8ae56e20dce7e781cab161a53991ceba70c99ffb"
+    }
+  ]
+}
