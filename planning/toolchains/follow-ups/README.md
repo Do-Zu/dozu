@@ -1,5 +1,7 @@
 # #7 completion review — 2026-11-13
 
+**Superseded by the user's later scope decision:** [#7 foundation closure](../closure/README.md) completes only the delivered JavaScript tooling foundation, moves still-open #48/#49 to roadmap #1, and makes #38 Ready. The original broader proof stays unpassed on its delivery issues. The following open-parent/setup report and snapshots are historical; do not rerun its publisher against the completed foundation.
+
 The user asked whether #7 could be Done and requested separate issues for work that must be resolved later. Its original acceptance criteria still lack native-host/full-runtime/installed-stack evidence, so **#7 remains open and In Progress**. No criterion was checked, waived or silently narrowed to close it. Current source work remains local/uncommitted.
 
 Two missing executable tasks were created as actual #7 subissues and added to Project #6:

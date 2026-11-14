@@ -15,10 +15,14 @@ The measured baseline is Next 14.2.35, React/ReactDOM 18.3.1 and build Node 22.2
 
 ## Dependencies and boundaries
 - Prerequisite: #6 completed workspace/build baseline (and preserved #5 import).
-- Use #7's implemented tooling as an input; do **not** require #7 closure to start. This child supplies evidence back to #7 and avoids a parent/child dependency cycle.
+- Use #7's implemented tooling as an input; do **not** require #7 closure to start. This independent roadmap follow-up supplies release evidence to #1; it is outside the completed #7 foundation scope.
 - Coordinate #38 for shipped runtimes and #22/#23 for complete release integration. This task does not certify installers/native platforms or close those issues by inference.
 
-Parent: #7. Roadmap: #1. Phase: 1 Foundation. Priority: P0. Complexity: L. No owner is assigned by inference.
+Parent: #1. Follow-up from completed tooling foundation: #7. Phase: 1 Foundation. Priority: P0. Complexity: L. No owner is assigned by inference.
 
 ## Approved scope
 Preserve the website/all UI, local-first optional internet, PostgreSQL retained/pgvector deferred, required PDF/YouTube text embeddings and LAN classrooms. Local speech-to-text/STT-only assets and outgoing email are excluded; payments remain deferred under #41. Redis stays unchanged per the user's 2026-11-13 clarification; replacement alternatives are proposals only.
+
+
+<!-- dozu-foundation-split-2026-11-13 -->
+The user explicitly authorized closing #7 for its delivered JavaScript tooling foundation and moving later desktop acceptance to independent issues. This issue stays open and is parented to roadmap #1. Its original acceptance boxes and metadata are preserved. This work remains a required desktop release gate; #7 closure is not evidence it passed. Redis remains retained, while outgoing email, local STT and payment execution are excluded by explicit user scope amendments.

@@ -1,0 +1,21 @@
+{
+  "scopeSplitExplicitlyAuthorized": true,
+  "foundationIssue": 7,
+  "state": "closed",
+  "stateReason": "completed",
+  "revisedFoundationCriteriaCompleted": 5,
+  "originalBroaderCriteriaArchivedNotPassed": 5,
+  "openFollowupsMovedToRoadmap": [
+    48,
+    49
+  ],
+  "noUnfinishedSubissuesRemainOn7": true,
+  "existingRuntimeReleaseCriteriaPreservedUnpassed": true,
+  "nextReadyIssue": 38,
+  "project7Status": "Done",
+  "project38Status": "Todo",
+  "assigneesAndUnrelatedFieldsPreserved": true,
+  "proofIssues4And45Unchanged": true,
+  "remoteSourceSha": "8e7b7d134ec450ecd0244ab8deaee3d67b9379bb",
+  "completionComment": "https://github.com/Do-Zu/dozu/issues/7#issuecomment-6852268122"
+}

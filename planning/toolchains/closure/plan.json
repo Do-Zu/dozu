@@ -1,0 +1,36 @@
+{
+  "issue7Title": "[Task] Pin portable JavaScript build toolchains and developer entry points",
+  "issue7DependencyNumbers": [
+    6
+  ],
+  "completedScope": "measured JavaScript tooling foundation",
+  "transferredNotPassed": [
+    48,
+    49,
+    38,
+    8,
+    32,
+    40,
+    28,
+    29,
+    34,
+    15,
+    23,
+    33,
+    22,
+    46,
+    47,
+    14,
+    16,
+    10
+  ],
+  "newParents": {
+    "48": 1,
+    "49": 1
+  },
+  "nextReadyIssue": 38,
+  "originalProofIssuesUnchanged": [
+    4,
+    45
+  ]
+}
