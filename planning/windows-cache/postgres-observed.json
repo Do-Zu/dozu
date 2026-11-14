@@ -1,0 +1,79 @@
+{
+  "bullmq": "6.7.6",
+  "pg": "8.14.1",
+  "processed": [
+    {
+      "id": "survive-restart",
+      "kind": "persisted",
+      "attemptsMade": 0
+    },
+    {
+      "id": "retry-id",
+      "kind": "retry",
+      "attemptsMade": 0
+    },
+    {
+      "id": "retry-id",
+      "kind": "retry",
+      "attemptsMade": 1
+    },
+    {
+      "id": "delayed-id",
+      "kind": "delayed",
+      "attemptsMade": 0
+    },
+    {
+      "id": "failed-id",
+      "kind": "permanent-failure",
+      "attemptsMade": 0
+    },
+    {
+      "id": "failed-id",
+      "kind": "permanent-failure",
+      "attemptsMade": 1
+    }
+  ],
+  "events": [
+    {
+      "type": "progress",
+      "id": "survive-restart"
+    },
+    {
+      "type": "completed",
+      "id": "survive-restart"
+    },
+    {
+      "type": "progress",
+      "id": "retry-id"
+    },
+    {
+      "type": "completed",
+      "id": "retry-id"
+    },
+    {
+      "type": "progress",
+      "id": "delayed-id"
+    },
+    {
+      "type": "completed",
+      "id": "delayed-id"
+    }
+  ],
+  "tables": [
+    "dedup",
+    "dedup_next",
+    "event",
+    "job",
+    "job_dependency",
+    "job_log",
+    "meta",
+    "metrics",
+    "migration",
+    "rate_limit",
+    "relay_inbox",
+    "relay_node",
+    "relay_retained",
+    "relay_subscription",
+    "scheduler"
+  ]
+}

@@ -7,5 +7,15 @@
   "requiredBaselines": ["Windows 10 22H2 x64 legacy", "Windows 11 x64 primary"],
   "ignoredTargets": ["darwin-x64", "darwin-arm64", "linux-x64"],
   "historicalEvidence": "Existing non-Windows metadata/target records are retained as historical inventory only; their gates do not block #38 and acquisition/generation/validation must not require them.",
-  "unchanged": "Windows acceptance, hardware/resource limits, PostgreSQL/Redis retention, pinned multilingual CPU embedding/384-vector contract and capability deferrals remain required. Ignoring another target does not certify it."
+  "desktopStateStrategy": {
+    "decision": "planning/windows-cache/decision.md",
+    "authority": "User authorized researching and deciding removal/replacement of Redis on 2026-11-14, superseding the earlier desktop retention restriction.",
+    "redisRuntimeRequired": false,
+    "durableBackend": "postgresql",
+    "queueCandidate": "bullmq@6.7.6 PostgreSQL backend",
+    "disposableCache": "bounded process-local TTL/size cache",
+    "applicationMigrationImplemented": false,
+    "websiteRedisPreserved": true
+  },
+  "unchanged": "Windows acceptance, hardware/resource limits, PostgreSQL retention, pinned multilingual CPU embedding/384-vector contract and capability deferrals remain required. Ignoring another target does not certify it."
 }

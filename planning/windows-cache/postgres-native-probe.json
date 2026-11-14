@@ -1,0 +1,37 @@
+{
+  "host": "Windows 11 developer host; not clean or Windows 10",
+  "cluster": "new disposable isolated cluster; no application migrations/user records",
+  "nodeSha256": "bae898add4643fcf890a83ad8ae56e20dce7e781cab161a53991ceba70c99ffb",
+  "phases": [
+    {
+      "name": "initdb",
+      "exitCode": 0
+    },
+    {
+      "name": "start",
+      "exitCode": 0
+    },
+    {
+      "name": "before",
+      "exitCode": 0
+    },
+    {
+      "name": "stop-for-restart",
+      "exitCode": 0
+    },
+    {
+      "name": "restart",
+      "exitCode": 0
+    },
+    {
+      "name": "after",
+      "exitCode": 0
+    },
+    {
+      "name": "final-stop",
+      "exitCode": 0
+    }
+  ],
+  "result": "passed",
+  "ownedClusterStopped": true
+}

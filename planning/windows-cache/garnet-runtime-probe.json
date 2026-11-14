@@ -1,0 +1,12 @@
+{
+  "candidate": "Garnet 2.2.12 win-x64-based-readytorun.zip",
+  "archiveSha256Verified": "3edef0529508bd479c46d943569627189673bdfb3359b1697b19cbf7f93085c1",
+  "archiveBytes": 26426802,
+  "executableBytes": 34626712,
+  "command": "GarnetServer.exe --help with scrubbed environment/PATH",
+  "exitCode": 2147516566,
+  "observed": "Host launcher requires Microsoft.NETCore.App 10.0.0 x64; only 8.0.21 was found on this developer host",
+  "changesMade": "No .NET runtime was installed, no service started and no application dependency changed",
+  "conclusion": "This archive is not a self-contained no-runtime-setup solution by itself. App-local .NET runtime provisioning or a source-published self-contained artifact and actual BullMQ compatibility tests would be required.",
+  "compatibilityVerdict": "untested; startup prerequisite failure is not proof of Redis API incompatibility"
+}

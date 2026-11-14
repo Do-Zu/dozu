@@ -1,0 +1,131 @@
+{
+  "garnet": {
+    "version": "2.2.12",
+    "source": "https://github.com/microsoft/garnet/releases/download/v2.2.12/win-x64-based-readytorun.zip",
+    "sha256": "3edef0529508bd479c46d943569627189673bdfb3359b1697b19cbf7f93085c1",
+    "bytes": 26426802,
+    "upstreamCommit": "3412254f6662a496571ef251bdbfe3db66904601",
+    "checksumEvidence": "https://api.github.com/repos/microsoft/garnet/releases/tags/v2.2.12",
+    "status": "evaluation-only-not-selected-runtime"
+  },
+  "bullmq": {
+    "version": "6.7.6",
+    "engines": {
+      "node": ">=14.18.0"
+    },
+    "dist": {
+      "shasum": "f8272f4a4dab0b8ca3557711a726131ea49f825a",
+      "tarball": "https://registry.npmjs.org/bullmq/-/bullmq-6.7.6.tgz",
+      "fileCount": 810,
+      "integrity": "sha512-ykp2HGMkOz8BtuE/FBFRMetpI6RHDyFvAkUawqKJv7sDWIaZPz1cPtpzIad879iwW2oMJY4CFMPvfBKnWdB3Rw==",
+      "signatures": [
+        {
+          "sig": "MEUCIEAJAPBwscLQjh5sB+WGe9TRLJXN+1LAj8UGevIVjyKWAiEAmdZ7dyimHQs8ZR8qlFtvIubpsE3vuAgnc1PClP6ewh4=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEYCIQC97JdsxtzRtzFWIXlre1rn0mTJZf1huVERKgT5q84o6wIhAJ0FWIVdIs8iI3JAQuPg5l9oEQjOk3X3QlS3R+b+FpKW",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/bullmq@6.7.6",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 3604977
+    },
+    "dependencies": {
+      "tslib": "2.9.1",
+      "semver": "7.8.6",
+      "msgpackr": "2.1.4",
+      "cron-parser": "5.10.4",
+      "node-abort-controller": "3.1.1"
+    },
+    "repository": {
+      "url": "git+https://github.com/taskforcesh/bullmq.git",
+      "type": "git"
+    },
+    "license": "MIT"
+  },
+  "pg-boss": {
+    "version": "12.38.2",
+    "engines": {
+      "node": ">=22.12.0"
+    },
+    "dist": {
+      "shasum": "fc394576eff544bd7d54122c0540586b6ef74300",
+      "tarball": "https://registry.npmjs.org/pg-boss/-/pg-boss-12.38.2.tgz",
+      "fileCount": 112,
+      "integrity": "sha512-nvB9hB2cDJGSPUwYjN/Mth+EE3zvxffkp7uKXIiYloMAaxSoEiutmZi9mpSW85hNCcPChf3yicNXdwhIWkv2nA==",
+      "signatures": [
+        {
+          "sig": "MEUCIA+lTPVfLxXL2PpiQTAqLiKsC6TL8zpE1sjVEyXyUH5yAiEA+nsyGskm23Lszpcg0n1+e19KbJc7ihWAVZYVNfSOKjc=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCIArJg8HGDWuWTZ0SfY5PHYfjGsdHkbNz6l6++73uP0kTAiAL9x0t9HDV79XJc9ipynmkD7Qc9TkW/Uc6tA/GVv4hVQ==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/pg-boss@12.38.2",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 1369609
+    },
+    "dependencies": {
+      "pg": "^8.23.1",
+      "cron-parser": "^5.10.2",
+      "rrule-temporal": "^2.2.8",
+      "serialize-error": "^13.0.2"
+    },
+    "repository": {
+      "url": "git+https://github.com/timgit/pg-boss.git",
+      "type": "git"
+    },
+    "license": "MIT"
+  },
+  "lru-cache": {
+    "version": "11.5.3",
+    "engines": {
+      "node": "20 || >=22"
+    },
+    "dist": {
+      "shasum": "a7767b4034e35269562d2b9da2b185b5df70c421",
+      "tarball": "https://registry.npmjs.org/lru-cache/-/lru-cache-11.5.3.tgz",
+      "fileCount": 113,
+      "integrity": "sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg==",
+      "signatures": [
+        {
+          "sig": "MEYCIQCp+iaRiyYDLhYT4k0c1Qxh3kY3/d803Vi2uai7xyUBcwIhAPMVbE7SUGDCh8hfrgiOQj3CiTH+9C+4uVhlae0FFiob",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEYCIQC8P0AfFB/tVIBZ5QqArzIXWUbM/Jm0H9Nl19RwzTAJywIhAOILcho0B1LrCR2al7CvMlL0NjOWI4riahMl7sTzsWfi",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 3334485
+    },
+    "dependencies": null,
+    "repository": {
+      "url": "git+ssh://git@github.com/isaacs/node-lru-cache.git",
+      "type": "git"
+    },
+    "license": "BlueOak-1.0.0"
+  },
+  "garnet-license": {
+    "source": "https://raw.githubusercontent.com/microsoft/garnet/3412254f6662a496571ef251bdbfe3db66904601/LICENSE",
+    "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "bytes": 1141
+  },
+  "garnet-security": {
+    "source": "https://raw.githubusercontent.com/microsoft/garnet/3412254f6662a496571ef251bdbfe3db66904601/SECURITY.md",
+    "sha256": "430987b8c5f30c366ecd501bc344c8b29b6280e8a10174376a769f7443a187cd",
+    "bytes": 2757
+  }
+}

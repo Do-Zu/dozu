@@ -27,7 +27,9 @@ def main():
     catalog = read(OUT/'artifact-candidates.json')['artifacts']
     assert len({a['id'] for a in catalog}) == len(catalog)
     artifacts = [a for a in catalog if a['target'] in scope['requiredTargets'] or a['target'] in {'win-x64', 'source-only'}]
-    assert len(artifacts) == 7
+    if not scope['desktopStateStrategy']['redisRuntimeRequired']:
+        artifacts = [a for a in artifacts if a['component'] != 'redis']
+    assert len(artifacts) == 6
     for a in artifacts:
         assert re.fullmatch('[a-f0-9]{64}', a['sha256']) and a['source'].startswith('https://')
         if a['archiveBytesVerified']:
@@ -42,6 +44,9 @@ def main():
         assert all(v is None or v in valid_ids for v in t['artifactRefs'].values())
         assert not t['releaseEligible'] and t['cleanMachineResults'] == [] and t['gates']
         assert t['embedding']['dimension'] == 384 and not t['embedding']['onnxRequired']
+        assert t['desktopStateStrategy'] == scope['desktopStateStrategy']
+        assert 'DESKTOP-STATE-PG' in t['gates'] and 'WINDOWS-REDIS' not in t['gates']
+        assert not t['desktopStateStrategy']['applicationMigrationImplemented']
         for field in ['model', 'windowsHashLock', 'windowsWheelInventory', 'foreignAvailabilityOnly']:
             item = t['embedding'][field]
             if item:

@@ -1,0 +1,9 @@
+{
+  "host": "Windows 11 developer host; not clean or Windows 10",
+  "cluster": "new disposable isolated cluster; no application migrations/user records",
+  "nodeSha256": "bae898add4643fcf890a83ad8ae56e20dce7e781cab161a53991ceba70c99ffb",
+  "phases": [],
+  "result": "failed",
+  "error": "Command '['D:\\\\product\\\\dozu\\\\planning\\\\runtime-manifests\\\\.runs\\\\postgresql\\\\pgsql\\\\bin\\\\initdb.exe', '-D', 'D:\\\\product\\\\dozu\\\\planning\\\\windows-cache\\\\.runs\\\\postgres-ascii-riay6ae6\\\\data', '-U', 'dozu_probe', '--pwfile', 'D:\\\\product\\\\dozu\\\\planning\\\\windows-cache\\\\.runs\\\\postgres-ascii-riay6ae6\\\\password.txt', '--auth-host=scram-sha-256', '--auth-local=scram-sha-256', '--no-locale', '-E', 'UTF8']' timed out after 45 seconds",
+  "ownedClusterStopped": true
+}

@@ -1,0 +1,96 @@
+{
+  "researchDecisionVerified": true,
+  "selected": "desktop PostgreSQL durable jobs/state plus bounded disposable process cache",
+  "actualPostgresChecksPassed": 12,
+  "ownedClusterStopped": true,
+  "redisFreeApplicationClaim": false,
+  "cleanNativeTargetClaim": false,
+  "issue38Complete": false,
+  "nextImplementation": "#30 desktop/website queue-profile boundary after #29 reviewed bootstrap/migrations; see work packages in decision.md",
+  "files": [
+    {
+      "path": "planning/v1-scope-2026-11-14-desktop-state.md",
+      "sha256": "7d9526c7bfb9b46e0b3f2714da5c4f5e09e317ccd6a482d0811681ecb99d6f9f"
+    },
+    {
+      "path": "planning/windows-cache/.gitignore",
+      "sha256": "ee08b17c08ed3841ff08389c9c9ee60b2a452a81dea3e61eafbf173df3014fd4"
+    },
+    {
+      "path": "planning/windows-cache/acquire.py",
+      "sha256": "12be3903f8e3d0c1b64c3ec268839a2eb28d0d0c0cd69048a566cfab814728af"
+    },
+    {
+      "path": "planning/windows-cache/candidate-metadata.json",
+      "sha256": "8358946a1c61877cd808a139af7ca1bad394cf87e41251863cea86ee5f943f96"
+    },
+    {
+      "path": "planning/windows-cache/consumer-audit.json",
+      "sha256": "85789ef6b2083f11905b43b9ba60a67e4b35275fb00f36d126e382d96581ce16"
+    },
+    {
+      "path": "planning/windows-cache/decision.md",
+      "sha256": "6560701001531bdd629d061f51dd9e18c6813b1f1078bff35596ed2d88f59b66"
+    },
+    {
+      "path": "planning/windows-cache/evaluation-package-lock.json",
+      "sha256": "3870ab61cc57a041adfb12b9820e60db09b10afbc4631b2a03c0492c0df981fe"
+    },
+    {
+      "path": "planning/windows-cache/garnet-runtime-probe.json",
+      "sha256": "137f4cc60e26e1f6d3ff06891e8a2d454ae4f87784babc33428d8fe547b56e9e"
+    },
+    {
+      "path": "planning/windows-cache/postgres-after.json",
+      "sha256": "cf1c17f7b87cb9367eb8059ceb0a9954f6d51c2a04acc9ae8887765584fe5824"
+    },
+    {
+      "path": "planning/windows-cache/postgres-before.json",
+      "sha256": "c2fb8ef9566e0a921a2c85e4e18984b5b917001eb0b734b047527424103adc16"
+    },
+    {
+      "path": "planning/windows-cache/postgres-launcher-pipe-failure.json",
+      "sha256": "d03d90bf121ae630d1e994164739c8245d4df32ea01478d718f21b471fe9d802"
+    },
+    {
+      "path": "planning/windows-cache/postgres-native-probe.json",
+      "sha256": "2092a728d11f28205247453bc087736a02bd76c57ac80640b60537b2616d1d39"
+    },
+    {
+      "path": "planning/windows-cache/postgres-observed.json",
+      "sha256": "b9af168d47760f7682ad8fb7efd7cd7cfd1f5b02c73930a17094111cbc231488"
+    },
+    {
+      "path": "planning/windows-cache/postgres-sandbox-bootstrap.json",
+      "sha256": "173b32d9b1ef751108392917d2a1647462770180b46791ede53897c228998323"
+    },
+    {
+      "path": "planning/windows-cache/postgres-unicode-path-probe.json",
+      "sha256": "afa17df16c4420c7b05e90cba23d5ae1e8b72289aa64518e675bd687814d32ca"
+    },
+    {
+      "path": "planning/windows-cache/prepare_evaluation.py",
+      "sha256": "ff0482340849c6feb77ebd72e425bab44c2c55fb791a721d24e1956b77fa1656"
+    },
+    {
+      "path": "planning/windows-cache/probe_postgres.cjs",
+      "sha256": "2bf373745609c9c4cb9f2d8f218fc783a8db5d156ffb7e08fde4c33a0a34aa44"
+    },
+    {
+      "path": "planning/windows-cache/run_postgres.py",
+      "sha256": "562ce1d6ccb0f6fcdbf6a2899c9fc7d71d8195ed79fd7243aa6c429e09771730"
+    },
+    {
+      "path": "planning/windows-cache/verify_evidence.py",
+      "sha256": "961be82ade15a1c3783cd843c5e41d82d06c302de353f8de045c3b95ed501031"
+    },
+    {
+      "path": "resources/manifests/scope.json",
+      "sha256": "470bafe559a81efdd562ee6f41f2d3c56c35625a2c90d81f4ecc835b6034ca3d"
+    },
+    {
+      "path": "resources/manifests/targets/win32-x64.json",
+      "sha256": "e7c30250a01499c523f15efe5216bfafb93603c3aac086089928d9d88d3945dd"
+    }
+  ]
+}

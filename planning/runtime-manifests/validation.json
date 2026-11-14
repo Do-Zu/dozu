@@ -1,7 +1,7 @@
 {
   "candidateConsistencyPassed": true,
   "releaseEligible": false,
-  "sourceBaseline": "54a5852207363d3c5e356d3bb8063c559f672b58",
+  "sourceBaseline": "dfcafc41deadb6852d2004ffa951eab12e46b9cf",
   "requiredTargets": [
     "win32-x64"
   ],
@@ -10,8 +10,8 @@
     "darwin-arm64",
     "linux-x64"
   ],
-  "verifiedArchives": 7,
-  "upstreamArtifactPins": 7,
+  "verifiedArchives": 6,
+  "upstreamArtifactPins": 6,
   "windowsWheelArchivesVerified": 45,
   "baselineModelFilesVerified": 10,
   "targetReferenceHashesVerified": 3,
@@ -58,7 +58,7 @@
       "APPLICATION-PRODUCTION-CLOSURE",
       "SIGNED-RESOURCE-ROOT",
       "CLEAN-NATIVE-TARGET",
-      "WINDOWS-REDIS",
+      "DESKTOP-STATE-PG",
       "WINDOWS-CRT-LOADER",
       "FOREIGN-LAUNCHER-REVIEW"
     ]

@@ -1,0 +1,10 @@
+{
+  "result": "failed",
+  "scope": "Initial research probe used a fresh disposable data/password directory with Vietnamese characters on the existing Windows 11 developer host",
+  "artifact": "EDB PostgreSQL 17.12-1 Windows x64 from the pinned #38 archive",
+  "phase": "initdb",
+  "exitCode": 1,
+  "observed": "initdb could not open its password file; Vietnamese characters in the path were shown as question marks",
+  "applicationOrUserDataTouched": false,
+  "followup": "#34/#38 must solve and prove Unicode data/tool paths. Subsequent ASCII-path functional queue evidence does not pass this path gate."
+}

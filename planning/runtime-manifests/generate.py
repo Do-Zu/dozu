@@ -41,7 +41,7 @@ def main():
     for target, baselines, installers, native_owner in targets:
         node_id = 'node-'+target.replace('win32', 'win')
         windows = target == 'win32-x64'
-        gate_ids = common_gates + (['WINDOWS-REDIS', 'WINDOWS-CRT-LOADER'] if windows else ['PYTHON-NATIVE-BUILD', 'PYTHON-NATIVE-LOCK', 'REDIS-NATIVE-BUILD'])
+        gate_ids = common_gates + (['DESKTOP-STATE-PG', 'WINDOWS-CRT-LOADER'] if windows else ['PYTHON-NATIVE-BUILD', 'PYTHON-NATIVE-LOCK', 'REDIS-NATIVE-BUILD'])
         if target == 'darwin-x64': gate_ids += ['TORCH-MAC-INTEL']
         data = {'schemaVersion': 1, 'target': target, 'status': 'candidate-incomplete', 'releaseEligible': False,
                 'requiredBaselines': baselines, 'installerFormats': installers, 'cleanMachineResults': [],
@@ -49,7 +49,8 @@ def main():
                     'postgresqlSource': 'postgresql-source', 'postgresqlShippingBinary': 'postgresql-win32-x64' if windows else None,
                     'python': 'python-win32-x64' if windows else 'python-source',
                     'pythonShippingBinary': 'python-win32-x64' if windows else None,
-                    'redisSource': 'redis-source', 'redisShippingBinary': None},
+                    'redisSource': None, 'redisShippingBinary': None},
+                'desktopStateStrategy': scope['desktopStateStrategy'],
                 'nodeStrategy': {'mode': 'standalone-node-children', 'nodeModulesABI': '127', 'nodeAPI': '10',
                     'electronNodeMustNotLoadAppNativeModules': True, 'productionNativeModulesVerified': False},
                 'embedding': {'backend': 'torch-cpu', 'model': ref(model), 'dimension': 384, 'normalized': True, 'maxTokens': 128,
@@ -67,7 +68,7 @@ def main():
     # archives and candidate file inventories; release assembly must preserve them.
     license_rows = []
     names = {'electron-win32-x64': ['LICENSE'], 'node-win-x64': ['node-v22.22.0-win-x64/LICENSE'],
-             'postgresql-source': ['postgresql-17.12/COPYRIGHT'], 'redis-source': ['redis-7.2.17/COPYING'],
+             'postgresql-source': ['postgresql-17.12/COPYRIGHT'],
              'python-source': ['Python-3.13.7/LICENSE']}
     for artifact_id, members in names.items():
         row = by_id[artifact_id]

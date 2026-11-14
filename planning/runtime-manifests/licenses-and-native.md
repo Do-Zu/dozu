@@ -1,5 +1,7 @@
 # License and native closure review
 
+**Later desktop-state decision — 2026-11-14:** [PostgreSQL-backed jobs/state plus bounded process cache](../windows-cache/decision.md) is now selected under new user authorization. Redis/Memurai/Garnet rows below are historical alternatives, not required Windows binary acquisitions. The app migration is incomplete; PostgreSQL/CRT/native licensing and paths still require proof.
+
 **Scope update — 2026-11-14:** #38 is Windows x64 only under [scope.json](../../resources/manifests/scope.json). Non-Windows notes below are historical inventory; they are ignored for current work/acceptance. Windows licensing and clean Windows 10/11 loader checks remain required.
 
 The [primary license texts](../../resources/manifests/licenses) are extracted from the exact hashed archives. [License evidence](../../resources/manifests/license-evidence.json) binds each text to its archive/member. This preserves attribution evidence; it does not approve every bundled library or satisfy source obligations for an eventual redistributed artifact.

@@ -18,8 +18,18 @@
     "postgresqlShippingBinary": "postgresql-win32-x64",
     "python": "python-win32-x64",
     "pythonShippingBinary": "python-win32-x64",
-    "redisSource": "redis-source",
+    "redisSource": null,
     "redisShippingBinary": null
+  },
+  "desktopStateStrategy": {
+    "decision": "planning/windows-cache/decision.md",
+    "authority": "User authorized researching and deciding removal/replacement of Redis on 2026-11-14, superseding the earlier desktop retention restriction.",
+    "redisRuntimeRequired": false,
+    "durableBackend": "postgresql",
+    "queueCandidate": "bullmq@6.7.6 PostgreSQL backend",
+    "disposableCache": "bounded process-local TTL/size cache",
+    "applicationMigrationImplemented": false,
+    "websiteRedisPreserved": true
   },
   "nodeStrategy": {
     "mode": "standalone-node-children",
@@ -65,7 +75,7 @@
     "APPLICATION-PRODUCTION-CLOSURE",
     "SIGNED-RESOURCE-ROOT",
     "CLEAN-NATIVE-TARGET",
-    "WINDOWS-REDIS",
+    "DESKTOP-STATE-PG",
     "WINDOWS-CRT-LOADER",
     "FOREIGN-LAUNCHER-REVIEW"
   ],

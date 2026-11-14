@@ -7,7 +7,6 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-import re
 import shutil
 import urllib.request
 
@@ -103,16 +102,7 @@ def main():
                  "provenance": "https://www.enterprisedb.com/download-postgresql-binaries",
                  "checksumEvidence": "Computed from official HTTPS archive; independently published checksum/signature binding pending",
                  "license": "PostgreSQL + EDB archive dependency notices", "nativeExecutionVerified": False, **pg_windows})
-    redis_hash_revision = "8feaeea1ac6ee82ca026a9f3c8b39eb280593929"
-    redis_hash_url = f"https://raw.githubusercontent.com/redis/redis-hashes/{redis_hash_revision}/README"
-    redis_hashes = get(redis_hash_url).decode()
-    entries = re.findall(r"hash redis-(7\.2\.\d+)\.tar\.gz sha256 ([a-f0-9]{64})", redis_hashes)
-    assert entries, "No pinned BSD-branch Redis source found"
-    version, digest = max(entries, key=lambda x: tuple(map(int, x[0].split('.'))))
-    name = f"redis-{version}.tar.gz"
-    rows.append({"id": "redis-source", "component": "redis", "version": version, "target": "source-only",
-                 "architecture": "source", "checksumEvidence": redis_hash_url, "license": "BSD-3-Clause (7.2 branch; bundled deps separately)",
-                 "nativeExecutionVerified": False, **download("https://download.redis.io/releases/" + name, name, digest)})
+    # Redis is no longer selected for desktop; previous source metadata is historical.
     name = "Python-3.13.7.tar.xz"
     rows.append({"id": "python-source", "component": "python", "version": "3.13.7", "target": "source-only", "architecture": "source",
                  "license": "PSF-2.0 + bundled notices", "checksumEvidence": "Computed from HTTPS download; independent signed-source verification pending",
@@ -126,7 +116,7 @@ def main():
     save("artifact-candidates.json", {"schemaVersion": 1, "status": "candidate-not-release", "reviewDate": "2026-11-14",
          "notice": "Hashes are not security approval, architecture execution, clean-machine support or reproducible-build proof. Source archives are not shipping binaries.",
          "artifacts": rows})
-    print(json.dumps({'artifacts': len(rows), 'requiredTargets': scope['requiredTargets'], 'redisVersion': version}))
+    print(json.dumps({'artifacts': len(rows), 'requiredTargets': scope['requiredTargets']}))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+{
+  "phase": "before",
+  "checks": [
+    "explicit PostgreSQL schema migration is repeatable",
+    "queue accepts pending job without worker",
+    "concurrent durable counter increments preserve every update",
+    "expired cache entries are excluded by authoritative timestamp"
+  ],
+  "passed": 4,
+  "redisUsed": false,
+  "scope": "Real isolated Windows PostgreSQL and queue/counter/resource-contract proof; application adapters/provider/UI/native clean-machine acceptance not tested"
+}

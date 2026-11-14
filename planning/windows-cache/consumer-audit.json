@@ -1,0 +1,20 @@
+{
+  "reviewDate": "2026-11-14",
+  "sourceBaseline": "dfcafc41deadb6852d2004ffa951eab12e46b9cf",
+  "conclusion": "The current Redis role is broader than disposable runtime memory cache; an in-memory-only replacement would drop real behavior/state.",
+  "consumers": [
+    {"name": "Generation jobs", "sources": ["apps/api/src/libs/bullmq/bullmq.ts", "apps/api/src/services/generative/v3/generative.service.ts", "apps/api/src/services/generative/pub-sub/pubSub.generate.ts"], "observed": "BullMQ Queue/Worker/QueueEvents, job IDs and getState, attempts=3, exponential backoff, retained failures/completions and delayed/priority options", "requiredReplacement": "Durable PostgreSQL queue; preserve retries, status/results/events and interrupted-work recovery"},
+    {"name": "Generation results and job mappings", "sources": ["apps/api/src/services/generative/v3/generative.service.ts"], "observed": "Redis JSON values with five-minute TTL, queried by status and SSE completion handlers", "requiredReplacement": "Owner-scoped result/job mapping with explicit expiry and restart behavior; do not report lost work as success"},
+    {"name": "Schedule read cache and edits", "sources": ["apps/api/src/services/schedule/schedule.service.ts"], "observed": "Read cache is recomputable, but updateSessionSchedule currently writes only Redis and contains a TODO to update the database", "requiredReplacement": "Persist user edits transactionally in PostgreSQL before caching; a Map alone would lose edits on restart"},
+    {"name": "Feature usage", "sources": ["apps/api/src/services/subscription/usage/featureUsage.service.ts", "apps/api/src/services/subscription/usage/featureRecovery.service.ts"], "observed": "Atomic Redis counters with period expiry; database updates are scheduled asynchronously, and recovery reads PostgreSQL", "requiredReplacement": "Authoritative atomic PostgreSQL counter/check-and-increment with period/user/feature identity; no unbounded or stale cached limit decision"},
+    {"name": "Provider limits and cooldown", "sources": ["apps/api/src/services/generative/llm/core/baseLLM.abstract.ts", "apps/api/src/services/generative/llm/core/rateLimitManager.ts"], "observed": "Minute/day request counters and cooldown markers with TTL", "requiredReplacement": "Bounded process cache for disposable cooldowns; persist applicable quota windows so restarts do not reset provider limits"},
+    {"name": "Socket presence", "sources": ["apps/api/src/libs/websocket/notification.websocket.ts"], "observed": "Redis sets and socket/user mapping; actual socket objects already held in process memory", "requiredReplacement": "Process-owned Map/Set for a single authoritative desktop API; rebuild on reconnect, clear on disconnect, preserve LAN multi-client fan-out"},
+    {"name": "Term/document frequency helper", "sources": ["apps/api/src/libs/redis/wordFrequency/redisWordFrequency.ts", "apps/api/src/utils/embedding/embeddingGenerator.ts"], "observed": "Hash increments, document count, pipeline and multi-field reads; no external call site for the legacy EmbeddingGenerator or incrementTermFrequencies was found in the inspected source", "requiredReplacement": "Prove unused or migrate persistent corpus statistics to PostgreSQL; do not conflate this helper with the retained multilingual MiniLM service"}
+  ],
+  "additionalFindings": [
+    "The shared Redis abstract connector has a fake fallback that logs writes and returns success without storing data; this cannot count as a working Redis-free implementation.",
+    "The current app pins BullMQ 5.49.1; a BullMQ 6 PostgreSQL evaluation does not upgrade the application.",
+    "Redis named PUBSUB is used for queue connections; no direct raw Redis publish/subscribe call sites were found in the inspected app source. BullMQ QueueEvents still requires a real replacement event backend.",
+    "The retained website/Lambda deployment has direct Redis/BullMQ code and must stay functional while desktop runtime choices are adapted. No Lambda deployment was executed."
+  ]
+}

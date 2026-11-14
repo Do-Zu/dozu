@@ -1,0 +1,16 @@
+{
+  "phase": "after",
+  "checks": [
+    "explicit PostgreSQL schema migration is repeatable",
+    "queued job and durable state survive actual PostgreSQL restart",
+    "worker consumes persisted job and returns actual result",
+    "failed job retries with backoff and completes",
+    "delayed job is not consumed before its delay",
+    "duplicate job ID does not execute again",
+    "exhausted attempts retain failed state and reason",
+    "QueueEvents reports real completion and progress"
+  ],
+  "passed": 8,
+  "redisUsed": false,
+  "scope": "Real isolated Windows PostgreSQL and queue/counter/resource-contract proof; application adapters/provider/UI/native clean-machine acceptance not tested"
+}
