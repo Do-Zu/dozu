@@ -22,15 +22,19 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--release', action='store_true')
     args = parser.parse_args()
-    artifacts = read(OUT/'artifact-candidates.json')['artifacts']
-    assert len(artifacts) == 13 and len({a['id'] for a in artifacts}) == 13
+    scope = read(OUT/'scope.json')
+    assert scope['requiredTargets'] == ['win32-x64']
+    catalog = read(OUT/'artifact-candidates.json')['artifacts']
+    assert len({a['id'] for a in catalog}) == len(catalog)
+    artifacts = [a for a in catalog if a['target'] in scope['requiredTargets'] or a['target'] in {'win-x64', 'source-only'}]
+    assert len(artifacts) == 7
     for a in artifacts:
         assert re.fullmatch('[a-f0-9]{64}', a['sha256']) and a['source'].startswith('https://')
         if a['archiveBytesVerified']:
             p = (ROOT/'planning/embedding-runtime/.downloads' if a['id'] == 'python-win32-x64' else HERE/'.downloads')/a['filename']
             assert sha(p) == a['sha256'] and p.stat().st_size == a['bytes'], a['id']
-    targets = [read(p) for p in sorted((OUT/'targets').glob('*.json'))]
-    assert {t['target'] for t in targets} == {'win32-x64','darwin-x64','darwin-arm64','linux-x64'}
+    targets = [read(OUT/'targets'/f'{target}.json') for target in scope['requiredTargets']]
+    assert {t['target'] for t in targets} == set(scope['requiredTargets'])
     valid_ids = {a['id'] for a in artifacts}
     blockers = {}
     references = 0
@@ -68,13 +72,11 @@ def main():
                for g in native['components'] for f in g['files'] if f['architecture'] != 'x64']
     # These are upstream wheel launcher templates, not a mixed-ABI runtime claim.
     assert all(f['component'] == 'embedding-torch' and '/setuptools/' in f['path'] and f['path'].endswith('.exe') for f in foreign)
-    availability = read(OUT/'embedding-wheel-availability.json')
-    torch = next(p for p in availability['packages'] if p['name'] == 'torch')
-    assert not any('macosx' in f['filename'] and 'x86_64' in f['filename'] for f in torch['wheels'])
     cpp = read(OUT/'microsoft-crt-candidate.json')
     assert all(f['signatureStatus'] == 'Valid' and re.fullmatch('[a-f0-9]{64}',f['sha256']) for f in cpp['files'])
     result = {'candidateConsistencyPassed': True, 'releaseEligible': False,
         'sourceBaseline': subprocess.check_output(['git','rev-parse','HEAD'], cwd=ROOT, text=True).strip(),
+        'requiredTargets': scope['requiredTargets'], 'ignoredTargets': scope['ignoredTargets'],
         'verifiedArchives': sum(a['archiveBytesVerified'] for a in artifacts), 'upstreamArtifactPins': len(artifacts),
         'windowsWheelArchivesVerified': len(wheels), 'baselineModelFilesVerified': len(model_files),
         'targetReferenceHashesVerified': references, 'nativePEFilesInspected': sum(len(g['files']) for g in native['components']),

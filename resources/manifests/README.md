@@ -1,10 +1,12 @@
-# Candidate runtime and installed-resource manifests — #38
+# Windows runtime and installed-resource manifests — #38
+
+**User scope update — 2026-11-14:** [#38 now requires Windows x64 only](scope.json), covering Windows 10 22H2 and Windows 11. Ignore macOS/Linux for this task: their earlier metadata/target records below are historical and do not block acceptance. Acquisition/generation/validation use the Windows-only scope. No other platform is certified by this change.
 
 **2026-11-14: incomplete candidates, no supported clean target certified.** [Evidence, commands and acceptance ledger](../../planning/runtime-manifests/README.md). The approved [platform/resource contract](../../planning/platform-support.md) is unchanged. #7 supplies the JavaScript foundation only.
 
 - [Artifact pins](artifact-candidates.json): official sources, exact versions/architectures/hashes, archive-byte verification distinguished from upstream metadata and native execution. PostgreSQL/Redis/Python **source** pins are not shipped binaries.
-- [Target records](targets): Windows x64, macOS Intel/ARM64, Linux x64; explicit nulls and [gates](gates.json) prevent unresolved cells being interpreted as success.
-- [Foreign Python wheel availability](embedding-wheel-availability.json): CPython 3.13/compatible stable-ABI metadata, not resolved foreign locks. CPU Linux Torch has a separate official-index candidate; default Linux PyPI Torch is not a CPU-only selection.
+- [Active Windows target](targets/win32-x64.json): explicit nulls and [Windows gates](gates.json) prevent unresolved cells being interpreted as success. Other target records are retained historical inventory, excluded by [scope](scope.json).
+- [Foreign Python wheel availability](embedding-wheel-availability.json): historical metadata only; ignored for current #38 acquisition and acceptance.
 - [Windows PE inventory](native-windows-x64.json): actual file hashes, machine types, normal and delay imports; basename availability is not loader resolution.
 - [Microsoft CRT candidates](microsoft-crt-candidate.json): signed, versioned files in a Visual Studio **Redist** directory; redistribution entitlement and app-local placement remain gates. Never harvest DLLs from System32.
 - [Primary license evidence](license-evidence.json) and [texts](licenses): archive-bound primary notices. Complete third-party/binary/model redistribution approval remains open.

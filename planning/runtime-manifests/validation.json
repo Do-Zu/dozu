@@ -1,12 +1,20 @@
 {
   "candidateConsistencyPassed": true,
   "releaseEligible": false,
-  "sourceBaseline": "65a4303f12fee7e40c8ca68e15ed064c5aafc302",
+  "sourceBaseline": "54a5852207363d3c5e356d3bb8063c559f672b58",
+  "requiredTargets": [
+    "win32-x64"
+  ],
+  "ignoredTargets": [
+    "darwin-x64",
+    "darwin-arm64",
+    "linux-x64"
+  ],
   "verifiedArchives": 7,
-  "upstreamArtifactPins": 13,
+  "upstreamArtifactPins": 7,
   "windowsWheelArchivesVerified": 45,
   "baselineModelFilesVerified": 10,
-  "targetReferenceHashesVerified": 9,
+  "targetReferenceHashesVerified": 3,
   "nativePEFilesInspected": 456,
   "microsoftSignedCrtFilesInventoried": 10,
   "cleanNativeTargetsPassed": 0,
@@ -43,40 +51,6 @@
     }
   ],
   "gates": {
-    "darwin-arm64": [
-      "SECURITY-48",
-      "POSTGRES-BINARY",
-      "CONVERSION-32",
-      "APPLICATION-PRODUCTION-CLOSURE",
-      "SIGNED-RESOURCE-ROOT",
-      "CLEAN-NATIVE-TARGET",
-      "PYTHON-NATIVE-BUILD",
-      "PYTHON-NATIVE-LOCK",
-      "REDIS-NATIVE-BUILD"
-    ],
-    "darwin-x64": [
-      "SECURITY-48",
-      "POSTGRES-BINARY",
-      "CONVERSION-32",
-      "APPLICATION-PRODUCTION-CLOSURE",
-      "SIGNED-RESOURCE-ROOT",
-      "CLEAN-NATIVE-TARGET",
-      "PYTHON-NATIVE-BUILD",
-      "PYTHON-NATIVE-LOCK",
-      "REDIS-NATIVE-BUILD",
-      "TORCH-MAC-INTEL"
-    ],
-    "linux-x64": [
-      "SECURITY-48",
-      "POSTGRES-BINARY",
-      "CONVERSION-32",
-      "APPLICATION-PRODUCTION-CLOSURE",
-      "SIGNED-RESOURCE-ROOT",
-      "CLEAN-NATIVE-TARGET",
-      "PYTHON-NATIVE-BUILD",
-      "PYTHON-NATIVE-LOCK",
-      "REDIS-NATIVE-BUILD"
-    ],
     "win32-x64": [
       "SECURITY-48",
       "POSTGRES-BINARY",

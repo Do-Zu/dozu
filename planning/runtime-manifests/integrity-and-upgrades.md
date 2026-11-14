@@ -1,5 +1,7 @@
 # Installed-resource and upgrade contract
 
+**Current #38 scope:** Windows x64 only, per the user's 2026-11-14 instruction and [scope.json](../../resources/manifests/scope.json). Required native acceptance is Windows 10 22H2 and Windows 11. Generic Unix/macOS helper notes below describe retained mechanics, not current acceptance gates.
+
 This is a build/verification helper and an integration contract, not an implemented updater or installer. #24/#28/#34/#23 own signed distribution, supervisor integration, final paths and installation. Final target records deliberately retain `installedResourceManifest: null` and `appDataSchemaRange: null`.
 
 ## Controlled assembly

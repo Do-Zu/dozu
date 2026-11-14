@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "issue": 38,
+  "decisionDate": "2026-11-14",
+  "authority": "User instruction: focus on Windows only; ignore macOS and Linux for this task.",
+  "requiredTargets": ["win32-x64"],
+  "requiredBaselines": ["Windows 10 22H2 x64 legacy", "Windows 11 x64 primary"],
+  "ignoredTargets": ["darwin-x64", "darwin-arm64", "linux-x64"],
+  "historicalEvidence": "Existing non-Windows metadata/target records are retained as historical inventory only; their gates do not block #38 and acquisition/generation/validation must not require them.",
+  "unchanged": "Windows acceptance, hardware/resource limits, PostgreSQL/Redis retention, pinned multilingual CPU embedding/384-vector contract and capability deferrals remain required. Ignoring another target does not certify it."
+}

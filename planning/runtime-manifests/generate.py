@@ -29,15 +29,14 @@ def ref(path):
 def main():
     artifacts = json.loads((OUT/'artifact-candidates.json').read_text())['artifacts']
     by_id = {a['id']: a for a in artifacts}
+    scope = json.loads((OUT/'scope.json').read_text())
     model = ROOT/'services/embedding/packaging/model-manifest.json'
     wheel_lock = ROOT/'services/embedding/packaging/requirements-torch-windows-x64.lock'
     wheel_inventory = ROOT/'services/embedding/packaging/requirements-torch-windows-x64.json'
     targets = [
         ('win32-x64', ['Windows 10 22H2 x64 legacy', 'Windows 11 x64 primary'], ['NSIS exe'], '22'),
-        ('darwin-x64', ['macOS 13+ Intel'], ['signed notarized dmg'], '46'),
-        ('darwin-arm64', ['macOS 13+ Apple Silicon'], ['signed notarized dmg'], '46'),
-        ('linux-x64', ['Ubuntu 22.04 x64', 'Debian 12 x64', 'Ubuntu 24.04+ recommended (also requires testing)'], ['deb', 'AppImage where compatible'], '47'),
     ]
+    assert [t[0] for t in targets] == scope['requiredTargets']
     common_gates = ['SECURITY-48', 'POSTGRES-BINARY', 'CONVERSION-32', 'APPLICATION-PRODUCTION-CLOSURE', 'SIGNED-RESOURCE-ROOT', 'CLEAN-NATIVE-TARGET']
     for target, baselines, installers, native_owner in targets:
         node_id = 'node-'+target.replace('win32', 'win')

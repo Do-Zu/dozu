@@ -4,15 +4,12 @@ Fetches official metadata and selected archives, records hashes, and does not in
 or execute downloads. Review generated JSON before committing; this is not approval.
 """
 import argparse
-from concurrent.futures import ThreadPoolExecutor
 import hashlib
-import html
 import json
 from pathlib import Path
 import re
 import shutil
 import urllib.request
-import urllib.parse
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -58,6 +55,8 @@ def main():
     args = parser.parse_args()
     CACHE.mkdir(parents=True, exist_ok=True)
     rows = []
+    scope = json.loads((OUT/'scope.json').read_text())
+    assert scope['requiredTargets'] == ['win32-x64'], 'This acquisition is Windows-only under the current #38 scope'
     release_url = "https://api.github.com/repos/electron/electron/releases/tags/v45.2.3"
     release = json.loads(args.electron_metadata.read_text(encoding="utf-8-sig")) if args.electron_metadata else json.loads(get(release_url))
     assert release["tag_name"] == "v45.2.3"
@@ -66,7 +65,7 @@ def main():
     sums = get(sums_asset["browser_download_url"])
     assert hashlib.sha256(sums).hexdigest() == sums_asset["digest"].removeprefix("sha256:")
     expected = {line.split()[-1].lstrip("*"): line.split()[0] for line in sums.decode().splitlines()}
-    for target, arch in [("win32-x64", "x64"), ("darwin-x64", "x64"), ("darwin-arm64", "arm64"), ("linux-x64", "x64")]:
+    for target, arch in [("win32-x64", "x64")]:
         name = f"electron-v45.2.3-{target}.zip"
         a = assets[name]
         digest = a["digest"].removeprefix("sha256:")
@@ -82,7 +81,7 @@ def main():
     node_base = "https://nodejs.org/dist/v22.22.0/"
     node_sums = get(node_base + "SHASUMS256.txt")
     node_hashes = {line.split()[-1].lstrip("*"): line.split()[0] for line in node_sums.decode().splitlines()}
-    for target, arch in [("win-x64", "x64"), ("darwin-x64", "x64"), ("darwin-arm64", "arm64"), ("linux-x64", "x64")]:
+    for target, arch in [("win-x64", "x64")]:
         name = f"node-v22.22.0-{target}." + ("zip" if target == "win-x64" else "tar.gz")
         row = {"id": f"node-{target}", "component": "node", "version": "22.22.0", "target": target, "architecture": arch,
                "source": node_base + name, "filename": name, "sha256": node_hashes[name],
@@ -127,33 +126,7 @@ def main():
     save("artifact-candidates.json", {"schemaVersion": 1, "status": "candidate-not-release", "reviewDate": "2026-11-14",
          "notice": "Hashes are not security approval, architecture execution, clean-machine support or reproducible-build proof. Source archives are not shipping binaries.",
          "artifacts": rows})
-    # Inventory exact baseline wheel availability without treating foreign wheels as tested locks.
-    packages = json.loads((ROOT / "services/embedding/packaging/requirements-torch-windows-x64.json").read_text())["packages"]
-    def availability(p):
-        data = json.loads(get(p["provenance"]))
-        wheels = [{"filename": f["filename"], "source": f["url"], "sha256": f["digests"]["sha256"], "bytes": f["size"],
-                   "requiresPython": f.get("requires_python"), "yanked": f.get("yanked", False)}
-                  for f in data["urls"] if f["filename"].endswith(".whl") and "cp313t" not in f["filename"] and
-                  ("-cp313-" in f["filename"] or "-abi3-" in f["filename"] or "-none-any.whl" in f["filename"]) and
-                  ("macosx" in f["filename"] or "manylinux" in f["filename"] or "none-any" in f["filename"])]
-        return {"name": p["name"], "version": p["version"], "provenance": p["provenance"], "wheels": wheels}
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        availability_rows = list(pool.map(availability, packages))
-    cpu_index = 'https://download.pytorch.org/whl/cpu/torch/'
-    cpu_links = []
-    for url in re.findall(r'href="([^"]+)"', get(cpu_index).decode()):
-        url = html.unescape(urllib.parse.urljoin(cpu_index, url))
-        name = urllib.parse.unquote(urllib.parse.urlsplit(url).path.rsplit('/', 1)[-1])
-        if name == 'torch-2.9.1+cpu-cp313-cp313-manylinux_2_28_x86_64.whl':
-            digest = urllib.parse.urlsplit(url).fragment.removeprefix('sha256=')
-            assert re.fullmatch('[a-f0-9]{64}', digest)
-            cpu_links.append({'filename': name, 'source': url.split('#')[0], 'sha256': digest,
-                              'provenance': cpu_index, 'archiveBytesVerified': False})
-    assert len(cpu_links) == 1
-    save("embedding-wheel-availability.json", {"status": "metadata-only-not-resolved-locks", "pythonABI": "cp313",
-         "limitations": "No foreign wheels downloaded/loaded. Platform tag/minimum OS, marker resolution, CPU-only Torch source, transitive closure and ABI checks remain required.",
-         "torchCpuIndexCandidates": cpu_links, "packages": availability_rows})
-    print(json.dumps({"artifacts": len(rows), "foreignWheelPackages": len(packages), "redisVersion": version}))
+    print(json.dumps({'artifacts': len(rows), 'requiredTargets': scope['requiredTargets'], 'redisVersion': version}))
 
 
 if __name__ == "__main__":
